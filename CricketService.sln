@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CricketService.Api", "CricketService.Api\CricketService.Api.csproj", "{C67C5515-BB4F-4E48-A202-708DEED87C02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CricketService.Domain", "CricketService.Domain\CricketService.Domain.csproj", "{78B2A5AA-B8B7-449C-B76C-F749896599D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CricketService.Data", "CricketService.Data\CricketService.Data.csproj", "{CAD25C32-96CC-4102-9564-A3BB51795D7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CricketService.Migrator", "CricketService.Migrator\CricketService.Migrator.csproj", "{6DD498C8-96AF-4128-A872-87AFB169DD6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F560A2F5-3B89-4CD8-B8AD-E3CC93F1F689}"
+	ProjectSection(SolutionItems) = preProject
+		command.md = command.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1C9E69B5-46D2-46CD-A216-38467751E00B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C67C5515-BB4F-4E48-A202-708DEED87C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67C5515-BB4F-4E48-A202-708DEED87C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67C5515-BB4F-4E48-A202-708DEED87C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67C5515-BB4F-4E48-A202-708DEED87C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B2A5AA-B8B7-449C-B76C-F749896599D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B2A5AA-B8B7-449C-B76C-F749896599D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B2A5AA-B8B7-449C-B76C-F749896599D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B2A5AA-B8B7-449C-B76C-F749896599D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD25C32-96CC-4102-9564-A3BB51795D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD25C32-96CC-4102-9564-A3BB51795D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD25C32-96CC-4102-9564-A3BB51795D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD25C32-96CC-4102-9564-A3BB51795D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD498C8-96AF-4128-A872-87AFB169DD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD498C8-96AF-4128-A872-87AFB169DD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD498C8-96AF-4128-A872-87AFB169DD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD498C8-96AF-4128-A872-87AFB169DD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DCDCD5D-3C8A-48CD-8CFA-581D0F2BBF80}
+	EndGlobalSection
+EndGlobal

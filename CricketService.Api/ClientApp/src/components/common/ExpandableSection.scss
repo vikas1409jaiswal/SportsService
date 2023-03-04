@@ -1,0 +1,30 @@
+﻿.expandable-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.expandable-section-header {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.expandable-section-header h3 {
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    background-color: honeydew;
+}
+
+.expandable-section-arrow {
+    display: flex;
+    align-items: center;
+}
