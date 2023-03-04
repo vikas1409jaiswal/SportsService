@@ -28,12 +28,17 @@ export interface TeamScoreBoardDetails {
     fallOfWickets: string[],
     extras: string,
     totalInningDetails: TotalInningDetails,
-    didNotBat: string[],
-    playing11: string[]
+    didNotBat: Player[],
+    playing11: Player[]
+}
+
+interface Player {
+    name: string,
+    href: string
 }
 
 interface BattingScoreCard {
-    playerName: string,
+    playerName: Player,
     outStatus: string,
     runsScored: number,
     ballsFaced: number,
@@ -44,7 +49,7 @@ interface BattingScoreCard {
 }
 
 interface BowlingScoreCard {
-    playerName: string,
+    playerName: Player,
     oversBowled: number,
     maidens: number,
     runsConceded: number,
