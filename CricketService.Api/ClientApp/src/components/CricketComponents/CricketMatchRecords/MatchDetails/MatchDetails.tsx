@@ -74,11 +74,11 @@ export const MatchDetails: React.FunctionComponent<MatchDetailsProps> = ({ match
                     </tr>
                     <tr>
                         <td>{matchData?.team1.teamName} {matchData?.team1.playing11.length}</td>
-                        <td>{matchData?.team1.playing11.map(u => <p>{u}</p>)}</td>
+                        <td>{matchData?.team1.playing11.map(u => <p>{u.name}</p>)}</td>
                     </tr>
                     <tr>
                         <td>{matchData?.team2.teamName} {matchData?.team2.playing11.length}</td>
-                        <td>{matchData?.team2.playing11.map(u => <p>{u}</p>)}</td>
+                        <td>{matchData?.team2.playing11.map(u => <p>{u.name}</p>)}</td>
                     </tr>
                     <tr>
                         <td>Umpires</td>

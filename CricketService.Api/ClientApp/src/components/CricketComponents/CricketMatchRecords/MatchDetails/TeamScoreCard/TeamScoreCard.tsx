@@ -31,20 +31,20 @@ export const TeamScoreCard: React.FunctionComponent<TeamScoreCardProps> = ({ tea
                             </tr>
                         </thead>
                         <tbody>
-                            {teamScoreCard?.battingScoreCard.map((player, index) => (
+                            {teamScoreCard?.battingScoreCard.map((bsc, index) => (
                                 <tr key={index} style={{
-                                    backgroundColor: player.outStatus.indexOf("not out") !== -1 ? 'yellow' : 'white'
+                                    backgroundColor: bsc.outStatus.indexOf("not out") !== -1 ? 'yellow' : 'white'
                                 }}>
                                     <td style={{
-                                        backgroundColor: player.outStatus.indexOf("not out") !== -1 ? 'orange' : 'pink'
+                                        backgroundColor: bsc.outStatus.indexOf("not out") !== -1 ? 'orange' : 'pink'
                                     }}
-                                    >{player.playerName} <h6>{player.outStatus}</h6></td>
-                                    <td>{player.runsScored}</td>
-                                    <td>{player.ballsFaced}</td>
-                                    <td>{player.minutes}</td>
-                                    <td>{player.fours}</td>
-                                    <td>{player.sixes}</td>
-                                    <td>{player.strikeRate?.toPrecision(5)}</td>
+                                    >{bsc.playerName.name} <h6>{bsc.outStatus}</h6></td>
+                                    <td>{bsc.runsScored}</td>
+                                    <td>{bsc.ballsFaced}</td>
+                                    <td>{bsc.minutes}</td>
+                                    <td>{bsc.fours}</td>
+                                    <td>{bsc.sixes}</td>
+                                    <td>{bsc.strikeRate?.toPrecision(5)}</td>
                                 </tr>
                             ))}
                             <tr className='extras-row'>
@@ -73,7 +73,7 @@ export const TeamScoreCard: React.FunctionComponent<TeamScoreCardProps> = ({ tea
                             teamScoreCard?.didNotBat.length > 0 && <>
                                 <h6><b>Did not Bat</b></h6>
                                 <div className='did-not-bat-details'>{
-                                    teamScoreCard?.didNotBat.map(dnb => <span>{dnb}</span>)
+                                    teamScoreCard?.didNotBat.map(dnb => <span key={dnb.name}>{dnb.name}</span>)
                                 } </div>
                             </>
                         }
@@ -95,7 +95,7 @@ export const TeamScoreCard: React.FunctionComponent<TeamScoreCardProps> = ({ tea
                         <tbody>
                             {teamScoreCard?.bowlingScoreCard.map((player, index) => (
                                 <tr key={index}>
-                                    <td style={{ backgroundColor: 'pink' }}>{player.playerName}</td>
+                                    <td style={{ backgroundColor: 'pink' }}>{player.playerName.name}</td>
                                     <td>{player.oversBowled}</td>
                                     <td>{player.runsConceded}</td>
                                     <td>{player.wickets}</td>
