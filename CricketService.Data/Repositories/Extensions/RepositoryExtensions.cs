@@ -2,11 +2,50 @@
 using CricketService.Domain;
 using CricketService.Domain.Common;
 using CricketService.Domain.Enums;
+using Newtonsoft.Json;
 
 namespace CricketService.Data.Repositories.Extensions
 {
     public static class RepositoryExtensions
     {
+        public static async Task<int> SaveTeamInfo(this TeamScoreDetails teamScoreDetails, CricketServiceContext context, CricketFormat format)
+        {
+                var isExist = context.CricketTeamInfo.Any(x => x.TeamName == teamScoreDetails.TeamName);
+
+                if (isExist)
+                {
+                    var t = context.CricketTeamInfo.Single(x => x.TeamName == teamScoreDetails.TeamName);
+
+                    if (!t.Formats.Contains(format))
+                    {
+                        t.Formats = t.Formats.Concat(new List<CricketFormat> { format });
+                        context.CricketTeamInfo.Update(t);
+                        await context.SaveChangesAsync();
+                    }
+
+                    if (t.FlagUrl == string.Empty)
+                    {
+                        t.FlagUrl = GetDataFromFile(teamScoreDetails.TeamName).Flags.Svg;
+                        context.CricketTeamInfo.Update(t);
+                        await context.SaveChangesAsync();
+                    }
+
+                    return 0;
+                }
+                else
+                {
+                    context.CricketTeamInfo.Add(new Entities.CricketTeamInfo
+                    {
+                        TeamName = teamScoreDetails.TeamName,
+                        Formats = new List<CricketFormat>() { format },
+                    });
+
+                    await context.SaveChangesAsync();
+
+                    return 1;
+                }
+        }
+
         public static async Task<int> SavePlayersForTeam(this TeamScoreDetails teamScoreDetails, CricketServiceContext context, CricketFormat format)
         {
             int count = 0;
@@ -183,18 +222,27 @@ namespace CricketService.Data.Repositories.Extensions
 
             if ((bool)isSingle! && (playerBattingDetails.Any() || playerBowlingDetails.Any()))
             {
-                var allMatchScoreCardByPlayer = allScoreCardByTeam
-               .Where(x => x.ScoreCard.Playing11 is null ? false : x.ScoreCard.Playing11.Any(x => x.Name.Contains(playerName))).ToList();
+                CricketMatchInfoResponse debutMatchDetails = null!;
 
-                var debutMatchDetails = cricketMatchInfoResponses.ToList().Single(x => x.MatchUuid == allMatchScoreCardByPlayer.FirstOrDefault()!.MatchUuid);
+                try
+                {
+                    debutMatchDetails = cricketMatchInfoResponses.ToList().Single(x => x.InternationalDebut.Any(y => y.Contains(playerName)));
+                }
+                catch
+                {
+                    Console.WriteLine($"No debut details found for player {playerName}");
+                }
 
-                debutDetails = new DebutDetails(
-                        (Guid)debutMatchDetails.MatchUuid!,
-                        Convert.ToDateTime(debutMatchDetails.MatchDate),
-                        debutMatchDetails.Team1.TeamName == teamName ? debutMatchDetails.Team2.TeamName : debutMatchDetails.Team1.TeamName,
-                        debutMatchDetails.Venue,
-                        debutMatchDetails.Result,
-                        debutMatchDetails.MatchNo);
+                if (debutMatchDetails is not null)
+                {
+                    debutDetails = new DebutDetails(
+                       (Guid)debutMatchDetails.MatchUuid!,
+                       Convert.ToDateTime(debutMatchDetails.MatchDate),
+                       debutMatchDetails.Team1.TeamName == teamName ? debutMatchDetails.Team2.TeamName : debutMatchDetails.Team1.TeamName,
+                       debutMatchDetails.Venue,
+                       debutMatchDetails.Result,
+                       debutMatchDetails.MatchNo);
+                }
             }
 
             return new CareerInfo(
@@ -221,6 +269,16 @@ namespace CricketService.Data.Repositories.Extensions
                    (int)playerBowlingDetails.Sum(x => x.Dots)!,
                    (int)playerBowlingDetails.Sum(x => x.Sixes)!,
                    (int)playerBowlingDetails.Sum(x => x.Fours)!) : null!);
+        }
+
+        public static CountriesData GetDataFromFile(string teamName)
+        {
+            List<CountriesData> countriesData = new List<CountriesData>();
+
+            StreamReader r = new StreamReader(@"D:\MyYoutubeRepos\CricketService\CricketService\CricketService.Data\StaticData\CountriesData.json");
+            countriesData = JsonConvert.DeserializeObject<List<CountriesData>>(r.ReadToEnd())!;
+
+            return countriesData.FirstOrDefault(x => x.Name!.Common == teamName, new CountriesData(new Name(teamName), new Flags("url_not_found", "url_not_found")));
         }
     }
 }

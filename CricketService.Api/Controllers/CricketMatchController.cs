@@ -14,7 +14,7 @@ public class CricketMatchController : Controller
 
     public CricketMatchController(ICricketMatchRepository cricketMatchRepository)
     {
-        this.cricketMatchRepository = cricketMatchRepository;
+        this.cricketMatchRepository = cricketMatchRepository ?? throw new ArgumentNullException($"{nameof(cricketMatchRepository)} is null");
     }
 
     [HttpGet("t20Match/all")]
@@ -49,6 +49,50 @@ public class CricketMatchController : Controller
         return Ok(await cricketMatchRepository.GetMatchByMNumberODI(matchNumber));
     }
 
+    [HttpGet("t20Match/range")]
+    public async Task<ActionResult<IEnumerable<CricketMatchInfoResponse>>> GetMatchByMNumberRangeT20I(
+        [FromQuery, Required] int startMatchNumber,
+        [FromQuery, Required] int endMatchNumber)
+    {
+        var allMatchNumber = Enumerable.Range(startMatchNumber, endMatchNumber - startMatchNumber);
+
+        List<CricketMatchInfoResponse> matches = new List<CricketMatchInfoResponse>();
+
+        foreach (var matchNumber in allMatchNumber)
+        {
+            var match = await cricketMatchRepository.GetMatchByMNumberT20I(matchNumber);
+
+            if (match is not null)
+            {
+                matches.Add(match);
+            }
+        }
+
+        return Ok(matches);
+    }
+
+    [HttpGet("odiMatch/range")]
+    public async Task<ActionResult<IEnumerable<CricketMatchInfoResponse>>> GetMatchByMNumberRangeODI(
+        [FromQuery, Required] int startMatchNumber,
+        [FromQuery, Required] int endMatchNumber)
+    {
+        var allMatchNumber = Enumerable.Range(startMatchNumber, endMatchNumber - startMatchNumber);
+
+        List<CricketMatchInfoResponse> matches = new List<CricketMatchInfoResponse>();
+
+        foreach (var matchNumber in allMatchNumber)
+        {
+          var match = await cricketMatchRepository.GetMatchByMNumberODI(matchNumber);
+
+          if (match is not null)
+            {
+                matches.Add(match);
+            }
+        }
+
+        return Ok(matches);
+    }
+
     [HttpGet("t20Match")]
     public ActionResult<IEnumerable<CricketMatchInfoResponse>> GetMatchByTeamNameT20I([FromQuery, Required] string teamName)
     {
@@ -67,22 +111,6 @@ public class CricketMatchController : Controller
         Response.Headers.Add("total-ODI-matches", allMatches.Count().ToString());
 
         return Ok(allMatches);
-    }
-
-    [HttpPost("t20Match/add")]
-    [Consumes(MediaTypeNames.Application.Json)]
-    public async Task<IActionResult> AddNewMatch([FromBody, Required, ModelBinder(Name = "T20ICricketMatchInfo")] CricketMatchInfoRequest cricketMatchInfoRequest)
-    {
-        var foundMatch = await cricketMatchRepository.GetMatchByMNumberT20I(Convert.ToInt32(cricketMatchInfoRequest.MatchNo.Replace("T20I no. ", string.Empty)));
-
-        if (foundMatch is not null)
-        {
-            return Ok(new { message = $"{cricketMatchInfoRequest.MatchNo} already exists" });
-        }
-
-        var addedMatch = await cricketMatchRepository.AddMatchT20I(cricketMatchInfoRequest);
-
-        return CreatedAtAction(nameof(GetAllMatchesT20I), new { matchNo = cricketMatchInfoRequest.MatchNo }, addedMatch);
     }
 
     [HttpPost("t20Match/addRange")]

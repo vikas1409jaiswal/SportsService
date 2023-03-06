@@ -79,6 +79,8 @@ public class CricketPlayerController : Controller
             playerDetails.Add(playerDetail);
         }
 
+        Response.Headers.Add($"total-{format}-players", playerDetails.Count().ToString());
+
         return Ok(playerDetails);
     }
 

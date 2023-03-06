@@ -12,10 +12,10 @@ namespace CricketService.Data.Repositories
 {
     public class CricketMatchRepository : ICricketMatchRepository
     {
-        private ILogger<CricketPlayerRepository> logger;
+        private ILogger<CricketMatchRepository> logger;
         private CricketServiceContext context;
 
-        public CricketMatchRepository(ILogger<CricketPlayerRepository> logger, CricketServiceContext cricketServiceContext)
+        public CricketMatchRepository(ILogger<CricketMatchRepository> logger, CricketServiceContext cricketServiceContext)
         {
             this.logger = logger;
             context = cricketServiceContext;
@@ -127,12 +127,15 @@ namespace CricketService.Data.Repositories
 
             if (response is not null)
             {
-               if (response.Team1.Playing11 is not null)
+                await response.Team1.SaveTeamInfo(context, CricketFormat.T20I);
+                await response.Team2.SaveTeamInfo(context, CricketFormat.T20I);
+
+                if (response.Team1.Playing11 is not null)
                 {
                     await response.Team1.SavePlayersForTeam(context, CricketFormat.T20I);
                 }
 
-               if (response.Team2.Playing11 is not null)
+                if (response.Team2.Playing11 is not null)
                 {
                     await response.Team2.SavePlayersForTeam(context, CricketFormat.T20I);
                 }
@@ -151,6 +154,9 @@ namespace CricketService.Data.Repositories
 
             if (response is not null)
             {
+                await response.Team1.SaveTeamInfo(context, CricketFormat.ODI);
+                await response.Team2.SaveTeamInfo(context, CricketFormat.ODI);
+
                 if (response.Team1.Playing11 is not null)
                 {
                     await response.Team1.SavePlayersForTeam(context, CricketFormat.ODI);

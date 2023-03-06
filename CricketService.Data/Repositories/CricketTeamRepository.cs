@@ -4,6 +4,7 @@ using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
 using CricketService.Domain.Common;
+using CricketService.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -23,39 +24,41 @@ namespace CricketService.Data.Repositories
 
         public IEnumerable<string> GetAllTeamNamesT20I()
         {
-            var query = (from match in context.T20ICricketMatchInfo
-                         select match.Team1.TeamName)
-            .Union(from match in context.T20ICricketMatchInfo
-                   select match.Team2.TeamName)
-            .Distinct()
-            .OrderBy(x => x);
-
-            return query.ToArray();
+            return context.CricketTeamInfo
+                 .Select(x => x.TeamName).AsEnumerable();
         }
 
         public IEnumerable<string> GetAllTeamNamesODI()
         {
-            var query = (from match in context.ODICricketMatchInfo
-                         select match.Team1.TeamName)
-            .Union(from match in context.ODICricketMatchInfo
-                   select match.Team2.TeamName)
-            .Distinct()
-            .OrderBy(x => x);
-
-            return query.ToArray();
+            return context.CricketTeamInfo
+                .Select(x => x.TeamName).AsEnumerable();
         }
 
-        public CricketTeamInfo GetTeamRecordsByName(string teamName, bool isSingle = false)
+        public CricketTeamInfoResponse GetTeamRecordsByName(string teamName, bool isSingle = false)
         {
             var cricketMatchInfoTableODI = context.ODICricketMatchInfo;
             var cricketMatchInfoTableT20I = context.T20ICricketMatchInfo;
-
-            var countriesData = GetDataFromFile(teamName);
+            var cricketTeamInfoTable = context.CricketTeamInfo;
 
             var allMatchesByTeamODI = cricketMatchInfoTableODI.Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName);
             var allMatchesByTeamT20I = cricketMatchInfoTableT20I.Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName);
 
-            CricketTeamInfo teamRecordData = new CricketTeamInfo(teamName, new TeamRecordDetails(null!, null!, null!), countriesData.Flags.Svg);
+            Entities.CricketTeamInfo teamInfo = null!;
+
+            try
+            {
+                teamInfo = cricketTeamInfoTable.Single(t => t.TeamName == teamName);
+            }
+            catch
+            {
+                throw new Exception($"{teamName} does not exists.");
+            }
+
+            CricketTeamInfoResponse teamRecordData = new CricketTeamInfoResponse(
+                teamInfo.Uuid,
+                teamName,
+                new TeamRecordDetails(null!, null!, null!),
+                teamInfo.FlagUrl);
 
             if (allMatchesByTeamT20I.Any())
             {
@@ -178,16 +181,6 @@ namespace CricketService.Data.Repositories
                                                  || (m.Team2.TeamName == teamName && m.Result.Contains(m.Team1.TeamName + " won by"))),
                 NoResult = g.Count(x => x.Result.Contains("No result")),
             });
-        }
-
-        private CountriesData GetDataFromFile(string teamName)
-        {
-            List<CountriesData> countriesData = new List<CountriesData>();
-
-            StreamReader r = new StreamReader(@"D:\MyYoutubeRepos\CricketService\CricketService\CricketService.Data\StaticData\CountriesData.json");
-            countriesData = JsonConvert.DeserializeObject<List<CountriesData>>(r.ReadToEnd())!;
-
-            return countriesData.FirstOrDefault(x => x.Name!.Common == teamName, new CountriesData(new Name(teamName), new Flags("url_not_found", "url_not_found")));
         }
     }
 }

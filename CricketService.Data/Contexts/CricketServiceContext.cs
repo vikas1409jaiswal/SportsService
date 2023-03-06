@@ -16,6 +16,8 @@ public class CricketServiceContext : DbContext
 
     public DbSet<Entities.ODICricketMatchInfo> ODICricketMatchInfo { get; set; }
 
+    public DbSet<Entities.CricketTeamInfo> CricketTeamInfo { get; set; }
+
     public DbSet<Entities.CricketPlayerInfo> CricketPlayerInfo { get; set; }
 
     public Task<IEnumerable<string>> GetPendingMigrationsAsync()
@@ -73,6 +75,15 @@ public class CricketServiceContext : DbContext
             t1 => JsonConvert.DeserializeObject<TeamScoreDetailsRequest>(t1)!)
             .HasColumnName("team2_details")
             .HasColumnType("jsonb");
+
+        modelBuilder.Entity<Entities.CricketTeamInfo>()
+         .HasKey(e => e.Uuid);
+
+        modelBuilder.Entity<Entities.CricketTeamInfo>()
+         .Property(e => e.Formats)
+         .HasConversion(
+            f => JsonConvert.SerializeObject(f.Select(x => x.ToString())),
+            f => JsonConvert.DeserializeObject<IEnumerable<CricketFormat>>(f)!);
 
         modelBuilder.Entity<Entities.CricketPlayerInfo>()
           .HasKey(e => e.Uuid);

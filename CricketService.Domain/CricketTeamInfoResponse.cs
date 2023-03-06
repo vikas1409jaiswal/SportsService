@@ -2,22 +2,21 @@
 
 namespace CricketService.Domain
 {
-    public class CricketTeamInfo
+    public class CricketTeamInfoResponse
     {
-        public CricketTeamInfo(string teamName, TeamRecordDetails recordDetails, string flagUri)
+        public CricketTeamInfoResponse(
+            Guid teamUuid,
+            string teamName,
+            TeamRecordDetails recordDetails,
+            string flagUri)
         {
+            TeamUuid = teamUuid;
             TeamName = teamName;
             TeamRecordDetails = recordDetails;
             FlagUri = flagUri;
         }
 
-        public Guid TeamUuid
-        {
-            get
-            {
-                return Guid.NewGuid();
-            }
-        }
+        public Guid TeamUuid { get; set; } = Guid.Empty;
 
         public string TeamName { get; set; }
 
