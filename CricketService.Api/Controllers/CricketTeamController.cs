@@ -37,13 +37,13 @@ namespace CricketService.Api.Controllers
         }
 
         [HttpGet("teams/all/records")]
-        public ActionResult<IEnumerable<CricketTeamInfo>> GetAllTeamRecords()
+        public ActionResult<IEnumerable<CricketTeamInfoResponse>> GetAllTeamRecords()
         {
             List<string> teamNames = new List<string>();
             teamNames = cricketTeamRepository.GetAllTeamNamesODI()
                 .Concat(cricketTeamRepository.GetAllTeamNamesT20I()).Distinct().ToList();
 
-            List<CricketTeamInfo> teamRecords = new List<CricketTeamInfo>();
+            List<CricketTeamInfoResponse> teamRecords = new List<CricketTeamInfoResponse>();
 
             foreach (var teamName in teamNames)
             {
@@ -59,7 +59,7 @@ namespace CricketService.Api.Controllers
         }
 
         [HttpGet("teams/{teamName}/records")]
-        public ActionResult<CricketTeamInfo> GetAllTeamRecords([FromRoute, Required] string teamName)
+        public ActionResult<CricketTeamInfoResponse> GetAllTeamRecords([FromRoute, Required] string teamName)
         {
             var teamRecord = cricketTeamRepository.GetTeamRecordsByName(teamName, true);
 
@@ -67,7 +67,7 @@ namespace CricketService.Api.Controllers
         }
 
         [HttpGet("teams/{teamName}/records/against/all")]
-        public ActionResult<CricketTeamInfo> GetAllAgainstRecords([FromRoute, Required] string teamName, [FromQuery, Required] CricketFormat format)
+        public ActionResult<CricketTeamInfoResponse> GetAllAgainstRecords([FromRoute, Required] string teamName, [FromQuery, Required] CricketFormat format)
         {
             object teamRecord = null!;
 

@@ -8,7 +8,7 @@ namespace CricketService.Data.Repositories.Interfaces
 
         IEnumerable<string> GetAllTeamNamesODI();
 
-        CricketTeamInfo GetTeamRecordsByName(string teamName, bool isSingle);
+        CricketTeamInfoResponse GetTeamRecordsByName(string teamName, bool isSingle);
 
         object GetAllAgainstRecordsByNameT20I(string teamName);
 

@@ -48,6 +48,7 @@ public class CricketPlayerRepository : ICricketPlayerRepository
 
         var cricketMatchInfoTableT20I = context.T20ICricketMatchInfo;
         var cricketMatchInfoTableODI = context.ODICricketMatchInfo;
+        var cricketPlayerInfoTable = context.CricketPlayerInfo;
 
         var allMatchesByTeamT20I = cricketMatchInfoTableT20I
             .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
@@ -57,7 +58,19 @@ public class CricketPlayerRepository : ICricketPlayerRepository
             .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
             .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty))).Select(x => x.ToDomain());
 
+        Entities.CricketPlayerInfo playerInfo = null!;
+
+        try
+        {
+            playerInfo = cricketPlayerInfoTable.Single(x => x.TeamName == teamName && x.FullName == playerName);
+        }
+        catch
+        {
+            throw new Exception($"{playerName}({teamName}) doesn't exist.");
+        }
+
         var playerCareerDetails = new CricketPlayerInfoResponse(
+            playerInfo.Uuid,
             playerName,
             default(DateTime),
             teamName,

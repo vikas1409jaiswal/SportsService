@@ -21,7 +21,7 @@ namespace CricketService.Data.Migrations
                     team_name = table.Column<string>(type: "text", nullable: false),
                     date_of_birth = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     birth_place = table.Column<string>(type: "text", nullable: false),
-                    formats = table.Column<string>(type: "text", nullable: false)
+                    formats = table.Column<string>(type: "text", nullable: false),
                 },
                 constraints: table =>
                 {
@@ -51,7 +51,7 @@ namespace CricketService.Data.Migrations
                     reserve_umpire = table.Column<string>(type: "text", nullable: false),
                     umpires = table.Column<string[]>(type: "text[]", nullable: false),
                     format_debut = table.Column<string[]>(type: "text[]", nullable: false),
-                    international_debut = table.Column<string[]>(type: "text[]", nullable: false)
+                    international_debut = table.Column<string[]>(type: "text[]", nullable: false),
                 },
                 constraints: table =>
                 {
@@ -81,7 +81,7 @@ namespace CricketService.Data.Migrations
                     reserve_umpire = table.Column<string>(type: "text", nullable: false),
                     umpires = table.Column<string[]>(type: "text[]", nullable: false),
                     format_debut = table.Column<string[]>(type: "text[]", nullable: false),
-                    international_debut = table.Column<string[]>(type: "text[]", nullable: false)
+                    international_debut = table.Column<string[]>(type: "text[]", nullable: false),
                 },
                 constraints: table =>
                 {

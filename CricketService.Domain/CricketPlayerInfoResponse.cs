@@ -5,6 +5,7 @@ namespace CricketService.Domain;
 public class CricketPlayerInfoResponse
 {
     public CricketPlayerInfoResponse(
+        Guid playerUuid,
         string fullName,
         DateTime dateOfBirth,
         string teamName,
@@ -12,6 +13,7 @@ public class CricketPlayerInfoResponse
         CareerDetailsInfo careerDetailsInfo,
         string? imageSrc)
     {
+        PlayerUuid= playerUuid;
         FullName = fullName;
         DateOfBirth = dateOfBirth;
         TeamName = teamName;
@@ -20,13 +22,7 @@ public class CricketPlayerInfoResponse
         ImageSrc = imageSrc;
     }
 
-    public Guid PlayerUuid
-    {
-        get
-        {
-            return Guid.NewGuid();
-        }
-    }
+    public Guid PlayerUuid { get; set; } = Guid.Empty;
 
     public string FullName { get; set; } = string.Empty;
 
