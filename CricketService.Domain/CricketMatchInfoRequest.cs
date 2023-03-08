@@ -1,5 +1,3 @@
-using CricketService.Domain.Common;
-
 namespace CricketService.Domain;
 
 public class CricketMatchInfoRequest : CricketMatchInfo
@@ -56,8 +54,8 @@ public class TeamScoreDetailsRequest
 {
     public TeamScoreDetailsRequest(
         string teamName,
-        IEnumerable<BattingScoreCardRequest> battingScoreCard,
-        IEnumerable<BowlingScoreCardRequest> bowlingScoreCard,
+        ICollection<BattingScoreCardRequest> battingScoreCard,
+        ICollection<BowlingScoreCardRequest> bowlingScoreCard,
         string extras,
         string[] fallOfWickets,
         Player[] didNotBat)
@@ -72,28 +70,15 @@ public class TeamScoreDetailsRequest
 
     public string TeamName { get; set; } = string.Empty;
 
-    public IEnumerable<BattingScoreCardRequest> BattingScoreCard { get; set; }
+    public ICollection<BattingScoreCardRequest> BattingScoreCard { get; set; }
 
-    public IEnumerable<BowlingScoreCardRequest> BowlingScoreCard { get; set; }
+    public ICollection<BowlingScoreCardRequest> BowlingScoreCard { get; set; }
 
     public string Extras { get; set; } = string.Empty;
 
     public string[] FallOfWickets { get; set; }
 
     public Player[] DidNotBat { get; set; }
-}
-
-public class Player
-{
-    public Player(string name, string href)
-    {
-        Name = name;
-        Href = href;
-    }
-
-    public string Name { get; set; }
-
-    public string Href { get; set; }
 }
 
 public class BattingScoreCardRequest

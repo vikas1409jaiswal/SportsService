@@ -60,8 +60,8 @@ public class TeamScoreDetails
 {
     public TeamScoreDetails(
         string teamName,
-        IEnumerable<BattingScoreCard> battingScoreCard,
-        IEnumerable<BowlingScoreCard> bowlingScoreCard,
+        ICollection<BattingScoreCard> battingScoreCard,
+        ICollection<BowlingScoreCard> bowlingScoreCard,
         string extras,
         string[] fallOfWickets,
         Player[] didNotBat)
@@ -76,9 +76,9 @@ public class TeamScoreDetails
 
     public string TeamName { get; set; } = string.Empty;
 
-    public IEnumerable<BattingScoreCard> BattingScoreCard { get; set; }
+    public ICollection<BattingScoreCard> BattingScoreCard { get; set; }
 
-    public IEnumerable<BowlingScoreCard> BowlingScoreCard { get; set; }
+    public ICollection<BowlingScoreCard> BowlingScoreCard { get; set; }
 
     public string Extras { get; set; } = string.Empty;
 
@@ -103,17 +103,17 @@ public class TeamScoreDetails
 
             return playing11;
         }
-     }
+    }
 
     public TotalInningScore TotalInningDetails
     {
         get
         {
-           return new TotalInningScore(
-               (int)BattingScoreCard.Sum(x => x.RunsScored)!,
-               FallOfWickets.Length,
-               BowlingScoreCard.Sum(x => new Over(x.OversBowled).Balls).ToOvers(),
-               Extras);
+            return new TotalInningScore(
+                (int)BattingScoreCard.Sum(x => x.RunsScored)!,
+                FallOfWickets.Length,
+                BowlingScoreCard.Sum(x => new Over(x.OversBowled).Balls).ToOvers(),
+                Extras);
         }
     }
 }
@@ -250,7 +250,7 @@ public class TotalInningScore
     public Over Overs { get; set; }
 
     public ExtraRuns Extras { get; set; }
- }
+}
 
 public class ExtraRuns
 {
@@ -273,12 +273,12 @@ public class ExtraRuns
     {
         get
         {
-           if (ExtraDetails.Count == 0)
+            if (ExtraDetails.Count == 0)
             {
                 return 0;
             }
 
-           return ExtraDetails.Sum(x => x.Value);
+            return ExtraDetails.Sum(x => x.Value);
         }
     }
 }

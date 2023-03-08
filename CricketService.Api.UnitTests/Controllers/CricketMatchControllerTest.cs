@@ -10,11 +10,11 @@ using Xunit;
 
 namespace CricketService.Api.UnitTests.Controllers
 {
-    public class CricketMatchControllerTest
+    public class CricketMatchInfoTest
     {
         private Mock<ICricketMatchRepository> mockCricketMatchRepository = new Mock<ICricketMatchRepository>();
 
-        public CricketMatchControllerTest()
+        public CricketMatchInfoTest()
         {
         }
 

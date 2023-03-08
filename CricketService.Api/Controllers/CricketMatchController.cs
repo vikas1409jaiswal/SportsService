@@ -82,9 +82,9 @@ public class CricketMatchController : Controller
 
         foreach (var matchNumber in allMatchNumber)
         {
-          var match = await cricketMatchRepository.GetMatchByMNumberODI(matchNumber);
+            var match = await cricketMatchRepository.GetMatchByMNumberODI(matchNumber);
 
-          if (match is not null)
+            if (match is not null)
             {
                 matches.Add(match);
             }

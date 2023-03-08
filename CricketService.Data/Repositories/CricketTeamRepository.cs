@@ -3,11 +3,8 @@ using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
-using CricketService.Domain.Common;
 using CricketService.Domain.Enums;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
 namespace CricketService.Data.Repositories
 {
@@ -22,16 +19,24 @@ namespace CricketService.Data.Repositories
             this.context = context;
         }
 
-        public IEnumerable<string> GetAllTeamNamesT20I()
+        public IEnumerable<Team> GetAllTeamDetails()
         {
             return context.CricketTeamInfo
-                 .Select(x => x.TeamName).AsEnumerable();
+                 .Select(x => new Team(
+                     x.Uuid,
+                     x.TeamName,
+                     x.Formats,
+                     x.LogoUrl,
+                     x.FlagUrl));
         }
 
-        public IEnumerable<string> GetAllTeamNamesODI()
+        public IEnumerable<string> GetAllTeamNames(CricketFormat format)
         {
-            return context.CricketTeamInfo
-                .Select(x => x.TeamName).AsEnumerable();
+            var teams = context.CricketTeamInfo.AsEnumerable()
+                  .Where(x => x.Formats.Contains(format.ToString()))
+                  .Select(x => x.TeamName);
+
+            return teams;
         }
 
         public CricketTeamInfoResponse GetTeamRecordsByName(string teamName, bool isSingle = false)
@@ -181,6 +186,13 @@ namespace CricketService.Data.Repositories
                                                  || (m.Team2.TeamName == teamName && m.Result.Contains(m.Team1.TeamName + " won by"))),
                 NoResult = g.Count(x => x.Result.Contains("No result")),
             });
+        }
+
+        public CricketTeamInfoResponse GetTeamByUuid(Guid teamUuid)
+        {
+            var team = context.CricketTeamInfo.Single(x => x.Uuid == teamUuid);
+
+            return GetTeamRecordsByName(team.TeamName, true);
         }
     }
 }

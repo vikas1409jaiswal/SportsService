@@ -3,6 +3,7 @@ using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
+using CricketService.Domain.Enums;
 using Microsoft.Extensions.Logging;
 
 namespace CricketService.Data.Repositories;
@@ -18,26 +19,36 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         this.context = context;
     }
 
-    public IEnumerable<string> GetPlayersByTeamNameT20I(string teamName)
+    public IEnumerable<string> GetPlayersByTeamName(string teamName, CricketFormat format)
     {
-        logger.LogInformation($"Fetching names for all t20I players for {teamName}.");
+        logger.LogInformation($"Fetching names for all {format} players for {teamName}.");
 
-        var allPlayers = context.T20ICricketMatchInfo
-                         .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
-                         .Select(x => x.ToDomain())
-                         .GetAllPlayersName(teamName);
+        var allPlayers = context.CricketPlayerInfo.AsEnumerable()
+                       .Where(x => x.InternationalTeamNames.Contains(teamName) && x.Formats.Contains(format.ToString()))
+                       .Select(x => x.PlayerName.Trim())
+                       .OrderBy(x => x);
 
         return allPlayers;
     }
 
-    public IEnumerable<string> GetPlayersByTeamNameODI(string teamName)
+    public IEnumerable<PlayerDetails> GetAllPlayers()
     {
-        logger.LogInformation($"Fetching names for all ODI players for {teamName}.");
+        logger.LogInformation("Fetching all cricket Players.");
 
-        var allPlayers = context.ODICricketMatchInfo
-                         .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
-                         .Select(x => x.ToDomain())
-                         .GetAllPlayersName(teamName);
+        var allPlayers = context.CricketPlayerInfo
+            .Select(x => new PlayerDetails(
+                x.Uuid,
+                x.PlayerName,
+                x.Href,
+                x.DateOfBirth,
+                x.Formats,
+                x.BirthPlace,
+                x.BattingStyle,
+                x.BowlingStyle,
+                x.PlayingRole,
+                x.Height,
+                x.ImageSrc,
+                x.TeamNames));
 
         return allPlayers;
     }
@@ -62,7 +73,7 @@ public class CricketPlayerRepository : ICricketPlayerRepository
 
         try
         {
-            playerInfo = cricketPlayerInfoTable.Single(x => x.TeamName == teamName && x.FullName == playerName);
+            playerInfo = cricketPlayerInfoTable.Single(x => x.PlayerName.Contains(playerName) || playerName.Contains(x.PlayerName));
         }
         catch
         {
@@ -83,5 +94,19 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         playerCareerDetails.CareerDetails.ODICareer = allMatchesByTeamODI.GetPlayerStats(teamName, playerName.Trim(), isSingle);
 
         return playerCareerDetails;
+    }
+
+    public IEnumerable<CricketPlayerInfoResponse> GetPlayerByUuid(Guid playerUuid)
+    {
+        var player = context.CricketPlayerInfo.Single(x => x.Uuid == playerUuid);
+
+        var playerD = new List<CricketPlayerInfoResponse>();
+
+        foreach (var team in player.InternationalTeamNames)
+        {
+            playerD.Add(GetPlayerDetailsByTeamName(team, player.PlayerName, true));
+        }
+
+        return playerD;
     }
 }

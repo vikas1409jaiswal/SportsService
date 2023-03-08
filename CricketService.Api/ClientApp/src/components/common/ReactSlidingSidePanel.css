@@ -1,21 +1,21 @@
 ﻿html,
 body,
 #root {
-    height: 100%;
-    margin: 0px;
+  height: 100%;
+  margin: 0px;
 }
 
 .sliding-side-panel-container {
-    height: 100%;
-    background-color: rgb(185, 209, 253);
+  height: 100%;
+  background-color: rgb(185, 209, 253);
 }
 
 .side-panel-container {
-    height: 100%;
-    width: 100%;
-    background-color: honeydew;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: honeydew;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

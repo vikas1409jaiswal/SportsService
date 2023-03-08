@@ -1,12 +1,15 @@
 using CricketService.Domain;
+using CricketService.Domain.Enums;
 
 namespace CricketService.Data.Repositories.Interfaces;
 
-    public interface ICricketPlayerRepository
-    {
-        IEnumerable<string> GetPlayersByTeamNameT20I(string teamName);
+public interface ICricketPlayerRepository
+{
+    IEnumerable<CricketPlayerInfoResponse> GetPlayerByUuid(Guid playerUuid);
 
-        IEnumerable<string> GetPlayersByTeamNameODI(string teamName);
+    IEnumerable<string> GetPlayersByTeamName(string teamName, CricketFormat format);
 
-        CricketPlayerInfoResponse GetPlayerDetailsByTeamName(string teamName, string playerName, bool? isSingle = false);
-    }
+    IEnumerable<PlayerDetails> GetAllPlayers();
+
+    CricketPlayerInfoResponse GetPlayerDetailsByTeamName(string teamName, string playerName, bool? isSingle = false);
+}

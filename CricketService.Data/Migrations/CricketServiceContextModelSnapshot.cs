@@ -29,16 +29,32 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("uuid");
 
+                    b.Property<string>("BattingStyle")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("batting_style");
+
                     b.Property<string>("BirthPlace")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("birth_place");
 
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("timestamp with time zone")
+                    b.Property<string>("BowlingStyle")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("bowling_style");
+
+                    b.Property<string[]>("Content")
+                        .IsRequired()
+                        .HasColumnType("text[]")
+                        .HasColumnName("contents");
+
+                    b.Property<string>("DateOfBirth")
+                        .IsRequired()
+                        .HasColumnType("text")
                         .HasColumnName("date_of_birth");
 
-                    b.Property<string>("Formats")
+                    b.Property<string>("InternationalFormats")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("formats");
@@ -48,15 +64,40 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("full_name");
 
+                    b.Property<string>("Height")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("height");
+
                     b.Property<string>("Href")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("href");
 
-                    b.Property<string>("TeamName")
+                    b.Property<string>("ImageSrc")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("team_name");
+                        .HasColumnName("image_src");
+
+                    b.Property<string>("InternationalTeamNames")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("international_team_names");
+
+                    b.Property<string>("PlayerName")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("name");
+
+                    b.Property<string>("PlayingRole")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("playing_role");
+
+                    b.Property<string>("TeamNames")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("team_names");
 
                     b.HasKey("Uuid");
 
@@ -75,7 +116,7 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("flag_url");
 
-                    b.Property<string>("Formats")
+                    b.Property<string>("InternationalFormats")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("formats");

@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-using CricketService.Data.Repositories.Interfaces;
+﻿using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
 using CricketService.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace CricketService.Api.Controllers
 {
@@ -17,6 +17,24 @@ namespace CricketService.Api.Controllers
             this.cricketTeamRepository = cricketTeamRepository;
         }
 
+        [HttpGet("team/{teamUuid}")]
+        public IActionResult GetTeamByUuid([FromRoute, Required] Guid teamUuid)
+        {
+            var team = cricketTeamRepository.GetTeamByUuid(teamUuid);
+
+            return Ok(team);
+        }
+
+        [HttpGet("teamDetails/all")]
+        public IActionResult GetAllTeamDetails()
+        {
+            var allTeamDetails = cricketTeamRepository.GetAllTeamDetails();
+
+            Response.Headers.Add("total-teams", allTeamDetails.Count().ToString());
+
+            return Ok(allTeamDetails);
+        }
+
         [HttpGet("teams/all")]
         public IActionResult GetAllTeams([FromQuery, Required] CricketFormat format)
         {
@@ -24,11 +42,11 @@ namespace CricketService.Api.Controllers
 
             if (format == CricketFormat.T20I)
             {
-                allTeams.AddRange(cricketTeamRepository.GetAllTeamNamesT20I());
+                allTeams.AddRange(cricketTeamRepository.GetAllTeamNames(format));
             }
             else if (format == CricketFormat.ODI)
             {
-                allTeams.AddRange(cricketTeamRepository.GetAllTeamNamesODI());
+                allTeams.AddRange(cricketTeamRepository.GetAllTeamNames(format));
             }
 
             Response.Headers.Add("total-teams", allTeams.Count().ToString());
@@ -36,27 +54,27 @@ namespace CricketService.Api.Controllers
             return Ok(allTeams);
         }
 
-        [HttpGet("teams/all/records")]
-        public ActionResult<IEnumerable<CricketTeamInfoResponse>> GetAllTeamRecords()
-        {
-            List<string> teamNames = new List<string>();
-            teamNames = cricketTeamRepository.GetAllTeamNamesODI()
-                .Concat(cricketTeamRepository.GetAllTeamNamesT20I()).Distinct().ToList();
+        //[HttpGet("teams/all/records")]
+        //public ActionResult<IEnumerable<CricketTeamInfoResponse>> GetAllTeamRecords()
+        //{
+        //    List<string> teamNames = cricketTeamRepository.GetAllTeamNames().ToList();
 
-            List<CricketTeamInfoResponse> teamRecords = new List<CricketTeamInfoResponse>();
+        //    List<CricketTeamInfoResponse> teamRecords = new List<CricketTeamInfoResponse>();
 
-            foreach (var teamName in teamNames)
-            {
-                var teamRecord = cricketTeamRepository.GetTeamRecordsByName(teamName, false);
+        //    foreach (var teamName in teamNames)
+        //    {
+        //        var teamRecord = cricketTeamRepository.GetTeamRecordsByName(teamName, false);
 
-                if (teamRecord != null)
-                {
-                    teamRecords.Add(teamRecord);
-                }
-            }
+        //        if (teamRecord != null)
+        //        {
+        //            teamRecords.Add(teamRecord);
+        //        }
+        //    }
 
-            return Ok(teamRecords);
-        }
+        //    Response.Headers.Add("total-international-teams", teamRecords.Count().ToString());
+
+        //    return Ok(teamRecords);
+        //}
 
         [HttpGet("teams/{teamName}/records")]
         public ActionResult<CricketTeamInfoResponse> GetAllTeamRecords([FromRoute, Required] string teamName)

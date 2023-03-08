@@ -1,6 +1,7 @@
+using CricketService.Data.Entities;
 using CricketService.Domain;
-using CricketService.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Newtonsoft.Json;
 
 namespace CricketService.Data.Contexts;
@@ -79,19 +80,37 @@ public class CricketServiceContext : DbContext
         modelBuilder.Entity<Entities.CricketTeamInfo>()
          .HasKey(e => e.Uuid);
 
-        modelBuilder.Entity<Entities.CricketTeamInfo>()
-         .Property(e => e.Formats)
+        modelBuilder.Entity<CricketTeamInfo>()
+         .Property(p => p.Formats)
          .HasConversion(
-            f => JsonConvert.SerializeObject(f.Select(x => x.ToString())),
-            f => JsonConvert.DeserializeObject<IEnumerable<CricketFormat>>(f)!);
+             v => string.Join(",", v),
+             v => v.Split(",", StringSplitOptions.None),
+             new ValueComparer<ICollection<string>>(
+                (c1, c2) => c1.SequenceEqual(c2),
+                c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
+                c => c.ToList()));
 
         modelBuilder.Entity<Entities.CricketPlayerInfo>()
           .HasKey(e => e.Uuid);
 
-        modelBuilder.Entity<Entities.CricketPlayerInfo>()
-         .Property(e => e.Formats)
+        modelBuilder.Entity<CricketPlayerInfo>()
+          .Property(p => p.InternationalTeamNames)
+          .HasConversion(
+              v => string.Join(",", v),
+              v => v.Split(",", StringSplitOptions.None),
+              new ValueComparer<ICollection<string>>(
+                 (c1, c2) => c1.SequenceEqual(c2),
+                 c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
+                 c => c.ToList()));
+
+        modelBuilder.Entity<CricketPlayerInfo>()
+         .Property(p => p.Formats)
          .HasConversion(
-            f => JsonConvert.SerializeObject(f.Select(x => x.ToString())),
-            f => JsonConvert.DeserializeObject<IEnumerable<CricketFormat>>(f)!);
+             v => string.Join(",", v),
+             v => v.Split(",", StringSplitOptions.None),
+             new ValueComparer<ICollection<string>>(
+                (c1, c2) => c1.SequenceEqual(c2),
+                c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
+                c => c.ToList()));
     }
 }

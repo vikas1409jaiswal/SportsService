@@ -13,7 +13,7 @@ public class CricketPlayerInfoResponse
         CareerDetailsInfo careerDetailsInfo,
         string? imageSrc)
     {
-        PlayerUuid= playerUuid;
+        PlayerUuid = playerUuid;
         FullName = fullName;
         DateOfBirth = dateOfBirth;
         TeamName = teamName;
@@ -129,7 +129,7 @@ public class BattingStatistics
             var strikeRate = (double)(Runs * 100) / BallsFaced;
             return strikeRate;
         }
-     }
+    }
 }
 
 public class BowlingStatistics

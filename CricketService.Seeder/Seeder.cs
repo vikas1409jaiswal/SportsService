@@ -12,8 +12,8 @@ namespace CricketService.Seeder
 
         public Seeder(ICricketMatchRepository repository, ILogger<Seeder> logger)
         {
-             this.logger = logger;
-             this.repository = repository;
+            this.logger = logger;
+            this.repository = repository;
         }
 
         public async Task RunSeeder(IConfiguration configs)

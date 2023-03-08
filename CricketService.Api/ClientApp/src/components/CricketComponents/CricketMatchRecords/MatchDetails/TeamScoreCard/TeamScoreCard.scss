@@ -1,41 +1,40 @@
 ﻿.team-scorecard {
-    display: grid;
-    grid-template-columns: 1fr;
-    border: 2px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 2px solid black;
 
-    .expandable-section-header {
+  .expandable-section-header {
+    h3 {
+      background-color: black;
+      color: white;
+      opacity: 0.5;
+    }
+  }
 
-        h3 {
-            background-color: black;
-            color: white;
-            opacity: 0.5;
-        }
+  tbody tr.total-score {
+    td:first-child {
+      background-color: black;
+      color: white;
+      opacity: 0.5;
+    }
+  }
+
+  .extra-batting-info {
+    margin: 5px;
+    padding: 10px;
+
+    .fall-of-wicket-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border: 2px solid black;
+      border-radius: 5px;
     }
 
-    tbody tr.total-score {
-        td:first-child {
-            background-color: black;
-            color: white;
-            opacity: 0.5;
-        }
+    .did-not-bat-details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 2px solid black;
+      border-radius: 5px;
     }
-
-    .extra-batting-info {
-        margin: 5px;
-        padding: 10px;
-
-        .fall-of-wicket-details {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            border: 2px solid black;
-            border-radius: 5px;
-        }
-
-        .did-not-bat-details {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            border: 2px solid black;
-            border-radius: 5px;
-        }
-    }
+  }
 }

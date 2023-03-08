@@ -35,6 +35,7 @@ namespace CricketService.Seeder
             {
                 logging.ClearProviders();
                 logging.AddConsole();
+                logging.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Warning);
             });
 
             return config;

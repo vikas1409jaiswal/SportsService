@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using CricketService.Api.Filters;
+using CricketService.Api.Handlers;
 using CricketService.Data.Extensions;
 using CricketService.Data.Options.Configs;
 using CricketService.Data.Repositories;
@@ -21,13 +22,15 @@ namespace CricketService.Api
             services.AddScoped<ICricketPlayerRepository, CricketPlayerRepository>();
             services.AddScoped<ICricketMatchRepository, CricketMatchRepository>();
             services.AddScoped<ICricketTeamRepository, CricketTeamRepository>();
-            services.AddAuthorization();
             services.AddCricketServiceDataLayer(Configuration);
 
-            services.AddControllersWithViews().AddJsonOptions(options =>
+            services.AddControllers(options =>
             {
-                options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+                options.Filters.Add(new ModelStateExceptionFilter(new ValidationErrorHandler()));
             });
+
+            services.AddSingleton<ValidationErrorHandler>()
+                .AddScoped<ModelStateExceptionFilter>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -39,11 +42,10 @@ namespace CricketService.Api
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
-
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

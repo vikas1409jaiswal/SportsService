@@ -16,10 +16,10 @@ public class Migrators
 
     public async Task RunAsync()
     {
-       var pendingMigrations = await context.GetPendingMigrationsAsync();
-       logger.LogInformation("{PendingMigrationsCount} pending migrations found", pendingMigrations.Count());
+        var pendingMigrations = await context.GetPendingMigrationsAsync();
+        logger.LogInformation("{PendingMigrationsCount} pending migrations found", pendingMigrations.Count());
 
-       if (pendingMigrations.Any())
+        if (pendingMigrations.Any())
         {
             logger.LogInformation("Start running pending migrations");
             await context.MigrateAsync();

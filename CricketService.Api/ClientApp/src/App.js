@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import AppRoutes from './AppRoutes';
-import { Layout } from './components/Layout';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import React, { Component } from "react";
+import { Route, Routes } from "react-router-dom";
+import AppRoutes from "./AppRoutes";
+import { Layout } from "./components/Layout";
+import { QueryClient, QueryClientProvider } from "react-query";
 
-import './App.scss';
+import "./App.scss";
 
 const client = new QueryClient();
 

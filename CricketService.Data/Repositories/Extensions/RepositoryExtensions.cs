@@ -10,40 +10,40 @@ namespace CricketService.Data.Repositories.Extensions
     {
         public static async Task<int> SaveTeamInfo(this TeamScoreDetails teamScoreDetails, CricketServiceContext context, CricketFormat format)
         {
-                var isExist = context.CricketTeamInfo.Any(x => x.TeamName == teamScoreDetails.TeamName);
+            var isExist = context.CricketTeamInfo.Any(x => x.TeamName == teamScoreDetails.TeamName);
 
-                if (isExist)
+            if (isExist)
+            {
+                var t = context.CricketTeamInfo.Single(x => x.TeamName == teamScoreDetails.TeamName);
+
+                if (!t.Formats.Contains(format.ToString()))
                 {
-                    var t = context.CricketTeamInfo.Single(x => x.TeamName == teamScoreDetails.TeamName);
-
-                    if (!t.Formats.Contains(format))
-                    {
-                        t.Formats = t.Formats.Concat(new List<CricketFormat> { format });
-                        context.CricketTeamInfo.Update(t);
-                        await context.SaveChangesAsync();
-                    }
-
-                    if (t.FlagUrl == string.Empty)
-                    {
-                        t.FlagUrl = GetDataFromFile(teamScoreDetails.TeamName).Flags.Svg;
-                        context.CricketTeamInfo.Update(t);
-                        await context.SaveChangesAsync();
-                    }
-
-                    return 0;
-                }
-                else
-                {
-                    context.CricketTeamInfo.Add(new Entities.CricketTeamInfo
-                    {
-                        TeamName = teamScoreDetails.TeamName,
-                        Formats = new List<CricketFormat>() { format },
-                    });
-
+                    t.Formats = t.Formats.Concat(new List<string> { format.ToString() }).ToList();
+                    context.CricketTeamInfo.Update(t);
                     await context.SaveChangesAsync();
-
-                    return 1;
                 }
+
+                if (t.FlagUrl == string.Empty)
+                {
+                    t.FlagUrl = GetCountriesDataFromFile(teamScoreDetails.TeamName).Flags.Svg;
+                    context.CricketTeamInfo.Update(t);
+                    await context.SaveChangesAsync();
+                }
+
+                return 0;
+            }
+            else
+            {
+                context.CricketTeamInfo.Add(new Entities.CricketTeamInfo
+                {
+                    TeamName = teamScoreDetails.TeamName,
+                    Formats = new List<string>() { format.ToString() },
+                });
+
+                await context.SaveChangesAsync();
+
+                return 1;
+            }
         }
 
         public static async Task<int> SavePlayersForTeam(this TeamScoreDetails teamScoreDetails, CricketServiceContext context, CricketFormat format)
@@ -52,28 +52,61 @@ namespace CricketService.Data.Repositories.Extensions
 
             foreach (var player in teamScoreDetails.Playing11)
             {
-                var isExist = context.CricketPlayerInfo.Any(x => x.TeamName == teamScoreDetails.TeamName && player.Name == x.FullName);
+                var isExist = context.CricketPlayerInfo.Any(x => x.Href == player.Href);
 
                 if (isExist)
                 {
-                   var p = context.CricketPlayerInfo.Single(x => x.TeamName == teamScoreDetails.TeamName && player.Name == x.FullName);
+                    var players = context.CricketPlayerInfo.Where(x => x.PlayerName == player.Name && x.Href == player.Href).ToList();
 
-                   if (!p.Formats.Contains(format))
+                    foreach (var p in players)
                     {
-                        p.Formats = p.Formats.Concat(new List<CricketFormat> { format });
-                        context.CricketPlayerInfo.Update(p);
-                        await context.SaveChangesAsync();
+                        if (!p.Formats.Contains(format.ToString()))
+                        {
+                            p.Formats = p.Formats.Concat(new List<string> { format.ToString() }).ToList();
+                            context.CricketPlayerInfo.Update(p);
+                            await context.SaveChangesAsync();
+                        }
+
+                        if (!p.InternationalTeamNames.Contains(teamScoreDetails.TeamName))
+                        {
+                            p.InternationalTeamNames = p.InternationalTeamNames.Concat(new List<string> { teamScoreDetails.TeamName }).ToList();
+                            context.CricketPlayerInfo.Update(p);
+                            await context.SaveChangesAsync();
+                        }
                     }
                 }
                 else
                 {
+                    var playerInfo = GetPlayersDataFromFile(player.Href);
+                    var birthInfos = playerInfo.Birth.Split(',');
+                    string monthStr = string.Empty;
+                    string dateStr = string.Empty;
+                    string yearStr = string.Empty;
+
+                    if (birthInfos.Any() && birthInfos[0].Length > 0)
+                    {
+                        monthStr = string.Join(string.Empty, birthInfos[0].Take(3));
+                        dateStr = birthInfos[0].Split(" ")[1];
+                        yearStr = birthInfos[1];
+                    }
+
                     context.CricketPlayerInfo.Add(new Entities.CricketPlayerInfo
                     {
+                        Uuid = playerInfo.PlayerUuid,
+                        PlayerName = player.Name.Trim().Replace("(c)", string.Empty).Replace("†", string.Empty),
                         FullName = player.Name,
                         Href = player.Href,
-                        TeamName = teamScoreDetails.TeamName,
-                        Formats = new List<CricketFormat>() { format },
-                    });
+                        InternationalTeamNames = new List<string>() { teamScoreDetails.TeamName },
+                        Formats = new List<string>() { format.ToString() },
+                        BattingStyle = playerInfo.BattingStyle,
+                        BowlingStyle = playerInfo.BowlingStyle,
+                        PlayingRole = playerInfo.PlayingRole,
+                        Height = playerInfo.Height,
+                        ImageSrc = playerInfo.ImageSrc,
+                        DateOfBirth = $"{dateStr} {monthStr} {yearStr}",
+                        BirthPlace = string.Join(",", birthInfos.Skip(2).TakeLast(3)),
+                        TeamNames = string.Join(", ", playerInfo.TeamNames),
+                    }); ;
 
                     count = count + await context.SaveChangesAsync();
                 }
@@ -89,7 +122,7 @@ namespace CricketService.Data.Repositories.Extensions
                           .ToList()
                           .Where(x => x is not null)
                           .SelectMany(x => x)
-                          .Select(x => x.Name.Trim())
+                          .Select(x => x.Name.Trim().Replace("(c)", string.Empty).Replace("†", string.Empty))
                           .ToList()
                           .Distinct();
 
@@ -271,14 +304,24 @@ namespace CricketService.Data.Repositories.Extensions
                    (int)playerBowlingDetails.Sum(x => x.Fours)!) : null!);
         }
 
-        public static CountriesData GetDataFromFile(string teamName)
+        public static CountriesData GetCountriesDataFromFile(string teamName)
         {
-            List<CountriesData> countriesData = new List<CountriesData>();
+            List<CountriesData> countriesData = new();
 
-            StreamReader r = new StreamReader(@"D:\MyYoutubeRepos\CricketService\CricketService\CricketService.Data\StaticData\CountriesData.json");
+            StreamReader r = new StreamReader(@"D:\MyYoutubeRepos\repo\CricketService\CricketService.Data\StaticData\CountriesData.json");
             countriesData = JsonConvert.DeserializeObject<List<CountriesData>>(r.ReadToEnd())!;
 
             return countriesData.FirstOrDefault(x => x.Name!.Common == teamName, new CountriesData(new Name(teamName), new Flags("url_not_found", "url_not_found")));
+        }
+
+        public static PlayersFileData GetPlayersDataFromFile(string href)
+        {
+            List<PlayersFileData> playersData = new();
+
+            StreamReader r = new StreamReader(@"D:\MyYoutubeRepos\repo\CricketService\CricketService.Data\StaticData\Player_Data_BackUp\CricketPlayers.json");
+            playersData = JsonConvert.DeserializeObject<List<PlayersFileData>>(r.ReadToEnd())!;
+
+            return playersData.FirstOrDefault(x => x.Href == href)!;
         }
     }
 }

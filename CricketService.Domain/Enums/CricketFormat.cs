@@ -4,7 +4,7 @@ namespace CricketService.Domain.Enums
 {
     public enum CricketFormat : byte
     {
-        [EnumMember(Value="T20I")]
+        [EnumMember(Value = "T20I")]
         T20I,
         [EnumMember(Value = "ODI")]
         ODI,
