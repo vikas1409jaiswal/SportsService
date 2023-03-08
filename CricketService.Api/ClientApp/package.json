@@ -59,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "ajv": "^8.11.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.35.0",
+    "eslint-auto-fix": "^1.0.4",
     "eslint-config-react-app": "^7.0.1",
     "eslint-config-standard-with-typescript": "^34.0.0",
     "eslint-plugin-flowtype": "^8.0.3",
@@ -70,6 +70,7 @@
     "eslint-plugin-react": "^7.32.2",
     "jquery": "^3.6.3",
     "nan": "^2.16.0",
+    "prettier": "2.8.4",
     "typescript": "^4.9.5"
   },
   "overrides": {
@@ -84,7 +85,8 @@
     "build": "react-scripts build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src/"
+    "lint": "eslint ./src/",
+    "lintfix": "npx prettier --write ."
   },
   "eslintConfig": {
     "extends": [

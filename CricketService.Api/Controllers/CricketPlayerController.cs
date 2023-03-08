@@ -1,8 +1,7 @@
-using System.ComponentModel.DataAnnotations;
 using CricketService.Data.Repositories.Interfaces;
-using CricketService.Domain;
 using CricketService.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace CricketService.Api.Controllers;
 [ApiController]
@@ -20,34 +19,34 @@ public class CricketPlayerController : Controller
         this.cricketTeamRepository = cricketTeamRepository;
     }
 
-    [HttpGet("t20IMatches/players/all")]
-    public IActionResult GetAllPlayersT20I()
+    [HttpGet("player/{playerUuid}")]
+    public IActionResult GetTeamByUuid([FromRoute, Required] Guid playerUuid)
     {
-        var allTeamsName = cricketTeamRepository.GetAllTeamNamesT20I();
+        var player = cricketPlayerRepository.GetPlayerByUuid(playerUuid);
 
-        Dictionary<string, IEnumerable<string>> allPlayers = new Dictionary<string, IEnumerable<string>>();
+        return Ok(player);
+    }
 
-        foreach (var teamName in allTeamsName)
-        {
-            var playersByTeam = cricketPlayerRepository.GetPlayersByTeamNameT20I(teamName);
-            allPlayers.Add(teamName, playersByTeam);
-        }
+    [HttpGet("players/all")]
+    public IActionResult GetAllPlayers()
+    {
+        var allPlayers = cricketPlayerRepository.GetAllPlayers();
 
-        Response.Headers.Add("total-teams-length", allTeamsName.Count().ToString());
+        Response.Headers.Add("total-players", allPlayers.Count().ToString());
 
         return Ok(allPlayers);
     }
 
-    [HttpGet("odiMatches/players/all")]
-    public IActionResult GetAllPlayersODI()
+    [HttpGet("players")]
+    public IActionResult GetAllPlayersName([FromQuery, Required] CricketFormat format)
     {
-        var allTeamsName = cricketTeamRepository.GetAllTeamNamesODI();
+        var allTeamsName = cricketTeamRepository.GetAllTeamNames(format);
 
-        Dictionary<string, IEnumerable<string>> allPlayers = new Dictionary<string, IEnumerable<string>>();
+        Dictionary<string, IEnumerable<string>> allPlayers = new();
 
         foreach (var teamName in allTeamsName)
         {
-            var playersByTeam = cricketPlayerRepository.GetPlayersByTeamNameODI(teamName);
+            var playersByTeam = cricketPlayerRepository.GetPlayersByTeamName(teamName, format);
             allPlayers.Add(teamName, playersByTeam);
         }
 
@@ -59,16 +58,16 @@ public class CricketPlayerController : Controller
     [HttpGet("team/{teamName}/players")]
     public IActionResult GetAllPlayersByTeamName([FromRoute, Required] string teamName, [FromQuery, Required] CricketFormat format)
     {
-        List<string> playersByTeam = new List<string>();
+        List<string> playersByTeam = new();
 
         if (format == CricketFormat.T20I)
         {
-           playersByTeam.AddRange(cricketPlayerRepository.GetPlayersByTeamNameT20I(teamName));
+            playersByTeam.AddRange(cricketPlayerRepository.GetPlayersByTeamName(teamName, format));
         }
 
         if (format == CricketFormat.ODI)
         {
-           playersByTeam.AddRange(cricketPlayerRepository.GetPlayersByTeamNameODI(teamName));
+            playersByTeam.AddRange(cricketPlayerRepository.GetPlayersByTeamName(teamName, format));
         }
 
         var playerDetails = new List<object>();

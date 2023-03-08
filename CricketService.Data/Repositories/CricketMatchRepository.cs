@@ -63,7 +63,7 @@ namespace CricketService.Data.Repositories
             }
             catch (Exception ex)
             {
-               Console.WriteLine("xxxxxxxxxxx", ex.Message);
+                Console.WriteLine("xxxxxxxxxxx", ex.Message);
             }
 
             return match?.ToDomain()!;

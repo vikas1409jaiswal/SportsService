@@ -1,7 +1,11 @@
-﻿namespace CricketService.Domain
+﻿using CricketService.Domain.Common;
+
+namespace CricketService.Domain
 {
     public class CricketMatchInfo
     {
+        private const string Source = "CricketService.Domain.CricketMatchInfo";
+
         public CricketMatchInfo(
           string season,
           string series,
@@ -21,17 +25,17 @@
           string[] formatDebut,
           string[] internationalDebut)
         {
-            Season = season;
-            Series = series;
+            Season = ModelValidationPrecondition.IsNotNullOrWhitespace(season, nameof(season), Source);
+            Series = ModelValidationPrecondition.IsNotNullOrWhitespace(series, nameof(series), Source);
             PlayerOfTheMatch = playerOfTheMatch;
-            MatchNo = matchNo;
+            MatchNo = ModelValidationPrecondition.IsNotNullOrWhitespace(matchNo, nameof(matchNo), Source);
             MatchDays = matchDays;
-            MatchTitle = matchTitle;
-            Venue = venue;
-            MatchDate = matchDate;
+            MatchTitle = ModelValidationPrecondition.IsNotNullOrWhitespace(matchTitle, nameof(matchTitle), Source);
+            Venue = ModelValidationPrecondition.IsNotNullOrWhitespace(venue, nameof(venue), Source);
+            MatchDate = ModelValidationPrecondition.IsNotNullOrWhitespace(matchDate, nameof(matchDate), Source);
             TossWinner = tossWinner;
             TossDecision = tossDecision;
-            Result = result;
+            Result = ModelValidationPrecondition.IsNotNullOrWhitespace(result, nameof(result), Source);
             TvUmpire = tvUmpire;
             MatchReferee = matchReferee;
             ReserveUmpire = reserveUmpire;
@@ -42,31 +46,31 @@
 
         public string Season { get; set; }
 
-        public string Series { get; set; } = string.Empty;
+        public string Series { get; set; }
 
-        public string PlayerOfTheMatch { get; set; } = string.Empty;
+        public string PlayerOfTheMatch { get; set; }
 
-        public string MatchNo { get; set; } = string.Empty;
+        public string MatchNo { get; set; }
 
-        public string MatchDays { get; set; } = string.Empty;
+        public string MatchDays { get; set; }
 
-        public string MatchTitle { get; set; } = string.Empty;
+        public string MatchTitle { get; set; }
 
-        public string Venue { get; set; } = string.Empty;
+        public string Venue { get; set; }
 
-        public string MatchDate { get; set; } = string.Empty;
+        public string MatchDate { get; set; }
 
-        public string TossWinner { get; set; } = string.Empty;
+        public string TossWinner { get; set; }
 
-        public string TossDecision { get; set; } = string.Empty;
+        public string TossDecision { get; set; }
 
-        public string Result { get; set; } = string.Empty;
+        public string Result { get; set; }
 
-        public string TvUmpire { get; set; } = string.Empty;
+        public string TvUmpire { get; set; }
 
-        public string MatchReferee { get; set; } = string.Empty;
+        public string MatchReferee { get; set; }
 
-        public string ReserveUmpire { get; set; } = string.Empty;
+        public string ReserveUmpire { get; set; }
 
         public string[] Umpires { get; set; }
 

@@ -1,5 +1,4 @@
 ﻿using CricketService.Data.Extensions;
-using CricketService.Migrator;
 using CricketSevice.Migrations;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

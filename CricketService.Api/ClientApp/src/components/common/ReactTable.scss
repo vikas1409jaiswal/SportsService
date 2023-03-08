@@ -1,182 +1,184 @@
 ﻿.react-table {
-    border: 2px solid red;
-    padding: 5px;
+  border: 2px solid red;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  div.react-table-selection-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    padding: 10px;
+
+    div.button-panel {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      button {
+        margin: 20px;
+        padding: 10px;
+        height: 40px;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+      }
+    }
+
+    div.global-search-filter {
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+
+  div.react-table-container {
     display: grid;
     grid-template-columns: 1fr;
 
-    div.react-table-selection-panel {
+    div.table-preceder-panel {
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+
+      p {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 20fr 1fr;
+        border: 1px solid black;
+        padding: 10px 20px;
+
+        .column-setting-panel {
+          position: absolute;
+          width: 20%;
+          margin-left: 71%;
+          margin-top: 2%;
+          z-index: 2;
+          border: 2px solid black;
+
+          div {
+            margin: 20px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    table {
+      display: inline-block;
+      border-spacing: 0;
+      border: 1px solid black;
+      width: 99%;
+      margin: 10px;
+
+      thead,
+      tbody,
+      tfoot {
         margin: 10px;
-        padding: 10px;
+        border: 2px solid red;
 
-        div.button-panel {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-
-            button {
-                margin: 20px;
-                padding: 10px;
-                height: 40px;
-                width: 200px;
-                border: 2px solid black;
-                border-radius: 10px;
-                text-align: center;
-            }
+        th,
+        td {
+          padding: 10px;
         }
+      }
 
-        div.global-search-filter {
-            margin: 10px;
-            padding: 10px;
+      tfoot {
+        th {
+          background-color: orange;
+          color: black;
         }
-    }
+      }
 
-    div.react-table-container {
-        display: grid;
-        grid-template-columns: 1fr;
-
-        div.table-preceder-panel {
-            margin: 10px;
-            padding: 10px;
-            position: relative;
-
-            p {
-                display: grid;
-                grid-template-columns: 20fr 1fr;
-                border: 1px solid black;
-                padding: 10px 20px;
-
-
-                .column-setting-panel {
-                    position: absolute;
-                    width: 20%;
-                    margin-left: 71%;
-                    margin-top: 2%;
-                    z-index: 2;
-                    border: 2px solid black;
-
-                    div {
-                        margin: 20px;
-                        padding: 10px;
-                    }
-                }
-            }
+      thead th {
+        .column-name-header {
+          background-color: greenyellow;
+          color: black;
+          border: 2px solid black;
         }
+      }
 
-        table {
-            display: inline-block;
-            border-spacing: 0;
-            border: 1px solid black;
-            width: 99%;
-            margin: 10px;
+      thead th .column-filter {
+        margin: 10px;
+        border: 2px solid red;
+        width: 100px;
 
-            thead, tbody, tfoot {
-                margin: 10px;
-                border: 2px solid red;
+        .number-range-cf {
+          display: grid;
+          grid-template-rows: 1fr;
+          color: black;
 
-                th, td {
-                    padding: 10px;
-                }
-            }
-
-            tfoot {
-                th {
-                    background-color: orange;
-                    color: black;
-                }
-            }
-
-            thead th {
-                .column-name-header {
-                    background-color: greenyellow;
-                    color: black;
-                    border: 2px solid black;
-                }
-            }
-
-            thead th .column-filter {
-                margin: 10px;
-                border: 2px solid red;
-                width: 100px;
-
-                .number-range-cf {
-                    display: grid;
-                    grid-template-rows: 1fr;
-                    color: black;
-
-
-                    input {
-                        border: 2px solid black;
-                        width: 100%;
-                    }
-                }
-            }
-
-            tr {
-                :last-child {
-                    td {
-                        border-bottom: 0;
-                    }
-                }
-            }
-
-            th {
-                background-color: honeydew;
-            }
-
-            th,
-            td {
-                margin: 0;
-                padding: 0.5rem;
-                border-bottom: 1px solid black;
-                border-right: 1px solid black;
-                position: relative;
-
-                :last-child {
-                    border-right: 0;
-                }
-            }
-        }
-
-        .resizer {
-            display: inline-block;
-            background: blue;
-            width: 10px;
-            height: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transform: translateX(50%);
-            z-index: 1;
-            touch-action: none;
-
-            &.isResizing {
-                background: red;
-            }
-        }
-    }
-
-    div.react-pagination-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 8fr 4fr 2fr;
-
-        button {
-            margin: 20px;
-            padding: 10px;
-            height: 40px;
-            width: 40px;
+          input {
             border: 2px solid black;
-            border-radius: 10px;
-            text-align: center;
+            width: 100%;
+          }
         }
+      }
 
-        span, select {
-            margin: 20px;
-            padding: 5px;
-            height: 40px;
-            border: 2px solid black;
-            border-radius: 10px;
-            text-align: center;
+      tr {
+        :last-child {
+          td {
+            border-bottom: 0;
+          }
         }
+      }
+
+      th {
+        background-color: honeydew;
+      }
+
+      th,
+      td {
+        margin: 0;
+        padding: 0.5rem;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        position: relative;
+
+        :last-child {
+          border-right: 0;
+        }
+      }
     }
+
+    .resizer {
+      display: inline-block;
+      background: blue;
+      width: 10px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translateX(50%);
+      z-index: 1;
+      touch-action: none;
+
+      &.isResizing {
+        background: red;
+      }
+    }
+  }
+
+  div.react-pagination-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 8fr 4fr 2fr;
+
+    button {
+      margin: 20px;
+      padding: 10px;
+      height: 40px;
+      width: 40px;
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    span,
+    select {
+      margin: 20px;
+      padding: 5px;
+      height: 40px;
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: center;
+    }
+  }
 }

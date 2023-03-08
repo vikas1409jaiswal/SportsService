@@ -1,16 +1,15 @@
 ﻿.format-selection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-    background-color: aliceblue;
-    border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  background-color: aliceblue;
+  border: 2px solid black;
 
-    span {
-        color: white;
-        background-color: black;
-        margin: 10px;
-        padding: 10px 20px;
-        opacity: 0.5;
-
-    }
+  span {
+    color: white;
+    background-color: black;
+    margin: 10px;
+    padding: 10px 20px;
+    opacity: 0.5;
+  }
 }
