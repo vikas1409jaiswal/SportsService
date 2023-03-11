@@ -32,9 +32,21 @@ namespace CricketService.Data.Repositories
 
         public IEnumerable<string> GetAllTeamNames(CricketFormat format)
         {
-            var teams = context.CricketTeamInfo.AsEnumerable()
-                  .Where(x => x.Formats.Contains(format.ToString()))
-                  .Select(x => x.TeamName);
+            List<string> teams = new();
+
+            if (format == CricketFormat.All)
+            {
+                teams = context.CricketTeamInfo.AsEnumerable()
+                  .Select(x => x.TeamName)
+                  .OrderBy(x => x).ToList();
+            }
+            else
+            {
+                teams = context.CricketTeamInfo.AsEnumerable()
+                 .Where(x => x.Formats.Contains(format.ToString()))
+                 .Select(x => x.TeamName)
+                 .OrderBy(x => x).ToList();
+            }
 
             return teams;
         }

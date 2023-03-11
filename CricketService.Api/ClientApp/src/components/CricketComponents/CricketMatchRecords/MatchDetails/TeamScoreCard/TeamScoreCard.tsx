@@ -1,15 +1,18 @@
 ﻿import React, { useEffect, useState, useContext } from "react";
+import { teamData } from "../../../../../data/TeamData";
 import { ExpandableSection } from "../../../../common/ExpandableSection";
-import { TeamScoreBoardDetails } from "./../../Models/Interface";
+import { CricketTeam, TeamScoreBoardDetails } from "./../../Models/Interface";
 
 import "./TeamScoreCard.scss";
 
 export interface TeamScoreCardProps {
+  teamData: CricketTeam;
   teamScoreCard: TeamScoreBoardDetails;
   opponent: string;
 }
 
 export const TeamScoreCard: React.FunctionComponent<TeamScoreCardProps> = ({
+  teamData,
   teamScoreCard,
   opponent,
 }) => {
@@ -19,7 +22,10 @@ export const TeamScoreCard: React.FunctionComponent<TeamScoreCardProps> = ({
 
   return (
     <div className="team-scorecard">
-      <ExpandableSection title={`${teamScoreCard?.teamName} Batting Scorecard`}>
+      <ExpandableSection
+        title={`${teamScoreCard?.teamName} Batting Scorecard`}
+        isExpanded={true}
+      >
         <table>
           <thead>
             <tr>
@@ -51,9 +57,11 @@ export const TeamScoreCard: React.FunctionComponent<TeamScoreCardProps> = ({
                         : "pink",
                   }}
                 >
-                  {bsc.playerName.name} <h6>{bsc.outStatus}</h6>
+                  <b>{bsc.playerName.name}</b> <h6>{bsc.outStatus}</h6>
                 </td>
-                <td>{bsc.runsScored}</td>
+                <td>
+                  <b>{bsc.runsScored}</b>
+                </td>
                 <td>{bsc.ballsFaced}</td>
                 <td>{bsc.minutes}</td>
                 <td>{bsc.fours}</td>
@@ -61,17 +69,28 @@ export const TeamScoreCard: React.FunctionComponent<TeamScoreCardProps> = ({
                 <td>{bsc.strikeRate?.toPrecision(5)}</td>
               </tr>
             ))}
+            {teamScoreCard?.didNotBat.map((d) => (
+              <tr>
+                <td>
+                  <b>{d.name}</b>
+                  <h6>did not bat</h6>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            ))}
             <tr className="extras-row">
               <td>Extras</td>
               <td>{teamScoreCard?.totalInningDetails.extras.totalExtras}</td>
-              <td colSpan={5}>{teamScoreCard?.extras}</td>
+              <td colSpan={3}>{teamScoreCard?.extras}</td>
             </tr>
-            <tr
-              className="total-score"
-              style={{ backgroundColor: "yellowgreen" }}
-            >
+            <tr className="total-score">
               <td>Total</td>
-              <td colSpan={6}>
+              <td>
                 <b>{totalScoreStr}</b>
               </td>
             </tr>
@@ -104,7 +123,10 @@ export const TeamScoreCard: React.FunctionComponent<TeamScoreCardProps> = ({
           )}
         </div>
       </ExpandableSection>
-      <ExpandableSection title={`${opponent} Bowling Scorecard`}>
+      <ExpandableSection
+        title={`${opponent} Bowling Scorecard`}
+        isExpanded={true}
+      >
         <table>
           <thead>
             <tr>

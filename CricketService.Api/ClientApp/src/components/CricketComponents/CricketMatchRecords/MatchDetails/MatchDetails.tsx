@@ -1,14 +1,16 @@
 ﻿import React from "react";
-import { CricketMatch } from "../Models/Interface";
+import { CricketMatch, CricketTeam } from "../Models/Interface";
 import { TeamScoreCard } from "./TeamScoreCard/TeamScoreCard";
 
 import "./MatchDetails.scss";
 
 export interface MatchDetailsProps {
+  teamData: CricketTeam[];
   matchData: CricketMatch;
 }
 
 export const MatchDetails: React.FunctionComponent<MatchDetailsProps> = ({
+  teamData,
   matchData,
 }) => {
   const downloadJsonData = () => {
@@ -16,23 +18,17 @@ export const MatchDetails: React.FunctionComponent<MatchDetailsProps> = ({
       .replace(" ", "_")
       .replace(" ", "_")}.json`;
 
-    // Create a blob containing the data as JSON
     const blob = new Blob([JSON.stringify(matchData, null, 2)], {
       type: "application/json",
     });
 
-    // Create a URL for the blob
     const url = URL.createObjectURL(blob);
 
-    // Create an <a> element and set its href and download attributes
     const link = document.createElement("a");
     link.href = url;
     link.download = filepath;
-
-    // Programmatically click the link to trigger the download
     link.click();
 
-    // Release the URL object
     URL.revokeObjectURL(url);
   };
 
@@ -89,10 +85,10 @@ export const MatchDetails: React.FunctionComponent<MatchDetailsProps> = ({
           </tr>
           <tr>
             <td>
-              {matchData?.team2.teamName} {matchData?.team2.playing11.length}
+              {matchData?.team2.teamName} {matchData?.team2.playing11?.length}
             </td>
             <td>
-              {matchData?.team2.playing11.map((u) => (
+              {matchData?.team2.playing11?.map((u) => (
                 <p>{u.name}</p>
               ))}
             </td>
@@ -137,6 +133,11 @@ export const MatchDetails: React.FunctionComponent<MatchDetailsProps> = ({
         <div className="first-inning-scorecard">
           <h1>First Inning</h1>
           <TeamScoreCard
+            teamData={
+              teamData.find(
+                (x) => x.teamName === matchData?.team1.teamName
+              ) as CricketTeam
+            }
             teamScoreCard={matchData?.team1}
             opponent={matchData?.team2.teamName}
           />
@@ -144,6 +145,11 @@ export const MatchDetails: React.FunctionComponent<MatchDetailsProps> = ({
         <div className="second-inning-scorecard">
           <h1>Second Inning</h1>
           <TeamScoreCard
+            teamData={
+              teamData.find(
+                (x) => x.teamName === matchData?.team2.teamName
+              ) as CricketTeam
+            }
             teamScoreCard={matchData?.team2}
             opponent={matchData?.team1.teamName}
           />

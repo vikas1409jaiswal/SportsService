@@ -32,6 +32,7 @@ export interface CricketMatchesBySeason {
 }
 
 export interface CricketMatch {
+  matchUuid: string;
   season: string;
   series: string;
   playerOfTheMatch: string;
@@ -237,6 +238,7 @@ export const useCricketMatches = (url: string): CricketMatch => {
   }
 
   const cricketMatch: CricketMatch = {
+    matchUuid: "",
     season,
     series,
     playerOfTheMatch,
@@ -510,6 +512,7 @@ export const useCricketMatchesBySeasonDetails = (
     }
 
     const cricketMatch: CricketMatch = {
+      matchUuid: "",
       season,
       series,
       playerOfTheMatch,

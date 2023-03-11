@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
-import { ReactTable } from "../../../common/ReactTable";
+import { ReactTable, tableOptions } from "../../../common/ReactTable";
 import { Cell } from "react-table";
-import { CricketMatch } from "../Models/Interface";
+import { CricketMatch, CricketTeam } from "../Models/Interface";
 import {
   ReactSlidingSidePanel,
   SidePanelType,
@@ -11,12 +11,14 @@ import { MatchDetails } from "../MatchDetails/MatchDetails";
 import "./MatchRecordsTable.scss";
 
 export interface MatchRecordsTableProps {
+  isLoading: boolean;
+  teamData: CricketTeam[];
   matchData: CricketMatch[];
 }
 
 export const MatchRecordsTable: React.FunctionComponent<
   MatchRecordsTableProps
-> = ({ matchData }) => {
+> = ({ isLoading, teamData, matchData }) => {
   const columns = useMemo(
     () => [
       {
@@ -67,12 +69,20 @@ export const MatchRecordsTable: React.FunctionComponent<
   const [isOpenSidePanel, toggleSideOpenPanel] = useState(false);
   const [selectedMatchUuid, setSelectedmatchUuid] = useState("");
 
+  const currentMatchData = matchData.find(
+    (m) => m.matchUuid === selectedMatchUuid
+  ) as CricketMatch;
+
   return (
     <ReactTable
       className={"t20-match-records"}
       data={matchData}
       columns={columns}
       perPages={[10, 25, 50, 100]}
+      options={{
+        ...tableOptions,
+        isRowSelect: false,
+      }}
       children={
         <ReactSlidingSidePanel
           isOpen={isOpenSidePanel}
@@ -81,11 +91,12 @@ export const MatchRecordsTable: React.FunctionComponent<
           panelWidth={100}
           children={
             <MatchDetails
-              matchData={
-                matchData.find(
-                  (m) => m.matchUuid === selectedMatchUuid
-                ) as CricketMatch
-              }
+              teamData={teamData.filter(
+                (t) =>
+                  t.teamName === currentMatchData?.team1.teamName ||
+                  t.teamName === currentMatchData?.team2.teamName
+              )}
+              matchData={currentMatchData}
             />
           }
         />
@@ -94,6 +105,7 @@ export const MatchRecordsTable: React.FunctionComponent<
         setSelectedmatchUuid(r.original.matchUuid);
         toggleSideOpenPanel(!isOpenSidePanel);
       }}
+      isLoading={isLoading}
     />
   );
 };

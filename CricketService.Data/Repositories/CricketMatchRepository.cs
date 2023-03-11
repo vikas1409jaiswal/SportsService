@@ -23,9 +23,10 @@ namespace CricketService.Data.Repositories
 
         public IEnumerable<CricketMatchInfoResponse> GetAllMatchesT20I()
         {
-            logger.LogInformation($"Fetching details for all matches.");
+            logger.LogInformation($"Fetching details for all T20I matches.");
 
-            var matchesList = context.T20ICricketMatchInfo.AsEnumerable();
+            var matchesList = context.T20ICricketMatchInfo.AsEnumerable()
+                .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty)));
 
             logger.LogInformation($"{matchesList.Count()} matches found.");
 
@@ -34,9 +35,10 @@ namespace CricketService.Data.Repositories
 
         public IEnumerable<CricketMatchInfoResponse> GetAllMatchesODI()
         {
-            logger.LogInformation($"Fetching details for all matches.");
+            logger.LogInformation($"Fetching details for all ODI matches.");
 
-            var matchesList = context.ODICricketMatchInfo.AsEnumerable();
+            var matchesList = context.ODICricketMatchInfo.AsEnumerable()
+                .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty)));
 
             logger.LogInformation($"{matchesList.Count()} matches found.");
 

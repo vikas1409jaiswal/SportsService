@@ -1,41 +1,22 @@
-import axios, { AxiosResponse } from "axios";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { CricketFormat } from "../CricketMatchRecords/Models/Interface";
 import { ODIRecords } from "./ODIRecords/ODIRecords";
 import { T20Records } from "./T20Records/T20Records";
 import { CricketTeamData } from "./Models/Interface";
+import { useTeamRecords } from "./Hooks/useTeamRecords";
 
 import "./CricketTeamRecords.scss";
-import { useQuery } from "react-query";
-
-const fetchAllTeams = (): Promise<AxiosResponse<CricketTeamData[]>> => {
-  return axios.get(`http://localhost:5104/cricketteam/teams/all/records`);
-};
-
-export const useTeamRecords = () => {
-  const { isLoading, data } = useQuery(
-    ["cricket-team"],
-    () => fetchAllTeams(),
-    { cacheTime: 60 * 60 * 1000 }
-  );
-
-  console.log(data);
-
-  return { data: data?.data, isLoading: false };
-};
 
 export interface CricketTeamRecordsProps {}
 
 export const CricketTeamRecords: React.FunctionComponent<
   CricketTeamRecordsProps
 > = () => {
-  const [teamData, setTeamData] = useState([]);
-
   const [selectedFormat, setSelectedFormat] = useState<CricketFormat>(
     CricketFormat.T20I
   );
 
-  const { isLoading, data } = useTeamRecords();
+  const { isLoading, teamData } = useTeamRecords();
 
   return (
     <>
@@ -55,12 +36,15 @@ export const CricketTeamRecords: React.FunctionComponent<
         )}
       </div>
       {selectedFormat === CricketFormat.T20I && (
-        <T20Records isLoading={isLoading} teamData={fakeData as any} />
+        <T20Records
+          isLoading={isLoading}
+          teamData={teamData ? (teamData as CricketTeamData[]) : []}
+        />
       )}
       {selectedFormat === CricketFormat.ODI && (
         <ODIRecords
           isLoading={isLoading}
-          teamData={data as CricketTeamData[]}
+          teamData={teamData ? (teamData as CricketTeamData[]) : []}
         />
       )}
     </>

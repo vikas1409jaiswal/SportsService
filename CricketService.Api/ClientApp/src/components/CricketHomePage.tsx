@@ -32,6 +32,7 @@ export enum PlayerPosition {
 
 const initialCricketContextValue: CricketContextValue = {
   currentMatchDetails: {
+    matchUuid: "",
     season: "",
     series: "",
     playerOfTheMatch: "",
@@ -78,9 +79,7 @@ export const CricketHomePage: React.FunctionComponent<CricketHomePageProps> = (
   const [currentMatchDetails, setCurrentMatchDetails] = useState<CricketMatch>(
     initialCricketContextValue.currentMatchDetails
   );
-    const [totalFetchPlayers, setTotalFetchPlayers] = useState<number>(
-        10
-    );
+  const [totalFetchPlayers, setTotalFetchPlayers] = useState<number>(10);
 
   const countriesList = teamData.filter((td) => td.cricketnationalteam);
 
@@ -100,10 +99,12 @@ export const CricketHomePage: React.FunctionComponent<CricketHomePageProps> = (
       >
         <div className="cricket-home-page">
           {/* {years.map((y: any) => <CricketPlayerInfoFetch year={y} />)}*/}
-                  <CricketPlayerInfoFetch
-                      totalFetchPlayers={totalFetchPlayers}
-                      setTotalFetchPlayers={setTotalFetchPlayers}
-            players={playersData.slice(0, totalFetchPlayers).map((x) => [x.uuid, x.playerUrl])}
+          <CricketPlayerInfoFetch
+            totalFetchPlayers={totalFetchPlayers}
+            setTotalFetchPlayers={setTotalFetchPlayers}
+            players={playersData
+              .slice(0, totalFetchPlayers)
+              .map((x) => [x.uuid, x.playerUrl])}
           />
         </div>
       </CricketContext.Provider>

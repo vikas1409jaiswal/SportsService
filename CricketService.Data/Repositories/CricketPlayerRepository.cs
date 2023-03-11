@@ -73,11 +73,20 @@ public class CricketPlayerRepository : ICricketPlayerRepository
 
         try
         {
-            playerInfo = cricketPlayerInfoTable.Single(x => x.PlayerName.Contains(playerName) || playerName.Contains(x.PlayerName));
+            try
+            {
+                playerInfo = cricketPlayerInfoTable
+                .Single(x => x.PlayerName == playerName);
+            }
+            catch
+            {
+                playerInfo = cricketPlayerInfoTable
+                .Single(x => x.PlayerName.Contains(playerName));
+            }
         }
         catch
         {
-            throw new Exception($"{playerName}({teamName}) doesn't exist.");
+            throw new Exception($"{playerName} ({teamName}) doesn't exist.");
         }
 
         var playerCareerDetails = new CricketPlayerInfoResponse(

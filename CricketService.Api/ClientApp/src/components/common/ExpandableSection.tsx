@@ -5,12 +5,13 @@ import "./ExpandableSection.scss";
 interface ExpandableSectionProps {
   title: string;
   children: any;
+  isExpanded: boolean;
 }
 
 export const ExpandableSection: React.FunctionComponent<
   ExpandableSectionProps
-> = ({ title, children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+> = ({ title, children, isExpanded }) => {
+  const [isOpen, setIsOpen] = useState(isExpanded);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);

@@ -182,38 +182,36 @@ export const ODIRecords: React.FunctionComponent<ODIRecordsProps> = ({
 
   return (
     <>
-      {isLoading && <TailSpinLoader />}
-      {!isLoading && teamData && (
-        <ReactTable
-          className={"t20-team-records"}
-          data={filteredTeamData}
-          columns={columns}
-          perPages={[10, 25, 50, 100]}
-          options={{
-            ...tableOptions,
-            isFooter: true,
-          }}
-          children={
-            <ReactSlidingSidePanel
-              isOpen={isOpenSidePanel}
-              setIsOpen={toggleSideOpenPanel}
-              sidePanelType={SidePanelType.Left}
-              panelWidth={100}
-              children={
-                <TeamDetails
-                  cricketFormat={CricketFormat.ODI}
-                  teamName={teamSelectedData?.teamName as string}
-                  flagUrl={teamSelectedData?.flagUri as string}
-                />
-              }
-            />
-          }
-          handleRowClick={(e, r) => {
-            setSelectedTeamUuid(r.original.teamUuid);
-            toggleSideOpenPanel(!isOpenSidePanel);
-          }}
-        />
-      )}
+      <ReactTable
+        className={"t20-team-records"}
+        isLoading={isLoading}
+        data={filteredTeamData}
+        columns={columns}
+        perPages={[10, 25, 50, 100]}
+        options={{
+          ...tableOptions,
+          isFooter: true,
+        }}
+        children={
+          <ReactSlidingSidePanel
+            isOpen={isOpenSidePanel}
+            setIsOpen={toggleSideOpenPanel}
+            sidePanelType={SidePanelType.Left}
+            panelWidth={100}
+            children={
+              <TeamDetails
+                cricketFormat={CricketFormat.ODI}
+                teamName={teamSelectedData?.teamName as string}
+                flagUrl={teamSelectedData?.flagUri as string}
+              />
+            }
+          />
+        }
+        handleRowClick={(e, r) => {
+          setSelectedTeamUuid(r.original.teamUuid);
+          toggleSideOpenPanel(!isOpenSidePanel);
+        }}
+      />
     </>
   );
 };

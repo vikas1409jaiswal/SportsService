@@ -1,4 +1,5 @@
-﻿using CricketService.Domain.Common;
+﻿using CricketService.Domain.Attributes.ValidationAttributes;
+using CricketService.Domain.Common;
 
 namespace CricketService.Domain
 {
@@ -44,12 +45,14 @@ namespace CricketService.Domain
             InternationalDebut = internationalDebut;
         }
 
+        [CricketSeason]
         public string Season { get; set; }
 
         public string Series { get; set; }
 
         public string PlayerOfTheMatch { get; set; }
 
+        [CricketMatchNumber]
         public string MatchNo { get; set; }
 
         public string MatchDays { get; set; }
