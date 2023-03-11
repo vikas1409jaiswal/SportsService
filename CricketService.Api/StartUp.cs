@@ -4,6 +4,8 @@ using CricketService.Data.Extensions;
 using CricketService.Data.Options.Configs;
 using CricketService.Data.Repositories;
 using CricketService.Data.Repositories.Interfaces;
+using Newtonsoft.Json.Serialization;
+using System;
 
 namespace CricketService.Api
 {
@@ -27,7 +29,11 @@ namespace CricketService.Api
             services.AddControllers(options =>
             {
                 options.Filters.Add(new ModelStateExceptionFilter(new ValidationErrorHandler()));
-            });
+            })
+             .AddJsonOptions(options =>
+             {
+                 options.JsonSerializerOptions.PropertyNameCaseInsensitive = false;
+             });
 
             services.AddSingleton<ValidationErrorHandler>()
                 .AddScoped<ModelStateExceptionFilter>();

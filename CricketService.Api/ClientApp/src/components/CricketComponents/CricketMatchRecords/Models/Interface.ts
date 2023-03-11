@@ -84,3 +84,11 @@ export enum CricketFormat {
   T20I = "T20 International",
   Test = "Test Cricket",
 }
+
+//For Team Details
+
+export interface CricketTeam {
+  uuid: string;
+  teamName: string;
+  flagUrl: string;
+}

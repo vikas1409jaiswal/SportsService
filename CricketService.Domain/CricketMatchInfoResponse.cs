@@ -76,6 +76,10 @@ public class TeamScoreDetails
 
     public string TeamName { get; set; } = string.Empty;
 
+    public string FlagUrl { get; set; } = string.Empty;
+
+    public string LogoUrl { get; set; } = string.Empty;
+
     public ICollection<BattingScoreCard> BattingScoreCard { get; set; }
 
     public ICollection<BowlingScoreCard> BowlingScoreCard { get; set; }

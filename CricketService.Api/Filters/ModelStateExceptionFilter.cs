@@ -16,6 +16,7 @@ public class ModelStateExceptionFilter : IExceptionFilter
     {
         if (context.Exception is CricketModelValidationException)
         {
+            context.ModelState.AddModelError((context.Exception as CricketModelValidationException)!.ExceptionKey, context.Exception.Message);
             context.Result = validationErrorHandler.HandleError(context);
         }
     }

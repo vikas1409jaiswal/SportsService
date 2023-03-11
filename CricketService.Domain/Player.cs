@@ -2,7 +2,9 @@
 {
     public class Player
     {
-        public Player(string name, string href)
+        public Player(
+            string name,
+            string href)
         {
             Name = name;
             Href = href;

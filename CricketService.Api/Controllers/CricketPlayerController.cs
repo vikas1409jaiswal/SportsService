@@ -1,7 +1,7 @@
+using System.ComponentModel.DataAnnotations;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 
 namespace CricketService.Api.Controllers;
 [ApiController]

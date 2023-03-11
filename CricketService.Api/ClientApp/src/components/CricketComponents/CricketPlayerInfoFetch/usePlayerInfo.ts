@@ -34,7 +34,10 @@ const fetchPlayeInfo = (href: string): Promise<AxiosResponse<ApiData>> => {
   return axios.get(`https://www.espncricinfo.com${href}`);
 };
 
-export const usePlayerInfo = (players: string[][], enable: boolean): PlayerInfo[] => {
+export const usePlayerInfo = (
+  players: string[][],
+  enable: boolean
+): PlayerInfo[] => {
   const queries = [];
 
   const queryOptions = {

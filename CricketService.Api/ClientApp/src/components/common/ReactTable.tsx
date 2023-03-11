@@ -23,6 +23,7 @@ import { DefaultColumnFilter, GlobalFilter } from "./Filter";
 import $ from "jquery";
 
 import "./ReactTable.scss";
+import { TailSpinLoader } from "./Loader";
 
 interface ReactTableCssOptions {
   headerCss: CSSProperties;
@@ -329,7 +330,11 @@ export const ReactTable: React.FunctionComponent<ReactTableProps> = ({
                           type="checkbox"
                           {...column.getToggleHiddenProps()}
                         />{" "}
-                        {i > 0 ? column.Header?.toString() : "Row Selection"}
+                        {isRowSelect
+                          ? i > 0
+                            ? column.Header?.toString()
+                            : "Row Selection"
+                          : column.Header?.toString()}
                       </label>
                     </div>
                   ))}
@@ -375,32 +380,34 @@ export const ReactTable: React.FunctionComponent<ReactTableProps> = ({
               ))}
             </thead>
             <tbody {...getTableBodyProps()}>
-              {page.map((row: any, i: number) => {
-                prepareRow(row);
-                return (
-                  <tr
-                    {...row.getRowProps()}
-                    onMouseOver={() => setHighlightedRowIndex(i)}
-                    onMouseOut={() => setHighlightedRowIndex(-1)}
-                    className="react-table-data-rows"
-                  >
-                    {row.cells.map((cell: any) => {
-                      return (
-                        <td
-                          {...cell.getCellProps()}
-                          onClick={(e: any) => {
-                            console.log(row);
-                            cell.column.id !== "selection" &&
-                              handleRowClick(e, row);
-                          }}
-                        >
-                          {cell.render("Cell")}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
+              {isLoading && <TailSpinLoader />}
+              {!isLoading &&
+                page.map((row: any, i: number) => {
+                  prepareRow(row);
+                  return (
+                    <tr
+                      {...row.getRowProps()}
+                      onMouseOver={() => setHighlightedRowIndex(i)}
+                      onMouseOut={() => setHighlightedRowIndex(-1)}
+                      className="react-table-data-rows"
+                    >
+                      {row.cells.map((cell: any) => {
+                        return (
+                          <td
+                            {...cell.getCellProps()}
+                            onClick={(e: any) => {
+                              console.log(row);
+                              cell.column.id !== "selection" &&
+                                handleRowClick(e, row);
+                            }}
+                          >
+                            {cell.render("Cell")}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
             </tbody>
             <tfoot>
               {isFooter &&

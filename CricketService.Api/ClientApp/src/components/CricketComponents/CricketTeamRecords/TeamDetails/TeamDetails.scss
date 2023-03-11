@@ -54,6 +54,16 @@
       tr {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        th {
+          background-color: black;
+          color: white;
+        }
+
+        td {
+          background-color: white;
+          border: 1px solid black;
+        }
       }
 
       .milestones-section {
@@ -63,6 +73,10 @@
         tr {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
+
+          td {
+            border: 1px solid black;
+          }
         }
       }
     }

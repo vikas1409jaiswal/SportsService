@@ -3,6 +3,7 @@
   padding: 5px;
   display: grid;
   grid-template-columns: 1fr;
+  margin: auto;
 
   div.react-table-selection-panel {
     display: grid;
@@ -44,6 +45,7 @@
         display: grid;
         grid-template-columns: 20fr 1fr;
         border: 1px solid black;
+        background-color: yellow;
         padding: 10px 20px;
 
         .column-setting-panel {
@@ -53,6 +55,7 @@
           margin-top: 2%;
           z-index: 2;
           border: 2px solid black;
+          background-color: khaki;
 
           div {
             margin: 20px;
@@ -63,11 +66,8 @@
     }
 
     table {
-      display: inline-block;
-      border-spacing: 0;
       border: 1px solid black;
-      width: 99%;
-      margin: 10px;
+      margin: auto;
 
       thead,
       tbody,
@@ -142,7 +142,7 @@
     .resizer {
       display: inline-block;
       background: blue;
-      width: 10px;
+      width: 2px;
       height: 100%;
       position: absolute;
       right: 0;
@@ -169,6 +169,12 @@
       border: 2px solid black;
       border-radius: 10px;
       text-align: center;
+      background-color: brown;
+      color: white;
+    }
+
+    button:disabled {
+      background-color: gray;
     }
 
     span,

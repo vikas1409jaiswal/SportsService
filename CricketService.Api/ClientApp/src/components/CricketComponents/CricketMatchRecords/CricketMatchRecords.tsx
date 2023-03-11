@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import axios from "axios";
-import { CricketMatch, CricketFormat } from "./Models/Interface";
+import { CricketMatch, CricketFormat, CricketTeam } from "./Models/Interface";
 import { MatchRecordsTable } from "./MatchRecordsTable/MatchRecordsTable";
+import { useCricketMatchInfo } from "./Hooks/useCricketMatchInfo.";
+import { useCricketTeamInfo } from "./Hooks/useCricketTeamInfo.";
 
 import "./CricketMatchRecords.scss";
 
@@ -10,27 +11,12 @@ export interface CricketMatchRecordsProps {}
 export const CricketMatchRecords: React.FunctionComponent<
   CricketMatchRecordsProps
 > = () => {
-  const [matchData, setMatchData] = useState<CricketMatch[]>([]);
   const [selectedFormat, setSelectedFormat] = useState<CricketFormat>(
     CricketFormat.ODI
   );
 
-  const urlsMap = new Map<CricketFormat, string>();
-
-  urlsMap.set(CricketFormat.T20I, "t20Match/all");
-  urlsMap.set(CricketFormat.ODI, "odiMatch/all");
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios(
-        `http://localhost:5104/cricketmatch/${urlsMap.get(selectedFormat)}`
-      );
-      setMatchData(result.data);
-    };
-    fetchData();
-  }, [selectedFormat]);
-
-  console.log(matchData);
+  const { teamData } = useCricketTeamInfo();
+  const { isLoading, matchData } = useCricketMatchInfo(selectedFormat);
 
   return (
     <>
@@ -49,7 +35,11 @@ export const CricketMatchRecords: React.FunctionComponent<
           )
         )}
       </div>
-      <MatchRecordsTable matchData={matchData as CricketMatch[]} />
+      <MatchRecordsTable
+        isLoading={isLoading}
+        teamData={teamData ? (teamData as CricketTeam[]) : []}
+        matchData={matchData ? (matchData as CricketMatch[]) : []}
+      />
     </>
   );
 };

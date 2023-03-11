@@ -54,27 +54,27 @@ namespace CricketService.Api.Controllers
             return Ok(allTeams);
         }
 
-        //[HttpGet("teams/all/records")]
-        //public ActionResult<IEnumerable<CricketTeamInfoResponse>> GetAllTeamRecords()
-        //{
-        //    List<string> teamNames = cricketTeamRepository.GetAllTeamNames().ToList();
+        [HttpGet("teams/all/records")]
+        public ActionResult<IEnumerable<CricketTeamInfoResponse>> GetAllTeamRecords()
+        {
+            List<string> teamNames = cricketTeamRepository.GetAllTeamNames(CricketFormat.All).ToList();
 
-        //    List<CricketTeamInfoResponse> teamRecords = new List<CricketTeamInfoResponse>();
+            List<CricketTeamInfoResponse> teamRecords = new List<CricketTeamInfoResponse>();
 
-        //    foreach (var teamName in teamNames)
-        //    {
-        //        var teamRecord = cricketTeamRepository.GetTeamRecordsByName(teamName, false);
+            foreach (var teamName in teamNames)
+            {
+                var teamRecord = cricketTeamRepository.GetTeamRecordsByName(teamName, false);
 
-        //        if (teamRecord != null)
-        //        {
-        //            teamRecords.Add(teamRecord);
-        //        }
-        //    }
+                if (teamRecord != null)
+                {
+                    teamRecords.Add(teamRecord);
+                }
+            }
 
-        //    Response.Headers.Add("total-international-teams", teamRecords.Count().ToString());
+            Response.Headers.Add("total-international-teams", teamRecords.Count().ToString());
 
-        //    return Ok(teamRecords);
-        //}
+            return Ok(teamRecords);
+        }
 
         [HttpGet("teams/{teamName}/records")]
         public ActionResult<CricketTeamInfoResponse> GetAllTeamRecords([FromRoute, Required] string teamName)

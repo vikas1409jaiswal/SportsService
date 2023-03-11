@@ -10,5 +10,7 @@ namespace CricketService.Domain.Enums
         ODI,
         [EnumMember(Value = "TestCricket")]
         TestCricket,
+        [EnumMember(Value = "All")]
+        All,
     }
 }

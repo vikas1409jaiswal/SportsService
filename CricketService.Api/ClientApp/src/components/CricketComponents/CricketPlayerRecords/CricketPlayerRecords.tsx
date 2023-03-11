@@ -25,7 +25,7 @@ export const usePlayersByTeam = (teamName: string) => {
 
   console.log(data);
 
-  return { data: data?.data, isLoading: false };
+  return { playersData: data?.data, isLoading };
 };
 
 export interface CricketPlayerRecordsProps {}
@@ -39,7 +39,7 @@ export const CricketPlayerRecords: React.FunctionComponent<
     CricketFormat.ODI
   );
 
-  //const { isLoading, data } = usePlayersByTeam(currentSelectedTeamName);
+  const { isLoading, playersData } = usePlayersByTeam(currentSelectedTeamName);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,8 +51,6 @@ export const CricketPlayerRecords: React.FunctionComponent<
     };
     fetchData();
   }, [selectedFormat]);
-
-  const playersData = data;
 
   return (
     <>
@@ -81,9 +79,10 @@ export const CricketPlayerRecords: React.FunctionComponent<
         <T20IPlayersRecords
           isLoading={false}
           players={
+            playersData ?
             playersData.filter(
-              (x) => x.careerDetails.t20Career.battingStatistics !== null
-            ) as any
+              (x) => x.careerDetails.t20Career?.battingStatistics !== null
+            ) : []
           }
         />
       )}
@@ -91,9 +90,10 @@ export const CricketPlayerRecords: React.FunctionComponent<
         <ODIPlayersRecords
           isLoading={false}
           players={
-            playersData.filter(
-              (x) => x.careerDetails.odiCareer.battingStatistics !== null
-            ) as any
+              playersData ?
+                  playersData.filter(
+                      (x) => x.careerDetails.odiCareer?.battingStatistics !== null
+                  ) : []
           }
         />
       )}
