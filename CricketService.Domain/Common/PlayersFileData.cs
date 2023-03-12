@@ -12,6 +12,10 @@
 
         public string Birth { get; set; } = string.Empty;
 
+        public string Died { get; set; } = string.Empty;
+
+        public DebutDetailsInfo DebutDetails { get; set; }
+
         public string BattingStyle { get; set; } = string.Empty;
 
         public string BowlingStyle { get; set; } = string.Empty;
@@ -23,5 +27,39 @@
         public string ImageSrc { get; set; } = string.Empty;
 
         public string Education { get; set; } = string.Empty;
+    }
+
+    public class DebutDetailsInfo
+    {
+        public DebutDetailsInfo(
+            DebutInfo t20IMatches,
+            DebutInfo oDIMatches,
+            DebutInfo testMatches)
+        {
+            T20IMatches = t20IMatches;
+            ODIMatches = oDIMatches;
+            TestMatches = testMatches;
+        }
+
+        public DebutInfo T20IMatches { get; set; }
+
+        public DebutInfo ODIMatches { get; set; }
+
+        public DebutInfo TestMatches { get; set; }
+    }
+
+    public class DebutInfo
+    {
+        public DebutInfo(
+            string first,
+            string last)
+        {
+            First = first;
+            Last = last;
+        }
+
+        public string First { get; set; }
+
+        public string Last { get; set; }
     }
 }

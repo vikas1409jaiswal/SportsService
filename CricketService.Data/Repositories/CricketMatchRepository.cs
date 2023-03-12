@@ -144,8 +144,8 @@ namespace CricketService.Data.Repositories
                 }
             }
 
-            BackgroundJob.Enqueue(() => PrintMatchUuid((Guid)response.MatchUuid));
-            BackgroundJob.Schedule(() => PrintMatchTitle(response), TimeSpan.FromSeconds(10));
+            //BackgroundJob.Enqueue(() => PrintMatchUuid((Guid)response.MatchUuid));
+            //BackgroundJob.Schedule(() => PrintMatchTitle(response), TimeSpan.FromSeconds(10));
 
             return response!;
         }

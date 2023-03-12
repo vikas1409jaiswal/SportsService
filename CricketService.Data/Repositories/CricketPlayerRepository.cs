@@ -3,8 +3,10 @@ using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
+using CricketService.Domain.Common;
 using CricketService.Domain.Enums;
 using Microsoft.Extensions.Logging;
+using System.Linq;
 
 namespace CricketService.Data.Repositories;
 
@@ -40,9 +42,10 @@ public class CricketPlayerRepository : ICricketPlayerRepository
                 x.Uuid,
                 x.PlayerName,
                 x.Href,
-                x.DateOfBirth,
+                new CricketDate(x.Birth, InfoFormats.BirthInfo).ToString(),
+                x.DebutDetails,
+                x.Death,
                 x.Formats,
-                x.BirthPlace,
                 x.BattingStyle,
                 x.BowlingStyle,
                 x.PlayingRole,
@@ -92,9 +95,9 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         var playerCareerDetails = new CricketPlayerInfoResponse(
             playerInfo.Uuid,
             playerName,
-            default(DateTime),
+            playerInfo.Birth,
             teamName,
-            "Chennai",
+            "chennai",
             new CareerDetailsInfo(null!, null!, null!),
             "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Shri_Virat_Kohli_for_Cricket%2C_in_a_glittering_ceremony%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_September_25%2C_2018_%28cropped%29.JPG/330px-Shri_Virat_Kohli_for_Cricket%2C_in_a_glittering_ceremony%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_September_25%2C_2018_%28cropped%29.JPG");
 

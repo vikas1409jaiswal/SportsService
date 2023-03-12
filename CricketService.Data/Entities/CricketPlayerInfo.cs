@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CricketService.Domain.Common;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CricketService.Data.Entities
@@ -25,11 +26,14 @@ namespace CricketService.Data.Entities
         [Column("team_names")]
         public string TeamNames { get; set; } = string.Empty;
 
-        [Column("date_of_birth")]
-        public string DateOfBirth { get; set; } = string.Empty;
+        [Column("birth_info")]
+        public string Birth { get; set; } = string.Empty;
 
-        [Column("birth_place")]
-        public string BirthPlace { get; set; } = string.Empty;
+        [Column("death_info")]
+        public string Death { get; set; } = string.Empty;
+
+        [Column("debut_details")]
+        public DebutDetailsInfo DebutDetails { get; set; } = null!;
 
         [Column("formats")]
         public ICollection<string> Formats { get; set; } = new List<string>();

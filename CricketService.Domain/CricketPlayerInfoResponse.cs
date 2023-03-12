@@ -7,7 +7,7 @@ public class CricketPlayerInfoResponse
     public CricketPlayerInfoResponse(
         Guid playerUuid,
         string fullName,
-        DateTime dateOfBirth,
+        string dateOfBirth,
         string teamName,
         string birthPlace,
         CareerDetailsInfo careerDetailsInfo,
@@ -26,7 +26,7 @@ public class CricketPlayerInfoResponse
 
     public string FullName { get; set; } = string.Empty;
 
-    public DateTime DateOfBirth { get; set; }
+    public string DateOfBirth { get; set; }
 
     public string TeamName { get; set; } = string.Empty;
 

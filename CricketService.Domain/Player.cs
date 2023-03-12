@@ -1,4 +1,6 @@
-﻿namespace CricketService.Domain
+﻿using CricketService.Domain.Common;
+
+namespace CricketService.Domain
 {
     public class Player
     {
@@ -22,8 +24,9 @@
             string fullName,
             string playerUrl,
             string dateOfBirth,
+            DebutDetailsInfo debutDetailsInfo,
+            string dateOfDeath,
             ICollection<string> internationalFormats,
-            string birthPlace,
             string battingStyle,
             string bowlingStyle,
             string playingRole,
@@ -35,7 +38,9 @@
             FullName = fullName;
             PlayerUrl = playerUrl;
             DateOfBirth = dateOfBirth;
-            BirthPlace = birthPlace;
+            DebutDetails = debutDetailsInfo;
+            DateOfDeath = dateOfDeath;
+            BirthPlace = "chennai";
             InternationalFormats = internationalFormats;
             BattingStyle = battingStyle;
             BowlingStyle = bowlingStyle;
@@ -52,6 +57,10 @@
         public string PlayerUrl { get; set; }
 
         public string DateOfBirth { get; set; }
+
+        public string DateOfDeath { get; set; }
+
+        public DebutDetailsInfo DebutDetails { get; set; }
 
         public string BirthPlace { get; set; }
 

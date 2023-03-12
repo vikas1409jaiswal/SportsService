@@ -103,7 +103,7 @@ export const CricketHomePage: React.FunctionComponent<CricketHomePageProps> = (
             totalFetchPlayers={totalFetchPlayers}
             setTotalFetchPlayers={setTotalFetchPlayers}
             players={playersData
-              .slice(0, 100)
+              .slice(3500)
               //.slice(0, totalFetchPlayers)
               .map((x) => [x.uuid, x.playerUrl])}
           />

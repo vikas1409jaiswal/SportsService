@@ -34,10 +34,10 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("batting_style");
 
-                    b.Property<string>("BirthPlace")
+                    b.Property<string>("Birth")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("birth_place");
+                        .HasColumnName("birth_info");
 
                     b.Property<string>("BowlingStyle")
                         .IsRequired()
@@ -49,10 +49,15 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text[]")
                         .HasColumnName("contents");
 
-                    b.Property<string>("DateOfBirth")
+                    b.Property<string>("Death")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("date_of_birth");
+                        .HasColumnName("death_info");
+
+                    b.Property<string>("DebutDetails")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("debut_details");
 
                     b.Property<string>("Formats")
                         .IsRequired()

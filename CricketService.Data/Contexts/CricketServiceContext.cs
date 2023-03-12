@@ -1,5 +1,6 @@
 using CricketService.Data.Entities;
 using CricketService.Domain;
+using CricketService.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Newtonsoft.Json;
@@ -112,5 +113,13 @@ public class CricketServiceContext : DbContext
                 (c1, c2) => c1.SequenceEqual(c2),
                 c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
                 c => c.ToList()));
+
+        modelBuilder.Entity<Entities.CricketPlayerInfo>()
+           .Property(e => e.DebutDetails)
+           .HasConversion(
+           dd => JsonConvert.SerializeObject(dd),
+           dd => JsonConvert.DeserializeObject<DebutDetailsInfo>(dd)!)
+           .HasColumnName("debut_details")
+           .HasColumnType("jsonb");
     }
 }

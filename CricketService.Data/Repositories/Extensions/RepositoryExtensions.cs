@@ -78,17 +78,6 @@ namespace CricketService.Data.Repositories.Extensions
                 else
                 {
                     var playerInfo = GetPlayersDataFromFile(player.Href);
-                    var birthInfos = playerInfo.Birth.Split(',');
-                    string monthStr = string.Empty;
-                    string dateStr = string.Empty;
-                    string yearStr = string.Empty;
-
-                    if (birthInfos.Any() && birthInfos[0].Length > 0)
-                    {
-                        monthStr = string.Join(string.Empty, birthInfos[0].Take(3));
-                        dateStr = birthInfos[0].Split(" ")[1];
-                        yearStr = birthInfos[1];
-                    }
 
                     context.CricketPlayerInfo.Add(new Entities.CricketPlayerInfo
                     {
@@ -96,6 +85,10 @@ namespace CricketService.Data.Repositories.Extensions
                         PlayerName = player.Name.Trim().Replace("(c)", string.Empty).Replace("†", string.Empty),
                         FullName = player.Name,
                         Href = player.Href,
+                        DebutDetails = new DebutDetailsInfo(
+                            new DebutInfo(playerInfo.DebutDetails.T20IMatches.First, playerInfo.DebutDetails.T20IMatches.Last),
+                            new DebutInfo(playerInfo.DebutDetails.ODIMatches.First, playerInfo.DebutDetails.ODIMatches.Last),
+                            new DebutInfo(playerInfo.DebutDetails.TestMatches.First, playerInfo.DebutDetails.TestMatches.Last)),
                         InternationalTeamNames = new List<string>() { teamScoreDetails.TeamName },
                         Formats = new List<string>() { format.ToString() },
                         BattingStyle = playerInfo.BattingStyle,
@@ -103,10 +96,10 @@ namespace CricketService.Data.Repositories.Extensions
                         PlayingRole = playerInfo.PlayingRole,
                         Height = playerInfo.Height,
                         ImageSrc = playerInfo.ImageSrc,
-                        DateOfBirth = $"{dateStr} {monthStr} {yearStr}",
-                        BirthPlace = string.Join(",", birthInfos.Skip(2).TakeLast(3)),
+                        Birth = playerInfo.Birth,
+                        Death = playerInfo.Died,
                         TeamNames = string.Join(", ", playerInfo.TeamNames),
-                    }); ;
+                    });
 
                     count = count + await context.SaveChangesAsync();
                 }
