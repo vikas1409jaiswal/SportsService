@@ -1,4 +1,5 @@
 ﻿using CricketService.Data.Extensions;
+using CricketService.Hangfire.Postgres.Extensions;
 using CricketSevice.Migrations;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,6 +26,7 @@ public class Program
                    logging.ClearProviders();
                });
                services.AddCricketServiceDataLayer(hostContext.Configuration);
+               services.AddHangfirePostgres(hostContext.Configuration);
                services.AddHostedService<MigratorService>();
                services.AddScoped<Migrators>();
            });

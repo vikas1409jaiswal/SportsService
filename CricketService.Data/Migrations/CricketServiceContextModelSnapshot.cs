@@ -54,7 +54,7 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("date_of_birth");
 
-                    b.Property<string>("InternationalFormats")
+                    b.Property<string>("Formats")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("formats");
@@ -116,7 +116,7 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("flag_url");
 
-                    b.Property<string>("InternationalFormats")
+                    b.Property<string>("Formats")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("formats");

@@ -17,6 +17,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CricketService.Domain\CricketService.Domain.csproj" />
+    <ProjectReference Include="..\CricketService.Hangfire.Postgres\CricketService.Hangfire.Postgres.csproj" />
+    <ProjectReference Include="..\CricketService.Hangfire\CricketService.Hangfire.csproj" />
   </ItemGroup>
 
   <ItemGroup>

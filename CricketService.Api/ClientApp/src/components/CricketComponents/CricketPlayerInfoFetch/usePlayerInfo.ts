@@ -20,18 +20,34 @@ export interface PlayerInfo {
   fullName: string;
   href: string;
   birth: string;
+  died: string;
   teamNames: string[];
   imageSrc: string;
+  photosSrc: string[];
   battingStyle: string;
   bowlingStyle: string;
   playingRole: string;
   height: string;
   education: string;
+  debutDetails: DebutDetailInfo;
   content: string[];
 }
 
-const fetchPlayeInfo = (href: string): Promise<AxiosResponse<ApiData>> => {
-  return axios.get(`https://www.espncricinfo.com${href}`);
+interface DebutDetailInfo {
+  odiMatches: DebutInfo;
+  testMatches: DebutInfo;
+  t20IMatches: DebutInfo;
+}
+
+interface DebutInfo {
+  first: string;
+  last: string;
+}
+
+const fetchPlayeInfo = async (
+  href: string
+): Promise<AxiosResponse<ApiData>> => {
+  return await axios.get(`https://www.espncricinfo.com${href}`);
 };
 
 export const usePlayerInfo = (
@@ -43,7 +59,7 @@ export const usePlayerInfo = (
   const queryOptions = {
     refetchOnWindowFocus: false,
     refetchOnMount: false,
-    enabled: enable,
+    enabled: true,
     cacheTime: 60 * 60 * 1000,
     retry: true,
   };
@@ -70,13 +86,21 @@ export const usePlayerInfo = (
       ?.item(1)
       ?.querySelectorAll("a");
     const contents = divElement.querySelectorAll(".ci-player-bio-content > p");
+    const debutSelector = divElement.querySelectorAll(
+      ".ds-grow .ds-w-full .ds-p-0 .ds-p-4 h5"
+    );
+    const debutSelector2 = divElement.querySelector(
+      ".ds-grow .ds-w-full .ds-p-0 .ds-p-4 h5"
+    )?.parentNode?.parentNode?.parentNode;
 
     const p: PlayerInfo = {
       playerUuid: "",
       fullName: "",
       href: "",
       birth: "",
+      died: "",
       imageSrc: "",
+      photosSrc: [],
       battingStyle: "",
       bowlingStyle: "",
       playingRole: "",
@@ -84,6 +108,20 @@ export const usePlayerInfo = (
       education: "",
       teamNames: [],
       content: [],
+      debutDetails: {
+        t20IMatches: {
+          first: "",
+          last: "",
+        },
+        odiMatches: {
+          first: "",
+          last: "",
+        },
+        testMatches: {
+          first: "",
+          last: "",
+        },
+      },
     };
 
     infoGridRows.forEach((r) => {
@@ -94,6 +132,9 @@ export const usePlayerInfo = (
       }
       if (pSelector === "Born") {
         p.birth = spanSelector;
+      }
+      if (pSelector === "Died") {
+        p.died = spanSelector;
       }
       if (pSelector === "Batting Style") {
         p.battingStyle = spanSelector;
@@ -112,36 +153,77 @@ export const usePlayerInfo = (
       }
     });
 
+    debutSelector.forEach((x, i) => {
+      const h5Selector = x?.textContent as string;
+      if (h5Selector === "Test Matches") {
+        p.debutDetails.testMatches = {
+          first: debutSelector2?.querySelectorAll("a")?.item(2 * i)
+            ?.textContent as string,
+          last: debutSelector2?.querySelectorAll("a")?.item(2 * i + 1)
+            ?.textContent as string,
+        };
+      }
+      if (h5Selector === "ODI Matches") {
+        p.debutDetails.odiMatches = {
+          first: debutSelector2?.querySelectorAll("a")?.item(2 * i)
+            ?.textContent as string,
+          last: debutSelector2?.querySelectorAll("a")?.item(2 * i + 1)
+            ?.textContent as string,
+        };
+      }
+      if (h5Selector === "T20I Matches") {
+        p.debutDetails.t20IMatches = {
+          first: debutSelector2?.querySelectorAll("a")?.item(2 * i)
+            ?.textContent as string,
+          last: debutSelector2?.querySelectorAll("a")?.item(2 * i + 1)
+            ?.textContent as string,
+        };
+      }
+    });
+
     teamNames?.forEach((x) => p.teamNames.push(x?.textContent as string));
 
     contents?.forEach((x) => p.content.push(x?.textContent as string));
 
+    let imageSrc = "";
+
+    // divElement.querySelectorAll('.ds-mb-4 img')
+    //   .forEach(y => {
+    //     p.photosSrc.push(y?.getAttribute("src") as string)
+    //   })
+
     playerInfo.push({
-      ...p,
       playerUuid: players[i][0],
       fullName: p.fullName,
       href: players[i][1],
       birth: p.birth,
+      died: p.died,
       battingStyle: p.battingStyle,
       bowlingStyle: p.bowlingStyle,
       playingRole: p.playingRole,
       height: p.height,
       education: p.education,
-      imageSrc: divElement
+      imageSrc: document
         .querySelector(".ds-w-48 img")
         ?.getAttribute("src") as string,
+      photosSrc: p.photosSrc,
       teamNames: p.teamNames,
       content: p.content,
+      debutDetails: {
+        t20IMatches: p.debutDetails.t20IMatches,
+        odiMatches: p.debutDetails.odiMatches,
+        testMatches: p.debutDetails.testMatches,
+      },
     });
   });
 
-  // const fetchedLength = playerInfo.filter(x => x.fullName.length > 0).length;
+  const fetchedLength = playerInfo.filter((x) => x.fullName.length > 0).length;
 
-  // console.log(fetchedLength, '/', playerInfo.length);
+  console.log(fetchedLength, "/", playerInfo.length);
 
-  //if (fetchedLength === playerInfo.length) {
-  //     console.log(playerInfo)
-  //}
+  if (fetchedLength === playerInfo.length) {
+    console.log(playerInfo);
+  }
 
   return playerInfo;
 };

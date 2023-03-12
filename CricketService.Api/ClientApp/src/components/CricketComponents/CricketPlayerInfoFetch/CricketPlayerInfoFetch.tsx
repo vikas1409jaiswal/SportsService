@@ -16,12 +16,10 @@ export const CricketPlayerInfoFetch: React.FunctionComponent<
   const [isEnabledInput, toggleInput] = useState(true);
   const [isFetch, toggleFetch] = useState(false);
 
-  const playersInfo = usePlayerInfo(players, isFetch);
+  const playersInfo = usePlayerInfo(players, true);
 
   const fetchedLength = playersInfo.filter((x) => x.fullName.length > 0).length;
   const fetchedPercent = (fetchedLength * 100) / totalFetchPlayers;
-
-  console.log(fetchedPercent);
 
   return (
     <div className="cricket-player-fetch-container">
