@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CricketService.Data.Migrations
 {
     [DbContext(typeof(CricketServiceContext))]
-    [Migration("20230307112749_AddingInitialMigration")]
+    [Migration("20230311062813_AddingInitialMigration")]
     partial class AddingInitialMigration
     {
         /// <inheritdoc />
@@ -52,11 +52,12 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text[]")
                         .HasColumnName("contents");
 
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("timestamp with time zone")
+                    b.Property<string>("DateOfBirth")
+                        .IsRequired()
+                        .HasColumnType("text")
                         .HasColumnName("date_of_birth");
 
-                    b.Property<string>("InternationalFormats")
+                    b.Property<string>("Formats")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("formats");
@@ -118,7 +119,7 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("flag_url");
 
-                    b.Property<string>("InternationalFormats")
+                    b.Property<string>("Formats")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("formats");

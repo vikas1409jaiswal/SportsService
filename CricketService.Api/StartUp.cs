@@ -1,11 +1,21 @@
-﻿using CricketService.Api.Filters;
+﻿using System;
+using CricketService.Api.Filters;
 using CricketService.Api.Handlers;
+using CricketService.Api.Middlewares;
 using CricketService.Data.Extensions;
 using CricketService.Data.Options.Configs;
 using CricketService.Data.Repositories;
 using CricketService.Data.Repositories.Interfaces;
+using CricketService.Hangfire.Attributes;
+using CricketService.Hangfire.Configs;
+using CricketService.Hangfire.Contracts;
+using CricketService.Hangfire.Extensions;
+using CricketService.Hangfire.Postgres.Extensions;
+using CricketService.Hangfire.Tracing;
+using Hangfire;
+using Hangfire.Common;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Newtonsoft.Json.Serialization;
-using System;
 
 namespace CricketService.Api
 {
@@ -21,6 +31,7 @@ namespace CricketService.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddOptions<CricketServiceContextOptions>().Bind(Configuration.GetSection(CricketServiceContextOptions.SectionName));
+            services.AddOptions<HangfireOptions>().Bind(Configuration.GetSection(HangfireOptions.DefaultSectionName));
             services.AddScoped<ICricketPlayerRepository, CricketPlayerRepository>();
             services.AddScoped<ICricketMatchRepository, CricketMatchRepository>();
             services.AddScoped<ICricketTeamRepository, CricketTeamRepository>();
@@ -37,9 +48,29 @@ namespace CricketService.Api
 
             services.AddSingleton<ValidationErrorHandler>()
                 .AddScoped<ModelStateExceptionFilter>();
+
+            services.AddHangfirePostgres(Configuration);
+            services.AddHangfireServer();
+
+            services.TryAddSingleton<ITraceRecorder>(new TraceRecorder("Cricket Service"));
+            services.AddSingleton<JobFilterAttribute, TracingClientJobFilterAttribute>();
+            services.AddSingleton<JobFilterAttribute, TracingServerJobFilterAttribute>();
+
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "Swagger API Documentation",
+                    Description = "Demo API for showing swagger",
+                    Version = "v1",
+                });
+            });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(
+            IApplicationBuilder app,
+            IWebHostEnvironment env,
+            IBackgroundJobClient backgroundJobClient)
         {
             if (!env.IsDevelopment())
             {
@@ -53,11 +84,26 @@ namespace CricketService.Api
 
             app.UseRouting();
 
+            app.UseHangfireFilters();
+
+            app.UseResultModifier();
+
+            backgroundJobClient.Schedule(() => Console.WriteLine("Hello world from hangfire"), TimeSpan.FromSeconds(2));
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=CricketMatch}/{action=Index}");
+            });
+
+            app.UseHangfireDashboard("/hangfire");
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger Demo API");
             });
         }
     }

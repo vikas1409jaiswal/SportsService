@@ -4,6 +4,7 @@ using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
 using CricketService.Domain.Enums;
+using Hangfire;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -143,7 +144,21 @@ namespace CricketService.Data.Repositories
                 }
             }
 
+            BackgroundJob.Enqueue(() => PrintMatchUuid((Guid)response.MatchUuid));
+            BackgroundJob.Schedule(() => PrintMatchTitle(response), TimeSpan.FromSeconds(10));
+
             return response!;
+        }
+
+        public static async Task PrintMatchUuid(Guid msg)
+        {
+            Console.WriteLine(msg);
+        }
+
+        [AutomaticRetry(Attempts = 3, DelaysInSeconds = new int[] {5})]
+        public static async Task PrintMatchTitle(CricketMatchInfoResponse response)
+        {
+            Console.WriteLine(response.Series);
         }
 
         public async Task<CricketMatchInfoResponse> AddMatchODI(CricketMatchInfoRequest match)

@@ -79,10 +79,11 @@ export const CricketPlayerRecords: React.FunctionComponent<
         <T20IPlayersRecords
           isLoading={false}
           players={
-            playersData ?
-            playersData.filter(
-              (x) => x.careerDetails.t20Career?.battingStatistics !== null
-            ) : []
+            playersData
+              ? playersData.filter(
+                  (x) => x.careerDetails.t20Career?.battingStatistics !== null
+                )
+              : []
           }
         />
       )}
@@ -90,10 +91,11 @@ export const CricketPlayerRecords: React.FunctionComponent<
         <ODIPlayersRecords
           isLoading={false}
           players={
-              playersData ?
-                  playersData.filter(
-                      (x) => x.careerDetails.odiCareer?.battingStatistics !== null
-                  ) : []
+            playersData
+              ? playersData.filter(
+                  (x) => x.careerDetails.odiCareer?.battingStatistics !== null
+                )
+              : []
           }
         />
       )}

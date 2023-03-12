@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -20,7 +21,7 @@ namespace CricketService.Data.Migrations
                     href = table.Column<string>(type: "text", nullable: false),
                     international_team_names = table.Column<string>(type: "text", nullable: false),
                     team_names = table.Column<string>(type: "text", nullable: false),
-                    date_of_birth = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    date_of_birth = table.Column<string>(type: "text", nullable: false),
                     birth_place = table.Column<string>(type: "text", nullable: false),
                     formats = table.Column<string>(type: "text", nullable: false),
                     batting_style = table.Column<string>(type: "text", nullable: false),
@@ -28,7 +29,7 @@ namespace CricketService.Data.Migrations
                     playing_role = table.Column<string>(type: "text", nullable: false),
                     height = table.Column<string>(type: "text", nullable: false),
                     image_src = table.Column<string>(type: "text", nullable: false),
-                    contents = table.Column<string[]>(type: "text[]", nullable: false),
+                    contents = table.Column<string[]>(type: "text[]", nullable: false)
                 },
                 constraints: table =>
                 {

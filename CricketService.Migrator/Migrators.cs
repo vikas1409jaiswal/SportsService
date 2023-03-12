@@ -1,4 +1,5 @@
 ﻿using CricketService.Data.Contexts;
+using CricketService.Hangfire.Postgres.Contracts;
 using Microsoft.Extensions.Logging;
 
 namespace CricketService.Migrator;
@@ -7,10 +8,15 @@ public class Migrators
 {
     private readonly ILogger logger;
     private readonly CricketServiceContext context;
+    private readonly IHangfireContext hangfireContext;
 
-    public Migrators(CricketServiceContext context, ILogger<Migrators> logger)
+    public Migrators(
+        CricketServiceContext context,
+        IHangfireContext hangfireContext,
+        ILogger<Migrators> logger)
     {
         this.context = context;
+        this.hangfireContext = hangfireContext;
         this.logger = logger;
     }
 
@@ -21,9 +27,13 @@ public class Migrators
 
         if (pendingMigrations.Any())
         {
-            logger.LogInformation("Start running pending migrations");
+            logger.LogInformation("Cricket Service: Start running pending migrations");
             await context.MigrateAsync();
-            logger.LogInformation("Stop running pending migrations");
+            logger.LogInformation("Cricket Service: Stop running pending migrations");
         }
+
+        logger.LogInformation("HangFire: Start running pending migrations");
+        await hangfireContext.MigrateAsync();
+        logger.LogInformation("HangFire: Stop running pending migrations");
     }
 }
