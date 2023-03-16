@@ -5,11 +5,13 @@ namespace CricketService.Data.Repositories.Interfaces;
 
 public interface ICricketPlayerRepository
 {
-    IEnumerable<CricketPlayerInfoResponse> GetPlayerByUuid(Guid playerUuid);
+    PlayerDetails GetPlayerByUuid(Guid playerUuid);
+
+    IEnumerable<PlayerDetails> GetAllPlayers();
 
     IEnumerable<string> GetPlayersByTeamName(string teamName, CricketFormat format);
 
-    IEnumerable<PlayerDetails> GetAllPlayers();
+    IEnumerable<object> GetAllPlayersUuidAndHref(CricketFormat format);
 
     CricketPlayerInfoResponse GetPlayerDetailsByTeamName(string teamName, string playerName, bool? isSingle = false);
 }

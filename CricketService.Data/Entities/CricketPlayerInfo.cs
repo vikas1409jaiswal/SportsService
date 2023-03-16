@@ -1,6 +1,7 @@
-﻿using CricketService.Domain.Common;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using CricketService.Domain;
+using CricketService.Domain.Common;
 
 namespace CricketService.Data.Entities
 {
@@ -38,22 +39,10 @@ namespace CricketService.Data.Entities
         [Column("formats")]
         public ICollection<string> Formats { get; set; } = new List<string>();
 
-        [Column("batting_style")]
-        public string BattingStyle { get; set; } = string.Empty;
+        [Column("career_statistics")]
+        public CareerDetailsInfo CareerStatistics { get; set; } = null!;
 
-        [Column("bowling_style")]
-        public string BowlingStyle { get; set; } = string.Empty;
-
-        [Column("playing_role")]
-        public string PlayingRole { get; set; } = string.Empty;
-
-        [Column("height")]
-        public string Height { get; set; } = string.Empty;
-
-        [Column("image_src")]
-        public string ImageSrc { get; set; } = string.Empty;
-
-        [Column("contents")]
-        public string[] Content { get; set; } = Array.Empty<string>();
+        [Column("extra_info")]
+        public PlayerExtraInfo ExtraInfo { get; set; } = null!;
     }
 }

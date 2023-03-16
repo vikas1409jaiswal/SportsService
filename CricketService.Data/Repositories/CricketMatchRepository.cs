@@ -1,4 +1,6 @@
-﻿using CricketService.Data.Contexts;
+﻿using System.Collections;
+using CricketService.Data.Contexts;
+using CricketService.Data.Entities;
 using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
@@ -15,11 +17,13 @@ namespace CricketService.Data.Repositories
     {
         private ILogger<CricketMatchRepository> logger;
         private CricketServiceContext context;
+        private readonly ICricketPlayerRepository cricketPlayerRepository;
 
-        public CricketMatchRepository(ILogger<CricketMatchRepository> logger, CricketServiceContext cricketServiceContext)
+        public CricketMatchRepository(ILogger<CricketMatchRepository> logger, CricketServiceContext cricketServiceContext, ICricketPlayerRepository cricketPlayerRepository)
         {
             this.logger = logger;
             context = cricketServiceContext;
+            this.cricketPlayerRepository = cricketPlayerRepository;
         }
 
         public IEnumerable<CricketMatchInfoResponse> GetAllMatchesT20I()
@@ -98,6 +102,32 @@ namespace CricketService.Data.Repositories
             return match?.ToDomain()!;
         }
 
+        public async Task<TestCricketMatchInfoResponse> GetMatchByMNumberTest(int matchNumber)
+        {
+            logger.LogInformation($"Fetching details for match number {matchNumber}");
+
+            Entities.TestCricketMatchInfo match = null!;
+
+            try
+            {
+                match = await context.TestCricketMatchInfo.SingleAsync(x => x.MatchNo == $"Test no. {matchNumber}");
+            }
+            catch (JsonReaderException)
+            {
+                match = new Entities.TestCricketMatchInfo();
+            }
+            catch (JsonSerializationException)
+            {
+                match = new Entities.TestCricketMatchInfo();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("xxxxxxxxxxx", ex.Message);
+            }
+
+            return match?.ToDomain()!;
+        }
+
         public IEnumerable<CricketMatchInfoResponse> GetMatchByTeamT20I(string teamName)
         {
             logger.LogInformation($"Fetching details for team {teamName}");
@@ -144,21 +174,7 @@ namespace CricketService.Data.Repositories
                 }
             }
 
-            //BackgroundJob.Enqueue(() => PrintMatchUuid((Guid)response.MatchUuid));
-            //BackgroundJob.Schedule(() => PrintMatchTitle(response), TimeSpan.FromSeconds(10));
-
             return response!;
-        }
-
-        public static async Task PrintMatchUuid(Guid msg)
-        {
-            Console.WriteLine(msg);
-        }
-
-        [AutomaticRetry(Attempts = 3, DelaysInSeconds = new int[] {5})]
-        public static async Task PrintMatchTitle(CricketMatchInfoResponse response)
-        {
-            Console.WriteLine(response.Series);
         }
 
         public async Task<CricketMatchInfoResponse> AddMatchODI(CricketMatchInfoRequest match)
@@ -186,6 +202,88 @@ namespace CricketService.Data.Repositories
             }
 
             return response!;
+        }
+
+        public async Task<TestCricketMatchInfoResponse> AddMatchTest(TestCricketMatchInfoRequest match)
+        {
+            var result = context.TestCricketMatchInfo.Add(match.ToEntityTest());
+
+            await context.SaveChangesAsync();
+
+            var response = result.Entity.ToDomain();
+
+            if (response is not null)
+            {
+                await response.Team1.SaveTestTeamInfo(context);
+                await response.Team2.SaveTestTeamInfo(context);
+
+                if (response.Team1.Inning1.Playing11 is not null)
+                {
+                    await response.Team1.SavePlayersForTestTeam(context);
+                }
+
+                if (response.Team2.Inning1.Playing11 is not null)
+                {
+                    await response.Team2.SavePlayersForTestTeam(context);
+                }
+            }
+
+            return response!;
+        }
+
+        public IEnumerable<Guid> GetAllPlayersUuid()
+        {
+            return context.CricketPlayerInfo.Select(x => x.Uuid);
+        }
+
+        public async Task UpdatePlayersCareerStatistics()
+        {
+            var counter = 1;
+
+            var t20iResponse = context.T20ICricketMatchInfo
+                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty)))
+                    .Select(x => x.ToDomain());
+
+            var odiResponse = context.ODICricketMatchInfo
+                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty)))
+                    .Select(x => x.ToDomain());
+
+            var testResponse = context.TestCricketMatchInfo
+                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty)))
+                    .Select(x => x.ToDomain());
+
+            List<Guid> result = GetAllPlayersUuid().Where(x => x == new Guid("7c5181e5-08d2-4c8e-844b-6dd57cef00eb")).ToList();
+
+            var startTime = DateTime.Now;
+
+            foreach (var uuid in result)
+            {
+                Console.WriteLine($"updating career statistics for player no {counter} with uuid {uuid}");
+
+                var player = context.CricketPlayerInfo.Single(x => x.Uuid == uuid);
+                var t20iStats = t20iResponse.GetPlayerStats(player.InternationalTeamNames.FirstOrDefault()!, player.PlayerName.Trim(), true);
+                var odiStats = odiResponse.GetPlayerStats(player.InternationalTeamNames.FirstOrDefault()!, player.PlayerName.Trim(), true);
+                var testStats = testResponse.GetTestPlayerStats(player.InternationalTeamNames.FirstOrDefault()!, player.PlayerName.Trim(), true);
+
+                player.CareerStatistics = new CareerDetailsInfo(
+                    testStats,
+                    odiStats,
+                    t20iStats
+                );
+
+                context.CricketPlayerInfo.Update(player);
+
+                await context.SaveChangesAsync();
+                counter++;
+
+                var stepTime = DateTime.Now;
+
+                Console.WriteLine($"Running watch: {stepTime - startTime}");
+            }
+
+            var endTime = DateTime.Now;
+
+            Console.WriteLine($"Total seeding time is {endTime - startTime}");
         }
     }
 }

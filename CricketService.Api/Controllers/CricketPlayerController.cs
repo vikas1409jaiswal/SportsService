@@ -37,6 +37,16 @@ public class CricketPlayerController : Controller
         return Ok(allPlayers);
     }
 
+    [HttpGet("players/unique")]
+    public IActionResult GetAllPlayersUuids([FromQuery, Required] CricketFormat format)
+    {
+        var allPlayers = cricketPlayerRepository.GetAllPlayersUuidAndHref(format);
+
+        Response.Headers.Add("total-players", allPlayers.Count().ToString());
+
+        return Ok(allPlayers);
+    }
+
     [HttpGet("players")]
     public IActionResult GetAllPlayersName([FromQuery, Required] CricketFormat format)
     {

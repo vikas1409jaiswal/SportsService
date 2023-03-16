@@ -39,18 +39,11 @@ namespace CricketService.Api.Controllers
         [HttpGet("teams/all")]
         public IActionResult GetAllTeams([FromQuery, Required] CricketFormat format)
         {
-            List<string> allTeams = new List<string>();
+            List<string> allTeams = new();
 
-            if (format == CricketFormat.T20I)
-            {
-                allTeams.AddRange(cricketTeamRepository.GetAllTeamNames(format));
-            }
-            else if (format == CricketFormat.ODI)
-            {
-                allTeams.AddRange(cricketTeamRepository.GetAllTeamNames(format));
-            }
+            allTeams.AddRange(cricketTeamRepository.GetAllTeamNames(format));
 
-            Response.Headers.Add("total-teams", allTeams.Count().ToString());
+            Response.Headers.Add($"total-{format}-teams", allTeams.Count().ToString());
 
             return Ok(allTeams);
         }

@@ -1,5 +1,5 @@
-﻿using Newtonsoft.Json;
-using System.Buffers;
+﻿using System.Buffers;
+using Newtonsoft.Json;
 
 namespace CricketService.Api.Middlewares
 {

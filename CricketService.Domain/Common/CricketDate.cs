@@ -39,7 +39,7 @@ namespace CricketService.Domain.Common
                 return string.Empty;
             }
 
-           return Date?.ToString("dd MMM yyyy")!;
+           return Date?.ToString("MMM dd, yyyy")!;
         }
     }
 }

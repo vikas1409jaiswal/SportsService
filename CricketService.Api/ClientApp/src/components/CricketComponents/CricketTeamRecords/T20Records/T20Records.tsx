@@ -12,7 +12,6 @@ import {
 import { TeamDetails } from "../TeamDetails/TeamDetails";
 import { CricketTeamData } from "../Models/Interface";
 import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
-import { TailSpinLoader } from "../../../common/Loader";
 
 import "./T20Records.scss";
 

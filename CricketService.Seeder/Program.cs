@@ -31,6 +31,7 @@ namespace CricketService.Seeder
             services.AddCricketServiceDataLayer(config);
             services.AddOptions<StaticDataJsonFilePathsOptions>().Bind(config.GetSection(StaticDataJsonFilePathsOptions.SectionName));
             services.AddScoped<ICricketMatchRepository, CricketMatchRepository>();
+            services.AddScoped<ICricketPlayerRepository, CricketPlayerRepository>();
             services.AddLogging(logging =>
             {
                 logging.ClearProviders();

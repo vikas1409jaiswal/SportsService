@@ -12,17 +12,17 @@ namespace CricketService.Hangfire.Attributes
             IElectStateFilter,
             IApplyStateFilter
     {
-        private readonly AutomaticRetryAttribute _automaticRetryAttribute;
+        private readonly AutomaticRetryAttribute automaticRetryAttribute;
 
         public CustomAutomaticRetryAttribute(IOptions<HangfireOptions> hangfireOptionsAccessor)
         {
            // Precondition.IsNotNull(hangfireOptionsAccessor, nameof(hangfireOptionsAccessor));
 
-            _automaticRetryAttribute = new AutomaticRetryAttribute();
+            this.automaticRetryAttribute = new AutomaticRetryAttribute();
 
             var hangfireOptions = hangfireOptionsAccessor.Value;
-            _automaticRetryAttribute.Attempts = hangfireOptions.AutomaticRetryAttempts;
-            _automaticRetryAttribute.DelayInSecondsByAttemptFunc =
+            this.automaticRetryAttribute.Attempts = hangfireOptions.AutomaticRetryAttempts;
+            this.automaticRetryAttribute.DelayInSecondsByAttemptFunc =
                 GetDelayInSecondsByAttemptFunc(
                     hangfireOptions.DelayInSecondsFuncBase,
                     hangfireOptions.DelayInSecondsFuncJitterMaxValue);
@@ -46,14 +46,14 @@ namespace CricketService.Hangfire.Attributes
         public void OnStateApplied(
             ApplyStateContext context,
             IWriteOnlyTransaction transaction)
-            => _automaticRetryAttribute.OnStateApplied(context, transaction);
+            => this.automaticRetryAttribute.OnStateApplied(context, transaction);
 
         public void OnStateElection(ElectStateContext context)
-            => _automaticRetryAttribute.OnStateElection(context);
+            => this.automaticRetryAttribute.OnStateElection(context);
 
         public void OnStateUnapplied(
             ApplyStateContext context,
             IWriteOnlyTransaction transaction)
-            => _automaticRetryAttribute.OnStateUnapplied(context, transaction);
+            => this.automaticRetryAttribute.OnStateUnapplied(context, transaction);
     }
 }

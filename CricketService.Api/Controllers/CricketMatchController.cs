@@ -93,6 +93,28 @@ public class CricketMatchController : Controller
         return Ok(matches);
     }
 
+    [HttpGet("testMatch/range")]
+    public async Task<ActionResult<IEnumerable<CricketMatchInfoResponse>>> GetMatchByMNumberRangeTest(
+       [FromQuery, Required] int startMatchNumber,
+       [FromQuery, Required] int endMatchNumber)
+    {
+        var allMatchNumber = Enumerable.Range(startMatchNumber, endMatchNumber - startMatchNumber);
+
+        List<TestCricketMatchInfoResponse> matches = new();
+
+        foreach (var matchNumber in allMatchNumber)
+        {
+            var match = await cricketMatchRepository.GetMatchByMNumberTest(matchNumber);
+
+            if (match is not null)
+            {
+                matches.Add(match);
+            }
+        }
+
+        return Ok(matches);
+    }
+
     [HttpGet("t20Match")]
     public ActionResult<IEnumerable<CricketMatchInfoResponse>> GetMatchByTeamNameT20I([FromQuery, Required] string teamName)
     {
@@ -173,6 +195,42 @@ public class CricketMatchController : Controller
         foreach (var matchInfo in addingMatches)
         {
             await cricketMatchRepository.AddMatchODI(matchInfo);
+
+            resultResponse.success.Add(matchInfo.MatchNo);
+        }
+
+        return Ok(new
+        {
+            successMatches = resultResponse.success.Count,
+            failedMatches = resultResponse.failed.Count,
+            failedMatchNumbers = resultResponse.failed,
+        });
+    }
+
+    [HttpPost("testMatch/addRange")]
+    [Consumes(MediaTypeNames.Application.Json)]
+    public async Task<IActionResult> AddTestMatches([FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<TestCricketMatchInfoRequest> cricketMatchInfoRequest)
+    {
+        var resultResponse = new { success = new List<string>(), failed = new List<string>() };
+        var addingMatches = new List<TestCricketMatchInfoRequest>();
+
+        foreach (var matchInfo in cricketMatchInfoRequest)
+        {
+            var foundMatch = await cricketMatchRepository.GetMatchByMNumberTest(Convert.ToInt32(matchInfo.MatchNo.Replace("Test no. ", string.Empty)));
+
+            if (foundMatch is not null)
+            {
+                resultResponse.failed.Add(matchInfo.MatchNo);
+            }
+            else
+            {
+                addingMatches.Add(matchInfo);
+            }
+        }
+
+        foreach (var matchInfo in addingMatches)
+        {
+            await cricketMatchRepository.AddMatchTest(matchInfo);
 
             resultResponse.success.Add(matchInfo.MatchNo);
         }

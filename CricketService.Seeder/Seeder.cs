@@ -67,6 +67,29 @@ namespace CricketService.Seeder
                     }
                 }
             }
+
+            if (seedDataFeatures!.TestMatches && jsonFilePathsOptions!.TestMatchesData is not null)
+            {
+                StreamReader r = new StreamReader(jsonFilePathsOptions!.TestMatchesData);
+
+                var testMatchesData = JsonConvert.DeserializeObject<List<TestCricketMatchInfoRequest>>(r.ReadToEnd())!;
+
+                if (testMatchesData.Count > 0)
+                {
+                    int counter = 0;
+
+                    foreach (var match in testMatchesData)
+                    {
+                        await repository.AddMatchTest(match);
+                        counter++;
+
+                        if (counter % 100 == 0)
+                        {
+                            logger.LogInformation($"{counter} Test matches seeded.");
+                        }
+                    }
+                }
+            }
         }
     }
 }
