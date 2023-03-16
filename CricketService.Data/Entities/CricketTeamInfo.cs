@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using CricketService.Domain;
 
 namespace CricketService.Data.Entities
 {
@@ -21,5 +22,14 @@ namespace CricketService.Data.Entities
 
         [Column("flag_url")]
         public string FlagUrl { get; set; } = string.Empty;
+
+        [Column("test_records")]
+        public TestTeamFormatRecordDetails TestRecords { get; set; } = null!;
+
+        [Column("odi_records")]
+        public TeamFormatRecordDetails ODIRecords { get; set; } = null!;
+
+        [Column("t20i_records")]
+        public TeamFormatRecordDetails T20IRecords { get; set; } = null!;
     }
 }

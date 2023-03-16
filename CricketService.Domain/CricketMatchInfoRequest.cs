@@ -54,15 +54,15 @@ public class TeamScoreDetailsRequest
 {
     public TeamScoreDetailsRequest(
         string teamName,
-        ICollection<BattingScoreCardRequest> battingScoreCard,
-        ICollection<BowlingScoreCardRequest> bowlingScoreCard,
+        ICollection<BattingScoreCardRequest> battingScorecard,
+        ICollection<BowlingScoreCardRequest> bowlingScorecard,
         string extras,
         string[] fallOfWickets,
         Player[] didNotBat)
     {
         TeamName = teamName;
-        BattingScoreCard = battingScoreCard;
-        BowlingScoreCard = bowlingScoreCard;
+        BattingScorecard = battingScorecard;
+        BowlingScorecard = bowlingScorecard;
         Extras = extras;
         FallOfWickets = fallOfWickets;
         DidNotBat = didNotBat;
@@ -70,9 +70,9 @@ public class TeamScoreDetailsRequest
 
     public string TeamName { get; set; } = string.Empty;
 
-    public ICollection<BattingScoreCardRequest> BattingScoreCard { get; set; }
+    public ICollection<BattingScoreCardRequest> BattingScorecard { get; set; }
 
-    public ICollection<BowlingScoreCardRequest> BowlingScoreCard { get; set; }
+    public ICollection<BowlingScoreCardRequest> BowlingScorecard { get; set; }
 
     public string Extras { get; set; } = string.Empty;
 

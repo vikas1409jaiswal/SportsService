@@ -1,4 +1,6 @@
-﻿namespace CricketService.Domain
+﻿using CricketService.Domain.Common;
+
+namespace CricketService.Domain
 {
     public class Player
     {
@@ -22,27 +24,25 @@
             string fullName,
             string playerUrl,
             string dateOfBirth,
-            ICollection<string> internationalFormats,
             string birthPlace,
-            string battingStyle,
-            string bowlingStyle,
-            string playingRole,
-            string height,
-            string imageSrc,
-            string teamNames)
+            DebutDetailsInfo debutDetailsInfo,
+            CareerDetailsInfo careerInfo,
+            string dateOfDeath,
+            ICollection<string> internationalFormats,
+            string teamNames,
+            PlayerExtraInfo extraInfo)
         {
             Uuid = uuid;
             FullName = fullName;
             PlayerUrl = playerUrl;
             DateOfBirth = dateOfBirth;
+            DebutDetails = debutDetailsInfo;
+            CareerStatistics= careerInfo;
+            DateOfDeath = dateOfDeath;
             BirthPlace = birthPlace;
             InternationalFormats = internationalFormats;
-            BattingStyle = battingStyle;
-            BowlingStyle = bowlingStyle;
-            PlayingRole = playingRole;
-            Height = height;
-            ImageSrc = imageSrc;
             TeamNames = teamNames.Split(", ");
+            ExtraInfo = extraInfo;
         }
 
         public Guid Uuid { get; set; }
@@ -53,20 +53,18 @@
 
         public string DateOfBirth { get; set; }
 
+        public string DateOfDeath { get; set; }
+
+        public DebutDetailsInfo DebutDetails { get; set; }
+
+        public CareerDetailsInfo CareerStatistics { get; set; }
+
         public string BirthPlace { get; set; }
 
         public ICollection<string> InternationalFormats { get; set; }
 
-        public string BattingStyle { get; set; } = string.Empty;
-
-        public string BowlingStyle { get; set; } = string.Empty;
-
-        public string PlayingRole { get; set; } = string.Empty;
-
-        public string Height { get; set; } = string.Empty;
-
-        public string ImageSrc { get; set; } = string.Empty;
-
         public string[] TeamNames { get; set; } = Array.Empty<string>();
+
+        public PlayerExtraInfo ExtraInfo { get; set; }
     }
 }

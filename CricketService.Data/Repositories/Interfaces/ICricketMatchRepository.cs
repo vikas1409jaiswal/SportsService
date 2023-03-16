@@ -11,6 +11,8 @@ public interface ICricketMatchRepository
 
     Task<CricketMatchInfoResponse> GetMatchByMNumberODI(int matchNumber);
 
+    Task<TestCricketMatchInfoResponse> GetMatchByMNumberTest(int matchNumber);
+
     IEnumerable<CricketMatchInfoResponse> GetMatchByTeamT20I(string teamName);
 
     IEnumerable<CricketMatchInfoResponse> GetMatchByTeamODI(string teamName);
@@ -18,4 +20,6 @@ public interface ICricketMatchRepository
     Task<CricketMatchInfoResponse> AddMatchT20I(CricketMatchInfoRequest match);
 
     Task<CricketMatchInfoResponse> AddMatchODI(CricketMatchInfoRequest match);
+
+    Task<TestCricketMatchInfoResponse> AddMatchTest(TestCricketMatchInfoRequest match);
 }

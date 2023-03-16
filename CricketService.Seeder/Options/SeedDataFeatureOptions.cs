@@ -7,4 +7,6 @@ public class SeedDataFeatureOptions
     public bool ODIMatches { get; set; } = false;
 
     public bool T20IMatches { get; set; } = false;
+
+    public bool TestMatches { get; set; } = false;
 }

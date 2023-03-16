@@ -28,31 +28,30 @@ namespace CricketService.Domain
     public class TeamRecordDetails
     {
         public TeamRecordDetails(
-            TeamResultDetails t20IResults,
-            TeamResultDetails oDIResults,
-            TeamResultDetails testResults)
+            TeamFormatRecordDetails t20IResults,
+            TeamFormatRecordDetails oDIResults,
+            TestTeamFormatRecordDetails testResults)
         {
             T20IResults = t20IResults;
             ODIResults = oDIResults;
             TestResults = testResults;
         }
 
-        public TeamResultDetails T20IResults { get; set; }
+        public TeamFormatRecordDetails T20IResults { get; set; }
 
-        public TeamResultDetails ODIResults { get; set; }
+        public TeamFormatRecordDetails ODIResults { get; set; }
 
-        public TeamResultDetails TestResults { get; set; }
+        public TestTeamFormatRecordDetails TestResults { get; set; }
     }
 
-    public class TeamResultDetails
+    public class TeamFormatRecordDetails
     {
-        public TeamResultDetails(
+        public TeamFormatRecordDetails(
             DebutDetails debut,
             int matches,
             int won,
             int lost,
-            int tiedAndWon,
-            int tiedAndLost,
+            int tied,
             int noResult,
             TeamMileStones teamMileStones)
         {
@@ -60,8 +59,7 @@ namespace CricketService.Domain
             Matches = matches;
             Won = won;
             Lost = lost;
-            TiedAndWon = tiedAndWon;
-            TiedAndLost = tiedAndLost;
+            Tied = tied;
             NoResult = noResult;
             TeamMileStones = teamMileStones;
         }
@@ -74,9 +72,7 @@ namespace CricketService.Domain
 
         public int Lost { get; set; }
 
-        public int TiedAndWon { get; set; }
-
-        public int TiedAndLost { get; set; }
+        public int Tied { get; set; }
 
         public int NoResult { get; set; }
 
@@ -89,7 +85,68 @@ namespace CricketService.Domain
                     return 0;
                 }
 
-                return ((Won + (0.5 * TiedAndWon)) / Matches) * 100;
+                return ((Won + (0.5 * Tied)) / Matches) * 100;
+            }
+        }
+
+        public TeamMileStones TeamMileStones { get; set; }
+    }
+
+    public class TestTeamFormatRecordDetails
+    {
+        public TestTeamFormatRecordDetails(
+            DebutDetails debut,
+            int matches,
+            int won,
+            int lost,
+            int tied,
+            int draw,
+            TeamMileStones teamMileStones)
+        {
+            Debut = debut;
+            Matches = matches;
+            Won = won;
+            Lost = lost;
+            Tied = tied;
+            Draw = draw;
+            TeamMileStones = teamMileStones;
+        }
+
+        public DebutDetails Debut { get; set; }
+
+        public int Matches { get; set; }
+
+        public int Won { get; set; }
+
+        public int Lost { get; set; }
+
+        public int Tied { get; set; }
+
+        public int Draw { get; set; }
+
+        public double WinPercentage
+        {
+            get
+            {
+                if (Matches == 0)
+                {
+                    return 0;
+                }
+
+                return (double)Won / Matches * 100;
+            }
+        }
+
+        public double DrawPercentage
+        {
+            get
+            {
+                if (Matches == 0)
+                {
+                    return 0;
+                }
+
+                return (double)Draw / Matches * 100;
             }
         }
 
@@ -100,14 +157,14 @@ namespace CricketService.Domain
     {
         public DebutDetails(
             Guid matchUuid,
-            DateTime date,
+            string date,
             string opponent,
             string venue,
             string result,
             string matchNo)
         {
             MatchUuid = matchUuid;
-            Date = date.ToShortDateString();
+            Date = date;
             Opponent = opponent;
             Venue = venue;
             Result = result;
@@ -136,8 +193,11 @@ namespace CricketService.Domain
             int careerOneAndHalfCenturies,
             int careerDoubleCenturies,
             InningRecordDetails inningRecordDetails,
+            KeyValuePair<string, int> mostInnings,
             KeyValuePair<string, int> mostRuns,
             KeyValuePair<string, int> mostWickets,
+            KeyValuePair<string, string> bestBowlingInning,
+            KeyValuePair<string, string> bestBowlingMatch,
             KeyValuePair<string, int> mostSixes,
             KeyValuePair<string, int> mostFours,
             KeyValuePair<string, int> most50s,
@@ -152,8 +212,11 @@ namespace CricketService.Domain
             CareerOneAndHalfCenturies = careerOneAndHalfCenturies;
             CareerDoubleCenturies = careerDoubleCenturies;
             InningRecordDetails = inningRecordDetails;
+            MostInnings = mostInnings;
             MostRuns = mostRuns;
             MostWickets = mostWickets;
+            BestBowlingInning = bestBowlingInning;
+            BestBowlingMatch = bestBowlingMatch;
             MostSixes = mostSixes;
             MostFours = mostFours;
             Most50s = most50s;
@@ -175,9 +238,15 @@ namespace CricketService.Domain
 
         public InningRecordDetails InningRecordDetails { get; set; }
 
+        public KeyValuePair<string, int> MostInnings { get; set; }
+
         public KeyValuePair<string, int> MostRuns { get; set; }
 
         public KeyValuePair<string, int> MostWickets { get; set; }
+
+        public KeyValuePair<string, string> BestBowlingInning { get; set; }
+
+        public KeyValuePair<string, string> BestBowlingMatch { get; set; }
 
         public KeyValuePair<string, int> MostSixes { get; set; }
 
@@ -197,29 +266,33 @@ namespace CricketService.Domain
     public class InningRecordDetails
     {
         public InningRecordDetails(
-            InningTotal highestTotal,
-            InningTotal lowestTotal)
+            InningTotalDetails highestTotal,
+            InningTotalDetails lowestTotal)
         {
             HighestTotal = highestTotal;
             LowestTotal = lowestTotal;
         }
 
-        public InningTotal HighestTotal { get; set; }
+        public InningTotalDetails HighestTotal { get; set; }
 
-        public InningTotal LowestTotal { get; set; }
+        public InningTotalDetails LowestTotal { get; set; }
     }
 
-    public class InningTotal
+    public class InningTotalDetails
     {
-        public InningTotal(
+        public InningTotalDetails(
+            Guid matchUuid,
             int runs,
             int wickets,
             Over overs)
         {
+            MatchUuid = matchUuid;
             Runs = runs;
             Wickets = wickets;
             Overs = overs;
         }
+
+        public Guid MatchUuid { get; set; }
 
         public int Runs { get; set; }
 

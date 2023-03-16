@@ -5,7 +5,7 @@ namespace CricketService.Domain.Attributes.ValidationAttributes
 {
     public class CricketSeasonAttribute : ValidationAttribute
     {
-        private readonly string pattern = @"^(19|20)\d{2}(/(\d{2}))?$";
+        private readonly string pattern = @"^(18|19|20)\d{2}(/(\d{2}))?$";
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {

@@ -35,6 +35,7 @@ namespace CricketService.Api
             services.AddScoped<ICricketPlayerRepository, CricketPlayerRepository>();
             services.AddScoped<ICricketMatchRepository, CricketMatchRepository>();
             services.AddScoped<ICricketTeamRepository, CricketTeamRepository>();
+            services.AddScoped<IHangfireRepository, HangfireRepository>();
             services.AddCricketServiceDataLayer(Configuration);
 
             services.AddControllers(options =>
@@ -50,7 +51,6 @@ namespace CricketService.Api
                 .AddScoped<ModelStateExceptionFilter>();
 
             services.AddHangfirePostgres(Configuration);
-            services.AddHangfireServer();
 
             services.TryAddSingleton<ITraceRecorder>(new TraceRecorder("Cricket Service"));
             services.AddSingleton<JobFilterAttribute, TracingClientJobFilterAttribute>();

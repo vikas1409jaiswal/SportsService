@@ -3,8 +3,10 @@ using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
+using CricketService.Domain.Common;
 using CricketService.Domain.Enums;
 using Microsoft.Extensions.Logging;
+using System.Linq;
 
 namespace CricketService.Data.Repositories;
 
@@ -31,6 +33,23 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         return allPlayers;
     }
 
+    public IEnumerable<object> GetAllPlayersUuidAndHref(CricketFormat format)
+    {
+        logger.LogInformation("Fetching all cricket Players.");
+
+        var allPlayers = context.CricketPlayerInfo.ToList()
+            .Where(x => x.Formats.Count() == 1 && x.Formats.ToList().Contains(format.ToString()))
+            .ToList()
+            .Select(x => new
+            {
+                Uuid = x.Uuid,
+                PlayerName = x.PlayerName,
+                Href = x.Href,
+            });
+
+        return allPlayers;
+    }
+
     public IEnumerable<PlayerDetails> GetAllPlayers()
     {
         logger.LogInformation("Fetching all cricket Players.");
@@ -40,17 +59,34 @@ public class CricketPlayerRepository : ICricketPlayerRepository
                 x.Uuid,
                 x.PlayerName,
                 x.Href,
-                x.DateOfBirth,
+                new CricketDate(x.Birth, InfoFormats.BirthInfo).ToString(),
+                string.Empty,
+                x.DebutDetails,
+                x.CareerStatistics,
+                x.Death,
                 x.Formats,
-                x.BirthPlace,
-                x.BattingStyle,
-                x.BowlingStyle,
-                x.PlayingRole,
-                x.Height,
-                x.ImageSrc,
-                x.TeamNames));
+                x.TeamNames,
+                x.ExtraInfo));
 
         return allPlayers;
+    }
+
+    public PlayerDetails GetPlayerByUuid(Guid playerUuid)
+    {
+        var player = context.CricketPlayerInfo.Single(x => x.Uuid == playerUuid);
+
+        return new PlayerDetails(
+                player.Uuid,
+                player.PlayerName,
+                player.Href,
+                new CricketDate(player.Birth, InfoFormats.BirthInfo).ToString(),
+                string.Join(", ", player.Birth.Split(", ").Skip(2)),
+                player.DebutDetails,
+                player.CareerStatistics,
+                player.Death,
+                player.Formats,
+                player.TeamNames,
+                player.ExtraInfo);
     }
 
     public CricketPlayerInfoResponse GetPlayerDetailsByTeamName(string teamName, string playerName, bool? isSingle = false)
@@ -59,6 +95,7 @@ public class CricketPlayerRepository : ICricketPlayerRepository
 
         var cricketMatchInfoTableT20I = context.T20ICricketMatchInfo;
         var cricketMatchInfoTableODI = context.ODICricketMatchInfo;
+        var cricketMatchInfoTableTest = context.TestCricketMatchInfo;
         var cricketPlayerInfoTable = context.CricketPlayerInfo;
 
         var allMatchesByTeamT20I = cricketMatchInfoTableT20I
@@ -68,6 +105,10 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         var allMatchesByTeamODI = cricketMatchInfoTableODI
             .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
             .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty))).Select(x => x.ToDomain());
+
+        var allMatchesByTeamTest = cricketMatchInfoTableTest
+            .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
+            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty))).Select(x => x.ToDomain());
 
         Entities.CricketPlayerInfo playerInfo = null!;
 
@@ -92,9 +133,9 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         var playerCareerDetails = new CricketPlayerInfoResponse(
             playerInfo.Uuid,
             playerName,
-            default(DateTime),
+            new CricketDate(playerInfo.Birth).ToString(),
             teamName,
-            "Chennai",
+            string.Join(", ", playerInfo.Birth.Split(", ").Skip(2)),
             new CareerDetailsInfo(null!, null!, null!),
             "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Shri_Virat_Kohli_for_Cricket%2C_in_a_glittering_ceremony%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_September_25%2C_2018_%28cropped%29.JPG/330px-Shri_Virat_Kohli_for_Cricket%2C_in_a_glittering_ceremony%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_September_25%2C_2018_%28cropped%29.JPG");
 
@@ -102,20 +143,8 @@ public class CricketPlayerRepository : ICricketPlayerRepository
 
         playerCareerDetails.CareerDetails.ODICareer = allMatchesByTeamODI.GetPlayerStats(teamName, playerName.Trim(), isSingle);
 
+        playerCareerDetails.CareerDetails.TestCareer = allMatchesByTeamTest.GetTestPlayerStats(teamName, playerName.Trim(), isSingle);
+
         return playerCareerDetails;
-    }
-
-    public IEnumerable<CricketPlayerInfoResponse> GetPlayerByUuid(Guid playerUuid)
-    {
-        var player = context.CricketPlayerInfo.Single(x => x.Uuid == playerUuid);
-
-        var playerD = new List<CricketPlayerInfoResponse>();
-
-        foreach (var team in player.InternationalTeamNames)
-        {
-            playerD.Add(GetPlayerDetailsByTeamName(team, player.PlayerName, true));
-        }
-
-        return playerD;
     }
 }

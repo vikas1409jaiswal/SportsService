@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using CricketService.Domain.Common;
 
 namespace CricketService.Domain;
@@ -7,7 +8,7 @@ public class CricketPlayerInfoResponse
     public CricketPlayerInfoResponse(
         Guid playerUuid,
         string fullName,
-        DateTime dateOfBirth,
+        string dateOfBirth,
         string teamName,
         string birthPlace,
         CareerDetailsInfo careerDetailsInfo,
@@ -26,7 +27,7 @@ public class CricketPlayerInfoResponse
 
     public string FullName { get; set; } = string.Empty;
 
-    public DateTime DateOfBirth { get; set; }
+    public string DateOfBirth { get; set; }
 
     public string TeamName { get; set; } = string.Empty;
 
@@ -61,11 +62,13 @@ public class CareerInfo
     public CareerInfo(
         DebutDetails debutDetails,
         BattingStatistics battingStatistics,
-        BowlingStatistics bowlingStatistics)
+        BowlingStatistics bowlingStatistics,
+        FieldingStatistics fieldingStatistics)
     {
         DebutDetails = debutDetails;
         BattingStatistics = battingStatistics;
         BowlingStatistics = bowlingStatistics;
+        FieldingStatistics = fieldingStatistics;
     }
 
     public DebutDetails DebutDetails { get; set; }
@@ -73,6 +76,8 @@ public class CareerInfo
     public BattingStatistics BattingStatistics { get; set; }
 
     public BowlingStatistics BowlingStatistics { get; set; }
+
+    public FieldingStatistics FieldingStatistics { get; set; }
 }
 
 public class BattingStatistics
@@ -80,21 +85,23 @@ public class BattingStatistics
     public BattingStatistics(
         int matches,
         int innings,
+        int notOut,
         int runs,
+        int highestScore,
         int ballsFaced,
         int centuries,
         int halfCenturies,
-        int highestScore,
         int fours,
         int sixes)
     {
         Matches = matches;
         Innings = innings;
+        NotOut = notOut;
         Runs = runs;
+        HighestScore = highestScore;
         BallsFaced = ballsFaced;
         Centuries = centuries;
         HalfCenturies = halfCenturies;
-        HighestScore = highestScore;
         Fours = fours;
         Sixes = sixes;
     }
@@ -103,19 +110,28 @@ public class BattingStatistics
 
     public int Innings { get; set; }
 
+    public int NotOut { get; set; }
+
     public int Runs { get; set; }
-
-    public int BallsFaced { get; set; }
-
-    public int Centuries { get; set; }
-
-    public int HalfCenturies { get; set; }
 
     public int HighestScore { get; set; }
 
-    public int Fours { get; set; }
+    public double Average
+    {
+        get
+        {
+            var outTimes = Innings - NotOut;
+            if (outTimes == 0)
+            {
+                return 0;
+            }
 
-    public int Sixes { get; set; }
+            var average = (double)Runs / outTimes;
+            return average;
+        }
+    }
+
+    public int BallsFaced { get; set; }
 
     public double StrikeRate
     {
@@ -130,6 +146,14 @@ public class BattingStatistics
             return strikeRate;
         }
     }
+
+    public int Centuries { get; set; }
+
+    public int HalfCenturies { get; set; }
+
+    public int Fours { get; set; }
+
+    public int Sixes { get; set; }
 }
 
 public class BowlingStatistics
@@ -140,6 +164,11 @@ public class BowlingStatistics
         int wickets,
         Over overs,
         int runsConceded,
+        string bestBowlingInning,
+        string bestBowlingMatch,
+        int fourWicketsHaul,
+        int fiveWicketsHaul,
+        int tenWicketsHaul,
         int noBall,
         int wideBall,
         int maidens,
@@ -152,6 +181,11 @@ public class BowlingStatistics
         Wickets = wickets;
         Overs = overs;
         RunsConceded = runsConceded;
+        BestBowlingInning = bestBowlingInning;
+        BestBowlingMatch = bestBowlingMatch;
+        FourWicketsHaul = fourWicketsHaul;
+        FiveWicketsHaul = fiveWicketsHaul;
+        TenWicketsHaul = tenWicketsHaul;
         NoBall = noBall;
         WideBall = wideBall;
         Maidens = maidens;
@@ -170,17 +204,23 @@ public class BowlingStatistics
 
     public int RunsConceded { get; set; }
 
-    public int NoBall { get; set; }
+    public string BestBowlingInning { get; set; }
 
-    public int WideBall { get; set; }
+    public string BestBowlingMatch { get; set; }
 
-    public int Maidens { get; set; }
+    public double Average
+    {
+        get
+        {
+            if (Wickets == 0)
+            {
+                return 0;
+            }
 
-    public int Dots { get; set; }
-
-    public int Sixes { get; set; }
-
-    public int Fours { get; set; }
+            var average = (double)RunsConceded / Wickets;
+            return average;
+        }
+    }
 
     public double Economy
     {
@@ -195,4 +235,55 @@ public class BowlingStatistics
             return economy;
         }
     }
+
+    public double StrikeRate
+    {
+        get
+        {
+            if (Wickets == 0)
+            {
+                return 0;
+            }
+
+            var economy = (double)Overs.Balls / Wickets;
+            return economy;
+        }
+    }
+
+    public int FourWicketsHaul { get; set; }
+
+    public int FiveWicketsHaul { get; set; }
+
+    public int TenWicketsHaul { get; set; }
+
+    public int NoBall { get; set; }
+
+    public int WideBall { get; set; }
+
+    public int Maidens { get; set; }
+
+    public int Dots { get; set; }
+
+    public int Sixes { get; set; }
+
+    public int Fours { get; set; }
+}
+
+public class FieldingStatistics
+{
+    public FieldingStatistics(
+        int caught,
+        int stumpings,
+        int runOut)
+    {
+        Caught = caught;
+        Stumpings = stumpings;
+        RunOut = runOut;
+    }
+
+    public int Caught { get; set; }
+
+    public int Stumpings { get; set; }
+
+    public int RunOut { get; set; }
 }

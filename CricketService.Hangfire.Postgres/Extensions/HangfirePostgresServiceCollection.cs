@@ -33,6 +33,7 @@ namespace CricketService.Hangfire.Postgres.Extensions
 
             serviceCollection.AddHangfire(configuration =>
             {
+                configuration.UseDefaultTypeSerializer();
                 configuration.UsePostgreSqlStorage(hangfireOptions.DatabaseConnectionString, options);
             });
 

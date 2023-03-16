@@ -29,30 +29,30 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("uuid");
 
-                    b.Property<string>("BattingStyle")
+                    b.Property<string>("Birth")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("batting_style");
+                        .HasColumnName("birth_info");
 
-                    b.Property<string>("BirthPlace")
+                    b.Property<string>("CareerStatistics")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("career_statistics");
+
+                    b.Property<string>("Death")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("birth_place");
+                        .HasColumnName("death_info");
 
-                    b.Property<string>("BowlingStyle")
+                    b.Property<string>("DebutDetails")
                         .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("bowling_style");
+                        .HasColumnType("jsonb")
+                        .HasColumnName("debut_details");
 
-                    b.Property<string[]>("Content")
+                    b.Property<string>("ExtraInfo")
                         .IsRequired()
-                        .HasColumnType("text[]")
-                        .HasColumnName("contents");
-
-                    b.Property<string>("DateOfBirth")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("date_of_birth");
+                        .HasColumnType("jsonb")
+                        .HasColumnName("extra_info");
 
                     b.Property<string>("Formats")
                         .IsRequired()
@@ -64,20 +64,10 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("full_name");
 
-                    b.Property<string>("Height")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("height");
-
                     b.Property<string>("Href")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("href");
-
-                    b.Property<string>("ImageSrc")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("image_src");
 
                     b.Property<string>("InternationalTeamNames")
                         .IsRequired()
@@ -88,11 +78,6 @@ namespace CricketService.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("name");
-
-                    b.Property<string>("PlayingRole")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("playing_role");
 
                     b.Property<string>("TeamNames")
                         .IsRequired()
@@ -126,10 +111,25 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("logo_url");
 
+                    b.Property<string>("ODIRecords")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("odi_records");
+
+                    b.Property<string>("T20IRecords")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("t20i_records");
+
                     b.Property<string>("TeamName")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("team_name");
+
+                    b.Property<string>("TestRecords")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("test_records");
 
                     b.HasKey("Uuid");
 
@@ -348,6 +348,113 @@ namespace CricketService.Data.Migrations
                     b.HasKey("Uuid");
 
                     b.ToTable("t20_international_matches");
+                });
+
+            modelBuilder.Entity("CricketService.Data.Entities.TestCricketMatchInfo", b =>
+                {
+                    b.Property<Guid>("Uuid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("uuid");
+
+                    b.Property<string[]>("FormatDebut")
+                        .IsRequired()
+                        .HasColumnType("text[]")
+                        .HasColumnName("format_debut");
+
+                    b.Property<string[]>("InternationalDebut")
+                        .IsRequired()
+                        .HasColumnType("text[]")
+                        .HasColumnName("international_debut");
+
+                    b.Property<string>("MatchDates")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("match_date");
+
+                    b.Property<string>("MatchDays")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("match_days");
+
+                    b.Property<string>("MatchNo")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("match_no");
+
+                    b.Property<string>("MatchReferee")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("match_referee");
+
+                    b.Property<string>("MatchTitle")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("match_title");
+
+                    b.Property<string>("PlayerOfTheMatch")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("player_of_the_match");
+
+                    b.Property<string>("ReserveUmpire")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("reserve_umpire");
+
+                    b.Property<string>("Result")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("result");
+
+                    b.Property<string>("Season")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("season");
+
+                    b.Property<string>("Series")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("series");
+
+                    b.Property<string>("Team1")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("team1_details");
+
+                    b.Property<string>("Team2")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("team2_details");
+
+                    b.Property<string>("TossDecision")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("toss_decision");
+
+                    b.Property<string>("TossWinner")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("toss_winner");
+
+                    b.Property<string>("TvUmpire")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("tv_umpire");
+
+                    b.Property<string[]>("Umpires")
+                        .IsRequired()
+                        .HasColumnType("text[]")
+                        .HasColumnName("umpires");
+
+                    b.Property<string>("Venue")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("venue");
+
+                    b.HasKey("Uuid");
+
+                    b.ToTable("test_cricket_matches");
                 });
 #pragma warning restore 612, 618
         }

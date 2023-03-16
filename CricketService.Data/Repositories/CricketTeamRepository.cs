@@ -4,6 +4,7 @@ using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
 using CricketService.Domain.Enums;
+using CricketService.Domain.Exceptions;
 using Microsoft.Extensions.Logging;
 
 namespace CricketService.Data.Repositories
@@ -55,10 +56,20 @@ namespace CricketService.Data.Repositories
         {
             var cricketMatchInfoTableODI = context.ODICricketMatchInfo;
             var cricketMatchInfoTableT20I = context.T20ICricketMatchInfo;
+            var cricketMatchInfoTableTest = context.TestCricketMatchInfo;
             var cricketTeamInfoTable = context.CricketTeamInfo;
 
-            var allMatchesByTeamODI = cricketMatchInfoTableODI.Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName);
-            var allMatchesByTeamT20I = cricketMatchInfoTableT20I.Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName);
+            var allMatchesByTeamODI = cricketMatchInfoTableODI
+                .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty)))
+                .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName);
+
+            var allMatchesByTeamT20I = cricketMatchInfoTableT20I
+                .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty)))
+                .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName);
+
+            var allMatchesByTeamTest = cricketMatchInfoTableTest
+                .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty)))
+                .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName);
 
             Entities.CricketTeamInfo teamInfo = null!;
 
@@ -68,10 +79,10 @@ namespace CricketService.Data.Repositories
             }
             catch
             {
-                throw new Exception($"{teamName} does not exists.");
+                throw new CricketTeamNotFoundException($"{teamName} does not exists.");
             }
 
-            CricketTeamInfoResponse teamRecordData = new CricketTeamInfoResponse(
+            var teamRecordData = new CricketTeamInfoResponse(
                 teamInfo.Uuid,
                 teamName,
                 new TeamRecordDetails(null!, null!, null!),
@@ -84,8 +95,7 @@ namespace CricketService.Data.Repositories
 
                 if (isSingle)
                 {
-                    var debutMatchDetails = allMatchesByTeamT20I
-                                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty))).First();
+                    var debutMatchDetails = allMatchesByTeamT20I.First();
 
                     var debutOpponent = debutMatchDetails.Team1.TeamName == teamName ? debutMatchDetails.Team2.TeamName : debutMatchDetails.Team1.TeamName;
 
@@ -95,25 +105,21 @@ namespace CricketService.Data.Repositories
 
                     debutDetails = new DebutDetails(
                                                    debutMatchDetails.Uuid,
-                                                   Convert.ToDateTime(debutMatchDetails.MatchDate),
+                                                   debutMatchDetails.MatchDate,
                                                    debutOpponent,
                                                    debutMatchDetails.Venue,
                                                    debutMatchDetails.Result,
                                                    debutMatchDetails.MatchNo);
                 }
 
-                teamRecordData.TeamRecordDetails.T20IResults = new TeamResultDetails(
+                teamRecordData.TeamRecordDetails.T20IResults = new TeamFormatRecordDetails(
                                            debut: debutDetails,
-                                           matches: cricketMatchInfoTableT20I.Count(m => m.Team1.TeamName == teamName || m.Team2.TeamName == teamName),
-                                           won: cricketMatchInfoTableT20I.Count(m => m.Result.Contains($"{teamName} won by")),
-                                           lost: cricketMatchInfoTableT20I.Count(m => (m.Team1.TeamName == teamName && m.Result.Contains(m.Team2.TeamName + " won by"))
+                                           matches: allMatchesByTeamT20I.Count(),
+                                           won: allMatchesByTeamT20I.Count(m => m.Result.Contains($"{teamName} won by")),
+                                           lost: allMatchesByTeamT20I.Count(m => (m.Team1.TeamName == teamName && m.Result.Contains(m.Team2.TeamName + " won by"))
                                                  || (m.Team2.TeamName == teamName && m.Result.Contains(m.Team1.TeamName + " won by"))),
-                                           tiedAndWon: cricketMatchInfoTableT20I.Count(m => m.Result.Contains($"Match tied ({teamName} won the one-over eliminator)")),
-                                           tiedAndLost: cricketMatchInfoTableT20I.Count(m => (m.Team1.TeamName == teamName || m.Team2.TeamName == teamName)
-                                                 && m.Result.Contains("Match tied")
-                                                 && !m.Result.Contains($"Match tied ({teamName} won the one-over eliminator)")),
-                                           noResult: cricketMatchInfoTableT20I.Count(m => (m.Team1.TeamName == teamName || m.Team2.TeamName == teamName)
-                                                 && m.Result.Contains("No result")),
+                                           tied: allMatchesByTeamT20I.Count(m => m.Result.Contains("Match tied")),
+                                           noResult: allMatchesByTeamT20I.Count(m => m.Result.Contains("No result")),
                                            teamMileStones: teamMileStones);
             }
 
@@ -124,8 +130,7 @@ namespace CricketService.Data.Repositories
 
                 if (isSingle)
                 {
-                    var debutMatchDetails = allMatchesByTeamODI
-                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty))).First();
+                    var debutMatchDetails = allMatchesByTeamODI.First();
 
                     var debutOpponent = debutMatchDetails.Team1.TeamName == teamName ? debutMatchDetails.Team2.TeamName : debutMatchDetails.Team1.TeamName;
 
@@ -135,26 +140,57 @@ namespace CricketService.Data.Repositories
 
                     debutDetails = new DebutDetails(
                                                    debutMatchDetails.Uuid,
-                                                   Convert.ToDateTime(debutMatchDetails.MatchDate),
+                                                   debutMatchDetails.MatchDate,
                                                    debutOpponent,
                                                    debutMatchDetails.Venue,
                                                    debutMatchDetails.Result,
                                                    debutMatchDetails.MatchNo);
                 }
 
-                teamRecordData.TeamRecordDetails.ODIResults = new TeamResultDetails(
+                teamRecordData.TeamRecordDetails.ODIResults = new TeamFormatRecordDetails(
                                            debut: debutDetails,
-                                           matches: cricketMatchInfoTableODI.Count(m => m.Team1.TeamName == teamName || m.Team2.TeamName == teamName),
-                                           won: cricketMatchInfoTableODI.Count(m => m.Result.Contains($"{teamName} won by")),
-                                           lost: cricketMatchInfoTableODI.Count(m => (m.Team1.TeamName == teamName && m.Result.Contains(m.Team2.TeamName + " won by"))
+                                           matches: allMatchesByTeamODI.Count(),
+                                           won: allMatchesByTeamODI.Count(m => m.Result.Contains($"{teamName} won by")),
+                                           lost: allMatchesByTeamODI.Count(m => (m.Team1.TeamName == teamName && m.Result.Contains(m.Team2.TeamName + " won by"))
                                                  || (m.Team2.TeamName == teamName && m.Result.Contains(m.Team1.TeamName + " won by"))),
-                                           tiedAndWon: cricketMatchInfoTableODI.Count(m => m.Result.Contains($"Match tied ({teamName} won the one-over eliminator)")),
-                                           tiedAndLost: cricketMatchInfoTableODI.Count(m => (m.Team1.TeamName == teamName || m.Team2.TeamName == teamName)
-                                                 && m.Result.Contains("Match tied")
-                                                 && !m.Result.Contains($"Match tied ({teamName} won the one-over eliminator)")),
-                                           noResult: cricketMatchInfoTableODI.Count(m => (m.Team1.TeamName == teamName || m.Team2.TeamName == teamName)
-                                                 && m.Result.Contains("No result")),
+                                           tied: allMatchesByTeamODI.Count(m => m.Result.Contains("Match tied")),
+                                           noResult: allMatchesByTeamODI.Count(m => m.Result.Contains("No result")),
                                            teamMileStones: teamMileStones);
+            }
+
+            if (allMatchesByTeamTest.Any())
+            {
+                DebutDetails debutDetails = null!;
+                TeamMileStones teamMileStones = null!;
+
+                if (isSingle)
+                {
+                    var debutMatchDetails = allMatchesByTeamTest.First();
+
+                    var debutOpponent = debutMatchDetails.Team1.TeamName == teamName ? debutMatchDetails.Team2.TeamName : debutMatchDetails.Team1.TeamName;
+
+                    var cricketMatchInfoResponses = allMatchesByTeamTest.Select(x => x.ToDomain());
+
+                    teamMileStones = cricketMatchInfoResponses.GetTestMileStones(teamName);
+
+                    debutDetails = new DebutDetails(
+                                                   debutMatchDetails.Uuid,
+                                                   debutMatchDetails.MatchDates,
+                                                   debutOpponent,
+                                                   debutMatchDetails.Venue,
+                                                   debutMatchDetails.Result,
+                                                   debutMatchDetails.MatchNo);
+                }
+
+                teamRecordData.TeamRecordDetails.TestResults = new TestTeamFormatRecordDetails(
+                                   debut: debutDetails,
+                                   matches: allMatchesByTeamTest.Count(),
+                                   won: allMatchesByTeamTest.Count(m => m.Result.Contains($"{teamName} won by")),
+                                   lost: allMatchesByTeamTest.Count(m => (m.Team1.TeamName == teamName && m.Result.Contains(m.Team2.TeamName + " won by"))
+                                         || (m.Team2.TeamName == teamName && m.Result.Contains(m.Team1.TeamName + " won by"))),
+                                   tied: allMatchesByTeamTest.Count(m => m.Result.Contains("Match tied")),
+                                   draw: allMatchesByTeamTest.Count(m => m.Result.Contains("Match drawn")),
+                                   teamMileStones: teamMileStones);
             }
 
             return teamRecordData;
