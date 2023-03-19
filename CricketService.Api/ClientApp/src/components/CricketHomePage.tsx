@@ -1,14 +1,17 @@
 ﻿import React, { useState, createContext, useEffect } from "react";
 import { CricketPlayerInfoFetch } from "./CricketComponents/CricketPlayerInfoFetch/CricketPlayerInfoFetch";
-import { teamData } from "./../data/TeamData";
 import {
   CricketMatch,
-    useCricketMatch,
+  useCricketMatch,
 } from "./CricketComponents/CricketMatchesInfoFetch/useCricketMatches";
 import { playersData } from "./../components/CricketComponents/CricketPlayerInfoFetch/playersData";
 
 import "./CricketHomePage.css";
-import { CricketMatchesInfoFetch, getRangeYearsArray } from "./CricketComponents/CricketMatchesInfoFetch/CricketMatchesInfoFetch";
+import {
+  CricketMatchesInfoFetch,
+  getRangeYearsArray,
+} from "./CricketComponents/CricketMatchesInfoFetch/CricketMatchesInfoFetch";
+import Chart from "react-google-charts";
 
 export interface CricketHomePageProps {}
 
@@ -82,9 +85,7 @@ export const CricketHomePage: React.FunctionComponent<CricketHomePageProps> = (
   );
   const [totalFetchPlayers, setTotalFetchPlayers] = useState<number>(10);
 
-  const countriesList = teamData.filter((td) => td.cricketnationalteam);
-
-    const years = getRangeYearsArray(1877, 2023).map(x => parseInt(x));
+  const years = getRangeYearsArray(1877, 2023).map((x) => parseInt(x));
 
   return (
     <>
@@ -95,15 +96,15 @@ export const CricketHomePage: React.FunctionComponent<CricketHomePageProps> = (
         }}
       >
         <div className="cricket-home-page">
-           {/*<CricketMatchesInfoFetch years={years} />)*/}
-          <CricketPlayerInfoFetch
-            totalFetchPlayers={totalFetchPlayers}
-            setTotalFetchPlayers={setTotalFetchPlayers}
-            players={playersData
-              .slice(500)
-                //.slice(0, totalFetchPlayers)
-                .map((x) => [x.uuid, x.href])}
-          />
+          {/*<CricketMatchesInfoFetch years={years} />)*/}
+          {/*<CricketPlayerInfoFetch*/}
+          {/*  totalFetchPlayers={totalFetchPlayers}*/}
+          {/*  setTotalFetchPlayers={setTotalFetchPlayers}*/}
+          {/*  players={playersData*/}
+          {/*    .slice(500)*/}
+          {/*    //.slice(0, totalFetchPlayers)*/}
+          {/*    .map((x) => [x.uuid, x.href])}*/}
+          {/*/>*/}
         </div>
       </CricketContext.Provider>
     </>

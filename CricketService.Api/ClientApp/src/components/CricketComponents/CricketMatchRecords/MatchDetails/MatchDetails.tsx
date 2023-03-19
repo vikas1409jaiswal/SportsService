@@ -3,6 +3,7 @@ import { CricketMatch, CricketTeam } from "../Models/Interface";
 import { TeamScoreCard } from "./TeamScoreCard/TeamScoreCard";
 
 import "./MatchDetails.scss";
+import { defaultOptions, LineChart } from "../../../common/charts/LineChart";
 
 export interface MatchDetailsProps {
   teamData: CricketTeam[];
@@ -48,6 +49,10 @@ export const MatchDetails: React.FunctionComponent<MatchDetailsProps> = ({
           <tr>
             <td>Match Number:</td>
             <td>{matchData?.matchNo}</td>
+          </tr>
+          <tr>
+            <td>Match Date:</td>
+            <td>{matchData?.matchDate}</td>
           </tr>
           <tr>
             <td>Match Days:</td>

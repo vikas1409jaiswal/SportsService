@@ -2,6 +2,7 @@
 using System.Net.Mime;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
+using CricketService.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CricketService.Api.Controllers;
@@ -17,50 +18,82 @@ public class CricketMatchController : Controller
         this.cricketMatchRepository = cricketMatchRepository ?? throw new ArgumentNullException($"{nameof(cricketMatchRepository)} is null");
     }
 
-    [HttpGet("t20Match/all")]
-    public ActionResult<IEnumerable<CricketMatchInfoResponse>> GetAllMatchesT20I()
+    [HttpGet("internationalMatches")]
+    public IActionResult GetInternationalMatches([FromQuery, Required] CricketFormat format)
     {
-        var allMatches = cricketMatchRepository.GetAllMatchesT20I();
+        IEnumerable<object> allMatches = new List<object>();
 
-        Response.Headers.Add("total-t20I-matches", allMatches.Count().ToString());
-
-        return Ok(allMatches);
-    }
-
-    [HttpGet("odiMatch/all")]
-    public ActionResult<IEnumerable<CricketMatchInfoResponse>> GetAllMatchesODI()
-    {
-        var allMatches = cricketMatchRepository.GetAllMatchesODI();
-
-        Response.Headers.Add("total-ODI-matches", allMatches.Count().ToString());
-
-        return Ok(allMatches);
-    }
-
-    [HttpGet("t20Match/{matchNumber}")]
-    public async Task<ActionResult<CricketMatchInfoResponse>> GetMatchByMNumberT20I([FromRoute, Required] int matchNumber)
-    {
-        return Ok(await cricketMatchRepository.GetMatchByMNumberT20I(matchNumber));
-    }
-
-    [HttpGet("odiMatch/{matchNumber}")]
-    public async Task<ActionResult<CricketMatchInfoResponse>> GetMatchByMNumberODI([FromRoute, Required] int matchNumber)
-    {
-        return Ok(await cricketMatchRepository.GetMatchByMNumberODI(matchNumber));
-    }
-
-    [HttpGet("t20Match/range")]
-    public async Task<ActionResult<IEnumerable<CricketMatchInfoResponse>>> GetMatchByMNumberRangeT20I(
-        [FromQuery, Required] int startMatchNumber,
-        [FromQuery, Required] int endMatchNumber)
-    {
-        var allMatchNumber = Enumerable.Range(startMatchNumber, endMatchNumber - startMatchNumber);
-
-        List<CricketMatchInfoResponse> matches = new List<CricketMatchInfoResponse>();
-
-        foreach (var matchNumber in allMatchNumber)
+        switch (format)
         {
-            var match = await cricketMatchRepository.GetMatchByMNumberT20I(matchNumber);
+            case CricketFormat.T20I:
+                allMatches = cricketMatchRepository.GetAllMatchesT20I();
+                break;
+            case CricketFormat.ODI:
+                allMatches = cricketMatchRepository.GetAllMatchesODI();
+                break;
+            case CricketFormat.TestCricket:
+                allMatches = cricketMatchRepository.GetAllMatchesTest();
+                break;
+            default:
+                break;
+        }
+
+        Response.Headers.Add($"total-{format}-matches", allMatches.Count().ToString());
+
+        return Ok(allMatches);
+    }
+
+    [HttpGet("internationalMatches/{matchNumber}")]
+    public async Task<ActionResult<CricketMatchInfoResponse>> GetInternationalMatch([FromQuery, Required] CricketFormat format, [FromRoute, Required] int matchNumber)
+    {
+        object match = new object();
+
+        switch (format)
+        {
+            case CricketFormat.T20I:
+                match = await cricketMatchRepository.GetMatchByMNumberT20I(matchNumber);
+                break;
+            case CricketFormat.ODI:
+                match = await cricketMatchRepository.GetMatchByMNumberODI(matchNumber);
+                break;
+            case CricketFormat.TestCricket:
+                match = await cricketMatchRepository.GetMatchByMNumberTest(matchNumber);
+                break;
+            default:
+                break;
+        }
+
+        return Ok(match);
+    }
+
+    [HttpGet("internationalMatches/{startMatchNumber}/{endMatchNumber}")]
+    public async Task<ActionResult<IEnumerable<CricketMatchInfoResponse>>> GetInternationalMatchesByRangeNumber(
+        [FromRoute, Required] int startMatchNumber,
+        [FromRoute, Required] int endMatchNumber,
+        [FromQuery, Required] CricketFormat format)
+    {
+        var allMatchNumbers = Enumerable.Range(startMatchNumber, endMatchNumber - startMatchNumber + 1);
+
+        List<object> matches = new List<object>();
+
+        foreach (var matchNumber in allMatchNumbers)
+        {
+            object match = new object();
+
+            switch (format)
+            {
+                case CricketFormat.T20I:
+                    match = await cricketMatchRepository.GetMatchByMNumberT20I(matchNumber);
+                    break;
+                case CricketFormat.ODI:
+                    match = await cricketMatchRepository.GetMatchByMNumberODI(matchNumber);
+                    break;
+                case CricketFormat.TestCricket:
+                    match = await cricketMatchRepository.GetMatchByMNumberTest(matchNumber);
+                    break;
+                default:
+                    break;
+            }
 
             if (match is not null)
             {
@@ -71,66 +104,12 @@ public class CricketMatchController : Controller
         return Ok(matches);
     }
 
-    [HttpGet("odiMatch/range")]
-    public async Task<ActionResult<IEnumerable<CricketMatchInfoResponse>>> GetMatchByMNumberRangeODI(
-        [FromQuery, Required] int startMatchNumber,
-        [FromQuery, Required] int endMatchNumber)
+    [HttpGet("internationalMatches/team/{teamUuid}")]
+    public IActionResult GetInternationalMatchesByTeamUuid([FromRoute, Required] Guid teamUuid, [FromQuery, Required] CricketFormat format)
     {
-        var allMatchNumber = Enumerable.Range(startMatchNumber, endMatchNumber - startMatchNumber);
+        var allMatches = cricketMatchRepository.GetMatchesByTeamUuid(teamUuid, format);
 
-        List<CricketMatchInfoResponse> matches = new List<CricketMatchInfoResponse>();
-
-        foreach (var matchNumber in allMatchNumber)
-        {
-            var match = await cricketMatchRepository.GetMatchByMNumberODI(matchNumber);
-
-            if (match is not null)
-            {
-                matches.Add(match);
-            }
-        }
-
-        return Ok(matches);
-    }
-
-    [HttpGet("testMatch/range")]
-    public async Task<ActionResult<IEnumerable<CricketMatchInfoResponse>>> GetMatchByMNumberRangeTest(
-       [FromQuery, Required] int startMatchNumber,
-       [FromQuery, Required] int endMatchNumber)
-    {
-        var allMatchNumber = Enumerable.Range(startMatchNumber, endMatchNumber - startMatchNumber);
-
-        List<TestCricketMatchInfoResponse> matches = new();
-
-        foreach (var matchNumber in allMatchNumber)
-        {
-            var match = await cricketMatchRepository.GetMatchByMNumberTest(matchNumber);
-
-            if (match is not null)
-            {
-                matches.Add(match);
-            }
-        }
-
-        return Ok(matches);
-    }
-
-    [HttpGet("t20Match")]
-    public ActionResult<IEnumerable<CricketMatchInfoResponse>> GetMatchByTeamNameT20I([FromQuery, Required] string teamName)
-    {
-        var allMatches = cricketMatchRepository.GetMatchByTeamT20I(teamName);
-
-        Response.Headers.Add("total-t20I-matches", allMatches.Count().ToString());
-
-        return Ok(allMatches);
-    }
-
-    [HttpGet("odiMatch")]
-    public ActionResult<IEnumerable<CricketMatchInfoResponse>> GetMatchByTeamNameODI([FromQuery, Required] string teamName)
-    {
-        var allMatches = cricketMatchRepository.GetMatchByTeamODI(teamName);
-
-        Response.Headers.Add("total-ODI-matches", allMatches.Count().ToString());
+        Response.Headers.Add($"total-{format}-matches", allMatches.Count().ToString());
 
         return Ok(allMatches);
     }
@@ -241,5 +220,15 @@ public class CricketMatchController : Controller
             failedMatches = resultResponse.failed.Count,
             failedMatchNumbers = resultResponse.failed,
         });
+    }
+
+    [HttpGet("internationalMatches/tournament/{tournament}")]
+    public IActionResult GetInternationalTournamentMatches([FromRoute, Required] CricketTournament tournament, [FromQuery, Required] CricketFormat format)
+    {
+        var allMatches = cricketMatchRepository.GetMatchesByTournament(tournament, format);
+
+        Response.Headers.Add($"total-{tournament}-matches", allMatches.Count().ToString());
+
+        return Ok(allMatches);
     }
 }

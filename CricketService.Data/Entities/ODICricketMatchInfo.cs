@@ -1,6 +1,6 @@
-﻿using CricketService.Domain;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using CricketService.Domain;
 
 namespace CricketService.Data.Entities
 {

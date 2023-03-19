@@ -106,15 +106,15 @@ export const ODIRecords: React.FunctionComponent<ODIRecordsProps> = ({
         filter: "between",
       },
       {
-        Header: "Tied and Won",
-        accessor: "teamRecordDetails.odiResults.tiedAndWon",
+        Header: "Tied",
+        accessor: "teamRecordDetails.odiResults.tied",
         Cell: (cell: Cell) => <div>{cell.value}</div>,
         Footer: (info: any) => {
           const total = React.useMemo(
             () =>
               info.rows.reduce(
                 (sum: number, row: any) =>
-                  row.values["teamRecordDetails.odiResults.tiedAndWon"] + sum,
+                  row.values["teamRecordDetails.odiResults.tied"] + sum,
                 0
               ),
             [info.rows]
@@ -122,24 +122,8 @@ export const ODIRecords: React.FunctionComponent<ODIRecordsProps> = ({
 
           return <>{total}</>;
         },
-      },
-      {
-        Header: "Tied and Lost",
-        accessor: "teamRecordDetails.odiResults.tiedAndLost",
-        Cell: (cell: Cell) => <div>{cell.value}</div>,
-        Footer: (info: any) => {
-          const total = React.useMemo(
-            () =>
-              info.rows.reduce(
-                (sum: number, row: any) =>
-                  row.values["teamRecordDetails.odiResults.tiedAndLost"] + sum,
-                0
-              ),
-            [info.rows]
-          );
-
-          return <>{total}</>;
-        },
+        Filter: NumberRangeColumnFilter,
+        filter: "between",
       },
       {
         Header: "No Result",
@@ -158,13 +142,26 @@ export const ODIRecords: React.FunctionComponent<ODIRecordsProps> = ({
 
           return <>{total / 2}</>;
         },
-        Filter: SliderColumnFilter,
-        filter: "equals",
+        Filter: NumberRangeColumnFilter,
+        filter: "between",
       },
       {
         Header: "Win %",
         accessor: "teamRecordDetails.odiResults.winPercentage",
         Cell: (cell: Cell) => <div>{cell.value?.toPrecision(4)}</div>,
+        Filter: () => <></>,
+      },
+      {
+        Header: "Debut",
+        accessor: "teamRecordDetails.odiResults.debut",
+        Cell: (cell: Cell) => (
+          <div>
+            <h6>{cell.value.date}</h6>
+            <h6>vs</h6>
+            <h6>{cell.value.opponent}</h6>
+          </div>
+        ),
+        width: 200,
       },
     ],
     []
@@ -191,6 +188,7 @@ export const ODIRecords: React.FunctionComponent<ODIRecordsProps> = ({
         options={{
           ...tableOptions,
           isFooter: true,
+          isRowSelect: false,
         }}
         children={
           <ReactSlidingSidePanel
@@ -201,6 +199,7 @@ export const ODIRecords: React.FunctionComponent<ODIRecordsProps> = ({
             children={
               <TeamDetails
                 cricketFormat={CricketFormat.ODI}
+                teamUuid={teamSelectedData?.teamUuid as string}
                 teamName={teamSelectedData?.teamName as string}
                 flagUrl={teamSelectedData?.flagUri as string}
               />

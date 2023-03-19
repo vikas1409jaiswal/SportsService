@@ -21,23 +21,23 @@ interface AgainstTeamData {
 }
 
 const fetchAllAgainstTeamData = (
-  teamName: string,
+  teamUuid: string,
   format: CricketFormat
 ): Promise<AxiosResponse<AgainstTeamData[]>> => {
   const formatId = CricketFormat.T20I === format ? 0 : 1;
   return axios.get(
-    `http://localhost:5104/cricketteam/teams/${teamName}/records/against/all?format=${formatId}`
+    `http://localhost:5104/cricketteam/teams/${teamUuid}/records/against/all?format=${formatId}`
   );
 };
 
 export const useTeamAgainstRecords = (
-  teamName: string,
+  teamUuid: string,
   format: CricketFormat
 ) => {
   const { isLoading, data } = useQuery(
-    [teamName, "against-opponent"],
-    () => fetchAllAgainstTeamData(teamName, format),
-    { cacheTime: 60 * 60 * 1000 }
+    [teamUuid, "against-opponent"],
+    () => fetchAllAgainstTeamData(teamUuid, format),
+    { cacheTime: 0 }
   );
 
   console.log(data);
@@ -46,14 +46,15 @@ export const useTeamAgainstRecords = (
 };
 
 export interface RecordAgainstOpponentsProps {
+  teamUuid: string;
   teamName: string;
   format: CricketFormat;
 }
 
 export const RecordAgainsOpponents: React.FunctionComponent<
   RecordAgainstOpponentsProps
-> = ({ teamName, format }) => {
-  const { isLoading, data } = useTeamAgainstRecords(teamName, format);
+> = ({ teamUuid, teamName, format }) => {
+  const { isLoading, data } = useTeamAgainstRecords(teamUuid, format);
 
   const columns = useMemo(
     () => [
@@ -80,8 +81,6 @@ export const RecordAgainsOpponents: React.FunctionComponent<
           return <>{total}</>;
         },
         Cell: (cell: Cell) => <div>{cell.value}</div>,
-        Filter: NumberRangeColumnFilter,
-        filter: "between",
       },
       {
         Header: "Won",
@@ -99,8 +98,6 @@ export const RecordAgainsOpponents: React.FunctionComponent<
 
           return <>{total}</>;
         },
-        Filter: NumberRangeColumnFilter,
-        filter: "between",
       },
       {
         Header: "Lost",
@@ -118,8 +115,23 @@ export const RecordAgainsOpponents: React.FunctionComponent<
 
           return <>{total}</>;
         },
-        Filter: NumberRangeColumnFilter,
-        filter: "between",
+      },
+      {
+        Header: "Tied",
+        accessor: "tied",
+        Cell: (cell: Cell) => <div>{cell.value}</div>,
+        Footer: (info: any) => {
+          const total = React.useMemo(
+            () =>
+              info.rows.reduce(
+                (sum: number, row: any) => row.values["tied"] + sum,
+                0
+              ),
+            [info.rows]
+          );
+
+          return <>{total}</>;
+        },
       },
       {
         Header: "No Result",
@@ -137,8 +149,6 @@ export const RecordAgainsOpponents: React.FunctionComponent<
 
           return <>{total}</>;
         },
-        Filter: SliderColumnFilter,
-        filter: "equals",
       },
     ],
     []
@@ -160,6 +170,7 @@ export const RecordAgainsOpponents: React.FunctionComponent<
             isStickyColumn: false,
             isFooter: true,
             isRowSelect: false,
+            isColumnFilter: false,
           }}
           handleRowClick={() => {}}
         />

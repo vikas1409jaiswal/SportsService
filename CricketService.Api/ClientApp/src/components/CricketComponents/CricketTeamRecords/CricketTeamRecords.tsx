@@ -6,6 +6,10 @@ import { CricketTeamData } from "./Models/Interface";
 import { useTeamRecords } from "./Hooks/useTeamRecords";
 
 import "./CricketTeamRecords.scss";
+import { TestRecords } from "./TestRecords/TestRecords";
+import { TeamStatCharts } from "./TeamStatCharts/TeamStatCharts";
+import { defaultOptions, LineChart } from "../../common/charts/LineChart";
+import { CalendarChart } from "../../common/charts/CalendarChart";
 
 export interface CricketTeamRecordsProps {}
 
@@ -36,16 +40,76 @@ export const CricketTeamRecords: React.FunctionComponent<
         )}
       </div>
       {selectedFormat === CricketFormat.T20I && (
-        <T20Records
-          isLoading={isLoading}
-          teamData={teamData ? (teamData as CricketTeamData[]) : []}
-        />
+        <>
+          <TeamStatCharts
+            isLoading={isLoading}
+            teamData={
+              teamData
+                ? (teamData.filter(
+                    (t) => t.teamRecordDetails.t20IResults.matches > 0
+                  ) as CricketTeamData[])
+                : []
+            }
+          />
+          <T20Records
+            isLoading={isLoading}
+            teamData={
+              teamData
+                ? (teamData.filter(
+                    (t) => t.teamRecordDetails.t20IResults.matches > 0
+                  ) as CricketTeamData[])
+                : []
+            }
+          />
+        </>
       )}
       {selectedFormat === CricketFormat.ODI && (
-        <ODIRecords
-          isLoading={isLoading}
-          teamData={teamData ? (teamData as CricketTeamData[]) : []}
-        />
+        <>
+          <TeamStatCharts
+            isLoading={isLoading}
+            teamData={
+              teamData
+                ? (teamData.filter(
+                    (t) => t.teamRecordDetails.odiResults.matches > 0
+                  ) as CricketTeamData[])
+                : []
+            }
+          />
+          <ODIRecords
+            isLoading={isLoading}
+            teamData={
+              teamData
+                ? (teamData.filter(
+                    (t) => t.teamRecordDetails.odiResults.matches > 0
+                  ) as CricketTeamData[])
+                : []
+            }
+          />
+        </>
+      )}
+      {selectedFormat === CricketFormat.Test && (
+        <>
+          <TeamStatCharts
+            isLoading={isLoading}
+            teamData={
+              teamData
+                ? (teamData.filter(
+                    (t) => t.teamRecordDetails.testResults.matches > 0
+                  ) as CricketTeamData[])
+                : []
+            }
+          />
+          <TestRecords
+            isLoading={isLoading}
+            teamData={
+              teamData
+                ? (teamData.filter(
+                    (t) => t.teamRecordDetails.testResults.matches > 0
+                  ) as CricketTeamData[])
+                : []
+            }
+          />
+        </>
       )}
     </>
   );

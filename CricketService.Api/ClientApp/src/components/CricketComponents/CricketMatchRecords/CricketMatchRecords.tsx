@@ -1,10 +1,20 @@
-import React, { useContext, useEffect, useState } from "react";
-import { CricketMatch, CricketFormat, CricketTeam } from "./Models/Interface";
+import React, { useState } from "react";
+import {
+  CricketMatch,
+  CricketFormat,
+  CricketTeam,
+  TestCricketMatch,
+} from "./Models/Interface";
 import { MatchRecordsTable } from "./MatchRecordsTable/MatchRecordsTable";
-import { useCricketMatchInfo } from "./Hooks/useCricketMatchInfo.";
+import {
+  useCricketMatchInfo,
+  useTestCricketMatchInfo,
+} from "./Hooks/useCricketMatchInfo.";
 import { useCricketTeamInfo } from "./Hooks/useCricketTeamInfo.";
+import { TestMatchRecordsTable } from "./TestMatchRecordsTable/TestMatchRecordsTable";
 
 import "./CricketMatchRecords.scss";
+import { defaultOptions, LineChart } from "../../common/charts/LineChart";
 
 export interface CricketMatchRecordsProps {}
 
@@ -12,11 +22,13 @@ export const CricketMatchRecords: React.FunctionComponent<
   CricketMatchRecordsProps
 > = () => {
   const [selectedFormat, setSelectedFormat] = useState<CricketFormat>(
-    CricketFormat.ODI
+    CricketFormat.Test
   );
 
   const { teamData } = useCricketTeamInfo();
   const { isLoading, matchData } = useCricketMatchInfo(selectedFormat);
+  const { isLoading: isLoadingTest, testMatchData } =
+    useTestCricketMatchInfo(selectedFormat);
 
   return (
     <>
@@ -35,11 +47,20 @@ export const CricketMatchRecords: React.FunctionComponent<
           )
         )}
       </div>
-      <MatchRecordsTable
-        isLoading={isLoading}
-        teamData={teamData ? (teamData as CricketTeam[]) : []}
-        matchData={matchData ? (matchData as CricketMatch[]) : []}
-      />
+      {selectedFormat === CricketFormat.Test ? (
+        <TestMatchRecordsTable
+          isLoading={isLoadingTest}
+          teamData={teamData ? (teamData as CricketTeam[]) : []}
+          matchData={testMatchData ? (testMatchData as TestCricketMatch[]) : []}
+        />
+      ) : (
+        <MatchRecordsTable
+          isLoading={isLoading}
+          teamData={teamData ? (teamData as CricketTeam[]) : []}
+          matchData={matchData ? (matchData as CricketMatch[]) : []}
+          format={selectedFormat}
+        />
+      )}
     </>
   );
 };

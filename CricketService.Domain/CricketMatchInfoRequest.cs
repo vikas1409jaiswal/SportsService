@@ -61,8 +61,8 @@ public class TeamScoreDetailsRequest
         Player[] didNotBat)
     {
         TeamName = teamName;
-        BattingScorecard = battingScorecard;
-        BowlingScorecard = bowlingScorecard;
+        BattingScoreCard = battingScorecard;
+        BowlingScoreCard = bowlingScorecard;
         Extras = extras;
         FallOfWickets = fallOfWickets;
         DidNotBat = didNotBat;
@@ -70,9 +70,9 @@ public class TeamScoreDetailsRequest
 
     public string TeamName { get; set; } = string.Empty;
 
-    public ICollection<BattingScoreCardRequest> BattingScorecard { get; set; }
+    public ICollection<BattingScoreCardRequest> BattingScoreCard { get; set; }
 
-    public ICollection<BowlingScoreCardRequest> BowlingScorecard { get; set; }
+    public ICollection<BowlingScoreCardRequest> BowlingScoreCard { get; set; }
 
     public string Extras { get; set; } = string.Empty;
 

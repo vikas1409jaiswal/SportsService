@@ -7,14 +7,16 @@ namespace CricketService.Data.Repositories.Interfaces
     {
         CricketTeamInfoResponse GetTeamByUuid(Guid teamUuid);
 
+        CricketTeamInfoResponse GetTeamByName(string teamName);
+
         IEnumerable<Team> GetAllTeamDetails();
 
         IEnumerable<string> GetAllTeamNames(CricketFormat format);
 
-        CricketTeamInfoResponse GetTeamRecordsByName(string teamName, bool isSingle);
+        object GetAllAgainstRecordsByTeamT20I(Guid teamUuid);
 
-        object GetAllAgainstRecordsByNameT20I(string teamName);
+        object GetAllAgainstRecordsByTeamODI(Guid teamUuid);
 
-        object GetAllAgainstRecordsByNameODI(string teamName);
+        object GetAllAgainstRecordsByTeamTest(Guid teamUuid);
     }
 }

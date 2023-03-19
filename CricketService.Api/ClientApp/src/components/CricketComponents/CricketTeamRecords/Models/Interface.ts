@@ -8,6 +8,7 @@
 interface FormatWiseRecords {
   t20IResults: RecordDetails;
   odiResults: RecordDetails;
+  testResults: RecordDetails;
 }
 
 interface RecordDetails {
@@ -15,8 +16,8 @@ interface RecordDetails {
   matches: number;
   won: number;
   lost: number;
-  tiedAndWon: number;
-  tiedAndLost: number;
+  tied: number;
+  draw: number;
   noResult: number;
   winPercentage: number;
   teamMileStones: TeamMileStones;
@@ -29,6 +30,7 @@ interface TeamMileStones {
   careerOneAndHalfCenturies: number;
   careerDoubleCenturies: number;
   inningRecordDetails: InningRecordDetails;
+  mostInnings: KeyValuePair;
   mostRuns: KeyValuePair;
   mostWickets: KeyValuePair;
   mostSixes: KeyValuePair;
@@ -38,6 +40,8 @@ interface TeamMileStones {
   most150s: KeyValuePair;
   most200s: KeyValuePair;
   highestIndividualScore: KeyValuePair;
+  bestBowlingInning: KeyValuePair;
+  bestBowlingMatch: KeyValuePair;
 }
 
 interface KeyValuePair {

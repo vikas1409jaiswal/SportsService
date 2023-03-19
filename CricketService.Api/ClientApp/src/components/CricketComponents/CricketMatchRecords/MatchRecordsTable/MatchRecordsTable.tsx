@@ -1,7 +1,12 @@
 import React, { useMemo, useState } from "react";
 import { ReactTable, tableOptions } from "../../../common/ReactTable";
 import { Cell } from "react-table";
-import { CricketMatch, CricketTeam } from "../Models/Interface";
+import {
+  CricketFormat,
+  CricketMatch,
+  CricketTeam,
+  TestCricketMatch,
+} from "../Models/Interface";
 import {
   ReactSlidingSidePanel,
   SidePanelType,
@@ -9,40 +14,59 @@ import {
 import { MatchDetails } from "../MatchDetails/MatchDetails";
 
 import "./MatchRecordsTable.scss";
+import {
+  NumberRangeColumnFilter,
+  SelectColumnFilter,
+  SelectYearColumnFilter,
+} from "../../../common/Filter";
+import { CalendarChart } from "../../../common/charts/CalendarChart";
 
 export interface MatchRecordsTableProps {
   isLoading: boolean;
   teamData: CricketTeam[];
   matchData: CricketMatch[];
+  format: CricketFormat;
 }
 
 export const MatchRecordsTable: React.FunctionComponent<
   MatchRecordsTableProps
-> = ({ isLoading, teamData, matchData }) => {
+> = ({ isLoading, teamData, matchData, format }) => {
   const columns = useMemo(
     () => [
       {
         Header: "Match SN",
         accessor: "matchNo",
         Cell: (cell: Cell) => <div>{cell.value}</div>,
+        width: 200,
+        Filter: NumberRangeColumnFilter,
+      },
+      {
+        Header: "Series",
+        accessor: "series",
+        Cell: (cell: Cell) => <div>{cell.value}</div>,
+        width: 300,
+        Filter: SelectColumnFilter,
       },
       {
         Header: "Team 1",
         accessor: "team1.teamName",
         Cell: (cell: Cell) => <div>{cell.value}</div>,
         width: 150,
+        Filter: SelectColumnFilter,
       },
       {
         Header: "Team 2",
         accessor: "team2.teamName",
         Cell: (cell: Cell) => <div>{cell.value}</div>,
         width: 150,
+        Filter: SelectColumnFilter,
       },
       {
         Header: "Date",
         accessor: "matchDate",
         Cell: (cell: Cell) => <div>{cell.value}</div>,
         width: 150,
+        Filter: SelectYearColumnFilter,
       },
       {
         Header: "Result",
@@ -55,12 +79,7 @@ export const MatchRecordsTable: React.FunctionComponent<
         accessor: "venue",
         Cell: (cell: Cell) => <div>{cell.value}</div>,
         width: 200,
-      },
-      {
-        Header: "Overs",
-        accessor: "matchDays",
-        Cell: (cell: Cell) => <div>{cell.value}</div>,
-        width: 200,
+        Filter: SelectColumnFilter,
       },
     ],
     []
@@ -74,38 +93,40 @@ export const MatchRecordsTable: React.FunctionComponent<
   ) as CricketMatch;
 
   return (
-    <ReactTable
-      className={"t20-match-records"}
-      data={matchData}
-      columns={columns}
-      perPages={[10, 25, 50, 100]}
-      options={{
-        ...tableOptions,
-        isRowSelect: false,
-      }}
-      children={
-        <ReactSlidingSidePanel
-          isOpen={isOpenSidePanel}
-          setIsOpen={toggleSideOpenPanel}
-          sidePanelType={SidePanelType.Right}
-          panelWidth={100}
-          children={
-            <MatchDetails
-              teamData={teamData.filter(
-                (t) =>
-                  t.teamName === currentMatchData?.team1.teamName ||
-                  t.teamName === currentMatchData?.team2.teamName
-              )}
-              matchData={currentMatchData}
-            />
-          }
-        />
-      }
-      handleRowClick={(e, r) => {
-        setSelectedmatchUuid(r.original.matchUuid);
-        toggleSideOpenPanel(!isOpenSidePanel);
-      }}
-      isLoading={isLoading}
-    />
+    <>
+      <ReactTable
+        className={`international-match-records`}
+        data={matchData}
+        columns={columns}
+        perPages={[10, 25, 50, 100]}
+        options={{
+          ...tableOptions,
+          isRowSelect: false,
+        }}
+        children={
+          <ReactSlidingSidePanel
+            isOpen={isOpenSidePanel}
+            setIsOpen={toggleSideOpenPanel}
+            sidePanelType={SidePanelType.Right}
+            panelWidth={100}
+            children={
+              <MatchDetails
+                teamData={teamData.filter(
+                  (t) =>
+                    t.teamName === currentMatchData?.team1.teamName ||
+                    t.teamName === currentMatchData?.team2.teamName
+                )}
+                matchData={currentMatchData}
+              />
+            }
+          />
+        }
+        handleRowClick={(e, r) => {
+          setSelectedmatchUuid(r.original.matchUuid);
+          toggleSideOpenPanel(!isOpenSidePanel);
+        }}
+        isLoading={isLoading}
+      />
+    </>
   );
 };

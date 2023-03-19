@@ -1,28 +1,34 @@
-﻿using System.Collections;
+﻿using AutoMapper;
 using CricketService.Data.Contexts;
-using CricketService.Data.Entities;
 using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
 using CricketService.Domain.Enums;
-using Hangfire;
+using CricketService.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System.Globalization;
 
 namespace CricketService.Data.Repositories
 {
     public class CricketMatchRepository : ICricketMatchRepository
     {
-        private ILogger<CricketMatchRepository> logger;
-        private CricketServiceContext context;
+        private readonly ILogger<CricketMatchRepository> logger;
+        private readonly IMapper mapper;
+        private readonly CricketServiceContext context;
         private readonly ICricketPlayerRepository cricketPlayerRepository;
 
-        public CricketMatchRepository(ILogger<CricketMatchRepository> logger, CricketServiceContext cricketServiceContext, ICricketPlayerRepository cricketPlayerRepository)
+        public CricketMatchRepository(
+            ILogger<CricketMatchRepository> logger,
+            IMapper mapper,
+            CricketServiceContext context,
+            ICricketPlayerRepository cricketPlayerRepository)
         {
             this.logger = logger;
-            context = cricketServiceContext;
+            this.mapper = mapper;
+            this.context = context;
             this.cricketPlayerRepository = cricketPlayerRepository;
         }
 
@@ -35,7 +41,7 @@ namespace CricketService.Data.Repositories
 
             logger.LogInformation($"{matchesList.Count()} matches found.");
 
-            return matchesList.Select(x => x.ToDomain());
+            return matchesList.Select(x => x.ToDomain(mapper));
         }
 
         public IEnumerable<CricketMatchInfoResponse> GetAllMatchesODI()
@@ -47,7 +53,19 @@ namespace CricketService.Data.Repositories
 
             logger.LogInformation($"{matchesList.Count()} matches found.");
 
-            return matchesList.Select(x => x.ToDomain());
+            return matchesList.Select(x => x.ToDomain(mapper));
+        }
+
+        public IEnumerable<TestCricketMatchInfoResponse> GetAllMatchesTest()
+        {
+            logger.LogInformation($"Fetching details for all Test matches.");
+
+            var matchesList = context.TestCricketMatchInfo.AsEnumerable()
+                .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty)));
+
+            logger.LogInformation($"{matchesList.Count()} matches found.");
+
+            return matchesList.Select(x => x.ToDomain(mapper));
         }
 
         public async Task<CricketMatchInfoResponse> GetMatchByMNumberT20I(int matchNumber)
@@ -73,7 +91,7 @@ namespace CricketService.Data.Repositories
                 Console.WriteLine("xxxxxxxxxxx", ex.Message);
             }
 
-            return match?.ToDomain()!;
+            return match.ToDomain(mapper);
         }
 
         public async Task<CricketMatchInfoResponse> GetMatchByMNumberODI(int matchNumber)
@@ -99,7 +117,7 @@ namespace CricketService.Data.Repositories
                 Console.WriteLine("xxxxxxxxxxx", ex.Message);
             }
 
-            return match?.ToDomain()!;
+            return match.ToDomain(mapper);
         }
 
         public async Task<TestCricketMatchInfoResponse> GetMatchByMNumberTest(int matchNumber)
@@ -125,10 +143,10 @@ namespace CricketService.Data.Repositories
                 Console.WriteLine("xxxxxxxxxxx", ex.Message);
             }
 
-            return match?.ToDomain()!;
+            return match.ToDomain(mapper);
         }
 
-        public IEnumerable<CricketMatchInfoResponse> GetMatchByTeamT20I(string teamName)
+        private IEnumerable<CricketMatchInfoResponse> GetMatchByTeamT20I(string teamName)
         {
             logger.LogInformation($"Fetching details for team {teamName}");
 
@@ -136,10 +154,10 @@ namespace CricketService.Data.Repositories
 
             logger.LogInformation($"{matchesList.Count()} matches found.");
 
-            return matchesList.Select(x => x.ToDomain());
+            return matchesList.Select(x => x.ToDomain(mapper));
         }
 
-        public IEnumerable<CricketMatchInfoResponse> GetMatchByTeamODI(string teamName)
+        private IEnumerable<CricketMatchInfoResponse> GetMatchByTeamODI(string teamName)
         {
             logger.LogInformation($"Fetching details for team {teamName}");
 
@@ -147,16 +165,27 @@ namespace CricketService.Data.Repositories
 
             logger.LogInformation($"{matchesList.Count()} matches found.");
 
-            return matchesList.Select(x => x.ToDomain());
+            return matchesList.Select(x => x.ToDomain(mapper));
+        }
+
+        private IEnumerable<TestCricketMatchInfoResponse> GetMatchByTeamTest(string teamName)
+        {
+            logger.LogInformation($"Fetching details for team {teamName}");
+
+            var matchesList = context.TestCricketMatchInfo.Where(x => ((x.Team1.TeamName == teamName) || (x.Team2.TeamName == teamName)));
+
+            logger.LogInformation($"{matchesList.Count()} matches found.");
+
+            return matchesList.Select(x => x.ToDomain(mapper));
         }
 
         public async Task<CricketMatchInfoResponse> AddMatchT20I(CricketMatchInfoRequest match)
         {
-            var result = context.T20ICricketMatchInfo.Add(match.ToEntityT20I());
+            var result = context.T20ICricketMatchInfo.Add(mapper.Map<Entities.T20ICricketMatchInfo>(match));
 
             await context.SaveChangesAsync();
 
-            var response = result.Entity.ToDomain();
+            var response = result.Entity.ToDomain(mapper);
 
             if (response is not null)
             {
@@ -179,11 +208,11 @@ namespace CricketService.Data.Repositories
 
         public async Task<CricketMatchInfoResponse> AddMatchODI(CricketMatchInfoRequest match)
         {
-            var result = context.ODICricketMatchInfo.Add(match.ToEntityODI());
+            var result = context.ODICricketMatchInfo.Add(mapper.Map<Entities.ODICricketMatchInfo>(match));
 
             await context.SaveChangesAsync();
 
-            var response = result.Entity.ToDomain();
+            var response = result.Entity.ToDomain(mapper);
 
             if (response is not null)
             {
@@ -206,11 +235,11 @@ namespace CricketService.Data.Repositories
 
         public async Task<TestCricketMatchInfoResponse> AddMatchTest(TestCricketMatchInfoRequest match)
         {
-            var result = context.TestCricketMatchInfo.Add(match.ToEntityTest());
+            var result = context.TestCricketMatchInfo.Add(mapper.Map<Entities.TestCricketMatchInfo>(match));
 
             await context.SaveChangesAsync();
 
-            var response = result.Entity.ToDomain();
+            var response = result.Entity.ToDomain(mapper);
 
             if (response is not null)
             {
@@ -242,15 +271,15 @@ namespace CricketService.Data.Repositories
 
             var t20iResponse = context.T20ICricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty)))
-                    .Select(x => x.ToDomain());
+                    .Select(x => mapper.Map<CricketMatchInfoResponse>(x));
 
             var odiResponse = context.ODICricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty)))
-                    .Select(x => x.ToDomain());
+                    .Select(x => mapper.Map<CricketMatchInfoResponse>(x));
 
             var testResponse = context.TestCricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty)))
-                    .Select(x => x.ToDomain());
+                    .Select(x => mapper.Map<TestCricketMatchInfoResponse>(x));
 
             List<Guid> result = GetAllPlayersUuid().Where(x => x == new Guid("7c5181e5-08d2-4c8e-844b-6dd57cef00eb")).ToList();
 
@@ -284,6 +313,88 @@ namespace CricketService.Data.Repositories
             var endTime = DateTime.Now;
 
             Console.WriteLine($"Total seeding time is {endTime - startTime}");
+        }
+
+        public IEnumerable<object> GetMatchesByTeamUuid(Guid teamUuid, CricketFormat format)
+        {
+            Entities.CricketTeamInfo teamInfo;
+
+            try
+            {
+                teamInfo = context.CricketTeamInfo.Single(x => x.Uuid == teamUuid);
+            }
+            catch
+            {
+                throw new CricketTeamNotFoundException($"team with uuid {teamUuid} does not exists.");
+            }
+
+            IEnumerable<object> matches = new List<object>();
+
+            if (format == CricketFormat.T20I)
+            {
+                matches = GetMatchByTeamT20I(teamInfo.TeamName);
+            }
+            else if (format == CricketFormat.ODI)
+            {
+                matches = GetMatchByTeamODI(teamInfo.TeamName);
+            }
+            else if (format == CricketFormat.TestCricket)
+            {
+                matches = GetMatchByTeamTest(teamInfo.TeamName);
+            }
+
+            return matches;
+        }
+
+        public IEnumerable<object> GetMatchesByTournament(CricketTournament tournament, CricketFormat format)
+        {
+            IEnumerable<object> matches = new List<object>();
+
+            if (format == CricketFormat.T20I && tournament == CricketTournament.ICCMensT20IWorldCup)
+            {
+                matches = context.T20ICricketMatchInfo
+                    .Where(x => x.Series == "ICC Men's T20 World Cup" || x.Series == "ICC World Twenty20")
+                    .GroupBy(x => x.Season)
+                    .Select(x => new
+                    {
+                        Year = x.Key,
+                        Matches = x.Select(y => new
+                        {
+                            MatchUuid = y.Uuid,
+                            MatchNo = y.MatchNo,
+                            Title = y.MatchTitle,
+                            Date = y.MatchDate,
+                            Venue = y.Venue,
+                            Result = y.Result,
+                        }),
+                    });
+            }
+            else if (format == CricketFormat.ODI && tournament == CricketTournament.ICCMensODIWorldCup)
+            {
+                matches = context.ODICricketMatchInfo
+                    .Where(x => x.Series == "Prudential World Cup"
+                    || x.Series == "Reliance World Cup"
+                    || x.Series == "Benson & Hedges World Cup"
+                    || x.Series == "Wills World Cup"
+                    || x.Series == "ICC World Cup"
+                    || x.Series == "ICC Cricket World Cup")
+                    .GroupBy(x => x.Season)
+                    .Select(x => new
+                    {
+                        Year = x.Key,
+                        Matches = x.Select(y => new
+                        {
+                            MatchUuid = y.Uuid,
+                            MatchNo = y.MatchNo,
+                            Title = y.MatchTitle,
+                            Date = y.MatchDate,
+                            Venue = y.Venue,
+                            Result = y.Result,
+                        }),
+                    });
+            }
+
+            return matches;
         }
     }
 }

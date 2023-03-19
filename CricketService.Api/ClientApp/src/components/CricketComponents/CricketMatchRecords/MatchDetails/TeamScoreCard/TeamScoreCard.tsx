@@ -1,13 +1,12 @@
 ﻿import React, { useEffect, useState, useContext } from "react";
-import { teamData } from "../../../../../data/TeamData";
 import { ExpandableSection } from "../../../../common/ExpandableSection";
-import { CricketTeam, TeamScoreBoardDetails } from "./../../Models/Interface";
+import { CricketTeam, TeamScoreBoard } from "./../../Models/Interface";
 
 import "./TeamScoreCard.scss";
 
 export interface TeamScoreCardProps {
   teamData: CricketTeam;
-  teamScoreCard: TeamScoreBoardDetails;
+  teamScoreCard: TeamScoreBoard;
   opponent: string;
 }
 
@@ -16,8 +15,6 @@ export const TeamScoreCard: React.FunctionComponent<TeamScoreCardProps> = ({
   teamScoreCard,
   opponent,
 }) => {
-  console.log(teamScoreCard);
-
   const totalScoreStr = `${teamScoreCard?.totalInningDetails.runs}/${teamScoreCard?.fallOfWickets.length}  (${teamScoreCard?.totalInningDetails.overs.overs} overs)`;
 
   return (

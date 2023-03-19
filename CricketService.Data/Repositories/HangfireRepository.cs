@@ -1,4 +1,5 @@
-﻿using CricketService.Data.Contexts;
+﻿using AutoMapper;
+using CricketService.Data.Contexts;
 using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
@@ -12,15 +13,18 @@ namespace CricketService.Data.Repositories
         private readonly ILogger<HangfireRepository> logger;
         private readonly ICricketTeamRepository cricketTeamRepository;
         private readonly CricketServiceContext context;
+        private readonly IMapper mapper;
 
         public HangfireRepository(
             ILogger<HangfireRepository> logger,
             ICricketTeamRepository cricketTeamRepository,
-            CricketServiceContext context)
+            CricketServiceContext context,
+            IMapper mapper)
         {
             this.logger = logger;
             this.cricketTeamRepository = cricketTeamRepository;
             this.context = context;
+            this.mapper = mapper;
         }
 
         public IEnumerable<Guid> GetAllPlayersUuid()
@@ -39,15 +43,15 @@ namespace CricketService.Data.Repositories
 
             var t20iResponse = context.T20ICricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty)))
-                    .Select(x => x.ToDomain());
+                    .Select(x => x.ToDomain(mapper));
 
             var odiResponse = context.ODICricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty)))
-                    .Select(x => x.ToDomain());
+                    .Select(x => x.ToDomain(mapper));
 
             var testResponse = context.TestCricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty)))
-                    .Select(x => x.ToDomain());
+                    .Select(x => x.ToDomain(mapper));
 
             List<Guid> result = GetAllPlayersUuid().Where(x => x == new Guid("7c5181e5-08d2-4c8e-844b-6dd57cef00eb")).ToList();
 
@@ -89,15 +93,15 @@ namespace CricketService.Data.Repositories
 
             var t20iResponse = context.T20ICricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty)))
-                    .Select(x => x.ToDomain());
+                    .Select(x => mapper.Map<CricketMatchInfoResponse>(x));
 
             var odiResponse = context.ODICricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty)))
-                    .Select(x => x.ToDomain());
+                    .Select(x => mapper.Map<CricketMatchInfoResponse>(x));
 
             var testResponse = context.TestCricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty)))
-                    .Select(x => x.ToDomain());
+                    .Select(x => mapper.Map<TestCricketMatchInfoResponse>(x));
 
             List<Guid> uuids = GetAllTeamssUuid().ToList();
 
@@ -108,7 +112,7 @@ namespace CricketService.Data.Repositories
                 logger.LogInformation($"updating team statistics for team with uuid {uuid}");
 
                 var team = context.CricketTeamInfo.Single(x => x.Uuid == uuid);
-                var teamRecords = cricketTeamRepository.GetTeamRecordsByName(team.TeamName, true);
+                var teamRecords = cricketTeamRepository.GetTeamByName(team.TeamName);
 
                 if (teamRecords.TeamRecordDetails.T20IResults is not null)
                 {
