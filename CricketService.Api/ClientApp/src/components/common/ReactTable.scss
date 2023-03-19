@@ -97,19 +97,20 @@
       }
 
       thead th .column-filter {
-        margin: 10px;
-        border: 2px solid red;
-        width: 100px;
-
         .number-range-cf {
-          display: grid;
-          grid-template-rows: 1fr;
           color: black;
+        }
 
-          input {
-            border: 2px solid black;
-            width: 100%;
-          }
+        input {
+          background-color: gold;
+          width: 50px;
+          border: 2px solid black;
+        }
+
+        select {
+          background-color: gold;
+          width: 50px;
+          border: 2px solid black;
         }
       }
 

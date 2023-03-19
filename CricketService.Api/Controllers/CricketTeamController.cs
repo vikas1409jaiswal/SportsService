@@ -1,9 +1,9 @@
-﻿using CricketService.Data.Repositories.Interfaces;
+﻿using System.ComponentModel.DataAnnotations;
+using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
 using CricketService.Domain.Enums;
-using Hangfire;
+using CricketService.Domain.Exceptions;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 
 namespace CricketService.Api.Controllers
 {
@@ -21,23 +21,49 @@ namespace CricketService.Api.Controllers
         [HttpGet("team/{teamUuid}")]
         public IActionResult GetTeamByUuid([FromRoute, Required] Guid teamUuid)
         {
-            var team = cricketTeamRepository.GetTeamByUuid(teamUuid);
+            CricketTeamInfoResponse teamInfo;
 
-            return Ok(team);
+            try
+            {
+                teamInfo = cricketTeamRepository.GetTeamByUuid(teamUuid);
+            }
+            catch (CricketTeamNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+
+            return Ok(teamInfo);
         }
 
-        [HttpGet("teamDetails/all")]
-        public IActionResult GetAllTeamDetails()
+        [HttpGet("teams/{teamName}")]
+        public ActionResult<CricketTeamInfoResponse> GetTeamByName([FromRoute, Required] string teamName)
         {
-            var allTeamDetails = cricketTeamRepository.GetAllTeamDetails();
+            CricketTeamInfoResponse teamInfo;
 
-            Response.Headers.Add("total-teams", allTeamDetails.Count().ToString());
+            try
+            {
+                teamInfo = cricketTeamRepository.GetTeamByName(teamName);
+            }
+            catch (CricketTeamNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
 
-            return Ok(allTeamDetails);
+            return Ok(teamInfo);
         }
 
         [HttpGet("teams/all")]
-        public IActionResult GetAllTeams([FromQuery, Required] CricketFormat format)
+        public IActionResult GetAllTeams()
+        {
+            var allTeams = cricketTeamRepository.GetAllTeamDetails();
+
+            Response.Headers.Add("total-teams", allTeams.Count().ToString());
+
+            return Ok(allTeams);
+        }
+
+        [HttpGet("teamsDetails/all")]
+        public IActionResult GetAllTeamDetails([FromQuery, Required] CricketFormat format)
         {
             List<string> allTeams = new();
 
@@ -57,7 +83,7 @@ namespace CricketService.Api.Controllers
 
             foreach (var teamName in teamNames)
             {
-                var teamRecord = cricketTeamRepository.GetTeamRecordsByName(teamName, false);
+                var teamRecord = cricketTeamRepository.GetTeamByName(teamName);
 
                 if (teamRecord != null)
                 {
@@ -70,26 +96,22 @@ namespace CricketService.Api.Controllers
             return Ok(teamRecords);
         }
 
-        [HttpGet("teams/{teamName}/records")]
-        public ActionResult<CricketTeamInfoResponse> GetAllTeamRecords([FromRoute, Required] string teamName)
-        {
-            var teamRecord = cricketTeamRepository.GetTeamRecordsByName(teamName, true);
-
-            return Ok(teamRecord);
-        }
-
-        [HttpGet("teams/{teamName}/records/against/all")]
-        public ActionResult<CricketTeamInfoResponse> GetAllAgainstRecords([FromRoute, Required] string teamName, [FromQuery, Required] CricketFormat format)
+        [HttpGet("teams/{teamUuid}/records/against/all")]
+        public ActionResult<CricketTeamInfoResponse> GetAllAgainstRecords([FromRoute, Required] Guid teamUuid, [FromQuery, Required] CricketFormat format)
         {
             object teamRecord = null!;
 
             if (format == CricketFormat.T20I)
             {
-                teamRecord = cricketTeamRepository.GetAllAgainstRecordsByNameT20I(teamName);
+                teamRecord = cricketTeamRepository.GetAllAgainstRecordsByTeamT20I(teamUuid);
             }
             else if (format == CricketFormat.ODI)
             {
-                teamRecord = cricketTeamRepository.GetAllAgainstRecordsByNameODI(teamName);
+                teamRecord = cricketTeamRepository.GetAllAgainstRecordsByTeamODI(teamUuid);
+            }
+            else if (format == CricketFormat.TestCricket)
+            {
+                teamRecord = cricketTeamRepository.GetAllAgainstRecordsByTeamTest(teamUuid);
             }
 
             return Ok(teamRecord);

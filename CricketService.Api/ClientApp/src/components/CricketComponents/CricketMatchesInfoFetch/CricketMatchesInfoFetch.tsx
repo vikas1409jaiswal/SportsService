@@ -33,8 +33,8 @@ export const CricketMatchesInfoFetch: React.FunctionComponent<
   );
   //const [currentSelectedYear, setCurrentSelectedYear] = useState(seasonOptions[currentSelectedFormat][0]);
 
-    const cricketMatchesBySeason: CricketMatchesBySeason[] =
-        useCricketMatchesBySeason(CricketFormat.Test, years);
+  const cricketMatchesBySeason: CricketMatchesBySeason[] =
+    useCricketMatchesBySeason(CricketFormat.Test, years);
 
   //<DropDown
   //             dropDownText={'Format'}
@@ -56,7 +56,7 @@ export const CricketMatchesInfoFetch: React.FunctionComponent<
         {/*setCurrentSelectedIdIndex={setCurrentSelectedIdIndex}*/}
 
         {cricketMatchesBySeason && (
-                  <MatchDetailsBySeason matchDataBySeasons={cricketMatchesBySeason} />
+          <MatchDetailsBySeason matchDataBySeasons={cricketMatchesBySeason} />
         )}
       </div>
     </>

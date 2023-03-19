@@ -3,7 +3,7 @@ import { CricketContext } from "../../../CricketHomePage";
 import {
   CricketMatchesBySeason,
   useCricketMatch,
-    useCricketMatchesBySeasonDetails,
+  useCricketMatchesBySeasonDetails,
 } from "./../useCricketMatches";
 import { MatchDetails } from "../MatchDetails/MatchDetails";
 
@@ -15,7 +15,7 @@ export interface MatchDetailsBySeasonProps {
 }
 
 export const MatchDetailsBySeason: React.FunctionComponent<
-    MatchDetailsBySeasonProps
+  MatchDetailsBySeasonProps
 > = ({ matchDataBySeasons }) => {
   const { season, matchDetails } = matchDataBySeasons[0];
   const [currentSelectedMatch, setCurrentSelectedMatch] = useState(
@@ -26,9 +26,11 @@ export const MatchDetailsBySeason: React.FunctionComponent<
 
   const cricketMatch = useCricketMatch(currentSelectedMatch?.href);
 
-    //console.log(useCricketMatchesBySeasonDetails(year, matchDataBySeason.matchDetails));
-    const matchesList = matchDataBySeasons.map(x => x.matchDetails).reduce((p, n) => p.concat(n));
-    console.log(useTestCricketMatchesBySeasonDetails(matchesList));
+  //console.log(useCricketMatchesBySeasonDetails(year, matchDataBySeason.matchDetails));
+  const matchesList = matchDataBySeasons
+    .map((x) => x.matchDetails)
+    .reduce((p, n) => p.concat(n));
+  console.log(useTestCricketMatchesBySeasonDetails(matchesList));
 
   useEffect(() => {
     cricketContext.setCurrentMatchDetails({

@@ -105,15 +105,15 @@ export const T20Records: React.FunctionComponent<T20RecordsProps> = ({
         filter: "between",
       },
       {
-        Header: "Tied and Won",
-        accessor: "teamRecordDetails.t20IResults.tiedAndWon",
+        Header: "Tied",
+        accessor: "teamRecordDetails.t20IResults.tied",
         Cell: (cell: Cell) => <div>{cell.value}</div>,
         Footer: (info: any) => {
           const total = React.useMemo(
             () =>
               info.rows.reduce(
                 (sum: number, row: any) =>
-                  row.values["teamRecordDetails.t20IResults.tiedAndWon"] + sum,
+                  row.values["teamRecordDetails.t20IResults.tied"] + sum,
                 0
               ),
             [info.rows]
@@ -121,24 +121,8 @@ export const T20Records: React.FunctionComponent<T20RecordsProps> = ({
 
           return <>{total}</>;
         },
-      },
-      {
-        Header: "Tied and Lost",
-        accessor: "teamRecordDetails.t20IResults.tiedAndLost",
-        Cell: (cell: Cell) => <div>{cell.value}</div>,
-        Footer: (info: any) => {
-          const total = React.useMemo(
-            () =>
-              info.rows.reduce(
-                (sum: number, row: any) =>
-                  row.values["teamRecordDetails.t20IResults.tiedAndLost"] + sum,
-                0
-              ),
-            [info.rows]
-          );
-
-          return <>{total}</>;
-        },
+        Filter: NumberRangeColumnFilter,
+        filter: "between",
       },
       {
         Header: "No Result",
@@ -157,13 +141,26 @@ export const T20Records: React.FunctionComponent<T20RecordsProps> = ({
 
           return <>{total / 2}</>;
         },
-        Filter: SliderColumnFilter,
-        filter: "equals",
+        Filter: NumberRangeColumnFilter,
+        filter: "between",
       },
       {
         Header: "Win %",
         accessor: "teamRecordDetails.t20IResults.winPercentage",
         Cell: (cell: Cell) => <div>{cell.value?.toPrecision(4)}</div>,
+        Filter: () => <></>,
+      },
+      {
+        Header: "Debut",
+        accessor: "teamRecordDetails.t20IResults.debut",
+        Cell: (cell: Cell) => (
+          <div>
+            <h6>{cell.value.date}</h6>
+            <h6>vs</h6>
+            <h6>{cell.value.opponent}</h6>
+          </div>
+        ),
+        width: 200,
       },
     ],
     []
@@ -201,6 +198,7 @@ export const T20Records: React.FunctionComponent<T20RecordsProps> = ({
             children={
               <TeamDetails
                 cricketFormat={CricketFormat.T20I}
+                teamUuid={teamSelectedData?.teamUuid as string}
                 teamName={teamSelectedData?.teamName as string}
                 flagUrl={teamSelectedData?.flagUri as string}
               />

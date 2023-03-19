@@ -40,6 +40,7 @@ export interface ReactTableOptions {
   isSelectionPanel: boolean;
   isStickyColumn: boolean;
   isRowSelect: boolean;
+  isColumnFilter: boolean;
 }
 
 interface ReactTableProps {
@@ -103,7 +104,7 @@ export const tableOptions: ReactTableOptions = {
       width: 50,
     },
     highlightedRowCss: {
-      backgroundColor: "gray",
+      backgroundColor: "orange",
       color: "white",
       border: "2px solid black",
       width: 50,
@@ -114,6 +115,7 @@ export const tableOptions: ReactTableOptions = {
   isSelectionPanel: true,
   isStickyColumn: true,
   isRowSelect: true,
+  isColumnFilter: true,
 };
 
 interface IndeterminateCheckboxProps {
@@ -154,12 +156,14 @@ export const ReactTable: React.FunctionComponent<ReactTableProps> = ({
     isSelectionPanel,
     isStickyColumn,
     isRowSelect,
+    isColumnFilter,
   } = options as ReactTableOptions;
 
   const { headerCss, footerCss, rowCss, cellCss, highlightedRowCss } =
     css as ReactTableCssOptions;
 
-  const [isEnableColumnFilter, toggleStateColumnFilter] = useState(false);
+  const [isEnableColumnFilter, toggleStateColumnFilter] =
+    useState(isColumnFilter);
   const [isEnableColumnSetting, toggleStateColumnSetting] = useState(false);
   const [highlightedRowIndex, setHighlightedRowIndex] = useState(-1);
 

@@ -1,4 +1,5 @@
 ﻿using CricketService.Domain;
+using CricketService.Domain.Enums;
 
 namespace CricketService.Data.Repositories.Interfaces;
 public interface ICricketMatchRepository
@@ -7,15 +8,17 @@ public interface ICricketMatchRepository
 
     IEnumerable<CricketMatchInfoResponse> GetAllMatchesODI();
 
+    IEnumerable<TestCricketMatchInfoResponse> GetAllMatchesTest();
+
+    IEnumerable<object> GetMatchesByTeamUuid(Guid teamUuid, CricketFormat format);
+
+    IEnumerable<object> GetMatchesByTournament(CricketTournament tournament, CricketFormat format);
+
     Task<CricketMatchInfoResponse> GetMatchByMNumberT20I(int matchNumber);
 
     Task<CricketMatchInfoResponse> GetMatchByMNumberODI(int matchNumber);
 
     Task<TestCricketMatchInfoResponse> GetMatchByMNumberTest(int matchNumber);
-
-    IEnumerable<CricketMatchInfoResponse> GetMatchByTeamT20I(string teamName);
-
-    IEnumerable<CricketMatchInfoResponse> GetMatchByTeamODI(string teamName);
 
     Task<CricketMatchInfoResponse> AddMatchT20I(CricketMatchInfoRequest match);
 

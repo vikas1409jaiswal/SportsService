@@ -28,6 +28,10 @@ interface SelectColumnFilterProps {
   column: any;
 }
 
+interface SelectYearColumnFilterProps {
+  column: any;
+}
+
 export const GlobalFilter: React.FunctionComponent<GlobalFilterProps> = ({
   preGlobalFilteredRows,
   globalFilter,
@@ -129,7 +133,15 @@ export const SelectColumnFilter: React.FunctionComponent<
     preFilteredRows.forEach((row: any) => {
       options.add(row.values[id]);
     });
-    return [...(options.values() as any)];
+    return [...(options.values() as any)].sort(function (a: string, b: string) {
+      if (a < b) {
+        return -1;
+      }
+      if (a > b) {
+        return 1;
+      }
+      return 0;
+    });
   }, [id, preFilteredRows]);
 
   // Render a multi-select box
@@ -176,5 +188,42 @@ export const SliderColumnFilter: React.FunctionComponent<
       />
       <button onClick={() => setFilter(undefined)}>Off</button>
     </>
+  );
+};
+
+export const SelectYearColumnFilter: React.FunctionComponent<
+  SelectYearColumnFilterProps
+> = ({ column: { filterValue, setFilter, preFilteredRows, id } }) => {
+  const options = React.useMemo(() => {
+    const options = new Set();
+    preFilteredRows.forEach((row: any) => {
+      options.add(row.values[id].split(", ")[1]);
+    });
+    return [...(options.values() as any)].sort(function (a: string, b: string) {
+      if (a < b) {
+        return -1;
+      }
+      if (a > b) {
+        return 1;
+      }
+      return 0;
+    });
+  }, [id, preFilteredRows]);
+
+  // Render a multi-select box
+  return (
+    <select
+      value={filterValue}
+      onChange={(e) => {
+        setFilter(e.target.value || undefined);
+      }}
+    >
+      <option value="">All</option>
+      {options.map((option, i) => (
+        <option key={i} value={option}>
+          {option}
+        </option>
+      ))}
+    </select>
   );
 };

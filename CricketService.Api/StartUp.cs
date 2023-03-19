@@ -1,8 +1,9 @@
-﻿using System;
+﻿using AutoMapper;
 using CricketService.Api.Filters;
 using CricketService.Api.Handlers;
 using CricketService.Api.Middlewares;
 using CricketService.Data.Extensions;
+using CricketService.Data.Mappings;
 using CricketService.Data.Options.Configs;
 using CricketService.Data.Repositories;
 using CricketService.Data.Repositories.Interfaces;
@@ -15,7 +16,6 @@ using CricketService.Hangfire.Tracing;
 using Hangfire;
 using Hangfire.Common;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Newtonsoft.Json.Serialization;
 
 namespace CricketService.Api
 {
@@ -65,6 +65,13 @@ namespace CricketService.Api
                     Version = "v1",
                 });
             });
+
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new CricketServiceProfile());
+            });
+
+            services.AddSingleton(mapperConfig.CreateMapper());
         }
 
         public void Configure(

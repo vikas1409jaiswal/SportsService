@@ -1,3 +1,5 @@
+using System.Linq;
+using AutoMapper;
 using CricketService.Data.Contexts;
 using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
@@ -6,19 +8,23 @@ using CricketService.Domain;
 using CricketService.Domain.Common;
 using CricketService.Domain.Enums;
 using Microsoft.Extensions.Logging;
-using System.Linq;
 
 namespace CricketService.Data.Repositories;
 
 public class CricketPlayerRepository : ICricketPlayerRepository
 {
-    private ILogger<CricketPlayerRepository> logger;
-    private CricketServiceContext context;
+    private readonly ILogger<CricketPlayerRepository> logger;
+    private readonly CricketServiceContext context;
+    private readonly IMapper mapper;
 
-    public CricketPlayerRepository(ILogger<CricketPlayerRepository> logger, CricketServiceContext context)
+    public CricketPlayerRepository(
+        ILogger<CricketPlayerRepository> logger,
+        CricketServiceContext context,
+        IMapper mapper)
     {
         this.logger = logger;
         this.context = context;
+        this.mapper = mapper;
     }
 
     public IEnumerable<string> GetPlayersByTeamName(string teamName, CricketFormat format)
@@ -100,15 +106,15 @@ public class CricketPlayerRepository : ICricketPlayerRepository
 
         var allMatchesByTeamT20I = cricketMatchInfoTableT20I
             .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
-            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty))).Select(x => x.ToDomain());
+            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty))).Select(x => x.ToDomain(mapper));
 
         var allMatchesByTeamODI = cricketMatchInfoTableODI
             .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
-            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty))).Select(x => x.ToDomain());
+            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty))).Select(x => x.ToDomain(mapper));
 
         var allMatchesByTeamTest = cricketMatchInfoTableTest
             .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
-            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty))).Select(x => x.ToDomain());
+            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty))).Select(x => x.ToDomain(mapper));
 
         Entities.CricketPlayerInfo playerInfo = null!;
 

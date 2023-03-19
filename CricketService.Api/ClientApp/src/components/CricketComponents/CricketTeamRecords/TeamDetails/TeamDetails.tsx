@@ -11,6 +11,7 @@ import { TeamDetailsTable } from "./TeamDetailsTable";
 
 export interface TeamDetailsProps {
   teamName: string;
+  teamUuid: string;
   cricketFormat: CricketFormat;
   flagUrl: string;
 }
@@ -18,6 +19,7 @@ export interface TeamDetailsProps {
 export const TeamDetails: React.FunctionComponent<TeamDetailsProps> = ({
   cricketFormat,
   teamName,
+  teamUuid,
   flagUrl,
 }) => {
   return (
@@ -26,10 +28,18 @@ export const TeamDetails: React.FunctionComponent<TeamDetailsProps> = ({
         <h1>{teamName} national cricket team</h1>
         <img className="flag-image" src={flagUrl} />
         <div>
-          <RecordAgainsOpponents teamName={teamName} format={cricketFormat} />
+          <RecordAgainsOpponents
+            teamUuid={teamUuid}
+            teamName={teamName}
+            format={cricketFormat}
+          />
         </div>
       </div>
-      <TeamDetailsTable teamName={teamName} cricketFormat={cricketFormat} />
+      <TeamDetailsTable
+        teamName={teamName}
+        cricketFormat={cricketFormat}
+        teamUuid={teamUuid}
+      />
     </div>
   );
 };

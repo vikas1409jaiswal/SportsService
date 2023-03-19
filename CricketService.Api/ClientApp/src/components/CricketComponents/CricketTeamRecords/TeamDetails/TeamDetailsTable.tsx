@@ -5,18 +5,16 @@ import { GridLoader } from "../../../common/Loader";
 import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
 import { CricketTeamData } from "../Models/Interface";
 
-const fetchTeamDataByName = (
-  teamName: string
+const fetchTeamDataByTeamUuid = (
+  teamUuid: string
 ): Promise<AxiosResponse<CricketTeamData>> => {
-  return axios.get(
-    `http://localhost:5104/cricketteam/teams/${teamName}/records`
-  );
+  return axios.get(`http://localhost:5104/cricketteam/team/${teamUuid}`);
 };
 
-export const useTeamByName = (teamName: string) => {
+export const useTeamByUuid = (teamUuid: string) => {
   const { isLoading, data } = useQuery(
-    [teamName, "team-data"],
-    () => fetchTeamDataByName(teamName),
+    [teamUuid, "team-data"],
+    () => fetchTeamDataByTeamUuid(teamUuid),
     { cacheTime: 0 }
   );
 
@@ -27,13 +25,14 @@ export const useTeamByName = (teamName: string) => {
 
 export interface TeamDetailsTableProps {
   teamName: string;
+  teamUuid: string;
   cricketFormat: CricketFormat;
 }
 
 export const TeamDetailsTable: React.FunctionComponent<
   TeamDetailsTableProps
-> = ({ cricketFormat, teamName }) => {
-  const { isLoading, teamData } = useTeamByName(teamName);
+> = ({ cricketFormat, teamName, teamUuid }) => {
+  const { isLoading, teamData } = useTeamByUuid(teamUuid);
 
   const results =
     cricketFormat === CricketFormat.ODI
@@ -62,12 +61,8 @@ export const TeamDetailsTable: React.FunctionComponent<
               <td>{results?.lost}</td>
             </tr>
             <tr>
-              <th>Tied and Won</th>
-              <td>{results?.tiedAndWon}</td>
-            </tr>
-            <tr>
-              <th>Tied and Lost</th>
-              <td>{results?.tiedAndLost}</td>
+              <th>Tied</th>
+              <td>{results?.tied}</td>
             </tr>
             <tr>
               <th>No Result</th>
@@ -135,6 +130,15 @@ export const TeamDetailsTable: React.FunctionComponent<
         {!isLoading && (
           <tbody>
             <tr>
+              <th>Most Innings</th>
+              <td>
+                <p>{mileStones?.mostInnings.key}</p>
+                <p>
+                  <b>{mileStones?.mostInnings.value}</b>
+                </p>
+              </td>
+            </tr>
+            <tr>
               <th>Most Runs</th>
               <td>
                 <p>{mileStones?.mostRuns.key}</p>
@@ -158,6 +162,24 @@ export const TeamDetailsTable: React.FunctionComponent<
                 <p>{mileStones?.highestIndividualScore.key}</p>
                 <p>
                   <b>{mileStones?.highestIndividualScore.value}</b>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th>Best Bowling Inning</th>
+              <td>
+                <p>{mileStones?.bestBowlingInning.key}</p>
+                <p>
+                  <b>{mileStones?.bestBowlingInning.value}</b>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th>Best Bowling Match</th>
+              <td>
+                <p>{mileStones?.bestBowlingMatch.key}</p>
+                <p>
+                  <b>{mileStones?.bestBowlingMatch.value}</b>
                 </p>
               </td>
             </tr>
