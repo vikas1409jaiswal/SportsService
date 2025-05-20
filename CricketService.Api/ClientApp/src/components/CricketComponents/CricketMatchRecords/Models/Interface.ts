@@ -118,12 +118,6 @@ interface TotalInningDetails {
   };
 }
 
-export enum CricketFormat {
-  ODI = "One-day International",
-  T20I = "T20 International",
-  Test = "Test Cricket",
-}
-
 //For Team Details
 
 export interface CricketTeam {

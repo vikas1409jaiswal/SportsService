@@ -1,12 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { ReactTable, tableOptions } from "../../../common/ReactTable";
 import { Cell } from "react-table";
-import {
-  CricketFormat,
-  CricketMatch,
-  CricketTeam,
-  TestCricketMatch,
-} from "../Models/Interface";
+import { CricketMatch, CricketTeam } from "../Models/Interface";
 import {
   ReactSlidingSidePanel,
   SidePanelType,
@@ -20,6 +15,7 @@ import {
   SelectYearColumnFilter,
 } from "../../../common/Filter";
 import { CalendarChart } from "../../../common/charts/CalendarChart";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 export interface MatchRecordsTableProps {
   isLoading: boolean;

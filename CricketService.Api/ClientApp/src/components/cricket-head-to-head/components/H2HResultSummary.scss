@@ -1,0 +1,38 @@
+.h2h-result-summary-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    height: 500px;
+    box-shadow: none;
+    margin: 10px;
+
+
+    div.h2h-match {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        background-color: honeydew;
+        border: 2px solid black;
+        height: 226px;
+
+        span.h2h-match-key{
+            background-color: orange;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        span.h2h-match-value{
+            background: linear-gradient(black, green);
+            color: white;
+            margin: 0px 10px 10px 10px;
+            text-align: center;
+            font-size: 100px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    }
+}

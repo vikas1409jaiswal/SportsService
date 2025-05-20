@@ -2,13 +2,13 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useQuery } from "react-query";
 import { Player } from "../../../CricketHooks/usePlayers";
-import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
 import { RecordAgainsOpponents } from "../../CricketTeamRecords/TeamDetails/RecordAgainstOpponents";
 import { TeamDetailsTable } from "../../CricketTeamRecords/TeamDetails/TeamDetailsTable";
 import { PlayerData } from "../Models/Interface";
 
 import "./PlayerDetails.scss";
 import { PlayerDetailsTable } from "./PlayerDetailsTable";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 const fetchPlayerDataByName = (
   teamName: string,

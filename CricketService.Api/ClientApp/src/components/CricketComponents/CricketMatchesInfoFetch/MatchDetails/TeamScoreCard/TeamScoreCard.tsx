@@ -1,5 +1,5 @@
 ﻿import React, { useEffect, useState, useContext } from "react";
-import { Team } from "../../useCricketMatches";
+import { Team } from "../../../../../models/espn-cricinfo-models/CricketMatchModels";
 
 import "./TeamScoreCard.scss";
 

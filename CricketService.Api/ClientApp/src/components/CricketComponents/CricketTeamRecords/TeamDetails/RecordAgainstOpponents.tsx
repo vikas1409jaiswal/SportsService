@@ -10,7 +10,7 @@ import { useQuery } from "react-query";
 import { Cell } from "react-table";
 
 import "./RecordAgainstOpponents.scss";
-import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 interface AgainstTeamData {
   opponent: string;

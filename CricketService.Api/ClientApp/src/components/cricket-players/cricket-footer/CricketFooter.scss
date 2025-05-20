@@ -1,0 +1,26 @@
+﻿.cricket-home-page-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 60px;
+
+    button {
+        background-color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 10px;
+        color: black;
+    }
+
+    button:hover {
+        background-color: skyblue;
+    } 
+
+    .alphabets-container {
+        display: grid;
+        grid-template-columns: repeat(26, 1fr);
+        width: 1500px;
+    }
+}

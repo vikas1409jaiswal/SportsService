@@ -1,134 +1,16 @@
 import axios, { AxiosResponse } from "axios";
 import { useQueries, useQuery } from "react-query";
-import { CricketFormat } from "../CricketMatchRecords/Models/Interface";
-
-export interface ApiData {
-  data: any;
-  meta: any;
-}
-
-export interface ApiResponse {
-  data: ApiData;
-  status: number;
-  config: any;
-  headers: any;
-  request: any;
-  statusText: string;
-}
-
-interface CricketMatchDetail {
-  team1: string;
-  team2: string;
-  winner: string;
-  margin: string;
-  ground: string;
-  matchDate: string;
-  matchNo: string;
-  href: string;
-}
-
-export interface CricketMatchesBySeason {
-  season: number;
-  matchDetails: CricketMatchDetail[];
-}
-
-export interface CricketMatch {
-  matchUuid: string;
-  season: string;
-  series: string;
-  playerOfTheMatch: string;
-  matchNo: string;
-  matchDays: string;
-  matchTitle: string;
-  venue: string;
-  matchDate: string;
-  tossWinner: string;
-  tossDecision: string;
-  result: string;
-  team1: Team;
-  team2: Team;
-  tvUmpire: string;
-  matchReferee: string;
-  reserveUmpire: string;
-  umpires: string[];
-  internationalDebut: string[];
-  formatDebut: string[];
-}
-
-export interface Team {
-  teamName: string;
-  battingScorecard: Batsman[];
-  bowlingScorecard: Bowler[];
-  extras: string;
-  fallOfWickets: string[];
-  didNotBat: Player[];
-}
-
-interface Player {
-  name: string;
-  href: string;
-}
-
-interface Batsman {
-  playerName: Player;
-  outStatus: string;
-  runsScored: number;
-  ballsFaced: number;
-  minutes: number;
-  fours: number;
-  sixes: number;
-}
-
-interface Bowler {
-  playerName: Player;
-  oversBowled: number;
-  maidens: number;
-  runsConceded: number;
-  wickets: number;
-  wideBall: number;
-  noBall: number;
-  dots: number;
-  fours: number;
-  sixes: number;
-}
-
-export interface CricketMatchTest {
-  matchUuid: string;
-  season: string;
-  series: string;
-  seriesResult: string;
-  playerOfTheMatch: string;
-  matchNo: string;
-  matchDays: string;
-  matchTitle: string;
-  venue: string;
-  matchDate: string;
-  tossWinner: string;
-  tossDecision: string;
-  result: string;
-  team1: TestTeam;
-  team2: TestTeam;
-  tvUmpire: string;
-  matchReferee: string;
-  reserveUmpire: string;
-  umpires: string[];
-  internationalDebut: string[];
-  formatDebut: string[];
-}
-
-export interface TestTeam {
-  teamName: string;
-  inning1: InningDetail;
-  inning2: InningDetail;
-}
-
-export interface InningDetail {
-  battingScorecard: Batsman[];
-  bowlingScorecard: Bowler[];
-  extras: string;
-  fallOfWickets: string[];
-  didNotBat: Player[];
-}
+import { iplMatchesBySeason } from "../../../data/StaticData/IPLMatchesData/AllIPLMatches";
+import { ApiData, ApiResponse } from "../../../models/Api";
+import {
+  Batsman,
+  Bowler,
+  CricketMatch,
+  CricketMatchDetail,
+  CricketMatchTest,
+  CricketMatchesBySeason,
+} from "../../../models/espn-cricinfo-models/CricketMatchModels";
+import { CricketFormat } from "../../../models/enums/CricketFormat";
 
 const fetchCricketMatches = (
   format: CricketFormat,
@@ -146,7 +28,7 @@ const fetchCricketMatches = (
   }
 
   return axios.get(
-    `https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=${classNo};id=${year};type=year`
+    `https://www.espncricinfo.com/records/year/team-match-results/2025-2025/one-day-internationals-2`
   );
 };
 
@@ -163,7 +45,7 @@ export const useCricketMatchesBySeason = (
   const queryOptions = {
     refetchOnWindowFocus: false,
     refetchOnMount: false,
-    enabled: true,
+    enabled: format !== CricketFormat.IPL,
     cacheTime: 60 * 60 * 1000,
     retry: true,
   };
@@ -178,6 +60,11 @@ export const useCricketMatchesBySeason = (
 
   const result = useQueries(queries);
 
+  if (format === CricketFormat.IPL) {
+    console.log(years.map((y) => GetIplMatchesBySeason(y)));
+    return years.map((y) => GetIplMatchesBySeason(y));
+  }
+
   const cricketMatchesAll: CricketMatchesBySeason[] = [];
 
   result.map((r, i) => {
@@ -186,8 +73,14 @@ export const useCricketMatchesBySeason = (
     divElement.innerHTML = (r.data as ApiResponse)?.data.toString() as string;
 
     const allTableRows = divElement
-      .querySelector(".div630Pad table.engineTable")
-      ?.querySelectorAll("tr.data1");
+      .querySelector("table.ds-table")
+      ?.querySelectorAll("tbody tr");
+
+    console.log(allTableRows);
+
+    console.log(
+      divElement.querySelector(".div630Pad table.engineTable")?.innerHTML
+    );
 
     const cricketMatches: CricketMatchesBySeason = {
       season: years[i],
@@ -313,7 +206,7 @@ export const useCricketMatch = (url: string): CricketMatch => {
   }
 
   const cricketMatch: CricketMatch = {
-    matchUuid: "",
+    matchUuid: "00000000-0000-0000-0000-000000000000",
     season,
     series,
     playerOfTheMatch,
@@ -325,8 +218,13 @@ export const useCricketMatch = (url: string): CricketMatch => {
     tossWinner: tossDetail.split(",")[0],
     tossDecision: tossDetail,
     result: headerData?.querySelector("p > span")?.innerHTML as string,
+    pointsTable: [],
     team1: {
       teamName: team1Name,
+      team: {
+        name: team1Name,
+        uuid: "00000000-0000-0000-0000-000000000000",
+      },
       battingScorecard: [],
       bowlingScorecard: [],
       extras: "",
@@ -335,6 +233,10 @@ export const useCricketMatch = (url: string): CricketMatch => {
     },
     team2: {
       teamName: team2Name,
+      team: {
+        name: team2Name,
+        uuid: "00000000-0000-0000-0000-000000000000",
+      },
       battingScorecard: [],
       bowlingScorecard: [],
       extras: "",
@@ -369,7 +271,7 @@ export const useCricketMatch = (url: string): CricketMatch => {
         !pName.includes("TOTAL") &&
           !pName.includes("Fall of wickets:") &&
           !pName.includes("Extras") &&
-          !pName.includes("Did not bat:") &&
+          (!pName.includes("Did not bat:") || !pName.includes("Yet to bat:")) &&
           pName.length > 0 &&
           teamDetails?.battingScorecard.push({
             playerName: {
@@ -404,7 +306,10 @@ export const useCricketMatch = (url: string): CricketMatch => {
             });
         }
 
-        if (pName.includes("Did not bat: ") && teamDetails) {
+        if (
+          (pName.includes("Did not bat:") || pName.includes("Yet to bat:")) &&
+          teamDetails
+        ) {
           scoreSelector
             ?.item(0)
             ?.querySelectorAll("a")
@@ -477,8 +382,8 @@ export const useCricketMatchesBySeasonDetails = (
 
   for (let i = 0; i < matchDetails.length; i++) {
     queries.push({
-      queryKey: ["matches-season", matchDetails[i].href],
-      queryFn: () => fetchCricketMatch(matchDetails[i].href),
+      queryKey: ["matches-season", matchDetails[i]?.href],
+      queryFn: () => fetchCricketMatch(matchDetails[i]?.href),
       ...queryOptions,
     });
   }
@@ -581,7 +486,7 @@ export const useCricketMatchesBySeasonDetails = (
     }
 
     const cricketMatch: CricketMatch = {
-      matchUuid: "",
+      matchUuid: "00000000-0000-0000-0000-000000000000",
       season,
       series,
       playerOfTheMatch,
@@ -589,12 +494,17 @@ export const useCricketMatchesBySeasonDetails = (
       matchDays,
       matchTitle: `${team1Name} vs ${team2Name}`,
       venue: tableData?.querySelector("span")?.innerHTML as string,
-      matchDate: matchDetails[i].matchDate,
+      matchDate: matchDetails[i]?.matchDate,
       tossWinner: tossDetail.split(",")[0],
       tossDecision: tossDetail,
       result: headerData?.querySelector("p > span")?.innerHTML as string,
+      pointsTable: [],
       team1: {
         teamName: team1Name,
+        team: {
+          name: team1Name,
+          uuid: "00000000-0000-0000-0000-000000000000",
+        },
         battingScorecard: [],
         bowlingScorecard: [],
         extras: "",
@@ -603,6 +513,10 @@ export const useCricketMatchesBySeasonDetails = (
       },
       team2: {
         teamName: team2Name,
+        team: {
+          name: team2Name,
+          uuid: "00000000-0000-0000-0000-000000000000",
+        },
         battingScorecard: [],
         bowlingScorecard: [],
         extras: "",
@@ -639,7 +553,8 @@ export const useCricketMatchesBySeasonDetails = (
           !pName.includes("TOTAL") &&
             !pName.includes("Fall of wickets:") &&
             !pName.includes("Extras") &&
-            !pName.includes("Did not bat:") &&
+            (!pName.includes("Did not bat:") ||
+              !pName.includes("Yet to bat:")) &&
             pName.length > 0 &&
             teamDetails?.battingScorecard.push({
               playerName: {
@@ -674,7 +589,10 @@ export const useCricketMatchesBySeasonDetails = (
               });
           }
 
-          if (pName.includes("Did not bat: ") && teamDetails) {
+          if (
+            (pName.includes("Did not bat:") || pName.includes("Yet to bat:")) &&
+            teamDetails
+          ) {
             scoreSelector
               ?.item(0)
               ?.querySelectorAll("a")
@@ -989,7 +907,10 @@ export const useTestCricketMatchesBySeasonDetails = (
               });
           }
 
-          if (pName.includes("Did not bat: ") && teamDetails) {
+          if (
+            (pName.includes("Did not bat:") || pName.includes("Yet to bat:")) &&
+            teamDetails
+          ) {
             scoreSelector
               ?.item(0)
               ?.querySelectorAll("a")
@@ -1094,7 +1015,10 @@ export const useTestCricketMatchesBySeasonDetails = (
               });
           }
 
-          if (pName.includes("Did not bat: ") && teamDetails) {
+          if (
+            (pName.includes("Did not bat:") || pName.includes("Yet to bat:")) &&
+            teamDetails
+          ) {
             scoreSelector
               ?.item(0)
               ?.querySelectorAll("a")
@@ -1164,4 +1088,13 @@ export const useTestCricketMatchesBySeasonDetails = (
   }
 
   return null;
+};
+
+const GetIplMatchesBySeason = (year: number) => {
+  const matches: CricketMatchesBySeason = { season: year, matchDetails: [] };
+  matches.matchDetails = matches.matchDetails.concat(
+    iplMatchesBySeason.find((x) => x.season === year)
+      ?.matchDetails as CricketMatchDetail[]
+  );
+  return matches;
 };

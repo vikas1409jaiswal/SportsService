@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { CricketFormat } from "../CricketMatchRecords/Models/Interface";
 import { ODIRecords } from "./ODIRecords/ODIRecords";
 import { T20Records } from "./T20Records/T20Records";
 import { CricketTeamData } from "./Models/Interface";
@@ -10,6 +9,7 @@ import { TestRecords } from "./TestRecords/TestRecords";
 import { TeamStatCharts } from "./TeamStatCharts/TeamStatCharts";
 import { defaultOptions, LineChart } from "../../common/charts/LineChart";
 import { CalendarChart } from "../../common/charts/CalendarChart";
+import { CricketFormat } from "../../../models/enums/CricketFormat";
 
 export interface CricketTeamRecordsProps {}
 

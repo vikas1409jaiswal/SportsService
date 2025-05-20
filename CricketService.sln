@@ -20,17 +20,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		Directory.Build.props = Directory.Build.props
+		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{98F449F2-FE75-4B9B-8474-F62B49D65F75}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CricketService.Api.UnitTests", "CricketService.Api.UnitTests\CricketService.Api.UnitTests.csproj", "{464F54C6-6FB7-4797-AB4D-65CB63E0C416}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CricketService.Seeder", "CricketService.Seeder\CricketService.Seeder.csproj", "{EE31AA4A-D25E-4A9A-98E7-66A32BCF343A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CricketService.Hangfire", "CricketService.Hangfire\CricketService.Hangfire.csproj", "{70C247A9-0A0C-4B89-86E2-AA4502991AB5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CricketService.Hangfire.Postgres", "CricketService.Hangfire.Postgres\CricketService.Hangfire.Postgres.csproj", "{8A8EC29D-413F-471B-920B-6FB5CEA52309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricketService.Utils", "CricketService.Utils\CricketService.Utils.csproj", "{1D618724-F022-49EB-939F-7FE7A96D2891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricketService.Data.QualityTests", "CricketService.Data.QualityTests\CricketService.Data.QualityTests.csproj", "{B2D70C0B-58F0-4998-A7CB-9CA34DC23493}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,10 +57,6 @@ Global
 		{6DD498C8-96AF-4128-A872-87AFB169DD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DD498C8-96AF-4128-A872-87AFB169DD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DD498C8-96AF-4128-A872-87AFB169DD6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{464F54C6-6FB7-4797-AB4D-65CB63E0C416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{464F54C6-6FB7-4797-AB4D-65CB63E0C416}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{464F54C6-6FB7-4797-AB4D-65CB63E0C416}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{464F54C6-6FB7-4797-AB4D-65CB63E0C416}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EE31AA4A-D25E-4A9A-98E7-66A32BCF343A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE31AA4A-D25E-4A9A-98E7-66A32BCF343A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE31AA4A-D25E-4A9A-98E7-66A32BCF343A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -70,12 +69,20 @@ Global
 		{8A8EC29D-413F-471B-920B-6FB5CEA52309}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A8EC29D-413F-471B-920B-6FB5CEA52309}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A8EC29D-413F-471B-920B-6FB5CEA52309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D618724-F022-49EB-939F-7FE7A96D2891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D618724-F022-49EB-939F-7FE7A96D2891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D618724-F022-49EB-939F-7FE7A96D2891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D618724-F022-49EB-939F-7FE7A96D2891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D70C0B-58F0-4998-A7CB-9CA34DC23493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D70C0B-58F0-4998-A7CB-9CA34DC23493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D70C0B-58F0-4998-A7CB-9CA34DC23493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D70C0B-58F0-4998-A7CB-9CA34DC23493}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{464F54C6-6FB7-4797-AB4D-65CB63E0C416} = {98F449F2-FE75-4B9B-8474-F62B49D65F75}
+		{B2D70C0B-58F0-4998-A7CB-9CA34DC23493} = {98F449F2-FE75-4B9B-8474-F62B49D65F75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DCDCD5D-3C8A-48CD-8CFA-581D0F2BBF80}

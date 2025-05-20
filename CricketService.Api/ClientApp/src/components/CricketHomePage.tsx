@@ -1,9 +1,6 @@
 ﻿import React, { useState, createContext, useEffect } from "react";
 import { CricketPlayerInfoFetch } from "./CricketComponents/CricketPlayerInfoFetch/CricketPlayerInfoFetch";
-import {
-  CricketMatch,
-  useCricketMatch,
-} from "./CricketComponents/CricketMatchesInfoFetch/useCricketMatches";
+import { useCricketMatch } from "./CricketComponents/CricketMatchesInfoFetch/useCricketMatches";
 import { playersData } from "./../components/CricketComponents/CricketPlayerInfoFetch/playersData";
 
 import "./CricketHomePage.css";
@@ -11,7 +8,7 @@ import {
   CricketMatchesInfoFetch,
   getRangeYearsArray,
 } from "./CricketComponents/CricketMatchesInfoFetch/CricketMatchesInfoFetch";
-import Chart from "react-google-charts";
+import { CricketMatch } from "../models/espn-cricinfo-models/CricketMatchModels";
 
 export interface CricketHomePageProps {}
 
@@ -19,6 +16,7 @@ export enum CricketFormats {
   TestCricket = "Test Cricket",
   ODICricket = "One-day International",
   T20ICricket = "T20 International",
+  IPL = "Indian Premier League",
 }
 
 interface CricketContextValue {
@@ -48,8 +46,13 @@ const initialCricketContextValue: CricketContextValue = {
     tossWinner: "",
     tossDecision: "",
     result: "",
+    pointsTable: [],
     team1: {
       teamName: "",
+      team: {
+        name: "",
+        uuid: "",
+      },
       battingScorecard: [],
       bowlingScorecard: [],
       extras: "",
@@ -58,6 +61,10 @@ const initialCricketContextValue: CricketContextValue = {
     },
     team2: {
       teamName: "",
+      team: {
+        name: "",
+        uuid: "",
+      },
       battingScorecard: [],
       bowlingScorecard: [],
       extras: "",
@@ -85,7 +92,7 @@ export const CricketHomePage: React.FunctionComponent<CricketHomePageProps> = (
   );
   const [totalFetchPlayers, setTotalFetchPlayers] = useState<number>(10);
 
-  const years = getRangeYearsArray(1877, 2023).map((x) => parseInt(x));
+  const years = getRangeYearsArray(2023, 2025).map((x) => parseInt(x));
 
   return (
     <>
@@ -96,12 +103,12 @@ export const CricketHomePage: React.FunctionComponent<CricketHomePageProps> = (
         }}
       >
         <div className="cricket-home-page">
-          {/*<CricketMatchesInfoFetch years={years} />)*/}
+          <CricketMatchesInfoFetch years={years} />
           {/*<CricketPlayerInfoFetch*/}
           {/*  totalFetchPlayers={totalFetchPlayers}*/}
           {/*  setTotalFetchPlayers={setTotalFetchPlayers}*/}
           {/*  players={playersData*/}
-          {/*    .slice(500)*/}
+          {/*    .slice(0, 1)*/}
           {/*    //.slice(0, totalFetchPlayers)*/}
           {/*    .map((x) => [x.uuid, x.href])}*/}
           {/*/>*/}

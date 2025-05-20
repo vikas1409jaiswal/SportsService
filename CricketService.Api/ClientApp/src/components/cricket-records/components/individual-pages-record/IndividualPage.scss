@@ -1,0 +1,53 @@
+﻿.cricket-player-container {
+    padding: 10px 10px 10px 0px;
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    position: relative;
+    box-shadow: none;
+    height: 860px;
+    width: 100vw;
+    overflow: hidden;
+
+    .rotating-circle{
+        position: absolute;
+        margin-top: -330px;
+        margin-left: 390px;
+    }
+
+    .cricket-player-details {
+        height: 750px;
+        box-shadow: none;
+        background: none;
+
+        p.player-header {
+            font-size: 50px;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: 800;
+            padding-left: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: honeydew;
+            background-image: linear-gradient(to right, rgb(255, 255, 255, 0.5), rgba(47, 255, 89, 0.5));
+            margin: 10px;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            } 
+        }
+
+        .cricket-player-details-section {
+            box-shadow: none;
+            background: none;
+            display: grid;
+            grid-auto-rows: 250px 100px 100px 100px 100px 100px;
+        }
+    }
+}
+
+.moving-text-footer{
+    position: absolute;
+    margin-top: -775px;
+}

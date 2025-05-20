@@ -1,13 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
 import { CricketContext, CricketFormats } from "../../CricketHomePage";
-import {
-  CricketMatchesBySeason,
-  useCricketMatchesBySeason,
-} from "./useCricketMatches";
+import { useCricketMatchesBySeason } from "./useCricketMatches";
 import { MatchDetailsBySeason } from "./MatchDetailsBySeason/MatchDetailsBySeason";
 
 import "./CricketMatchesInfoFetch.css";
-import { CricketFormat } from "../CricketMatchRecords/Models/Interface";
+import { CricketMatchesBySeason } from "../../../models/espn-cricinfo-models/CricketMatchModels";
+import { CricketFormat } from "../../../models/enums/CricketFormat";
 
 export interface CricketMatchesInfoFetchProps {
   years: number[];
@@ -23,18 +21,20 @@ export const CricketMatchesInfoFetch: React.FunctionComponent<
   ];
 
   const seasonOptions = {
-    "T20 International": getRangeYearsArray(2005, 2023),
-    "One-day International": getRangeYearsArray(1971, 2023),
-    "Test Cricket": getRangeYearsArray(1887, 2023),
+    "T20 International": getRangeYearsArray(2005, 2025),
+    "One-day International": getRangeYearsArray(1971, 2025),
+    "Test Cricket": getRangeYearsArray(1887, 2025),
   };
 
   const [currentSelectedFormat, setCurrentSelectedFormat] = useState(
-    CricketFormats.T20ICricket
+    CricketFormats.ODICricket
   );
   //const [currentSelectedYear, setCurrentSelectedYear] = useState(seasonOptions[currentSelectedFormat][0]);
 
   const cricketMatchesBySeason: CricketMatchesBySeason[] =
-    useCricketMatchesBySeason(CricketFormat.Test, years);
+    useCricketMatchesBySeason(CricketFormat.ODI, years);
+
+  console.log(cricketMatchesBySeason);
 
   //<DropDown
   //             dropDownText={'Format'}

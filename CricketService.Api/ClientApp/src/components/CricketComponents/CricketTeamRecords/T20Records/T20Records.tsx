@@ -11,9 +11,9 @@ import {
 } from "../../../common/ReactSlidingSidePanel";
 import { TeamDetails } from "../TeamDetails/TeamDetails";
 import { CricketTeamData } from "../Models/Interface";
-import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
 
 import "./T20Records.scss";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 export interface T20RecordsProps {
   isLoading: boolean;

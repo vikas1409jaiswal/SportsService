@@ -27,6 +27,8 @@
         public string ImageSrc { get; set; } = string.Empty;
 
         public string Education { get; set; } = string.Empty;
+
+        public string[] Content { get; set; } = Array.Empty<string>();
     }
 
     public class DebutDetailsInfo

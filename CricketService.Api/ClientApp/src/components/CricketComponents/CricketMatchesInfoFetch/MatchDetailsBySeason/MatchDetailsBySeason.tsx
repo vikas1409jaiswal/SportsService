@@ -1,14 +1,14 @@
 ﻿import React, { useEffect, useState, useContext } from "react";
 import { CricketContext } from "../../../CricketHomePage";
 import {
-  CricketMatchesBySeason,
   useCricketMatch,
   useCricketMatchesBySeasonDetails,
 } from "./../useCricketMatches";
 import { MatchDetails } from "../MatchDetails/MatchDetails";
+import { CricketMatchesBySeason } from "../../../../models/espn-cricinfo-models/CricketMatchModels";
 
 import "./MatchDetailsBySeason.scss";
-import { useTestCricketMatchesBySeasonDetails } from "../useCricketMatches";
+import { useFetchMatchByUrl } from "../../../../hooks/espn-cricinfo-hooks/useFetchMatchByUrl";
 
 export interface MatchDetailsBySeasonProps {
   matchDataBySeasons: CricketMatchesBySeason[];
@@ -24,13 +24,13 @@ export const MatchDetailsBySeason: React.FunctionComponent<
 
   const cricketContext = useContext(CricketContext);
 
-  const cricketMatch = useCricketMatch(currentSelectedMatch?.href);
+  const cricketMatch = useFetchMatchByUrl(currentSelectedMatch?.href);
 
   //console.log(useCricketMatchesBySeasonDetails(year, matchDataBySeason.matchDetails));
   const matchesList = matchDataBySeasons
     .map((x) => x.matchDetails)
     .reduce((p, n) => p.concat(n));
-  console.log(useTestCricketMatchesBySeasonDetails(matchesList));
+  console.log(useCricketMatchesBySeasonDetails(2007, matchesList));
 
   useEffect(() => {
     cricketContext.setCurrentMatchDetails({
@@ -79,14 +79,14 @@ export const MatchDetailsBySeason: React.FunctionComponent<
         <tbody>
           {matchDetails.map((match, index) => (
             <tr key={index}>
-              <td>{match.matchNo}</td>
+              <td>{match?.matchNo}</td>
               <td>
-                {match.team1} vs {match.team2}
+                {match?.team1} vs {match?.team2}
               </td>
-              <td>{match.winner}</td>
-              <td>{match.margin}</td>
-              <td>{match.ground}</td>
-              <td>{match.matchDate}</td>
+              <td>{match?.winner}</td>
+              <td>{match?.margin}</td>
+              <td>{match?.ground}</td>
+              <td>{match?.matchDate}</td>
               <td>
                 <button onClick={() => setCurrentSelectedMatch(match)}>
                   Show Match Details

@@ -12,5 +12,7 @@ namespace CricketService.Domain.Enums
         TestCricket,
         [EnumMember(Value = "All")]
         All,
+        [EnumMember(Value = "Twenty20")]
+        Twenty20,
     }
 }

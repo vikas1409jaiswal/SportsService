@@ -1,5 +1,4 @@
 ﻿using CricketService.Hangfire.Postgres.Contracts;
-using Hangfire.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CricketService.Hangfire.Postgres.Context

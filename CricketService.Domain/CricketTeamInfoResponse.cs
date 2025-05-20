@@ -1,4 +1,5 @@
-﻿using CricketService.Domain.Common;
+﻿using CricketService.Domain.BaseDomains;
+using CricketService.Domain.Common;
 
 namespace CricketService.Domain
 {
@@ -30,7 +31,7 @@ namespace CricketService.Domain
         public TeamRecordDetails(
             TeamFormatRecordDetails t20IResults,
             TeamFormatRecordDetails oDIResults,
-            TestTeamFormatRecordDetails testResults)
+            TeamFormatRecordDetails testResults)
         {
             T20IResults = t20IResults;
             ODIResults = oDIResults;
@@ -41,18 +42,18 @@ namespace CricketService.Domain
 
         public TeamFormatRecordDetails ODIResults { get; set; }
 
-        public TestTeamFormatRecordDetails TestResults { get; set; }
+        public TeamFormatRecordDetails TestResults { get; set; }
     }
 
     public class TeamFormatRecordDetails
     {
         public TeamFormatRecordDetails(
-            DebutDetails debut,
+            MatchDetails debut,
             int matches,
             int won,
             int lost,
             int tied,
-            int noResult,
+            int nRorDraw,
             TeamMileStones teamMileStones)
         {
             Debut = debut;
@@ -60,11 +61,11 @@ namespace CricketService.Domain
             Won = won;
             Lost = lost;
             Tied = tied;
-            NoResult = noResult;
             TeamMileStones = teamMileStones;
+            NRorDraw = nRorDraw;
         }
 
-        public DebutDetails Debut { get; set; }
+        public MatchDetails Debut { get; set; }
 
         public int Matches { get; set; }
 
@@ -74,7 +75,7 @@ namespace CricketService.Domain
 
         public int Tied { get; set; }
 
-        public int NoResult { get; set; }
+        public int NRorDraw { get; set; }
 
         public double WinPercentage
         {
@@ -92,70 +93,9 @@ namespace CricketService.Domain
         public TeamMileStones TeamMileStones { get; set; }
     }
 
-    public class TestTeamFormatRecordDetails
+    public class MatchDetails
     {
-        public TestTeamFormatRecordDetails(
-            DebutDetails debut,
-            int matches,
-            int won,
-            int lost,
-            int tied,
-            int draw,
-            TeamMileStones teamMileStones)
-        {
-            Debut = debut;
-            Matches = matches;
-            Won = won;
-            Lost = lost;
-            Tied = tied;
-            Draw = draw;
-            TeamMileStones = teamMileStones;
-        }
-
-        public DebutDetails Debut { get; set; }
-
-        public int Matches { get; set; }
-
-        public int Won { get; set; }
-
-        public int Lost { get; set; }
-
-        public int Tied { get; set; }
-
-        public int Draw { get; set; }
-
-        public double WinPercentage
-        {
-            get
-            {
-                if (Matches == 0)
-                {
-                    return 0;
-                }
-
-                return (double)Won / Matches * 100;
-            }
-        }
-
-        public double DrawPercentage
-        {
-            get
-            {
-                if (Matches == 0)
-                {
-                    return 0;
-                }
-
-                return (double)Draw / Matches * 100;
-            }
-        }
-
-        public TeamMileStones TeamMileStones { get; set; }
-    }
-
-    public class DebutDetails
-    {
-        public DebutDetails(
+        public MatchDetails(
             Guid matchUuid,
             string date,
             string opponent,
@@ -188,6 +128,7 @@ namespace CricketService.Domain
     {
         public TeamMileStones(
             int careerRuns,
+            int careerDucks,
             int careerCenturies,
             int careerHalfCenturies,
             int careerOneAndHalfCenturies,
@@ -196,6 +137,7 @@ namespace CricketService.Domain
             KeyValuePair<string, int> mostInnings,
             KeyValuePair<string, int> mostRuns,
             KeyValuePair<string, int> mostWickets,
+            KeyValuePair<string, int> mostDucks,
             KeyValuePair<string, string> bestBowlingInning,
             KeyValuePair<string, string> bestBowlingMatch,
             KeyValuePair<string, int> mostSixes,
@@ -204,9 +146,13 @@ namespace CricketService.Domain
             KeyValuePair<string, int> most100s,
             KeyValuePair<string, int> most150s,
             KeyValuePair<string, int> most200s,
-            KeyValuePair<string, int> hiScore)
+            KeyValuePair<string, int> hiScore,
+            List<KeyValuePair<CricketPlayer, PlayerRepresentedDetails>> playersRepresented,
+            List<KeyValuePair<CricketPlayer, PlayerRepresentedDetails>> captainsRepresented,
+            List<KeyValuePair<CricketPlayer, PlayerRepresentedDetails>> wicketKeepersRepresented)
         {
             CareerRuns = careerRuns;
+            CareerDucks = careerDucks;
             CareerCenturies = careerCenturies;
             CareerHalfCenturies = careerHalfCenturies;
             CareerOneAndHalfCenturies = careerOneAndHalfCenturies;
@@ -215,6 +161,7 @@ namespace CricketService.Domain
             MostInnings = mostInnings;
             MostRuns = mostRuns;
             MostWickets = mostWickets;
+            MostDucks = mostDucks;
             BestBowlingInning = bestBowlingInning;
             BestBowlingMatch = bestBowlingMatch;
             MostSixes = mostSixes;
@@ -224,9 +171,14 @@ namespace CricketService.Domain
             Most150s = most150s;
             Most200s = most200s;
             HighestIndividualScore = hiScore;
+            PlayersRepresented = playersRepresented;
+            CaptainsRepresented = captainsRepresented;
+            WicketKeepersRepresented = wicketKeepersRepresented;
         }
 
         public int CareerRuns { get; set; }
+
+        public int CareerDucks { get; set; }
 
         public int CareerCenturies { get; set; }
 
@@ -243,6 +195,8 @@ namespace CricketService.Domain
         public KeyValuePair<string, int> MostRuns { get; set; }
 
         public KeyValuePair<string, int> MostWickets { get; set; }
+
+        public KeyValuePair<string, int> MostDucks { get; set; }
 
         public KeyValuePair<string, string> BestBowlingInning { get; set; }
 
@@ -261,6 +215,19 @@ namespace CricketService.Domain
         public KeyValuePair<string, int> Most200s { get; set; }
 
         public KeyValuePair<string, int> HighestIndividualScore { get; set; }
+
+        public List<KeyValuePair<CricketPlayer, PlayerRepresentedDetails>> PlayersRepresented { get; set; }
+
+        public List<KeyValuePair<CricketPlayer, PlayerRepresentedDetails>> CaptainsRepresented { get; set; }
+
+        public List<KeyValuePair<CricketPlayer, PlayerRepresentedDetails>> WicketKeepersRepresented { get; set; }
+    }
+
+    public class PlayerRepresentedDetails
+    {
+        public DateOnly FirstMatchDate { get; set; }
+
+        public Guid FirstMatchUuid { get; set; }
     }
 
     public class InningRecordDetails

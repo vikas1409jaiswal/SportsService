@@ -1,6 +1,9 @@
+using AutoMapper;
 using CricketService.Data.Extensions;
+using CricketService.Data.Mappings;
 using CricketService.Data.Repositories;
 using CricketService.Data.Repositories.Interfaces;
+using CricketService.Data.Utils;
 using CricketService.Seeder.Options;
 
 namespace CricketService.Seeder
@@ -31,13 +34,24 @@ namespace CricketService.Seeder
             services.AddCricketServiceDataLayer(config);
             services.AddOptions<StaticDataJsonFilePathsOptions>().Bind(config.GetSection(StaticDataJsonFilePathsOptions.SectionName));
             services.AddScoped<ICricketMatchRepository, CricketMatchRepository>();
+            services.AddScoped<ICricketTeamRepository, CricketTeamRepository>();
             services.AddScoped<ICricketPlayerRepository, CricketPlayerRepository>();
+            services.AddScoped<MatchPDFHandler>();
+            services.AddScoped<TeamPDFHandler>();
+            services.AddScoped<PlayerPDFHandler>();
             services.AddLogging(logging =>
             {
                 logging.ClearProviders();
                 logging.AddConsole();
                 logging.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Warning);
             });
+
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new CricketServiceProfile());
+            });
+
+            services.AddSingleton(mapperConfig.CreateMapper());
 
             return config;
         }

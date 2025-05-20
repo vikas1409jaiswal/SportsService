@@ -1,0 +1,51 @@
+.playing-11 {
+  text-align: center;
+  overflow-x: hidden;
+ 
+  h1{ 
+    background: linear-gradient(blue, black);
+    color: white;
+    width: fit-content;
+    margin-left: 35%;
+    padding: 0px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+
+  .playing-11-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+
+    .player-card {
+      margin: 5px;
+      border: 2px solid black;
+      border-radius: 10px;
+      position: relative;
+
+      h5 {
+        font-weight: 700;
+        font-size: 30px;
+      }
+
+      > img {
+        background: linear-gradient(white, black);
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+      .rotating-circle {
+        position: absolute;
+        margin-top: -400px;
+        margin-left: 30px;
+      }
+
+      .team-logo-cylinder{
+        position: absolute;
+        margin-top: -720px;
+        margin-left: 300px;
+      }
+    }
+  }
+}

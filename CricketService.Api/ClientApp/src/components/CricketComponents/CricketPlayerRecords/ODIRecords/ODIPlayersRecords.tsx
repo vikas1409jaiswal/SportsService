@@ -8,11 +8,11 @@ import {
   SidePanelType,
 } from "../../../common/ReactSlidingSidePanel";
 import { ReactTable, tableOptions } from "../../../common/ReactTable";
-import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
 import { PlayerData } from "../Models/Interface";
 import { PlayerDetails } from "../PlayerDetails/PlayerDetails";
 
 import "./ODIPlayersRecords.scss";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 export interface ODIPlayersRecordsProps {
   isLoading: boolean;

@@ -1,0 +1,22 @@
+.match-stats-table {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    thead > tr > th {
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    tbody > tr > td {
+        background-color: darkblue;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+}

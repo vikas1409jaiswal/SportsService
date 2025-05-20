@@ -1,22 +1,11 @@
 import axios, { AxiosResponse } from "axios";
 import { useQueries, useQuery } from "react-query";
-
-export interface ApiData {
-  data: any;
-  meta: any;
-}
-
-export interface ApiResponse {
-  data: ApiData;
-  status: number;
-  config: any;
-  headers: any;
-  request: any;
-  statusText: string;
-}
+import { MatchDetailInfo } from "./useCustomPlayerInfo";
+import { ApiData, ApiResponse } from "../../../models/Api";
 
 export interface PlayerInfo {
   playerUuid: string;
+  name: string;
   fullName: string;
   href: string;
   birth: string;
@@ -31,12 +20,48 @@ export interface PlayerInfo {
   education: string;
   debutDetails: DebutDetailInfo;
   content: string[];
+  career: CareerDetailInfo | null;
+  matchDetail: MatchDetailInfo | null;
 }
 
-interface DebutDetailInfo {
+export interface DebutDetailInfo {
   odiMatches: DebutInfo;
   testMatches: DebutInfo;
   t20IMatches: DebutInfo;
+}
+
+export interface CareerDetailInfo {
+  odiMatches: CareerDetailStats | null;
+  testMatches: CareerDetailStats | null;
+  t20IMatches: CareerDetailStats | null;
+}
+
+export interface CareerDetailStats {
+  battingStats: BattingStatistics | null;
+  bowlingStats: BowlingStatistics | null;
+}
+
+export interface BattingStatistics {
+  matches: number;
+  innings: number;
+  runs: number;
+  ballsFaced: number;
+  centuries: number;
+  halfCenturies: number;
+  highestScore: string;
+  fours: number;
+  sixes: number;
+  strikeRate: number;
+}
+
+export interface BowlingStatistics {
+  matches: number;
+  innings: number;
+  wickets: number;
+  runsConceded: number;
+  bbi: string;
+  bbm: string;
+  economy: number;
 }
 
 interface DebutInfo {
@@ -52,7 +77,7 @@ const fetchPlayeInfo = async (
 
 export const usePlayerInfo = (
   players: string[][],
-  enable: boolean
+  enabled: boolean
 ): PlayerInfo[] => {
   const queries = [];
 
@@ -66,8 +91,8 @@ export const usePlayerInfo = (
 
   for (let i = 0; i < players.length; i++) {
     queries.push({
-      queryKey: ["player-data", players[i][1]],
-      queryFn: () => fetchPlayeInfo(players[i][1]),
+      queryKey: ["player-data", players[i][0]],
+      queryFn: () => fetchPlayeInfo(players[i][0]),
       ...queryOptions,
     });
   }
@@ -93,8 +118,63 @@ export const usePlayerInfo = (
       ".ds-grow .ds-w-full .ds-p-0 .ds-p-4 h5"
     )?.parentNode?.parentNode?.parentNode;
 
+    const careerSelector = divElement.querySelectorAll(
+      ".ds-w-full.ds-table.ds-table-md.ds-table-bordered.ds-border-collapse.ds-border.ds-border-line.ds-table-auto.ds-overflow-scroll"
+    );
+
+    const isBowler = careerSelector
+      ?.item(0)
+      ?.querySelector("tr")
+      ?.textContent?.includes("Wkts");
+
+    const batAndFieldingRows = careerSelector
+      .item(isBowler ? 1 : 0)
+      ?.querySelectorAll("tr");
+    const bowlingRows = careerSelector
+      .item(isBowler ? 0 : 1)
+      ?.querySelectorAll("tr");
+
+    const indexBFArr = {
+      odiMatches: -1,
+      t20IMatches: -1,
+      testMatches: -1,
+    };
+
+    const indexBowArr = {
+      odiMatches: -1,
+      t20IMatches: -1,
+      testMatches: -1,
+    };
+
+    batAndFieldingRows?.forEach((x, i) => {
+      const format = x?.querySelector("td")?.textContent;
+      if (format === "ODI") {
+        indexBFArr.odiMatches = i;
+      }
+      if (format === "Test") {
+        indexBFArr.testMatches = i;
+      }
+      if (format === "T20I") {
+        indexBFArr.t20IMatches = i;
+      }
+    });
+
+    bowlingRows?.forEach((x, i) => {
+      const format = x?.querySelector("td")?.textContent;
+      if (format === "ODI") {
+        indexBowArr.odiMatches = i;
+      }
+      if (format === "Test") {
+        indexBowArr.testMatches = i;
+      }
+      if (format === "T20I") {
+        indexBowArr.t20IMatches = i;
+      }
+    });
+
     const p: PlayerInfo = {
       playerUuid: "",
+      name: "",
       fullName: "",
       href: "",
       birth: "",
@@ -122,6 +202,8 @@ export const usePlayerInfo = (
           last: "",
         },
       },
+      career: null,
+      matchDetail: null,
     };
 
     infoGridRows.forEach((r) => {
@@ -152,6 +234,8 @@ export const usePlayerInfo = (
         p.education = spanSelector;
       }
     });
+
+    console.log(debutSelector2);
 
     debutSelector.forEach((x, i) => {
       const h5Selector = x?.textContent as string;
@@ -192,8 +276,37 @@ export const usePlayerInfo = (
     //     p.photosSrc.push(y?.getAttribute("src") as string)
     //   })
 
+    const odiBandFSelectors = batAndFieldingRows
+      ?.item(indexBFArr.odiMatches)
+      ?.querySelectorAll("td");
+
+    const odiBowSelectors = bowlingRows
+      ?.item(indexBowArr.odiMatches)
+      ?.querySelectorAll("td");
+
+    const testBandFSelectors = batAndFieldingRows
+      ?.item(indexBFArr.testMatches)
+      ?.querySelectorAll("td");
+
+    const testBowSelectors = bowlingRows
+      ?.item(indexBowArr.testMatches)
+      ?.querySelectorAll("td");
+
+    const t20IBandFSelectors = batAndFieldingRows
+      ?.item(indexBFArr.t20IMatches)
+      ?.querySelectorAll("td");
+
+    const t20IBowSelectors = bowlingRows
+      ?.item(indexBowArr.t20IMatches)
+      ?.querySelectorAll("td");
+
+    let name = players[i][0].split("/")[2].split("-");
+
+    name.pop();
+
     playerInfo.push({
       playerUuid: players[i][0],
+      name: name.join(" "),
       fullName: p.fullName,
       href: players[i][1],
       birth: p.birth,
@@ -214,6 +327,134 @@ export const usePlayerInfo = (
         odiMatches: p.debutDetails.odiMatches,
         testMatches: p.debutDetails.testMatches,
       },
+      career: {
+        odiMatches: {
+          battingStats: {
+            matches: parseInt(
+              odiBandFSelectors?.item(1)?.textContent as string
+            ),
+            innings: parseInt(
+              odiBandFSelectors?.item(2)?.textContent as string
+            ),
+            runs: parseInt(odiBandFSelectors?.item(4)?.textContent as string),
+            ballsFaced: parseInt(
+              odiBandFSelectors?.item(7)?.textContent as string
+            ),
+            centuries: parseInt(
+              odiBandFSelectors?.item(9)?.textContent as string
+            ),
+            halfCenturies: parseInt(
+              odiBandFSelectors?.item(10)?.textContent as string
+            ),
+            highestScore: odiBandFSelectors?.item(5)?.textContent as string,
+            fours: parseInt(odiBandFSelectors?.item(11)?.textContent as string),
+            sixes: parseInt(odiBandFSelectors?.item(12)?.textContent as string),
+            strikeRate: parseFloat(
+              odiBandFSelectors?.item(8)?.textContent as string
+            ),
+          },
+          bowlingStats: {
+            matches: parseInt(odiBowSelectors?.item(1)?.textContent as string),
+            innings: parseInt(odiBowSelectors?.item(2)?.textContent as string),
+            wickets: parseInt(odiBowSelectors?.item(5)?.textContent as string),
+            runsConceded: parseInt(
+              odiBowSelectors?.item(4)?.textContent as string
+            ),
+            bbi: odiBowSelectors?.item(6)?.textContent as string,
+            bbm: odiBowSelectors?.item(6)?.textContent as string,
+            economy: parseFloat(
+              odiBowSelectors?.item(9)?.textContent as string
+            ),
+          },
+        },
+        testMatches: {
+          battingStats: {
+            matches: parseInt(
+              testBandFSelectors?.item(1)?.textContent as string
+            ),
+            innings: parseInt(
+              testBandFSelectors?.item(2)?.textContent as string
+            ),
+            runs: parseInt(testBandFSelectors?.item(4)?.textContent as string),
+            ballsFaced: parseInt(
+              testBandFSelectors?.item(7)?.textContent as string
+            ),
+            centuries: parseInt(
+              testBandFSelectors?.item(9)?.textContent as string
+            ),
+            halfCenturies: parseInt(
+              testBandFSelectors?.item(10)?.textContent as string
+            ),
+            highestScore: testBandFSelectors?.item(5)?.textContent as string,
+            fours: parseInt(
+              testBandFSelectors?.item(11)?.textContent as string
+            ),
+            sixes: parseInt(
+              testBandFSelectors?.item(12)?.textContent as string
+            ),
+            strikeRate: parseFloat(
+              testBandFSelectors?.item(8)?.textContent as string
+            ),
+          },
+          bowlingStats: {
+            matches: parseInt(testBowSelectors?.item(1)?.textContent as string),
+            innings: parseInt(testBowSelectors?.item(2)?.textContent as string),
+            wickets: parseInt(testBowSelectors?.item(5)?.textContent as string),
+            runsConceded: parseInt(
+              testBowSelectors?.item(4)?.textContent as string
+            ),
+            bbi: testBowSelectors?.item(6)?.textContent as string,
+            bbm: testBowSelectors?.item(7)?.textContent as string,
+            economy: parseFloat(
+              testBowSelectors?.item(9)?.textContent as string
+            ),
+          },
+        },
+        t20IMatches: {
+          battingStats: {
+            matches: parseInt(
+              t20IBandFSelectors?.item(1)?.textContent as string
+            ),
+            innings: parseInt(
+              t20IBandFSelectors?.item(2)?.textContent as string
+            ),
+            runs: parseInt(t20IBandFSelectors?.item(4)?.textContent as string),
+            ballsFaced: parseInt(
+              t20IBandFSelectors?.item(7)?.textContent as string
+            ),
+            centuries: parseInt(
+              t20IBandFSelectors?.item(9)?.textContent as string
+            ),
+            halfCenturies: parseInt(
+              t20IBandFSelectors?.item(10)?.textContent as string
+            ),
+            highestScore: t20IBandFSelectors?.item(5)?.textContent as string,
+            fours: parseInt(
+              t20IBandFSelectors?.item(11)?.textContent as string
+            ),
+            sixes: parseInt(
+              t20IBandFSelectors?.item(12)?.textContent as string
+            ),
+            strikeRate: parseFloat(
+              t20IBandFSelectors?.item(8)?.textContent as string
+            ),
+          },
+          bowlingStats: {
+            matches: parseInt(t20IBowSelectors?.item(1)?.textContent as string),
+            innings: parseInt(t20IBowSelectors?.item(2)?.textContent as string),
+            wickets: parseInt(t20IBowSelectors?.item(5)?.textContent as string),
+            runsConceded: parseInt(
+              t20IBowSelectors?.item(4)?.textContent as string
+            ),
+            bbi: t20IBowSelectors?.item(6)?.textContent as string,
+            bbm: t20IBowSelectors?.item(6)?.textContent as string,
+            economy: parseFloat(
+              t20IBowSelectors?.item(9)?.textContent as string
+            ),
+          },
+        },
+      },
+      matchDetail: null,
     });
   });
 

@@ -1,8 +1,8 @@
 ﻿namespace CricketService.Domain
 {
-    public class Team
+    public class PlayerTeam
     {
-        public Team(
+        public PlayerTeam(
             Guid uuid,
             string teamName,
             ICollection<string> formats,

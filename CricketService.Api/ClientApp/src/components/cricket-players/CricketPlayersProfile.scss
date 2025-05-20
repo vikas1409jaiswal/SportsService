@@ -1,0 +1,23 @@
+.cricket-players-home-page {
+    border: 3px solid black;
+    height: 860px;
+    overflow: hidden;
+
+    @keyframes moving-text {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+  
+      .moving-text {
+        white-space: nowrap;
+        overflow: hidden;
+        animation: moving-text 30s linear infinite;
+        border: 2px solid black;
+        font-size: 30px;
+        margin-top: -10px;
+        background-color: yellow;
+        width: fit-content;
+        padding: 0px 10px;
+        z-index: 0;
+      }
+}

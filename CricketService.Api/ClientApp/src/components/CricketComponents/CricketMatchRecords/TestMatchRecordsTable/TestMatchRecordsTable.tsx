@@ -1,12 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { ReactTable, tableOptions } from "../../../common/ReactTable";
 import { Cell } from "react-table";
-import {
-  CricketFormat,
-  CricketMatch,
-  CricketTeam,
-  TestCricketMatch,
-} from "../Models/Interface";
+import { CricketTeam, TestCricketMatch } from "../Models/Interface";
 import {
   ReactSlidingSidePanel,
   SidePanelType,

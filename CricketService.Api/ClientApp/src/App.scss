@@ -1,9 +1,13 @@
-﻿div.container {
-  background-color: honeydew;
-  width: 95%;
-  max-width: 100%;
-  margin: 20px;
-  padding: 30px;
-  display: grid;
-  grid-template-columns: 1fr;
+html,
+body,
+#root{
+    overflow: hidden;
+    height: 880px;
 }
+
+// *{
+//     width: 100%;
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+// }

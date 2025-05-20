@@ -1,0 +1,154 @@
+.squad-players {
+    position: relative;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 900px;
+    background: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    .team-squad-header{
+      font-size: 40px;
+      font-weight: bold;
+      background-image: url(http://localhost:3013/textures/1001.jpg);
+      background-size: cover;
+      color: white;
+      border: 4px solid white;
+      border-radius: 10px 30px;
+      width: fit-content;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 0px 10px;
+      z-index: 1;
+    }
+
+    .country-container{
+      position: absolute;
+      margin-top: -220px;
+      margin-left: 1350px;
+    }
+
+    .country-container.secondary-country{
+      margin-left: 100px;
+    }
+  
+    .squad-players-list {
+      display: flex;
+      flex-direction: row;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      background: none;
+  
+      .squad-player-card {
+        margin: 5px;
+        border: 4px solid white;
+        border-radius: 10px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 900px;
+        background: linear-gradient(rgb(15, 211, 64), rgb(183, 94, 16));
+
+        .player-card-detail{
+          width: 350px;
+          height: fit-content;
+          margin: 10px;
+          padding: 10px;
+          background: none;
+          box-shadow: none;
+
+          >div {
+            width: 330px;
+            background-color: pink;
+            border: 6px solid white;
+            border-radius: 10px;
+          }
+
+          .detail-row {
+            background-image: url(http://localhost:3013/textures/1009.jpg);
+            background-size: cover;
+            color: white;
+            border: 4px solid white;
+            padding: 10px;
+            border-radius: 10px 30px;
+            
+            p {
+              font-size: 30px;
+              font-weight: 700;
+              margin: 0;
+            }
+
+            .info-label{
+              background-image: url(http://localhost:3013/textures/1001.jpg);
+              background-size: cover;
+              color: white;
+              border: 4px solid white;
+              border-radius: 10px;
+              width: fit-content;
+              margin: auto;
+              padding: 0px 10px;
+            }
+          }
+
+          .player-card-header {
+            font-weight: 700;
+            font-size: 30px;
+            background-image: url(http://localhost:3013/textures/1003.jpg);
+            background-size: cover;
+            color: white;
+            border-radius: 10px 30px;
+
+            p{
+              margin: 0;
+            }
+
+            h5{
+                background-image: url(http://localhost:3013/textures/1002.jpg);
+                background-size: cover;
+                color: white;
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 5px;
+                margin-top: 0;
+                padding: 5px;
+                border: 4px solid white;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+          }
+        }
+  
+        img {
+          background: radial-gradient(white, rgb(126, 202, 243), black);
+          margin: 10px;
+          border: 3px solid white;
+          border-radius: 20px;
+        }
+  
+        .rotating-circle {
+          position: absolute;
+          margin-top: 500px;
+          margin-left: 30px;
+        }
+      }
+    }
+}
+
+.squad-players-grid-container{
+  box-shadow: none;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  *{
+    box-shadow: none;
+  }
+
+  > div{
+     border: 2px solid black;
+     border-radius: 10px;
+     margin: 10px;
+     background-image: url(http://localhost:3013/textures/1000.jpg);
+     background-size: cover;
+  }
+}

@@ -1,0 +1,12 @@
+.moving-train-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    background: none;
+    box-shadow: none;
+
+    .bogie-container{
+       background: none;
+       box-shadow: none;
+    }
+}

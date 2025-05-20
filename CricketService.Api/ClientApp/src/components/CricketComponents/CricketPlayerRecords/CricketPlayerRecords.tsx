@@ -1,14 +1,13 @@
 import axios, { AxiosResponse } from "axios";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { DropDown } from "../../common/DropDown";
 import { T20IPlayersRecords } from "./T20IRecords/T20IPlayersRecords";
 import { ODIPlayersRecords } from "./ODIRecords/ODIPlayersRecords";
 import { useQuery } from "react-query";
-import { CricketFormat } from "../CricketMatchRecords/Models/Interface";
-import * as players from "./../../../data/StaticData/playerData.json";
 import { PlayerData } from "./Models/Interface";
 
 import "./CricketPlayerRecords.scss";
+import { CricketFormat } from "../../../models/enums/CricketFormat";
 
 const fetchPlayersByTeam = (
   teamName: string

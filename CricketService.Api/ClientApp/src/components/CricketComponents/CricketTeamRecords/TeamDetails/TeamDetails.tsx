@@ -2,12 +2,12 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useQuery } from "react-query";
 import { ReactTable } from "../../../common/ReactTable";
-import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
 import { CricketTeamData } from "../Models/Interface";
 import { RecordAgainsOpponents } from "./RecordAgainstOpponents";
 
 import "./TeamDetails.scss";
 import { TeamDetailsTable } from "./TeamDetailsTable";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 export interface TeamDetailsProps {
   teamName: string;

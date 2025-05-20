@@ -2,7 +2,7 @@ import { Home } from "./components/Home";
 import { CricketHomePage } from "./components/CricketHomePage";
 import { CricketTeamRecords } from "./components/CricketComponents/CricketTeamRecords/CricketTeamRecords";
 import { CricketPlayerRecords } from "./components/CricketComponents/CricketPlayerRecords/CricketPlayerRecords";
-import { CricketMatchRecords } from "./components/CricketComponents/CricketMatchRecords/CricketMatchRecords";
+import { CricketAnimations } from "./components/CricketComponents/CricketMatchRecords/CricketAnimations";
 
 const AppRoutes = [
   {
@@ -23,7 +23,7 @@ const AppRoutes = [
   },
   {
     path: "/cricket-match-records",
-    element: <CricketMatchRecords />,
+    element: <CricketAnimations />,
   },
 ];
 

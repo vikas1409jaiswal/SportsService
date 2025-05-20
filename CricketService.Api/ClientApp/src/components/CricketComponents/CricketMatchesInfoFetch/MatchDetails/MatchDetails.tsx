@@ -1,8 +1,8 @@
-﻿import React, { useEffect, useState, useContext } from "react";
-import { CricketMatch } from "./../useCricketMatches";
+﻿import React from "react";
+import { TeamScoreCard } from "./TeamScoreCard/TeamScoreCard";
+import { CricketMatch } from "../../../../models/espn-cricinfo-models/CricketMatchModels";
 
 import "./MatchDetails.scss";
-import { TeamScoreCard } from "./TeamScoreCard/TeamScoreCard";
 
 export interface MatchDetailsProps {
   matchData: CricketMatch;

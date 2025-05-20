@@ -11,10 +11,9 @@ import {
 } from "../../../common/ReactSlidingSidePanel";
 import { TeamDetails } from "../TeamDetails/TeamDetails";
 import { CricketTeamData } from "../Models/Interface";
-import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
-
 import "./ODIRecords.scss";
 import { TailSpinLoader } from "../../../common/Loader";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 export interface ODIRecordsProps {
   isLoading: boolean;

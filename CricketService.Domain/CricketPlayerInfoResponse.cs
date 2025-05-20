@@ -41,14 +41,18 @@ public class CricketPlayerInfoResponse
 public class CareerDetailsInfo
 {
     public CareerDetailsInfo(
+        string teamName,
         CareerInfo testCareer,
         CareerInfo oDICareer,
         CareerInfo t20Career)
     {
+        TeamName = teamName;
         TestCareer = testCareer;
         ODICareer = oDICareer;
         T20Career = t20Career;
     }
+
+    public string TeamName { get; }
 
     public CareerInfo TestCareer { get; set; }
 
@@ -60,24 +64,28 @@ public class CareerDetailsInfo
 public class CareerInfo
 {
     public CareerInfo(
-        DebutDetails debutDetails,
-        BattingStatistics battingStatistics,
-        BowlingStatistics bowlingStatistics,
-        FieldingStatistics fieldingStatistics)
+        MatchDetails debutDetails,
+        MatchDetails lastMatchDetails,
+        IEnumerable<BattingStatistics> battingStatistics,
+        IEnumerable<BowlingStatistics> bowlingStatistics,
+        IEnumerable<FieldingStatistics> fieldingStatistics)
     {
         DebutDetails = debutDetails;
+        LastMatchDetails = lastMatchDetails;
         BattingStatistics = battingStatistics;
         BowlingStatistics = bowlingStatistics;
         FieldingStatistics = fieldingStatistics;
     }
 
-    public DebutDetails DebutDetails { get; set; }
+    public MatchDetails DebutDetails { get; set; }
 
-    public BattingStatistics BattingStatistics { get; set; }
+    public MatchDetails LastMatchDetails { get; set; }
 
-    public BowlingStatistics BowlingStatistics { get; set; }
+    public IEnumerable<BattingStatistics> BattingStatistics { get; set; }
 
-    public FieldingStatistics FieldingStatistics { get; set; }
+    public IEnumerable<BowlingStatistics> BowlingStatistics { get; set; }
+
+    public IEnumerable<FieldingStatistics> FieldingStatistics { get; set; }
 }
 
 public class BattingStatistics
@@ -87,24 +95,38 @@ public class BattingStatistics
         int innings,
         int notOut,
         int runs,
-        int highestScore,
+        int ducks,
+        string highestScore,
         int ballsFaced,
         int centuries,
         int halfCenturies,
         int fours,
-        int sixes)
+        int sixes,
+        string span,
+        string title,
+        string subTitle)
     {
         Matches = matches;
         Innings = innings;
         NotOut = notOut;
         Runs = runs;
+        Ducks = ducks;
         HighestScore = highestScore;
         BallsFaced = ballsFaced;
         Centuries = centuries;
         HalfCenturies = halfCenturies;
         Fours = fours;
         Sixes = sixes;
+        Span = span;
+        Title = title;
+        SubTitle = subTitle;
     }
+
+    public string Title { get; set; }
+
+    public string SubTitle { get; set; }
+
+    public string Span { get; set; }
 
     public int Matches { get; set; }
 
@@ -112,9 +134,11 @@ public class BattingStatistics
 
     public int NotOut { get; set; }
 
+    public int Ducks { get; set; }
+
     public int Runs { get; set; }
 
-    public int HighestScore { get; set; }
+    public string HighestScore { get; set; }
 
     public double Average
     {
@@ -174,7 +198,10 @@ public class BowlingStatistics
         int maidens,
         int dots,
         int sixes,
-        int fours)
+        int fours,
+        string span,
+        string subTitle,
+        string title)
     {
         Matches = matches;
         Innings = innings;
@@ -192,7 +219,16 @@ public class BowlingStatistics
         Dots = dots;
         Sixes = sixes;
         Fours = fours;
+        Span = span;
+        SubTitle = subTitle;
+        Title = title;
     }
+
+    public string Span { get; set; }
+
+    public string SubTitle { get; set; }
+
+    public string Title { get; set; }
 
     public int Matches { get; set; }
 
@@ -274,14 +310,46 @@ public class FieldingStatistics
     public FieldingStatistics(
         int caught,
         int stumpings,
-        int runOut)
+        int runOut,
+        string span,
+        string subTitle,
+        string title,
+        int matches,
+        int innings,
+        int dismissal,
+        int caughtKeeper,
+        int caughtFielder)
     {
         Caught = caught;
         Stumpings = stumpings;
         RunOut = runOut;
+        Span = span;
+        SubTitle = subTitle;
+        Title = title;
+        Matches = matches;
+        Innings = innings;
+        Dismissal = dismissal;
+        CaughtKeeper = caughtKeeper;
+        CaughtFielder = caughtFielder;
     }
 
+    public string Span { get; set; }
+
+    public string SubTitle { get; set; }
+
+    public string Title { get; set; }
+
+    public int Matches { get; set; }
+
+    public int Innings { get; set; }
+
+    public int Dismissal { get; set; }
+
     public int Caught { get; set; }
+
+    public int CaughtKeeper { get; set; }
+
+    public int CaughtFielder { get; set; }
 
     public int Stumpings { get; set; }
 

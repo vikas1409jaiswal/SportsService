@@ -9,4 +9,6 @@ public class StaticDataJsonFilePathsOptions
     public string T20IMatchesData { get; set; } = null!;
 
     public string TestMatchesData { get; set; } = null!;
+
+    public string IPLMatchesData { get; set; } = null!;
 }

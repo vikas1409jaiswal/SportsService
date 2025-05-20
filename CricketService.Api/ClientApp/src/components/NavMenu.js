@@ -82,6 +82,15 @@ export class NavMenu extends Component {
                   Match Records
                 </NavLink>
               </NavItem>
+               <NavItem>
+                <NavLink
+                  tag={Link}
+                  className="text-dark"
+                  to="/cricket-players"
+                >
+                  Cricket Players
+                </NavLink>
+              </NavItem>
             </ul>
           </Collapse>
         </Navbar>

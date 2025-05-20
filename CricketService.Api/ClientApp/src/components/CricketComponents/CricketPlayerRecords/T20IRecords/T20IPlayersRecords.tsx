@@ -7,11 +7,11 @@ import {
   SidePanelType,
 } from "../../../common/ReactSlidingSidePanel";
 import { ReactTable, tableOptions } from "../../../common/ReactTable";
-import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
 import { PlayerData } from "../Models/Interface";
 import { PlayerDetails } from "../PlayerDetails/PlayerDetails";
 
 import "./T20IPlayersRecords.scss";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 export interface T20IPlayersRecordsProps {
   isLoading: boolean;

@@ -1,0 +1,39 @@
+.player-image-container {
+    box-shadow: none;
+    background: none;
+    
+    .cricket-player-image {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 5px;
+        background: linear-gradient(pink, blue);
+        color: white;
+        border-radius: 30px;
+        box-shadow: none;
+
+        img {
+            height: 600px;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-image: radial-gradient(white, rgba(139, 238, 130, 0.489), black);
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            background-color: gold;
+            margin: 10px;
+            padding: 2px;
+            color: black;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+    }
+}
+
+.team-logo-cylinder {
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 75px;
+}

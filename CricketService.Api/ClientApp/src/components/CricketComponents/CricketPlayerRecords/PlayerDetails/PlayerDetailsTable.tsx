@@ -2,8 +2,8 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useQuery } from "react-query";
 import { GridLoader } from "../../../common/Loader";
-import { CricketFormat } from "../../CricketMatchRecords/Models/Interface";
 import { PlayerData } from "../Models/Interface";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 export interface PlayerDetailsTableProps {
   playerData: PlayerData;

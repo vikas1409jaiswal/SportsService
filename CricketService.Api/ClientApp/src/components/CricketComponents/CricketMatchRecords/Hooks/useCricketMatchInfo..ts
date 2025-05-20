@@ -1,10 +1,7 @@
 import axios, { AxiosResponse } from "axios";
 import { useQuery } from "react-query";
-import {
-  CricketFormat,
-  CricketMatch,
-  TestCricketMatch,
-} from "../Models/Interface";
+import { CricketMatch, TestCricketMatch } from "../Models/Interface";
+import { CricketFormat } from "../../../../models/enums/CricketFormat";
 
 const fetchCricketMatches = (
   format: CricketFormat
@@ -37,6 +34,8 @@ export const useCricketMatchInfo = (format: CricketFormat) => {
       enabled: format === CricketFormat.T20I || format === CricketFormat.ODI,
     }
   );
+
+  console.log(data);
 
   return { matchData: data?.data, isLoading };
 };

@@ -1,0 +1,68 @@
+.match-basic-info-container {
+    text-align: center;
+    border: 2px solid black;
+    overflow-y: hidden;
+
+    .match-number {
+        background: linear-gradient(blue, black);
+        color: white;
+        height: 100px;
+        font-size: 60px;
+        font-weight: 700;
+        margin: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .match-series {
+        background: linear-gradient(blue, black);
+        color: white;
+        height: 60px;
+        font-size: 40px;
+        margin: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+
+    .match-date,
+    .match-venue {
+        background: linear-gradient(green, blue);
+        color: white;
+        height: 60px;
+        font-size: 30px;
+        margin: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+
+    .match-title {
+        display: grid;
+        grid-template-columns: 5fr 1fr 5fr;
+        height: 500px;
+        margin: 10px;
+
+        div {
+            margin: 20px;
+        }
+
+        h1{
+            margin-top: 100px;
+            font-size: 50px;
+            color: white;
+        }
+
+        .vs-sign {
+            margin-top: 100px;
+            height: 100px;
+            border: none;
+            background: none;
+
+            a{
+             font-size: 100px;
+             color: white;
+            }
+        }
+    }
+}

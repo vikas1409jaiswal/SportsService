@@ -1,0 +1,5 @@
+.cricketers-birthdays-container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding-top: 30px;
+}
