@@ -1,7 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 using CricketService.Data.Repositories.Interfaces;
+using CricketService.Domain;
+using CricketService.Domain.Common;
 using CricketService.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace CricketService.Api.Controllers;
 [ApiController]
@@ -20,7 +23,7 @@ public class CricketPlayerController : Controller
     }
 
     [HttpGet("player/{playerUuid}")]
-    public IActionResult GetTeamByUuid([FromRoute, Required] Guid playerUuid)
+    public ActionResult<PlayerDetails> GetPlayerByUuid([FromRoute, Required] Guid playerUuid)
     {
         var player = cricketPlayerRepository.GetPlayerByUuid(playerUuid);
 
@@ -28,9 +31,18 @@ public class CricketPlayerController : Controller
     }
 
     [HttpGet("players/all")]
-    public IActionResult GetAllPlayers()
+    public ActionResult<PlayerDetails> GetAllPlayers(
+        [FromQuery, Required] CricketFormat format,
+        [FromQuery] string? teamName,
+        [FromQuery] string? dateOfBirth,
+        [FromQuery] int? birthYear,
+        [FromQuery] bool? isExpired,
+        [FromQuery] string? playingRole,
+        [FromQuery] string? nameStartsWith)
     {
-        var allPlayers = cricketPlayerRepository.GetAllPlayers();
+        var filters = new PlayersFilters(format, teamName, dateOfBirth, birthYear, isExpired, playingRole, nameStartsWith);
+
+        var allPlayers = cricketPlayerRepository.GetAllPlayers(filters);
 
         Response.Headers.Add("total-players", allPlayers.Count().ToString());
 
@@ -45,52 +57,6 @@ public class CricketPlayerController : Controller
         Response.Headers.Add("total-players", allPlayers.Count().ToString());
 
         return Ok(allPlayers);
-    }
-
-    [HttpGet("players")]
-    public IActionResult GetAllPlayersName([FromQuery, Required] CricketFormat format)
-    {
-        var allTeamsName = cricketTeamRepository.GetAllTeamNames(format);
-
-        Dictionary<string, IEnumerable<string>> allPlayers = new();
-
-        foreach (var teamName in allTeamsName)
-        {
-            var playersByTeam = cricketPlayerRepository.GetPlayersByTeamName(teamName, format);
-            allPlayers.Add(teamName, playersByTeam);
-        }
-
-        Response.Headers.Add("total-teams-length", allTeamsName.Count().ToString());
-
-        return Ok(allPlayers);
-    }
-
-    [HttpGet("team/{teamName}/players")]
-    public IActionResult GetAllPlayersByTeamName([FromRoute, Required] string teamName, [FromQuery, Required] CricketFormat format)
-    {
-        List<string> playersByTeam = new();
-
-        if (format == CricketFormat.T20I)
-        {
-            playersByTeam.AddRange(cricketPlayerRepository.GetPlayersByTeamName(teamName, format));
-        }
-
-        if (format == CricketFormat.ODI)
-        {
-            playersByTeam.AddRange(cricketPlayerRepository.GetPlayersByTeamName(teamName, format));
-        }
-
-        var playerDetails = new List<object>();
-
-        foreach (var playerName in playersByTeam)
-        {
-            var playerDetail = cricketPlayerRepository.GetPlayerDetailsByTeamName(teamName, playerName);
-            playerDetails.Add(playerDetail);
-        }
-
-        Response.Headers.Add($"total-{format}-players", playerDetails.Count().ToString());
-
-        return Ok(playerDetails);
     }
 
     [HttpGet("team/{teamName}/player/{playerName}")]

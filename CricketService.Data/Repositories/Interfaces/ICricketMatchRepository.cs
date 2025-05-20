@@ -1,28 +1,34 @@
-﻿using CricketService.Domain;
+﻿using CricketService.Domain.Common;
 using CricketService.Domain.Enums;
+using CricketService.Domain.RequestDomains;
+using CricketService.Domain.ResponseDomains;
 
 namespace CricketService.Data.Repositories.Interfaces;
 public interface ICricketMatchRepository
 {
-    IEnumerable<CricketMatchInfoResponse> GetAllMatchesT20I();
+    IEnumerable<InternationalCricketMatchResponse> GetAllLimitedOverInternationalMatches(MatchesFilters matchesFilters);
 
-    IEnumerable<CricketMatchInfoResponse> GetAllMatchesODI();
+    IEnumerable<TestCricketMatchResponse> GetAllMatchesTest(MatchesFilters matchesFilters);
 
-    IEnumerable<TestCricketMatchInfoResponse> GetAllMatchesTest();
+    IEnumerable<DomesticCricketMatchResponse> GetAllTwenty20Matches(MatchesFilters matchesFilters);
 
     IEnumerable<object> GetMatchesByTeamUuid(Guid teamUuid, CricketFormat format);
 
     IEnumerable<object> GetMatchesByTournament(CricketTournament tournament, CricketFormat format);
 
-    Task<CricketMatchInfoResponse> GetMatchByMNumberT20I(int matchNumber);
+    Task<InternationalCricketMatchResponse> GetLimitedOverInternationalMatchByNumber(int matchNumber, CricketFormat format);
 
-    Task<CricketMatchInfoResponse> GetMatchByMNumberODI(int matchNumber);
+    Task<DomesticCricketMatchResponse> GetT20IMatchesByTitleAndDate(string title, string date);
 
-    Task<TestCricketMatchInfoResponse> GetMatchByMNumberTest(int matchNumber);
+    Task<TestCricketMatchResponse> GetMatchByMNumberTest(int matchNumber);
 
-    Task<CricketMatchInfoResponse> AddMatchT20I(CricketMatchInfoRequest match);
+    //Create Methods
+    Task<InternationalCricketMatchResponse> AddLimitedOverInternationalMatch(InternationalCricketMatchRequest match, CricketFormat format);
 
-    Task<CricketMatchInfoResponse> AddMatchODI(CricketMatchInfoRequest match);
+    Task<TestCricketMatchResponse> AddMatchTest(TestCricketMatchRequest match);
 
-    Task<TestCricketMatchInfoResponse> AddMatchTest(TestCricketMatchInfoRequest match);
+    Task<DomesticCricketMatchResponse> AddT20Match(DomesticCricketMatchRequest match);
+
+    //Pdf Methods
+    Task GeneratedPDFForMatches(IEnumerable<Guid> matchUuids, CricketFormat format);
 }

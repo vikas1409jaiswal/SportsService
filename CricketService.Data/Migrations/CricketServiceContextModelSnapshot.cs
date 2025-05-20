@@ -22,27 +22,24 @@ namespace CricketService.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("CricketService.Data.Entities.CricketPlayerInfo", b =>
+            modelBuilder.Entity("CricketService.Data.Entities.CricketPlayerInfoDTO", b =>
                 {
                     b.Property<Guid>("Uuid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
                         .HasColumnName("uuid");
 
-                    b.Property<string>("Birth")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("birth_info");
+                    b.Property<string[]>("Contents")
+                        .HasColumnType("text[]")
+                        .HasColumnName("contents");
 
-                    b.Property<string>("CareerStatistics")
-                        .IsRequired()
+                    b.Property<string>("DateOfBirth")
                         .HasColumnType("jsonb")
-                        .HasColumnName("career_statistics");
+                        .HasColumnName("date_of_birth");
 
-                    b.Property<string>("Death")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("death_info");
+                    b.Property<string>("DateOfDeath")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("date_of_death");
 
                     b.Property<string>("DebutDetails")
                         .IsRequired()
@@ -69,6 +66,11 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("href");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("image_url");
+
                     b.Property<string>("InternationalTeamNames")
                         .IsRequired()
                         .HasColumnType("text")
@@ -89,7 +91,71 @@ namespace CricketService.Data.Migrations
                     b.ToTable("cricket_players_info");
                 });
 
-            modelBuilder.Entity("CricketService.Data.Entities.CricketTeamInfo", b =>
+            modelBuilder.Entity("CricketService.Data.Entities.CricketTeamHistoryDTO", b =>
+                {
+                    b.Property<Guid>("MatchUuid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("match_uuid");
+
+                    b.Property<string>("Format")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)")
+                        .HasColumnName("format");
+
+                    b.Property<string>("InstantTeamsRecords")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("instant_teams_records");
+
+                    b.Property<int>("MatchNumber")
+                        .HasColumnType("integer")
+                        .HasColumnName("match_number");
+
+                    b.HasKey("MatchUuid");
+
+                    b.ToTable("cricket_teams_history");
+                });
+
+            modelBuilder.Entity("CricketService.Data.Entities.CricketTeamHistoryH2hDTO", b =>
+                {
+                    b.Property<Guid>("MatchUuid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("match_uuid");
+
+                    b.Property<string>("Format")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)")
+                        .HasColumnName("format");
+
+                    b.Property<string>("InstantTeamsRecords")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("instant_teams_records");
+
+                    b.Property<int>("MatchNumber")
+                        .HasColumnType("integer")
+                        .HasColumnName("match_number");
+
+                    b.Property<string>("Team1Name")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("team1_name");
+
+                    b.Property<string>("Team2Name")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("team2_name");
+
+                    b.HasKey("MatchUuid");
+
+                    b.ToTable("cricket_teams_history_h2h");
+                });
+
+            modelBuilder.Entity("CricketService.Data.Entities.CricketTeamInfoDTO", b =>
                 {
                     b.Property<Guid>("Uuid")
                         .ValueGeneratedOnAdd()
@@ -136,21 +202,48 @@ namespace CricketService.Data.Migrations
                     b.ToTable("cricket_teams_info");
                 });
 
-            modelBuilder.Entity("CricketService.Data.Entities.ODICricketMatchInfo", b =>
+            modelBuilder.Entity("CricketService.Data.Entities.CricketTeamPlayerInfos", b =>
+                {
+                    b.Property<Guid>("TeamUuid")
+                        .HasColumnType("uuid")
+                        .HasColumnName("team_uuid");
+
+                    b.Property<Guid>("PlayerUuid")
+                        .HasColumnType("uuid")
+                        .HasColumnName("player_uuid");
+
+                    b.Property<string>("CareerStatistics")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("career_statistics");
+
+                    b.Property<string>("PlayerName")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("player_name");
+
+                    b.Property<string>("TeamName")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("team_name");
+
+                    b.HasKey("TeamUuid", "PlayerUuid");
+
+                    b.HasIndex("PlayerUuid");
+
+                    b.ToTable("cricket_teams_and_players_info");
+                });
+
+            modelBuilder.Entity("CricketService.Data.Entities.LimitedOverInternationalMatchInfoDTO", b =>
                 {
                     b.Property<Guid>("Uuid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
                         .HasColumnName("uuid");
 
-                    b.Property<string[]>("FormatDebut")
+                    b.Property<string>("InternationalDebut")
                         .IsRequired()
-                        .HasColumnType("text[]")
-                        .HasColumnName("format_debut");
-
-                    b.Property<string[]>("InternationalDebut")
-                        .IsRequired()
-                        .HasColumnType("text[]")
+                        .HasColumnType("jsonb")
                         .HasColumnName("international_debut");
 
                     b.Property<string>("MatchDate")
@@ -158,15 +251,10 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("match_date");
 
-                    b.Property<string>("MatchDays")
+                    b.Property<string>("MatchNumber")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("match_days");
-
-                    b.Property<string>("MatchNo")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("match_no");
+                        .HasColumnName("match_number");
 
                     b.Property<string>("MatchReferee")
                         .IsRequired()
@@ -178,9 +266,13 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("match_title");
 
-                    b.Property<string>("PlayerOfTheMatch")
+                    b.Property<string>("MatchType")
                         .IsRequired()
                         .HasColumnType("text")
+                        .HasColumnName("match_type");
+
+                    b.Property<string>("PlayerOfTheMatch")
+                        .HasColumnType("jsonb")
                         .HasColumnName("player_of_the_match");
 
                     b.Property<string>("ReserveUmpire")
@@ -202,6 +294,10 @@ namespace CricketService.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("series");
+
+                    b.Property<string>("SeriesResult")
+                        .HasColumnType("text")
+                        .HasColumnName("series_result");
 
                     b.Property<string>("Team1")
                         .IsRequired()
@@ -240,40 +336,30 @@ namespace CricketService.Data.Migrations
 
                     b.HasKey("Uuid");
 
-                    b.ToTable("one_day_international_matches");
+                    b.ToTable("limited_over_international_matches");
                 });
 
-            modelBuilder.Entity("CricketService.Data.Entities.T20ICricketMatchInfo", b =>
+            modelBuilder.Entity("CricketService.Data.Entities.T20MatchInfoDTO", b =>
                 {
                     b.Property<Guid>("Uuid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
                         .HasColumnName("uuid");
 
-                    b.Property<string[]>("FormatDebut")
+                    b.Property<string>("FormatDebut")
                         .IsRequired()
-                        .HasColumnType("text[]")
+                        .HasColumnType("jsonb")
                         .HasColumnName("format_debut");
-
-                    b.Property<string[]>("InternationalDebut")
-                        .IsRequired()
-                        .HasColumnType("text[]")
-                        .HasColumnName("international_debut");
 
                     b.Property<string>("MatchDate")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("match_date");
 
-                    b.Property<string>("MatchDays")
+                    b.Property<string>("MatchNumber")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("match_days");
-
-                    b.Property<string>("MatchNo")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("match_no");
+                        .HasColumnName("match_number");
 
                     b.Property<string>("MatchReferee")
                         .IsRequired()
@@ -285,9 +371,13 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("match_title");
 
-                    b.Property<string>("PlayerOfTheMatch")
+                    b.Property<string>("MatchType")
                         .IsRequired()
                         .HasColumnType("text")
+                        .HasColumnName("match_type");
+
+                    b.Property<string>("PlayerOfTheMatch")
+                        .HasColumnType("jsonb")
                         .HasColumnName("player_of_the_match");
 
                     b.Property<string>("ReserveUmpire")
@@ -309,6 +399,10 @@ namespace CricketService.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("series");
+
+                    b.Property<string>("SeriesResult")
+                        .HasColumnType("text")
+                        .HasColumnName("series_result");
 
                     b.Property<string>("Team1")
                         .IsRequired()
@@ -347,40 +441,30 @@ namespace CricketService.Data.Migrations
 
                     b.HasKey("Uuid");
 
-                    b.ToTable("t20_international_matches");
+                    b.ToTable("t20_matches");
                 });
 
-            modelBuilder.Entity("CricketService.Data.Entities.TestCricketMatchInfo", b =>
+            modelBuilder.Entity("CricketService.Data.Entities.TestCricketMatchInfoDTO", b =>
                 {
                     b.Property<Guid>("Uuid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
                         .HasColumnName("uuid");
 
-                    b.Property<string[]>("FormatDebut")
+                    b.Property<string>("InternationalDebut")
                         .IsRequired()
-                        .HasColumnType("text[]")
-                        .HasColumnName("format_debut");
-
-                    b.Property<string[]>("InternationalDebut")
-                        .IsRequired()
-                        .HasColumnType("text[]")
+                        .HasColumnType("jsonb")
                         .HasColumnName("international_debut");
 
-                    b.Property<string>("MatchDates")
+                    b.Property<string>("MatchDate")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("match_date");
 
-                    b.Property<string>("MatchDays")
+                    b.Property<string>("MatchNumber")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("match_days");
-
-                    b.Property<string>("MatchNo")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("match_no");
+                        .HasColumnName("match_number");
 
                     b.Property<string>("MatchReferee")
                         .IsRequired()
@@ -392,9 +476,13 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("match_title");
 
-                    b.Property<string>("PlayerOfTheMatch")
+                    b.Property<string>("MatchType")
                         .IsRequired()
                         .HasColumnType("text")
+                        .HasColumnName("match_type");
+
+                    b.Property<string>("PlayerOfTheMatch")
+                        .HasColumnType("jsonb")
                         .HasColumnName("player_of_the_match");
 
                     b.Property<string>("ReserveUmpire")
@@ -416,6 +504,10 @@ namespace CricketService.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("series");
+
+                    b.Property<string>("SeriesResult")
+                        .HasColumnType("text")
+                        .HasColumnName("series_result");
 
                     b.Property<string>("Team1")
                         .IsRequired()
@@ -455,6 +547,35 @@ namespace CricketService.Data.Migrations
                     b.HasKey("Uuid");
 
                     b.ToTable("test_cricket_matches");
+                });
+
+            modelBuilder.Entity("CricketService.Data.Entities.CricketTeamPlayerInfos", b =>
+                {
+                    b.HasOne("CricketService.Data.Entities.CricketPlayerInfoDTO", "PlayerInfo")
+                        .WithMany("TeamsPlayersInfos")
+                        .HasForeignKey("PlayerUuid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CricketService.Data.Entities.CricketTeamInfoDTO", "TeamInfo")
+                        .WithMany("TeamsPlayersInfos")
+                        .HasForeignKey("TeamUuid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PlayerInfo");
+
+                    b.Navigation("TeamInfo");
+                });
+
+            modelBuilder.Entity("CricketService.Data.Entities.CricketPlayerInfoDTO", b =>
+                {
+                    b.Navigation("TeamsPlayersInfos");
+                });
+
+            modelBuilder.Entity("CricketService.Data.Entities.CricketTeamInfoDTO", b =>
+                {
+                    b.Navigation("TeamsPlayersInfos");
                 });
 #pragma warning restore 612, 618
         }

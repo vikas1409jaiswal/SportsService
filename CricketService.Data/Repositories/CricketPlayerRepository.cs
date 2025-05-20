@@ -1,13 +1,17 @@
-using System.Linq;
 using AutoMapper;
 using CricketService.Data.Contexts;
 using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
+using CricketService.Data.Utils;
 using CricketService.Domain;
+using CricketService.Domain.BaseDomains;
 using CricketService.Domain.Common;
 using CricketService.Domain.Enums;
+using CricketService.Domain.Exceptions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace CricketService.Data.Repositories;
 
@@ -16,15 +20,18 @@ public class CricketPlayerRepository : ICricketPlayerRepository
     private readonly ILogger<CricketPlayerRepository> logger;
     private readonly CricketServiceContext context;
     private readonly IMapper mapper;
+    private readonly PlayerPDFHandler playerPDFHandler;
 
     public CricketPlayerRepository(
         ILogger<CricketPlayerRepository> logger,
         CricketServiceContext context,
-        IMapper mapper)
+        IMapper mapper,
+        PlayerPDFHandler playerPDFHandler)
     {
         this.logger = logger;
         this.context = context;
         this.mapper = mapper;
+        this.playerPDFHandler = playerPDFHandler;
     }
 
     public IEnumerable<string> GetPlayersByTeamName(string teamName, CricketFormat format)
@@ -41,94 +48,162 @@ public class CricketPlayerRepository : ICricketPlayerRepository
 
     public IEnumerable<object> GetAllPlayersUuidAndHref(CricketFormat format)
     {
-        logger.LogInformation("Fetching all cricket Players.");
+        if (format == CricketFormat.All)
+        {
+            logger.LogInformation($"Fetching all cricket Players.");
 
-        var allPlayers = context.CricketPlayerInfo.ToList()
-            .Where(x => x.Formats.Count() == 1 && x.Formats.ToList().Contains(format.ToString()))
-            .ToList()
+            return context.CricketPlayerInfo
             .Select(x => new
             {
-                Uuid = x.Uuid,
-                PlayerName = x.PlayerName,
-                Href = x.Href,
-            });
+                x.Uuid,
+                x.PlayerName,
+                x.Href,
+                Teams = x.TeamsPlayersInfos.Where(y => y.PlayerUuid.Equals(x.Uuid)).Select(z => new CricketTeam(z.TeamUuid, z.TeamName, z.TeamInfo.FlagUrl)),
+                ImageUrl = x.ImageUrl.Contains("/db/PICTURES") ? $"https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_640,q_50/lsci{x.ImageUrl}" : x.ImageUrl,
+            }).OrderBy(x => x.PlayerName);
+        }
+
+        logger.LogInformation($"Fetching all cricket Players for ${format}.");
+
+        var allPlayers = context.CricketPlayerInfo
+            .Include(p => p.TeamsPlayersInfos).AsEnumerable()
+            .Where(x => x.Formats.Contains(format.ToString()))
+            .Select(x => new
+            {
+                x.Uuid,
+                x.PlayerName,
+                x.Href,
+                Teams = x.TeamsPlayersInfos.Where(y => y.PlayerUuid.Equals(x.Uuid)).Select(z => new CricketTeam(z.TeamUuid, z.TeamName, "")),
+                ImageUrl = x.ImageUrl.Contains("/db/PICTURES") ? $"https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_640,q_50/lsci{x.ImageUrl}" : x.ImageUrl,
+            }).OrderBy(x => x.PlayerName); ;
 
         return allPlayers;
     }
 
-    public IEnumerable<PlayerDetails> GetAllPlayers()
+    public IEnumerable<PlayerDetails> GetAllPlayers(PlayersFilters filters)
     {
         logger.LogInformation("Fetching all cricket Players.");
 
-        var allPlayers = context.CricketPlayerInfo
+        IEnumerable<PlayerDetails> playerDetails;
+
+        playerDetails = context.CricketPlayerInfo
             .Select(x => new PlayerDetails(
                 x.Uuid,
                 x.PlayerName,
                 x.Href,
-                new CricketDate(x.Birth, InfoFormats.BirthInfo).ToString(),
+                x.TeamsPlayersInfos.Select(x => new CricketTeam(x.TeamUuid, x.TeamName, x.TeamInfo.FlagUrl)).ToArray(),
+                x.DateOfBirth!.ToString()!,
                 string.Empty,
                 x.DebutDetails,
-                x.CareerStatistics,
-                x.Death,
+                x.TeamsPlayersInfos.Select(x => x.CareerStatistics).ToArray(),
+                x.DateOfDeath!.ToString()!,
                 x.Formats,
                 x.TeamNames,
-                x.ExtraInfo));
+                x.ExtraInfo,
+                x.Contents));
 
-        return allPlayers;
+        if (filters.Format != CricketFormat.All)
+        {
+            playerDetails = playerDetails.AsEnumerable().Where(x => x.InternationalFormats.Contains(filters.Format.ToString()!));
+        }
+
+        if (filters.TeamName is not null)
+        {
+            playerDetails = playerDetails.Where(x => x.Teams.Any(y => y.Name == filters.TeamName));
+        }
+
+        if (filters.NameStartsWith is not null)
+        {
+            playerDetails = playerDetails.Where(x => x.FullName.StartsWith(filters.NameStartsWith!));
+        }
+
+        if (filters.PlayingRole is not null)
+        {
+            playerDetails = playerDetails.Where(x => x.ExtraInfo.PlayingRole.Contains(filters.PlayingRole));
+        }
+
+        if (filters.DateOfBirth is not null)
+        {
+            playerDetails = playerDetails.Where(x => x.DateOfBirth.Split(", ")[0] == filters.DateOfBirth);
+        }
+
+        if (filters.BirthYear is not null)
+        {
+            playerDetails = playerDetails.Where(x => x.DateOfBirth.Length > 0 && x.DateOfBirth.Split(", ")[1] == filters.BirthYear.ToString());
+        }
+
+        if (filters.IsExpired is not null)
+        {
+            playerDetails = playerDetails.Where(x => x.DateOfDeath.Length > 0);
+        }
+
+        return playerDetails;
     }
 
     public PlayerDetails GetPlayerByUuid(Guid playerUuid)
     {
-        var player = context.CricketPlayerInfo.Single(x => x.Uuid == playerUuid);
+        Entities.CricketPlayerInfoDTO player;
+
+        try
+        {
+            player = context.CricketPlayerInfo
+                .Include(p => p.TeamsPlayersInfos)
+                .Single(x => x.Uuid == playerUuid);
+        }
+        catch
+        {
+            throw new CricketPlayerNotFoundException($"player with uuid {playerUuid} doesn't exist.");
+        }
 
         return new PlayerDetails(
                 player.Uuid,
                 player.PlayerName,
                 player.Href,
-                new CricketDate(player.Birth, InfoFormats.BirthInfo).ToString(),
-                string.Join(", ", player.Birth.Split(", ").Skip(2)),
+                player.TeamsPlayersInfos.Select(x => new CricketTeam(x.TeamUuid, x.TeamName)).ToArray(),
+                player.DateOfBirth.ToString(),
+                player.DateOfBirth.ToString(),
                 player.DebutDetails,
-                player.CareerStatistics,
-                player.Death,
+                player.TeamsPlayersInfos.Select(x => x.CareerStatistics).ToArray(),
+                player.DateOfDeath.ToString(),
                 player.Formats,
                 player.TeamNames,
-                player.ExtraInfo);
+                player.ExtraInfo,
+                Array.Empty<string>());
     }
 
     public CricketPlayerInfoResponse GetPlayerDetailsByTeamName(string teamName, string playerName, bool? isSingle = false)
     {
-        logger.LogInformation($"Fething details for player ${playerName}");
+        logger.LogInformation($"Fething details for player {playerName} for {teamName}");
 
-        var cricketMatchInfoTableT20I = context.T20ICricketMatchInfo;
-        var cricketMatchInfoTableODI = context.ODICricketMatchInfo;
+        var cricketMatchInfoTableT20I = context.LimitedOverInternationalMatchesInfo;
+        var cricketMatchInfoTableODI = context.LimitedOverInternationalMatchesInfo;
         var cricketMatchInfoTableTest = context.TestCricketMatchInfo;
-        var cricketPlayerInfoTable = context.CricketPlayerInfo;
+        var cricketTeamPlayerInfoTable = context.CricketTeamPlayerInfos.Include(tp => tp.PlayerInfo);
 
         var allMatchesByTeamT20I = cricketMatchInfoTableT20I
-            .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
-            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty))).Select(x => x.ToDomain(mapper));
+            .Where(x => x.MatchNumber.Contains("T20I"))
+            .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("T20I no. ", string.Empty))).Select(x => x.ToDomain(mapper));
 
         var allMatchesByTeamODI = cricketMatchInfoTableODI
-            .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
-            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty))).Select(x => x.ToDomain(mapper));
+            .Where(x => x.MatchNumber.Contains("ODI"))
+            .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("ODI no. ", string.Empty))).Select(x => x.ToDomain(mapper));
 
         var allMatchesByTeamTest = cricketMatchInfoTableTest
-            .Where(x => x.Team1.TeamName == teamName || x.Team2.TeamName == teamName)
-            .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty))).Select(x => x.ToDomain(mapper));
+            .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("Test no. ", string.Empty))).Select(x => x.ToDomain(mapper));
 
-        Entities.CricketPlayerInfo playerInfo = null!;
+        Entities.CricketTeamPlayerInfos playerInfo = null!;
 
         try
         {
             try
             {
-                playerInfo = cricketPlayerInfoTable
-                .Single(x => x.PlayerName == playerName);
+                playerInfo = cricketTeamPlayerInfoTable
+                .Single(x => x.PlayerName == playerName && x.TeamName == teamName);
             }
             catch
             {
-                playerInfo = cricketPlayerInfoTable
-                .Single(x => x.PlayerName.Contains(playerName));
+                playerInfo = cricketTeamPlayerInfoTable
+                .Single(x => x.PlayerName.Contains(playerName) && x.TeamName == teamName);
             }
         }
         catch
@@ -137,20 +212,31 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         }
 
         var playerCareerDetails = new CricketPlayerInfoResponse(
-            playerInfo.Uuid,
+            playerInfo.PlayerInfo.Uuid,
             playerName,
-            new CricketDate(playerInfo.Birth).ToString(),
+            playerInfo.PlayerInfo.DateOfBirth.ToString(),
             teamName,
-            string.Join(", ", playerInfo.Birth.Split(", ").Skip(2)),
-            new CareerDetailsInfo(null!, null!, null!),
+            playerInfo.PlayerInfo.DateOfBirth.ToString(),
+            new CareerDetailsInfo(playerInfo.TeamName, null!, null!, null!),
             "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Shri_Virat_Kohli_for_Cricket%2C_in_a_glittering_ceremony%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_September_25%2C_2018_%28cropped%29.JPG/330px-Shri_Virat_Kohli_for_Cricket%2C_in_a_glittering_ceremony%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_September_25%2C_2018_%28cropped%29.JPG");
 
-        playerCareerDetails.CareerDetails.T20Career = allMatchesByTeamT20I.GetPlayerStats(teamName, playerName.Trim(), isSingle);
+        CricketTeam cricketTeam = new CricketTeam(playerInfo.TeamUuid, teamName);
 
-        playerCareerDetails.CareerDetails.ODICareer = allMatchesByTeamODI.GetPlayerStats(teamName, playerName.Trim(), isSingle);
+        CricketPlayer cricketPlayer = new CricketPlayer(playerInfo.PlayerName, playerInfo.PlayerInfo.Href);
 
-        playerCareerDetails.CareerDetails.TestCareer = allMatchesByTeamTest.GetTestPlayerStats(teamName, playerName.Trim(), isSingle);
+        playerCareerDetails.CareerDetails.T20Career = allMatchesByTeamT20I.ToList().GetPlayerStatistics(cricketTeam, cricketPlayer, isSingle);
+
+        playerCareerDetails.CareerDetails.ODICareer = allMatchesByTeamODI.ToList().GetPlayerStatistics(cricketTeam, cricketPlayer, isSingle);
+
+        playerCareerDetails.CareerDetails.TestCareer = allMatchesByTeamTest.ToList().GetTestPlayerStatistics(cricketTeam, cricketPlayer, isSingle);
 
         return playerCareerDetails;
+    }
+
+    public async Task GeneratedPDFForPlayers()
+    {
+        var allTeamsPlayersInfo = context.CricketTeamPlayerInfos.Include(x => x.TeamInfo).Include(x => x.PlayerInfo);
+
+        await playerPDFHandler.AddPDFCricketPlayerRecords(allTeamsPlayersInfo);
     }
 }

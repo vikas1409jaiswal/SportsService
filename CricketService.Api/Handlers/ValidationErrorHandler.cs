@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace CricketService.Api.Handlers;
 
@@ -7,9 +6,8 @@ public class ValidationErrorHandler
 {
     private const string MediaTypeNameApplicationProblemJson = "application/problem+json";
     private const string ProblemDetailsExtensionsKeyTraceIdentifier = "trace_id";
-    private const string ProblemDetailsTitle = "One or more validation errors occurred.";
+    private const string ProblemDetailsTitle = "One/more validation errors occurred.";
     private const string ProblemDetailsType = "errors:cricket_dekho:validation_failed";
-    private const string DefaultErrorValue = "validation error";
 
     public UnprocessableEntityObjectResult HandleError(ActionContext actionContext)
     {

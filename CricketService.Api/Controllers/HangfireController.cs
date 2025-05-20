@@ -1,13 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Net.Mime;
-using CricketService.Data.Contexts;
-using CricketService.Data.Repositories;
 using CricketService.Data.Repositories.Interfaces;
-using CricketService.Domain;
+using CricketService.Domain.Enums;
 using Hangfire;
-using Hangfire.Common;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Migrations.Operations;
 
 namespace CricketService.Api.Controllers
 {
@@ -15,21 +10,79 @@ namespace CricketService.Api.Controllers
     [Route("[controller]/jobs")]
     public class HangfireController : Controller
     {
-        private readonly IHangfireRepository hangfireRepository;
+        private const string CreateSeedCricketTeamHistoryTableJob = "CreateSeedCricketTeamHistoryTableJob";
+        private const string CreateSeedCricketTeamHistoryH2HTableJob = "CreateSeedCricketTeamHistoryH2HTableJob";
+        private const string UpdatePlayersCareerStatisticsJob = "UpdatePlayersCareerStatisticsJob";
+        private const string UpdateTeamRecordsJob = "UpdateTeamRecordsJob";
+        private const string CleanDatabaseJob = "CleanDatabaseJob";
 
-        public HangfireController(IHangfireRepository hangfireRepository)
+        private readonly IHangfireRepository hangfireRepository;
+        private readonly ICricketTeamHistoryRepository cricketTeamHistoryRepository;
+        private readonly ICricketTeamHistoryH2HRepository cricketTeamHistoryH2HRepository;
+
+        public HangfireController(
+            IHangfireRepository hangfireRepository,
+            ICricketTeamHistoryRepository cricketTeamHistoryRepository,
+            ICricketTeamHistoryH2HRepository cricketTeamHistoryH2HRepository)
         {
             this.hangfireRepository = hangfireRepository;
+            this.cricketTeamHistoryRepository = cricketTeamHistoryRepository;
+            this.cricketTeamHistoryH2HRepository = cricketTeamHistoryH2HRepository;
         }
 
         [HttpGet]
-        public IActionResult Hangfire()
+        public IActionResult CreateHangfireJob(
+            [FromQuery, Required] string jobName,
+            [FromQuery] string team1Name,
+            [FromQuery] string team2Name,
+            [FromQuery] CricketFormat format)
         {
-            RecurringJob.AddOrUpdate(() => hangfireRepository.UpdatePlayersCareerStatistics(), Cron.Never);
+            switch (jobName)
+            {
+                case CreateSeedCricketTeamHistoryTableJob:
+                    RecurringJob.AddOrUpdate(
+                         CreateSeedCricketTeamHistoryTableJob,
+                         () => cricketTeamHistoryRepository.SeedCricketTeamHistoryTable(),
+                         Cron.Never);
+                    break;
 
-            RecurringJob.AddOrUpdate(() => hangfireRepository.UpdateTeamRecords(), Cron.Never);
+                case CreateSeedCricketTeamHistoryH2HTableJob:
+                    RecurringJob.AddOrUpdate(
+                         $"{CreateSeedCricketTeamHistoryH2HTableJob}:{team1Name}vs{team2Name}:{format}",
+                         () => cricketTeamHistoryH2HRepository.SeedCricketTeamHistoryH2HTable(team1Name, team2Name, format),
+                         Cron.Never);
+                    break;
 
-            return Ok();
+                case UpdatePlayersCareerStatisticsJob:
+                    RecurringJob.AddOrUpdate(
+                        UpdatePlayersCareerStatisticsJob,
+                        () => hangfireRepository.UpdatePlayersCareerStatistics(),
+                        Cron.Never);
+                    break;
+
+                case UpdateTeamRecordsJob:
+                    RecurringJob.AddOrUpdate(
+                        UpdateTeamRecordsJob,
+                        () => hangfireRepository.UpdateTeamRecords(null),
+                        Cron.Never);
+                    break;
+
+                case CleanDatabaseJob:
+                    RecurringJob.AddOrUpdate(
+                        CleanDatabaseJob,
+                        () => hangfireRepository.CleanDatabase(),
+                        Cron.Never);
+                    break;
+
+                default:
+                    return BadRequest($"Invalid job name. Valid options are: " +
+                        $"{CreateSeedCricketTeamHistoryTableJob}, " +
+                        $"{UpdatePlayersCareerStatisticsJob}, " +
+                        $"{UpdateTeamRecordsJob}, " +
+                        $"{CleanDatabaseJob}");
+            }
+
+            return Ok($"Job '{jobName}' has been scheduled successfully.");
         }
     }
 }

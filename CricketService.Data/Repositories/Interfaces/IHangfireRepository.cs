@@ -4,6 +4,8 @@
     {
         Task UpdatePlayersCareerStatistics();
 
-        Task UpdateTeamRecords();
+        Task UpdateTeamRecords(List<Guid>? teamUuids = null);
+
+        void CleanDatabase();
     }
 }

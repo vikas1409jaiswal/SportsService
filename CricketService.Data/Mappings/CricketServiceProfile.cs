@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using CricketService.Data.Entities;
-using CricketService.Domain;
+using CricketService.Domain.BaseDomains;
+using CricketService.Domain.RequestDomains;
+using CricketService.Domain.ResponseDomains;
 
 namespace CricketService.Data.Mappings
 {
@@ -8,32 +10,33 @@ namespace CricketService.Data.Mappings
     {
         public CricketServiceProfile()
         {
-            CreateMap<CricketMatchInfoRequest, T20ICricketMatchInfo>();
+            CreateMap<InternationalCricketMatchRequest, LimitedOverInternationalMatchInfoDTO>()
+                .ForMember(dest => dest.Uuid, opt => opt.MapFrom(src => src.MatchUuid));
 
-            CreateMap<CricketMatchInfoRequest, ODICricketMatchInfo>();
+            CreateMap<LimitedOverInternationalMatchInfoDTO, InternationalCricketMatchResponse>()
+               .ForMember(dest => dest.MatchUuid, opt => opt.MapFrom(src => src.Uuid));
 
-            CreateMap<TestCricketMatchInfoRequest, TestCricketMatchInfo>()
-                .ForMember(dest => dest.MatchDates, opt => opt.MapFrom(src => src.MatchDate));
+            CreateMap<TestCricketMatchRequest, TestCricketMatchInfoDTO>()
+                .ForMember(dest => dest.Uuid, opt => opt.MapFrom(src => src.MatchUuid));
 
-            CreateMap<TeamScoreDetailsRequest, TeamScoreDetails>();
-
-            CreateMap<BattingScoreCardRequest, BattingScoreCard>();
-
-            CreateMap<BowlingScoreCardRequest, BowlingScoreCard>();
-
-            CreateMap<TestTeamScoreDetailsRequest, TestTeamScoreDetails>();
-
-            CreateMap<InningScoreCardDetails, InningScoreCard>();
-
-            CreateMap<T20ICricketMatchInfo, CricketMatchInfoResponse>()
+            CreateMap<TestCricketMatchInfoDTO, TestCricketMatchResponse>()
                 .ForMember(dest => dest.MatchUuid, opt => opt.MapFrom(src => src.Uuid));
 
-            CreateMap<ODICricketMatchInfo, CricketMatchInfoResponse>()
+            CreateMap<DomesticCricketMatchRequest, T20MatchInfoDTO>()
+                .ForMember(dest => dest.Uuid, opt => opt.MapFrom(src => src.MatchUuid));
+
+            CreateMap<T20MatchInfoDTO, DomesticCricketMatchResponse>()
                 .ForMember(dest => dest.MatchUuid, opt => opt.MapFrom(src => src.Uuid));
 
-            CreateMap<TestCricketMatchInfo, TestCricketMatchInfoResponse>()
-                .ForMember(dest => dest.MatchUuid, opt => opt.MapFrom(src => src.Uuid))
-                .ForMember(dest => dest.MatchDate, opt => opt.MapFrom(src => src.MatchDates));
+            CreateMap<SingleInningTeamScoreboardRequest, SingleInningTeamScoreboardResponse>();
+
+            CreateMap<BattingScoreboardRequest, BattingScoreboardResponse>();
+
+            CreateMap<BowlingScoreboardRequest, BowlingScoreboardResponse>();
+
+            CreateMap<DoubleInningTeamScoreboardRequest, DoubleInningTeamScoreboardResponse>();
+
+            CreateMap<InningScoreboard<BattingScoreboardRequest, BowlingScoreboardRequest>, InningScoreboardResponse>();
         }
     }
 }

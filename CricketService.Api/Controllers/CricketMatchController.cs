@@ -1,8 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Net.Mime;
 using CricketService.Data.Repositories.Interfaces;
-using CricketService.Domain;
+using CricketService.Domain.Common;
 using CricketService.Domain.Enums;
+using CricketService.Domain.RequestDomains;
+using CricketService.Domain.ResponseDomains;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CricketService.Api.Controllers;
@@ -19,23 +21,42 @@ public class CricketMatchController : Controller
     }
 
     [HttpGet("internationalMatches")]
-    public IActionResult GetInternationalMatches([FromQuery, Required] CricketFormat format)
+    public IActionResult GetInternationalMatches(
+        [FromQuery, Required] CricketFormat format,
+        [FromQuery] Guid teamUuid,
+        [FromQuery] Guid oppositionTeamUuid)
     {
         IEnumerable<object> allMatches = new List<object>();
 
-        switch (format)
+        var matchesFilters = new MatchesFilters(format, teamUuid, oppositionTeamUuid);
+
+        if (format == CricketFormat.T20I || format == CricketFormat.ODI)
         {
-            case CricketFormat.T20I:
-                allMatches = cricketMatchRepository.GetAllMatchesT20I();
-                break;
-            case CricketFormat.ODI:
-                allMatches = cricketMatchRepository.GetAllMatchesODI();
-                break;
-            case CricketFormat.TestCricket:
-                allMatches = cricketMatchRepository.GetAllMatchesTest();
-                break;
-            default:
-                break;
+           allMatches = cricketMatchRepository.GetAllLimitedOverInternationalMatches(matchesFilters);
+        }
+        else if (format == CricketFormat.TestCricket)
+        {
+           allMatches = cricketMatchRepository.GetAllMatchesTest(matchesFilters);
+        }
+
+        Response.Headers.Add($"total-{format}-matches", allMatches.Count().ToString());
+
+        return Ok(allMatches);
+    }
+
+    [HttpGet("domesticMatches")]
+    public IActionResult GetDomesticMatches(
+        [FromQuery, Required] CricketFormat format,
+        [FromQuery] Guid teamUuid,
+        [FromQuery] Guid oppositionTeamUuid)
+    {
+        IEnumerable<object> allMatches = new List<object>();
+
+        var matchesFilters = new MatchesFilters(format, teamUuid, oppositionTeamUuid);
+
+        if (format == CricketFormat.Twenty20)
+        {
+            allMatches = cricketMatchRepository.GetAllTwenty20Matches(matchesFilters);
         }
 
         Response.Headers.Add($"total-{format}-matches", allMatches.Count().ToString());
@@ -44,17 +65,19 @@ public class CricketMatchController : Controller
     }
 
     [HttpGet("internationalMatches/{matchNumber}")]
-    public async Task<ActionResult<CricketMatchInfoResponse>> GetInternationalMatch([FromQuery, Required] CricketFormat format, [FromRoute, Required] int matchNumber)
+    public async Task<ActionResult<InternationalCricketMatchResponse>> GetInternationalMatch(
+        [FromQuery, Required] CricketFormat format,
+        [FromRoute, Required] int matchNumber)
     {
         object match = new object();
 
         switch (format)
         {
             case CricketFormat.T20I:
-                match = await cricketMatchRepository.GetMatchByMNumberT20I(matchNumber);
+                match = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(matchNumber, format);
                 break;
             case CricketFormat.ODI:
-                match = await cricketMatchRepository.GetMatchByMNumberODI(matchNumber);
+                match = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(matchNumber, format);
                 break;
             case CricketFormat.TestCricket:
                 match = await cricketMatchRepository.GetMatchByMNumberTest(matchNumber);
@@ -67,7 +90,7 @@ public class CricketMatchController : Controller
     }
 
     [HttpGet("internationalMatches/{startMatchNumber}/{endMatchNumber}")]
-    public async Task<ActionResult<IEnumerable<CricketMatchInfoResponse>>> GetInternationalMatchesByRangeNumber(
+    public async Task<ActionResult<IEnumerable<InternationalCricketMatchResponse>>> GetInternationalMatchesByRangeNumber(
         [FromRoute, Required] int startMatchNumber,
         [FromRoute, Required] int endMatchNumber,
         [FromQuery, Required] CricketFormat format)
@@ -83,10 +106,10 @@ public class CricketMatchController : Controller
             switch (format)
             {
                 case CricketFormat.T20I:
-                    match = await cricketMatchRepository.GetMatchByMNumberT20I(matchNumber);
+                    match = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(matchNumber, format);
                     break;
                 case CricketFormat.ODI:
-                    match = await cricketMatchRepository.GetMatchByMNumberODI(matchNumber);
+                    match = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(matchNumber, format);
                     break;
                 case CricketFormat.TestCricket:
                     match = await cricketMatchRepository.GetMatchByMNumberTest(matchNumber);
@@ -114,20 +137,20 @@ public class CricketMatchController : Controller
         return Ok(allMatches);
     }
 
-    [HttpPost("t20Match/addRange")]
+    [HttpPost("t20IMatch/addRange")]
     [Consumes(MediaTypeNames.Application.Json)]
-    public async Task<IActionResult> AddT20IMatches([FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<CricketMatchInfoRequest> cricketMatchInfoRequest)
+    public async Task<IActionResult> AddT20IMatches([FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<InternationalCricketMatchRequest> cricketMatchInfoRequest)
     {
         var resultResponse = new { success = new List<string>(), failed = new List<string>() };
-        var addingMatches = new List<CricketMatchInfoRequest>();
+        var addingMatches = new List<InternationalCricketMatchRequest>();
 
         foreach (var matchInfo in cricketMatchInfoRequest)
         {
-            var foundMatch = await cricketMatchRepository.GetMatchByMNumberT20I(Convert.ToInt32(matchInfo.MatchNo.Replace("T20I no. ", string.Empty)));
+            var foundMatch = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(Convert.ToInt32(matchInfo.MatchNumber.Replace("T20I no. ", string.Empty)), CricketFormat.T20I);
 
             if (foundMatch is not null)
             {
-                resultResponse.failed.Add(matchInfo.MatchNo);
+                resultResponse.failed.Add(matchInfo.MatchNumber);
             }
             else
             {
@@ -137,9 +160,9 @@ public class CricketMatchController : Controller
 
         foreach (var matchInfo in addingMatches)
         {
-            await cricketMatchRepository.AddMatchT20I(matchInfo);
+            await cricketMatchRepository.AddLimitedOverInternationalMatch(matchInfo, CricketFormat.T20I);
 
-            resultResponse.success.Add(matchInfo.MatchNo);
+            resultResponse.success.Add(matchInfo.MatchNumber);
         }
 
         return Ok(new
@@ -152,18 +175,18 @@ public class CricketMatchController : Controller
 
     [HttpPost("odiMatch/addRange")]
     [Consumes(MediaTypeNames.Application.Json)]
-    public async Task<IActionResult> AddODIMatches([FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<CricketMatchInfoRequest> cricketMatchInfoRequest)
+    public async Task<IActionResult> AddODIMatches([FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<InternationalCricketMatchRequest> cricketMatchInfoRequest)
     {
         var resultResponse = new { success = new List<string>(), failed = new List<string>() };
-        var addingMatches = new List<CricketMatchInfoRequest>();
+        var addingMatches = new List<InternationalCricketMatchRequest>();
 
         foreach (var matchInfo in cricketMatchInfoRequest)
         {
-            var foundMatch = await cricketMatchRepository.GetMatchByMNumberODI(Convert.ToInt32(matchInfo.MatchNo.Replace("ODI no. ", string.Empty)));
+            var foundMatch = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(Convert.ToInt32(matchInfo.MatchNumber.Replace("ODI no. ", string.Empty)), CricketFormat.ODI);
 
             if (foundMatch is not null)
             {
-                resultResponse.failed.Add(matchInfo.MatchNo);
+                resultResponse.failed.Add(matchInfo.MatchNumber);
             }
             else
             {
@@ -173,9 +196,45 @@ public class CricketMatchController : Controller
 
         foreach (var matchInfo in addingMatches)
         {
-            await cricketMatchRepository.AddMatchODI(matchInfo);
+            await cricketMatchRepository.AddLimitedOverInternationalMatch(matchInfo, CricketFormat.ODI);
 
-            resultResponse.success.Add(matchInfo.MatchNo);
+            resultResponse.success.Add(matchInfo.MatchNumber);
+        }
+
+        return Ok(new
+        {
+            successMatches = resultResponse.success.Count,
+            failedMatches = resultResponse.failed.Count,
+            failedMatchNumbers = resultResponse.failed,
+        });
+    }
+
+    [HttpPost("t20Match/addRange")]
+    [Consumes(MediaTypeNames.Application.Json)]
+    public async Task<IActionResult> AddT20Matches([FromBody, Required, ModelBinder(Name = "T20Matches")] IEnumerable<DomesticCricketMatchRequest> t20MatchesRequest)
+    {
+        var resultResponse = new { success = new List<string>(), failed = new List<string>() };
+        var addingMatches = new List<DomesticCricketMatchRequest>();
+
+        foreach (var matchInfo in t20MatchesRequest)
+        {
+            var foundMatch = await cricketMatchRepository.GetT20IMatchesByTitleAndDate(matchInfo.MatchTitle, matchInfo.MatchDate);
+
+            if (foundMatch is not null)
+            {
+                resultResponse.failed.Add($"{matchInfo.MatchTitle}::{matchInfo.MatchDate}");
+            }
+            else
+            {
+                addingMatches.Add(matchInfo);
+            }
+        }
+
+        foreach (var matchInfo in addingMatches)
+        {
+            await cricketMatchRepository.AddT20Match(matchInfo);
+
+            resultResponse.success.Add($"{matchInfo.MatchTitle}::{matchInfo.MatchDate}");
         }
 
         return Ok(new
@@ -188,18 +247,18 @@ public class CricketMatchController : Controller
 
     [HttpPost("testMatch/addRange")]
     [Consumes(MediaTypeNames.Application.Json)]
-    public async Task<IActionResult> AddTestMatches([FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<TestCricketMatchInfoRequest> cricketMatchInfoRequest)
+    public async Task<IActionResult> AddTestMatches([FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<TestCricketMatchRequest> cricketMatchInfoRequest)
     {
         var resultResponse = new { success = new List<string>(), failed = new List<string>() };
-        var addingMatches = new List<TestCricketMatchInfoRequest>();
+        var addingMatches = new List<TestCricketMatchRequest>();
 
         foreach (var matchInfo in cricketMatchInfoRequest)
         {
-            var foundMatch = await cricketMatchRepository.GetMatchByMNumberTest(Convert.ToInt32(matchInfo.MatchNo.Replace("Test no. ", string.Empty)));
+            var foundMatch = await cricketMatchRepository.GetMatchByMNumberTest(Convert.ToInt32(matchInfo.MatchNumber.Replace("Test no. ", string.Empty)));
 
             if (foundMatch is not null)
             {
-                resultResponse.failed.Add(matchInfo.MatchNo);
+                resultResponse.failed.Add(matchInfo.MatchNumber);
             }
             else
             {
@@ -211,7 +270,7 @@ public class CricketMatchController : Controller
         {
             await cricketMatchRepository.AddMatchTest(matchInfo);
 
-            resultResponse.success.Add(matchInfo.MatchNo);
+            resultResponse.success.Add(matchInfo.MatchNumber);
         }
 
         return Ok(new

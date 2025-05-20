@@ -1,9 +1,15 @@
 ﻿using AutoMapper;
 using CricketService.Data.Contexts;
+using CricketService.Data.Entities;
 using CricketService.Data.Extensions;
 using CricketService.Data.Repositories.Extensions;
 using CricketService.Data.Repositories.Interfaces;
 using CricketService.Domain;
+using CricketService.Domain.BaseDomains;
+using CricketService.Domain.Enums;
+using CricketService.Domain.ResponseDomains;
+using Hangfire;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace CricketService.Data.Repositories
@@ -13,7 +19,9 @@ namespace CricketService.Data.Repositories
         private readonly ILogger<HangfireRepository> logger;
         private readonly ICricketTeamRepository cricketTeamRepository;
         private readonly CricketServiceContext context;
-        private readonly IMapper mapper;
+        private readonly List<InternationalCricketMatchResponse> t20iResponse;
+        private readonly List<InternationalCricketMatchResponse> odiResponse;
+        private readonly List<TestCricketMatchResponse> testResponse;
 
         public HangfireRepository(
             ILogger<HangfireRepository> logger,
@@ -24,95 +32,50 @@ namespace CricketService.Data.Repositories
             this.logger = logger;
             this.cricketTeamRepository = cricketTeamRepository;
             this.context = context;
-            this.mapper = mapper;
+
+            t20iResponse = context.LimitedOverInternationalMatchesInfo
+                    .Where(x => x.MatchNumber.Contains("T20I"))
+                    .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("T20I no. ", string.Empty)))
+                    .Select(x => x.ToDomain(mapper)).ToList();
+
+            odiResponse = context.LimitedOverInternationalMatchesInfo
+                    .Where(x => x.MatchNumber.Contains("ODI"))
+                    .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("ODI no. ", string.Empty)))
+                    .Select(x => x.ToDomain(mapper)).ToList();
+
+            testResponse = context.TestCricketMatchInfo
+                    .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("Test no. ", string.Empty)))
+                    .Select(x => x.ToDomain(mapper)).ToList();
         }
 
-        public IEnumerable<Guid> GetAllPlayersUuid()
-        {
-            return context.CricketPlayerInfo.Select(x => x.Uuid);
-        }
+        #region Team Related Jobs
 
-        public IEnumerable<Guid> GetAllTeamssUuid()
+        public async Task UpdateTeamRecords(List<Guid>? teamUuids = null)
         {
-            return context.CricketTeamInfo.Select(x => x.Uuid);
-        }
+            logger.LogInformation($"Started updating team records.");
 
-        public async Task UpdatePlayersCareerStatistics()
-        {
             var counter = 1;
 
-            var t20iResponse = context.T20ICricketMatchInfo
-                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty)))
-                    .Select(x => x.ToDomain(mapper));
+            List<Guid> uuids;
 
-            var odiResponse = context.ODICricketMatchInfo
-                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty)))
-                    .Select(x => x.ToDomain(mapper));
-
-            var testResponse = context.TestCricketMatchInfo
-                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty)))
-                    .Select(x => x.ToDomain(mapper));
-
-            List<Guid> result = GetAllPlayersUuid().Where(x => x == new Guid("7c5181e5-08d2-4c8e-844b-6dd57cef00eb")).ToList();
-
-            var startTime = DateTime.Now;
-
-            foreach (var uuid in result)
+            if (teamUuids is null)
             {
-                logger.LogInformation($"updating career statistics for player no {counter} with uuid {uuid}");
-
-                var player = context.CricketPlayerInfo.Single(x => x.Uuid == uuid);
-                var t20iStats = t20iResponse.GetPlayerStats(player.InternationalTeamNames.FirstOrDefault()!, player.PlayerName.Trim(), true);
-                var odiStats = odiResponse.GetPlayerStats(player.InternationalTeamNames.FirstOrDefault()!, player.PlayerName.Trim(), true);
-                var testStats = testResponse.GetTestPlayerStats(player.InternationalTeamNames.FirstOrDefault()!, player.PlayerName.Trim(), true);
-
-                player.CareerStatistics = new CareerDetailsInfo(
-                    testStats,
-                    odiStats,
-                    t20iStats
-                );
-
-                context.CricketPlayerInfo.Update(player);
-
-                await context.SaveChangesAsync();
-                counter++;
-
-                var stepTime = DateTime.Now;
-
-                logger.LogInformation($"Running watch: {stepTime - startTime}");
+                 uuids = cricketTeamRepository.GetAllTeamsUuid().ToList();
             }
-
-            var endTime = DateTime.Now;
-
-            logger.LogInformation($"Total seeding time is {endTime - startTime}");
-        }
-
-        public async Task UpdateTeamRecords()
-        {
-            var counter = 1;
-
-            var t20iResponse = context.T20ICricketMatchInfo
-                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("T20I no. ", string.Empty)))
-                    .Select(x => mapper.Map<CricketMatchInfoResponse>(x));
-
-            var odiResponse = context.ODICricketMatchInfo
-                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("ODI no. ", string.Empty)))
-                    .Select(x => mapper.Map<CricketMatchInfoResponse>(x));
-
-            var testResponse = context.TestCricketMatchInfo
-                    .OrderBy(x => Convert.ToInt32(x.MatchNo.Replace("Test no. ", string.Empty)))
-                    .Select(x => mapper.Map<TestCricketMatchInfoResponse>(x));
-
-            List<Guid> uuids = GetAllTeamssUuid().ToList();
+            else
+            {
+                uuids = teamUuids;
+            }
 
             var startTime = DateTime.Now;
 
             foreach (var uuid in uuids)
             {
-                logger.LogInformation($"updating team statistics for team with uuid {uuid}");
-
                 var team = context.CricketTeamInfo.Single(x => x.Uuid == uuid);
-                var teamRecords = cricketTeamRepository.GetTeamByName(team.TeamName);
+
+                logger.LogInformation($"updating team statistics for {team.TeamName}");
+
+                var teamRecords = cricketTeamRepository.GetTeamStatistics(team);
 
                 if (teamRecords.TeamRecordDetails.T20IResults is not null)
                 {
@@ -142,7 +105,66 @@ namespace CricketService.Data.Repositories
             var endTime = DateTime.Now;
 
             logger.LogInformation($"Total seeding time is {endTime - startTime}");
+
+            logger.LogInformation($"Completed updating team records.");
+        }
+        #endregion
+
+        #region Players Related Jobs
+        public IEnumerable<Guid> GetAllPlayersUuid()
+        {
+            return context.CricketPlayerInfo.Select(x => x.Uuid);
         }
 
+        public async Task UpdatePlayersCareerStatistics()
+        {
+            var counter = 1;
+
+            List<Guid> result = GetAllPlayersUuid().Where(x => x == new Guid("30d4ba88-3351-47dc-8f6b-bd9705d0d493")).ToList();
+
+            var startTime = DateTime.Now;
+
+            foreach (var uuid in result)
+            {
+                logger.LogInformation($"updating career statistics for player no {counter} with uuid {uuid}");
+
+                var player = context.CricketPlayerInfo.Include(p => p.TeamsPlayersInfos).Single(x => x.Uuid == uuid);
+
+                foreach (var teamPlayerInfos in player.TeamsPlayersInfos)
+                {
+                    CricketTeam cricketTeam = new CricketTeam(teamPlayerInfos.TeamUuid, teamPlayerInfos.TeamName);
+                    CricketPlayer cricketPlayer = new CricketPlayer(teamPlayerInfos.PlayerName, player.Href);
+
+                    teamPlayerInfos.CareerStatistics = new CareerDetailsInfo(
+                    teamPlayerInfos.TeamName,
+                    testResponse.GetTestPlayerStatistics(cricketTeam, cricketPlayer, true),
+                    odiResponse.GetPlayerStatistics(cricketTeam, cricketPlayer, true),
+                    t20iResponse.GetPlayerStatistics(cricketTeam, cricketPlayer, true));
+                }
+
+                context.CricketPlayerInfo.Update(player);
+
+                await context.SaveChangesAsync();
+                counter++;
+
+                var stepTime = DateTime.Now;
+
+                logger.LogInformation($"Running watch: {stepTime - startTime}");
+            }
+
+            var endTime = DateTime.Now;
+
+            logger.LogInformation($"Total seeding time is {endTime - startTime}");
+        }
+        #endregion
+
+        public void CleanDatabase()
+        {
+            context.ChangeTracker
+                .Entries().ToList().ForEach(e => e.State = EntityState.Detached);
+
+            context.Database.EnsureDeleted();
+            context.Database.EnsureCreated();
+        }
     }
 }

@@ -7,6 +7,7 @@ using CricketService.Data.Mappings;
 using CricketService.Data.Options.Configs;
 using CricketService.Data.Repositories;
 using CricketService.Data.Repositories.Interfaces;
+using CricketService.Data.Utils;
 using CricketService.Hangfire.Attributes;
 using CricketService.Hangfire.Configs;
 using CricketService.Hangfire.Contracts;
@@ -16,6 +17,8 @@ using CricketService.Hangfire.Tracing;
 using Hangfire;
 using Hangfire.Common;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace CricketService.Api
 {
@@ -30,22 +33,43 @@ namespace CricketService.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add CORS policy
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend",
+                    builder => builder
+                        .WithOrigins("http://localhost:3000") // Your frontend URL
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials());
+            });
+
             services.AddOptions<CricketServiceContextOptions>().Bind(Configuration.GetSection(CricketServiceContextOptions.SectionName));
             services.AddOptions<HangfireOptions>().Bind(Configuration.GetSection(HangfireOptions.DefaultSectionName));
             services.AddScoped<ICricketPlayerRepository, CricketPlayerRepository>();
             services.AddScoped<ICricketMatchRepository, CricketMatchRepository>();
             services.AddScoped<ICricketTeamRepository, CricketTeamRepository>();
+            services.AddScoped<ICricketTeamHistoryRepository, CricketTeamHistoryRepository>();
+            services.AddScoped<ICricketTeamHistoryH2HRepository, CricketTeamHistoryH2HRepository>();
             services.AddScoped<IHangfireRepository, HangfireRepository>();
+            services.AddScoped<MatchPDFHandler>();
+            services.AddScoped<TeamPDFHandler>();
+            services.AddScoped<PlayerPDFHandler>();
             services.AddCricketServiceDataLayer(Configuration);
 
             services.AddControllers(options =>
             {
                 options.Filters.Add(new ModelStateExceptionFilter(new ValidationErrorHandler()));
             })
-             .AddJsonOptions(options =>
-             {
-                 options.JsonSerializerOptions.PropertyNameCaseInsensitive = false;
-             });
+            .AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+                options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+
+                // Preserve these settings if you need them
+                options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                options.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
+            });
 
             services.AddSingleton<ValidationErrorHandler>()
                 .AddScoped<ModelStateExceptionFilter>();
@@ -88,6 +112,9 @@ namespace CricketService.Api
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
+
+            // Use CORS policy (make sure this comes before UseRouting and UseEndpoints)
+            app.UseCors("AllowFrontend");
 
             app.UseRouting();
 
