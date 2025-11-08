@@ -1,0 +1,15 @@
+div.top-player-cards {
+    background: none;
+    box-shadow: none;
+    display: flex;
+    height: 600px;
+    padding: 10px;
+    margin: 0px 5px;
+    border: none;
+
+    .top-run-scorer {
+        background: linear-gradient(yellow, green, red);
+        border-radius: 10px;
+        border: 5px solid white;
+    }
+}

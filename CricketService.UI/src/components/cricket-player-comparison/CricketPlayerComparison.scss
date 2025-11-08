@@ -1,0 +1,45 @@
+.player-comparison-container{
+    height: 880px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    box-shadow: none;
+
+    * {
+        box-shadow: inherit;
+    }
+
+    .player-container{
+        .player-name-header{
+            color: white;
+            background: linear-gradient(darkgreen, black);
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 30px;
+        }
+    }
+
+    .comparison-container{
+        .data{
+            margin: 50px 10px;
+        }
+
+        .batting-stats-header, .bowling-stats-header{
+            font-size: 30px;
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px 10px;
+            text-align: center;
+            background-color: greenyellow;
+        }
+
+        .batting-stats, .bowling-stats{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .stats-data{
+                margin: 30px 10px;
+            }
+        }
+    }
+}

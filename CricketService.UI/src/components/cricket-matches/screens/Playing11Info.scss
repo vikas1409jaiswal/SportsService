@@ -1,0 +1,44 @@
+.team-playing-11-container{
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+
+    .playing-11-header{
+        padding: 10px;
+        text-align: center;
+        font-size: 50px;
+        border: 5px solid white;
+        border-radius: 10px;
+        background: linear-gradient(black, blue);
+        color: white;
+        font-weight: bold;
+    }
+    
+    .playing-11-squad {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        grid-gap: 10px;
+        position: relative;
+    
+        .player-card {
+            border: 1px solid black;
+            border-radius: 10px;
+            
+            img{
+                background: radial-gradient(gray, black);
+                margin: 5px 0px;
+                border-radius: 10px;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .rotating-cylinder {
+        position: absolute;
+        margin-top: -250px;
+        margin-left: 625px;
+    }
+}

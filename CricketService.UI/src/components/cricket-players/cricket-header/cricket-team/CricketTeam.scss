@@ -1,0 +1,32 @@
+﻿.cricket-team-player-header {
+    display: grid;
+    grid-template-columns: 3fr 20fr;
+    grid-auto-rows: 100px;
+    border: 2px solid black;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background-color: orange;
+
+    img {
+        height: 90%;
+        width: fit-content;
+        margin: auto;
+        border: 2px solid blue;
+        border-radius: 10px;
+        background-color: honeydew;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: 700;
+        margin: 5px;
+        padding: 10px;
+        color: darkblue;
+        border-radius: 10px;
+        border: 2px solid black;
+        background-color: yellow;
+        text-justify: distribute;
+    }
+}

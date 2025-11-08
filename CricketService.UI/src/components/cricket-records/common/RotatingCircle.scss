@@ -1,0 +1,20 @@
+.rotating-circle{
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+    font-weight: 700;
+    border-radius: 50%;
+    margin: auto;
+    
+    .number{
+        background-image: url(http://localhost:3013/textures/1004.jpg);
+        background-size: cover;
+        border-radius: 50%;
+        text-align: center;
+        padding: 10px;
+        border: 10px solid white;
+        color: white;
+        transform: translateZ(100px);
+    }
+}

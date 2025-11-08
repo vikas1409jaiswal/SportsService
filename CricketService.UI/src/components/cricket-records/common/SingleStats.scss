@@ -1,0 +1,41 @@
+.single-stats {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: none;
+    background: none;
+
+    .single-stat-title {
+        font-size: 35px;
+        background: linear-gradient(darkred, black);
+        font-weight: 700;
+        border: 2px solid white;
+        color: white;
+        border-radius: 10px 30px;
+        width: 400px;
+        margin: auto;
+    }
+
+    .single-stat-value {
+        height: 150px;
+        width: 400px;
+        margin: auto;
+        margin-top: 10px;
+        font-size: 120px;
+        font-weight: bolder;
+        border: 2px solid white;
+        border-radius: 10px 30px;
+        background-image:  url('http://localhost:3013/textures/1016.png');
+        background-size: 100% 100%;
+        color: white;
+    }
+
+    .text-3d {
+        text-shadow: 2px 2px 2px rgba(8, 15, 6, 0.982),
+                     4px 4px 4px rgba(169, 89, 23, 0.737),
+                     6px 6px 6px rgba(0, 0, 0, 0.1);
+      }
+}
+
+;

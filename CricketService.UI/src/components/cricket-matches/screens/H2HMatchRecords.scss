@@ -1,0 +1,107 @@
+.h2h-record-container{
+    overflow-y: hidden;
+
+    .h2h-team-records {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        overflow-y: hidden;
+        box-shadow: none;
+    
+        .h2h-columns {
+            margin: 10px;
+            padding: 10px;
+        }
+    
+        .comparison-info {
+            box-shadow: none;
+
+            div.h2h-match {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                gap: 10px;
+                background: linear-gradient(palegreen, yellow);
+                border: 2px solid black;
+    
+                span {
+                    padding: 5px;
+                    font-size: 40px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+
+            div.most-records{
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 5px;
+                box-shadow: none;
+                height: 230px;
+
+                .key{
+                    text-align: center;
+                    padding-top: 10px;
+                    background: linear-gradient(black, blue);
+                    color: white;
+                    font-weight: bolder;
+                    border: 2px solid white;
+                    
+                    p.title{
+                        font-size: 20px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    p.player{
+                        font-size: 30px;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .value{
+                    text-align: center;
+                    font-size: 60px;
+                    font-weight: bold;
+                    padding-top: 10px;
+                    background: linear-gradient(black, blue);
+                    color: white;
+                    border: 2px solid white;
+                }
+            }
+        }
+    
+        .team-1-info,
+        .team-2-info {
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 600px;
+            background: linear-gradient(red, yellow);
+    
+            img {
+                background: linear-gradient(white, silver, black);
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+        }
+    }
+    
+    .h2h-header {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        margin: 10px;
+
+        div{
+            background-color: wheat;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    
+        h1 {
+            font-size: 50px;
+        }
+    }
+}

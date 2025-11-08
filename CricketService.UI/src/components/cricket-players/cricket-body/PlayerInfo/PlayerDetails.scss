@@ -1,0 +1,120 @@
+﻿.cricket-player {
+    margin: 10px 10px 10px 0px;
+    display: grid;
+    grid-template-columns: 8fr 14fr 1fr;
+    position: relative;
+    box-shadow: none;
+    background: none;
+
+    .rotating-circle{
+        position: absolute;
+        margin-top: 480px;
+        margin-left: 430px;
+    }
+
+    .cricket-player-image {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+        background: linear-gradient(yellow, blue);
+        color: white;
+        border-radius: 30px;
+        height: 750px;
+        box-shadow: none;
+
+        img {
+            height: 600px;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-image: linear-gradient(grey, white);
+        }
+
+        h3{
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    .cricket-player-details {
+        height: 750px;
+        box-shadow: none;
+        background: none;
+
+        h1 {
+            font-size: 50px;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: 800;
+            padding-left: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: honeydew;
+            background-image: linear-gradient(to right, rgb(255, 255, 255, 0.5), rgba(47, 255, 89, 0.5));
+            margin: 10px;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            } 
+        }
+
+        .cricket-player-details-section {
+            box-shadow: none;
+            background: none;
+
+            table.career-stats-table{
+                margin: 10px;
+                width: 98%;
+            }
+
+
+            > div:first-child {
+                border: 2px ridge black;
+                margin: 10px;
+                padding: 10px 0px;
+                border-radius: 10px;
+                background-color: honeydew;
+                background-image: linear-gradient(rgba(255, 127, 53, 0.3), rgba(214, 184, 237, 0.977), rgba(243, 255, 151, 0.905));
+
+                > div {
+                    display: grid;
+                    grid-template-columns: 1fr 4fr;
+                    margin: 10px;
+                    background-image: inherit;
+
+                    > span {
+                        font-size: 20px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        padding-left: 20px;
+                        padding-top: 5px;
+
+                        img {
+                            height: 25px;
+                            width: 37px;
+                            border: 2px solid black;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .players-indicators-container {
+        font-size: 30px; 
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        
+        span {
+            margin: 10px;
+            padding: 10px;
+            border: 3px solid black;
+            border-radius: 40%;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+﻿.cricket-player-fetch-container {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: azure;
+
+  h1 {
+    text-align: center;
+  }
+
+  .fetch-player-header {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: pink;
+  }
+
+  .fetch-panel {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 6fr 1fr 4fr 12fr;
+
+    button {
+      margin: 5px;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+    }
+
+    input {
+      margin: 5px;
+      border-radius: 5px;
+    }
+  }
+
+  .progress-bar-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+
+    div:first-child {
+      margin: 10px 0px;
+      height: 30px;
+    }
+  }
+
+  .download-button {
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 300px;
+  }
+}

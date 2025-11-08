@@ -1,0 +1,53 @@
+.icc-players {
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 790px;
+  
+    .icc-players-list {
+      display: flex;
+      flex-direction: row;
+      overflow-x: hidden;
+  
+      .icc-player-card {
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        position: relative;
+  
+        h5 {
+          font-weight: 700;
+          font-size: 30px;
+        }
+  
+        img {
+          background-color: silver;
+          margin: 5px;
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+  
+        .rotating-circle {
+          position: absolute;
+          margin-top: -400px;
+          margin-left: 30px;
+        }
+      }
+    }
+
+.slide-from-right {
+    animation: slideRightToLeftICCPlayers 100s 5s linear forwards;
+    width: 44650px;
+    overflow: hidden;
+  }
+
+  @keyframes slideRightToLeftICCPlayers {
+    0% {
+      transform: translateX(0px);
+    }
+
+    100% {
+      transform: translateX(-9065px);
+    }
+  }
+}

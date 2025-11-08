@@ -1,0 +1,64 @@
+.top-5-container{
+    margin: 0px;
+    padding: 10px;
+    background: linear-gradient(white, blue);
+
+    .top-5-header{
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        font-size: 35px;
+        font-weight: bolder;
+        border: 2px solid black;
+        border-radius: 10px;
+        background: linear-gradient(blue, green);
+        color: white;
+    }
+
+    .top-5-row{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin: 10px;
+        background: none;
+
+        .top-player-card{
+            border: 2px solid black;
+            border-radius: 5px;
+            position: relative;
+            background: linear-gradient(yellow, green);
+
+            .name-header{
+                position: absolute;
+                border: 2px solid white;
+                border-radius: 10px;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: black;
+                color: white;
+                margin-top: -50px;
+                margin-left: 10px;
+                padding-left: 5px;
+                width: 250px;
+            }
+
+            .stat-number{
+                position: absolute;
+                font-size: 75px;
+                font-weight: bold;
+                // margin-top: -300px;
+                margin-left: -60px;
+                padding-left: 5px;
+                width: 150px;
+                text-align: center;
+            }
+
+            .team-logo{
+                position: absolute;
+                margin-top: 130px;
+                margin-left: -75px;
+            }
+        }
+
+    }
+}

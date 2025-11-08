@@ -1,0 +1,21 @@
+@keyframes moving-text-footer {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .moving-text-footer {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moving-text 30s linear infinite;
+    border: 2px solid white;
+    font-size: 30px;
+    margin-top: -40px;
+    background-image: url(http://localhost:3013/textures/1002.jpg);
+    background-size: cover;
+    width: fit-content;
+    padding: 0px 10px;
+    z-index: 0;
+    color: white;
+    font-weight: bold;
+  }
