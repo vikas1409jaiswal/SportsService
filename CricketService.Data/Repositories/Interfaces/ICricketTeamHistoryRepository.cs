@@ -7,6 +7,8 @@ namespace CricketService.Data.Repositories.Interfaces
     {
         Task<IEnumerable<CricketTeamHistoryDTO>> GetTeamsHistory(CricketFormat format);
 
-        Task SeedCricketTeamHistoryTable();
+        Task<IEnumerable<object>> GetTeamsPlayers(CricketFormat format, PlayersCategory playersCategory, string teamName);
+
+        Task SeedCricketTeamHistoryTable(CricketFormat format, bool finalRecordOnly = false);
     }
 }

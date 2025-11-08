@@ -8,6 +8,8 @@ namespace CricketService.Data.Repositories.Interfaces
     {
         IEnumerable<Guid> GetAllTeamsUuid();
 
+        IEnumerable<Guid> GetAllTeamsUuidByFormat(CricketFormat format);
+
         CricketTeamInfoResponse GetTeamByUuid(Guid teamUuid);
 
         CricketTeamInfoResponse GetTeamByName(string teamName);

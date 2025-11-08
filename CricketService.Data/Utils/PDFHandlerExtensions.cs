@@ -178,7 +178,7 @@ namespace CricketService.Data.Utils
 
         public static PdfPTable AddBattingScoreCard(
             IEnumerable<BattingScoreboardResponse> battingScoreCard,
-            TotalInningScore totalInningScore,
+            TotalInningScoreResponse totalInningScore,
             string[] fallOfWickets,
             CricketPlayer[] didNotBat,
             MatchTheme theme)
@@ -385,7 +385,7 @@ namespace CricketService.Data.Utils
                 {
                     Dictionary<string, string> teamDetailPairs = new Dictionary<string, string>();
 
-                    var mileStones = teamInfo.T20IRecords.TeamMileStones;
+                    //var mileStones = teamInfo.T20IRecords.TeamMileStones;
 
                     table.AddCell(new PdfPCell(new Phrase("T20 International", new Font(Font.FontFamily.HELVETICA, 16, Font.BOLD, BaseColor.BLACK)))
                     {
@@ -394,14 +394,13 @@ namespace CricketService.Data.Utils
                         HorizontalAlignment = Element.ALIGN_CENTER,
                     });
 
-                    teamDetailPairs.Add("Debut", string.Format("{0} vs {1}", teamInfo.T20IRecords.Debut.Date, teamInfo.T20IRecords.Debut.Opponent));
-                    teamDetailPairs.Add("Most Innings", string.Format("{0} ({1}) Runs", mileStones.MostInnings.Key, mileStones.MostInnings.Value));
-                    teamDetailPairs.Add("Most Runs", string.Format("{0} ({1}) Runs", mileStones.MostRuns.Key, mileStones.MostRuns.Value));
-                    teamDetailPairs.Add("Most Wickets", string.Format("{0} ({1}) Wickets", mileStones.MostWickets.Key, mileStones.MostWickets.Value));
-                    teamDetailPairs.Add("Most Sixes", string.Format("{0} ({1}) Sixes", mileStones.MostSixes.Key, mileStones.MostSixes.Value));
-                    teamDetailPairs.Add("Most Fours", string.Format("{0} ({1}) Fours", mileStones.MostFours.Key, mileStones.MostFours.Value));
-                    teamDetailPairs.Add("Best Bowling", string.Format("{0} ({1})", mileStones.BestBowlingInning.Key, mileStones.BestBowlingInning.Value));
-                    teamDetailPairs.Add("Highest Individual Score", string.Format("{0} ({1})", mileStones.HighestIndividualScore.Key, mileStones.HighestIndividualScore.Value));
+                    //teamDetailPairs.Add("Most Innings", string.Format("{0} ({1}) Runs", mileStones.MostInnings.Key, mileStones.MostInnings.Value));
+                    //teamDetailPairs.Add("Most Runs", string.Format("{0} ({1}) Runs", mileStones.MostRuns.Key, mileStones.MostRuns.Value));
+                    //teamDetailPairs.Add("Most Wickets", string.Format("{0} ({1}) Wickets", mileStones.MostWickets.Key, mileStones.MostWickets.Value));
+                    //teamDetailPairs.Add("Most Sixes", string.Format("{0} ({1}) Sixes", mileStones.MostSixes.Key, mileStones.MostSixes.Value));
+                    //teamDetailPairs.Add("Most Fours", string.Format("{0} ({1}) Fours", mileStones.MostFours.Key, mileStones.MostFours.Value));
+                    //teamDetailPairs.Add("Best Bowling", string.Format("{0} ({1})", mileStones.BestBowlingInning.Key, mileStones.BestBowlingInning.Value));
+                    //teamDetailPairs.Add("Highest Individual Score", string.Format("{0} ({1})", mileStones.HighestIndividualScore.Key, mileStones.HighestIndividualScore.Value));
 
                     foreach (var kvp in teamDetailPairs)
                     {
@@ -422,7 +421,7 @@ namespace CricketService.Data.Utils
                 {
                     Dictionary<string, string> teamDetailPairs = new Dictionary<string, string>();
 
-                    var mileStones = teamInfo.ODIRecords.TeamMileStones;
+                    //var mileStones = teamInfo.ODIRecords.TeamMileStones;
 
                     table.AddCell(new PdfPCell(new Phrase("One-day International", new Font(Font.FontFamily.HELVETICA, 16, Font.BOLD, BaseColor.BLACK)))
                     {
@@ -431,14 +430,14 @@ namespace CricketService.Data.Utils
                         HorizontalAlignment = Element.ALIGN_CENTER,
                     });
 
-                    teamDetailPairs.Add("Debut", string.Format("{0} vs {1}", teamInfo.ODIRecords.Debut.Date, teamInfo.ODIRecords.Debut.Opponent));
-                    teamDetailPairs.Add("Most Innings", string.Format("{0} ({1}) Runs", mileStones.MostInnings.Key, mileStones.MostInnings.Value));
-                    teamDetailPairs.Add("Most Runs", string.Format("{0} ({1}) Runs", mileStones.MostRuns.Key, mileStones.MostRuns.Value));
-                    teamDetailPairs.Add("Most Wickets", string.Format("{0} ({1}) Wickets", mileStones.MostWickets.Key, mileStones.MostWickets.Value));
-                    teamDetailPairs.Add("Most Sixes", string.Format("{0} ({1}) Sixes", mileStones.MostSixes.Key, mileStones.MostSixes.Value));
-                    teamDetailPairs.Add("Most Fours", string.Format("{0} ({1}) Fours", mileStones.MostFours.Key, mileStones.MostFours.Value));
-                    teamDetailPairs.Add("Best Bowling", string.Format("{0} ({1})", mileStones.BestBowlingInning.Key, mileStones.BestBowlingInning.Value));
-                    teamDetailPairs.Add("Highest Individual Score", string.Format("{0} ({1})", mileStones.HighestIndividualScore.Key, mileStones.HighestIndividualScore.Value));
+                    //teamDetailPairs.Add("Debut", string.Format("{0} vs {1}", teamInfo.ODIRecords.Debut.Date, teamInfo.ODIRecords.Debut.Opponent));
+                    //teamDetailPairs.Add("Most Innings", string.Format("{0} ({1}) Runs", mileStones.MostInnings.Key, mileStones.MostInnings.Value));
+                    //teamDetailPairs.Add("Most Runs", string.Format("{0} ({1}) Runs", mileStones.MostRuns.Key, mileStones.MostRuns.Value));
+                    //teamDetailPairs.Add("Most Wickets", string.Format("{0} ({1}) Wickets", mileStones.MostWickets.Key, mileStones.MostWickets.Value));
+                    //teamDetailPairs.Add("Most Sixes", string.Format("{0} ({1}) Sixes", mileStones.MostSixes.Key, mileStones.MostSixes.Value));
+                    //teamDetailPairs.Add("Most Fours", string.Format("{0} ({1}) Fours", mileStones.MostFours.Key, mileStones.MostFours.Value));
+                    //teamDetailPairs.Add("Best Bowling", string.Format("{0} ({1})", mileStones.BestBowlingInning.Key, mileStones.BestBowlingInning.Value));
+                    //teamDetailPairs.Add("Highest Individual Score", string.Format("{0} ({1})", mileStones.HighestIndividualScore.Key, mileStones.HighestIndividualScore.Value));
 
                     foreach (var kvp in teamDetailPairs)
                     {
@@ -459,7 +458,7 @@ namespace CricketService.Data.Utils
                 {
                     Dictionary<string, string> teamDetailPairs = new Dictionary<string, string>();
 
-                    var mileStones = teamInfo.TestRecords.TeamMileStones;
+                    //var mileStones = teamInfo.TestRecords.TeamMileStones;
 
                     table.AddCell(new PdfPCell(new Phrase("Test Cricket", new Font(Font.FontFamily.HELVETICA, 16, Font.BOLD, BaseColor.BLACK)))
                     {
@@ -468,14 +467,14 @@ namespace CricketService.Data.Utils
                         HorizontalAlignment = Element.ALIGN_CENTER,
                     });
 
-                    teamDetailPairs.Add("Test Debut", string.Format("{0} vs {1}", teamInfo.TestRecords.Debut.Date, teamInfo.TestRecords.Debut.Opponent));
-                    teamDetailPairs.Add("Most Innings", string.Format("{0} ({1}) Runs", mileStones.MostInnings.Key, mileStones.MostInnings.Value));
-                    teamDetailPairs.Add("Most Runs", string.Format("{0} ({1}) Runs", mileStones.MostRuns.Key, mileStones.MostRuns.Value));
-                    teamDetailPairs.Add("Most Wickets", string.Format("{0} ({1}) Wickets", mileStones.MostWickets.Key, mileStones.MostWickets.Value));
-                    teamDetailPairs.Add("Most Sixes", string.Format("{0} ({1}) Sixes", mileStones.MostSixes.Key, mileStones.MostSixes.Value));
-                    teamDetailPairs.Add("Most Fours", string.Format("{0} ({1}) Fours", mileStones.MostFours.Key, mileStones.MostFours.Value));
-                    teamDetailPairs.Add("Best Bowling", string.Format("{0} ({1})", mileStones.BestBowlingInning.Key, mileStones.BestBowlingInning.Value));
-                    teamDetailPairs.Add("Highest Individual Score", string.Format("{0} ({1})", mileStones.HighestIndividualScore.Key, mileStones.HighestIndividualScore.Value));
+                    //teamDetailPairs.Add("Test Debut", string.Format("{0} vs {1}", teamInfo.TestRecords.Debut.Date, teamInfo.TestRecords.Debut.Opponent));
+                    //teamDetailPairs.Add("Most Innings", string.Format("{0} ({1}) Runs", mileStones.MostInnings.Key, mileStones.MostInnings.Value));
+                    //teamDetailPairs.Add("Most Runs", string.Format("{0} ({1}) Runs", mileStones.MostRuns.Key, mileStones.MostRuns.Value));
+                    //teamDetailPairs.Add("Most Wickets", string.Format("{0} ({1}) Wickets", mileStones.MostWickets.Key, mileStones.MostWickets.Value));
+                    //teamDetailPairs.Add("Most Sixes", string.Format("{0} ({1}) Sixes", mileStones.MostSixes.Key, mileStones.MostSixes.Value));
+                    //teamDetailPairs.Add("Most Fours", string.Format("{0} ({1}) Fours", mileStones.MostFours.Key, mileStones.MostFours.Value));
+                    //teamDetailPairs.Add("Best Bowling", string.Format("{0} ({1})", mileStones.BestBowlingInning.Key, mileStones.BestBowlingInning.Value));
+                    //teamDetailPairs.Add("Highest Individual Score", string.Format("{0} ({1})", mileStones.HighestIndividualScore.Key, mileStones.HighestIndividualScore.Value));
 
                     foreach (var kvp in teamDetailPairs)
                     {

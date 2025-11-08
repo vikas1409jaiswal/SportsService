@@ -1,174 +1,234 @@
-using CricketService.Data.Entities;
-using CricketService.Domain.Enums;
 using System.Globalization;
+using CricketService.Data.Entities;
+using CricketService.Domain.BaseDomains;
+using CricketService.Domain.Enums;
 
 namespace CricketService.Data.QualityTests
 {
     public class CricketMatchDetailsQualityTest : IClassFixture<TestContext>
     {
+        private const int ODIMatchCount = 4885;
+        private const int WODIMatchCount = 0;
+        private const int T20IMatchCount = 3189;
+        private const int WT20IMatchCount = 2301;
+        private const int TestMatchCount = 2584;
+
         private readonly TestContext context;
-        private readonly Dictionary<CricketFormat, IQueryable<LimitedOverInternationalMatchInfoDTO>> allMatches = new();
+        private readonly Dictionary<CricketFormat, IQueryable<LimitedOverInternationalMatchInfoDTO>> allLoiMatches = new();
+        private readonly IEnumerable<TestCricketMatchInfoDTO> allTestMatches = new List<TestCricketMatchInfoDTO>();
 
         public CricketMatchDetailsQualityTest(TestContext context)
         {
            this.context = context;
 
            var limitedOverInternatonalMatchesInfo = this.context.DbContext.LimitedOverInternationalMatchesInfo;
-           var allODIMatches = limitedOverInternatonalMatchesInfo.Where(x => x.MatchNumber.Contains("ODI no."));
-           var allT20IMatches = limitedOverInternatonalMatchesInfo.Where(x => x.MatchNumber.Contains("T20I no."));
-           allMatches[CricketFormat.ODI] = allODIMatches;
-           allMatches[CricketFormat.T20I] = allT20IMatches;
+           var testMatchesInfo = this.context.DbContext.TestCricketMatchInfo;
+
+           var allODIMatches = limitedOverInternatonalMatchesInfo.Where(x => x.MatchNumber.StartsWith("ODI no."));
+           var allWODIMatches = limitedOverInternatonalMatchesInfo.Where(x => x.MatchNumber.StartsWith("WODI no."));
+           var allT20IMatches = limitedOverInternatonalMatchesInfo.Where(x => x.MatchNumber.StartsWith("T20I no."));
+           var allWT20IMatches = limitedOverInternatonalMatchesInfo.Where(x => x.MatchNumber.StartsWith("WT20I no."));
+
+           allTestMatches = testMatchesInfo.Where(x => x.MatchNumber.StartsWith("Test no. "));
+
+           allLoiMatches[CricketFormat.All] = limitedOverInternatonalMatchesInfo;
+           allLoiMatches[CricketFormat.ODI] = allODIMatches;
+           allLoiMatches[CricketFormat.WODI] = allWODIMatches;
+           allLoiMatches[CricketFormat.T20I] = allT20IMatches;
+           allLoiMatches[CricketFormat.WT20I] = allWT20IMatches;
         }
 
-        [Fact]
-        public void AllMatchesShouldHaveCorrectCount()
+        [Theory]
+        [InlineData(CricketFormat.ODI, ODIMatchCount)]
+        [InlineData(CricketFormat.WODI, WODIMatchCount)]
+        [InlineData(CricketFormat.T20I, T20IMatchCount)]
+        [InlineData(CricketFormat.WT20I, WT20IMatchCount)]
+        [InlineData(CricketFormat.TestCricket, TestMatchCount)]
+        public void AllInternationalMatches_MatchesCount_ShouldHaveCorrectValue(CricketFormat format, int tmc)
         {
-            allMatches[CricketFormat.ODI].Should().HaveCount(4870);
-            allMatches[CricketFormat.T20I].Should().HaveCount(3182);
-        }
-
-        [Fact]
-        public void AllMatchUuidsShouldHaveCorrectFormat()
-        {
-            var loiMatchUuids = allMatches[CricketFormat.ODI]
-                .Concat(allMatches[CricketFormat.T20I]).Select(x => x.Uuid);
-
-            loiMatchUuids.Should().HaveCount(8052);
-
-            foreach (var loiMatchUuid in loiMatchUuids)
+            if (format == CricketFormat.TestCricket)
             {
-                loiMatchUuid.Should().NotBeEmpty();
+                allTestMatches.Should().HaveCount(tmc);
+            }
+            else
+            {
+                allLoiMatches[format].Should().HaveCount(tmc);
             }
         }
 
         [Fact]
-        public void AllMatchTitlesShouldHaveCorrectFormat()
+        public void AllInternationalMatches_MatchUuids_ShouldHaveCorrectFormat()
         {
-            var odiMatchTitles = allMatches[CricketFormat.ODI].Select(x => x.MatchTitle);
-            var t20iMatchTitles = allMatches[CricketFormat.T20I].Select(x => x.MatchTitle);
+            var loiMatchUuids = allLoiMatches[CricketFormat.All]
+                .Select(x => x.Uuid);
 
-            foreach (var loiMatchTitle in odiMatchTitles.Concat(t20iMatchTitles))
+            var testMatchUuids = allTestMatches.Select(x => x.Uuid);
+
+            var allUuids = loiMatchUuids.Concat(testMatchUuids);
+
+            var totalIntMatchCount = ODIMatchCount + WODIMatchCount + T20IMatchCount + WT20IMatchCount + TestMatchCount;
+
+            allUuids.Should().HaveCount(totalIntMatchCount);
+            allUuids.Distinct().Should().HaveCount(totalIntMatchCount);
+
+            foreach (var matchUuid in allUuids)
             {
-                loiMatchTitle.Should().NotBeNullOrEmpty();
-
-                loiMatchTitle.Should().Contain(" vs ");
-                loiMatchTitle.Split(" vs ").Should().HaveCount(2);
+                matchUuid.Should().NotBeEmpty();
             }
         }
 
         [Fact]
-        public void AllMatchNumbersShouldHaveCorrectFormat()
+        public void AllInternationalMatches_MatchTitles_ShouldHaveCorrectFormat()
         {
-            var odiMatchNumbers = allMatches[CricketFormat.ODI].Select(x => x.MatchNumber);
-            var t20iMatchNumbers = allMatches[CricketFormat.T20I].Select(x => x.MatchNumber);
+            var loiMatchTitles = allLoiMatches[CricketFormat.All].Select(x => x.MatchTitle);
+            var testMatchTitles = allTestMatches.Select(x => x.MatchTitle);
 
-            foreach (var odiMatchNumber in odiMatchNumbers)
+            var allMatchTitles = loiMatchTitles.Concat(testMatchTitles);
+
+            foreach (var matchTitle in allMatchTitles)
             {
-                odiMatchNumber.Should().NotBeNullOrEmpty();
+                matchTitle.Should().NotBeNullOrEmpty();
 
-                var words = odiMatchNumber.Split(" ");
-                words.ElementAt(0).Should().Be("ODI");
-                words.ElementAt(1).Should().Be("no.");
-                words.ElementAt(2).Invoking(s => int.Parse(s))
-                     .Should().NotThrow<FormatException>();
-            }
-
-            foreach (var t20iMatchNumber in t20iMatchNumbers)
-            {
-                t20iMatchNumber.Should().NotBeNullOrEmpty();
-
-                var words = t20iMatchNumber.Split(" ");
-                words.ElementAt(0).Should().Be("T20I");
-                words.ElementAt(1).Should().Be("no.");
-                words.ElementAt(2).Invoking(s => int.Parse(s))
-                     .Should().NotThrow<FormatException>();
-            }
-        }
-
-        [Fact]
-        public void AllSeasonsShouldHaveCorrectFormat()
-        {
-            var odiSeasons = allMatches[CricketFormat.ODI].Select(x => x.Season);
-            var t20iSeasons = allMatches[CricketFormat.T20I].Select(x => x.Season);
-
-            foreach (var odiSeason in odiSeasons)
-            {
-                odiSeason.Should().NotBeNullOrEmpty();
-
-                if (odiSeason.Length == 4)
+                matchTitle.Should().Contain(" vs ");
+                var teamNames = matchTitle.Split(" vs ");
+                teamNames.Should().HaveCount(2);
+                foreach (var teamName in teamNames)
                 {
-                    odiSeason.Invoking(s => int.Parse(s))
-                     .Should().NotThrow<FormatException>();
+                    teamName.Should().NotStartWith(" ");
+                    teamName.Should().NotEndWith(" ");
                 }
-                else if (odiSeason.Length == 7)
+            }
+
+            var loiWomenMatchTitles = allLoiMatches[CricketFormat.WT20I]
+                .Concat(allLoiMatches[CricketFormat.WODI])
+                .Select(x => x.MatchTitle);
+
+            foreach (var loiWomenMatchTitle in loiWomenMatchTitles)
+            {
+                var teamNames = loiWomenMatchTitle.Split(" vs ");
+
+                foreach (var teamName in teamNames)
                 {
-                    odiSeason.Should().Contain("/");
-                    var odiSeasonArr = odiSeason.Split("/");
-                    odiSeasonArr[0].Length.Should().Be(4);
-                    odiSeasonArr[0].Invoking(s => int.Parse(s))
+                    teamName.Should().EndWith(" Women");
+                    teamName.Replace(" Women", string.Empty).Length.Should().BeGreaterThan(3);
+                }
+            }
+        }
+
+        [Theory]
+        [InlineData(CricketFormat.ODI, ODIMatchCount)]
+        [InlineData(CricketFormat.WODI, WODIMatchCount)]
+        [InlineData(CricketFormat.T20I, T20IMatchCount)]
+        [InlineData(CricketFormat.WT20I, WT20IMatchCount)]
+        [InlineData(CricketFormat.TestCricket, TestMatchCount)]
+        public void AllInternationalMatches_MatchNumbers_ShouldHaveCorrectFormat(CricketFormat format, int tmc)
+        {
+            IEnumerable<string> allMatchNumbers = new List<string>();
+
+            if (format == CricketFormat.TestCricket)
+            {
+               allMatchNumbers = allTestMatches.Select(x => x.MatchNumber);
+            }
+            else
+            {
+               allMatchNumbers = allLoiMatches[format].Select(x => x.MatchNumber);
+            }
+
+            var modFormat = format.ToString().Replace("TestCricket", "Test");
+
+            foreach (var matchNumber in allMatchNumbers)
+            {
+                matchNumber.Should().NotBeNullOrEmpty();
+
+                matchNumber.Should().StartWith($"{modFormat} no. ");
+
+                var matchNumberInt = matchNumber.Replace($"{modFormat} no. ", string.Empty);
+
+                matchNumberInt
+                    .Invoking(s => int.Parse(s))
+                    .Should().NotThrow<FormatException>();
+                int.Parse(matchNumberInt).Should().BeInRange(1, tmc);
+            }
+
+            allMatchNumbers.Should().HaveCount(allMatchNumbers.Distinct().Count());
+        }
+
+        [Theory]
+        [InlineData(CricketFormat.ODI, 1970, 2025)]
+        [InlineData(CricketFormat.WODI, 0, 0)]
+        [InlineData(CricketFormat.T20I, 2004, 2025)]
+        [InlineData(CricketFormat.WT20I, 2004, 2025)]
+        [InlineData(CricketFormat.TestCricket, 1876, 2025)]
+        public void AllInternationalMatches_Seasons_ShouldHaveCorrectFormat(CricketFormat format, int startYear, int endYear)
+        {
+            IEnumerable<string> allSeasons = new List<string>();
+
+            if (format == CricketFormat.TestCricket)
+            {
+                allSeasons = allTestMatches.Select(x => x.Season);
+            }
+            else
+            {
+                allSeasons = allLoiMatches[format].Select(x => x.Season);
+            }
+
+            foreach (var season in allSeasons)
+            {
+                season.Should().NotBeNullOrEmpty();
+
+                if (season.Length == 4)
+                {
+                    season.Invoking(s => int.Parse(s))
                      .Should().NotThrow<FormatException>();
-                    int.Parse(odiSeasonArr[0]).Should().BeInRange(1970, 2024);
-                    odiSeasonArr[1].Length.Should().Be(2);
-                    odiSeasonArr[1].Invoking(s => int.Parse(s))
+                    int.Parse(season).Should().BeInRange(startYear, endYear);
+                }
+                else if (season.Length == 7)
+                {
+                    season.Should().Contain("/");
+                    var loiSeasonArr = season.Split("/");
+                    loiSeasonArr[0].Length.Should().Be(4);
+                    loiSeasonArr[0].Invoking(s => int.Parse(s))
+                     .Should().NotThrow<FormatException>();
+                    int.Parse(loiSeasonArr[0]).Should().BeInRange(startYear, endYear);
+                    loiSeasonArr[1].Length.Should().Be(2);
+                    loiSeasonArr[1].Invoking(s => int.Parse(s))
                      .Should().NotThrow<FormatException>();
                 }
                 else
                 {
-                    throw new FormatException($"Invalid season type for {odiSeason}");
+                    throw new FormatException($"Invalid season type for {season}");
                 }
             }
 
-            foreach (var t20iSeason in t20iSeasons)
-            {
-                t20iSeason.Should().NotBeNullOrEmpty();
-
-                if (t20iSeason.Length == 4)
-                {
-                    t20iSeason.Invoking(s => int.Parse(s))
-                     .Should().NotThrow<FormatException>();
-                }
-                else if (t20iSeason.Length == 7)
-                {
-                    t20iSeason.Should().Contain("/");
-                    var t20iSeasonArr = t20iSeason.Split("/");
-                    t20iSeasonArr[0].Length.Should().Be(4);
-                    t20iSeasonArr[0].Invoking(s => int.Parse(s))
-                     .Should().NotThrow<FormatException>();
-                    int.Parse(t20iSeasonArr[0]).Should().BeInRange(2004, 2024);
-                    t20iSeasonArr[1].Length.Should().Be(2);
-                    t20iSeasonArr[1].Invoking(s => int.Parse(s))
-                     .Should().NotThrow<FormatException>();
-                }
-                else
-                {
-                    throw new FormatException($"Invalid season type for {t20iSeason}");
-                }
-            }
         }
 
+        #region Check Match Types
         [Fact]
-        public void AllMatchTypesShouldHaveCorrectFormatAndValue()
+        public void ODI_AllInternationalMatches_MatchTypes_ShouldHaveCorrectFormatAndValue()
         {
-            var odiMatchTypes = allMatches[CricketFormat.ODI].Select(x => x.MatchType);
+            var odiMatchTypes = allLoiMatches[CricketFormat.ODI].Select(x => x.MatchType);
 
             foreach (var odiMatchType in odiMatchTypes)
             {
                 odiMatchType.Should().NotBeNullOrEmpty();
             }
 
-            odiMatchTypes.Count(x => x.EndsWith("(35-over match)")).Should().Be(10);
-            odiMatchTypes.Count(x => x.EndsWith("(40-over match)")).Should().Be(61);
-            odiMatchTypes.Count(x => x.EndsWith("(45-over match)")).Should().Be(49);
-            odiMatchTypes.Count(x => x.EndsWith("(50-over match)")).Should().Be(4621);
-            odiMatchTypes.Count(x => x.EndsWith("(55-over match)")).Should().Be(73);
-            odiMatchTypes.Count(x => x.EndsWith("(60-over match)")).Should().Be(56);
+            odiMatchTypes.Count(x => x.Equals("day (35-over match)")).Should().Be(10);
+            odiMatchTypes.Count(x => x.Equals("day (40-over match)")).Should().Be(61);
+            odiMatchTypes.Count(x => x.Equals("day (45-over match)")).Should().Be(49);
+            odiMatchTypes.Count(x => x.Equals("day (55-over match)")).Should().Be(73);
+            odiMatchTypes.Count(x => x.Equals("day (60-over match)")).Should().Be(56);
 
-            odiMatchTypes.Count(x => x.StartsWith("day ")).Should().Be(2972);
-            odiMatchTypes.Count(x => x.StartsWith("daynight ")).Should().Be(1860);
-            odiMatchTypes.Count(x => x.StartsWith("night ")).Should().Be(21);
-            //Need to check why 17 matches has no prefix
+            odiMatchTypes.Count(x => x.Equals(" (50-over match)")).Should().Be(17);
+            odiMatchTypes.Count(x => x.Equals("day (50-over match)")).Should().Be(2736);
+            odiMatchTypes.Count(x => x.Equals("daynight (50-over match)")).Should().Be(1862);
+            odiMatchTypes.Count(x => x.Equals("night (50-over match)")).Should().Be(21);
+        }
 
-            var t20iMatchTypes = allMatches[CricketFormat.T20I].Select(x => x.MatchType);
+        [Fact]
+        public void T20I_AllInternationalMatches_MatchTypes_ShouldHaveCorrectFormatAndValue()
+        {
+            var t20iMatchTypes = allLoiMatches[CricketFormat.T20I].Select(x => x.MatchType);
 
             foreach (var t20iMatchType in t20iMatchTypes)
             {
@@ -176,43 +236,81 @@ namespace CricketService.Data.QualityTests
             }
 
             t20iMatchTypes.Count(x => x.Equals(" (20-over match)")).Should().Be(1);
-            t20iMatchTypes.Count(x => x.Equals("day (20-over match)")).Should().Be(2280);
-            t20iMatchTypes.Count(x => x.Equals("night (20-over match)")).Should().Be(725);
+            t20iMatchTypes.Count(x => x.Equals("day (20-over match)")).Should().Be(2284);
+            t20iMatchTypes.Count(x => x.Equals("night (20-over match)")).Should().Be(728);
             t20iMatchTypes.Count(x => x.Equals("daynight (20-over match)")).Should().Be(176);
         }
 
         [Fact]
-        public void AllMatchDatesShouldHaveCorrectFormatAndValue()
+        public void WT20I_AllInternationalMatches_MatchTypes_ShouldHaveCorrectFormatAndValue()
         {
-            var odiMatchDates = allMatches[CricketFormat.ODI].Select(x => x.MatchDate);
+            var t20iMatchTypes = allLoiMatches[CricketFormat.WT20I].Select(x => x.MatchType);
 
-            foreach (var odiMatchDate in odiMatchDates)
+            foreach (var t20iMatchType in t20iMatchTypes)
             {
-                odiMatchDate.Should().NotBeNullOrEmpty();
-
-                DateTime.ParseExact(odiMatchDate, "MMM d yyyy", CultureInfo.InvariantCulture)
-                       .Should()
-                       .BeOnOrBefore(DateTime.Today)
-                       .And.BeAfter(new DateTime(1971, 1, 4));
+                t20iMatchType.Should().NotBeNullOrEmpty();
             }
 
-            var t20iMatchDates = allMatches[CricketFormat.T20I].Select(x => x.MatchDate);
-
-            foreach (var t20iMatchDate in t20iMatchDates)
-            {
-                t20iMatchDate.Should().NotBeNullOrEmpty();
-
-                DateTime.ParseExact(t20iMatchDate, "MMM d yyyy", CultureInfo.InvariantCulture)
-                       .Should()
-                       .BeOnOrBefore(DateTime.Today)
-                       .And.BeAfter(new DateTime(2005, 2, 16));
-            }
+            t20iMatchTypes.Count(x => x.Equals("day (20-over match)")).Should().Be(1943);
+            t20iMatchTypes.Count(x => x.Equals("night (20-over match)")).Should().Be(239);
+            t20iMatchTypes.Count(x => x.Equals("daynight (20-over match)")).Should().Be(119);
         }
 
         [Fact]
-        public void AllSeriesesShouldHaveCorrectFormatAndValue()
+        public void TestCricket_AllInternationalMatches_MatchTypes_ShouldHaveCorrectFormatAndValue()
         {
-            var odiSerieses = allMatches[CricketFormat.ODI].Select(x => x.Series);
+            var testMatchTypes = allTestMatches.Select(x => x.MatchType);
+
+            foreach (var testMatchType in testMatchTypes)
+            {
+                testMatchType.Should().NotBeNullOrEmpty();
+            }
+
+            testMatchTypes.Count(x => x.Equals("day (0-day match)")).Should().Be(100);
+            testMatchTypes.Count(x => x.Equals("day (3-day match)")).Should().Be(121);
+            testMatchTypes.Count(x => x.Equals("day (4-day match)")).Should().Be(134);
+            testMatchTypes.Count(x => x.Equals("day (6-day match)")).Should().Be(78);
+            testMatchTypes.Count(x => x.Equals("day (5-day match)")).Should().Be(2120);
+            testMatchTypes.Count(x => x.Equals("daynight (5-day match)")).Should().Be(22);
+            testMatchTypes.Count(x => x.Equals("daynight (4-day match)")).Should().Be(1);
+            testMatchTypes.Count(x => x.Equals(" (5-day match)")).Should().Be(8);
+        }
+        #endregion
+
+        [Theory]
+        [InlineData(CricketFormat.ODI, new int[] { 1971, 1, 5 })]
+        [InlineData(CricketFormat.WODI, new int[] { 2025, 5, 31 })]
+        [InlineData(CricketFormat.T20I, new int[] { 2005, 2, 17 })]
+        [InlineData(CricketFormat.WT20I, new int[] { 2004, 8, 5 })]
+        [InlineData(CricketFormat.TestCricket, new int[] { 1877, 3, 15 })]
+        public void AllInternationalMatches_MatchDates_ShouldHaveCorrectFormatAndValue(CricketFormat format, int[] firstMatchDate)
+        {
+            IEnumerable<string> allMatchDates = new List<string>();
+
+            if (format == CricketFormat.TestCricket)
+            {
+                allMatchDates = allTestMatches.Select(x => x.MatchDate);
+            }
+            else
+            {
+                allMatchDates = allLoiMatches[format].Select(x => x.MatchDate);
+            }
+
+            foreach (var matchDate in allMatchDates)
+            {
+                matchDate.Should().NotBeNullOrEmpty();
+
+                DateTime.ParseExact(matchDate, "MMM d yyyy", CultureInfo.InvariantCulture)
+                       .Should()
+                       .BeOnOrBefore(DateTime.Today)
+                       .And.BeOnOrAfter(new DateTime(firstMatchDate[0], firstMatchDate[1], firstMatchDate[2]));
+            }
+        }
+
+        [Fact] //Do it later
+        public void AllInternationalMatches_Serieses_ShouldHaveCorrectFormatAndValue()
+        {
+            var odiSerieses = allLoiMatches[CricketFormat.ODI].Select(x => x.Series);
 
             foreach (var odiSeries in odiSerieses)
             {
@@ -227,9 +325,9 @@ namespace CricketService.Data.QualityTests
             odiSerieses.Count(x => x.Equals("ICC Champions Trophy")).Should().Be(110);
             odiSerieses.Count(x => x.Equals("ICC World Cup")).Should().Be(145);
             odiSerieses.Count(x => x.Equals("Commonwealth Bank Series")).Should().Be(43);
-            odiSerieses.Count(x => x.Contains(" tour of ")).Should().Be(2477);
+            odiSerieses.Count(x => x.Contains(" tour of ")).Should().Be(2483);
 
-            var t20iSerieses = allMatches[CricketFormat.T20I].Select(x => x.Series);
+            var t20iSerieses = allLoiMatches[CricketFormat.T20I].Select(x => x.Series);
 
             foreach (var t20iSeries in t20iSerieses)
             {
@@ -239,108 +337,127 @@ namespace CricketService.Data.QualityTests
             t20iSerieses.Count(x => x.Equals("ICC Men's T20 World Cup")).Should().Be(139);
             t20iSerieses.Count(x => x.Equals("ICC World Twenty20")).Should().Be(108);
             t20iSerieses.Count(x => x.Equals("ICC Men's T20 World Cup Qualifier")).Should().Be(71);
-            t20iSerieses.Count(x => x.Contains(" tour of ")).Should().Be(1171);
+            t20iSerieses.Count(x => x.Contains(" tour of ")).Should().Be(1178);
         }
 
-        [Fact]
-        public void AllPlayerOfTheMatchsShouldHaveCorrectFormatAndValue()
+        [Theory]
+        [InlineData(CricketFormat.ODI, 4559, ODIMatchCount)]
+        [InlineData(CricketFormat.WODI, 0, WODIMatchCount)]
+        [InlineData(CricketFormat.T20I, 2859, T20IMatchCount)]
+        [InlineData(CricketFormat.WT20I, 1921, WT20IMatchCount)]
+        [InlineData(CricketFormat.TestCricket, 1680, TestMatchCount)]
+        public void AllInternationalMatches_PlayerOfTheMatchs_ShouldHaveCorrectFormatAndValue(CricketFormat format, int potmCount, int tcm)
         {
-            var odiPotms = allMatches[CricketFormat.ODI].Select(x => x.PlayerOfTheMatch);
-            var notNullPotmCount = 4545;
+            IEnumerable<PlayerOfTheMatch> allPotms = new List<PlayerOfTheMatch>();
 
-            odiPotms.Count(x => x == null).Should().Be(325);
-            odiPotms.Count(x => x != null).Should().Be(notNullPotmCount);
-            odiPotms.Count(x => x != null
+            if (format == CricketFormat.TestCricket)
+            {
+               allPotms = allTestMatches.Select(x => x.PlayerOfTheMatch);
+            }
+            else
+            {
+                allPotms = allLoiMatches[format].Select(x => x.PlayerOfTheMatch);
+            }
+
+            allPotms.Count(x => x == null).Should().Be(tcm - potmCount);
+            allPotms.Count(x => x != null).Should().Be(potmCount);
+            allPotms.Count(x => x != null
                       && !string.IsNullOrEmpty(x.Href)
                       && x.Href.StartsWith("/cricketers/")
-                      && !string.IsNullOrEmpty(x.PlayerName)).Should().Be(notNullPotmCount);
-
-            var t20iPotms = allMatches[CricketFormat.T20I].Select(x => x.PlayerOfTheMatch);
-            var notNullPotmCount2 = 2852;
-
-            t20iPotms.Count(x => x == null).Should().Be(330);
-            t20iPotms.Count(x => x != null).Should().Be(notNullPotmCount2);
-            t20iPotms.Count(x => x != null
-                      && !string.IsNullOrEmpty(x.Href)
-                      && x.Href.StartsWith("/cricketers/")
-                      && !string.IsNullOrEmpty(x.PlayerName)).Should().Be(notNullPotmCount2);
+                      && !string.IsNullOrEmpty(x.PlayerName)).Should().Be(potmCount);
         }
 
-        [Fact]
-        public void AllTossWinnersShouldHaveCorrectFormatAndValue()
+        [Theory]
+        [InlineData(CricketFormat.ODI, 29, 0)]
+        [InlineData(CricketFormat.WODI, 0, 0)]
+        [InlineData(CricketFormat.T20I, 108, 1)]
+        [InlineData(CricketFormat.WT20I, 91, 2)]
+        [InlineData(CricketFormat.TestCricket, 12, 0)]
+        public void AllInternationalMatches_TossWinners_ShouldHaveCorrectFormatAndValue(CricketFormat format, int distinctTeamsCount, int noTossCount)
         {
-            var odiTossWinners = allMatches[CricketFormat.ODI].Select(x => x.TossWinner);
+            IEnumerable<string> allTossWinners = new List<string>();
 
-            foreach (var odiTossWinner in odiTossWinners)
+            if (format == CricketFormat.TestCricket)
             {
-                odiTossWinner.Should().NotBeNullOrEmpty();
+               allTossWinners = allTestMatches.Select(x => x.TossWinner);
+            }
+            else
+            {
+                allTossWinners = allLoiMatches[format].Select(x => x.TossWinner);
             }
 
-            odiTossWinners.Distinct().Count().Should().Be(29);
-
-            var t20iTossWinners = allMatches[CricketFormat.T20I].Select(x => x.TossWinner);
-
-            foreach (var t20iTossWinner in t20iTossWinners)
+            foreach (var tossWinner in allTossWinners)
             {
-                t20iTossWinner.Should().NotBeNullOrEmpty();
+                tossWinner.Should().NotBeNullOrEmpty();
+                tossWinner.Should().NotStartWith(" ");
+                tossWinner.Should().NotEndWith(" ");
             }
 
-            t20iTossWinners.Distinct().Count().Should().Be(109);
+            allTossWinners.Count(x => x.Contains("no toss")).Should().Be(noTossCount);
+            allTossWinners.Where(x => !x.Contains("no toss")).Distinct().Should().HaveCount(distinctTeamsCount);
         }
 
-        [Fact]
-        public void AllTossDecisionsShouldHaveCorrectFormatAndValue()
+        [Theory]
+        [InlineData(CricketFormat.ODI, 2443, 2438, 0)]
+        [InlineData(CricketFormat.WODI, 0, 0, 0)]
+        [InlineData(CricketFormat.T20I, 1494, 1684, 1)]
+        [InlineData(CricketFormat.WT20I, 1147, 1149, 2)]
+        [InlineData(CricketFormat.TestCricket, 1870, 714, 0)]
+        public void AllInternationalMatches_TossDecisions_ShouldHaveCorrectFormatAndValue(CricketFormat format, int eleBatFirstCount, int eleFieldFirstCount, int noTossCount)
         {
-            var odiTossDecisions = allMatches[CricketFormat.ODI].Select(x => x.TossDecision);
 
-            foreach (var odiTossDecision in odiTossDecisions)
+            IEnumerable<string> allTossDecisions = new List<string>();
+
+            if (format == CricketFormat.TestCricket)
             {
-                odiTossDecision.Should().NotBeNullOrEmpty();
+                allTossDecisions = allTestMatches.Select(x => x.TossDecision);
+            }
+            else
+            {
+                allTossDecisions = allLoiMatches[format].Select(x => x.TossDecision);
             }
 
-            odiTossDecisions.Count(x => x.EndsWith(", elected to field first")).Should().Be(2428);
-            odiTossDecisions.Count(x => x.EndsWith(", elected to bat first")).Should().Be(2438);
-
-            var t20iTossDecisions = allMatches[CricketFormat.T20I].Select(x => x.TossDecision);
-
-            foreach (var t20iTossDecision in t20iTossDecisions)
+            foreach (var tossDecision in allTossDecisions)
             {
-                t20iTossDecision.Should().NotBeNullOrEmpty();
+                tossDecision.Should().NotBeNullOrEmpty();
             }
 
-            t20iTossDecisions.Count(x => x.EndsWith(", elected to field first")).Should().Be(1680);
-            t20iTossDecisions.Count(x => x.EndsWith(", elected to bat first")).Should().Be(1491);
-            t20iTossDecisions.Count(x => x.Equals("no toss")).Should().Be(1);
+            allTossDecisions.Count(x => x.EndsWith(", elected to field first")).Should().Be(eleFieldFirstCount);
+            allTossDecisions.Count(x => x.EndsWith(", elected to bat first")).Should().Be(eleBatFirstCount);
+            allTossDecisions.Count(x => x.Equals("no toss")).Should().Be(noTossCount);
         }
 
-        [Fact]
-        public void AllVenuesShouldHaveCorrectFormatAndValue()
+        [Theory]
+        [InlineData(CricketFormat.ODI, 282)]
+        [InlineData(CricketFormat.WODI, 0)]
+        [InlineData(CricketFormat.T20I, 251)]
+        [InlineData(CricketFormat.WT20I, 282)]
+        [InlineData(CricketFormat.TestCricket, 162)]
+        public void AllInternationalMatches_Venues_ShouldHaveCorrectFormatAndValue(CricketFormat format, int distinctVenueCounts)
         {
-            var odiVenues = allMatches[CricketFormat.ODI].Select(x => x.Venue);
+            IEnumerable<string> allVenues = new List<string>();
 
-            foreach (var odiVenue in odiVenues)
+            if (format == CricketFormat.TestCricket)
             {
-                odiVenue.Should().NotBeNullOrEmpty();
+                allVenues = allTestMatches.Select(x => x.Venue);
+            }
+            else
+            {
+                allVenues = allLoiMatches[format].Select(x => x.Venue);
             }
 
-            odiVenues.Distinct().Should().HaveCount(282);
-
-            var t20iVenues = allMatches[CricketFormat.T20I].Select(x => x.Venue);
-
-            foreach (var t20iVenue in t20iVenues)
+            foreach (var venue in allVenues)
             {
-                t20iVenue.Should().NotBeNullOrEmpty();
+                venue.Should().NotBeNullOrEmpty();
             }
 
-            t20iVenues.Distinct().Should().HaveCount(249);
-
-            odiVenues.Concat(t20iVenues).Distinct().Should().HaveCount(392);
+            allVenues.Distinct().Should().HaveCount(distinctVenueCounts);
         }
 
-        [Fact]
+        [Fact] //Do it later
         public void AllSeriesResultsShouldHaveCorrectFormatAndValue()
         {
-            var odiSeriesResults = allMatches[CricketFormat.ODI].Select(x => x.SeriesResult);
+            var odiSeriesResults = allLoiMatches[CricketFormat.ODI].Select(x => x.SeriesResult);
 
             foreach (var odiSeriesResult in odiSeriesResults)
             {
@@ -350,7 +467,7 @@ namespace CricketService.Data.QualityTests
             odiSeriesResults.Count(x => x == string.Empty).Should().Be(2019);
             odiSeriesResults.Count(x => x.Length > 0).Should().Be(2851);
 
-            var t20iSeriesResults = allMatches[CricketFormat.T20I].Select(x => x.SeriesResult);
+            var t20iSeriesResults = allLoiMatches[CricketFormat.T20I].Select(x => x.SeriesResult);
 
             foreach (var t20iSeriesResult in t20iSeriesResults)
             {
@@ -361,10 +478,10 @@ namespace CricketService.Data.QualityTests
             t20iSeriesResults.Count(x => x.Length > 0).Should().Be(1416);
         }
 
-        [Fact]
+        [Fact] //Do it later
         public void AllTvUmpiresShouldHaveCorrectFormatAndValue()
         {
-            var odiTvUmpires = allMatches[CricketFormat.ODI].Select(x => x.TvUmpire);
+            var odiTvUmpires = allLoiMatches[CricketFormat.ODI].Select(x => x.TvUmpire);
 
             foreach (var odiTvUmpire in odiTvUmpires)
             {
@@ -374,7 +491,7 @@ namespace CricketService.Data.QualityTests
             odiTvUmpires.Count(x => x == string.Empty).Should().Be(1388);
             odiTvUmpires.Count(x => x.Length > 0).Should().Be(3482);
 
-            var t20iTvUmpires = allMatches[CricketFormat.T20I].Select(x => x.TvUmpire);
+            var t20iTvUmpires = allLoiMatches[CricketFormat.T20I].Select(x => x.TvUmpire);
 
             foreach (var t20iTvUmpire in t20iTvUmpires)
             {
@@ -386,40 +503,44 @@ namespace CricketService.Data.QualityTests
         }
 
         #region Team Scoreboard Details
-        [Fact]
-        public void ODI_AllTeamsShouldHaveCorrectFormatAndValue()
+        [Theory]
+        [InlineData(CricketFormat.ODI, ODIMatchCount)]
+        [InlineData(CricketFormat.WODI, WODIMatchCount)]
+        [InlineData(CricketFormat.T20I, T20IMatchCount)]
+        [InlineData(CricketFormat.WT20I, WT20IMatchCount)]
+        public void AllInternationalMatches_Teams_ShouldHaveCorrectFormatAndValue(CricketFormat format, int tmc)
         {
-            var odiTeams1 = allMatches[CricketFormat.ODI].Select(x => x.Team1);
-            var odiTeams2 = allMatches[CricketFormat.ODI].Select(x => x.Team2);
-            var odiTeams = odiTeams1.Concat(odiTeams2);
+            var allTeams1 = allLoiMatches[format].Select(x => x.Team1);
+            var allTeams2 = allLoiMatches[format].Select(x => x.Team2);
+            var allTeams = allTeams1.Concat(allTeams2);
 
-            foreach (var odiTeam in odiTeams)
+            foreach (var team in allTeams)
             {
-                odiTeam.Should().NotBeNull();
+                team.Should().NotBeNull();
             }
 
-            odiTeams.Should().HaveCount(9740);
+            allTeams.Should().HaveCount(2 * tmc);
         }
 
         [Fact]
-        public void T20I_AllTeamsShouldHaveCorrectFormatAndValue()
+        public void TestCricket_AllInternationalMatches_Teams_ShouldHaveCorrectFormatAndValue()
         {
-            var t20iTeams1 = allMatches[CricketFormat.T20I].Select(x => x.Team1);
-            var t20iTeams2 = allMatches[CricketFormat.T20I].Select(x => x.Team2);
-            var t20iTeams = t20iTeams1.Concat(t20iTeams2);
+            var allTeams1 = allTestMatches.Select(x => x.Team1);
+            var allTeams2 = allTestMatches.Select(x => x.Team2);
+            var allTeams = allTeams1.Concat(allTeams2);
 
-            foreach (var t20iTeam in t20iTeams)
+            foreach (var team in allTeams)
             {
-                t20iTeam.Should().NotBeNull();
+                team.Should().NotBeNull();
             }
 
-            t20iTeams.Should().HaveCount(6364);
+            allTeams.Should().HaveCount(2 * TestMatchCount);
         }
 
         [Fact]
         public void ODI_AllTeam_TeamsShouldHaveCorrectFormatAndValue()
         {
-            var allOdiMatches = allMatches[CricketFormat.ODI].ToList();
+            var allOdiMatches = allLoiMatches[CricketFormat.ODI].ToList();
             var odiTeam1Teams = allOdiMatches.Select(x => x.Team1.Team);
             var odiTeam2Teams = allOdiMatches.Select(x => x.Team2.Team);
             var odiTeamTeams = odiTeam1Teams.Concat(odiTeam2Teams);
@@ -440,7 +561,7 @@ namespace CricketService.Data.QualityTests
         [Fact]
         public void T20I_AllTeam_TeamsShouldHaveCorrectFormatAndValue()
         {
-            var allT20iMatches = allMatches[CricketFormat.T20I].ToList();
+            var allT20iMatches = allLoiMatches[CricketFormat.T20I].ToList();
             var t20iTeam1Teams = allT20iMatches.Select(x => x.Team1.Team);
             var t20iTeam2Teams = allT20iMatches.Select(x => x.Team2.Team);
             var t20iTeamTeams = t20iTeam1Teams.Concat(t20iTeam2Teams);
@@ -461,7 +582,7 @@ namespace CricketService.Data.QualityTests
         [Fact]
         public void ODI_AllTeam_BattingScoreboardsShouldHaveCorrectFormatAndValue()
         {
-            var allOdiMatches = allMatches[CricketFormat.ODI].ToList();
+            var allOdiMatches = allLoiMatches[CricketFormat.ODI].ToList();
             var odiTeam1BSBs = allOdiMatches.Select(x => x.Team1.BattingScoreCard);
             var odiTeam2BSBs = allOdiMatches.Select(x => x.Team2.BattingScoreCard);
             var odiTeamBSBs = odiTeam1BSBs.Concat(odiTeam2BSBs);
@@ -470,13 +591,13 @@ namespace CricketService.Data.QualityTests
             odiTeamBSBs.Count(x => x.Count > 12).Should().Be(0);
             odiTeamBSBs.Count(x => x.Count == 12).Should().Be(3);
             odiTeam1BSBs.Count(x => x.Count == 0).Should().Be(6);
-            odiTeam2BSBs.Count(x => x.Count == 0).Should().Be(104);
+            odiTeam2BSBs.Count(x => x.Count == 0).Should().Be(105);
         }
 
         [Fact]
         public void T20I_AllTeam_BattingScoreboardsShouldHaveCorrectFormatAndValue()
         {
-            var allT20iMatches = allMatches[CricketFormat.T20I].ToList();
+            var allT20iMatches = allLoiMatches[CricketFormat.T20I].ToList();
             var t20iTeam1BSBs = allT20iMatches.Select(x => x.Team1.BattingScoreCard);
             var t20iTeam2BSBs = allT20iMatches.Select(x => x.Team2.BattingScoreCard);
             var t20iTeamBSBs = t20iTeam1BSBs.Concat(t20iTeam2BSBs);
@@ -490,10 +611,12 @@ namespace CricketService.Data.QualityTests
 
         [Theory]
         [InlineData(CricketFormat.ODI)]
+        [InlineData(CricketFormat.WODI)]
         [InlineData(CricketFormat.T20I)]
+        [InlineData(CricketFormat.WT20I)]
         public void AllTeam_BattingScoreboard_PlayerNamesShouldHaveCorrectFormatAndValue(CricketFormat format)
         {
-            var allfilteredMatches = allMatches[format].ToList();
+            var allfilteredMatches = allLoiMatches[format].ToList();
             var matchTeam1BSBs = allfilteredMatches.Select(x => x.Team1.BattingScoreCard);
             var matchTeam2BSBs = allfilteredMatches.Select(x => x.Team2.BattingScoreCard);
             var matchTeamBSBs = matchTeam1BSBs.Concat(matchTeam2BSBs);
@@ -515,7 +638,7 @@ namespace CricketService.Data.QualityTests
         [Fact]
         public void ODI_AllTeam_BattingScoreboard_RunsScoredShouldHaveCorrectFormatAndValue()
         {
-            var allOdiMatches = allMatches[CricketFormat.ODI].ToList();
+            var allOdiMatches = allLoiMatches[CricketFormat.ODI].ToList();
             var odiTeam1BSBs = allOdiMatches.Select(x => x.Team1.BattingScoreCard);
             var odiTeam2BSBs = allOdiMatches.Select(x => x.Team2.BattingScoreCard);
             var odiTeamBSBs = odiTeam1BSBs.Concat(odiTeam2BSBs);
@@ -540,7 +663,7 @@ namespace CricketService.Data.QualityTests
         [Fact]
         public void T20I_AllTeam_BattingScoreboard_RunsScoredShouldHaveCorrectFormatAndValue()
         {
-            var allT20IMatches = allMatches[CricketFormat.T20I].ToList();
+            var allT20IMatches = allLoiMatches[CricketFormat.T20I].ToList();
             var t20iTeam1BSBs = allT20IMatches.Select(x => x.Team1.BattingScoreCard);
             var t20iTeam2BSBs = allT20IMatches.Select(x => x.Team2.BattingScoreCard);
             var t20iTeamBSBs = t20iTeam1BSBs.Concat(t20iTeam2BSBs);
@@ -565,7 +688,7 @@ namespace CricketService.Data.QualityTests
         [Fact]
         public void ODI_AllTeam_BattingScoreboard_BallFacedShouldHaveCorrectFormatAndValue()
         {
-            var allOdiMatches = allMatches[CricketFormat.ODI].ToList();
+            var allOdiMatches = allLoiMatches[CricketFormat.ODI].ToList();
             var odiTeam1BSBs = allOdiMatches.Select(x => x.Team1.BattingScoreCard);
             var odiTeam2BSBs = allOdiMatches.Select(x => x.Team2.BattingScoreCard);
             var odiTeamBSBs = odiTeam1BSBs.Concat(odiTeam2BSBs);
@@ -590,7 +713,7 @@ namespace CricketService.Data.QualityTests
         [Fact]
         public void T20I_AllTeam_BattingScoreboard_BallFacedShouldHaveCorrectFormatAndValue()
         {
-            var allT20IMatches = allMatches[CricketFormat.T20I].ToList();
+            var allT20IMatches = allLoiMatches[CricketFormat.T20I].ToList();
             var t20iTeam1BSBs = allT20IMatches.Select(x => x.Team1.BattingScoreCard);
             var t20iTeam2BSBs = allT20IMatches.Select(x => x.Team2.BattingScoreCard);
             var t20iTeamBSBs = t20iTeam1BSBs.Concat(t20iTeam2BSBs);
@@ -615,7 +738,7 @@ namespace CricketService.Data.QualityTests
         [Fact]
         public void ODI_AllTeam_BattingScoreboard_OutStatusShouldHaveCorrectFormatAndValue()
         {
-            var allOdiMatches = allMatches[CricketFormat.ODI].ToList();
+            var allOdiMatches = allLoiMatches[CricketFormat.ODI].ToList();
             var odiTeam1BSBs = allOdiMatches.Select(x => x.Team1.BattingScoreCard);
             var odiTeam2BSBs = allOdiMatches.Select(x => x.Team2.BattingScoreCard);
             var odiTeamBSBs = odiTeam1BSBs.Concat(odiTeam2BSBs);
@@ -631,7 +754,7 @@ namespace CricketService.Data.QualityTests
             var flatBattingScoreboards = odiTeamBSBs.SelectMany(x => x);
 
             flatBattingScoreboards.Count(x => x.OutStatus.Equals("absent ill")).Should().Be(1);
-            flatBattingScoreboards.Count(x => x.OutStatus.Equals("absent hurt")).Should().Be(41);
+            flatBattingScoreboards.Count(x => x.OutStatus.Equals("absent hurt")).Should().Be(43);
             flatBattingScoreboards.Count(x => x.OutStatus.Equals("absent ")).Should().Be(1);
             flatBattingScoreboards.Count(x => x.OutStatus.Equals("retired hurt ")).Should().Be(105);
             flatBattingScoreboards.Count(x => x.OutStatus.Equals("retired ill ")).Should().Be(1);
@@ -657,8 +780,8 @@ namespace CricketService.Data.QualityTests
         [Fact]
         public void AllTeam_ExtrasShouldHaveCorrectFormatAndValue()
         {
-            var odiTeam1Extras = allMatches[CricketFormat.ODI].Select(x => x.Team1.Extras);
-            var odiTeam2Extras = allMatches[CricketFormat.ODI].Select(x => x.Team2.Extras);
+            var odiTeam1Extras = allLoiMatches[CricketFormat.ODI].Select(x => x.Team1.Extras);
+            var odiTeam2Extras = allLoiMatches[CricketFormat.ODI].Select(x => x.Team2.Extras);
             var odiTeamExtras = odiTeam1Extras.Concat(odiTeam2Extras);
 
             odiTeam1Extras.Count(x => x == null).Should().Be(0);
@@ -680,8 +803,8 @@ namespace CricketService.Data.QualityTests
         [Fact]
         public void AllTeam_DidNotBatShouldHaveCorrectFormatAndValue()
         {
-            var odiTeam1Dnbs = allMatches[CricketFormat.ODI].Select(x => x.Team1.DidNotBat);
-            var odiTeam2Dnbs = allMatches[CricketFormat.ODI].Select(x => x.Team2.DidNotBat);
+            var odiTeam1Dnbs = allLoiMatches[CricketFormat.ODI].Select(x => x.Team1.DidNotBat);
+            var odiTeam2Dnbs = allLoiMatches[CricketFormat.ODI].Select(x => x.Team2.DidNotBat);
             var odiTeamDnbs = odiTeam1Dnbs.Concat(odiTeam2Dnbs);
 
             odiTeam1Dnbs.Count(x => x == null).Should().Be(0);

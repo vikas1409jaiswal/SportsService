@@ -19,7 +19,7 @@ namespace CricketService.Domain.ResponseDomains
             Extras = extras;
             FallOfWickets = fallOfWickets;
             DidNotBat = didNotBat;
-            SetTotalInningScore();
+            //SetTotalInningScore();
         }
 
         public CricketTeam Team { get; set; }
@@ -44,7 +44,7 @@ namespace CricketService.Domain.ResponseDomains
                     return null!;
                 }
 
-                if (playing11.Length < 10)
+                if (playing11.Length < 9)
                 {
                     throw new FormatException("playing 11 should contain exact 11 players.");
                 }
@@ -53,15 +53,25 @@ namespace CricketService.Domain.ResponseDomains
             }
         }
 
-        public TotalInningScore TotalInningDetails { get; set; }
+        public TotalInningScoreResponse TotalInningDetails { get; set; } = null!;
+        //{
+        //    get
+        //    {
+        //        return new TotalInningScoreResponse(
+        //                        (int)BattingScoreCard.Sum(x => x.RunsScored)!,
+        //                        BattingScoreCard.Count(x => !x.OutStatus.Contains("not out")),
+        //                        BowlingScoreCard.Sum(x => new Over(x.OversBowled).Balls).ToOvers(),
+        //                        Extras);
+        //    }
+        //}
 
-        public void SetTotalInningScore()
-        {
-            TotalInningDetails = new TotalInningScore(
-                                (int)BattingScoreCard.Sum(x => x.RunsScored)!,
-                                BattingScoreCard.Count(x => !x.OutStatus.Contains("not out")),
-                                BowlingScoreCard.Sum(x => new Over(x.OversBowled).Balls).ToOvers(),
-                                Extras);
-        }
+        //public void SetTotalInningScore()
+        //{
+        //    TotalInningDetails = new TotalInningScoreResponse(
+        //                        (int)BattingScoreCard.Sum(x => x.RunsScored)!,
+        //                        BattingScoreCard.Count(x => !x.OutStatus.Contains("not out")),
+        //                        BowlingScoreCard.Sum(x => new Over(x.OversBowled).Balls).ToOvers(),
+        //                        Extras);
+        //}
     }
 }

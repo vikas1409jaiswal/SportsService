@@ -11,7 +11,7 @@ namespace CricketService.Domain.Attributes.ValidationAttributes
         {
             if (value == null)
             {
-                return ValidationResult.Success!;
+                return new ValidationResult("The cricket season must be not null.");
             }
 
             string inputString = value.ToString()!;

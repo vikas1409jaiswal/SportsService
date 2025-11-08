@@ -1,0 +1,2562 @@
+{
+  "player": {
+    "id": 2074,
+    "objectId": 21484,
+    "name": "JP Taylor",
+    "longName": "Paul Taylor",
+    "mobileName": "Taylor",
+    "indexName": "Taylor, JP",
+    "battingName": "JP Taylor",
+    "fieldingName": "Taylor",
+    "slug": "paul-taylor",
+    "imageUrl": "/db/PICTURES/CMS/304300/304388.jpg",
+    "dateOfBirth": {
+      "year": 1964,
+      "month": 8,
+      "date": 8
+    },
+    "dateOfDeath": null,
+    "gender": "M",
+    "battingStyles": [
+      "lhb"
+    ],
+    "bowlingStyles": [
+      "lfm"
+    ],
+    "longBattingStyles": [
+      "left-hand bat"
+    ],
+    "longBowlingStyles": [
+      "left-arm fast-medium"
+    ],
+    "image": {
+      "id": 304388,
+      "objectId": 1223597,
+      "slug": "paul-taylor-portrait",
+      "url": "/db/PICTURES/CMS/304300/304388.jpg",
+      "width": 160,
+      "height": 200,
+      "caption": "Paul Taylor portrait",
+      "longCaption": "Paul Taylor, May 2020",
+      "credit": "Getty Images",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 1,
+    "playerRoleTypeIds": [],
+    "playingRoles": [],
+    "fullName": "Jonathan Paul Taylor",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": 0,
+    "heightUnit": null,
+    "education": "",
+    "country": {
+      "id": 1,
+      "objectId": 1,
+      "name": "England",
+      "shortName": "England",
+      "abbreviation": "ENG",
+      "slug": "england",
+      "image": {
+        "id": 313114,
+        "objectId": 1241522,
+        "slug": "england-logo",
+        "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+        "width": 500,
+        "height": 500,
+        "caption": "England logo",
+        "longCaption": "England logo",
+        "credit": null,
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Ashby-de-la-Zouch, Leicestershire",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "",
+    "intlCareerSpan": "1993 - 1994",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 18974,
+      "objectId": 21483,
+      "slug": "paul-taylor-thumbnail-portrait",
+      "url": "/db/PICTURES/DB/052001/025244.jpg",
+      "width": 100,
+      "height": 150,
+      "caption": "Paul Taylor ; thumbnail portrait",
+      "longCaption": "Taken at the Northamptonshire photocall April 2001",
+      "credit": "ESPNcricinfo Ltd",
+      "photographer": "Paul McGregor",
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": null,
+        "SQUARE": null
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": false,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 3,
+    "totalVideos": 0,
+    "totalImages": 2
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 1,
+          "objectId": 1,
+          "scribeId": 1,
+          "slug": "england",
+          "name": "England",
+          "longName": "England",
+          "abbreviation": "ENG",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+          "isCountry": true,
+          "primaryColor": "#033051",
+          "image": {
+            "id": 313114,
+            "objectId": 1241522,
+            "slug": "england-logo",
+            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "England logo",
+            "longCaption": "England logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 955,
+          "objectId": 904,
+          "scribeId": 904,
+          "slug": "derbyshire",
+          "name": "Derbyshire",
+          "longName": "Derbyshire",
+          "abbreviation": "DERBS",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313200/313254.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313254,
+            "objectId": 1241713,
+            "slug": "derbyshire-logo",
+            "url": "/db/PICTURES/CMS/313200/313254.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Derbyshire logo",
+            "longCaption": "Derbyshire logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1271,
+          "objectId": 1220,
+          "scribeId": 1220,
+          "slug": "norfolk",
+          "name": "Norfolk",
+          "longName": "Norfolk",
+          "abbreviation": "Norf",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1272,
+          "objectId": 1221,
+          "scribeId": 1221,
+          "slug": "northamptonshire",
+          "name": "Northants",
+          "longName": "Northamptonshire",
+          "abbreviation": "NHNTS",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/337600/337638.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 337638,
+            "objectId": 1309762,
+            "slug": "northamptonshire-team-logo",
+            "url": "/db/PICTURES/CMS/337600/337638.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Northamptonshire team logo",
+            "longCaption": "Northamptonshire team logo",
+            "credit": "Northamptonshire CCC",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1398,
+          "objectId": 1347,
+          "scribeId": 1347,
+          "slug": "staffordshire",
+          "name": "Staffs",
+          "longName": "Staffordshire",
+          "abbreviation": "Staff",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      }
+    ],
+    "relations": [],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "<B> Wisden overview </B> <BR>Dumped by Derbyshire in 1987 but snaffled by Staffordshire two years later, Taylor's rapid ascent into England's Test side could be traced back to a NatWest Trophy tie in 1990 against Northamptonshire. Taylor took 0-92 with his left-arm seam, but Northants saw through the stats and signed him up for the 1991 season. Eighteen prolific months later he was on his way to India with England, but won just one cap there, on a Calcutta belter. When he was given a second chance, against New Zealand in 1994, it was clear that the captain at the time, Mike Atherton, had little confidence in him, and he returned to county cricket for good. Slightly splay-footed but with a strong open-chested action, Taylor kept it tight outside off stump and could move the ball both ways. Until his final first-team season in 2001, he was regularly picking up 50 wickets a year, and remained one of the fittest opening bowlers in the country, despite being well into his thirties. A dogged county No 8, Taylor helped save a Lord's Test with Steve Rhodes in 1994. <b> Lawrence Booth </B>"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 1,
+          "mt": 2,
+          "in": 4,
+          "rn": 34,
+          "bl": 182,
+          "avg": 17,
+          "sr": 18.68,
+          "no": 2,
+          "fo": 3,
+          "si": 0,
+          "hs": "17*",
+          "hn": 0,
+          "ft": 0,
+          "ct": 0,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 2,
+          "mt": 1,
+          "in": 1,
+          "rn": 1,
+          "bl": 8,
+          "avg": 1,
+          "sr": 12.5,
+          "no": 0,
+          "fo": 0,
+          "si": 0,
+          "hs": "1",
+          "hn": 0,
+          "ft": 0,
+          "ct": 0,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 183,
+          "in": 213,
+          "rn": 2253,
+          "bl": null,
+          "avg": 15.22,
+          "sr": null,
+          "no": 65,
+          "fo": null,
+          "si": null,
+          "hs": "86",
+          "hn": 0,
+          "ft": 9,
+          "ct": 61,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 5,
+          "mt": 211,
+          "in": 86,
+          "rn": 488,
+          "bl": null,
+          "avg": 9.76,
+          "sr": null,
+          "no": 36,
+          "fo": null,
+          "si": null,
+          "hs": "57",
+          "hn": 0,
+          "ft": 1,
+          "ct": 46,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 1,
+          "mt": 2,
+          "in": 4,
+          "rn": 156,
+          "bl": 288,
+          "avg": 52,
+          "sr": 96,
+          "wk": 3,
+          "bbi": "1/18",
+          "bbm": "2/82",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 3.25
+        },
+        {
+          "type": "BOWLING",
+          "cl": 2,
+          "mt": 1,
+          "in": 1,
+          "rn": 20,
+          "bl": 18,
+          "avg": null,
+          "sr": null,
+          "wk": 0,
+          "bbi": "-",
+          "bbm": "-",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 6.66
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 183,
+          "in": null,
+          "rn": 16618,
+          "bl": 32038,
+          "avg": 29.72,
+          "sr": 57.3,
+          "wk": 559,
+          "bbi": "7/23",
+          "bbm": null,
+          "fwk": null,
+          "fw": 18,
+          "tw": 4,
+          "bwe": 3.11
+        },
+        {
+          "type": "BOWLING",
+          "cl": 5,
+          "mt": 211,
+          "in": null,
+          "rn": 7291,
+          "bl": 10108,
+          "avg": 29.39,
+          "sr": 40.7,
+          "wk": 248,
+          "bbi": "5/45",
+          "bbm": "5/45",
+          "fwk": 3,
+          "fw": 1,
+          "tw": 0,
+          "bwe": 4.32
+        }
+      ]
+    },
+    "topRecords": [],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 2,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 1212,
+                    "id": 1212,
+                    "objectId": 63598,
+                    "scribeId": 63598,
+                    "slug": "india-vs-england-1st-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1992/93",
+                    "title": "1st Test",
+                    "floodlit": "day",
+                    "startDate": "1993-01-29T00:00:00Z",
+                    "endDate": "1993-02-02T00:00:00Z",
+                    "startTime": "1993-01-29T03:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "India won by 8 wickets",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001211",
+                    "generalNumber": null,
+                    "winnerTeamId": 6,
+                    "tossWinnerTeamId": 6,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1537,
+                      "objectId": 61796,
+                      "scribeId": 16457,
+                      "slug": "england-tour-of-india-1992-93",
+                      "name": "England tour of India",
+                      "longName": "England tour of India",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1993,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1992/93",
+                      "startDate": "1993-01-16T00:00:00Z",
+                      "endDate": "1993-03-05T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 292,
+                      "objectId": 57980,
+                      "name": "Eden Gardens, Calcutta",
+                      "smallName": "Eden Gardens",
+                      "longName": "Eden Gardens, Calcutta",
+                      "slug": "eden-gardens-kolkata",
+                      "location": "",
+                      "image": {
+                        "id": 128035,
+                        "objectId": 500114,
+                        "slug": "an-aerial-view-of-the-eden-gardens-at-its-current-state-of-completion",
+                        "url": "/db/PICTURES/CMS/128000/128035.6.jpg",
+                        "width": 210,
+                        "height": 140,
+                        "caption": "An aerial view of the Eden Gardens at its current state of completion",
+                        "longCaption": "An aerial view of the Eden Gardens at its current state of completion, Kolkata, February 9, 2011",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 574,
+                        "objectId": 57976,
+                        "name": "Kolkata",
+                        "area": "",
+                        "timezone": "Asia/Kolkata"
+                      },
+                      "country": {
+                        "id": 6,
+                        "objectId": 6,
+                        "name": "India",
+                        "shortName": "India",
+                        "abbreviation": "IND",
+                        "slug": "india"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 6,
+                          "objectId": 6,
+                          "scribeId": 6,
+                          "slug": "india",
+                          "name": "India",
+                          "longName": "India",
+                          "abbreviation": "IND",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#137dd2",
+                          "image": {
+                            "id": 313128,
+                            "objectId": 1241587,
+                            "slug": "india-logo",
+                            "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "India logo",
+                            "longCaption": "India logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "371 & 82/2",
+                        "scoreInfo": "T:79",
+                        "inningNumbers": [
+                          1,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "(f/o) 163 & 286",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 1,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:23:56.84Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 1261,
+                    "id": 1261,
+                    "objectId": 63647,
+                    "scribeId": 63647,
+                    "slug": "england-vs-new-zealand-2nd-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1994",
+                    "title": "2nd Test",
+                    "floodlit": "day",
+                    "startDate": "1994-06-16T00:00:00Z",
+                    "endDate": "1994-06-20T00:00:00Z",
+                    "startTime": "1994-06-16T10:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001261",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 5,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 4,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1818,
+                      "objectId": 62077,
+                      "scribeId": 16345,
+                      "slug": "new-zealand-tour-of-england-1994",
+                      "name": "New Zealand tour of England",
+                      "longName": "New Zealand tour of England",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1994,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1994",
+                      "startDate": "1994-05-19T00:00:00Z",
+                      "endDate": "1994-07-05T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 10,
+                      "objectId": 57129,
+                      "name": "Lord's, London",
+                      "smallName": "Lord's",
+                      "longName": "Lord's, London",
+                      "slug": "lord-s-london",
+                      "location": "St John's Wood Road",
+                      "image": {
+                        "id": 92191,
+                        "objectId": 360855,
+                        "slug": "a-wide-angle-view-of-lord-s",
+                        "url": "/db/PICTURES/CMS/92100/92191.2.jpg",
+                        "width": 310,
+                        "height": 205,
+                        "caption": "A wide-angle view of Lord's",
+                        "longCaption": "A wide-angle view of Lord's, England v South Africa, 1st Test, Lord's, 3rd day, July 12, 2008",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 224,
+                        "objectId": 57124,
+                        "name": "London",
+                        "area": "",
+                        "timezone": "Europe/London"
+                      },
+                      "country": {
+                        "id": 1,
+                        "objectId": 1,
+                        "name": "England",
+                        "shortName": "England",
+                        "abbreviation": "ENG",
+                        "slug": "england"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 5,
+                          "objectId": 5,
+                          "scribeId": 5,
+                          "slug": "new-zealand",
+                          "name": "New Zealand",
+                          "longName": "New Zealand",
+                          "abbreviation": "NZ",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340505.png",
+                          "isCountry": true,
+                          "primaryColor": "#000000",
+                          "image": {
+                            "id": 340505,
+                            "objectId": 1318717,
+                            "slug": "new-zealand-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340505.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "New Zealand team flag-latest",
+                            "longCaption": "New Zealand team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "476 & 211/5d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "281 & 254/8",
+                        "scoreInfo": "T:407",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 1,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:20:58.384Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 2,
+                "name": "One-Day Internationals",
+                "type": "i"
+              },
+              "total": 1,
+              "events": [
+                {
+                  "interval": "ONLY",
+                  "match": {
+                    "_uid": 2035,
+                    "id": 2035,
+                    "objectId": 64421,
+                    "scribeId": 64421,
+                    "slug": "sri-lanka-vs-england-2nd-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "1992/93",
+                    "title": "2nd ODI",
+                    "floodlit": "day",
+                    "startDate": "1993-03-20T00:00:00Z",
+                    "endDate": "1993-03-20T00:00:00Z",
+                    "startTime": "1993-03-20T04:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Sri Lanka won by 8 wickets (with 88 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000818",
+                    "generalNumber": null,
+                    "winnerTeamId": 8,
+                    "tossWinnerTeamId": 8,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1525,
+                      "objectId": 61784,
+                      "scribeId": 16439,
+                      "slug": "england-tour-of-sri-lanka-1992-93",
+                      "name": "England tour of Sri Lanka",
+                      "longName": "England tour of Sri Lanka",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1993,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1992/93",
+                      "startDate": "1993-03-10T00:00:00Z",
+                      "endDate": "1993-03-20T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 835,
+                      "objectId": 59350,
+                      "name": "Tyronne Fernando Stadium, Moratuwa",
+                      "smallName": "Moratuwa",
+                      "longName": "Tyronne Fernando Stadium, Moratuwa",
+                      "slug": "tyronne-fernando-stadium-moratuwa",
+                      "location": "",
+                      "image": {
+                        "id": 31168,
+                        "objectId": 59349,
+                        "slug": "portrait-of-de-zoysa-stadium-moratuwa-2001",
+                        "url": "/db/PICTURES/DB/082001/029343.1.jpg",
+                        "width": 250,
+                        "height": 165,
+                        "caption": "Portrait of De Zoysa Stadium Moratuwa, 2001",
+                        "longCaption": "Portrait of De Zoysa Stadium Moratuwa, 2001",
+                        "credit": "ESPNcricinfo Ltd",
+                        "photographer": "Chaminda de Silva",
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 962,
+                        "objectId": 59345,
+                        "name": "Moratuwa",
+                        "area": "",
+                        "timezone": "Asia/Colombo"
+                      },
+                      "country": {
+                        "id": 8,
+                        "objectId": 8,
+                        "name": "Sri Lanka",
+                        "shortName": "Sri Lanka",
+                        "abbreviation": "SL",
+                        "slug": "sri-lanka"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "180",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 8,
+                          "objectId": 8,
+                          "scribeId": 8,
+                          "slug": "sri-lanka",
+                          "name": "Sri Lanka",
+                          "longName": "Sri Lanka",
+                          "abbreviation": "SL",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340000/340047.png",
+                          "isCountry": true,
+                          "primaryColor": "#203d89",
+                          "image": {
+                            "id": 340047,
+                            "objectId": 1316921,
+                            "slug": "sri-lanka-team-flag",
+                            "url": "/db/PICTURES/CMS/340000/340047.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Sri Lanka team flag",
+                            "longCaption": "Sri Lanka team flag",
+                            "credit": "Google",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "183/2",
+                        "scoreInfo": "35.2/50 ov, T:181",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:25:45.94Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 183,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1984 - 2001"
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 5,
+                "name": "List A",
+                "type": "g"
+              },
+              "total": 211,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": null,
+                  "span": "1984"
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 22116,
+                    "id": 22116,
+                    "objectId": 368917,
+                    "scribeId": 368917,
+                    "slug": "berkshire-vs-norfolk-2nd-round",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2002",
+                    "title": "2nd Round",
+                    "floodlit": "day",
+                    "startDate": "2002-09-12T00:00:00Z",
+                    "endDate": "2002-09-12T00:00:00Z",
+                    "startTime": "2002-09-12T10:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Berkshire won by 6 wickets (with 137 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 865,
+                    "tossWinnerTeamId": 1271,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 4622,
+                      "objectId": 368875,
+                      "scribeId": 8629,
+                      "slug": "cheltenham-gloucester-trophy-2003",
+                      "name": "Cheltenham & Gloucester Trophy",
+                      "longName": "Cheltenham & Gloucester Trophy",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2002,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in England/Scotland",
+                      "season": "2003",
+                      "startDate": "2002-08-29T00:00:00Z",
+                      "endDate": "2003-08-30T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 1287,
+                      "objectId": 57264,
+                      "name": "Sonning Lane, Reading",
+                      "smallName": "Reading",
+                      "longName": "Sonning Lane, Reading",
+                      "slug": "reading-cricket-club-sonning-lane-reading",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 270,
+                        "objectId": 57262,
+                        "name": "Reading",
+                        "area": "",
+                        "timezone": "Europe/London"
+                      },
+                      "country": {
+                        "id": 1,
+                        "objectId": 1,
+                        "name": "England",
+                        "shortName": "England",
+                        "abbreviation": "ENG",
+                        "slug": "england"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1271,
+                          "objectId": 1220,
+                          "scribeId": 1220,
+                          "slug": "norfolk",
+                          "name": "Norfolk",
+                          "longName": "Norfolk",
+                          "abbreviation": "Norf",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "119",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 865,
+                          "objectId": 814,
+                          "scribeId": 814,
+                          "slug": "berkshire",
+                          "name": "Berkshire",
+                          "longName": "Berkshire",
+                          "abbreviation": "Berks",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "123/4",
+                        "scoreInfo": "27.1/50 ov, T:120",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 0,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:25:45.94Z"
+                  },
+                  "span": null
+                }
+              ]
+            }
+          ],
+          "recent": []
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 235863,
+        "objectId": 921035,
+        "scribeId": 18217753,
+        "slug": "shot-stories-england-in-india-1992-93",
+        "title": "The winter of our discontent",
+        "subTitle": "Shot Stories",
+        "seoTitle": "Shot Stories: England in India, 1992-93",
+        "summary": "At the start of their 1992-93 tour of India, little did these England players know what was in store for them - the first ever Test series whitewash in the country",
+        "byline": "",
+        "categoryType": "TCM",
+        "genreType": "OTHER",
+        "genreId": 629,
+        "genreName": "Shot Stories",
+        "publishedAt": "2015-10-02T05:07:16Z",
+        "modifiedAt": "1899-11-30T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": null,
+        "image": {
+          "id": 222261,
+          "objectId": 921043,
+          "slug": "england-cricketers-pose-in-front-of-the-taj-mahal",
+          "url": "/db/PICTURES/CMS/222200/222261.6.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "England cricketers pose in front of the Taj Mahal",
+          "longCaption": "England cricketers pose in front of the Taj Mahal. Back row (from left): Paul Jarvis, Devon Malcolm, Ian Salisbury, Richard Blakey and Mike Atherton. Front row: Neil Fairbrother and Paul Taylor, Agra, January 14, 1993",
+          "credit": "PA Photos",
+          "photographer": null,
+          "peerUrls": {
+            "FILM": null,
+            "WIDE": "/db/PICTURES/CMS/222200/222261.5.jpg",
+            "SQUARE": "/db/PICTURES/CMS/222200/222261.square.jpg"
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:21:31.375Z"
+      },
+      {
+        "id": 98224,
+        "objectId": 258110,
+        "scribeId": 258110,
+        "slug": "the-sport-of-king",
+        "title": "The sport of King",
+        "subTitle": "September 2006",
+        "seoTitle": "",
+        "summary": "John Stern meets Mervyn King, Governor of the Bank of England, the brainchild behind <i>Chance to Shine</i>",
+        "byline": "John Stern",
+        "categoryType": "OTHERS",
+        "genreType": "OTHER",
+        "genreId": 44,
+        "genreName": "unsorted",
+        "publishedAt": "2006-09-02T03:30:37Z",
+        "modifiedAt": "2021-09-13T06:53:33Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 214,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:25:45.955Z"
+      },
+      {
+        "id": 54698,
+        "objectId": 124797,
+        "scribeId": 23165725,
+        "slug": "a-big-heart",
+        "title": "A big heart",
+        "subTitle": "",
+        "seoTitle": "",
+        "summary": "1965  \nBirth of England's prime seam bowler  Angus Fraser",
+        "byline": "Wisden Cricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2003-08-08T00:00:00Z",
+        "modifiedAt": "2003-08-08T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": null,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:25:45.955Z"
+      }
+    ],
+    "videos": [],
+    "images": [
+      {
+        "id": 18974,
+        "objectId": 21483,
+        "slug": "paul-taylor-thumbnail-portrait",
+        "url": "/db/PICTURES/DB/052001/025244.jpg",
+        "width": 100,
+        "height": 150,
+        "caption": "Paul Taylor ; thumbnail portrait",
+        "longCaption": "Taken at the Northamptonshire photocall April 2001",
+        "credit": "ESPNcricinfo Ltd",
+        "photographer": "Paul McGregor",
+        "peerUrls": null,
+        "dateTaken": "2001-05-02T00:00:00Z",
+        "capturedOn": {
+          "year": 2001,
+          "month": 5,
+          "date": 2
+        }
+      },
+      {
+        "id": 222261,
+        "objectId": 921043,
+        "slug": "england-cricketers-pose-in-front-of-the-taj-mahal",
+        "url": "/db/PICTURES/CMS/222200/222261.jpg",
+        "width": 1400,
+        "height": 1026,
+        "caption": "England cricketers pose in front of the Taj Mahal",
+        "longCaption": "England cricketers pose in front of the Taj Mahal. Back row (from left): Paul Jarvis, Devon Malcolm, Ian Salisbury, Richard Blakey and Mike Atherton. Front row: Neil Fairbrother and Paul Taylor, Agra, January 14, 1993",
+        "credit": "PA Photos",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1993-01-14T00:00:00Z",
+        "capturedOn": {
+          "year": 1993,
+          "month": 1,
+          "date": 14
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 6,
+        "objectId": 6,
+        "scribeId": 6,
+        "slug": "india",
+        "name": "India",
+        "longName": "India",
+        "abbreviation": "IND",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+        "isCountry": true,
+        "primaryColor": "#137dd2",
+        "image": {
+          "id": 313128,
+          "objectId": 1241587,
+          "slug": "india-logo",
+          "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+          "width": 500,
+          "height": 500,
+          "caption": "India logo",
+          "longCaption": "India logo",
+          "credit": null,
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 101430,
+          "objectId": 1125976,
+          "name": "Arshdeep Singh",
+          "longName": "Arshdeep Singh",
+          "mobileName": "",
+          "indexName": "Arshdeep Singh",
+          "battingName": "Arshdeep Singh",
+          "fieldingName": "Arshdeep Singh",
+          "slug": "arshdeep-singh",
+          "imageUrl": "/db/PICTURES/CMS/356700/356795.1.png",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 2,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lmf"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm medium-fast"
+          ],
+          "image": {
+            "id": 356795,
+            "objectId": 1365005,
+            "slug": "arshdeep-singh-player-portrait",
+            "url": "/db/PICTURES/CMS/356700/356795.1.png",
+            "width": 160,
+            "height": 213,
+            "caption": "Arshdeep Singh player portrait",
+            "longCaption": "Arshdeep Singh player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 61325,
+          "objectId": 430246,
+          "name": "YS Chahal",
+          "longName": "Yuzvendra Chahal",
+          "mobileName": "Chahal",
+          "indexName": "Chahal, YS",
+          "battingName": "YS Chahal",
+          "fieldingName": "Chahal",
+          "slug": "yuzvendra-chahal",
+          "imageUrl": "/db/PICTURES/CMS/312100/312155.png",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 7,
+            "date": 23
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lbg"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak googly"
+          ],
+          "image": {
+            "id": 312155,
+            "objectId": 1239214,
+            "slug": "yuzvendra-chahal-portrait",
+            "url": "/db/PICTURES/CMS/312100/312155.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Yuzvendra Chahal portrait",
+            "longCaption": "Yuzvendra Chahal portrait, November 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 71331,
+          "objectId": 642519,
+          "name": "SS Iyer",
+          "longName": "Shreyas Iyer",
+          "mobileName": "Shreyas Iyer",
+          "indexName": "Iyer, SS",
+          "battingName": "SS Iyer",
+          "fieldingName": "Iyer",
+          "slug": "shreyas-iyer",
+          "imageUrl": "/db/PICTURES/CMS/309100/309198.1.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 12,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob",
+            "lbg"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak",
+            "legbreak googly"
+          ],
+          "image": {
+            "id": 309198,
+            "objectId": 1232813,
+            "slug": "ss-iyer-player-portrait",
+            "url": "/db/PICTURES/CMS/309100/309198.1.jpg",
+            "width": 160,
+            "height": 196,
+            "caption": "SS Iyer player portrait",
+            "longCaption": "SS Iyer player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 49752,
+          "objectId": 253802,
+          "name": "V Kohli",
+          "longName": "Virat Kohli",
+          "mobileName": "Kohli",
+          "indexName": "Kohli, V",
+          "battingName": "V Kohli",
+          "fieldingName": "Kohli",
+          "slug": "virat-kohli",
+          "imageUrl": "/db/PICTURES/CMS/289000/289002.1.jpg",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 11,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 289002,
+            "objectId": 1183835,
+            "slug": "virat-kohli-player-portrait",
+            "url": "/db/PICTURES/CMS/289000/289002.1.jpg",
+            "width": 160,
+            "height": 210,
+            "caption": "Virat Kohli player portrait",
+            "longCaption": "Virat Kohli player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 70633,
+          "objectId": 625371,
+          "name": "HH Pandya",
+          "longName": "Hardik Pandya",
+          "mobileName": "Hardik",
+          "indexName": "Pandya, HH",
+          "battingName": "HH Pandya",
+          "fieldingName": "Pandya",
+          "slug": "hardik-pandya",
+          "imageUrl": "/db/PICTURES/CMS/304200/304201.png",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 10,
+            "date": 11
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 304201,
+            "objectId": 1223366,
+            "slug": "hardik-pandya-portrait",
+            "url": "/db/PICTURES/CMS/304200/304201.png",
+            "width": 160,
+            "height": 201,
+            "caption": "Hardik Pandya portrait",
+            "longCaption": "Hardik Pandya portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 86165,
+          "objectId": 931581,
+          "name": "RR Pant",
+          "longName": "Rishabh Pant",
+          "mobileName": "Pant",
+          "indexName": "Pant, RR",
+          "battingName": "RR Pant",
+          "fieldingName": "Pant",
+          "slug": "rishabh-pant",
+          "imageUrl": "/db/PICTURES/CMS/304200/304221.png",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 10,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 304221,
+            "objectId": 1223386,
+            "slug": "rishabh-pant-portrait",
+            "url": "/db/PICTURES/CMS/304200/304221.png",
+            "width": 160,
+            "height": 201,
+            "caption": "Rishabh Pant portrait",
+            "longCaption": "Rishabh Pant portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 67455,
+          "objectId": 554691,
+          "name": "AR Patel",
+          "longName": "Axar Patel",
+          "mobileName": "Axar Patel",
+          "indexName": "Patel, AR",
+          "battingName": "AR Patel",
+          "fieldingName": "Patel",
+          "slug": "axar-patel",
+          "imageUrl": "/db/PICTURES/CMS/329300/329344.4.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 1,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 329344,
+            "objectId": 1285440,
+            "slug": "axar-patel-player-portrait",
+            "url": "/db/PICTURES/CMS/329300/329344.4.jpg",
+            "width": 160,
+            "height": 276,
+            "caption": "Axar Patel, player portrait",
+            "longCaption": "Axar Patel, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Matthew Lewis",
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 60530,
+          "objectId": 422108,
+          "name": "KL Rahul",
+          "longName": "KL Rahul",
+          "mobileName": "Rahul",
+          "indexName": "Rahul, KL",
+          "battingName": "KL Rahul",
+          "fieldingName": "Rahul",
+          "slug": "kl-rahul",
+          "imageUrl": "/db/PICTURES/CMS/304200/304207.png",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 4,
+            "date": 18
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 304207,
+            "objectId": 1223372,
+            "slug": "kl-rahul-portrait",
+            "url": "/db/PICTURES/CMS/304200/304207.png",
+            "width": 160,
+            "height": 199,
+            "caption": "KL Rahul portrait",
+            "longCaption": "KL Rahul portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 48405,
+          "objectId": 34102,
+          "name": "RG Sharma",
+          "longName": "Rohit Sharma",
+          "mobileName": "Rohit Sharma",
+          "indexName": "Sharma, RG",
+          "battingName": "RG Sharma",
+          "fieldingName": "Sharma",
+          "slug": "rohit-sharma",
+          "imageUrl": "/db/PICTURES/CMS/302300/302374.jpg",
+          "dateOfBirth": {
+            "year": 1987,
+            "month": 4,
+            "date": 30
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 302374,
+            "objectId": 1220570,
+            "slug": "rohit-sharma-portrait",
+            "url": "/db/PICTURES/CMS/302300/302374.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Rohit Sharma portrait",
+            "longCaption": "Rohit Sharma portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 61990,
+          "objectId": 446507,
+          "name": "SA Yadav",
+          "longName": "Suryakumar Yadav",
+          "mobileName": "Suryakumar",
+          "indexName": "Yadav, SA",
+          "battingName": "SA Yadav",
+          "fieldingName": "Yadav",
+          "slug": "suryakumar-yadav",
+          "imageUrl": "/db/PICTURES/CMS/329300/329343.4.jpg",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 9,
+            "date": 14
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm",
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium",
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 329343,
+            "objectId": 1285439,
+            "slug": "suryakumar-yadav-portrait",
+            "url": "/db/PICTURES/CMS/329300/329343.4.jpg",
+            "width": 160,
+            "height": 257,
+            "caption": "Suryakumar Yadav, portrait",
+            "longCaption": "Suryakumar Yadav, portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Matthew Lewis",
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            8
+          ],
+          "playingRoles": [
+            "batter"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 56993,
+          "objectId": 351588,
+          "name": "MA Wood",
+          "longName": "Mark Wood",
+          "mobileName": "Wood",
+          "indexName": "Wood, MA",
+          "battingName": "MA Wood",
+          "fieldingName": "Wood",
+          "slug": "mark-wood",
+          "imageUrl": "/db/PICTURES/CMS/303900/303977.jpg",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 1,
+            "date": 11
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 303977,
+            "objectId": 1222880,
+            "slug": "mark-wood-portrait",
+            "url": "/db/PICTURES/CMS/303900/303977.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Mark Wood portrait",
+            "longCaption": "Mark Wood, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 46597,
+          "objectId": 8917,
+          "name": "MM Ali",
+          "longName": "Moeen Ali",
+          "mobileName": "Moeen Ali",
+          "indexName": "Ali, MM",
+          "battingName": "MM Ali",
+          "fieldingName": "Ali",
+          "slug": "moeen-ali",
+          "imageUrl": "/db/PICTURES/CMS/289600/289661.1.jpg",
+          "dateOfBirth": {
+            "year": 1987,
+            "month": 6,
+            "date": 18
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 289661,
+            "objectId": 1185617,
+            "slug": "moeen-ali-player-portrait",
+            "url": "/db/PICTURES/CMS/289600/289661.1.jpg",
+            "width": 160,
+            "height": 196,
+            "caption": "Moeen Ali player portrait",
+            "longCaption": "Moeen Ali player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 53320,
+          "objectId": 311158,
+          "name": "BA Stokes",
+          "longName": "Ben Stokes",
+          "mobileName": "Stokes",
+          "indexName": "Stokes, BA",
+          "battingName": "BA Stokes",
+          "fieldingName": "Stokes",
+          "slug": "ben-stokes",
+          "imageUrl": "/db/PICTURES/CMS/305000/305019.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 6,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 305019,
+            "objectId": 1224532,
+            "slug": "ben-stokes-portrait",
+            "url": "/db/PICTURES/CMS/305000/305019.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Ben Stokes portrait",
+            "longCaption": "Ben Stokes, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 62587,
+          "objectId": 461632,
+          "name": "RJW Topley",
+          "longName": "Reece Topley",
+          "mobileName": "Topley",
+          "indexName": "Topley, RJW",
+          "battingName": "RJW Topley",
+          "fieldingName": "Topley",
+          "slug": "reece-topley",
+          "imageUrl": "/db/PICTURES/CMS/356800/356811.1.png",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 2,
+            "date": 21
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 356811,
+            "objectId": 1365028,
+            "slug": "reece-topley-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356811.1.png",
+            "width": 160,
+            "height": 187,
+            "caption": "Reece Topley player portrait",
+            "longCaption": "Reece Topley player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 84027,
+          "objectId": 911707,
+          "name": "HC Brook",
+          "longName": "Harry Brook",
+          "mobileName": "Brook",
+          "indexName": "Brook, HC",
+          "battingName": "HC Brook",
+          "fieldingName": "Brook",
+          "slug": "harry-brook",
+          "imageUrl": "/db/PICTURES/CMS/271800/271830.jpg",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 2,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 271830,
+            "objectId": 1132237,
+            "slug": "harry-brook-portrait",
+            "url": "/db/PICTURES/CMS/271800/271830.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Harry Brook portrait",
+            "longCaption": "Harry Brook, January 8, 2018",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            8
+          ],
+          "playingRoles": [
+            "batter"
+          ]
+        },
+        {
+          "id": 72379,
+          "objectId": 669855,
+          "name": "JC Archer",
+          "longName": "Jofra Archer",
+          "mobileName": "Archer",
+          "indexName": "Archer, JC",
+          "battingName": "JC Archer",
+          "fieldingName": "Archer",
+          "slug": "jofra-archer",
+          "imageUrl": "/db/PICTURES/CMS/305000/305033.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 4,
+            "date": 1
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 305033,
+            "objectId": 1224546,
+            "slug": "jofra-archer-portrait",
+            "url": "/db/PICTURES/CMS/305000/305033.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Jofra Archer portrait",
+            "longCaption": "Jofra Archer, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 97243,
+          "objectId": 1095860,
+          "name": "A Dowse",
+          "longName": "Ariana Dowse",
+          "mobileName": "Dowse",
+          "indexName": "Dowse, A",
+          "battingName": "A Dowse",
+          "fieldingName": "Dowse",
+          "slug": "ariana-dowse",
+          "imageUrl": "/db/PICTURES/CMS/357300/357350.1.png",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 2,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "F",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 357350,
+            "objectId": 1366614,
+            "slug": "ariana-dowse-player-portrait",
+            "url": "/db/PICTURES/CMS/357300/357350.1.png",
+            "width": 160,
+            "height": 206,
+            "caption": "Ariana Dowse player portrait",
+            "longCaption": "Ariana Dowse player portrait",
+            "credit": "Gencor FairBreak Global ",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            6
+          ],
+          "playingRoles": [
+            "wicketkeeper"
+          ]
+        },
+        {
+          "id": 49764,
+          "objectId": 254168,
+          "name": "DN Wyatt",
+          "longName": "Danni Wyatt",
+          "mobileName": "Wyatt",
+          "indexName": "Wyatt, DN",
+          "battingName": "DN Wyatt",
+          "fieldingName": "Wyatt",
+          "slug": "danni-wyatt",
+          "imageUrl": "/db/PICTURES/CMS/305100/305146.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 4,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "F",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 305146,
+            "objectId": 1224698,
+            "slug": "danielle-wyatt-portrait",
+            "url": "/db/PICTURES/CMS/305100/305146.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Danielle Wyatt portrait",
+            "longCaption": "Danielle Wyatt portrait, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 53271,
+          "objectId": 308967,
+          "name": "JC Buttler",
+          "longName": "Jos Buttler",
+          "mobileName": "Buttler",
+          "indexName": "Buttler, JC",
+          "battingName": "JC Buttler",
+          "fieldingName": "Buttler",
+          "slug": "jos-buttler",
+          "imageUrl": "/db/PICTURES/CMS/303900/303969.jpg",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 9,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 303969,
+            "objectId": 1222871,
+            "slug": "jos-buttler-portrait",
+            "url": "/db/PICTURES/CMS/303900/303969.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Jos Buttler portrait",
+            "longCaption": "Jos Buttler, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 72103,
+          "objectId": 662973,
+          "name": "SM Curran",
+          "longName": "Sam Curran",
+          "mobileName": "Sam Curran",
+          "indexName": "Curran, SM",
+          "battingName": "SM Curran",
+          "fieldingName": "Curran",
+          "slug": "sam-curran",
+          "imageUrl": "/db/PICTURES/CMS/304300/304324.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 6,
+            "date": 3
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lmf"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm medium-fast"
+          ],
+          "image": {
+            "id": 304324,
+            "objectId": 1223506,
+            "slug": "sam-curran-portrait",
+            "url": "/db/PICTURES/CMS/304300/304324.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Sam Curran portrait",
+            "longCaption": "Sam Curran, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "List A"
+        },
+        {
+          "id": 12,
+          "type": "g",
+          "name": "Other one-day/limited-overs matches"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Test",
+          "longName": "Test matches",
+          "multipleClass": 0,
+          "slug": "test-matches"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "ODI",
+          "longName": "One-Day Internationals",
+          "multipleClass": 0,
+          "slug": "one-day-internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "LA",
+          "longName": "List A matches",
+          "multipleClass": 0,
+          "slug": "list-a-matches"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 1,
+          "matches": 2,
+          "batted": true,
+          "battedInnings": 4,
+          "bowled": true,
+          "bowledInnings": 4,
+          "fielded": true,
+          "fieldedInnings": 4,
+          "dismissals": 0,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        },
+        {
+          "recordClassId": 2,
+          "matches": 1,
+          "batted": true,
+          "battedInnings": 1,
+          "bowled": true,
+          "bowledInnings": 1,
+          "fielded": true,
+          "fieldedInnings": 1,
+          "dismissals": 0,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 710,
+        "2": 269,
+        "3": 99,
+        "8": 166,
+        "9": 155,
+        "10": 57,
+        "14": 493,
+        "15": 546,
+        "16": 53
+      },
+      "teamContractedPlayerCount": 26,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 17,
+          "type": "g",
+          "name": "Women's Twenty20"
+        }
+      ]
+    }
+  }
+}

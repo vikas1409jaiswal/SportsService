@@ -1,0 +1,2482 @@
+{
+  "player": {
+    "id": 1412,
+    "objectId": 38244,
+    "name": "RE Redmond",
+    "longName": "Rodney Redmond",
+    "mobileName": "Redmond",
+    "indexName": "Redmond, RE",
+    "battingName": "RE Redmond",
+    "fieldingName": "Redmond",
+    "slug": "rodney-redmond",
+    "imageUrl": "/db/PICTURES/CMS/303700/303771.jpg",
+    "dateOfBirth": {
+      "year": 1944,
+      "month": 12,
+      "date": 29
+    },
+    "dateOfDeath": null,
+    "gender": "M",
+    "battingStyles": [
+      "lhb"
+    ],
+    "bowlingStyles": [
+      "sla"
+    ],
+    "longBattingStyles": [
+      "left-hand bat"
+    ],
+    "longBowlingStyles": [
+      "slow left-arm orthodox"
+    ],
+    "image": {
+      "id": 303771,
+      "objectId": 1222597,
+      "slug": "rodney-redmond-portrait",
+      "url": "/db/PICTURES/CMS/303700/303771.jpg",
+      "width": 160,
+      "height": 202,
+      "caption": "Rodney Redmond portrait",
+      "longCaption": "Rodney Redmond, May 2020",
+      "credit": "Getty Images",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 5,
+    "playerRoleTypeIds": [],
+    "playingRoles": [],
+    "fullName": "Rodney Ernest Redmond",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": 0,
+    "heightUnit": null,
+    "education": "",
+    "country": {
+      "id": 5,
+      "objectId": 5,
+      "name": "New Zealand",
+      "shortName": "New Zealand",
+      "abbreviation": "NZ",
+      "slug": "new-zealand",
+      "image": {
+        "id": 340505,
+        "objectId": 1318717,
+        "slug": "new-zealand-team-flag-latest",
+        "url": "/db/PICTURES/CMS/340500/340505.png",
+        "width": 500,
+        "height": 500,
+        "caption": "New Zealand team flag-latest",
+        "longCaption": "New Zealand team flag-latest",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Whangarei, Northland",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "",
+    "intlCareerSpan": "1973 - 1973",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 224807,
+      "objectId": 931715,
+      "slug": "rodney-redmond",
+      "url": "/db/PICTURES/CMS/224800/224807.jpg",
+      "width": 900,
+      "height": 580,
+      "caption": "Rodney Redmond ",
+      "longCaption": "Rodney Redmond profile, October 2015",
+      "credit": "ESPNcricinfo Ltd",
+      "photographer": "Brydon Coverdale",
+      "peerUrls": {
+        "FILM": "/db/PICTURES/CMS/224800/224807.jpg",
+        "WIDE": "/db/PICTURES/CMS/224800/224807.3.jpg",
+        "SQUARE": "/db/PICTURES/CMS/224800/224807.square.jpg"
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": true,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 5,
+    "totalVideos": 0,
+    "totalImages": 3
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 5,
+          "objectId": 5,
+          "scribeId": 5,
+          "slug": "new-zealand",
+          "name": "New Zealand",
+          "longName": "New Zealand",
+          "abbreviation": "NZ",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/340500/340505.png",
+          "isCountry": true,
+          "primaryColor": "#000000",
+          "image": {
+            "id": 340505,
+            "objectId": 1318717,
+            "slug": "new-zealand-team-flag-latest",
+            "url": "/db/PICTURES/CMS/340500/340505.png",
+            "width": 500,
+            "height": 500,
+            "caption": "New Zealand team flag-latest",
+            "longCaption": "New Zealand team flag-latest",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2510,
+          "objectId": 2459,
+          "scribeId": 2459,
+          "slug": "auckland",
+          "name": "Auckland",
+          "longName": "Auckland",
+          "abbreviation": "AUCK",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313300/313329.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313329,
+            "objectId": 1241788,
+            "slug": "auckland-logo",
+            "url": "/db/PICTURES/CMS/313300/313329.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Auckland logo",
+            "longCaption": "Auckland logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2651,
+          "objectId": 2600,
+          "scribeId": 2600,
+          "slug": "wellington",
+          "name": "Wellington",
+          "longName": "Wellington",
+          "abbreviation": "WELL",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313300/313338.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313338,
+            "objectId": 1241797,
+            "slug": "wellington-logo",
+            "url": "/db/PICTURES/CMS/313300/313338.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Wellington logo",
+            "longCaption": "Wellington logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      }
+    ],
+    "relations": [
+      {
+        "relation": "son",
+        "player": {
+          "id": 11279,
+          "objectId": 38264,
+          "name": "AJ Redmond",
+          "longName": "Aaron Redmond",
+          "mobileName": "Redmond",
+          "indexName": "Redmond, AJ",
+          "battingName": "AJ Redmond",
+          "fieldingName": "Redmond",
+          "slug": "aaron-redmond",
+          "imageUrl": "/db/PICTURES/CMS/303600/303611.png",
+          "dateOfBirth": {
+            "year": 1979,
+            "month": 9,
+            "date": 23
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 303611,
+            "objectId": 1222386,
+            "slug": "aaron-redmond-portrait",
+            "url": "/db/PICTURES/CMS/303600/303611.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Aaron Redmond portrait",
+            "longCaption": "Aaron Redmond portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        }
+      }
+    ],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "Rodney Redmond was a tall, aggressive opening batsman who hit powerfully off the front foot, as well as being a  useful slow left-armer and a sound fielder. Brought into the New Zealand side at the age of 28 for the third Test against Pakistan at Christchurch in 1972-73, he cracked 107 and 56 and was an automatic choice for the 1973 squad to tour England. But he struggled to come to terms with new contact lenses and his form on the trip was poor - he managed 483 runs at 28.41 and did not play in any of the Tests. He subsequently missed the 1973-74 season, was never again in the reckoning for a Test berth and played only two more summers before retiring. He now lives in Perth, Western Australia, but his son Aaron has moved back to New Zealand, where he attended the NZ Cricket Academy. Aaron started at Canterbury, moved to Otago and was picked for the 2008 England tour.<BR><B>Martin Williamson</b>"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 1,
+          "mt": 1,
+          "in": 2,
+          "rn": 163,
+          "bl": null,
+          "avg": 81.5,
+          "sr": null,
+          "no": 0,
+          "fo": 29,
+          "si": 0,
+          "hs": "107",
+          "hn": 1,
+          "ft": 1,
+          "ct": 0,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 2,
+          "mt": 2,
+          "in": 1,
+          "rn": 3,
+          "bl": 11,
+          "avg": 3,
+          "sr": 27.27,
+          "no": 0,
+          "fo": 0,
+          "si": 0,
+          "hs": "3",
+          "hn": 0,
+          "ft": 0,
+          "ct": 0,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 53,
+          "in": 100,
+          "rn": 3134,
+          "bl": null,
+          "avg": 33.69,
+          "sr": null,
+          "no": 7,
+          "fo": null,
+          "si": null,
+          "hs": "141*",
+          "hn": 5,
+          "ft": 16,
+          "ct": 31,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 5,
+          "mt": 10,
+          "in": 9,
+          "rn": 202,
+          "bl": null,
+          "avg": 22.44,
+          "sr": null,
+          "no": 0,
+          "fo": null,
+          "si": null,
+          "hs": "71",
+          "hn": 0,
+          "ft": 2,
+          "ct": 5,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 1,
+          "mt": 1,
+          "in": 0,
+          "rn": 0,
+          "bl": 0,
+          "avg": null,
+          "sr": null,
+          "wk": 0,
+          "bbi": "-",
+          "bbm": "-",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": null
+        },
+        {
+          "type": "BOWLING",
+          "cl": 2,
+          "mt": 2,
+          "in": 0,
+          "rn": 0,
+          "bl": 0,
+          "avg": null,
+          "sr": null,
+          "wk": 0,
+          "bbi": "-",
+          "bbm": "-",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": null
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 53,
+          "in": null,
+          "rn": 481,
+          "bl": 1472,
+          "avg": 28.29,
+          "sr": 86.5,
+          "wk": 17,
+          "bbi": "6/56",
+          "bbm": null,
+          "fwk": null,
+          "fw": 1,
+          "tw": 1,
+          "bwe": 1.96
+        },
+        {
+          "type": "BOWLING",
+          "cl": 5,
+          "mt": 10,
+          "in": null,
+          "rn": 0,
+          "bl": 0,
+          "avg": null,
+          "sr": null,
+          "wk": 0,
+          "bbi": "-",
+          "bbm": "-",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": null
+        }
+      ]
+    },
+    "topRecords": [
+      {
+        "position": null,
+        "multiple": false,
+        "record": {
+          "id": 151,
+          "objectId": 239555,
+          "title": "Hundred on debut",
+          "siteId": null,
+          "class": {
+            "id": 1,
+            "type": "i",
+            "name": "Test",
+            "longName": "Test matches",
+            "multipleClass": 0,
+            "slug": "test-matches"
+          },
+          "genre": {
+            "id": 7,
+            "name": "Debuts and last match",
+            "category": {
+              "id": 3,
+              "name": "batting",
+              "longName": "Batting records",
+              "slug": "batting-records"
+            }
+          },
+          "slug": "hundred-on-debut"
+        },
+        "value": "107"
+      }
+    ],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 1,
+              "events": [
+                {
+                  "interval": "ONLY",
+                  "match": {
+                    "_uid": 713,
+                    "id": 713,
+                    "objectId": 63099,
+                    "scribeId": 63099,
+                    "slug": "new-zealand-vs-pakistan-3rd-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1972/73",
+                    "title": "3rd Test",
+                    "floodlit": "day",
+                    "startDate": "1973-02-16T00:00:00Z",
+                    "endDate": "1973-02-19T00:00:00Z",
+                    "startTime": "1973-02-15T22:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000713",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 7,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 4,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1240,
+                      "objectId": 61499,
+                      "scribeId": 17236,
+                      "slug": "pakistan-tour-of-new-zealand-1972-73",
+                      "name": "Pakistan tour of New Zealand",
+                      "longName": "Pakistan tour of New Zealand",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1973,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1972/73",
+                      "startDate": "1973-02-02T00:00:00Z",
+                      "endDate": "1973-02-19T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 283,
+                      "objectId": 58792,
+                      "name": "Eden Park, Auckland",
+                      "smallName": "Auckland",
+                      "longName": "Eden Park, Auckland",
+                      "slug": "eden-park-auckland",
+                      "location": "",
+                      "image": {
+                        "id": 50662,
+                        "objectId": 209567,
+                        "slug": "eden-park-auckland",
+                        "url": "/db/PICTURES/CMS/50600/50662.1.jpg",
+                        "width": 210,
+                        "height": 137,
+                        "caption": "Eden Park, Auckland",
+                        "longCaption": "Eden Park, Auckland, New Zealand",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 822,
+                        "objectId": 58788,
+                        "name": "Auckland",
+                        "area": "",
+                        "timezone": "Pacific/Auckland"
+                      },
+                      "country": {
+                        "id": 5,
+                        "objectId": 5,
+                        "name": "New Zealand",
+                        "shortName": "New Zealand",
+                        "abbreviation": "NZ",
+                        "slug": "new-zealand"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "402 & 271",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 5,
+                          "objectId": 5,
+                          "scribeId": 5,
+                          "slug": "new-zealand",
+                          "name": "New Zealand",
+                          "longName": "New Zealand",
+                          "abbreviation": "NZ",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340505.png",
+                          "isCountry": true,
+                          "primaryColor": "#000000",
+                          "image": {
+                            "id": 340505,
+                            "objectId": 1318717,
+                            "slug": "new-zealand-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340505.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "New Zealand team flag-latest",
+                            "longCaption": "New Zealand team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "402 & 92/3",
+                        "scoreInfo": "T:272",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 2,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:07:14.463Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 2,
+                "name": "One-Day Internationals",
+                "type": "i"
+              },
+              "total": 2,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 2561,
+                    "id": 2561,
+                    "objectId": 64947,
+                    "scribeId": 64947,
+                    "slug": "england-vs-new-zealand-1st-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "1973",
+                    "title": "1st ODI",
+                    "floodlit": "day",
+                    "startDate": "1973-07-18T00:00:00Z",
+                    "endDate": "1973-07-18T00:00:00Z",
+                    "startTime": "1973-07-18T10:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "England won by 7 wickets (with 57 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000006",
+                    "generalNumber": null,
+                    "winnerTeamId": 1,
+                    "tossWinnerTeamId": 5,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1813,
+                      "objectId": 62072,
+                      "scribeId": 17229,
+                      "slug": "new-zealand-tour-of-england-1973",
+                      "name": "New Zealand tour of England",
+                      "longName": "New Zealand tour of England",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1973,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1973",
+                      "startDate": "1973-06-07T00:00:00Z",
+                      "endDate": "1973-07-20T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 277,
+                      "objectId": 57347,
+                      "name": "St Helen's, Swansea",
+                      "smallName": "Swansea",
+                      "longName": "St Helen's, Swansea",
+                      "slug": "st-helen-s-swansea",
+                      "location": "",
+                      "image": {
+                        "id": 297,
+                        "objectId": 156454,
+                        "slug": "a-view-of-the-st-helen-s-ground-and-pavilion-in-swansea",
+                        "url": "/db/PICTURES/CMS/200/297.1.jpg",
+                        "width": 210,
+                        "height": 142,
+                        "caption": "A view of the St.Helen`s ground and pavilion in Swansea",
+                        "longCaption": "A view of the St.Helen`s ground and pavilion in Swansea",
+                        "credit": "Glamorgan County Cricket Club",
+                        "photographer": "Huw John",
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 302,
+                        "objectId": 57346,
+                        "name": "Swansea",
+                        "area": "Wales",
+                        "timezone": "Europe/London"
+                      },
+                      "country": {
+                        "id": 1,
+                        "objectId": 1,
+                        "name": "England",
+                        "shortName": "England",
+                        "abbreviation": "ENG",
+                        "slug": "england"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 5,
+                          "objectId": 5,
+                          "scribeId": 5,
+                          "slug": "new-zealand",
+                          "name": "New Zealand",
+                          "longName": "New Zealand",
+                          "abbreviation": "NZ",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340505.png",
+                          "isCountry": true,
+                          "primaryColor": "#000000",
+                          "image": {
+                            "id": 340505,
+                            "objectId": 1318717,
+                            "slug": "new-zealand-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340505.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "New Zealand team flag-latest",
+                            "longCaption": "New Zealand team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "158",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "159/3",
+                        "scoreInfo": "45.3/55 ov, T:159",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:08:22.478Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 2562,
+                    "id": 2562,
+                    "objectId": 64948,
+                    "scribeId": 64948,
+                    "slug": "england-vs-new-zealand-2nd-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "1973",
+                    "title": "2nd ODI",
+                    "floodlit": "day",
+                    "startDate": "1973-07-20T00:00:00Z",
+                    "endDate": "1973-07-20T00:00:00Z",
+                    "startTime": "1973-07-20T10:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "NO RESULT",
+                    "statusText": "No result",
+                    "statusEng": "NO RESULT",
+                    "internationalNumber": "000007",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 5,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 5,
+                    "liveInning": 1,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1813,
+                      "objectId": 62072,
+                      "scribeId": 17229,
+                      "slug": "new-zealand-tour-of-england-1973",
+                      "name": "New Zealand tour of England",
+                      "longName": "New Zealand tour of England",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1973,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1973",
+                      "startDate": "1973-06-07T00:00:00Z",
+                      "endDate": "1973-07-20T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 75,
+                      "objectId": 57160,
+                      "name": "Old Trafford, Manchester",
+                      "smallName": "Manchester",
+                      "longName": "Old Trafford, Manchester",
+                      "slug": "old-trafford-manchester",
+                      "location": "Stretford",
+                      "image": {
+                        "id": 194633,
+                        "objectId": 784927,
+                        "slug": "the-final-day-of-the-season-unfolds-under-autumn-sun-at-old-trafford",
+                        "url": "/db/PICTURES/CMS/194600/194633.5.jpg",
+                        "width": 210,
+                        "height": 151,
+                        "caption": "The final day of the season unfolds under autumn sun at Old Trafford",
+                        "longCaption": "The final day of the season unfolds under autumn sun at Old Trafford, Lancashire v Middlesex, County Championship, Division One, Old Trafford, September 26, 2014",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 232,
+                        "objectId": 57155,
+                        "name": "Manchester",
+                        "area": "",
+                        "timezone": "Europe/London"
+                      },
+                      "country": {
+                        "id": 1,
+                        "objectId": 1,
+                        "name": "England",
+                        "shortName": "England",
+                        "abbreviation": "ENG",
+                        "slug": "england"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "167/8",
+                        "scoreInfo": "48.3/55 ov",
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 5,
+                          "objectId": 5,
+                          "scribeId": 5,
+                          "slug": "new-zealand",
+                          "name": "New Zealand",
+                          "longName": "New Zealand",
+                          "abbreviation": "NZ",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340505.png",
+                          "isCountry": true,
+                          "primaryColor": "#000000",
+                          "image": {
+                            "id": 340505,
+                            "objectId": 1318717,
+                            "slug": "new-zealand-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340505.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "New Zealand team flag-latest",
+                            "longCaption": "New Zealand team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": null,
+                        "scoreInfo": null,
+                        "inningNumbers": [],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:07:07.106Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 53,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1963/64 - 1975/76"
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 5,
+                "name": "List A",
+                "type": "g"
+              },
+              "total": 10,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1971/72 - 1975/76"
+                }
+              ]
+            }
+          ],
+          "recent": []
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 292224,
+        "objectId": 1254893,
+        "scribeId": 1254893,
+        "slug": "stats-analysis-which-players-bucked-cricket-s-statistical-trends-most-notably",
+        "title": "Which players bucked cricket's statistical trends most notably?",
+        "subTitle": "Stats Analysis",
+        "seoTitle": "Which players bucked cricket's statistical trends most notably?",
+        "summary": "Meet the innings specialists, the away artists, the conversion masters, the batting-order yo-yos, and more",
+        "byline": "Anantha Narayanan",
+        "categoryType": "TCM",
+        "genreType": "OTHER",
+        "genreId": 688,
+        "genreName": "Stats feature",
+        "publishedAt": "2021-03-25T05:35:54Z",
+        "modifiedAt": "2021-03-25T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 409,
+        "image": {
+          "id": 317989,
+          "objectId": 1254972,
+          "slug": "adam-gilchrist-walks-out-to-bat",
+          "url": "/db/PICTURES/CMS/317900/317989.5.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "Adam Gilchrist walks out to bat",
+          "longCaption": "Adam Gilchrist walks out to bat, day three, First Test, Australia vs Pakistan, the WACA, Perth, Australia, December 18, 2004",
+          "credit": "Getty Images",
+          "photographer": null,
+          "peerUrls": {
+            "FILM": "/db/PICTURES/CMS/317900/317989.jpg",
+            "WIDE": "/db/PICTURES/CMS/317900/317989.6.jpg",
+            "SQUARE": "/db/PICTURES/CMS/317900/317989.10.jpg"
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:07:05.947Z"
+      },
+      {
+        "id": 237899,
+        "objectId": 931729,
+        "scribeId": 19738628,
+        "slug": "brydon-coverdale-meets-rodney-redmond-who-played-one-test-for-new-zealand-in-1973",
+        "title": "A hundred and sixty-three in Auckland",
+        "subTitle": "One and Done",
+        "seoTitle": "Brydon Coverdale meets Rodney Redmond, who played one Test for New Zealand in 1973",
+        "summary": "Rodney Redmond made a century and a fifty in his first Test, but he never played another ",
+        "byline": "Brydon Coverdale",
+        "categoryType": "TCM",
+        "genreType": "OTHER",
+        "genreId": 687,
+        "genreName": "One and Done",
+        "publishedAt": "2015-10-22T15:50:49Z",
+        "modifiedAt": "2015-10-23T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 268,
+        "image": {
+          "id": 224807,
+          "objectId": 931715,
+          "slug": "rodney-redmond",
+          "url": "/db/PICTURES/CMS/224800/224807.4.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "Rodney Redmond ",
+          "longCaption": "Rodney Redmond profile, October 2015",
+          "credit": "ESPNcricinfo Ltd",
+          "photographer": "Brydon Coverdale",
+          "peerUrls": {
+            "FILM": "/db/PICTURES/CMS/224800/224807.jpg",
+            "WIDE": "/db/PICTURES/CMS/224800/224807.3.jpg",
+            "SQUARE": "/db/PICTURES/CMS/224800/224807.square.jpg"
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:00:39.619Z"
+      },
+      {
+        "id": 209449,
+        "objectId": 760195,
+        "scribeId": 21481883,
+        "slug": "binny-s-selection-does-not-prove-trivial",
+        "title": "Binny's selection does not prove trivial",
+        "subTitle": "England v India, 1st Investec Test, Trent Bridge, 5th day",
+        "seoTitle": "Binny's selection does not prove trivial",
+        "summary": "Why had Stuart Binny been picked in this Test? It was probably not with a match-saving innings in mind, but that's what he produced just when India were threatening to topple apart",
+        "byline": "Sidharth Monga at Trent Bridge",
+        "categoryType": "OTHERS",
+        "genreType": "OTHER",
+        "genreId": 411,
+        "genreName": "Match Analysis",
+        "publishedAt": "2014-07-13T17:57:31Z",
+        "modifiedAt": "2014-07-13T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": 5,
+        "authorId": 272,
+        "image": {
+          "id": 189047,
+          "objectId": 760081,
+          "slug": "stuart-binny-pulls",
+          "url": "/db/PICTURES/CMS/189000/189047.4.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "Stuart Binny pulls",
+          "longCaption": "Stuart Binny pulls, England v India, 1st Investec Test, Trent Bridge, 5th day, July 13, 2014",
+          "credit": "Getty Images",
+          "photographer": null,
+          "peerUrls": {
+            "FILM": null,
+            "WIDE": "/db/PICTURES/CMS/189000/189047.3.jpg",
+            "SQUARE": null
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:00:39.619Z"
+      }
+    ],
+    "videos": [],
+    "images": [
+      {
+        "id": 224807,
+        "objectId": 931715,
+        "slug": "rodney-redmond",
+        "url": "/db/PICTURES/CMS/224800/224807.jpg",
+        "width": 900,
+        "height": 580,
+        "caption": "Rodney Redmond ",
+        "longCaption": "Rodney Redmond profile, October 2015",
+        "credit": "ESPNcricinfo Ltd",
+        "photographer": "Brydon Coverdale",
+        "peerUrls": null,
+        "dateTaken": "2015-09-30T00:00:00Z",
+        "capturedOn": {
+          "year": 2015,
+          "month": 10,
+          "date": null
+        }
+      },
+      {
+        "id": 12915,
+        "objectId": 38243,
+        "slug": "rodney-redmond",
+        "url": "/db/PICTURES/DB/032004/050676.jpg",
+        "width": 160,
+        "height": 159,
+        "caption": "Rodney Redmond",
+        "longCaption": "Rodney Redmond",
+        "credit": "The Cricketer International",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2004-03-16T00:00:00Z",
+        "capturedOn": {
+          "year": 2004,
+          "month": 3,
+          "date": 16
+        }
+      },
+      {
+        "id": 2692,
+        "objectId": 158540,
+        "slug": "rodney-redmond-s-107-v-pakistan",
+        "url": "/db/PICTURES/DB/012003/041232.jpg",
+        "width": 600,
+        "height": 766,
+        "caption": "Rodney Redmond's 107 v Pakistan",
+        "longCaption": "Wagon Wheel of Rodney Redmond's 107 v Pakistan, Eden Park, Auckland 17th February 1973",
+        "credit": "Pat Culpan",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2003-01-05T00:00:00Z",
+        "capturedOn": {
+          "year": 2003,
+          "month": 1,
+          "date": 5
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 40,
+        "objectId": 40,
+        "scribeId": 40,
+        "slug": "afghanistan",
+        "name": "Afghanistan",
+        "longName": "Afghanistan",
+        "abbreviation": "AFG",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/321000/321005.png",
+        "isCountry": true,
+        "primaryColor": null,
+        "image": {
+          "id": 321005,
+          "objectId": 1262396,
+          "slug": "afghanistan-team-logo",
+          "url": "/db/PICTURES/CMS/321000/321005.png",
+          "width": 500,
+          "height": 500,
+          "caption": "Afghanistan team logo",
+          "longCaption": "Afghanistan team logo",
+          "credit": "Unknown",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 80247,
+          "objectId": 819429,
+          "name": "Azmatullah Omarzai",
+          "longName": "Azmatullah Omarzai",
+          "mobileName": "Azmatullah",
+          "indexName": "Azmatullah Omarzai",
+          "battingName": "Azmatullah Omarzai",
+          "fieldingName": "Azmatullah Omarzai",
+          "slug": "azmatullah-omarzai",
+          "imageUrl": "/db/PICTURES/CMS/347800/347832.4.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 3,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 347832,
+            "objectId": 1340666,
+            "slug": "azmatullah-omarzai-player-portrait",
+            "url": "/db/PICTURES/CMS/347800/347832.4.jpg",
+            "width": 160,
+            "height": 211,
+            "caption": "Azmatullah Omarzai, player portrait",
+            "longCaption": "Azmatullah Omarzai, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Matt King",
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 90231,
+          "objectId": 974175,
+          "name": "Fazalhaq Farooqi",
+          "longName": "Fazalhaq Farooqi",
+          "mobileName": "",
+          "indexName": "Fazalhaq Farooqi",
+          "battingName": "Fazalhaq Farooqi",
+          "fieldingName": "Fazalhaq Farooqi",
+          "slug": "fazalhaq-farooqi",
+          "imageUrl": "/db/PICTURES/CMS/306700/306755.3.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 9,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 306755,
+            "objectId": 1227647,
+            "slug": "fazal-haq-player-portrait",
+            "url": "/db/PICTURES/CMS/306700/306755.3.jpg",
+            "width": 160,
+            "height": 196,
+            "caption": "Fazal Haq player portrait",
+            "longCaption": "Fazal Haq player portrait",
+            "credit": "Jamroz Khan ",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 79157,
+          "objectId": 793457,
+          "name": "Hazratullah Zazai",
+          "longName": "Hazratullah Zazai",
+          "mobileName": "",
+          "indexName": "Hazratullah Zazai",
+          "battingName": "Hazratullah Zazai",
+          "fieldingName": "Hazratullah Zazai",
+          "slug": "hazratullah-zazai",
+          "imageUrl": "/db/PICTURES/CMS/289600/289664.1.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 3,
+            "date": 23
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 289664,
+            "objectId": 1185621,
+            "slug": "hazratullah-zazai-player-portrait",
+            "url": "/db/PICTURES/CMS/289600/289664.1.jpg",
+            "width": 160,
+            "height": 217,
+            "caption": "Hazratullah Zazai player portrait",
+            "longCaption": "Hazratullah Zazai player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 84865,
+          "objectId": 921509,
+          "name": "Ibrahim Zadran",
+          "longName": "Ibrahim Zadran",
+          "mobileName": "",
+          "indexName": "Ibrahim Zadran",
+          "battingName": "Ibrahim Zadran",
+          "fieldingName": "Ibrahim Zadran",
+          "slug": "ibrahim-zadran",
+          "imageUrl": "/db/PICTURES/CMS/303200/303273.jpg",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 12,
+            "date": 12
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303273,
+            "objectId": 1221782,
+            "slug": "ibrahim-zadran-portrait",
+            "url": "/db/PICTURES/CMS/303200/303273.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Ibrahim Zadran portrait",
+            "longCaption": "Ibrahim Zadran portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 46888,
+          "objectId": 25913,
+          "name": "Mohammad Nabi",
+          "longName": "Mohammad Nabi",
+          "mobileName": "M Nabi",
+          "indexName": "Mohammad Nabi",
+          "battingName": "Mohammad Nabi",
+          "fieldingName": "Mohammad Nabi",
+          "slug": "mohammad-nabi",
+          "imageUrl": "/db/PICTURES/CMS/303200/303280.jpg",
+          "dateOfBirth": {
+            "year": 1985,
+            "month": 1,
+            "date": 1
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303280,
+            "objectId": 1221789,
+            "slug": "mohammad-nabi-portrait",
+            "url": "/db/PICTURES/CMS/303200/303280.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Mohammad Nabi portrait",
+            "longCaption": "Mohammad Nabi portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 90165,
+          "objectId": 974109,
+          "name": "Mujeeb Ur Rahman",
+          "longName": "Mujeeb Ur Rahman",
+          "mobileName": "Mujeeb",
+          "indexName": "Mujeeb Ur Rahman",
+          "battingName": "Mujeeb Ur Rahman",
+          "fieldingName": "Mujeeb Ur Rahman",
+          "slug": "mujeeb-ur-rahman",
+          "imageUrl": "/db/PICTURES/CMS/303200/303282.jpg",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 3,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303282,
+            "objectId": 1221791,
+            "slug": "mujeeb-ur-rahman-portrait",
+            "url": "/db/PICTURES/CMS/303200/303282.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Mujeeb Ur Rahman portrait",
+            "longCaption": "Mujeeb Ur Rahman portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 65861,
+          "objectId": 524049,
+          "name": "Najibullah Zadran",
+          "longName": "Najibullah Zadran",
+          "mobileName": "Zadran",
+          "indexName": "Najibullah Zadran",
+          "battingName": "Najibullah Zadran",
+          "fieldingName": "Najibullah Zadran",
+          "slug": "najibullah-zadran",
+          "imageUrl": "/db/PICTURES/CMS/303200/303283.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 2,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303283,
+            "objectId": 1221792,
+            "slug": "najibullah-zadran-portrait",
+            "url": "/db/PICTURES/CMS/303200/303283.jpg",
+            "width": 160,
+            "height": 199,
+            "caption": "Najibullah Zadran portrait",
+            "longCaption": "Najibullah Zadran portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 79151,
+          "objectId": 793447,
+          "name": "Naveen-ul-Haq",
+          "longName": "Naveen-ul-Haq",
+          "mobileName": "",
+          "indexName": "Naveen-ul-Haq",
+          "battingName": "Naveen-ul-Haq",
+          "fieldingName": "Naveen-ul-Haq",
+          "slug": "naveen-ul-haq",
+          "imageUrl": "/db/PICTURES/CMS/303200/303285.jpg",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 9,
+            "date": 23
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303285,
+            "objectId": 1221794,
+            "slug": "naveen-ul-haq-portrait",
+            "url": "/db/PICTURES/CMS/303200/303285.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Naveen-ul-Haq portrait",
+            "longCaption": "Naveen-ul-Haq portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 90143,
+          "objectId": 974087,
+          "name": "Rahmanullah Gurbaz",
+          "longName": "Rahmanullah Gurbaz",
+          "mobileName": "Rahmanullah",
+          "indexName": "Rahmanullah Gurbaz",
+          "battingName": "Rahmanullah Gurbaz",
+          "fieldingName": "Rahmanullah Gurbaz",
+          "slug": "rahmanullah-gurbaz",
+          "imageUrl": "/db/PICTURES/CMS/357000/357020.1.png",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 11,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 357020,
+            "objectId": 1365535,
+            "slug": "rahmanullah-gurbaz-player-portrait",
+            "url": "/db/PICTURES/CMS/357000/357020.1.png",
+            "width": 160,
+            "height": 208,
+            "caption": "Rahmanullah Gurbaz player portrait",
+            "longCaption": "Rahmanullah Gurbaz player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 79159,
+          "objectId": 793463,
+          "name": "Rashid Khan",
+          "longName": "Rashid Khan",
+          "mobileName": "Rashid Khan",
+          "indexName": "Rashid Khan",
+          "battingName": "Rashid Khan",
+          "fieldingName": "Rashid Khan",
+          "slug": "rashid-khan",
+          "imageUrl": "/db/PICTURES/CMS/289200/289234.1.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 9,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lbg"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak googly"
+          ],
+          "image": {
+            "id": 289234,
+            "objectId": 1184480,
+            "slug": "rashid-khan-player-portrait",
+            "url": "/db/PICTURES/CMS/289200/289234.1.jpg",
+            "width": 160,
+            "height": 209,
+            "caption": "Rashid Khan player portrait",
+            "longCaption": "Rashid Khan player portrait",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 58403,
+          "objectId": 379140,
+          "name": "DP Conway",
+          "longName": "Devon Conway",
+          "mobileName": "Conway",
+          "indexName": "Conway, DP",
+          "battingName": "DP Conway",
+          "fieldingName": "Conway",
+          "slug": "devon-conway",
+          "imageUrl": "/db/PICTURES/CMS/318500/318588.1.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 7,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 318588,
+            "objectId": 1256973,
+            "slug": "conway-portrait",
+            "url": "/db/PICTURES/CMS/318500/318588.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Conway portrait",
+            "longCaption": null,
+            "credit": "NZC",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 64864,
+          "objectId": 502714,
+          "name": "MJ Santner",
+          "longName": "Mitchell Santner",
+          "mobileName": "Santner",
+          "indexName": "Santner, MJ",
+          "battingName": "MJ Santner",
+          "fieldingName": "Santner",
+          "slug": "mitchell-santner",
+          "imageUrl": "/db/PICTURES/CMS/356800/356846.1.png",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 2,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 356846,
+            "objectId": 1365128,
+            "slug": "santner-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356846.1.png",
+            "width": 160,
+            "height": 193,
+            "caption": "Santner player portrait",
+            "longCaption": "Santner player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 54369,
+          "objectId": 326968,
+          "name": "MG Bracewell",
+          "longName": "Michael Bracewell",
+          "mobileName": "Michael Bracewell",
+          "indexName": "Bracewell, MG",
+          "battingName": "MG Bracewell",
+          "fieldingName": "Bracewell",
+          "slug": "michael-bracewell",
+          "imageUrl": "/db/PICTURES/CMS/356800/356810.1.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 2,
+            "date": 14
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 356810,
+            "objectId": 1365026,
+            "slug": "michael-bracewell-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356810.1.png",
+            "width": 160,
+            "height": 215,
+            "caption": "Michael Bracewell player portrait",
+            "longCaption": "Michael Bracewell player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 46564,
+          "objectId": 54565,
+          "name": "SW Bates",
+          "longName": "Suzie Bates",
+          "mobileName": "Bates",
+          "indexName": "Bates, SW",
+          "battingName": "SW Bates",
+          "fieldingName": "Bates",
+          "slug": "suzie-bates",
+          "imageUrl": "/db/PICTURES/CMS/305800/305804.png",
+          "dateOfBirth": {
+            "year": 1987,
+            "month": 9,
+            "date": 16
+          },
+          "dateOfDeath": null,
+          "gender": "F",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 305804,
+            "objectId": 1225761,
+            "slug": "suzie-bates-portrait",
+            "url": "/db/PICTURES/CMS/305800/305804.png",
+            "width": 160,
+            "height": 199,
+            "caption": "Suzie Bates portrait",
+            "longCaption": "Suzie Bates portrait, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 80639,
+          "objectId": 823509,
+          "name": "GD Phillips",
+          "longName": "Glenn Phillips",
+          "mobileName": "Phillips",
+          "indexName": "Phillips, GD",
+          "battingName": "GD Phillips",
+          "fieldingName": "Phillips",
+          "slug": "glenn-phillips",
+          "imageUrl": "/db/PICTURES/CMS/303500/303599.jpg",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 12,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303599,
+            "objectId": 1222373,
+            "slug": "glenn-phillips-portrait",
+            "url": "/db/PICTURES/CMS/303500/303599.jpg",
+            "width": 160,
+            "height": 199,
+            "caption": "Glenn Phillips portrait",
+            "longCaption": "Glenn Phillips portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 67178,
+          "objectId": 547749,
+          "name": "WA Young",
+          "longName": "Will Young",
+          "mobileName": "Young",
+          "indexName": "Young, WA",
+          "battingName": "WA Young",
+          "fieldingName": "Young",
+          "slug": "will-young",
+          "imageUrl": "/db/PICTURES/CMS/148100/148195.jpg",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 11,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 148195,
+            "objectId": 575876,
+            "slug": "will-young",
+            "url": "/db/PICTURES/CMS/148100/148195.jpg",
+            "width": 160,
+            "height": 184,
+            "caption": "Will Young",
+            "longCaption": "Will Young, player portrait, August 6, 2012",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 89105,
+          "objectId": 959767,
+          "name": "R Ravindra",
+          "longName": "Rachin Ravindra",
+          "mobileName": "Ravindra",
+          "indexName": "Ravindra, R",
+          "battingName": "R Ravindra",
+          "fieldingName": "Ravindra",
+          "slug": "rachin-ravindra",
+          "imageUrl": "/db/PICTURES/CMS/271800/271809.jpg",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 11,
+            "date": 18
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 271809,
+            "objectId": 1132202,
+            "slug": "rachin-ravindra-portrait",
+            "url": "/db/PICTURES/CMS/271800/271809.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Rachin Ravindra portrait",
+            "longCaption": "Rachin Ravindra, January 8, 2018",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 51092,
+          "objectId": 277912,
+          "name": "TA Boult",
+          "longName": "Trent Boult",
+          "mobileName": "Boult",
+          "indexName": "Boult, TA",
+          "battingName": "TA Boult",
+          "fieldingName": "Boult",
+          "slug": "trent-boult",
+          "imageUrl": "/db/PICTURES/CMS/303600/303673.jpg",
+          "dateOfBirth": {
+            "year": 1989,
+            "month": 7,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 303673,
+            "objectId": 1222471,
+            "slug": "trent-boult-portrait",
+            "url": "/db/PICTURES/CMS/303600/303673.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Trent Boult portrait",
+            "longCaption": "Trent Boult, Brisbane, November 4, 2015",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 49108,
+          "objectId": 232364,
+          "name": "TG Southee",
+          "longName": "Tim Southee",
+          "mobileName": "Southee",
+          "indexName": "Southee, TG",
+          "battingName": "TG Southee",
+          "fieldingName": "Southee",
+          "slug": "tim-southee",
+          "imageUrl": "/db/PICTURES/CMS/303600/303610.png",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 12,
+            "date": 11
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303610,
+            "objectId": 1222384,
+            "slug": "tim-southee-portrait",
+            "url": "/db/PICTURES/CMS/303600/303610.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Tim Southee portrait",
+            "longCaption": "Tim Southee portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 51088,
+          "objectId": 277906,
+          "name": "KS Williamson",
+          "longName": "Kane Williamson",
+          "mobileName": "Williamson",
+          "indexName": "Williamson, KS",
+          "battingName": "KS Williamson",
+          "fieldingName": "Williamson",
+          "slug": "kane-williamson",
+          "imageUrl": "/db/PICTURES/CMS/303600/303652.png",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 8,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303652,
+            "objectId": 1222450,
+            "slug": "kane-williamson-portrait",
+            "url": "/db/PICTURES/CMS/303600/303652.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Kane Williamson portrait",
+            "longCaption": "Kane Williamson, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "List A"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Test",
+          "longName": "Test matches",
+          "multipleClass": 0,
+          "slug": "test-matches"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "ODI",
+          "longName": "One-Day Internationals",
+          "multipleClass": 0,
+          "slug": "one-day-internationals"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "LA",
+          "longName": "List A matches",
+          "multipleClass": 0,
+          "slug": "list-a-matches"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 1,
+          "matches": 1,
+          "batted": true,
+          "battedInnings": 2,
+          "bowled": false,
+          "bowledInnings": 0,
+          "fielded": true,
+          "fieldedInnings": 2,
+          "dismissals": 0,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        },
+        {
+          "recordClassId": 2,
+          "matches": 2,
+          "batted": true,
+          "battedInnings": 1,
+          "bowled": false,
+          "bowledInnings": 0,
+          "fielded": true,
+          "fieldedInnings": 2,
+          "dismissals": 0,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 285,
+        "2": 209,
+        "3": 97,
+        "8": 125,
+        "9": 147,
+        "10": 64,
+        "14": 142,
+        "15": 300
+      },
+      "teamContractedPlayerCount": 20,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 17,
+          "type": "g",
+          "name": "Women's Twenty20"
+        }
+      ]
+    }
+  }
+}

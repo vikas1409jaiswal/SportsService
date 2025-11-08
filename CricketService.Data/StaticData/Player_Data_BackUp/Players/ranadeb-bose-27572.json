@@ -1,0 +1,4733 @@
+{
+  "player": {
+    "id": 8077,
+    "objectId": 27572,
+    "name": "RR Bose",
+    "longName": "Ranadeb Bose",
+    "mobileName": "Bose",
+    "indexName": "Bose, RR",
+    "battingName": "RR Bose",
+    "fieldingName": "Bose",
+    "slug": "ranadeb-bose",
+    "imageUrl": "/db/PICTURES/CMS/314200/314220.jpg",
+    "dateOfBirth": {
+      "year": 1979,
+      "month": 2,
+      "date": 27
+    },
+    "dateOfDeath": null,
+    "gender": "M",
+    "battingStyles": [
+      "rhb"
+    ],
+    "bowlingStyles": [
+      "rfm"
+    ],
+    "longBattingStyles": [
+      "right-hand bat"
+    ],
+    "longBowlingStyles": [
+      "right-arm fast-medium"
+    ],
+    "image": {
+      "id": 314220,
+      "objectId": 1245267,
+      "slug": "ranadeb-bose-portrait",
+      "url": "/db/PICTURES/CMS/314200/314220.jpg",
+      "width": 160,
+      "height": 200,
+      "caption": "Ranadeb Bose portrait",
+      "longCaption": "Ranadeb Bose portrait, December 2020",
+      "credit": "Getty Images",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 6,
+    "playerRoleTypeIds": [],
+    "playingRoles": [],
+    "fullName": "Ranadeb Ranjit Bose",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": 0,
+    "heightUnit": null,
+    "education": "",
+    "country": {
+      "id": 6,
+      "objectId": 6,
+      "name": "India",
+      "shortName": "India",
+      "abbreviation": "IND",
+      "slug": "india",
+      "image": {
+        "id": 313128,
+        "objectId": 1241587,
+        "slug": "india-logo",
+        "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+        "width": 500,
+        "height": 500,
+        "caption": "India logo",
+        "longCaption": "India logo",
+        "credit": null,
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Calcutta (now Kolkata), Bengal",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "",
+    "intlCareerSpan": null,
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 301568,
+      "objectId": 1218690,
+      "slug": "ranadeb-bose-and-akash-deep-have-a-chat",
+      "url": "/db/PICTURES/CMS/301500/301568.jpg",
+      "width": 1400,
+      "height": 1050,
+      "caption": "Ranadeb Bose and Akash Deep have a chat",
+      "longCaption": "Ranadeb Bose and Akash Deep have a chat",
+      "credit": "Shashank Kishore/ESPNcricinfo Ltd",
+      "photographer": null,
+      "peerUrls": {
+        "FILM": "/db/PICTURES/CMS/301500/301568.14.jpg",
+        "WIDE": "/db/PICTURES/CMS/301500/301568.6.jpg",
+        "SQUARE": "/db/PICTURES/CMS/301500/301568.10.jpg"
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": false,
+    "hasStats": false,
+    "hasMatches": true,
+    "totalStories": 59,
+    "totalVideos": 1,
+    "totalImages": 12
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 6,
+          "objectId": 6,
+          "scribeId": 6,
+          "slug": "india",
+          "name": "India",
+          "longName": "India",
+          "abbreviation": "IND",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+          "isCountry": true,
+          "primaryColor": "#137dd2",
+          "image": {
+            "id": 313128,
+            "objectId": 1241587,
+            "slug": "india-logo",
+            "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "India logo",
+            "longCaption": "India logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1623,
+          "objectId": 1572,
+          "scribeId": 1572,
+          "slug": "bengal",
+          "name": "Bengal",
+          "longName": "Bengal",
+          "abbreviation": "BENG",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313297,
+            "objectId": 1241756,
+            "slug": "bengal-logo",
+            "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Bengal logo",
+            "longCaption": "Bengal logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1832,
+          "objectId": 1781,
+          "scribeId": 1781,
+          "slug": "india-a-india-blues",
+          "name": "India A",
+          "longName": "India A",
+          "abbreviation": "IND-A",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313300/313306.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313306,
+            "objectId": 1241765,
+            "slug": "india-a-india-blues-logo",
+            "url": "/db/PICTURES/CMS/313300/313306.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "India A (India Blues) logo",
+            "longCaption": "India A (India Blues) logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1834,
+          "objectId": 1783,
+          "scribeId": 1783,
+          "slug": "india-b",
+          "name": "India B",
+          "longName": "India B",
+          "abbreviation": "IND-B",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313300/313307.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313307,
+            "objectId": 1241766,
+            "slug": "india-b-logo",
+            "url": "/db/PICTURES/CMS/313300/313307.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "India B logo",
+            "longCaption": "India B logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 4182,
+          "objectId": 260633,
+          "scribeId": 260633,
+          "slug": "india-blue",
+          "name": "India Blue",
+          "longName": "India Blue",
+          "abbreviation": "IND-B",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313300/313397.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313397,
+            "objectId": 1241856,
+            "slug": "india-blue-logo",
+            "url": "/db/PICTURES/CMS/313300/313397.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "India Blue logo",
+            "longCaption": "India Blue logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 4342,
+          "objectId": 335973,
+          "scribeId": 335973,
+          "slug": "punjab-kings",
+          "name": "Kings XI",
+          "longName": "Kings XI Punjab",
+          "abbreviation": "KXIP",
+          "unofficialName": "Punjab",
+          "imageUrl": "/db/PICTURES/CMS/317000/317003.png",
+          "isCountry": false,
+          "primaryColor": "#b32524",
+          "image": {
+            "id": 317003,
+            "objectId": 1252156,
+            "slug": "punjab-kings-team-logo",
+            "url": "/db/PICTURES/CMS/317000/317003.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Punjab Kings team logo",
+            "longCaption": "Punjab Kings team logo",
+            "credit": "IPL",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 4341,
+          "objectId": 335971,
+          "scribeId": 335971,
+          "slug": "kolkata-knight-riders",
+          "name": "KKR",
+          "longName": "Kolkata Knight Riders",
+          "abbreviation": "KKR",
+          "unofficialName": "Kolkata",
+          "imageUrl": "/db/PICTURES/CMS/313400/313419.logo.png",
+          "isCountry": false,
+          "primaryColor": "#3d2256",
+          "image": {
+            "id": 313419,
+            "objectId": 1241878,
+            "slug": "kolkata-knight-riders-logo",
+            "url": "/db/PICTURES/CMS/313400/313419.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Kolkata Knight Riders logo",
+            "longCaption": "Kolkata Knight Riders logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      }
+    ],
+    "relations": [],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "It would have been easy in 2005, when he was called up at the conditioning camp held by newly appointed coach Greg Chappell in Bangalore and then promptly forgotten, for Ranadeb Bose to give up on his dream of an international career. The 30 players at the camp were supposed to be the 30 best in India and it was due recognition for the Bengal fast bowler with a flowing action, a nice leap in the delivery stride that made optimum use of his height, and who had earned his wickets quite cheaply over his career, at an average of 24.63 and an economy rate of 2.64. However, he soon disappeared from the limelight and, at 26, it was believed he would not have a second coming."
+        },
+        {
+          "type": "HTML",
+          "html": "Two years later, on the back of an exceptional 2006-07 domestic season Bose was back and after being ignored for the Bangladesh tour, made his way into the Indian Test side for England. He got 57 Ranji wickets in eight matches, five-fors in five straight matches, and six in all, two 10-wicket hauls, and three four-wicket hauls to go with that. Only five bowlers have taken more than 57 wickets in a single Ranji season. This season was a metamorphosis of sorts after playing second fiddle to SS Paul last season. He took over the lead role as Paul was injured and led a young Bengal attack exceptionally well. At the end of the 2006-07 season, Bose had bowled 10,658 first-class deliveries, and not bowled a single front-foot no-ball. Add to that the 2,113 List A deliveries, and countless ones at other official games, where he hasn't over-stepped even once. It speaks a lot about his new approach to bowling: cutting down on pace, focussed on accuracy and movement, and the numbers are the tangible evidence.\n<BR><b>Sidharth Monga</b> June 2007"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 91,
+          "in": 101,
+          "rn": 376,
+          "bl": null,
+          "avg": 4.64,
+          "sr": null,
+          "no": 20,
+          "fo": null,
+          "si": null,
+          "hs": "21",
+          "hn": 0,
+          "ft": 0,
+          "ct": 17,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 5,
+          "mt": 82,
+          "in": 35,
+          "rn": 121,
+          "bl": null,
+          "avg": 5.04,
+          "sr": null,
+          "no": 11,
+          "fo": null,
+          "si": null,
+          "hs": "17",
+          "hn": 0,
+          "ft": 0,
+          "ct": 13,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 6,
+          "mt": 11,
+          "in": 3,
+          "rn": 7,
+          "bl": 5,
+          "avg": 3.5,
+          "sr": 140,
+          "no": 1,
+          "fo": 1,
+          "si": 0,
+          "hs": "7",
+          "hn": 0,
+          "ft": 0,
+          "ct": 0,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 91,
+          "in": null,
+          "rn": 8179,
+          "bl": 17667,
+          "avg": 25.8,
+          "sr": 55.7,
+          "wk": 317,
+          "bbi": "7/24",
+          "bbm": null,
+          "fwk": null,
+          "fw": 24,
+          "tw": 6,
+          "bwe": 2.77
+        },
+        {
+          "type": "BOWLING",
+          "cl": 5,
+          "mt": 82,
+          "in": null,
+          "rn": 3144,
+          "bl": 4052,
+          "avg": 24.95,
+          "sr": 32.1,
+          "wk": 126,
+          "bbi": "6/35",
+          "bbm": "6/35",
+          "fwk": 6,
+          "fw": 3,
+          "tw": 0,
+          "bwe": 4.65
+        },
+        {
+          "type": "BOWLING",
+          "cl": 6,
+          "mt": 11,
+          "in": 11,
+          "rn": 334,
+          "bl": 234,
+          "avg": 30.36,
+          "sr": 21.2,
+          "wk": 11,
+          "bbi": "4/40",
+          "bbm": "4/40",
+          "fwk": 1,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 8.56
+        }
+      ]
+    },
+    "topRecords": [],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 91,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": null,
+                  "span": "1998/99"
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 40148,
+                    "id": 40148,
+                    "objectId": 522967,
+                    "scribeId": 522967,
+                    "slug": "bengal-vs-tamil-nadu-group-b",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "2011/12",
+                    "title": "Group B",
+                    "floodlit": "day",
+                    "startDate": "2011-12-06T00:00:00Z",
+                    "endDate": "2011-12-09T00:00:00Z",
+                    "startTime": "2011-12-06T04:00:00Z",
+                    "timePublished": true,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "Y",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Tamil Nadu won by 10 wickets",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 2184,
+                    "tossWinnerTeamId": 1623,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": 4,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 6710,
+                      "objectId": 522928,
+                      "scribeId": 522928,
+                      "slug": "ranji-trophy-elite-2011-12",
+                      "name": "Ranji Trophy Elite",
+                      "longName": "Ranji Trophy Elite",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2011,
+                      "typeId": 3,
+                      "isTrophy": false,
+                      "description": "in India",
+                      "season": "2011/12",
+                      "startDate": "2011-11-03T00:00:00Z",
+                      "endDate": "2012-01-23T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 10,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 292,
+                      "objectId": 57980,
+                      "name": "Eden Gardens, Kolkata",
+                      "smallName": "Eden Gardens",
+                      "longName": "Eden Gardens, Kolkata",
+                      "slug": "eden-gardens-kolkata",
+                      "location": "",
+                      "image": {
+                        "id": 128035,
+                        "objectId": 500114,
+                        "slug": "an-aerial-view-of-the-eden-gardens-at-its-current-state-of-completion",
+                        "url": "/db/PICTURES/CMS/128000/128035.6.jpg",
+                        "width": 210,
+                        "height": 140,
+                        "caption": "An aerial view of the Eden Gardens at its current state of completion",
+                        "longCaption": "An aerial view of the Eden Gardens at its current state of completion, Kolkata, February 9, 2011",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 574,
+                        "objectId": 57976,
+                        "name": "Kolkata",
+                        "area": "",
+                        "timezone": "Asia/Kolkata"
+                      },
+                      "country": {
+                        "id": 6,
+                        "objectId": 6,
+                        "name": "India",
+                        "shortName": "India",
+                        "abbreviation": "IND",
+                        "slug": "india"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 2184,
+                          "objectId": 2133,
+                          "scribeId": 2133,
+                          "slug": "tamil-nadu",
+                          "name": "Tamil Nadu",
+                          "longName": "Tamil Nadu",
+                          "abbreviation": "TN",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313300/313318.logo.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 313318,
+                            "objectId": 1241777,
+                            "slug": "tamil-nadu-and-madras-logo",
+                            "url": "/db/PICTURES/CMS/313300/313318.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Tamil Nadu (and Madras) logo",
+                            "longCaption": "Tamil Nadu (and Madras) logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "391 & 34/0",
+                        "scoreInfo": "T:32",
+                        "inningNumbers": [
+                          1,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 1623,
+                          "objectId": 1572,
+                          "scribeId": 1572,
+                          "slug": "bengal",
+                          "name": "Bengal",
+                          "longName": "Bengal",
+                          "abbreviation": "BENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 313297,
+                            "objectId": 1241756,
+                            "slug": "bengal-logo",
+                            "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Bengal logo",
+                            "longCaption": "Bengal logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "(f/o) 176 & 246",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": 153215,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 4,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:21:04.571Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 5,
+                "name": "List A",
+                "type": "g"
+              },
+              "total": 82,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": null,
+                  "span": "1998/99"
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 30284,
+                    "id": 30284,
+                    "objectId": 427320,
+                    "scribeId": 427320,
+                    "slug": "east-zone-vs-north-zone-1st-semi-final",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2009/10",
+                    "title": "1st Semi-Final",
+                    "floodlit": "day",
+                    "startDate": "2010-03-07T00:00:00Z",
+                    "endDate": "2010-03-07T00:00:00Z",
+                    "startTime": "2010-03-07T03:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "North Zone won by 8 wickets (with 73 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 2025,
+                    "tossWinnerTeamId": 2025,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": 37,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 5519,
+                      "objectId": 427311,
+                      "scribeId": 8737,
+                      "slug": "deodhar-trophy-2009-10",
+                      "name": "Deodhar Trophy",
+                      "longName": "Deodhar Trophy",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2010,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in India",
+                      "season": "2009/10",
+                      "startDate": "2010-03-06T00:00:00Z",
+                      "endDate": "2010-03-09T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 515,
+                      "objectId": 58519,
+                      "name": "Moti Bagh Stadium, Vadodara",
+                      "smallName": "Vadodara",
+                      "longName": "Moti Bagh Stadium, Vadodara",
+                      "slug": "moti-bagh-stadium-vadodara",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 731,
+                        "objectId": 58512,
+                        "name": "Vadodara",
+                        "area": "",
+                        "timezone": "Asia/Kolkata"
+                      },
+                      "country": {
+                        "id": 6,
+                        "objectId": 6,
+                        "name": "India",
+                        "shortName": "India",
+                        "abbreviation": "IND",
+                        "slug": "india"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1741,
+                          "objectId": 1690,
+                          "scribeId": 1690,
+                          "slug": "east-zone",
+                          "name": "East Zone",
+                          "longName": "East Zone",
+                          "abbreviation": "East",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "210",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 2025,
+                          "objectId": 1974,
+                          "scribeId": 1974,
+                          "slug": "north-zone",
+                          "name": "North Zone",
+                          "longName": "North Zone",
+                          "abbreviation": "North",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "211/2",
+                        "scoreInfo": "37.5/50 ov, T:211",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": 135580,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:24:03.395Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 6,
+                "name": "Twenty20",
+                "type": "g"
+              },
+              "total": 11,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 13328,
+                    "id": 13328,
+                    "objectId": 290529,
+                    "scribeId": 290529,
+                    "slug": "assam-vs-bengal-east-zone",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 6,
+                    "subClassId": null,
+                    "season": "2006/07",
+                    "title": "East Zone",
+                    "floodlit": "day",
+                    "startDate": "2007-04-03T00:00:00Z",
+                    "endDate": "2007-04-03T00:00:00Z",
+                    "startTime": "2007-04-03T03:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Bengal won by 35 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 1623,
+                    "tossWinnerTeamId": 1623,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 3149,
+                      "objectId": 290517,
+                      "scribeId": 8661,
+                      "slug": "inter-state-twenty-20-tournament-2006-07",
+                      "name": "Inter State Twenty-20 Tournament",
+                      "longName": "Inter State Twenty-20 Tournament",
+                      "alternateName": "",
+                      "longAlternateName": "",
+                      "unofficialName": null,
+                      "year": 2007,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in India",
+                      "season": "2006/07",
+                      "startDate": "2007-04-03T00:00:00Z",
+                      "endDate": "2007-04-20T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 292,
+                      "objectId": 57980,
+                      "name": "Eden Gardens, Kolkata",
+                      "smallName": "Eden Gardens",
+                      "longName": "Eden Gardens, Kolkata",
+                      "slug": "eden-gardens-kolkata",
+                      "location": "",
+                      "image": {
+                        "id": 128035,
+                        "objectId": 500114,
+                        "slug": "an-aerial-view-of-the-eden-gardens-at-its-current-state-of-completion",
+                        "url": "/db/PICTURES/CMS/128000/128035.6.jpg",
+                        "width": 210,
+                        "height": 140,
+                        "caption": "An aerial view of the Eden Gardens at its current state of completion",
+                        "longCaption": "An aerial view of the Eden Gardens at its current state of completion, Kolkata, February 9, 2011",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 574,
+                        "objectId": 57976,
+                        "name": "Kolkata",
+                        "area": "",
+                        "timezone": "Asia/Kolkata"
+                      },
+                      "country": {
+                        "id": 6,
+                        "objectId": 6,
+                        "name": "India",
+                        "shortName": "India",
+                        "abbreviation": "IND",
+                        "slug": "india"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1623,
+                          "objectId": 1572,
+                          "scribeId": 1572,
+                          "slug": "bengal",
+                          "name": "Bengal",
+                          "longName": "Bengal",
+                          "abbreviation": "BENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 313297,
+                            "objectId": 1241756,
+                            "slug": "bengal-logo",
+                            "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Bengal logo",
+                            "longCaption": "Bengal logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "169/9",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 1601,
+                          "objectId": 1550,
+                          "scribeId": 1550,
+                          "slug": "assam",
+                          "name": "Assam",
+                          "longName": "Assam",
+                          "abbreviation": "ASSAM",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313200/313295.logo.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 313295,
+                            "objectId": 1241754,
+                            "slug": "assam-logo",
+                            "url": "/db/PICTURES/CMS/313200/313295.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Assam logo",
+                            "longCaption": "Assam logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "134/8",
+                        "scoreInfo": "20 ov, T:170",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "T20",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 0,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:24:20.053Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 30216,
+                    "id": 30216,
+                    "objectId": 427213,
+                    "scribeId": 427213,
+                    "slug": "bengal-vs-jharkhand-east-zone",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 6,
+                    "subClassId": null,
+                    "season": "2009/10",
+                    "title": "East Zone",
+                    "floodlit": "day",
+                    "startDate": "2009-10-22T00:00:00Z",
+                    "endDate": "2009-10-22T00:00:00Z",
+                    "startTime": "2009-10-22T03:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "Dhanbad TBA",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Jharkhand won by 7 wickets (with 9 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 6558,
+                    "tossWinnerTeamId": 6558,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 5487,
+                      "objectId": 425302,
+                      "scribeId": 8661,
+                      "slug": "syed-mushtaq-ali-trophy-2009-10",
+                      "name": "Syed Mushtaq Ali Trophy",
+                      "longName": "Syed Mushtaq Ali Trophy",
+                      "alternateName": "",
+                      "longAlternateName": "",
+                      "unofficialName": null,
+                      "year": 2009,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in India",
+                      "season": "2009/10",
+                      "startDate": "2009-09-25T00:00:00Z",
+                      "endDate": "2010-03-16T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 2026,
+                      "objectId": 236763,
+                      "name": "Jawaharlal Nehru Stadium, Dhanbad",
+                      "smallName": "Dhanbad",
+                      "longName": "Jawaharlal Nehru Stadium, Dhanbad",
+                      "slug": "jawaharlal-nehru-stadium-dhanbad",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 754,
+                        "objectId": 58582,
+                        "name": "Dhanbad",
+                        "area": "",
+                        "timezone": "Asia/Kolkata"
+                      },
+                      "country": {
+                        "id": 6,
+                        "objectId": 6,
+                        "name": "India",
+                        "shortName": "India",
+                        "abbreviation": "IND",
+                        "slug": "india"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1623,
+                          "objectId": 1572,
+                          "scribeId": 1572,
+                          "slug": "bengal",
+                          "name": "Bengal",
+                          "longName": "Bengal",
+                          "abbreviation": "BENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 313297,
+                            "objectId": 1241756,
+                            "slug": "bengal-logo",
+                            "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Bengal logo",
+                            "longCaption": "Bengal logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "95/7",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 6558,
+                          "objectId": 1156778,
+                          "scribeId": 1156778,
+                          "slug": "jharkhand",
+                          "name": "Jharkhand",
+                          "longName": "Jharkhand",
+                          "abbreviation": "JHK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317200/317266.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 317266,
+                            "objectId": 1253086,
+                            "slug": "jharkhand-team-logo",
+                            "url": "/db/PICTURES/CMS/317200/317266.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Jharkhand team logo",
+                            "longCaption": "Jharkhand team logo",
+                            "credit": "Unknown",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "96/3",
+                        "scoreInfo": "18.3/20 ov, T:96",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "T20",
+                    "previewStoryId": null,
+                    "reportStoryId": 131655,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:19:37.558Z"
+                  },
+                  "span": null
+                }
+              ]
+            }
+          ],
+          "recent": [
+            {
+              "match": {
+                "_uid": 40148,
+                "id": 40148,
+                "objectId": 522967,
+                "scribeId": 522967,
+                "slug": "bengal-vs-tamil-nadu-group-b",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2011/12",
+                "title": "Group B",
+                "floodlit": "day",
+                "startDate": "2011-12-06T00:00:00Z",
+                "endDate": "2011-12-09T00:00:00Z",
+                "startTime": "2011-12-06T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Tamil Nadu won by 10 wickets",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 2184,
+                "tossWinnerTeamId": 1623,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 4,
+                "liveInningPredictions": null,
+                "liveOvers": 4,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 6710,
+                  "objectId": 522928,
+                  "scribeId": 522928,
+                  "slug": "ranji-trophy-elite-2011-12",
+                  "name": "Ranji Trophy Elite",
+                  "longName": "Ranji Trophy Elite",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2011,
+                  "typeId": 3,
+                  "isTrophy": false,
+                  "description": "in India",
+                  "season": "2011/12",
+                  "startDate": "2011-11-03T00:00:00Z",
+                  "endDate": "2012-01-23T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 10,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 292,
+                  "objectId": 57980,
+                  "name": "Eden Gardens, Kolkata",
+                  "smallName": "Eden Gardens",
+                  "longName": "Eden Gardens, Kolkata",
+                  "slug": "eden-gardens-kolkata",
+                  "location": "",
+                  "image": {
+                    "id": 128035,
+                    "objectId": 500114,
+                    "slug": "an-aerial-view-of-the-eden-gardens-at-its-current-state-of-completion",
+                    "url": "/db/PICTURES/CMS/128000/128035.6.jpg",
+                    "width": 210,
+                    "height": 140,
+                    "caption": "An aerial view of the Eden Gardens at its current state of completion",
+                    "longCaption": "An aerial view of the Eden Gardens at its current state of completion, Kolkata, February 9, 2011",
+                    "credit": null,
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 574,
+                    "objectId": 57976,
+                    "name": "Kolkata",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 2184,
+                      "objectId": 2133,
+                      "scribeId": 2133,
+                      "slug": "tamil-nadu",
+                      "name": "Tamil Nadu",
+                      "longName": "Tamil Nadu",
+                      "abbreviation": "TN",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313300/313318.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313318,
+                        "objectId": 1241777,
+                        "slug": "tamil-nadu-and-madras-logo",
+                        "url": "/db/PICTURES/CMS/313300/313318.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Tamil Nadu (and Madras) logo",
+                        "longCaption": "Tamil Nadu (and Madras) logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "391 & 34/0",
+                    "scoreInfo": "T:32",
+                    "inningNumbers": [
+                      1,
+                      4
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "(f/o) 176 & 246",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      2,
+                      3
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 153215,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:21:04.571Z"
+              },
+              "teamId": 1623,
+              "battingText": "0 & 10",
+              "bowlingText": "2/87 & 0/20",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 40139,
+                "id": 40139,
+                "objectId": 522958,
+                "scribeId": 522958,
+                "slug": "haryana-vs-bengal-group-b",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2011/12",
+                "title": "Group B",
+                "floodlit": "day",
+                "startDate": "2011-11-29T00:00:00Z",
+                "endDate": "2011-12-02T00:00:00Z",
+                "startTime": "2011-11-29T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 1808,
+                "tossWinnerChoice": 1,
+                "resultStatus": 4,
+                "liveInning": 4,
+                "liveInningPredictions": null,
+                "liveOvers": 28,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 6710,
+                  "objectId": 522928,
+                  "scribeId": 522928,
+                  "slug": "ranji-trophy-elite-2011-12",
+                  "name": "Ranji Trophy Elite",
+                  "longName": "Ranji Trophy Elite",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2011,
+                  "typeId": 3,
+                  "isTrophy": false,
+                  "description": "in India",
+                  "season": "2011/12",
+                  "startDate": "2011-11-03T00:00:00Z",
+                  "endDate": "2012-01-23T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 10,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 2112,
+                  "objectId": 269356,
+                  "name": "Bansi Lal Cricket Stadium, Rohtak",
+                  "smallName": "Rohtak",
+                  "longName": "Bansi Lal Cricket Stadium, Rohtak",
+                  "slug": "chaudhary-bansi-lal-cricket-stadium-lahli-rohtak",
+                  "location": "Lahli",
+                  "image": {
+                    "id": 141147,
+                    "objectId": 548848,
+                    "slug": "the-haryana-cricket-association-s-bansi-lal-stadium-in-lahli",
+                    "url": "/db/PICTURES/CMS/141100/141147.2.jpg",
+                    "width": 310,
+                    "height": 218,
+                    "caption": "The Haryana Cricket Association's Bansi Lal Stadium in Lahli",
+                    "longCaption": "The Haryana Cricket Association's Bansi Lal Stadium in Lahli, Haryana v Rajasthan, 1st semi-final, Ranji Trophy 2011-12, Rohtak, 1st day, January 10, 2012 ",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 694,
+                    "objectId": 58415,
+                    "name": "Rohtak",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 1808,
+                      "objectId": 1757,
+                      "scribeId": 1757,
+                      "slug": "haryana",
+                      "name": "Haryana",
+                      "longName": "Haryana",
+                      "abbreviation": "HRYNA",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313300/313304.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313304,
+                        "objectId": 1241763,
+                        "slug": "haryana-logo",
+                        "url": "/db/PICTURES/CMS/313300/313304.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Haryana logo",
+                        "longCaption": "Haryana logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "358 & 169",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1,
+                      3
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "339 & 128/5",
+                    "scoreInfo": "T:189",
+                    "inningNumbers": [
+                      2,
+                      4
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 153020,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:21:04.571Z"
+              },
+              "teamId": 1623,
+              "battingText": "5",
+              "bowlingText": "0/66 & 1/25",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 40132,
+                "id": 40132,
+                "objectId": 522951,
+                "scribeId": 522951,
+                "slug": "bengal-vs-madhya-pradesh-group-b",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2011/12",
+                "title": "Group B",
+                "floodlit": "day",
+                "startDate": "2011-11-17T00:00:00Z",
+                "endDate": "2011-11-20T00:00:00Z",
+                "startTime": "2011-11-17T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 1623,
+                "tossWinnerChoice": 1,
+                "resultStatus": 4,
+                "liveInning": 3,
+                "liveInningPredictions": null,
+                "liveOvers": 21,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 6710,
+                  "objectId": 522928,
+                  "scribeId": 522928,
+                  "slug": "ranji-trophy-elite-2011-12",
+                  "name": "Ranji Trophy Elite",
+                  "longName": "Ranji Trophy Elite",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2011,
+                  "typeId": 3,
+                  "isTrophy": false,
+                  "description": "in India",
+                  "season": "2011/12",
+                  "startDate": "2011-11-03T00:00:00Z",
+                  "endDate": "2012-01-23T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 10,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1929,
+                  "objectId": 57986,
+                  "name": "Jadavpur University Complex, Kolkata",
+                  "smallName": "Jadavpur Uni",
+                  "longName": "Jadavpur University Complex, Kolkata",
+                  "slug": "jadavpur-university-campus-kolkata",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 574,
+                    "objectId": 57976,
+                    "name": "Kolkata",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "496 & 114/1",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1,
+                      3
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1992,
+                      "objectId": 1941,
+                      "scribeId": 1941,
+                      "slug": "madhya-pradesh",
+                      "name": "M. Pradesh",
+                      "longName": "Madhya Pradesh",
+                      "abbreviation": "MP",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313300/313313.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313313,
+                        "objectId": 1241772,
+                        "slug": "madhya-pradesh-logo",
+                        "url": "/db/PICTURES/CMS/313300/313313.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Madhya Pradesh logo",
+                        "longCaption": "Madhya Pradesh logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "533",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 152694,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:21:04.57Z"
+              },
+              "teamId": 1623,
+              "battingText": "0*",
+              "bowlingText": "0/83",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 40120,
+                "id": 40120,
+                "objectId": 522939,
+                "scribeId": 522939,
+                "slug": "bengal-vs-gujarat-group-b",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2011/12",
+                "title": "Group B",
+                "floodlit": "day",
+                "startDate": "2011-11-03T00:00:00Z",
+                "endDate": "2011-11-06T00:00:00Z",
+                "startTime": "2011-11-03T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 1623,
+                "tossWinnerChoice": 1,
+                "resultStatus": 4,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 170,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 6710,
+                  "objectId": 522928,
+                  "scribeId": 522928,
+                  "slug": "ranji-trophy-elite-2011-12",
+                  "name": "Ranji Trophy Elite",
+                  "longName": "Ranji Trophy Elite",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2011,
+                  "typeId": 3,
+                  "isTrophy": false,
+                  "description": "in India",
+                  "season": "2011/12",
+                  "startDate": "2011-11-03T00:00:00Z",
+                  "endDate": "2012-01-23T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 10,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 292,
+                  "objectId": 57980,
+                  "name": "Eden Gardens, Kolkata",
+                  "smallName": "Eden Gardens",
+                  "longName": "Eden Gardens, Kolkata",
+                  "slug": "eden-gardens-kolkata",
+                  "location": "",
+                  "image": {
+                    "id": 128035,
+                    "objectId": 500114,
+                    "slug": "an-aerial-view-of-the-eden-gardens-at-its-current-state-of-completion",
+                    "url": "/db/PICTURES/CMS/128000/128035.6.jpg",
+                    "width": 210,
+                    "height": 140,
+                    "caption": "An aerial view of the Eden Gardens at its current state of completion",
+                    "longCaption": "An aerial view of the Eden Gardens at its current state of completion, Kolkata, February 9, 2011",
+                    "credit": null,
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 574,
+                    "objectId": 57976,
+                    "name": "Kolkata",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "560/6d",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1780,
+                      "objectId": 1729,
+                      "scribeId": 1729,
+                      "slug": "gujarat",
+                      "name": "Gujarat",
+                      "longName": "Gujarat",
+                      "abbreviation": "GUJ",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/317200/317261.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 317261,
+                        "objectId": 1253075,
+                        "slug": "gujarat-team-logo",
+                        "url": "/db/PICTURES/CMS/317200/317261.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Gujarat team logo",
+                        "longCaption": "Gujarat team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "495",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 152339,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:21:04.57Z"
+              },
+              "teamId": 1623,
+              "battingText": null,
+              "bowlingText": "2/84",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 33862,
+                "id": 33862,
+                "objectId": 465454,
+                "scribeId": 465454,
+                "slug": "railways-vs-bengal-group-a",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2010/11",
+                "title": "Group A",
+                "floodlit": "day",
+                "startDate": "2010-12-15T00:00:00Z",
+                "endDate": "2010-12-18T00:00:00Z",
+                "startTime": "2010-12-15T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Railways won by an innings and 10 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 1874,
+                "tossWinnerTeamId": 1623,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 3,
+                "liveInningPredictions": null,
+                "liveOvers": 67,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 5961,
+                  "objectId": 465376,
+                  "scribeId": 8846,
+                  "slug": "ranji-trophy-super-league-2010-11",
+                  "name": "Ranji Trophy Super League",
+                  "longName": "Ranji Trophy Super League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2010,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2010/11",
+                  "startDate": "2010-11-01T00:00:00Z",
+                  "endDate": "2011-01-15T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 2,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 524,
+                  "objectId": 58045,
+                  "name": "Karnail Singh Stadium, Delhi",
+                  "smallName": "Delhi",
+                  "longName": "Karnail Singh Stadium, Delhi",
+                  "slug": "karnail-singh-stadium-delhi",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 584,
+                    "objectId": 58036,
+                    "name": "Delhi",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "201 & 134",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1,
+                      3
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1874,
+                      "objectId": 1823,
+                      "scribeId": 1823,
+                      "slug": "railways",
+                      "name": "Railways",
+                      "longName": "Railways",
+                      "abbreviation": "RLYS",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/327900/327910.jpg",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 327910,
+                        "objectId": 1280545,
+                        "slug": "railways-team-logo",
+                        "url": "/db/PICTURES/CMS/327900/327910.jpg",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Railways team logo",
+                        "longCaption": "Railways team logo",
+                        "credit": "BCCI",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "345",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 143556,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 5,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:24:11.645Z"
+              },
+              "teamId": 1623,
+              "battingText": "11 & 0",
+              "bowlingText": "1/43",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 33855,
+                "id": 33855,
+                "objectId": 465447,
+                "scribeId": 465447,
+                "slug": "saurashtra-vs-bengal-group-a",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2010/11",
+                "title": "Group A",
+                "floodlit": "day",
+                "startDate": "2010-12-08T00:00:00Z",
+                "endDate": "2010-12-11T00:00:00Z",
+                "startTime": "2010-12-08T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 2121,
+                "tossWinnerChoice": 1,
+                "resultStatus": 4,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 183,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 5961,
+                  "objectId": 465376,
+                  "scribeId": 8846,
+                  "slug": "ranji-trophy-super-league-2010-11",
+                  "name": "Ranji Trophy Super League",
+                  "longName": "Ranji Trophy Super League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2010,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2010/11",
+                  "startDate": "2010-11-01T00:00:00Z",
+                  "endDate": "2011-01-15T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 2,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 2401,
+                  "objectId": 377285,
+                  "name": "Khandheri Cricket Stadium, Rajkot",
+                  "smallName": "Rajkot",
+                  "longName": "Khandheri Cricket Stadium, Rajkot",
+                  "slug": "saurashtra-cricket-association-stadium-rajkot",
+                  "location": "Khandheri",
+                  "image": {
+                    "id": 152967,
+                    "objectId": 598909,
+                    "slug": "the-media-centre-at-the-saurashtra-cricket-association-stadium",
+                    "url": "/db/PICTURES/CMS/152900/152967.1.jpg",
+                    "width": 160,
+                    "height": 107,
+                    "caption": "The media centre at the Saurashtra Cricket Association Stadium",
+                    "longCaption": "The media centre at the Saurashtra Cricket Association Stadium, Rajkot, December 28, 2012",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 689,
+                    "objectId": 58399,
+                    "name": "Rajkot",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 2121,
+                      "objectId": 2070,
+                      "scribeId": 2070,
+                      "slug": "saurashtra-and-kathiawar",
+                      "name": "Saurashtra",
+                      "longName": "Saurashtra",
+                      "abbreviation": "SAU",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313300/313316.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313316,
+                        "objectId": 1241775,
+                        "slug": "saurashtra-and-kathiawar-logo",
+                        "url": "/db/PICTURES/CMS/313300/313316.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Saurashtra (and Kathiawar) logo",
+                        "longCaption": "Saurashtra (and Kathiawar) logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "423",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "569/7",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 143367,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:24:20.053Z"
+              },
+              "teamId": 1623,
+              "battingText": null,
+              "bowlingText": "1/93",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 33847,
+                "id": 33847,
+                "objectId": 465439,
+                "scribeId": 465439,
+                "slug": "tamil-nadu-vs-bengal-group-a",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2010/11",
+                "title": "Group A",
+                "floodlit": "day",
+                "startDate": "2010-12-01T00:00:00Z",
+                "endDate": "2010-12-04T00:00:00Z",
+                "startTime": "2010-12-01T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 1623,
+                "tossWinnerChoice": 2,
+                "resultStatus": 4,
+                "liveInning": 1,
+                "liveInningPredictions": null,
+                "liveOvers": 43,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 5961,
+                  "objectId": 465376,
+                  "scribeId": 8846,
+                  "slug": "ranji-trophy-super-league-2010-11",
+                  "name": "Ranji Trophy Super League",
+                  "longName": "Ranji Trophy Super League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2010,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2010/11",
+                  "startDate": "2010-11-01T00:00:00Z",
+                  "endDate": "2011-01-15T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 2,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1042,
+                  "objectId": 58001,
+                  "name": "India Cement Limited Guru Nanak College Ground, Chennai",
+                  "smallName": "Chennai",
+                  "longName": "India Cement Limited Guru Nanak College Ground, Chennai",
+                  "slug": "guru-nanak-college-ground-chennai",
+                  "location": "Velachery",
+                  "image": {
+                    "id": 29441,
+                    "objectId": 58000,
+                    "slug": "guru-nanak-college-ground",
+                    "url": "/db/PICTURES/DB/081999/006633.1.jpg",
+                    "width": 200,
+                    "height": 140,
+                    "caption": "Guru Nanak College Ground",
+                    "longCaption": "Guru Nanak College Ground, Chennai",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 577,
+                    "objectId": 57995,
+                    "name": "Chennai",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 2184,
+                      "objectId": 2133,
+                      "scribeId": 2133,
+                      "slug": "tamil-nadu",
+                      "name": "Tamil Nadu",
+                      "longName": "Tamil Nadu",
+                      "abbreviation": "TN",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313300/313318.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313318,
+                        "objectId": 1241777,
+                        "slug": "tamil-nadu-and-madras-logo",
+                        "url": "/db/PICTURES/CMS/313300/313318.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Tamil Nadu (and Madras) logo",
+                        "longCaption": "Tamil Nadu (and Madras) logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "132/4",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": null,
+                    "scoreInfo": null,
+                    "inningNumbers": [],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 143193,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:24:20.053Z"
+              },
+              "teamId": 1623,
+              "battingText": null,
+              "bowlingText": "1/38",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 33842,
+                "id": 33842,
+                "objectId": 465434,
+                "scribeId": 465434,
+                "slug": "gujarat-vs-bengal-group-a",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2010/11",
+                "title": "Group A",
+                "floodlit": "day",
+                "startDate": "2010-11-24T00:00:00Z",
+                "endDate": "2010-11-27T00:00:00Z",
+                "startTime": "2010-11-24T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 1623,
+                "tossWinnerChoice": 2,
+                "resultStatus": 4,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 129,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 5961,
+                  "objectId": 465376,
+                  "scribeId": 8846,
+                  "slug": "ranji-trophy-super-league-2010-11",
+                  "name": "Ranji Trophy Super League",
+                  "longName": "Ranji Trophy Super League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2010,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2010/11",
+                  "startDate": "2010-11-01T00:00:00Z",
+                  "endDate": "2011-01-15T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 2,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 840,
+                  "objectId": 57851,
+                  "name": "Sardar Patel Stadium, Motera, Ahmedabad",
+                  "smallName": "Ahmedabad",
+                  "longName": "Sardar Patel Stadium, Motera, Ahmedabad",
+                  "slug": "narendra-modi-stadium-motera-ahmedabad",
+                  "location": "Motera",
+                  "image": {
+                    "id": 66837,
+                    "objectId": 261701,
+                    "slug": "sardar-patel-stadium-in-ahmedabad",
+                    "url": "/db/PICTURES/CMS/66800/66837.2.jpg",
+                    "width": 210,
+                    "height": 133,
+                    "caption": "Sardar Patel stadium in Ahmedabad",
+                    "longCaption": "Sardar Patel stadium in Ahmedabad",
+                    "credit": "AFP",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 534,
+                    "objectId": 57847,
+                    "name": "Ahmedabad",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 1780,
+                      "objectId": 1729,
+                      "scribeId": 1729,
+                      "slug": "gujarat",
+                      "name": "Gujarat",
+                      "longName": "Gujarat",
+                      "abbreviation": "GUJ",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/317200/317261.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 317261,
+                        "objectId": 1253075,
+                        "slug": "gujarat-team-logo",
+                        "url": "/db/PICTURES/CMS/317200/317261.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Gujarat team logo",
+                        "longCaption": "Gujarat team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "273",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "340/7",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 142996,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:24:20.053Z"
+              },
+              "teamId": 1623,
+              "battingText": null,
+              "bowlingText": "4/63",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 33835,
+                "id": 33835,
+                "objectId": 465427,
+                "scribeId": 465427,
+                "slug": "bengal-vs-assam-group-a",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2010/11",
+                "title": "Group A",
+                "floodlit": "day",
+                "startDate": "2010-11-17T00:00:00Z",
+                "endDate": "2010-11-20T00:00:00Z",
+                "startTime": "2010-11-17T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 1601,
+                "tossWinnerChoice": 2,
+                "resultStatus": 4,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 169,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 5961,
+                  "objectId": 465376,
+                  "scribeId": 8846,
+                  "slug": "ranji-trophy-super-league-2010-11",
+                  "name": "Ranji Trophy Super League",
+                  "longName": "Ranji Trophy Super League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2010,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2010/11",
+                  "startDate": "2010-11-01T00:00:00Z",
+                  "endDate": "2011-01-15T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 2,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 292,
+                  "objectId": 57980,
+                  "name": "Eden Gardens, Kolkata",
+                  "smallName": "Eden Gardens",
+                  "longName": "Eden Gardens, Kolkata",
+                  "slug": "eden-gardens-kolkata",
+                  "location": "",
+                  "image": {
+                    "id": 128035,
+                    "objectId": 500114,
+                    "slug": "an-aerial-view-of-the-eden-gardens-at-its-current-state-of-completion",
+                    "url": "/db/PICTURES/CMS/128000/128035.6.jpg",
+                    "width": 210,
+                    "height": 140,
+                    "caption": "An aerial view of the Eden Gardens at its current state of completion",
+                    "longCaption": "An aerial view of the Eden Gardens at its current state of completion, Kolkata, February 9, 2011",
+                    "credit": null,
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 574,
+                    "objectId": 57976,
+                    "name": "Kolkata",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "562/6d",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1601,
+                      "objectId": 1550,
+                      "scribeId": 1550,
+                      "slug": "assam",
+                      "name": "Assam",
+                      "longName": "Assam",
+                      "abbreviation": "ASSAM",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313295.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313295,
+                        "objectId": 1241754,
+                        "slug": "assam-logo",
+                        "url": "/db/PICTURES/CMS/313200/313295.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Assam logo",
+                        "longCaption": "Assam logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "588/6",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 142787,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:24:20.053Z"
+              },
+              "teamId": 1623,
+              "battingText": null,
+              "bowlingText": "0/144",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 33825,
+                "id": 33825,
+                "objectId": 465417,
+                "scribeId": 465417,
+                "slug": "bengal-vs-mumbai-group-a",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2010/11",
+                "title": "Group A",
+                "floodlit": "day",
+                "startDate": "2010-11-10T00:00:00Z",
+                "endDate": "2010-11-13T00:00:00Z",
+                "startTime": "2010-11-10T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 1654,
+                "tossWinnerChoice": 1,
+                "resultStatus": 4,
+                "liveInning": 3,
+                "liveInningPredictions": null,
+                "liveOvers": 75,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 5961,
+                  "objectId": 465376,
+                  "scribeId": 8846,
+                  "slug": "ranji-trophy-super-league-2010-11",
+                  "name": "Ranji Trophy Super League",
+                  "longName": "Ranji Trophy Super League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2010,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2010/11",
+                  "startDate": "2010-11-01T00:00:00Z",
+                  "endDate": "2011-01-15T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 2,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 292,
+                  "objectId": 57980,
+                  "name": "Eden Gardens, Kolkata",
+                  "smallName": "Eden Gardens",
+                  "longName": "Eden Gardens, Kolkata",
+                  "slug": "eden-gardens-kolkata",
+                  "location": "",
+                  "image": {
+                    "id": 128035,
+                    "objectId": 500114,
+                    "slug": "an-aerial-view-of-the-eden-gardens-at-its-current-state-of-completion",
+                    "url": "/db/PICTURES/CMS/128000/128035.6.jpg",
+                    "width": 210,
+                    "height": 140,
+                    "caption": "An aerial view of the Eden Gardens at its current state of completion",
+                    "longCaption": "An aerial view of the Eden Gardens at its current state of completion, Kolkata, February 9, 2011",
+                    "credit": null,
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 574,
+                    "objectId": 57976,
+                    "name": "Kolkata",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 1654,
+                      "objectId": 1603,
+                      "scribeId": 1603,
+                      "slug": "mumbai-bombay",
+                      "name": "Mumbai",
+                      "longName": "Mumbai",
+                      "abbreviation": "MUM",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/317100/317125.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 317125,
+                        "objectId": 1252768,
+                        "slug": "mumbai-team-logo",
+                        "url": "/db/PICTURES/CMS/317100/317125.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Mumbai team logo",
+                        "longCaption": "Mumbai team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "621/8d & 286/1",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1,
+                      3
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 1623,
+                      "objectId": 1572,
+                      "scribeId": 1572,
+                      "slug": "bengal",
+                      "name": "Bengal",
+                      "longName": "Bengal",
+                      "abbreviation": "BENG",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 313297,
+                        "objectId": 1241756,
+                        "slug": "bengal-logo",
+                        "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Bengal logo",
+                        "longCaption": "Bengal logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "296",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 142571,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:24:20.053Z"
+              },
+              "teamId": 1623,
+              "battingText": "12",
+              "bowlingText": "1/81 & 0/20",
+              "keepingText": null
+            }
+          ]
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 296658,
+        "objectId": 1278277,
+        "scribeId": 32223195,
+        "slug": "bcci-sridharan-sharath-to-head-india-s-new-junior-selection-committee",
+        "title": "Sridharan Sharath to head India's new junior selection committee",
+        "subTitle": "",
+        "seoTitle": "BCCI - Sridharan Sharath to head India's new junior selection committee",
+        "summary": "Other members of the committee are Pathik Patel, Ranadeb Bose, Kishan Mohan and Harvinder Sodhi",
+        "byline": "ESPNcricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2021-09-17T10:24:00Z",
+        "modifiedAt": "2021-09-17T10:59:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": true,
+        "day": null,
+        "authorId": 1,
+        "image": {
+          "id": 199975,
+          "objectId": 807189,
+          "slug": "the-bcci-logo-on-the-indians-kit",
+          "url": "/db/PICTURES/CMS/199900/199975.4.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "The BCCI logo on the Indians' kit",
+          "longCaption": "The BCCI logo on the Indians' kit, Cricket Australia XI v Indians, 1st day, Tour match, Adelaide",
+          "credit": "Cricket Australia",
+          "photographer": null,
+          "peerUrls": {
+            "FILM": "/db/PICTURES/CMS/199900/199975.21.jpg",
+            "WIDE": "/db/PICTURES/CMS/199900/199975.5.jpg",
+            "SQUARE": "/db/PICTURES/CMS/199900/199975.15.jpg"
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-05T05:18:17.983Z"
+      },
+      {
+        "id": 289651,
+        "objectId": 1239318,
+        "scribeId": 30327420,
+        "slug": "ajit-agarkar-chetan-sharma-maninder-singh-shiv-sunder-das-apply-for-bcci-selectors-posts",
+        "title": "Ajit Agarkar, Chetan Sharma, Maninder Singh, Shiv Sunder Das apply for selectors' posts",
+        "subTitle": "",
+        "seoTitle": "Ajit Agarkar, Chetan Sharma, Maninder Singh, Shiv Sunder Das apply for BCCI selectors' posts",
+        "summary": "Three posts are vacant in the BCCI's selection panel",
+        "byline": "ESPNcricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2020-11-16T05:48:45Z",
+        "modifiedAt": "2020-11-16T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 1,
+        "image": {
+          "id": 312222,
+          "objectId": 1239319,
+          "slug": "ajit-agarkar-could-be-the-frontrunner-for-the-post-of-the-bcci-selection-committee-chairman",
+          "url": "/db/PICTURES/CMS/312200/312222.5.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "Ajit Agarkar could be the frontrunner for the post of the BCCI selection committee chairman",
+          "longCaption": "Ajit Agarkar could be the frontrunner for the post of the BCCI selection committee chairman",
+          "credit": "Getty Images",
+          "photographer": null,
+          "peerUrls": {
+            "FILM": "/db/PICTURES/CMS/312200/312222.jpg",
+            "WIDE": "/db/PICTURES/CMS/312200/312222.6.jpg",
+            "SQUARE": "/db/PICTURES/CMS/312200/312222.square.jpg"
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-05T05:24:20.079Z"
+      },
+      {
+        "id": 287640,
+        "objectId": 1230590,
+        "scribeId": 29750924,
+        "slug": "ashok-dinda-interview-no-one-could-have-removed-me-because-of-my-skills-or-performances",
+        "title": "Ashok Dinda: 'No one could have removed me because of my skills or performances'",
+        "subTitle": "",
+        "seoTitle": "Ashok Dinda interview: 'No one could have removed me because of my skills or performances'",
+        "summary": "Fast bowler looks back at his time with Bengal who have now given him NOC to play elsewhere",
+        "byline": "Shamya Dasgupta",
+        "categoryType": "OTHERS",
+        "genreType": "INTERVIEW",
+        "genreId": 175,
+        "genreName": "Interviews",
+        "publishedAt": "2020-08-27T07:58:27Z",
+        "modifiedAt": "2020-08-27T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 755,
+        "image": {
+          "id": 308127,
+          "objectId": 1230586,
+          "slug": "ashok-dinda-had-an-all-too-brief-run-with-the-indian-national-team",
+          "url": "/db/PICTURES/CMS/308100/308127.5.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "Ashok Dinda had an all-too-brief run with the Indian national team",
+          "longCaption": "Ashok Dinda had an all-too-brief run with the Indian national team",
+          "credit": "AFP via Getty Images",
+          "photographer": null,
+          "peerUrls": {
+            "FILM": "/db/PICTURES/CMS/308100/308127.jpg",
+            "WIDE": "/db/PICTURES/CMS/308100/308127.6.jpg",
+            "SQUARE": "/db/PICTURES/CMS/308100/308127.10.jpg"
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-05T05:24:20.079Z"
+      }
+    ],
+    "videos": [
+      {
+        "id": 1739,
+        "objectId": 460422,
+        "scribeId": 0,
+        "statusTypeId": 3,
+        "slug": "fear-of-injury-is-affecting-indian-fast-bowlers",
+        "title": "'Fear of injury is affecting Indian fast bowlers'",
+        "subTitle": "Time Out with Harsha Bhogle",
+        "seoTitle": "",
+        "summary": "Sreesanth and Paras Mhambrey speak to Harsha Bhogle and Ayaz Memon about the problems Indian fast bowlers face",
+        "duration": 2055,
+        "genreId": 33,
+        "genreType": "GENERAL",
+        "genreName": "Time Out",
+        "publishedAt": "2010-05-21T00:00:00Z",
+        "modifiedAt": "2023-03-30T07:25:44Z",
+        "recordedAt": "2010-05-21T00:00:00Z",
+        "expireAt": null,
+        "countryCodes": [],
+        "imageUrl": null,
+        "origin": {
+          "type": "CLIP"
+        },
+        "assetId": null,
+        "scribeMongoId": null,
+        "language": "en"
+      }
+    ],
+    "images": [
+      {
+        "id": 301568,
+        "objectId": 1218690,
+        "slug": "ranadeb-bose-and-akash-deep-have-a-chat",
+        "url": "/db/PICTURES/CMS/301500/301568.jpg",
+        "width": 1400,
+        "height": 1050,
+        "caption": "Ranadeb Bose and Akash Deep have a chat",
+        "longCaption": "Ranadeb Bose and Akash Deep have a chat",
+        "credit": "Shashank Kishore/ESPNcricinfo Ltd",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2020-03-08T00:00:00Z",
+        "capturedOn": {
+          "year": 2020,
+          "month": 3,
+          "date": 8
+        }
+      },
+      {
+        "id": 190535,
+        "objectId": 766981,
+        "slug": "sourav-ganguly-with-cricketer-ranadeb-bose-after-being-elected-the-joint-secretary-of-the-cricket-association-of-bengal",
+        "url": "/db/PICTURES/CMS/190500/190535.jpg",
+        "width": 900,
+        "height": 891,
+        "caption": "Sourav Ganguly with cricketer Ranadeb Bose after being elected the Joint Secretary of the Cricket Association of Bengal",
+        "longCaption": "Sourav Ganguly with cricketer Ranadeb Bose after being elected the Joint Secretary of the Cricket Association of Bengal, Kolkata, August 4, 2014",
+        "credit": "PTI ",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2014-08-04T00:00:00Z",
+        "capturedOn": {
+          "year": 2014,
+          "month": 8,
+          "date": 4
+        }
+      },
+      {
+        "id": 81823,
+        "objectId": 318664,
+        "slug": "shib-shankar-paul-and-ranadeb-bose-share-a-word",
+        "url": "/db/PICTURES/CMS/81800/81823.jpg",
+        "width": 500,
+        "height": 708,
+        "caption": "Shib Shankar Paul and Ranadeb Bose share a word",
+        "longCaption": "Shib Shankar Paul and Ranadeb Bose share a word, Bengal v Hyderabad , Ranji Trophy Super League, Group B, 1st round, 3rd day, Eden Gardens, November 6, 2007 ",
+        "credit": "ESPNcricinfo Ltd",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2007-11-06T00:00:00Z",
+        "capturedOn": {
+          "year": 2007,
+          "month": 11,
+          "date": 6
+        }
+      },
+      {
+        "id": 78373,
+        "objectId": 306000,
+        "slug": "ranadeb-bose-is-all-smiles-at-the-nets",
+        "url": "/db/PICTURES/CMS/78300/78373.jpg",
+        "width": 500,
+        "height": 670,
+        "caption": "Ranadeb Bose is all smiles at the nets",
+        "longCaption": "Ranadeb Bose is all smiles at the nets, The Oval, August 8, 2007",
+        "credit": "Getty Images",
+        "photographer": "Clive Rose",
+        "peerUrls": null,
+        "dateTaken": "2007-08-08T00:00:00Z",
+        "capturedOn": {
+          "year": 2007,
+          "month": 8,
+          "date": 8
+        }
+      },
+      {
+        "id": 77598,
+        "objectId": 302200,
+        "slug": "ranadeb-bose",
+        "url": "/db/PICTURES/CMS/77500/77598.jpg",
+        "width": 500,
+        "height": 622,
+        "caption": "Ranadeb Bose",
+        "longCaption": "Ranadeb Bose",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2007-07-16T00:00:00Z",
+        "capturedOn": {
+          "year": 2007,
+          "month": 7,
+          "date": 16
+        }
+      },
+      {
+        "id": 71367,
+        "objectId": 278801,
+        "slug": "ranadeb-bose-gets-5-for-71-as-mumbai-are-bowled-out-for-294-in-their-second-innings",
+        "url": "/db/PICTURES/CMS/71300/71367.gif",
+        "width": 500,
+        "height": 817,
+        "caption": "Ranadeb Bose gets 5 for 71 as Mumbai are bowled out for 294 in their second innings",
+        "longCaption": "Ranadeb Bose gets 5 for 71 as Mumbai are bowled out for 294 in their second innings, Mumbai v Bengal, 3rd day, Ranji Super League final, Mumbai, February 4, 2007",
+        "credit": "ESPNcricinfo Ltd",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2007-02-04T00:00:00Z",
+        "capturedOn": {
+          "year": 2007,
+          "month": 2,
+          "date": 4
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 9,
+        "objectId": 9,
+        "scribeId": 9,
+        "slug": "zimbabwe",
+        "name": "Zimbabwe",
+        "longName": "Zimbabwe",
+        "abbreviation": "ZIM",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/340500/340503.png",
+        "isCountry": true,
+        "primaryColor": "#d04037",
+        "image": {
+          "id": 340503,
+          "objectId": 1318712,
+          "slug": "zimbabwe-team-flag-latest",
+          "url": "/db/PICTURES/CMS/340500/340503.png",
+          "width": 500,
+          "height": 500,
+          "caption": "Zimbabwe team flag-latest",
+          "longCaption": "Zimbabwe team flag-latest",
+          "credit": "Getty Images",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 64447,
+          "objectId": 495964,
+          "name": "RP Burl",
+          "longName": "Ryan Burl",
+          "mobileName": "Burl",
+          "indexName": "Burl, RP",
+          "battingName": "RP Burl",
+          "fieldingName": "Burl",
+          "slug": "ryan-burl",
+          "imageUrl": "/db/PICTURES/CMS/179700/179753.1.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 4,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 179753,
+            "objectId": 721659,
+            "slug": "ryan-burl",
+            "url": "/db/PICTURES/CMS/179700/179753.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Ryan Burl",
+            "longCaption": "Ryan Burl",
+            "credit": "International Cricket Council",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 51554,
+          "objectId": 293831,
+          "name": "RW Chakabva",
+          "longName": "Regis Chakabva",
+          "mobileName": "Chakabva",
+          "indexName": "Chakabva, RW",
+          "battingName": "RW Chakabva",
+          "fieldingName": "Chakabva",
+          "slug": "regis-chakabva",
+          "imageUrl": "/db/PICTURES/CMS/128500/128565.1.jpg",
+          "dateOfBirth": {
+            "year": 1987,
+            "month": 9,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 128565,
+            "objectId": 501714,
+            "slug": "regis-chakabva",
+            "url": "/db/PICTURES/CMS/128500/128565.1.jpg",
+            "width": 160,
+            "height": 198,
+            "caption": "Regis Chakabva",
+            "longCaption": "Regis Chakabva portrait, World Cup 2011, February 11, 2011",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 60782,
+          "objectId": 425639,
+          "name": "TL Chatara",
+          "longName": "Tendai Chatara",
+          "mobileName": "Chatara",
+          "indexName": "Chatara, TL",
+          "battingName": "TL Chatara",
+          "fieldingName": "Chatara",
+          "slug": "tendai-chatara",
+          "imageUrl": "/db/PICTURES/CMS/203300/203357.1.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 2,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 203357,
+            "objectId": 818763,
+            "slug": "tendai-chatara",
+            "url": "/db/PICTURES/CMS/203300/203357.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Tendai Chatara",
+            "longCaption": "Tendai Chatara",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 47205,
+          "objectId": 55412,
+          "name": "CR Ervine",
+          "longName": "Craig Ervine",
+          "mobileName": "Ervine",
+          "indexName": "Ervine, CR",
+          "battingName": "CR Ervine",
+          "fieldingName": "Ervine",
+          "slug": "craig-ervine",
+          "imageUrl": "/db/PICTURES/CMS/203300/203333.1.jpg",
+          "dateOfBirth": {
+            "year": 1985,
+            "month": 8,
+            "date": 19
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 203333,
+            "objectId": 818739,
+            "slug": "craig-ervine",
+            "url": "/db/PICTURES/CMS/203300/203333.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Craig Ervine",
+            "longCaption": "Craig Ervine",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 66876,
+          "objectId": 541224,
+          "name": "LM Jongwe",
+          "longName": "Luke Jongwe",
+          "mobileName": "Jongwe",
+          "indexName": "Jongwe, LM",
+          "battingName": "LM Jongwe",
+          "fieldingName": "Jongwe",
+          "slug": "luke-jongwe",
+          "imageUrl": "/db/PICTURES/CMS/345200/345223.5.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 2,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 345223,
+            "objectId": 1332085,
+            "slug": "luke-jongwe-player-portrait-2022",
+            "url": "/db/PICTURES/CMS/345200/345223.5.jpg",
+            "width": 160,
+            "height": 198,
+            "caption": "Luke Jongwe, player portrait 2022",
+            "longCaption": "Luke Jongwe, player portrait 2022",
+            "credit": "Getty Images",
+            "photographer": "Chris Hyde",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 62733,
+          "objectId": 465327,
+          "name": "I Kaia",
+          "longName": "Innocent Kaia",
+          "mobileName": "Kaia",
+          "indexName": "Kaia, I",
+          "battingName": "I Kaia",
+          "fieldingName": "Kaia",
+          "slug": "innocent-kaia",
+          "imageUrl": "/db/PICTURES/CMS/345200/345222.4.jpg",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 8,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 345222,
+            "objectId": 1332084,
+            "slug": "innocent-kaia-player-portrait-2022",
+            "url": "/db/PICTURES/CMS/345200/345222.4.jpg",
+            "width": 160,
+            "height": 217,
+            "caption": "Innocent Kaia, player portrait 2022",
+            "longCaption": "Innocent Kaia, player portrait 2022",
+            "credit": "Getty Images",
+            "photographer": "Chris Hyde",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 87157,
+          "objectId": 938959,
+          "name": "W Madhevere",
+          "longName": "Wessly Madhevere",
+          "mobileName": "Madhevere",
+          "indexName": "Madhevere, W",
+          "battingName": "W Madhevere",
+          "fieldingName": "Madhevere",
+          "slug": "wessly-madhevere",
+          "imageUrl": "/db/PICTURES/CMS/324700/324710.4.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 9,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 324710,
+            "objectId": 1270432,
+            "slug": "wessley-madhevere-player-portrait",
+            "url": "/db/PICTURES/CMS/324700/324710.4.jpg",
+            "width": 160,
+            "height": 216,
+            "caption": "Wessley Madhevere, player portrait",
+            "longCaption": "Wessley Madhevere, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Jan Kruger",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 79665,
+          "objectId": 806241,
+          "name": "R Ngarava",
+          "longName": "Richard Ngarava",
+          "mobileName": "Ngarava",
+          "indexName": "Ngarava, R",
+          "battingName": "R Ngarava",
+          "fieldingName": "Ngarava",
+          "slug": "richard-ngarava",
+          "imageUrl": "/db/PICTURES/CMS/345200/345220.4.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 12,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 345220,
+            "objectId": 1332080,
+            "slug": "richard-ngarava-player-portrait-2022",
+            "url": "/db/PICTURES/CMS/345200/345220.4.jpg",
+            "width": 160,
+            "height": 195,
+            "caption": "Richard Ngarava, player portrait 2022",
+            "longCaption": "Richard Ngarava, player portrait 2022",
+            "credit": "Getty Images",
+            "photographer": "Chris Hyde",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 52319,
+          "objectId": 299572,
+          "name": "Sikandar Raza",
+          "longName": "Sikandar Raza",
+          "mobileName": "Raza",
+          "indexName": "Sikandar Raza",
+          "battingName": "Sikandar Raza",
+          "fieldingName": "Sikandar Raza",
+          "slug": "sikandar-raza",
+          "imageUrl": "/db/PICTURES/CMS/181300/181305.1.jpg",
+          "dateOfBirth": {
+            "year": 1986,
+            "month": 4,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 181305,
+            "objectId": 727109,
+            "slug": "sikandar-raza",
+            "url": "/db/PICTURES/CMS/181300/181305.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Sikandar Raza",
+            "longCaption": "Sikandar Raza",
+            "credit": "ICC",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 47206,
+          "objectId": 55870,
+          "name": "SC Williams",
+          "longName": "Sean Williams",
+          "mobileName": "Williams",
+          "indexName": "Williams, SC",
+          "battingName": "SC Williams",
+          "fieldingName": "Williams",
+          "slug": "sean-williams",
+          "imageUrl": "/db/PICTURES/CMS/235600/235675.1.jpg",
+          "dateOfBirth": {
+            "year": 1986,
+            "month": 9,
+            "date": 26
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 235675,
+            "objectId": 978295,
+            "slug": "sean-williams-profile-photo",
+            "url": "/db/PICTURES/CMS/235600/235675.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Sean Williams profile photo",
+            "longCaption": "Sean Williams profile photo",
+            "credit": "International Cricket Council",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 102753,
+          "objectId": 1151288,
+          "name": "B Sai Sudharsan",
+          "longName": "Sai Sudharsan",
+          "mobileName": "",
+          "indexName": "Sai Sudharsan, B",
+          "battingName": "B Sai Sudharsan",
+          "fieldingName": "Sai Sudharsan",
+          "slug": "sai-sudharsan",
+          "imageUrl": "/db/PICTURES/CMS/356800/356851.1.png",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 10,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 356851,
+            "objectId": 1365134,
+            "slug": "sai-sudarshan-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356851.1.png",
+            "width": 160,
+            "height": 191,
+            "caption": "Sai Sudarshan player portrait",
+            "longCaption": "Sai Sudarshan player portrait",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 110107,
+          "objectId": 1277545,
+          "name": "Abishek Porel",
+          "longName": "Abishek Porel",
+          "mobileName": "",
+          "indexName": "Abishek Porel",
+          "battingName": "Abishek Porel",
+          "fieldingName": "Abishek Porel",
+          "slug": "abishek-porel",
+          "imageUrl": null,
+          "dateOfBirth": {
+            "year": 2002,
+            "month": 10,
+            "date": 17
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": null,
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 108718,
+          "objectId": 1254269,
+          "name": "Aman Hakim Khan",
+          "longName": "Aman Hakim Khan",
+          "mobileName": "",
+          "indexName": "Aman Hakim Khan",
+          "battingName": "Aman Hakim Khan",
+          "fieldingName": "Aman Hakim Khan",
+          "slug": "aman-hakim-khan",
+          "imageUrl": "/db/PICTURES/CMS/338100/338165.4.jpg",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 11,
+            "date": 23
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 338165,
+            "objectId": 1311432,
+            "slug": "aman-khan-player-portrait",
+            "url": "/db/PICTURES/CMS/338100/338165.4.jpg",
+            "width": 160,
+            "height": 221,
+            "caption": "Aman Khan, player portrait",
+            "longCaption": "Aman Khan, player portrait",
+            "credit": "Kolkata Knight Riders",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 71335,
+          "objectId": 642525,
+          "name": "SN Khan",
+          "longName": "Sarfaraz Khan",
+          "mobileName": "Khan",
+          "indexName": "Khan, SN",
+          "battingName": "SN Khan",
+          "fieldingName": "Khan",
+          "slug": "sarfaraz-khan",
+          "imageUrl": "/db/PICTURES/CMS/336800/336899.4.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 10,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 336899,
+            "objectId": 1307817,
+            "slug": "sarfaraz-khan-has-a-laugh",
+            "url": "/db/PICTURES/CMS/336800/336899.4.jpg",
+            "width": 160,
+            "height": 235,
+            "caption": "Sarfaraz Khan has a laugh",
+            "longCaption": "Sarfaraz Khan has a laugh, Kings XI Punjab v Rajasthan Royals, IPL 2020, Sharjah, September 27, 2020",
+            "credit": "BCCI",
+            "photographer": "Rahul Gulati",
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 85763,
+          "objectId": 926851,
+          "name": "Mukesh Kumar",
+          "longName": "Mukesh Kumar",
+          "mobileName": "",
+          "indexName": "Mukesh Kumar",
+          "battingName": "Mukesh Kumar",
+          "fieldingName": "Mukesh Kumar",
+          "slug": "mukesh-kumar",
+          "imageUrl": null,
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 10,
+            "date": 12
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": null,
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 63509,
+          "objectId": 477021,
+          "name": "V Shankar",
+          "longName": "Vijay Shankar",
+          "mobileName": "Shankar",
+          "indexName": "Shankar, V",
+          "battingName": "V Shankar",
+          "fieldingName": "Shankar",
+          "slug": "vijay-shankar",
+          "imageUrl": "/db/PICTURES/CMS/289600/289614.1.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 1,
+            "date": 26
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 289614,
+            "objectId": 1185497,
+            "slug": "vijay-shankar-player-portrait",
+            "url": "/db/PICTURES/CMS/289600/289614.1.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Vijay Shankar player portrait",
+            "longCaption": "Vijay Shankar player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 95315,
+          "objectId": 1070168,
+          "name": "PP Shaw",
+          "longName": "Prithvi Shaw",
+          "mobileName": "Shaw",
+          "indexName": "Shaw, PP",
+          "battingName": "PP Shaw",
+          "fieldingName": "Shaw",
+          "slug": "prithvi-shaw",
+          "imageUrl": "/db/PICTURES/CMS/356800/356848.1.png",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 11,
+            "date": 9
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 356848,
+            "objectId": 1365131,
+            "slug": "pp-shaw-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356848.1.png",
+            "width": 160,
+            "height": 213,
+            "caption": "PP Shaw player portrait",
+            "longCaption": "PP Shaw player portrait",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 87603,
+          "objectId": 942645,
+          "name": "KK Ahmed",
+          "longName": "Khaleel Ahmed",
+          "mobileName": "Khaleel Ahmed",
+          "indexName": "Ahmed, KK",
+          "battingName": "KK Ahmed",
+          "fieldingName": "Ahmed",
+          "slug": "khaleel-ahmed",
+          "imageUrl": "/db/PICTURES/CMS/315000/315022.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 12,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm medium"
+          ],
+          "image": {
+            "id": 315022,
+            "objectId": 1247246,
+            "slug": "khaleel-ahmed-portrait",
+            "url": "/db/PICTURES/CMS/315000/315022.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Khaleel Ahmed portrait",
+            "longCaption": "Khaleel Ahmed portrait, January 9, 2021",
+            "credit": "ESPNcricinfo",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 103597,
+          "objectId": 1159720,
+          "name": "Yash Dayal",
+          "longName": "Yash Dayal",
+          "mobileName": "Yash Dayal",
+          "indexName": "Yash Dayal",
+          "battingName": "Yash Dayal",
+          "fieldingName": "Yash Dayal",
+          "slug": "yash-dayal",
+          "imageUrl": "/db/PICTURES/CMS/357400/357416.2.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 12,
+            "date": 13
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm medium-fast"
+          ],
+          "image": {
+            "id": 357416,
+            "objectId": 1366813,
+            "slug": "yash-dayal-player-portrait",
+            "url": "/db/PICTURES/CMS/357400/357416.2.jpg",
+            "width": 160,
+            "height": 242,
+            "caption": "Yash Dayal, player portrait",
+            "longCaption": "Yash Dayal, player portrait",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 51216,
+          "objectId": 279810,
+          "name": "WP Saha",
+          "longName": "Wriddhiman Saha",
+          "mobileName": "Saha",
+          "indexName": "Saha,WP",
+          "battingName": "WP Saha",
+          "fieldingName": "Saha",
+          "slug": "wriddhiman-saha",
+          "imageUrl": "/db/PICTURES/CMS/302300/302390.jpg",
+          "dateOfBirth": {
+            "year": 1984,
+            "month": 10,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 302390,
+            "objectId": 1220587,
+            "slug": "wriddhiman-saha-portrait",
+            "url": "/db/PICTURES/CMS/302300/302390.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Wriddhiman Saha portrait",
+            "longCaption": "Wriddhiman Saha portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "List A"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 11,
+          "type": "g",
+          "name": "Other matches"
+        },
+        {
+          "id": 13,
+          "type": "g",
+          "name": "Other Twenty20 matches"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "LA",
+          "longName": "List A matches",
+          "multipleClass": 0,
+          "slug": "list-a-matches"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "T20",
+          "longName": "Twenty20 matches",
+          "multipleClass": 0,
+          "slug": "twenty20-matches"
+        },
+        {
+          "id": 12,
+          "type": "g",
+          "name": "FC+LA+T20",
+          "longName": "Combined First-class, List A and Twenty20",
+          "multipleClass": 2,
+          "slug": "combined-first-class-list-a-and-twenty20"
+        },
+        {
+          "id": 14,
+          "type": "g",
+          "name": "Minor",
+          "longName": "Minor cricket",
+          "multipleClass": 0,
+          "slug": "minor-cricket"
+        },
+        {
+          "id": 16,
+          "type": "g",
+          "name": "Minor T20",
+          "longName": "Minor cricket (Twenty20)",
+          "multipleClass": 0,
+          "slug": "minor-cricket-twenty20"
+        }
+      ],
+      "overallStats": [],
+      "teamFormatCapCounts": {
+        "1": 305,
+        "2": 250,
+        "3": 102,
+        "8": 90,
+        "9": 137,
+        "10": 73,
+        "14": 316,
+        "15": 425
+      },
+      "teamContractedPlayerCount": 26,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 17,
+          "type": "g",
+          "name": "Women's Twenty20"
+        }
+      ]
+    }
+  }
+}

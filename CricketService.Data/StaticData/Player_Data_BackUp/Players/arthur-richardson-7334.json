@@ -1,0 +1,2468 @@
+{
+  "player": {
+    "id": 445,
+    "objectId": 7334,
+    "name": "AJ Richardson",
+    "longName": "Arthur Richardson",
+    "mobileName": "Richardson",
+    "indexName": "Richardson, AJ",
+    "battingName": "AJ Richardson",
+    "fieldingName": "Richardson",
+    "slug": "arthur-richardson",
+    "imageUrl": "/db/PICTURES/DB/052004/052469.player.jpg",
+    "dateOfBirth": {
+      "year": 1888,
+      "month": 7,
+      "date": 24
+    },
+    "dateOfDeath": {
+      "year": 1973,
+      "month": 12,
+      "date": 23
+    },
+    "gender": "M",
+    "battingStyles": [
+      "rhb"
+    ],
+    "bowlingStyles": [],
+    "longBattingStyles": [
+      "right-hand bat"
+    ],
+    "longBowlingStyles": [],
+    "image": {
+      "id": 21581,
+      "objectId": 7333,
+      "slug": "arthur-richardson",
+      "url": "/db/PICTURES/DB/052004/052469.player.jpg",
+      "width": 160,
+      "height": 276,
+      "caption": "Arthur Richardson",
+      "longCaption": "Arthur Richardson",
+      "credit": "The Cricketer International",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 2,
+    "playerRoleTypeIds": [],
+    "playingRoles": [],
+    "fullName": "Arthur John Richardson",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": null,
+    "heightUnit": null,
+    "education": null,
+    "country": {
+      "id": 2,
+      "objectId": 2,
+      "name": "Australia",
+      "shortName": "Australia",
+      "abbreviation": "AUS",
+      "slug": "australia",
+      "image": {
+        "id": 340493,
+        "objectId": 1318684,
+        "slug": "australia-team-flag-latest",
+        "url": "/db/PICTURES/CMS/340400/340493.png",
+        "width": 500,
+        "height": 500,
+        "caption": "Australia team flag-latest",
+        "longCaption": "Australia team flag-latest",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Sevenhill, Clare, South Australia",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "Semaphore, Adelaide, South Australia",
+    "intlCareerSpan": "1924 - 1926",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 21581,
+      "objectId": 7333,
+      "slug": "arthur-richardson",
+      "url": "/db/PICTURES/DB/052004/052469.jpg",
+      "width": 160,
+      "height": 276,
+      "caption": "Arthur Richardson",
+      "longCaption": "Arthur Richardson",
+      "credit": "The Cricketer International",
+      "photographer": null,
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": null,
+        "SQUARE": null
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [
+      "umpire"
+    ],
+    "matchPlayerTypes": [
+      1,
+      2
+    ],
+    "hasRecords": true,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 1,
+    "totalVideos": 0,
+    "totalImages": 1
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 2,
+          "objectId": 2,
+          "scribeId": 2,
+          "slug": "australia",
+          "name": "Australia",
+          "longName": "Australia",
+          "abbreviation": "AUS",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+          "isCountry": true,
+          "primaryColor": "#ffdd00",
+          "image": {
+            "id": 340493,
+            "objectId": 1318684,
+            "slug": "australia-team-flag-latest",
+            "url": "/db/PICTURES/CMS/340400/340493.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Australia team flag-latest",
+            "longCaption": "Australia team flag-latest",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 571,
+          "objectId": 520,
+          "scribeId": 520,
+          "slug": "south-australia",
+          "name": "South Aust",
+          "longName": "South Australia",
+          "abbreviation": "SOA",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313200/313234.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313234,
+            "objectId": 1241693,
+            "slug": "south-australia-logo",
+            "url": "/db/PICTURES/CMS/313200/313234.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "South Australia logo",
+            "longCaption": "South Australia logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 653,
+          "objectId": 602,
+          "scribeId": 602,
+          "slug": "western-australia",
+          "name": "West Aust",
+          "longName": "Western Australia",
+          "abbreviation": "WA",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313200/313237.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313237,
+            "objectId": 1241696,
+            "slug": "western-australia-logo",
+            "url": "/db/PICTURES/CMS/313200/313237.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Western Australia logo",
+            "longCaption": "Western Australia logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      }
+    ],
+    "relations": [],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "Arthur John Richardson, a noted Australian Test cricketer of the twenties, died in his native Adelaide on December 23, aged 85. A tall, dark lean figure who wore glasses, Richardson was an extremely competent opening batsman who also bowled off breaks at medium pace. He played in nine Tests for Australia, all against England, between 1924 and 1926, and he hit one century at Headingley in 1926."
+        },
+        {
+          "type": "HTML",
+          "html": "He first made his presence felt against M.C.C. when A. C. MacLaren took a side of amateurs reinforced by two professional bowlers, A. P. Freeman and H. Tyldesley, to New Zealand. They played in Australia on the way there and back. In the first engagement Richardson scored 150 and in the return match he hit a hundred before lunch-a feat never before performed in Australia-and went on to make 280, still the highest individual score for any State side against M.C.C."
+        },
+        {
+          "type": "HTML",
+          "html": "In the famous match at The Oval in 1926, when A. P. F. Chapman captained England for the first time and recaptured the Ashes, England were caught on a sticky wicket, yet Hobbs and Sutcliffe batted through the two and a half hours before lunch on the third day during the crucial one and a half hours from noon till lunch when the wicket was at its worst, Hobbs, dreading that H. L. Collins might put on Gregory, pretended to be in difficulties to encourage Collins to keep on Richardson, who was turning the ball towards his cluster of five short leg fieldsmen. Hobbs made 100 and Sutcliffe 161 and the timeless Test was finished in four days with England winning by 289 runs."
+        },
+        {
+          "type": "HTML",
+          "html": "For South Australia, Arthur Richardson scored 3,755 runs, average 45.79 and his 117 wickets on those perfect pitches cost 39.41 runs each. Later he played a little for Western Australia besides appearing for Bacup in the Lancashire League. Arthur and Victor Richardson, who were unrelated, engaged in several big partnerships for South Australia.\n<BR><B>Wisden Cricketers' Almanack</B>"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 1,
+          "mt": 9,
+          "in": 13,
+          "rn": 403,
+          "bl": null,
+          "avg": 31,
+          "sr": null,
+          "no": 0,
+          "fo": null,
+          "si": 0,
+          "hs": "100",
+          "hn": 1,
+          "ft": 2,
+          "ct": 1,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 86,
+          "in": 139,
+          "rn": 5238,
+          "bl": null,
+          "avg": 41.57,
+          "sr": null,
+          "no": 13,
+          "fo": null,
+          "si": null,
+          "hs": "280",
+          "hn": 13,
+          "ft": 16,
+          "ct": 34,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 1,
+          "mt": 9,
+          "in": 14,
+          "rn": 521,
+          "bl": 1812,
+          "avg": 43.41,
+          "sr": 151,
+          "wk": 12,
+          "bbi": "2/20",
+          "bbm": "4/104",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 1.72
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 86,
+          "in": null,
+          "rn": 6555,
+          "bl": 17083,
+          "avg": 31.36,
+          "sr": 81.7,
+          "wk": 209,
+          "bbi": "6/28",
+          "bbm": null,
+          "fwk": null,
+          "fw": 7,
+          "tw": 1,
+          "bwe": 2.3
+        },
+        {
+          "type": "OFFICIAL",
+          "cl": 1,
+          "mt": 2,
+          "um": 2,
+          "tum": null,
+          "rf": null
+        },
+        {
+          "type": "OFFICIAL",
+          "cl": 4,
+          "mt": 3,
+          "um": 3,
+          "tum": null,
+          "rf": null
+        }
+      ]
+    },
+    "topRecords": [
+      {
+        "position": 9,
+        "multiple": false,
+        "record": {
+          "id": 223,
+          "objectId": 282998,
+          "title": "Oldest player to score a maiden hundred",
+          "siteId": null,
+          "class": {
+            "id": 1,
+            "type": "i",
+            "name": "Test",
+            "longName": "Test matches",
+            "multipleClass": 0,
+            "slug": "test-matches"
+          },
+          "genre": {
+            "id": 8,
+            "name": "Hundreds",
+            "category": {
+              "id": 3,
+              "name": "batting",
+              "longName": "Batting records",
+              "slug": "batting-records"
+            }
+          },
+          "slug": "oldest-player-to-score-a-maiden-hundred"
+        },
+        "value": "37y 351d"
+      },
+      {
+        "position": 4,
+        "multiple": true,
+        "record": {
+          "id": 253,
+          "objectId": 283028,
+          "title": "Ninety on debut",
+          "siteId": null,
+          "class": {
+            "id": 1,
+            "type": "i",
+            "name": "Test",
+            "longName": "Test matches",
+            "multipleClass": 0,
+            "slug": "test-matches"
+          },
+          "genre": {
+            "id": 9,
+            "name": "Nineties",
+            "category": {
+              "id": 3,
+              "name": "batting",
+              "longName": "Batting records",
+              "slug": "batting-records"
+            }
+          },
+          "slug": "ninety-on-debut"
+        },
+        "value": "98"
+      }
+    ],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 9,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 158,
+                    "id": 158,
+                    "objectId": 62544,
+                    "scribeId": 62544,
+                    "slug": "australia-vs-england-1st-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1924/25",
+                    "title": "1st Test",
+                    "floodlit": "day",
+                    "startDate": "1924-12-19T00:00:00Z",
+                    "endDate": "1924-12-27T00:00:00Z",
+                    "startTime": "1924-12-19T00:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Australia won by 193 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000158",
+                    "generalNumber": null,
+                    "winnerTeamId": 2,
+                    "tossWinnerTeamId": 2,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1465,
+                      "objectId": 61724,
+                      "scribeId": 17606,
+                      "slug": "england-tour-of-australia-1924-25",
+                      "name": "England tour of Australia",
+                      "longName": "England tour of Australia",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1924,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1924/25",
+                      "startDate": "1924-12-19T00:00:00Z",
+                      "endDate": "1925-03-04T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 132,
+                      "objectId": 56544,
+                      "name": "Sydney Cricket Ground",
+                      "smallName": "Sydney",
+                      "longName": "Sydney Cricket Ground",
+                      "slug": "sydney-cricket-ground",
+                      "location": "Moore Park",
+                      "image": {
+                        "id": 516,
+                        "objectId": 56543,
+                        "slug": "sydney-cricket-ground",
+                        "url": "/db/PICTURES/DB/011999/003928.1.jpg",
+                        "width": 250,
+                        "height": 153,
+                        "caption": "Sydney Cricket Ground",
+                        "longCaption": "Sydney Cricket Ground",
+                        "credit": "Action Photographics",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 29,
+                        "objectId": 56531,
+                        "name": "Sydney",
+                        "area": "New South Wales",
+                        "timezone": "Australia/Sydney"
+                      },
+                      "country": {
+                        "id": 2,
+                        "objectId": 2,
+                        "name": "Australia",
+                        "shortName": "Australia",
+                        "abbreviation": "AUS",
+                        "slug": "australia"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 2,
+                          "objectId": 2,
+                          "scribeId": 2,
+                          "slug": "australia",
+                          "name": "Australia",
+                          "longName": "Australia",
+                          "abbreviation": "AUS",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+                          "isCountry": true,
+                          "primaryColor": "#ffdd00",
+                          "image": {
+                            "id": 340493,
+                            "objectId": 1318684,
+                            "slug": "australia-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340400/340493.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Australia team flag-latest",
+                            "longCaption": "Australia team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "450 & 452",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "298 & 411",
+                        "scoreInfo": "T:605",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 4,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T04:44:21.901Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 167,
+                    "id": 167,
+                    "objectId": 62553,
+                    "scribeId": 62553,
+                    "slug": "england-vs-australia-5th-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1926",
+                    "title": "5th Test",
+                    "floodlit": "day",
+                    "startDate": "1926-08-14T00:00:00Z",
+                    "endDate": "1926-08-18T00:00:00Z",
+                    "startTime": "1926-08-14T10:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "England won by 289 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000167",
+                    "generalNumber": null,
+                    "winnerTeamId": 1,
+                    "tossWinnerTeamId": 1,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1085,
+                      "objectId": 61344,
+                      "scribeId": 17604,
+                      "slug": "australia-tour-of-england-1926",
+                      "name": "Australia tour of England",
+                      "longName": "Australia tour of England",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1926,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1926",
+                      "startDate": "1926-04-28T00:00:00Z",
+                      "endDate": "1926-09-16T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 45,
+                      "objectId": 57127,
+                      "name": "Kennington Oval, London",
+                      "smallName": "The Oval",
+                      "longName": "Kennington Oval, London",
+                      "slug": "kennington-oval-london",
+                      "location": "",
+                      "image": {
+                        "id": 107862,
+                        "objectId": 423593,
+                        "slug": "a-stunning-view-of-the-oval-under-lights",
+                        "url": "/db/PICTURES/CMS/107800/107862.2.jpg",
+                        "width": 310,
+                        "height": 194,
+                        "caption": "A stunning view of The Oval under lights",
+                        "longCaption": "A stunning view of The Oval under lights, England v Australia, 1st ODI, The Oval, September 4, 2009",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 224,
+                        "objectId": 57124,
+                        "name": "London",
+                        "area": "",
+                        "timezone": "Europe/London"
+                      },
+                      "country": {
+                        "id": 1,
+                        "objectId": 1,
+                        "name": "England",
+                        "shortName": "England",
+                        "abbreviation": "ENG",
+                        "slug": "england"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "280 & 436",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 2,
+                          "objectId": 2,
+                          "scribeId": 2,
+                          "slug": "australia",
+                          "name": "Australia",
+                          "longName": "Australia",
+                          "abbreviation": "AUS",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+                          "isCountry": true,
+                          "primaryColor": "#ffdd00",
+                          "image": {
+                            "id": 340493,
+                            "objectId": 1318684,
+                            "slug": "australia-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340400/340493.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Australia team flag-latest",
+                            "longCaption": "Australia team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "302 & 125",
+                        "scoreInfo": "T:415",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 5,
+                    "totalVideos": 0,
+                    "totalStories": 2,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T04:40:00.86Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 86,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1918/19 - 1933"
+                }
+              ]
+            }
+          ],
+          "recent": []
+        },
+        {
+          "type": 2,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 2,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 239,
+                    "id": 239,
+                    "objectId": 62625,
+                    "scribeId": 62625,
+                    "slug": "west-indies-vs-england-2nd-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1934/35",
+                    "title": "2nd Test",
+                    "floodlit": "day",
+                    "startDate": "1935-01-24T00:00:00Z",
+                    "endDate": "1935-01-28T00:00:00Z",
+                    "startTime": "1935-01-24T14:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "West Indies won by 217 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000239",
+                    "generalNumber": null,
+                    "winnerTeamId": 4,
+                    "tossWinnerTeamId": 1,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1496,
+                      "objectId": 61755,
+                      "scribeId": 17562,
+                      "slug": "england-tour-of-west-indies-1934-35",
+                      "name": "England tour of West Indies",
+                      "longName": "England tour of West Indies",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1935,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1934/35",
+                      "startDate": "1935-01-08T00:00:00Z",
+                      "endDate": "1935-03-18T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 208,
+                      "objectId": 59475,
+                      "name": "Queen's Park Oval, Port of Spain, Trinidad",
+                      "smallName": "Port of Spain",
+                      "longName": "Queen's Park Oval, Port of Spain, Trinidad",
+                      "slug": "queen-s-park-oval-port-of-spain-trinidad",
+                      "location": "",
+                      "image": {
+                        "id": 10767,
+                        "objectId": 59473,
+                        "slug": "queen-s-park-oval-port-of-spain-trinidad",
+                        "url": "/db/PICTURES/CMS/10700/10767.1.jpg",
+                        "width": 220,
+                        "height": 144,
+                        "caption": "Queen's Park Oval, Port of Spain, Trinidad",
+                        "longCaption": "West Indies v South Africa, 2nd Test, Queen's Park Oval, Port of Spain, Trinidad, 17-21 March 2001",
+                        "credit": "ESPNcricinfo Ltd",
+                        "photographer": "Rian Botes",
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 1002,
+                        "objectId": 59474,
+                        "name": "Port of Spain",
+                        "area": "Trinidad",
+                        "timezone": "America/Port_of_Spain"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "302 & 280/6d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "258 & 107",
+                        "scoreInfo": "T:325",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T04:44:23.104Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 240,
+                    "id": 240,
+                    "objectId": 62626,
+                    "scribeId": 62626,
+                    "slug": "west-indies-vs-england-3rd-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1934/35",
+                    "title": "3rd Test",
+                    "floodlit": "day",
+                    "startDate": "1935-02-14T00:00:00Z",
+                    "endDate": "1935-02-18T00:00:00Z",
+                    "startTime": "1935-02-14T13:45:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000240",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 1,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 4,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1496,
+                      "objectId": 61755,
+                      "scribeId": 17562,
+                      "slug": "england-tour-of-west-indies-1934-35",
+                      "name": "England tour of West Indies",
+                      "longName": "England tour of West Indies",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1935,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1934/35",
+                      "startDate": "1935-01-08T00:00:00Z",
+                      "endDate": "1935-03-18T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 169,
+                      "objectId": 59447,
+                      "name": "Bourda, Georgetown, British Guiana",
+                      "smallName": "Georgetown",
+                      "longName": "Bourda, Georgetown, British Guiana",
+                      "slug": "bourda-georgetown-guyana",
+                      "location": "",
+                      "image": {
+                        "id": 17919,
+                        "objectId": 59445,
+                        "slug": "general-view-of-the-bourda",
+                        "url": "/db/PICTURES/DB/042005/059426.1.jpg",
+                        "width": 210,
+                        "height": 153,
+                        "caption": "General view of the Bourda",
+                        "longCaption": "General view of the Bourda, April 2003",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 995,
+                        "objectId": 59446,
+                        "name": "Georgetown",
+                        "area": "Guyana",
+                        "timezone": "America/Guyana"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "226 & 160/6d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "184 & 104/5",
+                        "scoreInfo": "T:203",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T04:44:23.104Z"
+                  },
+                  "span": null
+                }
+              ]
+            }
+          ],
+          "recent": []
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 84105,
+        "objectId": 155731,
+        "scribeId": 155731,
+        "slug": "arthur-richardson",
+        "title": "Arthur Richardson",
+        "subTitle": "",
+        "seoTitle": "",
+        "summary": "RICHARDSON, ARTHUR J., a noted Australian Test cricketer of the twenties, died in his native Adelaide on December 23, aged 85",
+        "byline": "",
+        "categoryType": "OTHERS",
+        "genreType": "OTHER",
+        "genreId": 38,
+        "genreName": "Obituaries",
+        "publishedAt": "1974-04-15T00:00:00Z",
+        "modifiedAt": "2021-09-13T06:53:33Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": null,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-05T04:44:23.118Z"
+      }
+    ],
+    "videos": [],
+    "images": [
+      {
+        "id": 21581,
+        "objectId": 7333,
+        "slug": "arthur-richardson",
+        "url": "/db/PICTURES/DB/052004/052469.jpg",
+        "width": 160,
+        "height": 276,
+        "caption": "Arthur Richardson",
+        "longCaption": "Arthur Richardson",
+        "credit": "The Cricketer International",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1972-11-30T00:00:00Z",
+        "capturedOn": {
+          "year": 1973,
+          "month": null,
+          "date": null
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 8,
+        "objectId": 8,
+        "scribeId": 8,
+        "slug": "sri-lanka",
+        "name": "Sri Lanka",
+        "longName": "Sri Lanka",
+        "abbreviation": "SL",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/340000/340047.png",
+        "isCountry": true,
+        "primaryColor": "#203d89",
+        "image": {
+          "id": 340047,
+          "objectId": 1316921,
+          "slug": "sri-lanka-team-flag",
+          "url": "/db/PICTURES/CMS/340000/340047.png",
+          "width": 500,
+          "height": 500,
+          "caption": "Sri Lanka team flag",
+          "longCaption": "Sri Lanka team flag",
+          "credit": "Google",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 78229,
+          "objectId": 784367,
+          "name": "KIC Asalanka",
+          "longName": "Charith Asalanka",
+          "mobileName": "Asalanka",
+          "indexName": "Asalanka, KIC",
+          "battingName": "KIC Asalanka",
+          "fieldingName": "Asalanka",
+          "slug": "charith-asalanka",
+          "imageUrl": "/db/PICTURES/CMS/348100/348128.4.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 6,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 348128,
+            "objectId": 1341438,
+            "slug": "charith-asalanka-player-portrait",
+            "url": "/db/PICTURES/CMS/348100/348128.4.jpg",
+            "width": 160,
+            "height": 225,
+            "caption": "Charith Asalanka, player portrait",
+            "longCaption": "Charith Asalanka, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Matt King",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 62760,
+          "objectId": 465793,
+          "name": "DM de Silva",
+          "longName": "Dhananjaya de Silva",
+          "mobileName": "Dhananjaya",
+          "indexName": "de Silva, DM",
+          "battingName": "DM de Silva",
+          "fieldingName": "de Silva",
+          "slug": "dhananjaya-de-silva",
+          "imageUrl": "/db/PICTURES/CMS/303800/303832.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 9,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303832,
+            "objectId": 1222666,
+            "slug": "dhananjaya-de-silva-portrait",
+            "url": "/db/PICTURES/CMS/303800/303832.png",
+            "width": 160,
+            "height": 201,
+            "caption": "Dhananjaya de Silva portrait",
+            "longCaption": "Dhananjaya de Silva, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 78239,
+          "objectId": 784379,
+          "name": "PWH de Silva",
+          "longName": "Wanindu Hasaranga de Silva",
+          "mobileName": "Hasaranga de Silva",
+          "indexName": "de Silva, PWH",
+          "battingName": "PWH de Silva",
+          "fieldingName": "de Silva",
+          "slug": "wanindu-hasaranga-de-silva",
+          "imageUrl": "/db/PICTURES/CMS/294200/294296.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 7,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 294296,
+            "objectId": 1199371,
+            "slug": "wanindu-hasaranga",
+            "url": "/db/PICTURES/CMS/294200/294296.jpg",
+            "width": 160,
+            "height": 210,
+            "caption": "Wanindu Hasaranga",
+            "longCaption": null,
+            "credit": "Chaminda de Silva",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 70580,
+          "objectId": 623695,
+          "name": "C Karunaratne",
+          "longName": "Chamika Karunaratne",
+          "mobileName": "",
+          "indexName": "Karunaratne, C",
+          "battingName": "C Karunaratne",
+          "fieldingName": "Karunaratne",
+          "slug": "chamika-karunaratne",
+          "imageUrl": "/db/PICTURES/CMS/303800/303830.png",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 5,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303830,
+            "objectId": 1222664,
+            "slug": "chamika-karunaratne-portrait",
+            "url": "/db/PICTURES/CMS/303800/303830.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Chamika Karunaratne portrait",
+            "longCaption": "Chamika Karunaratne, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 70888,
+          "objectId": 629074,
+          "name": "BKG Mendis",
+          "longName": "Kusal Mendis",
+          "mobileName": "Mendis",
+          "indexName": "Mendis, BKG",
+          "battingName": "BKG Mendis",
+          "fieldingName": "Mendis",
+          "slug": "kusal-mendis",
+          "imageUrl": "/db/PICTURES/CMS/303800/303835.png",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 2,
+            "date": 2
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 303835,
+            "objectId": 1222669,
+            "slug": "kusal-mendis-portrait",
+            "url": "/db/PICTURES/CMS/303800/303835.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Kusal Mendis portrait",
+            "longCaption": "Kusal Mendis, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 93033,
+          "objectId": 1028655,
+          "name": "P Nissanka",
+          "longName": "Pathum Nissanka",
+          "mobileName": "Nissanka",
+          "indexName": "Nissanka, P",
+          "battingName": "P Nissanka",
+          "fieldingName": "Nissanka",
+          "slug": "pathum-nissanka",
+          "imageUrl": "/db/PICTURES/CMS/318400/318435.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 5,
+            "date": 18
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 318435,
+            "objectId": 1256641,
+            "slug": "pathum-nissanka-portrait",
+            "url": "/db/PICTURES/CMS/318400/318435.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Pathum Nissanka portrait",
+            "longCaption": "Pathum Nissanka portrait, Antigua and Barbuda, March 12, 2021",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 56511,
+          "objectId": 342619,
+          "name": "PBB Rajapaksa",
+          "longName": "Bhanuka Rajapaksa",
+          "mobileName": "Rajapaksa",
+          "indexName": "Rajapaksa, PBB",
+          "battingName": "PBB Rajapaksa",
+          "fieldingName": "Rajapaksa",
+          "slug": "bhanuka-rajapaksa",
+          "imageUrl": "/db/PICTURES/CMS/338100/338183.4.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 10,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 338183,
+            "objectId": 1311483,
+            "slug": "bhanuka-rajapaksa-player-portrait",
+            "url": "/db/PICTURES/CMS/338100/338183.4.jpg",
+            "width": 160,
+            "height": 211,
+            "caption": "Bhanuka Rajapaksa player portrait",
+            "longCaption": "Bhanuka Rajapaksa player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Michael Steele",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 64698,
+          "objectId": 499594,
+          "name": "CAK Rajitha",
+          "longName": "Kasun Rajitha",
+          "mobileName": "Rajitha",
+          "indexName": "Rajitha, CAK",
+          "battingName": "CAK Rajitha",
+          "fieldingName": "Rajitha",
+          "slug": "kasun-rajitha",
+          "imageUrl": "/db/PICTURES/CMS/303800/303833.png",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 6,
+            "date": 1
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303833,
+            "objectId": 1222667,
+            "slug": "kasun-rajitha-portrait",
+            "url": "/db/PICTURES/CMS/303800/303833.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Kasun Rajitha portrait",
+            "longCaption": "Kasun Rajitha, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 61690,
+          "objectId": 437316,
+          "name": "MD Shanaka",
+          "longName": "Dasun Shanaka",
+          "mobileName": "Shanaka",
+          "indexName": "Shanaka, MD",
+          "battingName": "MD Shanaka",
+          "fieldingName": "Shanaka",
+          "slug": "dasun-shanaka",
+          "imageUrl": "/db/PICTURES/CMS/327900/327999.7.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 9,
+            "date": 9
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 327999,
+            "objectId": 1280829,
+            "slug": "dasun-shanaka-player-portrait",
+            "url": "/db/PICTURES/CMS/327900/327999.7.jpg",
+            "width": 160,
+            "height": 253,
+            "caption": "Dasun Shanaka, player portrait",
+            "longCaption": "Dasun Shanaka, player portrait",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 101991,
+          "objectId": 1138316,
+          "name": "M Theekshana",
+          "longName": "Maheesh Theekshana",
+          "mobileName": "Theekshana",
+          "indexName": "Theekshana, M",
+          "battingName": "M Theekshana",
+          "fieldingName": "Theekshana",
+          "slug": "maheesh-theekshana",
+          "imageUrl": "/db/PICTURES/CMS/336200/336296.4.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 8,
+            "date": 1
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 336296,
+            "objectId": 1306203,
+            "slug": "mahesh-theekshana-player-portrait",
+            "url": "/db/PICTURES/CMS/336200/336296.4.jpg",
+            "width": 160,
+            "height": 221,
+            "caption": "Mahesh Theekshana, player portrait",
+            "longCaption": "Mahesh Theekshana, player portrait",
+            "credit": "Cricket Australia/Getty Images",
+            "photographer": "Brendon Thorne",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 50771,
+          "objectId": 272450,
+          "name": "MR Marsh",
+          "longName": "Mitchell Marsh",
+          "mobileName": "Marsh",
+          "indexName": "Marsh, MR",
+          "battingName": "MR Marsh",
+          "fieldingName": "Marsh",
+          "slug": "mitchell-marsh",
+          "imageUrl": "/db/PICTURES/CMS/356700/356780.1.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 10,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 356780,
+            "objectId": 1364982,
+            "slug": "mitchell-marsh-player-portrait",
+            "url": "/db/PICTURES/CMS/356700/356780.1.png",
+            "width": 160,
+            "height": 187,
+            "caption": "Mitchell Marsh player portrait",
+            "longCaption": "Mitchell Marsh player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 48739,
+          "objectId": 219889,
+          "name": "DA Warner",
+          "longName": "David Warner",
+          "mobileName": "Warner",
+          "indexName": "Warner, DA",
+          "battingName": "DA Warner",
+          "fieldingName": "Warner",
+          "slug": "david-warner",
+          "imageUrl": "/db/PICTURES/CMS/263500/263541.1.jpg",
+          "dateOfBirth": {
+            "year": 1986,
+            "month": 10,
+            "date": 27
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 263541,
+            "objectId": 1099532,
+            "slug": "david-warner",
+            "url": "/db/PICTURES/CMS/263500/263541.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "David Warner",
+            "longCaption": "David Warner",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 58680,
+          "objectId": 381217,
+          "name": "NJ Carey",
+          "longName": "Nicola Carey",
+          "mobileName": "Carey",
+          "indexName": "Carey, NJ",
+          "battingName": "NJ Carey",
+          "fieldingName": "Carey",
+          "slug": "nicola-carey",
+          "imageUrl": "/db/PICTURES/CMS/150600/150647.1.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 9,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "F",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 150647,
+            "objectId": 585484,
+            "slug": "nicola-carey",
+            "url": "/db/PICTURES/CMS/150600/150647.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Nicola Carey",
+            "longCaption": "Nicola Carey",
+            "credit": "ICC/Getty",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 49024,
+          "objectId": 230193,
+          "name": "MS Wade",
+          "longName": "Matthew Wade",
+          "mobileName": "Wade",
+          "indexName": "Wade, MS",
+          "battingName": "MS Wade",
+          "fieldingName": "Wade",
+          "slug": "matthew-wade",
+          "imageUrl": "/db/PICTURES/CMS/263500/263523.1.jpg",
+          "dateOfBirth": {
+            "year": 1987,
+            "month": 12,
+            "date": 26
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 263523,
+            "objectId": 1099501,
+            "slug": "matthew-wade",
+            "url": "/db/PICTURES/CMS/263500/263523.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Matthew Wade",
+            "longCaption": "Matthew Wade",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 50789,
+          "objectId": 272477,
+          "name": "JP Behrendorff",
+          "longName": "Jason Behrendorff",
+          "mobileName": "Behrendorff",
+          "indexName": "Behrendorff, JP",
+          "battingName": "JP Behrendorff",
+          "fieldingName": "Behrendorff",
+          "slug": "jason-behrendorff",
+          "imageUrl": "/db/PICTURES/CMS/289900/289948.jpg",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 4,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 289948,
+            "objectId": 1186408,
+            "slug": "player-portrait-jason-behrendorff",
+            "url": "/db/PICTURES/CMS/289900/289948.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Player portrait, Jason Behrendorff",
+            "longCaption": "Player portrait, Jason Behrendorff",
+            "credit": "IDI via Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 96335,
+          "objectId": 1076713,
+          "name": "C Green",
+          "longName": "Cameron Green",
+          "mobileName": "Green",
+          "indexName": "Green, C",
+          "battingName": "C Green",
+          "fieldingName": "Green",
+          "slug": "cameron-green",
+          "imageUrl": "/db/PICTURES/CMS/315600/315603.jpg",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 6,
+            "date": 3
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 315603,
+            "objectId": 1248835,
+            "slug": "cameron-green-portrait",
+            "url": "/db/PICTURES/CMS/315600/315603.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Cameron Green portrait",
+            "longCaption": "Cameron Green portrait, January 22, 2021",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 83439,
+          "objectId": 892749,
+          "name": "TH David",
+          "longName": "Tim David",
+          "mobileName": "David",
+          "indexName": "David, TH",
+          "battingName": "TH David",
+          "fieldingName": "David",
+          "slug": "tim-david",
+          "imageUrl": "/db/PICTURES/CMS/313600/313639.1.jpg",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 3,
+            "date": 16
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 313639,
+            "objectId": 1243165,
+            "slug": "tim-david-player-portrait",
+            "url": "/db/PICTURES/CMS/313600/313639.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Tim David player portrait",
+            "longCaption": "Tim David player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 80817,
+          "objectId": 826915,
+          "name": "NT Ellis",
+          "longName": "Nathan Ellis",
+          "mobileName": "Ellis",
+          "indexName": "Ellis, NT",
+          "battingName": "NT Ellis",
+          "fieldingName": "Ellis",
+          "slug": "nathan-ellis",
+          "imageUrl": "/db/PICTURES/CMS/327000/327014.4.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 9,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 327014,
+            "objectId": 1276809,
+            "slug": "nathan-ellis-player-portrait",
+            "url": "/db/PICTURES/CMS/327000/327014.4.jpg",
+            "width": 160,
+            "height": 254,
+            "caption": "Nathan Ellis, player portrait",
+            "longCaption": "Nathan Ellis, player portrait",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 70472,
+          "objectId": 605575,
+          "name": "MW Short",
+          "longName": "Matthew Short",
+          "mobileName": "Short",
+          "indexName": "Short, MW",
+          "battingName": "MW Short",
+          "fieldingName": "Short",
+          "slug": "matthew-short",
+          "imageUrl": "/db/PICTURES/CMS/179400/179415.1.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 11,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 179415,
+            "objectId": 721177,
+            "slug": "matt-short",
+            "url": "/db/PICTURES/CMS/179400/179415.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Matt Short",
+            "longCaption": "Matt Short",
+            "credit": "International Cricket Council",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 54212,
+          "objectId": 325012,
+          "name": "MP Stoinis",
+          "longName": "Marcus Stoinis",
+          "mobileName": "Stoinis",
+          "indexName": "Stoinis, MP",
+          "battingName": "MP Stoinis",
+          "fieldingName": "Stoinis",
+          "slug": "marcus-stoinis",
+          "imageUrl": "/db/PICTURES/CMS/309100/309100.jpg",
+          "dateOfBirth": {
+            "year": 1989,
+            "month": 8,
+            "date": 16
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 309100,
+            "objectId": 1232617,
+            "slug": "marcus-stoinis-portrait",
+            "url": "/db/PICTURES/CMS/309100/309100.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Marcus Stoinis portrait",
+            "longCaption": "Marcus Stoinis portrait, September 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 2,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        },
+        {
+          "id": 11,
+          "type": "g",
+          "name": "Other matches"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Test",
+          "longName": "Test matches",
+          "multipleClass": 0,
+          "slug": "test-matches"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        },
+        {
+          "id": 14,
+          "type": "g",
+          "name": "Minor",
+          "longName": "Minor cricket",
+          "multipleClass": 0,
+          "slug": "minor-cricket"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 1,
+          "matches": 9,
+          "batted": true,
+          "battedInnings": 13,
+          "bowled": true,
+          "bowledInnings": 14,
+          "fielded": true,
+          "fieldedInnings": 14,
+          "dismissals": 1,
+          "stumped": 0,
+          "umpireMatches": 2,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 466,
+        "2": 238,
+        "3": 103,
+        "8": 181,
+        "9": 149,
+        "10": 60,
+        "14": 316,
+        "15": 473,
+        "16": 11
+      },
+      "teamContractedPlayerCount": 20,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 17,
+          "type": "g",
+          "name": "Women's Twenty20"
+        }
+      ]
+    }
+  }
+}

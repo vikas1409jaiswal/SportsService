@@ -1,0 +1,998 @@
+[
+  {
+    "Type": "CAREER_AVERAGES",
+    "Stats": [
+      {
+        "Tt": "overview",
+        "Sp": "1880-1890",
+        "Mt": 21,
+        "In": 40,
+        "Pr": null,
+        "Ds": 19,
+        "Ct": 19,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 19,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.475
+      }
+    ]
+  },
+  {
+    "Type": "OPPOSITION_TEAM",
+    "Stats": [
+      {
+        "Tt": "vs Australia",
+        "Sp": "1880-1890",
+        "Mt": 21,
+        "In": 40,
+        "Pr": "opposition=2",
+        "Ds": 19,
+        "Ct": 19,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 19,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.475
+      }
+    ]
+  },
+  {
+    "Type": "HOST_COUNTRY",
+    "Stats": [
+      {
+        "Tt": "in Australia",
+        "Sp": "1882-1887",
+        "Mt": 10,
+        "In": 20,
+        "Pr": "host=2",
+        "Ds": 12,
+        "Ct": 12,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 12,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.6
+      },
+      {
+        "Tt": "in England",
+        "Sp": "1880-1890",
+        "Mt": 11,
+        "In": 20,
+        "Pr": "host=1",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.35
+      }
+    ]
+  },
+  {
+    "Type": "CONTINENT",
+    "Stats": [
+      {
+        "Tt": "in Europe",
+        "Sp": "1880-1890",
+        "Mt": 11,
+        "In": 20,
+        "Pr": "continent=4",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.35
+      },
+      {
+        "Tt": "in Oceania",
+        "Sp": "1882-1887",
+        "Mt": 10,
+        "In": 20,
+        "Pr": "continent=5",
+        "Ds": 12,
+        "Ct": 12,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 12,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.6
+      }
+    ]
+  },
+  {
+    "Type": "HOME_OR_AWAY",
+    "Stats": [
+      {
+        "Tt": "home",
+        "Sp": "1880-1890",
+        "Mt": 11,
+        "In": 20,
+        "Pr": "home_or_away=1",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.35
+      },
+      {
+        "Tt": "away",
+        "Sp": "1882-1887",
+        "Mt": 10,
+        "In": 20,
+        "Pr": "home_or_away=2",
+        "Ds": 12,
+        "Ct": 12,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 12,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.6
+      }
+    ]
+  },
+  {
+    "Type": "YEAR",
+    "Stats": [
+      {
+        "Tt": "year 1880",
+        "Sp": null,
+        "Mt": 1,
+        "In": 2,
+        "Pr": "year=1880",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "year 1882",
+        "Sp": null,
+        "Mt": 2,
+        "In": 4,
+        "Pr": "year=1882",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "year 1883",
+        "Sp": null,
+        "Mt": 3,
+        "In": 6,
+        "Pr": "year=1883",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.333
+      },
+      {
+        "Tt": "year 1884",
+        "Sp": null,
+        "Mt": 3,
+        "In": 4,
+        "Pr": "year=1884",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.25
+      },
+      {
+        "Tt": "year 1885",
+        "Sp": null,
+        "Mt": 4,
+        "In": 8,
+        "Pr": "year=1885",
+        "Ds": 8,
+        "Ct": 8,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 8,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "year 1886",
+        "Sp": null,
+        "Mt": 2,
+        "In": 4,
+        "Pr": "year=1886",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "year 1887",
+        "Sp": null,
+        "Mt": 1,
+        "In": 2,
+        "Pr": "year=1887",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "year 1888",
+        "Sp": null,
+        "Mt": 3,
+        "In": 6,
+        "Pr": "year=1888",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.166
+      },
+      {
+        "Tt": "year 1890",
+        "Sp": null,
+        "Mt": 2,
+        "In": 4,
+        "Pr": "year=1890",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.5
+      }
+    ]
+  },
+  {
+    "Type": "SEASON",
+    "Stats": [
+      {
+        "Tt": "season 1880",
+        "Sp": null,
+        "Mt": 1,
+        "In": 2,
+        "Pr": "season=1880",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "season 1882",
+        "Sp": null,
+        "Mt": 1,
+        "In": 2,
+        "Pr": "season=1882",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "season 1882/83",
+        "Sp": null,
+        "Mt": 4,
+        "In": 8,
+        "Pr": "season=1882/83",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.375
+      },
+      {
+        "Tt": "season 1884",
+        "Sp": null,
+        "Mt": 2,
+        "In": 2,
+        "Pr": "season=1884",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "season 1884/85",
+        "Sp": null,
+        "Mt": 5,
+        "In": 10,
+        "Pr": "season=1884/85",
+        "Ds": 8,
+        "Ct": 8,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 8,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.8
+      },
+      {
+        "Tt": "season 1886",
+        "Sp": null,
+        "Mt": 2,
+        "In": 4,
+        "Pr": "season=1886",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "season 1886/87",
+        "Sp": null,
+        "Mt": 1,
+        "In": 2,
+        "Pr": "season=1886/87",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "season 1888",
+        "Sp": null,
+        "Mt": 3,
+        "In": 6,
+        "Pr": "season=1888",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.166
+      },
+      {
+        "Tt": "season 1890",
+        "Sp": null,
+        "Mt": 2,
+        "In": 4,
+        "Pr": "season=1890",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.5
+      }
+    ]
+  },
+  {
+    "Type": "CAPTAINS_INVOLVED",
+    "Stats": [
+      {
+        "Tt": "*Hon.IFW Bligh",
+        "Sp": "1882-1883",
+        "Mt": 4,
+        "In": 8,
+        "Pr": "captain_involve=67",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.375
+      },
+      {
+        "Tt": "*WG Grace",
+        "Sp": "1888-1890",
+        "Mt": 4,
+        "In": 8,
+        "Pr": "captain_involve=43",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.25
+      },
+      {
+        "Tt": "*Lord Harris",
+        "Sp": "1880-1884",
+        "Mt": 2,
+        "In": 3,
+        "Pr": "captain_involve=30",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.666
+      },
+      {
+        "Tt": "*AN Hornby",
+        "Sp": "1882-1884",
+        "Mt": 2,
+        "In": 3,
+        "Pr": "captain_involve=32",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.666
+      },
+      {
+        "Tt": "*A Shrewsbury snr",
+        "Sp": "1884-1887",
+        "Mt": 6,
+        "In": 12,
+        "Pr": "captain_involve=62",
+        "Ds": 9,
+        "Ct": 9,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 9,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.75
+      },
+      {
+        "Tt": "*AG Steel",
+        "Sp": "1886-1888",
+        "Mt": 3,
+        "In": 6,
+        "Pr": "captain_involve=52",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.166
+      }
+    ]
+  },
+  {
+    "Type": "CAPTAIN",
+    "Stats": [
+      {
+        "Tt": "is not captain",
+        "Sp": "1880-1890",
+        "Mt": 21,
+        "In": 40,
+        "Pr": "captain=0",
+        "Ds": 19,
+        "Ct": 19,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 19,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.475
+      }
+    ]
+  },
+  {
+    "Type": "KEEPER",
+    "Stats": [
+      {
+        "Tt": "is not keeper",
+        "Sp": "1880-1890",
+        "Mt": 21,
+        "In": 40,
+        "Pr": "keeper=0",
+        "Ds": 19,
+        "Ct": 19,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 19,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.475
+      }
+    ]
+  },
+  {
+    "Type": "TOSS",
+    "Stats": [
+      {
+        "Tt": "won the toss",
+        "Sp": "1880-1888",
+        "Mt": 10,
+        "In": 19,
+        "Pr": "toss=1",
+        "Ds": 11,
+        "Ct": 11,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 11,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.578
+      },
+      {
+        "Tt": "lost the toss",
+        "Sp": "1882-1890",
+        "Mt": 11,
+        "In": 21,
+        "Pr": "toss=2",
+        "Ds": 8,
+        "Ct": 8,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 8,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.38
+      }
+    ]
+  },
+  {
+    "Type": "BATTING_FIELDING_SEQUENCE_AND_TOSS",
+    "Stats": [
+      {
+        "Tt": "won toss &amp; batted",
+        "Sp": "1880-1888",
+        "Mt": 10,
+        "In": 19,
+        "Pr": "batting_fielding_first=1;toss=1",
+        "Ds": 11,
+        "Ct": 11,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 11,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.578
+      },
+      {
+        "Tt": "lost toss &amp; sent in",
+        "Sp": "1887-1887",
+        "Mt": 1,
+        "In": 2,
+        "Pr": "batting_fielding_first=1;toss=2",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "lost toss &amp; fielded",
+        "Sp": "1882-1890",
+        "Mt": 10,
+        "In": 19,
+        "Pr": "batting_fielding_first=2;toss=2",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.368
+      }
+    ]
+  },
+  {
+    "Type": "BATTING_FIELDING_SEQUENCE",
+    "Stats": [
+      {
+        "Tt": "matches batting first",
+        "Sp": "1880-1888",
+        "Mt": 11,
+        "In": 21,
+        "Pr": "batting_fielding_first=1",
+        "Ds": 12,
+        "Ct": 12,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 12,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.571
+      },
+      {
+        "Tt": "matches fielding first",
+        "Sp": "1882-1890",
+        "Mt": 10,
+        "In": 19,
+        "Pr": "batting_fielding_first=2",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.368
+      }
+    ]
+  },
+  {
+    "Type": "TEAM_INNINGS",
+    "Stats": [
+      {
+        "Tt": "1st team innings",
+        "Sp": "1880-1890",
+        "Mt": 21,
+        "In": 21,
+        "Pr": "innings_number=2;innings_number=1",
+        "Ds": 9,
+        "Ct": 9,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 9,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.428
+      },
+      {
+        "Tt": "2nd team innings",
+        "Sp": "1880-1890",
+        "Mt": 19,
+        "In": 19,
+        "Pr": "innings_number=3;innings_number=4",
+        "Ds": 10,
+        "Ct": 10,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 10,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.526
+      }
+    ]
+  },
+  {
+    "Type": "MATCH_INNINGS",
+    "Stats": [
+      {
+        "Tt": "1st match innings",
+        "Sp": "1882-1890",
+        "Mt": 10,
+        "In": 10,
+        "Pr": "innings_number=1",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.2
+      },
+      {
+        "Tt": "2nd match innings",
+        "Sp": "1880-1888",
+        "Mt": 11,
+        "In": 11,
+        "Pr": "innings_number=2",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.636
+      },
+      {
+        "Tt": "3rd match innings",
+        "Sp": "1880-1890",
+        "Mt": 14,
+        "In": 14,
+        "Pr": "innings_number=3",
+        "Ds": 8,
+        "Ct": 8,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 8,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.571
+      },
+      {
+        "Tt": "4th match innings",
+        "Sp": "1882-1887",
+        "Mt": 5,
+        "In": 5,
+        "Pr": "innings_number=4",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.4
+      }
+    ]
+  },
+  {
+    "Type": "RESULT",
+    "Stats": [
+      {
+        "Tt": "won match",
+        "Sp": "1880-1890",
+        "Mt": 13,
+        "In": 26,
+        "Pr": "result=1",
+        "Ds": 12,
+        "Ct": 12,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 12,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.461
+      },
+      {
+        "Tt": "lost match",
+        "Sp": "1882-1888",
+        "Mt": 6,
+        "In": 12,
+        "Pr": "result=2",
+        "Ds": 6,
+        "Ct": 6,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 6,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "drawn match",
+        "Sp": "1884-1884",
+        "Mt": 2,
+        "In": 2,
+        "Pr": "result=4",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      }
+    ]
+  },
+  {
+    "Type": "BATTING_FIELDING_SEQUENCE_AND_RESULT",
+    "Stats": [
+      {
+        "Tt": "won batting first",
+        "Sp": "1880-1888",
+        "Mt": 8,
+        "In": 16,
+        "Pr": "batting_fielding_first=1;result=1",
+        "Ds": 10,
+        "Ct": 10,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 10,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.625
+      },
+      {
+        "Tt": "won fielding first",
+        "Sp": "1884-1890",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "batting_fielding_first=2;result=1",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.2
+      },
+      {
+        "Tt": "lost batting first",
+        "Sp": "1883-1885",
+        "Mt": 2,
+        "In": 4,
+        "Pr": "batting_fielding_first=1;result=2",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.25
+      },
+      {
+        "Tt": "lost fielding first",
+        "Sp": "1882-1888",
+        "Mt": 4,
+        "In": 8,
+        "Pr": "batting_fielding_first=2;result=2",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.625
+      },
+      {
+        "Tt": "drawn batting first",
+        "Sp": "1884-1884",
+        "Mt": 1,
+        "In": 1,
+        "Pr": "batting_fielding_first=1;result=4",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "drawn fielding first",
+        "Sp": "1884-1884",
+        "Mt": 1,
+        "In": 1,
+        "Pr": "batting_fielding_first=2;result=4",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      }
+    ]
+  },
+  {
+    "Type": "TOURNAMENT_TYPE",
+    "Stats": [
+      {
+        "Tt": "2 team series",
+        "Sp": "1880-1890",
+        "Mt": 21,
+        "In": 40,
+        "Pr": "tournament_type=2",
+        "Ds": 19,
+        "Ct": 19,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 19,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.475
+      }
+    ]
+  },
+  {
+    "Type": "MATCH_NUMBER",
+    "Stats": [
+      {
+        "Tt": "only match in series",
+        "Sp": "1880-1883",
+        "Mt": 3,
+        "In": 6,
+        "Pr": "match_number=0",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "1st match in series",
+        "Sp": "1882-1890",
+        "Mt": 6,
+        "In": 11,
+        "Pr": "match_number=1",
+        "Ds": 6,
+        "Ct": 6,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 6,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.545
+      },
+      {
+        "Tt": "2nd match in series",
+        "Sp": "1883-1890",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "match_number=2",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.7
+      },
+      {
+        "Tt": "3rd match in series",
+        "Sp": "1883-1888",
+        "Mt": 5,
+        "In": 9,
+        "Pr": "match_number=3",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.222
+      },
+      {
+        "Tt": "4th match in series",
+        "Sp": "1885-1885",
+        "Mt": 1,
+        "In": 2,
+        "Pr": "match_number=4",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "5th match in series",
+        "Sp": "1885-1885",
+        "Mt": 1,
+        "In": 2,
+        "Pr": "match_number=5",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      }
+    ]
+  },
+  {
+    "Type": "MAJOR_TROPHY",
+    "Stats": [
+      {
+        "Tt": "The Ashes",
+        "Sp": "1882-1890",
+        "Mt": 18,
+        "In": 34,
+        "Pr": "trophy=1",
+        "Ds": 16,
+        "Ct": 16,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 16,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.47
+      }
+    ]
+  }
+]

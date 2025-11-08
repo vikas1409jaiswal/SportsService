@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using CricketService.Data.Repositories.Interfaces;
+using CricketService.Domain.BaseDomains;
+using CricketService.Domain;
 using CricketService.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,16 +28,10 @@ public class CricketTeamHistoryController : Controller
     {
         IEnumerable<object> allTeamsHistory = new List<object>();
 
-        if (format == CricketFormat.T20I || format == CricketFormat.ODI)
+        if (format == CricketFormat.T20I || format == CricketFormat.ODI || format == CricketFormat.TestCricket)
         {
             allTeamsHistory = await cricketTeamHistoryRepository.GetTeamsHistory(format);
         }
-        else if (format == CricketFormat.TestCricket)
-        {
-            //allTeamsHistory = cricketMatchRepository.GetAllMatchesTest(matchesFilters);
-        }
-
-        Response.Headers.Add($"total-{format}-matches", allTeamsHistory.Count().ToString());
 
         return Ok(allTeamsHistory);
     }
@@ -48,17 +44,27 @@ public class CricketTeamHistoryController : Controller
     {
         IEnumerable<object> allTeamsHistory = new List<object>();
 
-        if (format == CricketFormat.T20I || format == CricketFormat.ODI)
+        if (format == CricketFormat.T20I || format == CricketFormat.ODI || format == CricketFormat.TestCricket)
         {
             allTeamsHistory = await cricketTeamHistoryH2HRepository.GetTeamsHistoryH2H(format, team1Name, team2Name);
         }
-        else if (format == CricketFormat.TestCricket)
-        {
-            //allTeamsHistory = cricketMatchRepository.GetAllMatchesTest(matchesFilters);
-        }
-
-        Response.Headers.Add($"total-{format}-matches", allTeamsHistory.Count().ToString());
 
         return Ok(allTeamsHistory);
+    }
+
+    [HttpGet("internationalTeamsHistory/allPlayers")]
+    public async Task<IActionResult> GetInternationalPlayers(
+        [FromQuery, Required] CricketFormat format,
+        [FromQuery, Required] PlayersCategory playersCategory,
+        [FromQuery] string teamName)
+    {
+        IEnumerable<object> allTeamsPlayers = new List<object>();
+
+        if (format == CricketFormat.T20I || format == CricketFormat.ODI || format == CricketFormat.TestCricket)
+        {
+            allTeamsPlayers = await cricketTeamHistoryRepository.GetTeamsPlayers(format, playersCategory, teamName);
+        }
+
+        return Ok(allTeamsPlayers);
     }
 }

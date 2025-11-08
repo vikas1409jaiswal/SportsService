@@ -10,12 +10,6 @@ namespace CricketService.Api.Controllers
     [Route("[controller]/jobs")]
     public class HangfireController : Controller
     {
-        private const string CreateSeedCricketTeamHistoryTableJob = "CreateSeedCricketTeamHistoryTableJob";
-        private const string CreateSeedCricketTeamHistoryH2HTableJob = "CreateSeedCricketTeamHistoryH2HTableJob";
-        private const string UpdatePlayersCareerStatisticsJob = "UpdatePlayersCareerStatisticsJob";
-        private const string UpdateTeamRecordsJob = "UpdateTeamRecordsJob";
-        private const string CleanDatabaseJob = "CleanDatabaseJob";
-
         private readonly IHangfireRepository hangfireRepository;
         private readonly ICricketTeamHistoryRepository cricketTeamHistoryRepository;
         private readonly ICricketTeamHistoryH2HRepository cricketTeamHistoryH2HRepository;
@@ -32,54 +26,55 @@ namespace CricketService.Api.Controllers
 
         [HttpGet]
         public IActionResult CreateHangfireJob(
-            [FromQuery, Required] string jobName,
+            [FromQuery, Required] CricketJob jobName,
             [FromQuery] string team1Name,
             [FromQuery] string team2Name,
             [FromQuery] CricketFormat format)
         {
             switch (jobName)
             {
-                case CreateSeedCricketTeamHistoryTableJob:
+                case CricketJob.CreateSeedCricketTeamHistoryTableJob:
                     RecurringJob.AddOrUpdate(
-                         CreateSeedCricketTeamHistoryTableJob,
-                         () => cricketTeamHistoryRepository.SeedCricketTeamHistoryTable(),
+                         $"{CricketJob.CreateSeedCricketTeamHistoryTableJob}:{format}",
+                         () => cricketTeamHistoryRepository.SeedCricketTeamHistoryTable(format, false),
                          Cron.Never);
                     break;
 
-                case CreateSeedCricketTeamHistoryH2HTableJob:
+                case CricketJob.CreateSeedCricketTeamHistoryH2HTableJob:
                     RecurringJob.AddOrUpdate(
-                         $"{CreateSeedCricketTeamHistoryH2HTableJob}:{team1Name}vs{team2Name}:{format}",
-                         () => cricketTeamHistoryH2HRepository.SeedCricketTeamHistoryH2HTable(team1Name, team2Name, format),
+                         $"{CricketJob.CreateSeedCricketTeamHistoryH2HTableJob}:{team1Name}vs{team2Name}:{format}",
+                         () => cricketTeamHistoryH2HRepository.SeedCricketTeamHistoryH2HTable(team1Name, team2Name, format, true),
                          Cron.Never);
                     break;
 
-                case UpdatePlayersCareerStatisticsJob:
+                case CricketJob.UpdatePlayersCareerStatisticsJob:
                     RecurringJob.AddOrUpdate(
-                        UpdatePlayersCareerStatisticsJob,
+                        CricketJob.UpdatePlayersCareerStatisticsJob.ToString(),
                         () => hangfireRepository.UpdatePlayersCareerStatistics(),
                         Cron.Never);
                     break;
 
-                case UpdateTeamRecordsJob:
+                case CricketJob.UpdateTeamRecordsJob:
                     RecurringJob.AddOrUpdate(
-                        UpdateTeamRecordsJob,
+                        CricketJob.UpdateTeamRecordsJob.ToString(),
                         () => hangfireRepository.UpdateTeamRecords(null),
                         Cron.Never);
                     break;
 
-                case CleanDatabaseJob:
+                case CricketJob.CleanDatabaseJob:
                     RecurringJob.AddOrUpdate(
-                        CleanDatabaseJob,
+                        CricketJob.CleanDatabaseJob.ToString(),
                         () => hangfireRepository.CleanDatabase(),
                         Cron.Never);
                     break;
 
                 default:
                     return BadRequest($"Invalid job name. Valid options are: " +
-                        $"{CreateSeedCricketTeamHistoryTableJob}, " +
-                        $"{UpdatePlayersCareerStatisticsJob}, " +
-                        $"{UpdateTeamRecordsJob}, " +
-                        $"{CleanDatabaseJob}");
+                        $"{CricketJob.CreateSeedCricketTeamHistoryTableJob}, " +
+                        $"{CricketJob.CreateSeedCricketTeamHistoryH2HTableJob}, " +
+                        $"{CricketJob.UpdatePlayersCareerStatisticsJob}, " +
+                        $"{CricketJob.UpdateTeamRecordsJob}, " +
+                        $"{CricketJob.CleanDatabaseJob}");
             }
 
             return Ok($"Job '{jobName}' has been scheduled successfully.");

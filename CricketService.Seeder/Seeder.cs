@@ -41,7 +41,7 @@ namespace CricketService.Seeder
 
                 if (seedDataFeatures.WritePdfs)
                 {
-                    await cricketMatchRepository.GeneratedPDFForMatches(matchesData, CricketFormat.T20I);
+                    await cricketMatchRepository.GeneratedPDFForMatches(matchesData.Select(x => x.MatchUuid), CricketFormat.T20I);
                 }
 
                 if (matchesData.Count > 0 && seedDataFeatures.WriteDB)
@@ -74,7 +74,7 @@ namespace CricketService.Seeder
 
                 if (seedDataFeatures.WritePdfs)
                 {
-                    await cricketMatchRepository.GeneratedPDFForMatches(matchesData, CricketFormat.ODI);
+                    await cricketMatchRepository.GeneratedPDFForMatches(matchesData.Select(x => x.MatchUuid), CricketFormat.ODI);
                 }
 
                 if (matchesData.Count > 0 && seedDataFeatures.WriteDB)
@@ -102,7 +102,7 @@ namespace CricketService.Seeder
 
                 if (seedDataFeatures.WritePdfs)
                 {
-                    await cricketMatchRepository.GeneratedPDFForMatches(testMatchesData, CricketFormat.TestCricket);
+                    await cricketMatchRepository.GeneratedPDFForMatches(testMatchesData.Select(x => x.MatchUuid), CricketFormat.TestCricket);
                 }
 
                 if (testMatchesData.Count > 0 && seedDataFeatures.WriteDB)
@@ -130,7 +130,7 @@ namespace CricketService.Seeder
 
                 if (seedDataFeatures.WritePdfs)
                 {
-                    await cricketMatchRepository.GeneratedPDFForMatches(iplMatchesData, CricketFormat.Twenty20);
+                    await cricketMatchRepository.GeneratedPDFForMatches(iplMatchesData.Select(x => x.MatchUuid), CricketFormat.Twenty20);
                 }
 
                 if (iplMatchesData.Count > 0 && seedDataFeatures.WriteDB)

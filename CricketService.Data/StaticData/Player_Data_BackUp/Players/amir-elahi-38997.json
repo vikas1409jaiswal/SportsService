@@ -1,0 +1,1983 @@
+{
+  "player": {
+    "id": 797,
+    "objectId": 38997,
+    "name": "Amir Elahi",
+    "longName": "Amir Elahi",
+    "mobileName": "Amir Elahi",
+    "indexName": "Amir Elahi",
+    "battingName": "Amir Elahi",
+    "fieldingName": "Amir Elahi",
+    "slug": "amir-elahi",
+    "imageUrl": "/db/PICTURES/CMS/302300/302333.jpg",
+    "dateOfBirth": {
+      "year": 1908,
+      "month": 9,
+      "date": 1
+    },
+    "dateOfDeath": {
+      "year": 1980,
+      "month": 12,
+      "date": 28
+    },
+    "gender": "M",
+    "battingStyles": [
+      "rhb"
+    ],
+    "bowlingStyles": [
+      "rm",
+      "lb"
+    ],
+    "longBattingStyles": [
+      "right-hand bat"
+    ],
+    "longBowlingStyles": [
+      "right-arm medium",
+      "legbreak"
+    ],
+    "image": {
+      "id": 302333,
+      "objectId": 1220521,
+      "slug": "amir-elahi-portrait",
+      "url": "/db/PICTURES/CMS/302300/302333.jpg",
+      "width": 160,
+      "height": 202,
+      "caption": "Amir Elahi portrait",
+      "longCaption": "Amir Elahi portrait, April 2020",
+      "credit": "Getty Images",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 7,
+    "playerRoleTypeIds": [],
+    "playingRoles": [],
+    "fullName": "Amir Elahi",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": 0,
+    "heightUnit": null,
+    "education": "",
+    "country": {
+      "id": 7,
+      "objectId": 7,
+      "name": "Pakistan",
+      "shortName": "Pakistan",
+      "abbreviation": "PAK",
+      "slug": "pakistan",
+      "image": {
+        "id": 313129,
+        "objectId": 1241588,
+        "slug": "pakistan-logo",
+        "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+        "width": 500,
+        "height": 500,
+        "caption": "Pakistan logo",
+        "longCaption": "Pakistan logo",
+        "credit": null,
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": 6,
+    "placeOfBirth": "Lahore, Punjab",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "Karachi, Sind",
+    "intlCareerSpan": "1947 - 1952",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 20945,
+      "objectId": 38996,
+      "slug": "amir-elahi-portrait",
+      "url": "/db/PICTURES/DB/052003/044514.jpg",
+      "width": 100,
+      "height": 150,
+      "caption": "Amir Elahi - Portrait",
+      "longCaption": "Amir Elahi - Portrait",
+      "credit": "Pakistan Cricket Board",
+      "photographer": null,
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": null,
+        "SQUARE": null
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": true,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 1,
+    "totalVideos": 0,
+    "totalImages": 2
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 7,
+          "objectId": 7,
+          "scribeId": 7,
+          "slug": "pakistan",
+          "name": "Pakistan",
+          "longName": "Pakistan",
+          "abbreviation": "PAK",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+          "isCountry": true,
+          "primaryColor": "#005b20",
+          "image": {
+            "id": 313129,
+            "objectId": 1241588,
+            "slug": "pakistan-logo",
+            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Pakistan logo",
+            "longCaption": "Pakistan logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2701,
+          "objectId": 2650,
+          "scribeId": 2650,
+          "slug": "bahawalpur",
+          "name": "Bahawalpur",
+          "longName": "Bahawalpur",
+          "abbreviation": "BHLPR",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1610,
+          "objectId": 1559,
+          "scribeId": 1559,
+          "slug": "baroda",
+          "name": "Baroda",
+          "longName": "Baroda",
+          "abbreviation": "BRODA",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313200/313296.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313296,
+            "objectId": 1241755,
+            "slug": "baroda-logo",
+            "url": "/db/PICTURES/CMS/313200/313296.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Baroda logo",
+            "longCaption": "Baroda logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2006,
+          "objectId": 1955,
+          "scribeId": 1955,
+          "slug": "muslims",
+          "name": "Muslims",
+          "longName": "Muslims",
+          "abbreviation": "",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2022,
+          "objectId": 1971,
+          "scribeId": 1971,
+          "slug": "northern-india",
+          "name": "Northern Ind",
+          "longName": "Northern India",
+          "abbreviation": "",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2155,
+          "objectId": 2104,
+          "scribeId": 2104,
+          "slug": "southern-punjab",
+          "name": "Sthn Punjab",
+          "longName": "Southern Punjab",
+          "abbreviation": "SPnjb",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      }
+    ],
+    "relations": [],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "Amir Elahi, who died on December 28, 1980, aged 72, could lay claim to two unusual distinctions: he was one of only twelve cricketers to have played for two different countries and one of the twenty oldest cricketers to have played in a Test match. He appeared once for India, against Australia at Sydney in 1947, and five times for Pakistan, all in India in 1952-53. In his last Test match, at Calcutta, he was 44. Having begun life as a medium-paced bowler, he turned to leg-breaks and googlies, and it was in this latter role that he was best known. On his first tour, to England in 1936, he met with limited success (seventeen wickets at 42.94). In Australia, too, in 1947-48, he found wickets hard to come by (eight at 65.87), as, indeed, he did when, after partition, he went with Pakistan to India (thirteen at 38.76). In the Ranji Trophy, however, he was a prolific wicket-taker (193 wickets, 24.72), mostly for Baroda, whom he helped to win the competition in 1946-47, shortly before becoming a Pakistan citizen. His finest hour with the bat (he was most at home at number eleven) was when he shared a last-wicket partnership of 104 (a Test rarity) with Zulfiqar Ahmed for Pakistan against India at Madras. Amir Elahi's share was a surprising 47. To meet him and talk about his cricketing days was always a pleasure.\n<BR><B>Wisden Cricketers' Almanack</B>"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 1,
+          "mt": 6,
+          "in": 9,
+          "rn": 82,
+          "bl": null,
+          "avg": 10.25,
+          "sr": null,
+          "no": 1,
+          "fo": null,
+          "si": 0,
+          "hs": "47",
+          "hn": 0,
+          "ft": 0,
+          "ct": 0,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 125,
+          "in": 172,
+          "rn": 2562,
+          "bl": null,
+          "avg": 16.85,
+          "sr": null,
+          "no": 20,
+          "fo": null,
+          "si": null,
+          "hs": "96",
+          "hn": 0,
+          "ft": 3,
+          "ct": 67,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 1,
+          "mt": 6,
+          "in": 4,
+          "rn": 248,
+          "bl": 400,
+          "avg": 35.42,
+          "sr": 57.1,
+          "wk": 7,
+          "bbi": "4/134",
+          "bbm": "4/134",
+          "fwk": 1,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 3.72
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 125,
+          "in": null,
+          "rn": 13221,
+          "bl": 24822,
+          "avg": 25.77,
+          "sr": 48.3,
+          "wk": 513,
+          "bbi": "8/94",
+          "bbm": null,
+          "fwk": null,
+          "fw": 30,
+          "tw": 6,
+          "bwe": 3.19
+        }
+      ]
+    },
+    "topRecords": [
+      {
+        "position": null,
+        "multiple": false,
+        "record": {
+          "id": 920,
+          "objectId": 283699,
+          "title": "Representing two countries",
+          "siteId": null,
+          "class": {
+            "id": 1,
+            "type": "i",
+            "name": "Test",
+            "longName": "Test matches",
+            "multipleClass": 0,
+            "slug": "test-matches"
+          },
+          "genre": {
+            "id": 32,
+            "name": "Players",
+            "category": {
+              "id": 9,
+              "name": "individual",
+              "longName": "Individual records (captains, players, umpires)",
+              "slug": "individual-records-captains-players-umpires"
+            }
+          },
+          "slug": "representing-two-countries"
+        },
+        "value": ""
+      }
+    ],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 6,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 291,
+                    "id": 291,
+                    "objectId": 62677,
+                    "scribeId": 62677,
+                    "slug": "australia-vs-india-2nd-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1947/48",
+                    "title": "2nd Test",
+                    "floodlit": "day",
+                    "startDate": "1947-12-12T00:00:00Z",
+                    "endDate": "1947-12-18T00:00:00Z",
+                    "startTime": "1947-12-12T00:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000291",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 6,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 4,
+                    "liveInning": 3,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 2040,
+                      "objectId": 62299,
+                      "scribeId": 17508,
+                      "slug": "india-tour-of-australia-1947-48",
+                      "name": "India tour of Australia",
+                      "longName": "India tour of Australia",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1947,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1947/48",
+                      "startDate": "1947-10-17T00:00:00Z",
+                      "endDate": "1948-02-24T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 132,
+                      "objectId": 56544,
+                      "name": "Sydney Cricket Ground",
+                      "smallName": "Sydney",
+                      "longName": "Sydney Cricket Ground",
+                      "slug": "sydney-cricket-ground",
+                      "location": "Moore Park",
+                      "image": {
+                        "id": 516,
+                        "objectId": 56543,
+                        "slug": "sydney-cricket-ground",
+                        "url": "/db/PICTURES/DB/011999/003928.1.jpg",
+                        "width": 250,
+                        "height": 153,
+                        "caption": "Sydney Cricket Ground",
+                        "longCaption": "Sydney Cricket Ground",
+                        "credit": "Action Photographics",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 29,
+                        "objectId": 56531,
+                        "name": "Sydney",
+                        "area": "New South Wales",
+                        "timezone": "Australia/Sydney"
+                      },
+                      "country": {
+                        "id": 2,
+                        "objectId": 2,
+                        "name": "Australia",
+                        "shortName": "Australia",
+                        "abbreviation": "AUS",
+                        "slug": "australia"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 6,
+                          "objectId": 6,
+                          "scribeId": 6,
+                          "slug": "india",
+                          "name": "India",
+                          "longName": "India",
+                          "abbreviation": "IND",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#137dd2",
+                          "image": {
+                            "id": 313128,
+                            "objectId": 1241587,
+                            "slug": "india-logo",
+                            "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "India logo",
+                            "longCaption": "India logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "188 & 61/7",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 2,
+                          "objectId": 2,
+                          "scribeId": 2,
+                          "slug": "australia",
+                          "name": "Australia",
+                          "longName": "Australia",
+                          "abbreviation": "AUS",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+                          "isCountry": true,
+                          "primaryColor": "#ffdd00",
+                          "image": {
+                            "id": 340493,
+                            "objectId": 1318684,
+                            "slug": "australia-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340400/340493.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Australia team flag-latest",
+                            "longCaption": "Australia team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "107",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T04:50:56.94Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 359,
+                    "id": 359,
+                    "objectId": 62745,
+                    "scribeId": 62745,
+                    "slug": "india-vs-pakistan-5th-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1952/53",
+                    "title": "5th Test",
+                    "floodlit": "day",
+                    "startDate": "1952-12-12T00:00:00Z",
+                    "endDate": "1952-12-15T00:00:00Z",
+                    "startTime": "1952-12-12T03:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000360",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 6,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 4,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1270,
+                      "objectId": 61529,
+                      "scribeId": 17455,
+                      "slug": "pakistan-tour-of-india-1952-53",
+                      "name": "Pakistan tour of India",
+                      "longName": "Pakistan tour of India",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1952,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1952/53",
+                      "startDate": "1952-10-16T00:00:00Z",
+                      "endDate": "1952-12-15T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 292,
+                      "objectId": 57980,
+                      "name": "Eden Gardens, Calcutta",
+                      "smallName": "Eden Gardens",
+                      "longName": "Eden Gardens, Calcutta",
+                      "slug": "eden-gardens-kolkata",
+                      "location": "",
+                      "image": {
+                        "id": 128035,
+                        "objectId": 500114,
+                        "slug": "an-aerial-view-of-the-eden-gardens-at-its-current-state-of-completion",
+                        "url": "/db/PICTURES/CMS/128000/128035.6.jpg",
+                        "width": 210,
+                        "height": 140,
+                        "caption": "An aerial view of the Eden Gardens at its current state of completion",
+                        "longCaption": "An aerial view of the Eden Gardens at its current state of completion, Kolkata, February 9, 2011",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 574,
+                        "objectId": 57976,
+                        "name": "Kolkata",
+                        "area": "",
+                        "timezone": "Asia/Kolkata"
+                      },
+                      "country": {
+                        "id": 6,
+                        "objectId": 6,
+                        "name": "India",
+                        "shortName": "India",
+                        "abbreviation": "IND",
+                        "slug": "india"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "257 & 236/7d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 6,
+                          "objectId": 6,
+                          "scribeId": 6,
+                          "slug": "india",
+                          "name": "India",
+                          "longName": "India",
+                          "abbreviation": "IND",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#137dd2",
+                          "image": {
+                            "id": 313128,
+                            "objectId": 1241587,
+                            "slug": "india-logo",
+                            "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "India logo",
+                            "longCaption": "India logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "397 & 28/0",
+                        "scoreInfo": "T:97",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T04:47:36.967Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 125,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1934/35 - 1953/54"
+                }
+              ]
+            }
+          ],
+          "recent": []
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 62814,
+        "objectId": 133333,
+        "scribeId": 23145711,
+        "slug": "end-of-an-amazing-series",
+        "title": "End of an amazing series",
+        "subTitle": "",
+        "seoTitle": "",
+        "summary": "1981  \nThe last day of an astonishing series didn't live up to what had gone on before (the draw at The Oval confirmed England's 3-1 win over Australia) - but several players had cause for satisfaction",
+        "byline": "Wisden Cricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2003-09-01T00:00:00Z",
+        "modifiedAt": "2003-09-01T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": null,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-05T04:50:32.111Z"
+      }
+    ],
+    "videos": [],
+    "images": [
+      {
+        "id": 20945,
+        "objectId": 38996,
+        "slug": "amir-elahi-portrait",
+        "url": "/db/PICTURES/DB/052003/044514.jpg",
+        "width": 100,
+        "height": 150,
+        "caption": "Amir Elahi - Portrait",
+        "longCaption": "Amir Elahi - Portrait",
+        "credit": "Pakistan Cricket Board",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1997-11-30T00:00:00Z",
+        "capturedOn": {
+          "year": 1998,
+          "month": null,
+          "date": null
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 9,
+        "objectId": 9,
+        "scribeId": 9,
+        "slug": "zimbabwe",
+        "name": "Zimbabwe",
+        "longName": "Zimbabwe",
+        "abbreviation": "ZIM",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/340500/340503.png",
+        "isCountry": true,
+        "primaryColor": "#d04037",
+        "image": {
+          "id": 340503,
+          "objectId": 1318712,
+          "slug": "zimbabwe-team-flag-latest",
+          "url": "/db/PICTURES/CMS/340500/340503.png",
+          "width": 500,
+          "height": 500,
+          "caption": "Zimbabwe team flag-latest",
+          "longCaption": "Zimbabwe team flag-latest",
+          "credit": "Getty Images",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 64447,
+          "objectId": 495964,
+          "name": "RP Burl",
+          "longName": "Ryan Burl",
+          "mobileName": "Burl",
+          "indexName": "Burl, RP",
+          "battingName": "RP Burl",
+          "fieldingName": "Burl",
+          "slug": "ryan-burl",
+          "imageUrl": "/db/PICTURES/CMS/179700/179753.1.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 4,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 179753,
+            "objectId": 721659,
+            "slug": "ryan-burl",
+            "url": "/db/PICTURES/CMS/179700/179753.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Ryan Burl",
+            "longCaption": "Ryan Burl",
+            "credit": "International Cricket Council",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 51554,
+          "objectId": 293831,
+          "name": "RW Chakabva",
+          "longName": "Regis Chakabva",
+          "mobileName": "Chakabva",
+          "indexName": "Chakabva, RW",
+          "battingName": "RW Chakabva",
+          "fieldingName": "Chakabva",
+          "slug": "regis-chakabva",
+          "imageUrl": "/db/PICTURES/CMS/128500/128565.1.jpg",
+          "dateOfBirth": {
+            "year": 1987,
+            "month": 9,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 128565,
+            "objectId": 501714,
+            "slug": "regis-chakabva",
+            "url": "/db/PICTURES/CMS/128500/128565.1.jpg",
+            "width": 160,
+            "height": 198,
+            "caption": "Regis Chakabva",
+            "longCaption": "Regis Chakabva portrait, World Cup 2011, February 11, 2011",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 60782,
+          "objectId": 425639,
+          "name": "TL Chatara",
+          "longName": "Tendai Chatara",
+          "mobileName": "Chatara",
+          "indexName": "Chatara, TL",
+          "battingName": "TL Chatara",
+          "fieldingName": "Chatara",
+          "slug": "tendai-chatara",
+          "imageUrl": "/db/PICTURES/CMS/203300/203357.1.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 2,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 203357,
+            "objectId": 818763,
+            "slug": "tendai-chatara",
+            "url": "/db/PICTURES/CMS/203300/203357.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Tendai Chatara",
+            "longCaption": "Tendai Chatara",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 47205,
+          "objectId": 55412,
+          "name": "CR Ervine",
+          "longName": "Craig Ervine",
+          "mobileName": "Ervine",
+          "indexName": "Ervine, CR",
+          "battingName": "CR Ervine",
+          "fieldingName": "Ervine",
+          "slug": "craig-ervine",
+          "imageUrl": "/db/PICTURES/CMS/203300/203333.1.jpg",
+          "dateOfBirth": {
+            "year": 1985,
+            "month": 8,
+            "date": 19
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 203333,
+            "objectId": 818739,
+            "slug": "craig-ervine",
+            "url": "/db/PICTURES/CMS/203300/203333.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Craig Ervine",
+            "longCaption": "Craig Ervine",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 66876,
+          "objectId": 541224,
+          "name": "LM Jongwe",
+          "longName": "Luke Jongwe",
+          "mobileName": "Jongwe",
+          "indexName": "Jongwe, LM",
+          "battingName": "LM Jongwe",
+          "fieldingName": "Jongwe",
+          "slug": "luke-jongwe",
+          "imageUrl": "/db/PICTURES/CMS/345200/345223.5.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 2,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 345223,
+            "objectId": 1332085,
+            "slug": "luke-jongwe-player-portrait-2022",
+            "url": "/db/PICTURES/CMS/345200/345223.5.jpg",
+            "width": 160,
+            "height": 198,
+            "caption": "Luke Jongwe, player portrait 2022",
+            "longCaption": "Luke Jongwe, player portrait 2022",
+            "credit": "Getty Images",
+            "photographer": "Chris Hyde",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 62733,
+          "objectId": 465327,
+          "name": "I Kaia",
+          "longName": "Innocent Kaia",
+          "mobileName": "Kaia",
+          "indexName": "Kaia, I",
+          "battingName": "I Kaia",
+          "fieldingName": "Kaia",
+          "slug": "innocent-kaia",
+          "imageUrl": "/db/PICTURES/CMS/345200/345222.4.jpg",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 8,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 345222,
+            "objectId": 1332084,
+            "slug": "innocent-kaia-player-portrait-2022",
+            "url": "/db/PICTURES/CMS/345200/345222.4.jpg",
+            "width": 160,
+            "height": 217,
+            "caption": "Innocent Kaia, player portrait 2022",
+            "longCaption": "Innocent Kaia, player portrait 2022",
+            "credit": "Getty Images",
+            "photographer": "Chris Hyde",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 87157,
+          "objectId": 938959,
+          "name": "W Madhevere",
+          "longName": "Wessly Madhevere",
+          "mobileName": "Madhevere",
+          "indexName": "Madhevere, W",
+          "battingName": "W Madhevere",
+          "fieldingName": "Madhevere",
+          "slug": "wessly-madhevere",
+          "imageUrl": "/db/PICTURES/CMS/324700/324710.4.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 9,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 324710,
+            "objectId": 1270432,
+            "slug": "wessley-madhevere-player-portrait",
+            "url": "/db/PICTURES/CMS/324700/324710.4.jpg",
+            "width": 160,
+            "height": 216,
+            "caption": "Wessley Madhevere, player portrait",
+            "longCaption": "Wessley Madhevere, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Jan Kruger",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 79665,
+          "objectId": 806241,
+          "name": "R Ngarava",
+          "longName": "Richard Ngarava",
+          "mobileName": "Ngarava",
+          "indexName": "Ngarava, R",
+          "battingName": "R Ngarava",
+          "fieldingName": "Ngarava",
+          "slug": "richard-ngarava",
+          "imageUrl": "/db/PICTURES/CMS/345200/345220.4.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 12,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 345220,
+            "objectId": 1332080,
+            "slug": "richard-ngarava-player-portrait-2022",
+            "url": "/db/PICTURES/CMS/345200/345220.4.jpg",
+            "width": 160,
+            "height": 195,
+            "caption": "Richard Ngarava, player portrait 2022",
+            "longCaption": "Richard Ngarava, player portrait 2022",
+            "credit": "Getty Images",
+            "photographer": "Chris Hyde",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 52319,
+          "objectId": 299572,
+          "name": "Sikandar Raza",
+          "longName": "Sikandar Raza",
+          "mobileName": "Raza",
+          "indexName": "Sikandar Raza",
+          "battingName": "Sikandar Raza",
+          "fieldingName": "Sikandar Raza",
+          "slug": "sikandar-raza",
+          "imageUrl": "/db/PICTURES/CMS/181300/181305.1.jpg",
+          "dateOfBirth": {
+            "year": 1986,
+            "month": 4,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 181305,
+            "objectId": 727109,
+            "slug": "sikandar-raza",
+            "url": "/db/PICTURES/CMS/181300/181305.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Sikandar Raza",
+            "longCaption": "Sikandar Raza",
+            "credit": "ICC",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 47206,
+          "objectId": 55870,
+          "name": "SC Williams",
+          "longName": "Sean Williams",
+          "mobileName": "Williams",
+          "indexName": "Williams, SC",
+          "battingName": "SC Williams",
+          "fieldingName": "Williams",
+          "slug": "sean-williams",
+          "imageUrl": "/db/PICTURES/CMS/235600/235675.1.jpg",
+          "dateOfBirth": {
+            "year": 1986,
+            "month": 9,
+            "date": 26
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 235675,
+            "objectId": 978295,
+            "slug": "sean-williams-profile-photo",
+            "url": "/db/PICTURES/CMS/235600/235675.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Sean Williams profile photo",
+            "longCaption": "Sean Williams profile photo",
+            "credit": "International Cricket Council",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 56880,
+          "objectId": 348144,
+          "name": "Babar Azam",
+          "longName": "Babar Azam",
+          "mobileName": "Babar Azam",
+          "indexName": "Babar Azam",
+          "battingName": "Babar Azam",
+          "fieldingName": "Babar Azam",
+          "slug": "babar-azam",
+          "imageUrl": "/db/PICTURES/CMS/302700/302768.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 10,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 302768,
+            "objectId": 1221110,
+            "slug": "babar-azam-portrait",
+            "url": "/db/PICTURES/CMS/302700/302768.jpg",
+            "width": 160,
+            "height": 202,
+            "caption": "Babar Azam portrait",
+            "longCaption": "Babar Azam portrait, April, 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            8
+          ],
+          "playingRoles": [
+            "batter"
+          ]
+        },
+        {
+          "id": 102219,
+          "objectId": 1144886,
+          "name": "Fatima Sana",
+          "longName": "Fatima Sana",
+          "mobileName": "",
+          "indexName": "Fatima Sana",
+          "battingName": "Fatima Sana",
+          "fieldingName": "Fatima Sana",
+          "slug": "fatima-sana",
+          "imageUrl": "/db/PICTURES/CMS/334800/334896.4.jpg",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 11,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "F",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 334896,
+            "objectId": 1302657,
+            "slug": "fatima-sana-player-portrait",
+            "url": "/db/PICTURES/CMS/334800/334896.4.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Fatima Sana, player portrait",
+            "longCaption": "Fatima Sana, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Matt King",
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 67969,
+          "objectId": 572645,
+          "name": "Aliya Riaz",
+          "longName": "Aliya Riaz",
+          "mobileName": "Aliya Riaz",
+          "indexName": "Aliya Riaz",
+          "battingName": "Aliya Riaz",
+          "fieldingName": "Aliya Riaz",
+          "slug": "aliya-riaz",
+          "imageUrl": "/db/PICTURES/CMS/304700/304757.png",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 9,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 304757,
+            "objectId": 1224165,
+            "slug": "aliya-riaz-portrait",
+            "url": "/db/PICTURES/CMS/304700/304757.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Aliya Riaz portrait",
+            "longCaption": "Aliya Riaz portrait, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 51498,
+          "objectId": 290948,
+          "name": "Mohammad Amir",
+          "longName": "Mohammad Amir",
+          "mobileName": "Amir",
+          "indexName": "Mohammad Amir",
+          "battingName": "Mohammad Amir",
+          "fieldingName": "Mohammad Amir",
+          "slug": "mohammad-amir",
+          "imageUrl": "/db/PICTURES/CMS/302800/302820.jpg",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 4,
+            "date": 13
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 302820,
+            "objectId": 1221173,
+            "slug": "mohammad-amir-portrait",
+            "url": "/db/PICTURES/CMS/302800/302820.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Mohammad Amir portrait",
+            "longCaption": "Mohammad Amir portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 67964,
+          "objectId": 572638,
+          "name": "Diana Baig",
+          "longName": "Diana Baig",
+          "mobileName": "Diana Baig",
+          "indexName": "Diana Baig",
+          "battingName": "Diana Baig",
+          "fieldingName": "Diana Baig",
+          "slug": "diana-baig",
+          "imageUrl": "/db/PICTURES/CMS/304700/304761.png",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 10,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 304761,
+            "objectId": 1224169,
+            "slug": "diana-baig-portrait",
+            "url": "/db/PICTURES/CMS/304700/304761.png",
+            "width": 160,
+            "height": 199,
+            "caption": "Diana Baig portrait",
+            "longCaption": "Diana Baig portrait, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 110482,
+          "objectId": 1283740,
+          "name": "Ihsanullah",
+          "longName": "Ihsanullah",
+          "mobileName": "Ihsanullah",
+          "indexName": "Ihsanullah",
+          "battingName": "Ihsanullah",
+          "fieldingName": "Ihsanullah",
+          "slug": "ihsanullah",
+          "imageUrl": null,
+          "dateOfBirth": {
+            "year": 2002,
+            "month": 10,
+            "date": 11
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": null,
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 84937,
+          "objectId": 922943,
+          "name": "Shadab Khan",
+          "longName": "Shadab Khan",
+          "mobileName": "Shadab",
+          "indexName": "Shadab Khan",
+          "battingName": "Shadab Khan",
+          "fieldingName": "Shadab Khan",
+          "slug": "shadab-khan",
+          "imageUrl": "/db/PICTURES/CMS/302800/302825.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 10,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 302825,
+            "objectId": 1221178,
+            "slug": "shadab-khan-portrait",
+            "url": "/db/PICTURES/CMS/302800/302825.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Shadab Khan portrait",
+            "longCaption": "Shadab Khan portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 103773,
+          "objectId": 1161031,
+          "name": "Saim Ayub",
+          "longName": "Saim Ayub",
+          "mobileName": "Saim Ayub",
+          "indexName": "Saim Ayub",
+          "battingName": "Saim Ayub",
+          "fieldingName": "Saim Ayub",
+          "slug": "saim-ayub",
+          "imageUrl": "/db/PICTURES/CMS/325600/325608.3.jpg",
+          "dateOfBirth": {
+            "year": 2002,
+            "month": 5,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rmf",
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast",
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 325608,
+            "objectId": 1272760,
+            "slug": "saim-ayub-player-portrait",
+            "url": "/db/PICTURES/CMS/325600/325608.3.jpg",
+            "width": 160,
+            "height": 296,
+            "caption": "Saim Ayub, player portrait",
+            "longCaption": "Saim Ayub, player portrait",
+            "credit": "PCB",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 84935,
+          "objectId": 922941,
+          "name": "Abdullah Shafique",
+          "longName": "Abdullah Shafique",
+          "mobileName": "",
+          "indexName": "Abdullah Shafique",
+          "battingName": "Abdullah Shafique",
+          "fieldingName": "Abdullah Shafique",
+          "slug": "abdullah-shafique",
+          "imageUrl": null,
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 11,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": null,
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 101912,
+          "objectId": 1137262,
+          "name": "Azam Khan",
+          "longName": "Azam Khan",
+          "mobileName": "Azam Khan",
+          "indexName": "Azam Khan",
+          "battingName": "Azam Khan",
+          "fieldingName": "Azam Khan",
+          "slug": "azam-khan",
+          "imageUrl": "/db/PICTURES/CMS/325300/325358.4.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 8,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 325358,
+            "objectId": 1272159,
+            "slug": "azam-khan-player-portrait",
+            "url": "/db/PICTURES/CMS/325300/325358.4.jpg",
+            "width": 160,
+            "height": 260,
+            "caption": "Azam Khan, player portrait",
+            "longCaption": "Azam Khan, player portrait",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            6
+          ],
+          "playingRoles": [
+            "wicketkeeper"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Test",
+          "longName": "Test matches",
+          "multipleClass": 0,
+          "slug": "test-matches"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 1,
+          "matches": 6,
+          "batted": true,
+          "battedInnings": 9,
+          "bowled": true,
+          "bowledInnings": 4,
+          "fielded": true,
+          "fieldedInnings": 9,
+          "dismissals": 0,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 253,
+        "2": 240,
+        "3": 103,
+        "8": 20,
+        "9": 88,
+        "10": 51,
+        "14": 248,
+        "15": 415,
+        "16": 27
+      },
+      "teamContractedPlayerCount": 26,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        }
+      ]
+    }
+  }
+}

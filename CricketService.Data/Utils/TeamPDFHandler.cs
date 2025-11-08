@@ -97,17 +97,17 @@ namespace CricketService.Data.Utils
 
                     foreach (var format in new string[] { "T20 International", "One-day International", "Test Cricket" })
                     {
-                        object formatRecords = teamInfo.TeamInfo.T20IRecords;
+                        //object formatRecords = teamInfo.TeamInfo.T20IRecords;
 
-                        if (format == "One-day International")
-                        {
-                            formatRecords = teamInfo.TeamInfo.ODIRecords;
-                        }
+                        //if (format == "One-day International")
+                        //{
+                        //    formatRecords = teamInfo.TeamInfo.ODIRecords;
+                        //}
 
-                        if (format == "Test Cricket")
-                        {
-                            formatRecords = teamInfo.TeamInfo.TestRecords;
-                        }
+                        //if (format == "Test Cricket")
+                        //{
+                        //    formatRecords = teamInfo.TeamInfo.TestRecords;
+                        //}
 
                         teamTable.AddCell(new PdfPCell(new Phrase(format, new Font(Font.FontFamily.HELVETICA, 16, Font.BOLD, BaseColor.BLACK)))
                         {
@@ -117,13 +117,13 @@ namespace CricketService.Data.Utils
                         });
 
                         AddTeamCell(teamTable, "Total", BaseColor.BLUE, Font.BOLD, 30, BaseColor.WHITE);
-                        AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Matches.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
-                        AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Won.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
-                        AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Lost.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
-                        AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Tied.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
-                        AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).NRorDraw.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
-                        AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).WinPercentage.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
-                        AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Debut.Date.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
+                        //AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Matches.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
+                        //AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Won.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
+                        //AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Lost.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
+                        //AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Tied.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
+                        //AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).NRorDraw.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
+                        //AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).WinPercentage.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
+                        //AddTeamCell(teamTable, ((TeamFormatRecordDetails)formatRecords).Debut.Date.ToString(), BaseColor.DARK_GRAY, Font.BOLD, 30, BaseColor.WHITE);
 
                         //foreach (var matchesAgaistTeam in ((TeamFormatRecordDetails)formatRecords).RecordsAgainstTeams)
                         //{

@@ -11,6 +11,7 @@ using CricketService.Domain.Enums;
 using CricketService.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System.Text.RegularExpressions;
 
 namespace CricketService.Data.Repositories
 {
@@ -36,6 +37,13 @@ namespace CricketService.Data.Repositories
         public IEnumerable<Guid> GetAllTeamsUuid()
         {
             return context.CricketTeamInfo.Select(x => x.Uuid);
+        }
+
+        public IEnumerable<Guid> GetAllTeamsUuidByFormat(CricketFormat format)
+        {
+            return context.CricketTeamInfo.ToList()
+                .Where(x => x.Formats.Contains(format.ToString()))
+                .Select(x => x.Uuid);
         }
 
         public IEnumerable<PlayerTeam> GetAllTeamDetails()
@@ -206,7 +214,7 @@ namespace CricketService.Data.Repositories
             return new CricketTeamInfoResponse(
                 teamInfo.Uuid,
                 teamInfo.TeamName,
-                new TeamRecordDetails(teamInfo.T20IRecords, teamInfo.ODIRecords, teamInfo.TestRecords),
+                new TeamRecordDetails(null!, null!, null!),
                 teamInfo.FlagUrl);
         }
 
@@ -256,7 +264,7 @@ namespace CricketService.Data.Repositories
             CricketTeam? opponentTeam = null)
         {
             var allMatchesT20I = context.LimitedOverInternationalMatchesInfo
-               .Where(x => x.MatchNumber.Contains("T20I"));
+               .Where(x => x.MatchNumber.StartsWith("T20I"));
 
             var allMatchesByTeamT20I = allMatchesT20I
                .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("T20I no. ", string.Empty)))
@@ -292,12 +300,24 @@ namespace CricketService.Data.Repositories
                 teamRecordData.TeamRecordDetails.T20IResults = new TeamFormatRecordDetails(
                                            debut: debutDetails,
                                            matches: allMatchesByTeamT20I.Count(),
-                                           won: allMatchesByTeamT20I.Count(m => m.Result.Contains($"{cricketTeam.Name} won by")),
-                                           lost: allMatchesByTeamT20I.Count(m => (m.Team1.Team.Uuid.Equals(cricketTeam.Uuid) && m.Result.Contains(m.Team2.Team.Name + " won by"))
-                                                 || (m.Team2.Team.Uuid.Equals(cricketTeam.Uuid) && m.Result.Contains(m.Team1.Team.Name + " won by"))),
+                                           won: allMatchesByTeamT20I.Count(m => m.Result.StartsWith(cricketTeam.Name + " won")
+                                                                               || m.Result.StartsWith(cricketTeam.Name + " awarded the match")),
+                                           lost: allMatchesByTeamT20I.Count(m => (m.Team1.Team.Uuid.Equals(cricketTeam.Uuid) && (m.Result.StartsWith(m.Team2.Team.Name + " won")
+                                                                                                                                || m.Result.StartsWith(m.Team2.Team.Name + " awarded the match")))
+                                                                               || (m.Team2.Team.Uuid.Equals(cricketTeam.Uuid) && (m.Result.StartsWith(m.Team1.Team.Name + " won")
+                                                                                                                                || m.Result.StartsWith(m.Team1.Team.Name + " awarded the match")))),
                                            tied: allMatchesByTeamT20I.Count(m => m.Result.Contains("Match tied")),
                                            nRorDraw: allMatchesByTeamT20I.Count(m => m.Result.Contains("No result")),
                                            teamMileStones: teamMileStones);
+            }
+
+            if (teamRecordData.TeamRecordDetails.T20IResults.Won
+                + teamRecordData.TeamRecordDetails.T20IResults.Lost
+                + teamRecordData.TeamRecordDetails.T20IResults.Tied
+                + teamRecordData.TeamRecordDetails.T20IResults.NRorDraw
+                != teamRecordData.TeamRecordDetails.T20IResults.Matches)
+            {
+                throw new Exception("Something wrong with match stats");
             }
         }
 
@@ -347,12 +367,25 @@ namespace CricketService.Data.Repositories
                 teamRecordData.TeamRecordDetails.ODIResults = new TeamFormatRecordDetails(
                                            debut: debutDetails,
                                            matches: allMatchesByTeamODI.Count(),
-                                           won: allMatchesByTeamODI.Count(m => m.Result.Contains($"{cricketTeam.Name} won by")),
-                                           lost: allMatchesByTeamODI.Count(m => (m.Team1.Team.Uuid.Equals(cricketTeam.Uuid) && m.Result.Contains(m.Team2.Team.Name + " won by"))
-                                                 || (m.Team2.Team.Uuid.Equals(cricketTeam.Uuid) && m.Result.Contains(m.Team1.Team.Name + " won by"))),
+                                           won: allMatchesByTeamODI.Count(m => m.Result.StartsWith(cricketTeam.Name + " won")
+                                                                               || m.Result.StartsWith(cricketTeam.Name + " awarded the match")),
+                                           lost: allMatchesByTeamODI.Count(m => (m.Team1.Team.Uuid.Equals(cricketTeam.Uuid) && (m.Result.StartsWith(m.Team2.Team.Name + " won")
+                                                                                                                                || m.Result.StartsWith(m.Team2.Team.Name + " awarded the match")))
+                                                                               || (m.Team2.Team.Uuid.Equals(cricketTeam.Uuid) && (m.Result.StartsWith(m.Team1.Team.Name + " won")
+                                                                                                                                || m.Result.StartsWith(m.Team1.Team.Name + " awarded the match")))),
                                            tied: allMatchesByTeamODI.Count(m => m.Result.Contains("Match tied")),
                                            nRorDraw: allMatchesByTeamODI.Count(m => m.Result.Contains("No result")),
                                            teamMileStones: teamMileStones);
+            }
+
+            if (teamRecordData.TeamRecordDetails.ODIResults != null &&
+                (teamRecordData.TeamRecordDetails.ODIResults.Won
+                + teamRecordData.TeamRecordDetails.ODIResults.Lost
+                + teamRecordData.TeamRecordDetails.ODIResults.Tied
+                + teamRecordData.TeamRecordDetails.ODIResults.NRorDraw
+                != teamRecordData.TeamRecordDetails.ODIResults.Matches))
+            {
+                throw new Exception("Something wrong with match stats");
             }
         }
 
@@ -389,7 +422,7 @@ namespace CricketService.Data.Repositories
 
                 debutDetails = new MatchDetails(
                                     debutMatchDetails.Uuid,
-                                    debutMatchDetails.MatchType,
+                                    debutMatchDetails.MatchDate,
                                     debutOpponent,
                                     debutMatchDetails.Venue,
                                     debutMatchDetails.Result,
@@ -404,6 +437,15 @@ namespace CricketService.Data.Repositories
                                    tied: allMatchesByTeamTest.Count(m => m.Result.Contains("Match tied")),
                                    nRorDraw: allMatchesByTeamTest.Count(m => m.Result.Contains("Match drawn")),
                                    teamMileStones: teamMileStones);
+            }
+
+            if (teamRecordData.TeamRecordDetails.TestResults.Won
+                + teamRecordData.TeamRecordDetails.TestResults.Lost
+                + teamRecordData.TeamRecordDetails.TestResults.Tied
+                + teamRecordData.TeamRecordDetails.TestResults.NRorDraw
+                != teamRecordData.TeamRecordDetails.TestResults.Matches)
+            {
+                throw new Exception("Something wrong with match stats");
             }
         }
 

@@ -1,0 +1,835 @@
+[
+  {
+    "Type": "CAREER_AVERAGES",
+    "Stats": [
+      {
+        "Tt": "overview",
+        "Sp": "1986-1994",
+        "Mt": 22,
+        "In": 22,
+        "Pr": null,
+        "Ds": 23,
+        "Ct": 21,
+        "St": 2,
+        "Ck": 21,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.045
+      }
+    ]
+  },
+  {
+    "Type": "OPPOSITION_TEAM",
+    "Stats": [
+      {
+        "Tt": "vs England",
+        "Sp": "1987-1987",
+        "Mt": 8,
+        "In": 8,
+        "Pr": "opposition=1",
+        "Ds": 8,
+        "Ct": 7,
+        "St": 1,
+        "Ck": 7,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "vs India",
+        "Sp": "1986-1987",
+        "Mt": 5,
+        "In": 5,
+        "Pr": "opposition=6",
+        "Ds": 4,
+        "Ct": 4,
+        "St": 0,
+        "Ck": 4,
+        "Cf": 0,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.8
+      },
+      {
+        "Tt": "vs Pakistan",
+        "Sp": "1986-1987",
+        "Mt": 3,
+        "In": 3,
+        "Pr": "opposition=7",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 1,
+        "Cf": 0,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.333
+      },
+      {
+        "Tt": "vs South Africa",
+        "Sp": "1994-1994",
+        "Mt": 1,
+        "In": 1,
+        "Pr": "opposition=3",
+        "Ds": 2,
+        "Ct": 1,
+        "St": 1,
+        "Ck": 1,
+        "Cf": 0,
+        "Mds": "2 (1ct 1st)",
+        "Dspi": 2.0
+      },
+      {
+        "Tt": "vs West Indies",
+        "Sp": "1987-1987",
+        "Mt": 5,
+        "In": 5,
+        "Pr": "opposition=4",
+        "Ds": 8,
+        "Ct": 8,
+        "St": 0,
+        "Ck": 8,
+        "Cf": 0,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 1.6
+      }
+    ]
+  },
+  {
+    "Type": "HOST_COUNTRY",
+    "Stats": [
+      {
+        "Tt": "in Australia",
+        "Sp": "1986-1994",
+        "Mt": 16,
+        "In": 16,
+        "Pr": "host=2",
+        "Ds": 21,
+        "Ct": 19,
+        "St": 2,
+        "Ck": 19,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.312
+      },
+      {
+        "Tt": "in India",
+        "Sp": "1986-1986",
+        "Mt": 2,
+        "In": 2,
+        "Pr": "host=6",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 2,
+        "Cf": 0,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "in U.A.E.",
+        "Sp": "1986-1987",
+        "Mt": 4,
+        "In": 4,
+        "Pr": "host=27",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      }
+    ]
+  },
+  {
+    "Type": "CONTINENT",
+    "Stats": [
+      {
+        "Tt": "in Asia",
+        "Sp": "1986-1987",
+        "Mt": 6,
+        "In": 6,
+        "Pr": "continent=2",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 2,
+        "Cf": 0,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.333
+      },
+      {
+        "Tt": "in Oceania",
+        "Sp": "1986-1994",
+        "Mt": 16,
+        "In": 16,
+        "Pr": "continent=5",
+        "Ds": 21,
+        "Ct": 19,
+        "St": 2,
+        "Ck": 19,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.312
+      }
+    ]
+  },
+  {
+    "Type": "HOME_OR_AWAY",
+    "Stats": [
+      {
+        "Tt": "home",
+        "Sp": "1986-1994",
+        "Mt": 16,
+        "In": 16,
+        "Pr": "home_or_away=1",
+        "Ds": 21,
+        "Ct": 19,
+        "St": 2,
+        "Ck": 19,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.312
+      },
+      {
+        "Tt": "away",
+        "Sp": "1986-1986",
+        "Mt": 2,
+        "In": 2,
+        "Pr": "home_or_away=2",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 2,
+        "Cf": 0,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "neutral",
+        "Sp": "1986-1987",
+        "Mt": 4,
+        "In": 4,
+        "Pr": "home_or_away=3",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      }
+    ]
+  },
+  {
+    "Type": "YEAR",
+    "Stats": [
+      {
+        "Tt": "year 1986",
+        "Sp": null,
+        "Mt": 5,
+        "In": 5,
+        "Pr": "year=1986",
+        "Ds": 4,
+        "Ct": 4,
+        "St": 0,
+        "Ck": 4,
+        "Cf": 0,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.8
+      },
+      {
+        "Tt": "year 1987",
+        "Sp": null,
+        "Mt": 16,
+        "In": 16,
+        "Pr": "year=1987",
+        "Ds": 17,
+        "Ct": 16,
+        "St": 1,
+        "Ck": 16,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.062
+      },
+      {
+        "Tt": "year 1994",
+        "Sp": null,
+        "Mt": 1,
+        "In": 1,
+        "Pr": "year=1994",
+        "Ds": 2,
+        "Ct": 1,
+        "St": 1,
+        "Ck": 1,
+        "Cf": 0,
+        "Mds": "2 (1ct 1st)",
+        "Dspi": 2.0
+      }
+    ]
+  },
+  {
+    "Type": "SEASON",
+    "Stats": [
+      {
+        "Tt": "season 1985/86",
+        "Sp": null,
+        "Mt": 3,
+        "In": 3,
+        "Pr": "season=1985/86",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 2,
+        "Cf": 0,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.666
+      },
+      {
+        "Tt": "season 1986/87",
+        "Sp": null,
+        "Mt": 18,
+        "In": 18,
+        "Pr": "season=1986/87",
+        "Ds": 19,
+        "Ct": 18,
+        "St": 1,
+        "Ck": 18,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.055
+      },
+      {
+        "Tt": "season 1993/94",
+        "Sp": null,
+        "Mt": 1,
+        "In": 1,
+        "Pr": "season=1993/94",
+        "Ds": 2,
+        "Ct": 1,
+        "St": 1,
+        "Ck": 1,
+        "Cf": 0,
+        "Mds": "2 (1ct 1st)",
+        "Dspi": 2.0
+      }
+    ]
+  },
+  {
+    "Type": "CAPTAINS_INVOLVED",
+    "Stats": [
+      {
+        "Tt": "*AR Border",
+        "Sp": "1986-1987",
+        "Mt": 19,
+        "In": 19,
+        "Pr": "captain_involve=1572",
+        "Ds": 21,
+        "Ct": 20,
+        "St": 1,
+        "Ck": 20,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.105
+      },
+      {
+        "Tt": "*RJ Bright",
+        "Sp": "1986-1986",
+        "Mt": 1,
+        "In": 1,
+        "Pr": "captain_involve=1528",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "*GR Marsh",
+        "Sp": "1987-1987",
+        "Mt": 1,
+        "In": 1,
+        "Pr": "captain_involve=1793",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "*MA Taylor",
+        "Sp": "1994-1994",
+        "Mt": 1,
+        "In": 1,
+        "Pr": "captain_involve=1922",
+        "Ds": 2,
+        "Ct": 1,
+        "St": 1,
+        "Ck": 1,
+        "Cf": 0,
+        "Mds": "2 (1ct 1st)",
+        "Dspi": 2.0
+      }
+    ]
+  },
+  {
+    "Type": "CAPTAIN",
+    "Stats": [
+      {
+        "Tt": "is not captain",
+        "Sp": "1986-1994",
+        "Mt": 22,
+        "In": 22,
+        "Pr": "captain=0",
+        "Ds": 23,
+        "Ct": 21,
+        "St": 2,
+        "Ck": 21,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.045
+      }
+    ]
+  },
+  {
+    "Type": "KEEPER",
+    "Stats": [
+      {
+        "Tt": "is designated keeper",
+        "Sp": "1986-1994",
+        "Mt": 22,
+        "In": 22,
+        "Pr": "keeper=1",
+        "Ds": 23,
+        "Ct": 21,
+        "St": 2,
+        "Ck": 21,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.045
+      }
+    ]
+  },
+  {
+    "Type": "TOSS",
+    "Stats": [
+      {
+        "Tt": "won the toss",
+        "Sp": "1986-1994",
+        "Mt": 12,
+        "In": 12,
+        "Pr": "toss=1",
+        "Ds": 15,
+        "Ct": 13,
+        "St": 2,
+        "Ck": 13,
+        "Cf": 0,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 1.25
+      },
+      {
+        "Tt": "lost the toss",
+        "Sp": "1986-1987",
+        "Mt": 10,
+        "In": 10,
+        "Pr": "toss=2",
+        "Ds": 8,
+        "Ct": 8,
+        "St": 0,
+        "Ck": 8,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 0.8
+      }
+    ]
+  },
+  {
+    "Type": "BATTING_FIELDING_SEQUENCE_AND_TOSS",
+    "Stats": [
+      {
+        "Tt": "won toss &amp; batted",
+        "Sp": "1986-1987",
+        "Mt": 6,
+        "In": 6,
+        "Pr": "batting_fielding_first=1;toss=1",
+        "Ds": 6,
+        "Ct": 5,
+        "St": 1,
+        "Ck": 5,
+        "Cf": 0,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "won toss &amp; fielded",
+        "Sp": "1986-1994",
+        "Mt": 6,
+        "In": 6,
+        "Pr": "batting_fielding_first=2;toss=1",
+        "Ds": 9,
+        "Ct": 8,
+        "St": 1,
+        "Ck": 8,
+        "Cf": 0,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 1.5
+      },
+      {
+        "Tt": "lost toss &amp; sent in",
+        "Sp": "1986-1987",
+        "Mt": 7,
+        "In": 7,
+        "Pr": "batting_fielding_first=1;toss=2",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 1,
+        "Cf": 0,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.142
+      },
+      {
+        "Tt": "lost toss &amp; fielded",
+        "Sp": "1987-1987",
+        "Mt": 3,
+        "In": 3,
+        "Pr": "batting_fielding_first=2;toss=2",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 7,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 2.333
+      }
+    ]
+  },
+  {
+    "Type": "BATTING_FIELDING_SEQUENCE",
+    "Stats": [
+      {
+        "Tt": "matches batting first",
+        "Sp": "1986-1987",
+        "Mt": 13,
+        "In": 13,
+        "Pr": "batting_fielding_first=1",
+        "Ds": 7,
+        "Ct": 6,
+        "St": 1,
+        "Ck": 6,
+        "Cf": 0,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.538
+      },
+      {
+        "Tt": "matches fielding first",
+        "Sp": "1986-1994",
+        "Mt": 9,
+        "In": 9,
+        "Pr": "batting_fielding_first=2",
+        "Ds": 16,
+        "Ct": 15,
+        "St": 1,
+        "Ck": 15,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.777
+      }
+    ]
+  },
+  {
+    "Type": "TEAM_INNINGS",
+    "Stats": [
+      {
+        "Tt": "1st team innings",
+        "Sp": "1986-1994",
+        "Mt": 22,
+        "In": 22,
+        "Pr": "innings_number=2;innings_number=1",
+        "Ds": 23,
+        "Ct": 21,
+        "St": 2,
+        "Ck": 21,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.045
+      }
+    ]
+  },
+  {
+    "Type": "MATCH_INNINGS",
+    "Stats": [
+      {
+        "Tt": "1st match innings",
+        "Sp": "1986-1994",
+        "Mt": 9,
+        "In": 9,
+        "Pr": "innings_number=1",
+        "Ds": 16,
+        "Ct": 15,
+        "St": 1,
+        "Ck": 15,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.777
+      },
+      {
+        "Tt": "2nd match innings",
+        "Sp": "1986-1987",
+        "Mt": 13,
+        "In": 13,
+        "Pr": "innings_number=2",
+        "Ds": 7,
+        "Ct": 6,
+        "St": 1,
+        "Ck": 6,
+        "Cf": 0,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.538
+      }
+    ]
+  },
+  {
+    "Type": "FLOODLIT",
+    "Stats": [
+      {
+        "Tt": "day match",
+        "Sp": "1986-1994",
+        "Mt": 13,
+        "In": 13,
+        "Pr": "floodlit=1",
+        "Ds": 9,
+        "Ct": 7,
+        "St": 2,
+        "Ck": 7,
+        "Cf": 0,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 0.692
+      },
+      {
+        "Tt": "day/night match",
+        "Sp": "1986-1987",
+        "Mt": 9,
+        "In": 9,
+        "Pr": "floodlit=2",
+        "Ds": 14,
+        "Ct": 14,
+        "St": 0,
+        "Ck": 14,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.555
+      }
+    ]
+  },
+  {
+    "Type": "RESULT",
+    "Stats": [
+      {
+        "Tt": "won match",
+        "Sp": "1986-1987",
+        "Mt": 8,
+        "In": 8,
+        "Pr": "result=1",
+        "Ds": 9,
+        "Ct": 8,
+        "St": 1,
+        "Ck": 8,
+        "Cf": 0,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 1.125
+      },
+      {
+        "Tt": "lost match",
+        "Sp": "1986-1994",
+        "Mt": 14,
+        "In": 14,
+        "Pr": "result=2",
+        "Ds": 14,
+        "Ct": 13,
+        "St": 1,
+        "Ck": 13,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "BATTING_FIELDING_SEQUENCE_AND_RESULT",
+    "Stats": [
+      {
+        "Tt": "won batting first",
+        "Sp": "1986-1987",
+        "Mt": 5,
+        "In": 5,
+        "Pr": "batting_fielding_first=1;result=1",
+        "Ds": 5,
+        "Ct": 4,
+        "St": 1,
+        "Ck": 4,
+        "Cf": 0,
+        "Mds": "3 (3ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "won fielding first",
+        "Sp": "1986-1987",
+        "Mt": 3,
+        "In": 3,
+        "Pr": "batting_fielding_first=2;result=1",
+        "Ds": 4,
+        "Ct": 4,
+        "St": 0,
+        "Ck": 4,
+        "Cf": 0,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 1.333
+      },
+      {
+        "Tt": "lost batting first",
+        "Sp": "1986-1987",
+        "Mt": 8,
+        "In": 8,
+        "Pr": "batting_fielding_first=1;result=2",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 2,
+        "Cf": 0,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.25
+      },
+      {
+        "Tt": "lost fielding first",
+        "Sp": "1987-1994",
+        "Mt": 6,
+        "In": 6,
+        "Pr": "batting_fielding_first=2;result=2",
+        "Ds": 12,
+        "Ct": 11,
+        "St": 1,
+        "Ck": 11,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 2.0
+      }
+    ]
+  },
+  {
+    "Type": "TOURNAMENT_TYPE",
+    "Stats": [
+      {
+        "Tt": "2 team series",
+        "Sp": "1986-1986",
+        "Mt": 2,
+        "In": 2,
+        "Pr": "tournament_type=2",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 2,
+        "Cf": 0,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "3-4 team tournaments",
+        "Sp": "1986-1994",
+        "Mt": 19,
+        "In": 19,
+        "Pr": "tournament_type=3",
+        "Ds": 21,
+        "Ct": 19,
+        "St": 2,
+        "Ck": 19,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.105
+      },
+      {
+        "Tt": "5+ team tournaments",
+        "Sp": "1986-1986",
+        "Mt": 1,
+        "In": 1,
+        "Pr": "tournament_type=5",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      }
+    ]
+  },
+  {
+    "Type": "MATCH_NUMBER",
+    "Stats": [
+      {
+        "Tt": "1st match in series",
+        "Sp": "1986-1986",
+        "Mt": 1,
+        "In": 1,
+        "Pr": "match_number=1",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "2nd match in series",
+        "Sp": "1986-1986",
+        "Mt": 1,
+        "In": 1,
+        "Pr": "match_number=2",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 2,
+        "Cf": 0,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 2.0
+      }
+    ]
+  },
+  {
+    "Type": "FINAL_TYPE",
+    "Stats": [
+      {
+        "Tt": "tournament finals",
+        "Sp": "1986-1987",
+        "Mt": 4,
+        "In": 4,
+        "Pr": "final_type=1",
+        "Ds": 4,
+        "Ct": 4,
+        "St": 0,
+        "Ck": 4,
+        "Cf": 0,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 1.0
+      },
+      {
+        "Tt": "preliminary matches",
+        "Sp": "1986-1994",
+        "Mt": 16,
+        "In": 16,
+        "Pr": "final_type=0",
+        "Ds": 17,
+        "Ct": 15,
+        "St": 2,
+        "Ck": 15,
+        "Cf": 0,
+        "Mds": "4 (4ct 0st)",
+        "Dspi": 1.062
+      }
+    ]
+  }
+]

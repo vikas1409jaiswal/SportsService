@@ -35,12 +35,16 @@ namespace CricketService.Data.Repositories
 
             t20iResponse = context.LimitedOverInternationalMatchesInfo
                     .Where(x => x.MatchNumber.Contains("T20I"))
-                    .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("T20I no. ", string.Empty)))
+                    .OrderBy(x => Convert.ToInt32(x.MatchNumber
+                                   .Replace("WT20I no. ", string.Empty)
+                                   .Replace("T20I no. ", string.Empty)))
                     .Select(x => x.ToDomain(mapper)).ToList();
 
             odiResponse = context.LimitedOverInternationalMatchesInfo
                     .Where(x => x.MatchNumber.Contains("ODI"))
-                    .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("ODI no. ", string.Empty)))
+                    .OrderBy(x => Convert.ToInt32(x.MatchNumber
+                                   .Replace("WODI no. ", string.Empty)
+                                   .Replace("ODI no. ", string.Empty)))
                     .Select(x => x.ToDomain(mapper)).ToList();
 
             testResponse = context.TestCricketMatchInfo
@@ -72,25 +76,6 @@ namespace CricketService.Data.Repositories
             foreach (var uuid in uuids)
             {
                 var team = context.CricketTeamInfo.Single(x => x.Uuid == uuid);
-
-                logger.LogInformation($"updating team statistics for {team.TeamName}");
-
-                var teamRecords = cricketTeamRepository.GetTeamStatistics(team);
-
-                if (teamRecords.TeamRecordDetails.T20IResults is not null)
-                {
-                    team.T20IRecords = teamRecords.TeamRecordDetails.T20IResults;
-                }
-
-                if (teamRecords.TeamRecordDetails.ODIResults is not null)
-                {
-                    team.ODIRecords = teamRecords.TeamRecordDetails.ODIResults;
-                }
-
-                if (teamRecords.TeamRecordDetails.TestResults is not null)
-                {
-                    team.TestRecords = teamRecords.TeamRecordDetails.TestResults;
-                }
 
                 context.CricketTeamInfo.Update(team);
 

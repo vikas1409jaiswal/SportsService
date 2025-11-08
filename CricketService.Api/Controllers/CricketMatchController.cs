@@ -30,16 +30,17 @@ public class CricketMatchController : Controller
 
         var matchesFilters = new MatchesFilters(format, teamUuid, oppositionTeamUuid);
 
-        if (format == CricketFormat.T20I || format == CricketFormat.ODI)
+        if (format == CricketFormat.WT20I
+            || format == CricketFormat.T20I
+            || format == CricketFormat.WODI
+            || format == CricketFormat.ODI)
         {
            allMatches = cricketMatchRepository.GetAllLimitedOverInternationalMatches(matchesFilters);
         }
         else if (format == CricketFormat.TestCricket)
         {
-           allMatches = cricketMatchRepository.GetAllMatchesTest(matchesFilters);
+           allMatches = cricketMatchRepository.GetAllTestMatches(matchesFilters);
         }
-
-        Response.Headers.Add($"total-{format}-matches", allMatches.Count().ToString());
 
         return Ok(allMatches);
     }
@@ -137,16 +138,20 @@ public class CricketMatchController : Controller
         return Ok(allMatches);
     }
 
-    [HttpPost("t20IMatch/addRange")]
+    [HttpPost("internationalMatches/addRange")]
     [Consumes(MediaTypeNames.Application.Json)]
-    public async Task<IActionResult> AddT20IMatches([FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<InternationalCricketMatchRequest> cricketMatchInfoRequest)
+    public async Task<IActionResult> AddInternationalMatches(
+        [FromQuery, Required] CricketFormat format,
+        [FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<InternationalCricketMatchRequest> cricketMatchInfoRequest)
     {
         var resultResponse = new { success = new List<string>(), failed = new List<string>() };
         var addingMatches = new List<InternationalCricketMatchRequest>();
 
         foreach (var matchInfo in cricketMatchInfoRequest)
         {
-            var foundMatch = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(Convert.ToInt32(matchInfo.MatchNumber.Replace("T20I no. ", string.Empty)), CricketFormat.T20I);
+            var foundMatch = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(
+                Convert.ToInt32(matchInfo.MatchNumber.Replace($"{format} no. ", string.Empty)),
+                format);
 
             if (foundMatch is not null)
             {
@@ -160,43 +165,7 @@ public class CricketMatchController : Controller
 
         foreach (var matchInfo in addingMatches)
         {
-            await cricketMatchRepository.AddLimitedOverInternationalMatch(matchInfo, CricketFormat.T20I);
-
-            resultResponse.success.Add(matchInfo.MatchNumber);
-        }
-
-        return Ok(new
-        {
-            successMatches = resultResponse.success.Count,
-            failedMatches = resultResponse.failed.Count,
-            failedMatchNumbers = resultResponse.failed,
-        });
-    }
-
-    [HttpPost("odiMatch/addRange")]
-    [Consumes(MediaTypeNames.Application.Json)]
-    public async Task<IActionResult> AddODIMatches([FromBody, Required, ModelBinder(Name = "CricketMatchInfos")] IEnumerable<InternationalCricketMatchRequest> cricketMatchInfoRequest)
-    {
-        var resultResponse = new { success = new List<string>(), failed = new List<string>() };
-        var addingMatches = new List<InternationalCricketMatchRequest>();
-
-        foreach (var matchInfo in cricketMatchInfoRequest)
-        {
-            var foundMatch = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(Convert.ToInt32(matchInfo.MatchNumber.Replace("ODI no. ", string.Empty)), CricketFormat.ODI);
-
-            if (foundMatch is not null)
-            {
-                resultResponse.failed.Add(matchInfo.MatchNumber);
-            }
-            else
-            {
-                addingMatches.Add(matchInfo);
-            }
-        }
-
-        foreach (var matchInfo in addingMatches)
-        {
-            await cricketMatchRepository.AddLimitedOverInternationalMatch(matchInfo, CricketFormat.ODI);
+            await cricketMatchRepository.AddLimitedOverInternationalMatch(matchInfo, format);
 
             resultResponse.success.Add(matchInfo.MatchNumber);
         }

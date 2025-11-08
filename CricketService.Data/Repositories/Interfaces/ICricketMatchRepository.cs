@@ -8,7 +8,7 @@ public interface ICricketMatchRepository
 {
     IEnumerable<InternationalCricketMatchResponse> GetAllLimitedOverInternationalMatches(MatchesFilters matchesFilters);
 
-    IEnumerable<TestCricketMatchResponse> GetAllMatchesTest(MatchesFilters matchesFilters);
+    IEnumerable<TestCricketMatchResponse> GetAllTestMatches(MatchesFilters matchesFilters);
 
     IEnumerable<DomesticCricketMatchResponse> GetAllTwenty20Matches(MatchesFilters matchesFilters);
 

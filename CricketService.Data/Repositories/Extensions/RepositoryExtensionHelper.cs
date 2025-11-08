@@ -1,10 +1,8 @@
-﻿using CricketService.Domain;
+﻿using System.Globalization;
+using CricketService.Domain;
 using CricketService.Domain.BaseDomains;
 using CricketService.Domain.Common;
 using CricketService.Domain.ResponseDomains;
-using Microsoft.AspNetCore.Http;
-using System;
-using System.Globalization;
 
 namespace CricketService.Data.Repositories.Extensions
 {
@@ -50,6 +48,7 @@ namespace CricketService.Data.Repositories.Extensions
                     .GroupBy(x => x.PlayerName.Href).Select(x => new
                     {
                         Href = x.Key,
+                        Innings = x.Count(),
                         Player = x.First().PlayerName.Name?.Replace("(c)", string.Empty).TrimEnd(),
                         Wickets = x.Sum(y => y.Wickets),
                         BestBowlingInning = x.OrderByDescending(x => x.Wickets)
@@ -59,25 +58,43 @@ namespace CricketService.Data.Repositories.Extensions
 
                 var mostInnings = batsmanArr.MaxBy(x => x.Innings);
 
-                var mostRuns = batsmanArr.MaxBy(x => x.Runs);
+                var mostRuns = batsmanArr.OrderByDescending(x => x.Runs)
+                                            .ThenBy(x => x.Innings)
+                                            .FirstOrDefault(); ;
 
-                var mostFours = batsmanArr.MaxBy(x => x.Fours);
+                var mostFours = batsmanArr.OrderByDescending(x => x.Fours)
+                                            .ThenBy(x => x.Innings)
+                                            .FirstOrDefault();
 
-                var mostSixes = batsmanArr.MaxBy(x => x.Sixes);
+                var mostSixes = batsmanArr.OrderByDescending(x => x.Sixes)
+                                            .ThenBy(x => x.Innings)
+                                            .FirstOrDefault();
 
-                var mostDucks = batsmanArr.MaxBy(x => x.Ducks);
+                var mostDucks = batsmanArr.OrderByDescending(x => x.Ducks)
+                                            .ThenBy(x => x.Innings)
+                                            .FirstOrDefault();
 
-                var most50s = batsmanArr.MaxBy(x => x.HalfCenturies);
+                var most50s = batsmanArr.OrderByDescending(x => x.HalfCenturies)
+                                            .ThenBy(x => x.Innings)
+                                            .FirstOrDefault();
 
-                var most100s = batsmanArr.MaxBy(x => x.Centuries);
+                var most100s = batsmanArr.OrderByDescending(x => x.Centuries)
+                                            .ThenBy(x => x.Innings)
+                                            .FirstOrDefault();
 
-                var most150s = batsmanArr.MaxBy(x => x.OneAndHalfCenturies);
+                var most150s = batsmanArr.OrderByDescending(x => x.OneAndHalfCenturies)
+                                         .ThenBy(x => x.Innings)
+                                         .FirstOrDefault();
 
-                var most200s = batsmanArr.MaxBy(x => x.DoubleCenturies);
+                var most200s = batsmanArr.OrderByDescending(x => x.DoubleCenturies)
+                                            .ThenBy(x => x.Innings)
+                                            .FirstOrDefault();
 
                 var hiScore = batsmanArr.MaxBy(x => x.HighehestIndividualScore);
 
-                var mostWickets = bowlersArr.MaxBy(x => x.Wickets);
+                var mostWickets = bowlersArr.OrderByDescending(x => x.Wickets)
+                                            .ThenBy(x => x.Innings)
+                                            .FirstOrDefault();
 
                 var bestBowlingInning = bowlersArr.OrderByDescending(x => x.BestBowlingInning!.Wickets)
                                                   .ThenBy(x => x.BestBowlingInning!.RunsConceded)
@@ -216,10 +233,10 @@ namespace CricketService.Data.Repositories.Extensions
             {
                 get
                 {
-                    //foreach (var allScoreCardByTeam in AllScoreCardsByTeam)
-                    //{
-                    //    allScoreCardByTeam.ScoreCard.SetTotalInningScore();
-                    //}
+                    foreach (var allScoreCardByTeam in AllScoreCardsByTeam)
+                    {
+                        //allScoreCardByTeam.ScoreCard.SetTotalInningScore();
+                    }
 
                     return AllScoreCardsByTeam
                           .Select(x => new TotalInningInfo
@@ -344,6 +361,12 @@ namespace CricketService.Data.Repositories.Extensions
             {
                 get
                 {
+                    foreach (var allScoreCardByTeam in AllScoreCardsByTeam)
+                    {
+                        allScoreCardByTeam.TestScoreCard.Inning1.SetTotalInningScore();
+                        allScoreCardByTeam.TestScoreCard.Inning2.SetTotalInningScore();
+                    }
+
                     return AllScoreCardsByTeam
                             .Select(x => new TotalInningInfo
                             {
@@ -412,11 +435,11 @@ namespace CricketService.Data.Repositories.Extensions
                 get
                 {
                     return AllScoreCardsByTeam
-                            .Select(x => x.TestScoreCard.Inning1.BattingScorecboard)
+                            .Select(x => x.TestScoreCard.Inning1.BattingScorecard)
                             .ToList()
                             .Concat(
                                 AllScoreCardsByTeam
-                                .Select(x => x.TestScoreCard.Inning2.BattingScorecboard))
+                                .Select(x => x.TestScoreCard.Inning2.BattingScorecard))
                                 .ToList();
                 }
             }
@@ -426,11 +449,11 @@ namespace CricketService.Data.Repositories.Extensions
                 get
                 {
                     return AllScoreCardsByOpponent
-                            .Select(x => x.TestScoreCard.Inning1.BattingScorecboard)
+                            .Select(x => x.TestScoreCard.Inning1.BattingScorecard)
                             .ToList()
                             .Concat(
                                AllScoreCardsByOpponent
-                              .Select(x => x.TestScoreCard.Inning2.BattingScorecboard))
+                              .Select(x => x.TestScoreCard.Inning2.BattingScorecard))
                               .ToList();
                 }
             }
@@ -440,11 +463,11 @@ namespace CricketService.Data.Repositories.Extensions
                 get
                 {
                     return AllScoreCardsByOpponent
-                             .Select(x => x.TestScoreCard.Inning1.BowlingScoreboard)
+                             .Select(x => x.TestScoreCard.Inning1.BowlingScorecard)
                              .ToList()
                              .Concat(
                                  AllScoreCardsByOpponent
-                                .Select(x => x.TestScoreCard.Inning2.BowlingScoreboard))
+                                .Select(x => x.TestScoreCard.Inning2.BowlingScorecard))
                                 .ToList();
                 }
             }
@@ -487,7 +510,7 @@ namespace CricketService.Data.Repositories.Extensions
 
             public DateOnly MatchDate { get; set; }
 
-            public TotalInningScore TotalInningDetails { get; set; } = null!;
+            public TotalInningScoreResponse TotalInningDetails { get; set; } = null!;
         }
 
         public class Playing11Info

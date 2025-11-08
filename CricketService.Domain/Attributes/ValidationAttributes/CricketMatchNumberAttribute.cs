@@ -5,13 +5,13 @@ namespace CricketService.Domain.Attributes.ValidationAttributes
 {
     public class CricketMatchNumberAttribute : ValidationAttribute
     {
-        private readonly string pattern = @"^(ODI|T20I|Test) no\. [1-9]\d{0,3}$|^IPL S(1[0-8]|[1-9]) M(7[0-6]|[1-6]\d|[1-9])$";
+        private readonly string pattern = @"^(ODI|T20I|Test|WODI|WT20I) no\. [1-9]\d{0,3}$|^IPL S(1[0-8]|[1-9]) M(7[0-6]|[1-6]\d|[1-9])$";
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             if (value == null)
             {
-                return ValidationResult.Success;
+                return new ValidationResult("The cricket match number must be not null.");
             }
 
             string inputString = value.ToString();

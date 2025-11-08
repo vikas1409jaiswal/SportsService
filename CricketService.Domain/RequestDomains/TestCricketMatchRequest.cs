@@ -45,9 +45,12 @@ public class TestCricketMatchRequest : InternationalCricketMatch
             internationalDebut,
             playerOfTheMatch)
     {
+        MatchDays = matchDays.Contains(" - ") ? matchDays.Split(" - ")[0] : matchDays;
         Team1 = team1;
         Team2 = team2;
     }
+
+    public string MatchDays { get; set; } = string.Empty;
 
     public DoubleInningTeamScoreboardRequest Team1 { get; set; }
 

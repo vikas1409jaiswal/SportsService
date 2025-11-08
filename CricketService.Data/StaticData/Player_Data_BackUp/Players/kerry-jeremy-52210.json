@@ -1,0 +1,4888 @@
+{
+  "player": {
+    "id": 10504,
+    "objectId": 52210,
+    "name": "KCB Jeremy",
+    "longName": "Kerry Jeremy",
+    "mobileName": "Jeremy",
+    "indexName": "Jeremy, KCB",
+    "battingName": "KCB Jeremy",
+    "fieldingName": "Jeremy",
+    "slug": "kerry-jeremy",
+    "imageUrl": "/db/PICTURES/CMS/51000/51075.1.jpg",
+    "dateOfBirth": {
+      "year": 1980,
+      "month": 2,
+      "date": 6
+    },
+    "dateOfDeath": null,
+    "gender": "M",
+    "battingStyles": [
+      "rhb"
+    ],
+    "bowlingStyles": [
+      "rfm"
+    ],
+    "longBattingStyles": [
+      "right-hand bat"
+    ],
+    "longBowlingStyles": [
+      "right-arm fast-medium"
+    ],
+    "image": {
+      "id": 51075,
+      "objectId": 211581,
+      "slug": "kerry-jeremy-portrait",
+      "url": "/db/PICTURES/CMS/51000/51075.1.jpg",
+      "width": 160,
+      "height": 230,
+      "caption": "Kerry Jeremy portrait",
+      "longCaption": "Kerry Jeremy portrait, London, June 19, 2005",
+      "credit": "Getty Images",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 4,
+    "playerRoleTypeIds": [
+      4
+    ],
+    "playingRoles": [
+      "bowler"
+    ],
+    "fullName": "Kerry Clifford Bryan Jeremy",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": 0,
+    "heightUnit": null,
+    "education": "",
+    "country": {
+      "id": 4,
+      "objectId": 4,
+      "name": "West Indies",
+      "shortName": "West Indies",
+      "abbreviation": "WI",
+      "slug": "west-indies",
+      "image": {
+        "id": 317615,
+        "objectId": 1254181,
+        "slug": "west-indies-team-logo",
+        "url": "/db/PICTURES/CMS/317600/317615.png",
+        "width": 500,
+        "height": 500,
+        "caption": "West Indies team logo",
+        "longCaption": "West Indies team logo",
+        "credit": "West Indies Cricket",
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Antigua",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "",
+    "intlCareerSpan": "2000 - 2001",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 51075,
+      "objectId": 211581,
+      "slug": "kerry-jeremy-portrait",
+      "url": "/db/PICTURES/CMS/51000/51075.jpg",
+      "width": 350,
+      "height": 503,
+      "caption": "Kerry Jeremy portrait",
+      "longCaption": "Kerry Jeremy portrait, London, June 19, 2005",
+      "credit": "Getty Images",
+      "photographer": null,
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": null,
+        "SQUARE": null
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": false,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 3,
+    "totalVideos": 0,
+    "totalImages": 7
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 4,
+          "objectId": 4,
+          "scribeId": 4,
+          "slug": "west-indies",
+          "name": "West Indies",
+          "longName": "West Indies",
+          "abbreviation": "WI",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+          "isCountry": true,
+          "primaryColor": "#790d1a",
+          "image": {
+            "id": 317615,
+            "objectId": 1254181,
+            "slug": "west-indies-team-logo",
+            "url": "/db/PICTURES/CMS/317600/317615.png",
+            "width": 500,
+            "height": 500,
+            "caption": "West Indies team logo",
+            "longCaption": "West Indies team logo",
+            "credit": "West Indies Cricket",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3767,
+          "objectId": 3716,
+          "scribeId": 3716,
+          "slug": "antigua",
+          "name": "Antigua",
+          "longName": "Antigua",
+          "abbreviation": "ANTG",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3768,
+          "objectId": 3717,
+          "scribeId": 3717,
+          "slug": "antigua-and-barbuda",
+          "name": "Antg & Barb",
+          "longName": "Antigua and Barbuda",
+          "abbreviation": "AntgB",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3813,
+          "objectId": 3762,
+          "scribeId": 3762,
+          "slug": "leeward-islands",
+          "name": "Leeward Is",
+          "longName": "Leeward Islands",
+          "abbreviation": "LWD",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/334100/334169.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 334169,
+            "objectId": 1300427,
+            "slug": "leeward-islands-team-logo",
+            "url": "/db/PICTURES/CMS/334100/334169.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Leeward Islands team logo",
+            "longCaption": "Leeward Islands team logo",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      }
+    ],
+    "relations": [],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "A fast bowler from Antigua, Kerry Jeremy's early career was blighted by injury. He broke into the West Indies side in the 2000 ICC Champions Trophy, retaining his place on the 2000-01 tour of Australia but he suffered a broken jaw early on and played little part.  He recovered in time to win selection for the 2000-01 tour of Zimbabwe but broke down with a serious back strain and had to return home.  He continued to perform well at domestic level but has, as yet, not been considered again for selection."
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BOWLING",
+          "cl": 2,
+          "mt": 6,
+          "in": 5,
+          "rn": 163,
+          "bl": 192,
+          "avg": 40.75,
+          "sr": 48,
+          "wk": 4,
+          "bbi": "2/42",
+          "bbm": "2/42",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 5.09
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 55,
+          "in": null,
+          "rn": 4302,
+          "bl": 9094,
+          "avg": 24.3,
+          "sr": 51.3,
+          "wk": 177,
+          "bbi": "6/33",
+          "bbm": null,
+          "fwk": null,
+          "fw": 10,
+          "tw": 0,
+          "bwe": 2.83
+        },
+        {
+          "type": "BOWLING",
+          "cl": 5,
+          "mt": 42,
+          "in": null,
+          "rn": 1327,
+          "bl": 1831,
+          "avg": 31.59,
+          "sr": 43.5,
+          "wk": 42,
+          "bbi": "6/42",
+          "bbm": "6/42",
+          "fwk": 0,
+          "fw": 1,
+          "tw": 0,
+          "bwe": 4.34
+        },
+        {
+          "type": "BOWLING",
+          "cl": 6,
+          "mt": 2,
+          "in": 2,
+          "rn": 50,
+          "bl": 30,
+          "avg": null,
+          "sr": null,
+          "wk": 0,
+          "bbi": "-",
+          "bbm": "-",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 10
+        },
+        {
+          "type": "BATTING",
+          "cl": 2,
+          "mt": 6,
+          "in": 4,
+          "rn": 17,
+          "bl": 42,
+          "avg": 8.5,
+          "sr": 40.47,
+          "no": 2,
+          "fo": 2,
+          "si": 0,
+          "hs": "8*",
+          "hn": 0,
+          "ft": 0,
+          "ct": 0,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 55,
+          "in": 75,
+          "rn": 446,
+          "bl": null,
+          "avg": 9.29,
+          "sr": null,
+          "no": 27,
+          "fo": null,
+          "si": null,
+          "hs": "70*",
+          "hn": 0,
+          "ft": 1,
+          "ct": 26,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 5,
+          "mt": 42,
+          "in": 25,
+          "rn": 121,
+          "bl": null,
+          "avg": 8.64,
+          "sr": null,
+          "no": 11,
+          "fo": null,
+          "si": null,
+          "hs": "27",
+          "hn": 0,
+          "ft": 0,
+          "ct": 9,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 6,
+          "mt": 2,
+          "in": 2,
+          "rn": 17,
+          "bl": 13,
+          "avg": null,
+          "sr": 130.76,
+          "no": 2,
+          "fo": 1,
+          "si": 1,
+          "hs": "16*",
+          "hn": 0,
+          "ft": 0,
+          "ct": 0,
+          "st": 0
+        }
+      ]
+    },
+    "topRecords": [],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 2,
+                "name": "One-Day Internationals",
+                "type": "i"
+              },
+              "total": 6,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 3785,
+                    "id": 3785,
+                    "objectId": 66171,
+                    "scribeId": 66171,
+                    "slug": "sri-lanka-vs-west-indies-2nd-pqf",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2000/01",
+                    "title": "2nd PQF",
+                    "floodlit": "day",
+                    "startDate": "2000-10-04T00:00:00Z",
+                    "endDate": "2000-10-04T00:00:00Z",
+                    "startTime": "2000-10-04T07:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Sri Lanka won by 108 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001631",
+                    "generalNumber": null,
+                    "winnerTeamId": 8,
+                    "tossWinnerTeamId": 4,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 814,
+                      "objectId": 61073,
+                      "scribeId": 8081,
+                      "slug": "icc-knockout-2000-01",
+                      "name": "ICC KnockOut",
+                      "longName": "ICC KnockOut",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2000,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in Kenya",
+                      "season": "2000/01",
+                      "startDate": "2000-10-03T00:00:00Z",
+                      "endDate": "2000-10-15T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 700,
+                      "objectId": 58661,
+                      "name": "Gymkhana Club Ground, Nairobi",
+                      "smallName": "Nairobi (Gym)",
+                      "longName": "Gymkhana Club Ground, Nairobi",
+                      "slug": "gymkhana-club-ground-nairobi",
+                      "location": "",
+                      "image": {
+                        "id": 13882,
+                        "objectId": 58660,
+                        "slug": "general-view-of-nairobi-gymkhana-club",
+                        "url": "/db/PICTURES/CMS/13800/13882.jpg",
+                        "width": 210,
+                        "height": 314,
+                        "caption": "General view of Nairobi Gymkhana Club",
+                        "longCaption": "General view of Nairobi Gymkhana Club",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 780,
+                        "objectId": 58654,
+                        "name": "Nairobi",
+                        "area": "",
+                        "timezone": "Africa/Nairobi"
+                      },
+                      "country": {
+                        "id": 26,
+                        "objectId": 26,
+                        "name": "Kenya",
+                        "shortName": "Kenya",
+                        "abbreviation": "KENYA",
+                        "slug": "kenya"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 8,
+                          "objectId": 8,
+                          "scribeId": 8,
+                          "slug": "sri-lanka",
+                          "name": "Sri Lanka",
+                          "longName": "Sri Lanka",
+                          "abbreviation": "SL",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340000/340047.png",
+                          "isCountry": true,
+                          "primaryColor": "#203d89",
+                          "image": {
+                            "id": 340047,
+                            "objectId": 1316921,
+                            "slug": "sri-lanka-team-flag",
+                            "url": "/db/PICTURES/CMS/340000/340047.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Sri Lanka team flag",
+                            "longCaption": "Sri Lanka team flag",
+                            "credit": "Google",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "287/6",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "179",
+                        "scoreInfo": "46.4/50 ov, T:288",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": 24978,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 13,
+                    "totalVideos": 0,
+                    "totalStories": 10,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:35:42.468Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 2335,
+                    "id": 2335,
+                    "objectId": 64721,
+                    "scribeId": 64721,
+                    "slug": "west-indies-vs-south-africa-7th-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2000/01",
+                    "title": "7th ODI",
+                    "floodlit": "day",
+                    "startDate": "2001-05-16T00:00:00Z",
+                    "endDate": "2001-05-16T00:00:00Z",
+                    "startTime": "2001-05-16T14:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "West Indies won by 6 wickets (with 34 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001718",
+                    "generalNumber": null,
+                    "winnerTeamId": 4,
+                    "tossWinnerTeamId": 3,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1579,
+                      "objectId": 61838,
+                      "scribeId": 15562,
+                      "slug": "south-africa-tour-of-west-indies-2000-01",
+                      "name": "South Africa tour of West Indies",
+                      "longName": "South Africa tour of West Indies",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2001,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "2000/01",
+                      "startDate": "2001-03-04T00:00:00Z",
+                      "endDate": "2001-05-16T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 680,
+                      "objectId": 59463,
+                      "name": "Arnos Vale Ground, Kingstown, St Vincent",
+                      "smallName": "Kingstown",
+                      "longName": "Arnos Vale Ground, Kingstown, St Vincent",
+                      "slug": "arnos-vale-ground-kingstown-st-vincent",
+                      "location": "Arnos Vale",
+                      "image": {
+                        "id": 19548,
+                        "objectId": 59461,
+                        "slug": "the-arnos-vale-ground-kingstown-st-vincent-with-the-airport-in-the-foreground-and-the-cricket-ground-beyond",
+                        "url": "/db/PICTURES/DB/052001/025871.2.jpg",
+                        "width": 220,
+                        "height": 136,
+                        "caption": "The Arnos Vale Ground, Kingstown St Vincent, with the airport in the foreground and the cricket ground beyond.",
+                        "longCaption": "West Indies v South Africa, 7th ODI,  Arnos Vale Ground, Kingstown , St Vincent, 16 May 2001",
+                        "credit": "ESPNcricinfo Ltd",
+                        "photographer": "Rian Botes",
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 997,
+                        "objectId": 59462,
+                        "name": "Kingstown",
+                        "area": "St Vincent",
+                        "timezone": "America/Port_of_Spain"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 3,
+                          "objectId": 3,
+                          "scribeId": 3,
+                          "slug": "south-africa",
+                          "name": "South Africa",
+                          "longName": "South Africa",
+                          "abbreviation": "SA",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313125.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#04822B",
+                          "image": {
+                            "id": 313125,
+                            "objectId": 1241584,
+                            "slug": "south-africa-logo",
+                            "url": "/db/PICTURES/CMS/313100/313125.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "South Africa logo",
+                            "longCaption": "South Africa logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "163/7",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "164/4",
+                        "scoreInfo": "44.2/50 ov, T:164",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": 37295,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 16,
+                    "totalVideos": 0,
+                    "totalStories": 3,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:35:42.468Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 55,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": null,
+                  "span": "1998/99"
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 11984,
+                    "id": 11984,
+                    "objectId": 267769,
+                    "scribeId": 267769,
+                    "slug": "guyana-vs-leeward-islands",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "2006/07",
+                    "title": "",
+                    "floodlit": "day",
+                    "startDate": "2007-01-28T00:00:00Z",
+                    "endDate": "2007-01-31T00:00:00Z",
+                    "startTime": "2007-01-28T14:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Guyana won by 3 wickets",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 3793,
+                    "tossWinnerTeamId": 3813,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 2981,
+                      "objectId": 267751,
+                      "scribeId": 8709,
+                      "slug": "carib-beer-series-2006-07",
+                      "name": "Carib Beer Series",
+                      "longName": "Carib Beer Series",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2007,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in West Indies",
+                      "season": "2006/07",
+                      "startDate": "2007-01-04T00:00:00Z",
+                      "endDate": "2007-02-08T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 772,
+                      "objectId": 59417,
+                      "name": "Albion Sports Complex, Albion, Guyana",
+                      "smallName": "Albion",
+                      "longName": "Albion Sports Complex, Albion, Guyana",
+                      "slug": "albion-sports-complex-albion-berbice-guyana",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 984,
+                        "objectId": 59416,
+                        "name": "Albion",
+                        "area": "Berbice, Guyana",
+                        "timezone": "America/Guyana"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 3813,
+                          "objectId": 3762,
+                          "scribeId": 3762,
+                          "slug": "leeward-islands",
+                          "name": "Leeward Is",
+                          "longName": "Leeward Islands",
+                          "abbreviation": "LWD",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/334100/334169.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 334169,
+                            "objectId": 1300427,
+                            "slug": "leeward-islands-team-logo",
+                            "url": "/db/PICTURES/CMS/334100/334169.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Leeward Islands team logo",
+                            "longCaption": "Leeward Islands team logo",
+                            "credit": "Unknown",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "187 & 244",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3793,
+                          "objectId": 3742,
+                          "scribeId": 3742,
+                          "slug": "guyana",
+                          "name": "Guyana",
+                          "longName": "Guyana",
+                          "abbreviation": "GUY",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317000/317004.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 317004,
+                            "objectId": 1252157,
+                            "slug": "guyana-team-logo",
+                            "url": "/db/PICTURES/CMS/317000/317004.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Guyana team logo",
+                            "longCaption": "Guyana team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "195 & 240/7",
+                        "scoreInfo": "T:237",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 0,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:35:42.469Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 5,
+                "name": "List A",
+                "type": "g"
+              },
+              "total": 42,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": null,
+                  "span": "1999/00"
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 12000,
+                    "id": 12000,
+                    "objectId": 267785,
+                    "scribeId": 267785,
+                    "slug": "guyana-vs-leeward-islands",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2006/07",
+                    "title": "",
+                    "floodlit": "day",
+                    "startDate": "2007-02-02T00:00:00Z",
+                    "endDate": "2007-02-02T00:00:00Z",
+                    "startTime": "2007-02-02T14:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Guyana won by 6 wickets (with 22 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 3793,
+                    "tossWinnerTeamId": 3813,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 2982,
+                      "objectId": 267752,
+                      "scribeId": 8792,
+                      "slug": "kfc-cup-2006-07",
+                      "name": "KFC Cup",
+                      "longName": "KFC Cup",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2007,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in West Indies",
+                      "season": "2006/07",
+                      "startDate": "2007-01-09T00:00:00Z",
+                      "endDate": "2007-02-17T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 772,
+                      "objectId": 59417,
+                      "name": "Albion Sports Complex, Albion, Guyana",
+                      "smallName": "Albion",
+                      "longName": "Albion Sports Complex, Albion, Guyana",
+                      "slug": "albion-sports-complex-albion-berbice-guyana",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 984,
+                        "objectId": 59416,
+                        "name": "Albion",
+                        "area": "Berbice, Guyana",
+                        "timezone": "America/Guyana"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 3813,
+                          "objectId": 3762,
+                          "scribeId": 3762,
+                          "slug": "leeward-islands",
+                          "name": "Leeward Is",
+                          "longName": "Leeward Islands",
+                          "abbreviation": "LWD",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/334100/334169.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 334169,
+                            "objectId": 1300427,
+                            "slug": "leeward-islands-team-logo",
+                            "url": "/db/PICTURES/CMS/334100/334169.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Leeward Islands team logo",
+                            "longCaption": "Leeward Islands team logo",
+                            "credit": "Unknown",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "233/8",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3793,
+                          "objectId": 3742,
+                          "scribeId": 3742,
+                          "slug": "guyana",
+                          "name": "Guyana",
+                          "longName": "Guyana",
+                          "abbreviation": "GUY",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317000/317004.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 317004,
+                            "objectId": 1252157,
+                            "slug": "guyana-team-logo",
+                            "url": "/db/PICTURES/CMS/317000/317004.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Guyana team logo",
+                            "longCaption": "Guyana team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "234/4",
+                        "scoreInfo": "46.2/50 ov, T:234",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 0,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:35:42.469Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 6,
+                "name": "Twenty20",
+                "type": "g"
+              },
+              "total": 2,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 9812,
+                    "id": 9812,
+                    "objectId": 252980,
+                    "scribeId": 252980,
+                    "slug": "antigua-vs-st-lucia-8th-match",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 6,
+                    "subClassId": null,
+                    "season": "2006",
+                    "title": "8th Match",
+                    "floodlit": "night",
+                    "startDate": "2006-07-19T00:00:00Z",
+                    "endDate": "2006-07-19T00:00:00Z",
+                    "startTime": "2006-07-19T23:00:00Z",
+                    "timePublished": true,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "Y",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Antigua won by 48 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 3767,
+                    "tossWinnerTeamId": 3767,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": 19.06,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 2669,
+                      "objectId": 228881,
+                      "scribeId": 18839,
+                      "slug": "stanford-20-20-2006",
+                      "name": "Stanford 20/20",
+                      "longName": "Stanford 20/20",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2006,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in West Indies",
+                      "season": "2006",
+                      "startDate": "2006-07-01T00:00:00Z",
+                      "endDate": "2006-09-02T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 1675,
+                      "objectId": 59497,
+                      "name": "Stanford Cricket Ground, Coolidge, Antigua",
+                      "smallName": "Coolidge",
+                      "longName": "Stanford Cricket Ground, Coolidge, Antigua",
+                      "slug": "coolidge-cricket-ground-antigua",
+                      "location": "",
+                      "image": {
+                        "id": 85869,
+                        "objectId": 334019,
+                        "slug": "a-general-view-of-play-in-progress-during-a-stanford-20-20-match",
+                        "url": "/db/PICTURES/CMS/85800/85869.2.jpg",
+                        "width": 310,
+                        "height": 193,
+                        "caption": "A general view of play in progress during a Stanford 20/20 match",
+                        "longCaption": "A general view of play in progress during a Stanford 20/20 match, British Virgin Islands v Dominica, 3rd match, Stanford 20/20, Antigua, January 27, 2007",
+                        "credit": "Joseph Jones",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 1197,
+                        "objectId": 333655,
+                        "name": "Coolidge",
+                        "area": "Antigua",
+                        "timezone": "America/Antigua"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 3767,
+                          "objectId": 3716,
+                          "scribeId": 3716,
+                          "slug": "antigua",
+                          "name": "Antigua",
+                          "longName": "Antigua",
+                          "abbreviation": "ANTG",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "146/9",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 4148,
+                          "objectId": 252712,
+                          "scribeId": 252712,
+                          "slug": "st-lucia",
+                          "name": "St Lucia",
+                          "longName": "St Lucia",
+                          "abbreviation": "St Lu",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "98/9",
+                        "scoreInfo": "20 ov, T:147",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "T20",
+                    "previewStoryId": null,
+                    "reportStoryId": 97259,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 6,
+                    "totalVideos": 0,
+                    "totalStories": 2,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:35:42.468Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 9817,
+                    "id": 9817,
+                    "objectId": 252985,
+                    "scribeId": 252985,
+                    "slug": "antigua-vs-nevis-13th-match",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 6,
+                    "subClassId": null,
+                    "season": "2006",
+                    "title": "13th Match",
+                    "floodlit": "night",
+                    "startDate": "2006-07-26T00:00:00Z",
+                    "endDate": "2006-07-26T00:00:00Z",
+                    "startTime": "2006-07-26T23:30:00Z",
+                    "timePublished": true,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "Y",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Nevis won by 43 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 4146,
+                    "tossWinnerTeamId": 3767,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 2669,
+                      "objectId": 228881,
+                      "scribeId": 18839,
+                      "slug": "stanford-20-20-2006",
+                      "name": "Stanford 20/20",
+                      "longName": "Stanford 20/20",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2006,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in West Indies",
+                      "season": "2006",
+                      "startDate": "2006-07-01T00:00:00Z",
+                      "endDate": "2006-09-02T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 1675,
+                      "objectId": 59497,
+                      "name": "Stanford Cricket Ground, Coolidge, Antigua",
+                      "smallName": "Coolidge",
+                      "longName": "Stanford Cricket Ground, Coolidge, Antigua",
+                      "slug": "coolidge-cricket-ground-antigua",
+                      "location": "",
+                      "image": {
+                        "id": 85869,
+                        "objectId": 334019,
+                        "slug": "a-general-view-of-play-in-progress-during-a-stanford-20-20-match",
+                        "url": "/db/PICTURES/CMS/85800/85869.2.jpg",
+                        "width": 310,
+                        "height": 193,
+                        "caption": "A general view of play in progress during a Stanford 20/20 match",
+                        "longCaption": "A general view of play in progress during a Stanford 20/20 match, British Virgin Islands v Dominica, 3rd match, Stanford 20/20, Antigua, January 27, 2007",
+                        "credit": "Joseph Jones",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 1197,
+                        "objectId": 333655,
+                        "name": "Coolidge",
+                        "area": "Antigua",
+                        "timezone": "America/Antigua"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 4146,
+                          "objectId": 252710,
+                          "scribeId": 252710,
+                          "slug": "nevis",
+                          "name": "Nevis",
+                          "longName": "Nevis",
+                          "abbreviation": "Nevis",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "213/3",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3767,
+                          "objectId": 3716,
+                          "scribeId": 3716,
+                          "slug": "antigua",
+                          "name": "Antigua",
+                          "longName": "Antigua",
+                          "abbreviation": "ANTG",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "170/9",
+                        "scoreInfo": "20 ov, T:214",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "T20",
+                    "previewStoryId": null,
+                    "reportStoryId": 97361,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:33:35.099Z"
+                  },
+                  "span": null
+                }
+              ]
+            }
+          ],
+          "recent": [
+            {
+              "match": {
+                "_uid": 12000,
+                "id": 12000,
+                "objectId": 267785,
+                "scribeId": 267785,
+                "slug": "guyana-vs-leeward-islands",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 5,
+                "subClassId": null,
+                "season": "2006/07",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2007-02-02T00:00:00Z",
+                "endDate": "2007-02-02T00:00:00Z",
+                "startTime": "2007-02-02T14:00:00Z",
+                "timePublished": false,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "N",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Guyana won by 6 wickets (with 22 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3793,
+                "tossWinnerTeamId": 3813,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2982,
+                  "objectId": 267752,
+                  "scribeId": 8792,
+                  "slug": "kfc-cup-2006-07",
+                  "name": "KFC Cup",
+                  "longName": "KFC Cup",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2007,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in West Indies",
+                  "season": "2006/07",
+                  "startDate": "2007-01-09T00:00:00Z",
+                  "endDate": "2007-02-17T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 772,
+                  "objectId": 59417,
+                  "name": "Albion Sports Complex, Albion, Guyana",
+                  "smallName": "Albion",
+                  "longName": "Albion Sports Complex, Albion, Guyana",
+                  "slug": "albion-sports-complex-albion-berbice-guyana",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 984,
+                    "objectId": 59416,
+                    "name": "Albion",
+                    "area": "Berbice, Guyana",
+                    "timezone": "America/Guyana"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3813,
+                      "objectId": 3762,
+                      "scribeId": 3762,
+                      "slug": "leeward-islands",
+                      "name": "Leeward Is",
+                      "longName": "Leeward Islands",
+                      "abbreviation": "LWD",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334169.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334169,
+                        "objectId": 1300427,
+                        "slug": "leeward-islands-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334169.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Leeward Islands team logo",
+                        "longCaption": "Leeward Islands team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "233/8",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3793,
+                      "objectId": 3742,
+                      "scribeId": 3742,
+                      "slug": "guyana",
+                      "name": "Guyana",
+                      "longName": "Guyana",
+                      "abbreviation": "GUY",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/317000/317004.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 317004,
+                        "objectId": 1252157,
+                        "slug": "guyana-team-logo",
+                        "url": "/db/PICTURES/CMS/317000/317004.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Guyana team logo",
+                        "longCaption": "Guyana team logo",
+                        "credit": "West Indies Cricket",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "234/4",
+                    "scoreInfo": "46.2/50 ov, T:234",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "ODI",
+                "previewStoryId": null,
+                "reportStoryId": null,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 0,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:35:42.469Z"
+              },
+              "teamId": 3813,
+              "battingText": "8",
+              "bowlingText": "1/32",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 11984,
+                "id": 11984,
+                "objectId": 267769,
+                "scribeId": 267769,
+                "slug": "guyana-vs-leeward-islands",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2006/07",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2007-01-28T00:00:00Z",
+                "endDate": "2007-01-31T00:00:00Z",
+                "startTime": "2007-01-28T14:00:00Z",
+                "timePublished": false,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "N",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Guyana won by 3 wickets",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3793,
+                "tossWinnerTeamId": 3813,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 4,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2981,
+                  "objectId": 267751,
+                  "scribeId": 8709,
+                  "slug": "carib-beer-series-2006-07",
+                  "name": "Carib Beer Series",
+                  "longName": "Carib Beer Series",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2007,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in West Indies",
+                  "season": "2006/07",
+                  "startDate": "2007-01-04T00:00:00Z",
+                  "endDate": "2007-02-08T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 772,
+                  "objectId": 59417,
+                  "name": "Albion Sports Complex, Albion, Guyana",
+                  "smallName": "Albion",
+                  "longName": "Albion Sports Complex, Albion, Guyana",
+                  "slug": "albion-sports-complex-albion-berbice-guyana",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 984,
+                    "objectId": 59416,
+                    "name": "Albion",
+                    "area": "Berbice, Guyana",
+                    "timezone": "America/Guyana"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3813,
+                      "objectId": 3762,
+                      "scribeId": 3762,
+                      "slug": "leeward-islands",
+                      "name": "Leeward Is",
+                      "longName": "Leeward Islands",
+                      "abbreviation": "LWD",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334169.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334169,
+                        "objectId": 1300427,
+                        "slug": "leeward-islands-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334169.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Leeward Islands team logo",
+                        "longCaption": "Leeward Islands team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "187 & 244",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1,
+                      3
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3793,
+                      "objectId": 3742,
+                      "scribeId": 3742,
+                      "slug": "guyana",
+                      "name": "Guyana",
+                      "longName": "Guyana",
+                      "abbreviation": "GUY",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/317000/317004.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 317004,
+                        "objectId": 1252157,
+                        "slug": "guyana-team-logo",
+                        "url": "/db/PICTURES/CMS/317000/317004.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Guyana team logo",
+                        "longCaption": "Guyana team logo",
+                        "credit": "West Indies Cricket",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "195 & 240/7",
+                    "scoreInfo": "T:237",
+                    "inningNumbers": [
+                      2,
+                      4
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": null,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 0,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:35:42.469Z"
+              },
+              "teamId": 3813,
+              "battingText": "9 & 8",
+              "bowlingText": "4/48 & 1/47",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 11997,
+                "id": 11997,
+                "objectId": 267782,
+                "scribeId": 267782,
+                "slug": "trinidad-tobago-vs-leeward-islands",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 5,
+                "subClassId": null,
+                "season": "2006/07",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2007-01-25T00:00:00Z",
+                "endDate": "2007-01-25T00:00:00Z",
+                "startTime": "2007-01-25T14:00:00Z",
+                "timePublished": false,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "N",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Trinidad & T won by 5 wickets (with 82 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3841,
+                "tossWinnerTeamId": 3813,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2982,
+                  "objectId": 267752,
+                  "scribeId": 8792,
+                  "slug": "kfc-cup-2006-07",
+                  "name": "KFC Cup",
+                  "longName": "KFC Cup",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2007,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in West Indies",
+                  "season": "2006/07",
+                  "startDate": "2007-01-09T00:00:00Z",
+                  "endDate": "2007-02-17T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1517,
+                  "objectId": 59510,
+                  "name": "Shaw Park, Scarborough, Tobago",
+                  "smallName": "Scarborough",
+                  "longName": "Shaw Park, Scarborough, Tobago",
+                  "slug": "shaw-park-scarborough-tobago",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 1015,
+                    "objectId": 59508,
+                    "name": "Scarborough",
+                    "area": "Tobago",
+                    "timezone": "America/Port_of_Spain"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3813,
+                      "objectId": 3762,
+                      "scribeId": 3762,
+                      "slug": "leeward-islands",
+                      "name": "Leeward Is",
+                      "longName": "Leeward Islands",
+                      "abbreviation": "LWD",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334169.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334169,
+                        "objectId": 1300427,
+                        "slug": "leeward-islands-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334169.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Leeward Islands team logo",
+                        "longCaption": "Leeward Islands team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "176",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3841,
+                      "objectId": 3790,
+                      "scribeId": 3790,
+                      "slug": "trinidad-tobago",
+                      "name": "Trinidad & T",
+                      "longName": "Trinidad & Tobago",
+                      "abbreviation": "T&T",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334173.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334173,
+                        "objectId": 1300433,
+                        "slug": "trinidad-and-tobago-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334173.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Trinidad and Tobago team logo",
+                        "longCaption": "Trinidad and Tobago team logo",
+                        "credit": "West Indies Cricket",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "177/5",
+                    "scoreInfo": "36.2/50 ov, T:177",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "ODI",
+                "previewStoryId": null,
+                "reportStoryId": null,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 0,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:35:42.469Z"
+              },
+              "teamId": 3813,
+              "battingText": "4",
+              "bowlingText": "0/43",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 11981,
+                "id": 11981,
+                "objectId": 267766,
+                "scribeId": 267766,
+                "slug": "trinidad-tobago-vs-leeward-islands",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2006/07",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2007-01-20T00:00:00Z",
+                "endDate": "2007-01-23T00:00:00Z",
+                "startTime": "2007-01-20T14:00:00Z",
+                "timePublished": false,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "N",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Trinidad & T won by 215 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3841,
+                "tossWinnerTeamId": 3841,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 4,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2981,
+                  "objectId": 267751,
+                  "scribeId": 8709,
+                  "slug": "carib-beer-series-2006-07",
+                  "name": "Carib Beer Series",
+                  "longName": "Carib Beer Series",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2007,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in West Indies",
+                  "season": "2006/07",
+                  "startDate": "2007-01-04T00:00:00Z",
+                  "endDate": "2007-02-08T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1863,
+                  "objectId": 59524,
+                  "name": "National Cricket Centre, Couva, Trinidad",
+                  "smallName": "Couva",
+                  "longName": "National Cricket Centre, Couva, Trinidad",
+                  "slug": "national-cricket-centre-couva-trinidad",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 1022,
+                    "objectId": 59523,
+                    "name": "Couva",
+                    "area": "Trinidad",
+                    "timezone": "America/Port_of_Spain"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3841,
+                      "objectId": 3790,
+                      "scribeId": 3790,
+                      "slug": "trinidad-tobago",
+                      "name": "Trinidad & T",
+                      "longName": "Trinidad & Tobago",
+                      "abbreviation": "T&T",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334173.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334173,
+                        "objectId": 1300433,
+                        "slug": "trinidad-and-tobago-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334173.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Trinidad and Tobago team logo",
+                        "longCaption": "Trinidad and Tobago team logo",
+                        "credit": "West Indies Cricket",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "313 & 305/3d",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1,
+                      3
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3813,
+                      "objectId": 3762,
+                      "scribeId": 3762,
+                      "slug": "leeward-islands",
+                      "name": "Leeward Is",
+                      "longName": "Leeward Islands",
+                      "abbreviation": "LWD",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334169.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334169,
+                        "objectId": 1300427,
+                        "slug": "leeward-islands-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334169.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Leeward Islands team logo",
+                        "longCaption": "Leeward Islands team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "216 & 187",
+                    "scoreInfo": "T:403",
+                    "inningNumbers": [
+                      2,
+                      4
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 102362,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:35:42.469Z"
+              },
+              "teamId": 3813,
+              "battingText": "1 & 5*",
+              "bowlingText": "0/35 & 2/50",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 11994,
+                "id": 11994,
+                "objectId": 267779,
+                "scribeId": 267779,
+                "slug": "barbados-vs-leeward-islands",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 5,
+                "subClassId": null,
+                "season": "2006/07",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2007-01-17T00:00:00Z",
+                "endDate": "2007-01-17T00:00:00Z",
+                "startTime": "2007-01-17T14:00:00Z",
+                "timePublished": false,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "N",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Barbados won by 6 wickets (with 30 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3770,
+                "tossWinnerTeamId": 3770,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2982,
+                  "objectId": 267752,
+                  "scribeId": 8792,
+                  "slug": "kfc-cup-2006-07",
+                  "name": "KFC Cup",
+                  "longName": "KFC Cup",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2007,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in West Indies",
+                  "season": "2006/07",
+                  "startDate": "2007-01-09T00:00:00Z",
+                  "endDate": "2007-02-17T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1516,
+                  "objectId": 59512,
+                  "name": "Carlton Club Ground, Black Rock, Barbados",
+                  "smallName": "Bridgetown",
+                  "longName": "Carlton Club Ground, Black Rock, Barbados",
+                  "slug": "desmond-haynes-oval-bridgetown-barbados",
+                  "location": "",
+                  "image": {
+                    "id": 155236,
+                    "objectId": 624320,
+                    "slug": "desmond-haynes-oval",
+                    "url": "/db/PICTURES/CMS/155200/155236.4.jpg",
+                    "width": 310,
+                    "height": 134,
+                    "caption": "Desmond Haynes Oval",
+                    "longCaption": "Desmond Haynes Oval, Black Rock, Barbados",
+                    "credit": "WICB Media Photo/Nicholas Reid",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 1016,
+                    "objectId": 59511,
+                    "name": "Black Rock",
+                    "area": "Barbados",
+                    "timezone": "America/Barbados"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3813,
+                      "objectId": 3762,
+                      "scribeId": 3762,
+                      "slug": "leeward-islands",
+                      "name": "Leeward Is",
+                      "longName": "Leeward Islands",
+                      "abbreviation": "LWD",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334169.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334169,
+                        "objectId": 1300427,
+                        "slug": "leeward-islands-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334169.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Leeward Islands team logo",
+                        "longCaption": "Leeward Islands team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "226",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3770,
+                      "objectId": 3719,
+                      "scribeId": 3719,
+                      "slug": "barbados",
+                      "name": "Barbados",
+                      "longName": "Barbados",
+                      "abbreviation": "BDOS",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334171.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334171,
+                        "objectId": 1300429,
+                        "slug": "barbados-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334171.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Barbados team logo",
+                        "longCaption": "Barbados team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "228/4",
+                    "scoreInfo": "45/50 ov, T:227",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "ODI",
+                "previewStoryId": null,
+                "reportStoryId": null,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 0,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:35:42.469Z"
+              },
+              "teamId": 3813,
+              "battingText": "0*",
+              "bowlingText": "0/30",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 11978,
+                "id": 11978,
+                "objectId": 267763,
+                "scribeId": 267763,
+                "slug": "barbados-vs-leeward-islands",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 4,
+                "subClassId": null,
+                "season": "2006/07",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2007-01-12T00:00:00Z",
+                "endDate": "2007-01-15T00:00:00Z",
+                "startTime": "2007-01-12T14:00:00Z",
+                "timePublished": false,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "N",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 3813,
+                "tossWinnerChoice": 2,
+                "resultStatus": 4,
+                "liveInning": 4,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2981,
+                  "objectId": 267751,
+                  "scribeId": 8709,
+                  "slug": "carib-beer-series-2006-07",
+                  "name": "Carib Beer Series",
+                  "longName": "Carib Beer Series",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2007,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in West Indies",
+                  "season": "2006/07",
+                  "startDate": "2007-01-04T00:00:00Z",
+                  "endDate": "2007-02-08T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1865,
+                  "objectId": 59526,
+                  "name": "Mount Gay North Stars, Crab Hill, Barbados",
+                  "smallName": "Crab Hill",
+                  "longName": "Mount Gay North Stars, Crab Hill, Barbados",
+                  "slug": "mount-gay-north-stars-crab-hill-barbados",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 1023,
+                    "objectId": 59525,
+                    "name": "Crab Hill",
+                    "area": "Barbados",
+                    "timezone": "America/Barbados"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3770,
+                      "objectId": 3719,
+                      "scribeId": 3719,
+                      "slug": "barbados",
+                      "name": "Barbados",
+                      "longName": "Barbados",
+                      "abbreviation": "BDOS",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334171.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334171,
+                        "objectId": 1300429,
+                        "slug": "barbados-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334171.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Barbados team logo",
+                        "longCaption": "Barbados team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "263 & 247/5d",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1,
+                      3
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3813,
+                      "objectId": 3762,
+                      "scribeId": 3762,
+                      "slug": "leeward-islands",
+                      "name": "Leeward Is",
+                      "longName": "Leeward Islands",
+                      "abbreviation": "LWD",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/334100/334169.png",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 334169,
+                        "objectId": 1300427,
+                        "slug": "leeward-islands-team-logo",
+                        "url": "/db/PICTURES/CMS/334100/334169.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Leeward Islands team logo",
+                        "longCaption": "Leeward Islands team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "236 & 98/1",
+                    "scoreInfo": "T:275",
+                    "inningNumbers": [
+                      2,
+                      4
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 102134,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 2,
+                "totalVideos": 0,
+                "totalStories": 3,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:35:42.469Z"
+              },
+              "teamId": 3813,
+              "battingText": "4",
+              "bowlingText": "1/55 & 2/54",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 9817,
+                "id": 9817,
+                "objectId": 252985,
+                "scribeId": 252985,
+                "slug": "antigua-vs-nevis-13th-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2006",
+                "title": "13th Match",
+                "floodlit": "night",
+                "startDate": "2006-07-26T00:00:00Z",
+                "endDate": "2006-07-26T00:00:00Z",
+                "startTime": "2006-07-26T23:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Nevis won by 43 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4146,
+                "tossWinnerTeamId": 3767,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2669,
+                  "objectId": 228881,
+                  "scribeId": 18839,
+                  "slug": "stanford-20-20-2006",
+                  "name": "Stanford 20/20",
+                  "longName": "Stanford 20/20",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2006,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in West Indies",
+                  "season": "2006",
+                  "startDate": "2006-07-01T00:00:00Z",
+                  "endDate": "2006-09-02T00:00:00Z",
+                  "hasStandings": false,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1675,
+                  "objectId": 59497,
+                  "name": "Stanford Cricket Ground, Coolidge, Antigua",
+                  "smallName": "Coolidge",
+                  "longName": "Stanford Cricket Ground, Coolidge, Antigua",
+                  "slug": "coolidge-cricket-ground-antigua",
+                  "location": "",
+                  "image": {
+                    "id": 85869,
+                    "objectId": 334019,
+                    "slug": "a-general-view-of-play-in-progress-during-a-stanford-20-20-match",
+                    "url": "/db/PICTURES/CMS/85800/85869.2.jpg",
+                    "width": 310,
+                    "height": 193,
+                    "caption": "A general view of play in progress during a Stanford 20/20 match",
+                    "longCaption": "A general view of play in progress during a Stanford 20/20 match, British Virgin Islands v Dominica, 3rd match, Stanford 20/20, Antigua, January 27, 2007",
+                    "credit": "Joseph Jones",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 1197,
+                    "objectId": 333655,
+                    "name": "Coolidge",
+                    "area": "Antigua",
+                    "timezone": "America/Antigua"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4146,
+                      "objectId": 252710,
+                      "scribeId": 252710,
+                      "slug": "nevis",
+                      "name": "Nevis",
+                      "longName": "Nevis",
+                      "abbreviation": "Nevis",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "213/3",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3767,
+                      "objectId": 3716,
+                      "scribeId": 3716,
+                      "slug": "antigua",
+                      "name": "Antigua",
+                      "longName": "Antigua",
+                      "abbreviation": "ANTG",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "170/9",
+                    "scoreInfo": "20 ov, T:214",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 97361,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:33:35.099Z"
+              },
+              "teamId": 3767,
+              "battingText": "16*",
+              "bowlingText": "0/28",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 9812,
+                "id": 9812,
+                "objectId": 252980,
+                "scribeId": 252980,
+                "slug": "antigua-vs-st-lucia-8th-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2006",
+                "title": "8th Match",
+                "floodlit": "night",
+                "startDate": "2006-07-19T00:00:00Z",
+                "endDate": "2006-07-19T00:00:00Z",
+                "startTime": "2006-07-19T23:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Antigua won by 48 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3767,
+                "tossWinnerTeamId": 3767,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 19.06,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2669,
+                  "objectId": 228881,
+                  "scribeId": 18839,
+                  "slug": "stanford-20-20-2006",
+                  "name": "Stanford 20/20",
+                  "longName": "Stanford 20/20",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2006,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in West Indies",
+                  "season": "2006",
+                  "startDate": "2006-07-01T00:00:00Z",
+                  "endDate": "2006-09-02T00:00:00Z",
+                  "hasStandings": false,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1675,
+                  "objectId": 59497,
+                  "name": "Stanford Cricket Ground, Coolidge, Antigua",
+                  "smallName": "Coolidge",
+                  "longName": "Stanford Cricket Ground, Coolidge, Antigua",
+                  "slug": "coolidge-cricket-ground-antigua",
+                  "location": "",
+                  "image": {
+                    "id": 85869,
+                    "objectId": 334019,
+                    "slug": "a-general-view-of-play-in-progress-during-a-stanford-20-20-match",
+                    "url": "/db/PICTURES/CMS/85800/85869.2.jpg",
+                    "width": 310,
+                    "height": 193,
+                    "caption": "A general view of play in progress during a Stanford 20/20 match",
+                    "longCaption": "A general view of play in progress during a Stanford 20/20 match, British Virgin Islands v Dominica, 3rd match, Stanford 20/20, Antigua, January 27, 2007",
+                    "credit": "Joseph Jones",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 1197,
+                    "objectId": 333655,
+                    "name": "Coolidge",
+                    "area": "Antigua",
+                    "timezone": "America/Antigua"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3767,
+                      "objectId": 3716,
+                      "scribeId": 3716,
+                      "slug": "antigua",
+                      "name": "Antigua",
+                      "longName": "Antigua",
+                      "abbreviation": "ANTG",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "146/9",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4148,
+                      "objectId": 252712,
+                      "scribeId": 252712,
+                      "slug": "st-lucia",
+                      "name": "St Lucia",
+                      "longName": "St Lucia",
+                      "abbreviation": "St Lu",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "98/9",
+                    "scoreInfo": "20 ov, T:147",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 97259,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 6,
+                "totalVideos": 0,
+                "totalStories": 2,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:35:42.468Z"
+              },
+              "teamId": 3767,
+              "battingText": "1*",
+              "bowlingText": "0/22",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 9568,
+                "id": 9568,
+                "objectId": 248882,
+                "scribeId": 248882,
+                "slug": "antigua-and-barbuda-vs-indians-tour-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 11,
+                "subClassId": null,
+                "season": "2006",
+                "title": "Tour Match",
+                "floodlit": "day",
+                "startDate": "2006-05-30T00:00:00Z",
+                "endDate": "2006-05-31T00:00:00Z",
+                "startTime": "2006-05-30T14:00:00Z",
+                "timePublished": false,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "N",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Match drawn",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": null,
+                "tossWinnerTeamId": 3768,
+                "tossWinnerChoice": 1,
+                "resultStatus": 4,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2582,
+                  "objectId": 219430,
+                  "scribeId": 14628,
+                  "slug": "india-tour-of-west-indies-2006",
+                  "name": "India tour of West Indies",
+                  "longName": "India tour of West Indies",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2006,
+                  "typeId": 4,
+                  "isTrophy": false,
+                  "description": "",
+                  "season": "2006",
+                  "startDate": "2006-05-15T00:00:00Z",
+                  "endDate": "2006-07-05T00:00:00Z",
+                  "hasStandings": false,
+                  "totalVideos": 7,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 2043,
+                  "objectId": 248878,
+                  "name": "Police Recreation Ground, St John's, Antigua",
+                  "smallName": "St John's",
+                  "longName": "Police Recreation Ground, St John's, Antigua",
+                  "slug": "police-recreation-ground-st-john-s",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 1009,
+                    "objectId": 59494,
+                    "name": "St John's",
+                    "area": "Antigua",
+                    "timezone": "America/Antigua"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3768,
+                      "objectId": 3717,
+                      "scribeId": 3717,
+                      "slug": "antigua-and-barbuda",
+                      "name": "Antg & Barb",
+                      "longName": "Antigua and Barbuda",
+                      "abbreviation": "AntgB",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "300",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 6,
+                      "objectId": 6,
+                      "scribeId": 6,
+                      "slug": "india",
+                      "name": "Indians",
+                      "longName": "Indians",
+                      "abbreviation": "INDIA",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+                      "isCountry": true,
+                      "primaryColor": "#137dd2",
+                      "image": {
+                        "id": 313128,
+                        "objectId": 1241587,
+                        "slug": "india-logo",
+                        "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "India logo",
+                        "longCaption": "India logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "311/9",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "MULTI",
+                "format": "TEST",
+                "previewStoryId": null,
+                "reportStoryId": 96112,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 2,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:35:42.468Z"
+              },
+              "teamId": 3768,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 49898,
+                "id": 49898,
+                "objectId": 590882,
+                "scribeId": 590882,
+                "slug": "antigua-and-barbuda-vs-zimbabweans",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 12,
+                "subClassId": null,
+                "season": "2006",
+                "title": "",
+                "floodlit": null,
+                "startDate": "2006-04-24T00:00:00Z",
+                "endDate": "2006-04-24T00:00:00Z",
+                "startTime": "2006-04-24T13:30:00Z",
+                "timePublished": false,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "N",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Zimbabweans won by 4 wickets (with 21 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 9,
+                "tossWinnerTeamId": 3768,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 2580,
+                  "objectId": 219427,
+                  "scribeId": 14637,
+                  "slug": "zimbabwe-tour-of-west-indies-2006",
+                  "name": "Zimbabwe tour of West Indies",
+                  "longName": "Zimbabwe tour of West Indies",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2006,
+                  "typeId": 4,
+                  "isTrophy": false,
+                  "description": "",
+                  "season": "2006",
+                  "startDate": "2006-04-24T00:00:00Z",
+                  "endDate": "2006-05-20T00:00:00Z",
+                  "hasStandings": false,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 2037,
+                  "objectId": 245317,
+                  "name": "Jolly Beach Ground, St John's, Antigua",
+                  "smallName": "St Mary's",
+                  "longName": "Jolly Beach Ground, St John's, Antigua",
+                  "slug": "jolly-beach-ground-st-mary-s-antigua",
+                  "location": "Bolams Village",
+                  "image": null,
+                  "town": {
+                    "id": 1101,
+                    "objectId": 273712,
+                    "name": "St Mary's",
+                    "area": "Antigua",
+                    "timezone": "America/St_Johns"
+                  },
+                  "country": {
+                    "id": 4,
+                    "objectId": 4,
+                    "name": "West Indies",
+                    "shortName": "West Indies",
+                    "abbreviation": "WI",
+                    "slug": "west-indies"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3768,
+                      "objectId": 3717,
+                      "scribeId": 3717,
+                      "slug": "antigua-and-barbuda",
+                      "name": "Antg & Barb",
+                      "longName": "Antigua and Barbuda",
+                      "abbreviation": "AntgB",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "180",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 9,
+                      "objectId": 9,
+                      "scribeId": 9,
+                      "slug": "zimbabwe",
+                      "name": "Zimbabweans",
+                      "longName": "Zimbabweans",
+                      "abbreviation": "Zmbns",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/340500/340503.png",
+                      "isCountry": true,
+                      "primaryColor": "#d04037",
+                      "image": {
+                        "id": 340503,
+                        "objectId": 1318712,
+                        "slug": "zimbabwe-team-flag-latest",
+                        "url": "/db/PICTURES/CMS/340500/340503.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Zimbabwe team flag-latest",
+                        "longCaption": "Zimbabwe team flag-latest",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "181/6",
+                    "scoreInfo": "46.3/50 ov, T:181",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "ODI",
+                "previewStoryId": null,
+                "reportStoryId": null,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 0,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:35:42.469Z"
+              },
+              "teamId": 3768,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            }
+          ]
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 73716,
+        "objectId": 144704,
+        "scribeId": 23118172,
+        "slug": "jeremy-spearheads-leeward-island-fightback",
+        "title": "Jeremy spearheads Leeward Island fightback",
+        "subTitle": "Carib Beer Series 2004-05",
+        "seoTitle": "",
+        "summary": "A five-wicket haul by Kerry Jeremy, the medium pacer, was the highlight of the second day of the seventh round match between Barbados and Leeward Islands",
+        "byline": "Cricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2005-02-20T00:00:00Z",
+        "modifiedAt": "2005-02-20T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 1,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:35:42.516Z"
+      },
+      {
+        "id": 35031,
+        "objectId": 103884,
+        "scribeId": 23204099,
+        "slug": "injury-forces-jeremy-out-again",
+        "title": "Injury forces Jeremy out again",
+        "subTitle": "",
+        "seoTitle": "",
+        "summary": "As was the case in Australia late last year, an injury to Antiguan fast bowler Kerry Jeremy has forced him to withdraw from taking any further part in the West Indies' current tour of Zimbabwe",
+        "byline": "Derrick Nicholas",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2001-06-30T00:00:00Z",
+        "modifiedAt": "2001-06-30T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 108,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:35:42.516Z"
+      },
+      {
+        "id": 24061,
+        "objectId": 91820,
+        "scribeId": 23227594,
+        "slug": "kerry-jeremy-injury-update",
+        "title": "Kerry Jeremy injury update",
+        "subTitle": "",
+        "seoTitle": "",
+        "summary": "Rookie West Indies fast bowler Kerry Jeremy underwent surgery on his broken jaw at St John of God Hospital in Murdoch late this morning, Friday 10 November 2000",
+        "byline": "Western Australia Cricket Association",
+        "categoryType": "OTHERS",
+        "genreType": "OTHER",
+        "genreId": 29,
+        "genreName": "Miscellaneous",
+        "publishedAt": "2000-11-10T00:00:00Z",
+        "modifiedAt": "2000-11-10T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 69,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:35:42.516Z"
+      }
+    ],
+    "videos": [],
+    "images": [
+      {
+        "id": 51075,
+        "objectId": 211581,
+        "slug": "kerry-jeremy-portrait",
+        "url": "/db/PICTURES/CMS/51000/51075.jpg",
+        "width": 350,
+        "height": 503,
+        "caption": "Kerry Jeremy portrait",
+        "longCaption": "Kerry Jeremy portrait, London, June 19, 2005",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2005-06-19T00:00:00Z",
+        "capturedOn": {
+          "year": 2005,
+          "month": 6,
+          "date": 19
+        }
+      },
+      {
+        "id": 41435,
+        "objectId": 193897,
+        "slug": "jeremy-after-being-hit-by-nicholson-western-australia-v-west-indians-2000-01",
+        "url": "/db/PICTURES/DB/112000/017987.jpg",
+        "width": 450,
+        "height": 300,
+        "caption": "Jeremy after being hit by Nicholson, Western Australia v West Indians, 2000/01",
+        "longCaption": "09 Nov 2000: Kerry Jeremy for the West Indies is hit by a ball from Matthew Nicholson for Western Australia in the match between the Western Warriors and the West Indies at the WACA ground in Perth, Australia.Jeremy retired hurt on 7 runs",
+        "credit": "Getty Images",
+        "photographer": "Tony McDonough",
+        "peerUrls": null,
+        "dateTaken": "2000-11-11T00:00:00Z",
+        "capturedOn": {
+          "year": 2000,
+          "month": 11,
+          "date": 11
+        }
+      },
+      {
+        "id": 41436,
+        "objectId": 193898,
+        "slug": "jeremy-surrounded-by-teammates-after-being-hit-by-nicholson-western-australia-v-west-indians-2000-01",
+        "url": "/db/PICTURES/DB/112000/017988.jpg",
+        "width": 450,
+        "height": 300,
+        "caption": "Jeremy surrounded by teammates after being hit by Nicholson, Western Australia v West Indians, 2000/01",
+        "longCaption": "09 Nov 2000: Kerry Jeremy for the West Indies is hit by a ball from Matthew Nicholson for Western Australia in the match between the Western Warriors and the West Indies at the WACA ground in Perth, Australia.Jeremy retired hurt on 7 runs",
+        "credit": "Getty Images",
+        "photographer": "Tony McDonough",
+        "peerUrls": null,
+        "dateTaken": "2000-11-11T00:00:00Z",
+        "capturedOn": {
+          "year": 2000,
+          "month": 11,
+          "date": 11
+        }
+      },
+      {
+        "id": 41437,
+        "objectId": 193899,
+        "slug": "jeremy-on-the-ground-after-being-hit-by-nicholson-western-australia-v-west-indians-2000-01",
+        "url": "/db/PICTURES/DB/112000/017989.jpg",
+        "width": 450,
+        "height": 300,
+        "caption": "Jeremy on the ground after being hit by Nicholson, Western Australia v West Indians, 2000/01",
+        "longCaption": "09 Nov 2000: Kerry Jeremy for the West Indies is hit by a ball from Matthew Nicholson for Western Australia in the match between the Western Warriors and the West Indies at the WACA ground in Perth, Australia.Jeremy retired hurt on 7 runs",
+        "credit": "Getty Images",
+        "photographer": "Tony McDonough",
+        "peerUrls": null,
+        "dateTaken": "2000-11-11T00:00:00Z",
+        "capturedOn": {
+          "year": 2000,
+          "month": 11,
+          "date": 11
+        }
+      },
+      {
+        "id": 41416,
+        "objectId": 193885,
+        "slug": "kerry-jeremy-holds-his-broken-jaw-as-dujon-accompanies-him-back",
+        "url": "/db/PICTURES/DB/112000/017958.jpg",
+        "width": 350,
+        "height": 264,
+        "caption": "Kerry Jeremy holds his broken jaw as Dujon accompanies him back",
+        "longCaption": "West Indies tailender Kerry Jeremy (L) holds his jaw as he walks from the WACA ground accompanied by assistant coach Jeffrey Dujon (R) during a four-day game against the Western Warriors (a West Australian state side) at the WACA ground in Perth 09 November 2000. Jeremy was hit in the face by a delivery from Matthew Nicholson and was forced to retire injured on seven runs, with the West Indies innings coming to an end on 9 for 132. He was transferred to hospital to get a cautionary X-ray for his jaw.",
+        "credit": "AFP",
+        "photographer": "Greg Wood",
+        "peerUrls": null,
+        "dateTaken": "2000-11-10T00:00:00Z",
+        "capturedOn": {
+          "year": 2000,
+          "month": 11,
+          "date": 10
+        }
+      },
+      {
+        "id": 41359,
+        "objectId": 193860,
+        "slug": "jeremy-is-hit-western-australia-v-west-indians-2000-01",
+        "url": "/db/PICTURES/DB/112000/017890.jpg",
+        "width": 450,
+        "height": 300,
+        "caption": "Jeremy is hit, Western Australia v West Indians, 2000/01",
+        "longCaption": "09 Nov 2000: Kerry Jeremy for the West Indies is hit by a ball from Matthew Nicholson for Western Australia in the match between the Western Warriors and the West Indies at the WACA ground in Perth, Australia. Jeremy retired hurt on 7 runs.",
+        "credit": "Getty Images",
+        "photographer": "Tony McDonough",
+        "peerUrls": null,
+        "dateTaken": "2000-11-09T00:00:00Z",
+        "capturedOn": {
+          "year": 2000,
+          "month": 11,
+          "date": 9
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 8,
+        "objectId": 8,
+        "scribeId": 8,
+        "slug": "sri-lanka",
+        "name": "Sri Lanka",
+        "longName": "Sri Lanka",
+        "abbreviation": "SL",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/340000/340047.png",
+        "isCountry": true,
+        "primaryColor": "#203d89",
+        "image": {
+          "id": 340047,
+          "objectId": 1316921,
+          "slug": "sri-lanka-team-flag",
+          "url": "/db/PICTURES/CMS/340000/340047.png",
+          "width": 500,
+          "height": 500,
+          "caption": "Sri Lanka team flag",
+          "longCaption": "Sri Lanka team flag",
+          "credit": "Google",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 78229,
+          "objectId": 784367,
+          "name": "KIC Asalanka",
+          "longName": "Charith Asalanka",
+          "mobileName": "Asalanka",
+          "indexName": "Asalanka, KIC",
+          "battingName": "KIC Asalanka",
+          "fieldingName": "Asalanka",
+          "slug": "charith-asalanka",
+          "imageUrl": "/db/PICTURES/CMS/348100/348128.4.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 6,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 348128,
+            "objectId": 1341438,
+            "slug": "charith-asalanka-player-portrait",
+            "url": "/db/PICTURES/CMS/348100/348128.4.jpg",
+            "width": 160,
+            "height": 225,
+            "caption": "Charith Asalanka, player portrait",
+            "longCaption": "Charith Asalanka, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Matt King",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 62760,
+          "objectId": 465793,
+          "name": "DM de Silva",
+          "longName": "Dhananjaya de Silva",
+          "mobileName": "Dhananjaya",
+          "indexName": "de Silva, DM",
+          "battingName": "DM de Silva",
+          "fieldingName": "de Silva",
+          "slug": "dhananjaya-de-silva",
+          "imageUrl": "/db/PICTURES/CMS/303800/303832.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 9,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303832,
+            "objectId": 1222666,
+            "slug": "dhananjaya-de-silva-portrait",
+            "url": "/db/PICTURES/CMS/303800/303832.png",
+            "width": 160,
+            "height": 201,
+            "caption": "Dhananjaya de Silva portrait",
+            "longCaption": "Dhananjaya de Silva, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 78239,
+          "objectId": 784379,
+          "name": "PWH de Silva",
+          "longName": "Wanindu Hasaranga de Silva",
+          "mobileName": "Hasaranga de Silva",
+          "indexName": "de Silva, PWH",
+          "battingName": "PWH de Silva",
+          "fieldingName": "de Silva",
+          "slug": "wanindu-hasaranga-de-silva",
+          "imageUrl": "/db/PICTURES/CMS/294200/294296.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 7,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 294296,
+            "objectId": 1199371,
+            "slug": "wanindu-hasaranga",
+            "url": "/db/PICTURES/CMS/294200/294296.jpg",
+            "width": 160,
+            "height": 210,
+            "caption": "Wanindu Hasaranga",
+            "longCaption": null,
+            "credit": "Chaminda de Silva",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 70580,
+          "objectId": 623695,
+          "name": "C Karunaratne",
+          "longName": "Chamika Karunaratne",
+          "mobileName": "",
+          "indexName": "Karunaratne, C",
+          "battingName": "C Karunaratne",
+          "fieldingName": "Karunaratne",
+          "slug": "chamika-karunaratne",
+          "imageUrl": "/db/PICTURES/CMS/303800/303830.png",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 5,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303830,
+            "objectId": 1222664,
+            "slug": "chamika-karunaratne-portrait",
+            "url": "/db/PICTURES/CMS/303800/303830.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Chamika Karunaratne portrait",
+            "longCaption": "Chamika Karunaratne, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 70888,
+          "objectId": 629074,
+          "name": "BKG Mendis",
+          "longName": "Kusal Mendis",
+          "mobileName": "Mendis",
+          "indexName": "Mendis, BKG",
+          "battingName": "BKG Mendis",
+          "fieldingName": "Mendis",
+          "slug": "kusal-mendis",
+          "imageUrl": "/db/PICTURES/CMS/303800/303835.png",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 2,
+            "date": 2
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 303835,
+            "objectId": 1222669,
+            "slug": "kusal-mendis-portrait",
+            "url": "/db/PICTURES/CMS/303800/303835.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Kusal Mendis portrait",
+            "longCaption": "Kusal Mendis, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 93033,
+          "objectId": 1028655,
+          "name": "P Nissanka",
+          "longName": "Pathum Nissanka",
+          "mobileName": "Nissanka",
+          "indexName": "Nissanka, P",
+          "battingName": "P Nissanka",
+          "fieldingName": "Nissanka",
+          "slug": "pathum-nissanka",
+          "imageUrl": "/db/PICTURES/CMS/318400/318435.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 5,
+            "date": 18
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 318435,
+            "objectId": 1256641,
+            "slug": "pathum-nissanka-portrait",
+            "url": "/db/PICTURES/CMS/318400/318435.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Pathum Nissanka portrait",
+            "longCaption": "Pathum Nissanka portrait, Antigua and Barbuda, March 12, 2021",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 56511,
+          "objectId": 342619,
+          "name": "PBB Rajapaksa",
+          "longName": "Bhanuka Rajapaksa",
+          "mobileName": "Rajapaksa",
+          "indexName": "Rajapaksa, PBB",
+          "battingName": "PBB Rajapaksa",
+          "fieldingName": "Rajapaksa",
+          "slug": "bhanuka-rajapaksa",
+          "imageUrl": "/db/PICTURES/CMS/338100/338183.4.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 10,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 338183,
+            "objectId": 1311483,
+            "slug": "bhanuka-rajapaksa-player-portrait",
+            "url": "/db/PICTURES/CMS/338100/338183.4.jpg",
+            "width": 160,
+            "height": 211,
+            "caption": "Bhanuka Rajapaksa player portrait",
+            "longCaption": "Bhanuka Rajapaksa player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Michael Steele",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 64698,
+          "objectId": 499594,
+          "name": "CAK Rajitha",
+          "longName": "Kasun Rajitha",
+          "mobileName": "Rajitha",
+          "indexName": "Rajitha, CAK",
+          "battingName": "CAK Rajitha",
+          "fieldingName": "Rajitha",
+          "slug": "kasun-rajitha",
+          "imageUrl": "/db/PICTURES/CMS/303800/303833.png",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 6,
+            "date": 1
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303833,
+            "objectId": 1222667,
+            "slug": "kasun-rajitha-portrait",
+            "url": "/db/PICTURES/CMS/303800/303833.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Kasun Rajitha portrait",
+            "longCaption": "Kasun Rajitha, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 61690,
+          "objectId": 437316,
+          "name": "MD Shanaka",
+          "longName": "Dasun Shanaka",
+          "mobileName": "Shanaka",
+          "indexName": "Shanaka, MD",
+          "battingName": "MD Shanaka",
+          "fieldingName": "Shanaka",
+          "slug": "dasun-shanaka",
+          "imageUrl": "/db/PICTURES/CMS/327900/327999.7.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 9,
+            "date": 9
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 327999,
+            "objectId": 1280829,
+            "slug": "dasun-shanaka-player-portrait",
+            "url": "/db/PICTURES/CMS/327900/327999.7.jpg",
+            "width": 160,
+            "height": 253,
+            "caption": "Dasun Shanaka, player portrait",
+            "longCaption": "Dasun Shanaka, player portrait",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 101991,
+          "objectId": 1138316,
+          "name": "M Theekshana",
+          "longName": "Maheesh Theekshana",
+          "mobileName": "Theekshana",
+          "indexName": "Theekshana, M",
+          "battingName": "M Theekshana",
+          "fieldingName": "Theekshana",
+          "slug": "maheesh-theekshana",
+          "imageUrl": "/db/PICTURES/CMS/336200/336296.4.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 8,
+            "date": 1
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 336296,
+            "objectId": 1306203,
+            "slug": "mahesh-theekshana-player-portrait",
+            "url": "/db/PICTURES/CMS/336200/336296.4.jpg",
+            "width": 160,
+            "height": 221,
+            "caption": "Mahesh Theekshana, player portrait",
+            "longCaption": "Mahesh Theekshana, player portrait",
+            "credit": "Cricket Australia/Getty Images",
+            "photographer": "Brendon Thorne",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 56832,
+          "objectId": 348056,
+          "name": "KR Mayers",
+          "longName": "Kyle Mayers",
+          "mobileName": "Mayers",
+          "indexName": "Mayers, KR",
+          "battingName": "KR Mayers",
+          "fieldingName": "Mayers",
+          "slug": "kyle-mayers",
+          "imageUrl": "/db/PICTURES/CMS/316000/316081.png",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 9,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 316081,
+            "objectId": 1249948,
+            "slug": "kyle-mayers-portrait",
+            "url": "/db/PICTURES/CMS/316000/316081.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Kyle Mayers portrait",
+            "longCaption": "Kyle Mayers portrait, February 2021",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 70405,
+          "objectId": 604302,
+          "name": "N Pooran",
+          "longName": "Nicholas Pooran",
+          "mobileName": "Pooran",
+          "indexName": "Pooran, N",
+          "battingName": "N Pooran",
+          "fieldingName": "Pooran",
+          "slug": "nicholas-pooran",
+          "imageUrl": "/db/PICTURES/CMS/302200/302286.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 10,
+            "date": 2
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 302286,
+            "objectId": 1220424,
+            "slug": "nicholas-pooran-portrait",
+            "url": "/db/PICTURES/CMS/302200/302286.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Nicholas Pooran portrait",
+            "longCaption": "Nicholas Pooran portrait, Bristol, May 25, 2019",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 57209,
+          "objectId": 355359,
+          "name": "SR Taylor",
+          "longName": "Stafanie Taylor",
+          "mobileName": "Taylor",
+          "indexName": "Taylor, SR",
+          "battingName": "SR Taylor",
+          "fieldingName": "Taylor",
+          "slug": "stafanie-taylor",
+          "imageUrl": "/db/PICTURES/CMS/306600/306628.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 6,
+            "date": 11
+          },
+          "dateOfDeath": null,
+          "gender": "F",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 306628,
+            "objectId": 1227350,
+            "slug": "stafanie-taylor-portrait",
+            "url": "/db/PICTURES/CMS/306600/306628.png",
+            "width": 160,
+            "height": 201,
+            "caption": "Stafanie Taylor portrait",
+            "longCaption": "Stafanie Taylor portrait, July 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 72509,
+          "objectId": 677081,
+          "name": "KMA Paul",
+          "longName": "Keemo Paul",
+          "mobileName": "Paul",
+          "indexName": "Paul, KMA",
+          "battingName": "KMA Paul",
+          "fieldingName": "Paul",
+          "slug": "keemo-paul",
+          "imageUrl": "/db/PICTURES/CMS/352300/352355.4.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 2,
+            "date": 21
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 352355,
+            "objectId": 1353249,
+            "slug": "keemo-paul-player-portrait-2023",
+            "url": "/db/PICTURES/CMS/352300/352355.4.jpg",
+            "width": 160,
+            "height": 225,
+            "caption": "Keemo Paul, player portrait 2023",
+            "longCaption": "Keemo Paul, player portrait 2023",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 72397,
+          "objectId": 670031,
+          "name": "AS Joseph",
+          "longName": "Alzarri Joseph",
+          "mobileName": "Joseph",
+          "indexName": "Joseph, AS",
+          "battingName": "AS Joseph",
+          "fieldingName": "Joseph",
+          "slug": "alzarri-joseph",
+          "imageUrl": "/db/PICTURES/CMS/321900/321943.png",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 11,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 321943,
+            "objectId": 1264229,
+            "slug": "alzarri-joseph-player-page-headshot-cutout-2021",
+            "url": "/db/PICTURES/CMS/321900/321943.png",
+            "width": 600,
+            "height": 436,
+            "caption": "Alzarri Joseph player page headshot cutout, 2021",
+            "longCaption": "Alzarri Joseph player page headshot cutout, 2021",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 51012,
+          "objectId": 276298,
+          "name": "AD Russell",
+          "longName": "Andre Russell",
+          "mobileName": "Russell",
+          "indexName": "Russell, AD",
+          "battingName": "AD Russell",
+          "fieldingName": "Russell",
+          "slug": "andre-russell",
+          "imageUrl": "/db/PICTURES/CMS/308900/308972.png",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 4,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 308972,
+            "objectId": 1232420,
+            "slug": "andre-russell-portrait",
+            "url": "/db/PICTURES/CMS/308900/308972.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Andre Russell portrait",
+            "longCaption": "Andre Russell portrait, September 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 49039,
+          "objectId": 230558,
+          "name": "SP Narine",
+          "longName": "Sunil Narine",
+          "mobileName": "Narine",
+          "indexName": "Narine, SP",
+          "battingName": "SP Narine",
+          "fieldingName": "Narine",
+          "slug": "sunil-narine",
+          "imageUrl": "/db/PICTURES/CMS/203300/203303.1.jpg",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 5,
+            "date": 26
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 203303,
+            "objectId": 818705,
+            "slug": "sunil-narine",
+            "url": "/db/PICTURES/CMS/203300/203303.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Sunil Narine",
+            "longCaption": "Sunil Narine",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 80425,
+          "objectId": 820351,
+          "name": "R Powell",
+          "longName": "Rovman Powell",
+          "mobileName": "Powell",
+          "indexName": "Powell, R",
+          "battingName": "R Powell",
+          "fieldingName": "Powell",
+          "slug": "rovman-powell",
+          "imageUrl": "/db/PICTURES/CMS/246200/246267.1.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 7,
+            "date": 23
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 246267,
+            "objectId": 1030741,
+            "slug": "rovman-powell-player-portrait",
+            "url": "/db/PICTURES/CMS/246200/246267.1.jpg",
+            "width": 160,
+            "height": 212,
+            "caption": "Rovman Powell player portrait",
+            "longCaption": "Rovman Powell player portrait",
+            "credit": "CPL/Sportsfile",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 72393,
+          "objectId": 670025,
+          "name": "SO Hetmyer",
+          "longName": "Shimron Hetmyer",
+          "mobileName": "Hetmyer",
+          "indexName": "Hetmyer, SO",
+          "battingName": "SO Hetmyer",
+          "fieldingName": "Hetmyer",
+          "slug": "shimron-hetmyer",
+          "imageUrl": "/db/PICTURES/CMS/356800/356802.1.png",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 12,
+            "date": 26
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 356802,
+            "objectId": 1365014,
+            "slug": "hetmeyer-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356802.1.png",
+            "width": 160,
+            "height": 215,
+            "caption": "Hetmeyer player portrait",
+            "longCaption": "Hetmeyer player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 59339,
+          "objectId": 391485,
+          "name": "JO Holder",
+          "longName": "Jason Holder",
+          "mobileName": "Holder",
+          "indexName": "Holder, JO",
+          "battingName": "JO Holder",
+          "fieldingName": "Holder",
+          "slug": "jason-holder",
+          "imageUrl": "/db/PICTURES/CMS/214700/214757.1.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 11,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 214757,
+            "objectId": 883997,
+            "slug": "jason-holder",
+            "url": "/db/PICTURES/CMS/214700/214757.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Jason Holder",
+            "longCaption": "Jason Holder",
+            "credit": "WICB Media Photo/Randy Brooks",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "List A"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 11,
+          "type": "g",
+          "name": "Other matches"
+        },
+        {
+          "id": 12,
+          "type": "g",
+          "name": "Other one-day/limited-overs matches"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 2,
+          "type": "i",
+          "name": "ODI",
+          "longName": "One-Day Internationals",
+          "multipleClass": 0,
+          "slug": "one-day-internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "LA",
+          "longName": "List A matches",
+          "multipleClass": 0,
+          "slug": "list-a-matches"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "T20",
+          "longName": "Twenty20 matches",
+          "multipleClass": 0,
+          "slug": "twenty20-matches"
+        },
+        {
+          "id": 12,
+          "type": "g",
+          "name": "FC+LA+T20",
+          "longName": "Combined First-class, List A and Twenty20",
+          "multipleClass": 2,
+          "slug": "combined-first-class-list-a-and-twenty20"
+        },
+        {
+          "id": 14,
+          "type": "g",
+          "name": "Minor",
+          "longName": "Minor cricket",
+          "multipleClass": 0,
+          "slug": "minor-cricket"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 2,
+          "matches": 6,
+          "batted": true,
+          "battedInnings": 4,
+          "bowled": true,
+          "bowledInnings": 5,
+          "fielded": true,
+          "fieldedInnings": 6,
+          "dismissals": 0,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 332,
+        "2": 215,
+        "3": 93,
+        "8": 29,
+        "9": 123,
+        "10": 62,
+        "14": 159,
+        "15": 297
+      },
+      "teamContractedPlayerCount": 18,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 17,
+          "type": "g",
+          "name": "Women's Twenty20"
+        }
+      ]
+    }
+  }
+}

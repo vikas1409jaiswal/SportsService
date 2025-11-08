@@ -1,0 +1,3055 @@
+{
+  "player": {
+    "id": 8069,
+    "objectId": 55463,
+    "name": "TR Gripper",
+    "longName": "Trevor Gripper",
+    "mobileName": "Gripper",
+    "indexName": "Gripper, TR",
+    "battingName": "TR Gripper",
+    "fieldingName": "Gripper",
+    "slug": "trevor-gripper",
+    "imageUrl": "/db/PICTURES/DB/052004/052154.player.jpg",
+    "dateOfBirth": {
+      "year": 1975,
+      "month": 12,
+      "date": 28
+    },
+    "dateOfDeath": null,
+    "gender": "M",
+    "battingStyles": [
+      "rhb"
+    ],
+    "bowlingStyles": [
+      "ob"
+    ],
+    "longBattingStyles": [
+      "right-hand bat"
+    ],
+    "longBowlingStyles": [
+      "right-arm offbreak"
+    ],
+    "image": {
+      "id": 21289,
+      "objectId": 55462,
+      "slug": "trevor-gripper",
+      "url": "/db/PICTURES/DB/052004/052154.player.jpg",
+      "width": 160,
+      "height": 221,
+      "caption": "Trevor Gripper",
+      "longCaption": "Trevor Gripper",
+      "credit": "Getty Images",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 9,
+    "playerRoleTypeIds": [
+      1
+    ],
+    "playingRoles": [
+      "opening batter"
+    ],
+    "fullName": "Trevor Raymond Gripper",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": 0,
+    "heightUnit": null,
+    "education": "",
+    "country": {
+      "id": 9,
+      "objectId": 9,
+      "name": "Zimbabwe",
+      "shortName": "Zimbabwe",
+      "abbreviation": "ZIM",
+      "slug": "zimbabwe",
+      "image": {
+        "id": 340503,
+        "objectId": 1318712,
+        "slug": "zimbabwe-team-flag-latest",
+        "url": "/db/PICTURES/CMS/340500/340503.png",
+        "width": 500,
+        "height": 500,
+        "caption": "Zimbabwe team flag-latest",
+        "longCaption": "Zimbabwe team flag-latest",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Salisbury (now Harare)",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "",
+    "intlCareerSpan": "1999 - 2004",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 166073,
+      "objectId": 666683,
+      "slug": "dion-ebrahim-and-trevor-gripper-celebrate-the-dismissal-of-hamish-marshall",
+      "url": "/db/PICTURES/CMS/166000/166073.jpg",
+      "width": 1400,
+      "height": 1268,
+      "caption": "Dion Ebrahim and Trevor Gripper celebrate the dismissal of Hamish Marshall",
+      "longCaption": "Dion Ebrahim and Trevor Gripper celebrate the dismissal of Hamish Marshall, Zimbabwe v New Zealand, 1st Test, Harare, 1st day, August 7, 2005",
+      "credit": "Getty Images",
+      "photographer": null,
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": null,
+        "SQUARE": null
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": true,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 31,
+    "totalVideos": 0,
+    "totalImages": 9
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 9,
+          "objectId": 9,
+          "scribeId": 9,
+          "slug": "zimbabwe",
+          "name": "Zimbabwe",
+          "longName": "Zimbabwe",
+          "abbreviation": "ZIM",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/340500/340503.png",
+          "isCountry": true,
+          "primaryColor": "#d04037",
+          "image": {
+            "id": 340503,
+            "objectId": 1318712,
+            "slug": "zimbabwe-team-flag-latest",
+            "url": "/db/PICTURES/CMS/340500/340503.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Zimbabwe team flag-latest",
+            "longCaption": "Zimbabwe team flag-latest",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3881,
+          "objectId": 3830,
+          "scribeId": 3830,
+          "slug": "mashonaland",
+          "name": "Mashonaland",
+          "longName": "Mashonaland",
+          "abbreviation": "Mash",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3882,
+          "objectId": 3831,
+          "scribeId": 3831,
+          "slug": "mashonaland-a",
+          "name": "Masho'land A",
+          "longName": "Mashonaland A",
+          "abbreviation": "",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3891,
+          "objectId": 3840,
+          "scribeId": 3840,
+          "slug": "matabeleland",
+          "name": "Matabeleland",
+          "longName": "Matabeleland",
+          "abbreviation": "",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      }
+    ],
+    "relations": [
+      {
+        "relation": "father",
+        "player": {
+          "id": 5130,
+          "objectId": 55461,
+          "name": "RA Gripper",
+          "longName": "Ray Gripper",
+          "mobileName": "Gripper",
+          "indexName": "Gripper, RA",
+          "battingName": "RA Gripper",
+          "fieldingName": "Gripper",
+          "slug": "ray-gripper",
+          "imageUrl": "/db/PICTURES/DB/102004/055490.player.jpg",
+          "dateOfBirth": {
+            "year": 1938,
+            "month": 7,
+            "date": 7
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 40237,
+            "objectId": 55460,
+            "slug": "ray-gripper",
+            "url": "/db/PICTURES/DB/102004/055490.player.jpg",
+            "width": 160,
+            "height": 228,
+            "caption": "Ray Gripper",
+            "longCaption": "Ray Gripper",
+            "credit": "ESPNcricinfo Ltd",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [],
+          "playingRoles": []
+        }
+      }
+    ],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "A gritty opening batsman of the old school who once made 28 in 263 minutes against England A, Trevor Gripper was, by his own admission, a late developer. He impressed the selectors with a fifty for ZCU President's XI against the touring Australians in 1999-2000, and was surprisingly given a Test debut against them the following week, when he hit 60 in the second innings. Gripper is a strong on-side player who is aware that he needs to improve his shotmaking on the off side. After a spell out of the side, he returned for the tour of Bangladesh late in 2001, and ground out a maiden Test century at Chittagong. But bleak trips to Sri Lanka and India followed that and he was dropped again. However, consistent scores for his domestic side Mashonaland, including 234 against Manicaland, earned him a recall and a place on the 2003-04 Australia tour.  But his international career hit the buffers when he joined the rebel strike in support of Heath Streak, and although all the players returned to work, Gripper was not among those reselected.  While he did play league cricket in England, that he was overlooked was probably more to do with the fact that his father, Ray, a former Rhodesian captain,  was identified by the board as a leading opponent and a thorn in their side.\n<BR><B>Geoffrey Dean</B>"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 1,
+          "mt": 20,
+          "in": 38,
+          "rn": 809,
+          "bl": 2473,
+          "avg": 21.86,
+          "sr": 32.71,
+          "no": 1,
+          "fo": 96,
+          "si": 2,
+          "hs": "112",
+          "hn": 1,
+          "ft": 5,
+          "ct": 14,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 2,
+          "mt": 8,
+          "in": 8,
+          "rn": 80,
+          "bl": 187,
+          "avg": 10,
+          "sr": 42.78,
+          "no": 0,
+          "fo": 5,
+          "si": 0,
+          "hs": "26",
+          "hn": 0,
+          "ft": 0,
+          "ct": 4,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 62,
+          "in": 111,
+          "rn": 3515,
+          "bl": null,
+          "avg": 33.79,
+          "sr": null,
+          "no": 7,
+          "fo": null,
+          "si": null,
+          "hs": "234",
+          "hn": 5,
+          "ft": 26,
+          "ct": 56,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 5,
+          "mt": 37,
+          "in": 35,
+          "rn": 921,
+          "bl": null,
+          "avg": 28.78,
+          "sr": null,
+          "no": 3,
+          "fo": null,
+          "si": null,
+          "hs": "103",
+          "hn": 1,
+          "ft": 5,
+          "ct": 18,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 1,
+          "mt": 20,
+          "in": 20,
+          "rn": 509,
+          "bl": 793,
+          "avg": 84.83,
+          "sr": 132.1,
+          "wk": 6,
+          "bbi": "2/91",
+          "bbm": "2/91",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 3.85
+        },
+        {
+          "type": "BOWLING",
+          "cl": 2,
+          "mt": 8,
+          "in": 6,
+          "rn": 76,
+          "bl": 120,
+          "avg": 38,
+          "sr": 60,
+          "wk": 2,
+          "bbi": "2/28",
+          "bbm": "2/28",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 3.8
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 62,
+          "in": null,
+          "rn": 2486,
+          "bl": 4430,
+          "avg": 31.87,
+          "sr": 56.7,
+          "wk": 78,
+          "bbi": "5/40",
+          "bbm": null,
+          "fwk": null,
+          "fw": 2,
+          "tw": 0,
+          "bwe": 3.36
+        },
+        {
+          "type": "BOWLING",
+          "cl": 5,
+          "mt": 37,
+          "in": null,
+          "rn": 599,
+          "bl": 718,
+          "avg": 39.93,
+          "sr": 47.8,
+          "wk": 15,
+          "bbi": "3/34",
+          "bbm": "3/34",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 5
+        }
+      ]
+    },
+    "topRecords": [],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 20,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 1465,
+                    "id": 1465,
+                    "objectId": 63851,
+                    "scribeId": 63851,
+                    "slug": "zimbabwe-vs-australia-only-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1999/00",
+                    "title": "Only Test",
+                    "floodlit": "day",
+                    "startDate": "1999-10-14T00:00:00Z",
+                    "endDate": "1999-10-17T00:00:00Z",
+                    "startTime": "1999-10-14T07:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Australia won by 10 wickets",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001463",
+                    "generalNumber": null,
+                    "winnerTeamId": 2,
+                    "tossWinnerTeamId": 9,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1119,
+                      "objectId": 61378,
+                      "scribeId": 15767,
+                      "slug": "australia-tour-of-zimbabwe-1999-00",
+                      "name": "Australia tour of Zimbabwe",
+                      "longName": "Australia tour of Zimbabwe",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1999,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1999/00",
+                      "startDate": "1999-10-09T00:00:00Z",
+                      "endDate": "1999-10-24T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 260,
+                      "objectId": 59545,
+                      "name": "Harare Sports Club",
+                      "smallName": "Harare",
+                      "longName": "Harare Sports Club",
+                      "slug": "harare-sports-club",
+                      "location": "",
+                      "image": {
+                        "id": 13881,
+                        "objectId": 59544,
+                        "slug": "general-view-of-harare-sports-club",
+                        "url": "/db/PICTURES/DB/032005/058856.jpg",
+                        "width": 210,
+                        "height": 180,
+                        "caption": "General view of Harare Sports Club",
+                        "longCaption": "General view of Harare Sports Club",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 1028,
+                        "objectId": 59540,
+                        "name": "Harare",
+                        "area": "",
+                        "timezone": "Africa/Johannesburg"
+                      },
+                      "country": {
+                        "id": 9,
+                        "objectId": 9,
+                        "name": "Zimbabwe",
+                        "shortName": "Zimbabwe",
+                        "abbreviation": "ZIM",
+                        "slug": "zimbabwe"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 9,
+                          "objectId": 9,
+                          "scribeId": 9,
+                          "slug": "zimbabwe",
+                          "name": "Zimbabwe",
+                          "longName": "Zimbabwe",
+                          "abbreviation": "ZIM",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340503.png",
+                          "isCountry": true,
+                          "primaryColor": "#d04037",
+                          "image": {
+                            "id": 340503,
+                            "objectId": 1318712,
+                            "slug": "zimbabwe-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340503.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Zimbabwe team flag-latest",
+                            "longCaption": "Zimbabwe team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "194 & 232",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 2,
+                          "objectId": 2,
+                          "scribeId": 2,
+                          "slug": "australia",
+                          "name": "Australia",
+                          "longName": "Australia",
+                          "abbreviation": "AUS",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+                          "isCountry": true,
+                          "primaryColor": "#ffdd00",
+                          "image": {
+                            "id": 340493,
+                            "objectId": 1318684,
+                            "slug": "australia-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340400/340493.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Australia team flag-latest",
+                            "longCaption": "Australia team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "422 & 5/0",
+                        "scoreInfo": "T:5",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 1,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:37:15.572Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 1684,
+                    "id": 1684,
+                    "objectId": 64070,
+                    "scribeId": 64070,
+                    "slug": "zimbabwe-vs-bangladesh-2nd-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "2003/04",
+                    "title": "2nd Test",
+                    "floodlit": "day",
+                    "startDate": "2004-02-26T00:00:00Z",
+                    "endDate": "2004-03-01T00:00:00Z",
+                    "startTime": "2004-02-26T07:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001684",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 9,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 4,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1922,
+                      "objectId": 62181,
+                      "scribeId": 15097,
+                      "slug": "bangladesh-tour-of-zimbabwe-2003-04",
+                      "name": "Bangladesh tour of Zimbabwe",
+                      "longName": "Bangladesh tour of Zimbabwe",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2004,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "2003/04",
+                      "startDate": "2004-02-14T00:00:00Z",
+                      "endDate": "2004-03-14T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 261,
+                      "objectId": 59537,
+                      "name": "Queens Sports Club, Bulawayo",
+                      "smallName": "Bulawayo",
+                      "longName": "Queens Sports Club, Bulawayo",
+                      "slug": "queens-sports-club-bulawayo",
+                      "location": "",
+                      "image": {
+                        "id": 49498,
+                        "objectId": 59536,
+                        "slug": "queens-sports-club-bulawayo",
+                        "url": "/db/PICTURES/DB/122004/056375.jpg",
+                        "width": 160,
+                        "height": 107,
+                        "caption": "Queens Sports Club, Bulawayo",
+                        "longCaption": "Queens Sports Club, Bulawayo",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 1027,
+                        "objectId": 59533,
+                        "name": "Bulawayo",
+                        "area": "",
+                        "timezone": "Africa/Harare"
+                      },
+                      "country": {
+                        "id": 9,
+                        "objectId": 9,
+                        "name": "Zimbabwe",
+                        "shortName": "Zimbabwe",
+                        "abbreviation": "ZIM",
+                        "slug": "zimbabwe"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 25,
+                          "objectId": 25,
+                          "scribeId": 25,
+                          "slug": "bangladesh",
+                          "name": "Bangladesh",
+                          "longName": "Bangladesh",
+                          "abbreviation": "BAN",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/341400/341456.png",
+                          "isCountry": true,
+                          "primaryColor": "#006a4e",
+                          "image": {
+                            "id": 341456,
+                            "objectId": 1321180,
+                            "slug": "bangladesh-latest-team-flag",
+                            "url": "/db/PICTURES/CMS/341400/341456.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Bangladesh latest-team flag",
+                            "longCaption": "Bangladesh latest-team flag",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "168",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 9,
+                          "objectId": 9,
+                          "scribeId": 9,
+                          "slug": "zimbabwe",
+                          "name": "Zimbabwe",
+                          "longName": "Zimbabwe",
+                          "abbreviation": "ZIM",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340503.png",
+                          "isCountry": true,
+                          "primaryColor": "#d04037",
+                          "image": {
+                            "id": 340503,
+                            "objectId": 1318712,
+                            "slug": "zimbabwe-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340503.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Zimbabwe team flag-latest",
+                            "longCaption": "Zimbabwe team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "210/2",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 5,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:35:21.115Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 2,
+                "name": "One-Day Internationals",
+                "type": "i"
+              },
+              "total": 8,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 3517,
+                    "id": 3517,
+                    "objectId": 65903,
+                    "scribeId": 65903,
+                    "slug": "pakistan-vs-zimbabwe-3rd-match",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2001/02",
+                    "title": "3rd Match",
+                    "floodlit": "daynight",
+                    "startDate": "2001-10-28T00:00:00Z",
+                    "endDate": "2001-10-28T00:00:00Z",
+                    "startTime": "2001-10-28T12:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Pakistan won by 106 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001768",
+                    "generalNumber": null,
+                    "winnerTeamId": 7,
+                    "tossWinnerTeamId": 7,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 836,
+                      "objectId": 61095,
+                      "scribeId": 8537,
+                      "slug": "khaleej-times-trophy-2001-02",
+                      "name": "Khaleej Times Trophy",
+                      "longName": "Khaleej Times Trophy",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2001,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "Pakistan, Sri Lanka, Zimbabwe in United Arab Emirates",
+                      "season": "2001/02",
+                      "startDate": "2001-10-26T00:00:00Z",
+                      "endDate": "2001-11-04T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 848,
+                      "objectId": 59392,
+                      "name": "Sharjah Cricket Association Stadium",
+                      "smallName": "Sharjah",
+                      "longName": "Sharjah Cricket Association Stadium",
+                      "slug": "sharjah-cricket-stadium",
+                      "location": "",
+                      "image": {
+                        "id": 324961,
+                        "objectId": 1271088,
+                        "slug": "sharjah-cricket-stadium-a-general-view",
+                        "url": "/db/PICTURES/CMS/324900/324961.16.jpg",
+                        "width": 300,
+                        "height": 207,
+                        "caption": "Sharjah Cricket Stadium: a general view",
+                        "longCaption": "Sharjah Cricket Stadium: a general view",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 976,
+                        "objectId": 59391,
+                        "name": "Sharjah",
+                        "area": "",
+                        "timezone": "Asia/Dubai"
+                      },
+                      "country": {
+                        "id": 27,
+                        "objectId": 27,
+                        "name": "United Arab Emirates",
+                        "shortName": "U.A.E.",
+                        "abbreviation": "UAE",
+                        "slug": "united-arab-emirates"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "279/6",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 9,
+                          "objectId": 9,
+                          "scribeId": 9,
+                          "slug": "zimbabwe",
+                          "name": "Zimbabwe",
+                          "longName": "Zimbabwe",
+                          "abbreviation": "ZIM",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340503.png",
+                          "isCountry": true,
+                          "primaryColor": "#d04037",
+                          "image": {
+                            "id": 340503,
+                            "objectId": 1318712,
+                            "slug": "zimbabwe-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340503.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Zimbabwe team flag-latest",
+                            "longCaption": "Zimbabwe team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "173",
+                        "scoreInfo": "39.1/50 ov, T:280",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 10,
+                    "totalVideos": 0,
+                    "totalStories": 2,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:37:15.572Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 2463,
+                    "id": 2463,
+                    "objectId": 64849,
+                    "scribeId": 64849,
+                    "slug": "zimbabwe-vs-west-indies-3rd-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2003/04",
+                    "title": "3rd ODI",
+                    "floodlit": "day",
+                    "startDate": "2003-11-26T00:00:00Z",
+                    "endDate": "2003-11-26T00:00:00Z",
+                    "startTime": "2003-11-26T07:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Zimbabwe won by 21 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "002067",
+                    "generalNumber": null,
+                    "winnerTeamId": 9,
+                    "tossWinnerTeamId": 4,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1653,
+                      "objectId": 61912,
+                      "scribeId": 15129,
+                      "slug": "west-indies-tour-of-zimbabwe-2003-04",
+                      "name": "West Indies tour of Zimbabwe",
+                      "longName": "West Indies tour of Zimbabwe",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2003,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "2003/04",
+                      "startDate": "2003-10-30T00:00:00Z",
+                      "endDate": "2003-11-30T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 260,
+                      "objectId": 59545,
+                      "name": "Harare Sports Club",
+                      "smallName": "Harare",
+                      "longName": "Harare Sports Club",
+                      "slug": "harare-sports-club",
+                      "location": "",
+                      "image": {
+                        "id": 13881,
+                        "objectId": 59544,
+                        "slug": "general-view-of-harare-sports-club",
+                        "url": "/db/PICTURES/DB/032005/058856.jpg",
+                        "width": 210,
+                        "height": 180,
+                        "caption": "General view of Harare Sports Club",
+                        "longCaption": "General view of Harare Sports Club",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 1028,
+                        "objectId": 59540,
+                        "name": "Harare",
+                        "area": "",
+                        "timezone": "Africa/Johannesburg"
+                      },
+                      "country": {
+                        "id": 9,
+                        "objectId": 9,
+                        "name": "Zimbabwe",
+                        "shortName": "Zimbabwe",
+                        "abbreviation": "ZIM",
+                        "slug": "zimbabwe"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 9,
+                          "objectId": 9,
+                          "scribeId": 9,
+                          "slug": "zimbabwe",
+                          "name": "Zimbabwe",
+                          "longName": "Zimbabwe",
+                          "abbreviation": "ZIM",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340503.png",
+                          "isCountry": true,
+                          "primaryColor": "#d04037",
+                          "image": {
+                            "id": 340503,
+                            "objectId": 1318712,
+                            "slug": "zimbabwe-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340503.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Zimbabwe team flag-latest",
+                            "longCaption": "Zimbabwe team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "229/5",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "208",
+                        "scoreInfo": "47.2/50 ov, T:230",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 2,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:37:15.572Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 62,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": null,
+                  "span": "1996/97"
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 8282,
+                    "id": 8282,
+                    "objectId": 209208,
+                    "scribeId": 209208,
+                    "slug": "zimbabwe-a-vs-pakistan-a",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "2005",
+                    "title": "",
+                    "floodlit": null,
+                    "startDate": "2005-05-12T00:00:00Z",
+                    "endDate": "2005-05-15T00:00:00Z",
+                    "startTime": "2005-05-12T07:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Pakistan A won by 272 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 2989,
+                    "tossWinnerTeamId": 3909,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 2523,
+                      "objectId": 208361,
+                      "scribeId": 14853,
+                      "slug": "pakistan-a-tour-of-zimbabwe-2005",
+                      "name": "Pakistan A tour of Zimbabwe",
+                      "longName": "Pakistan A tour of Zimbabwe",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2005,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "2005",
+                      "startDate": "2005-04-01T00:00:00Z",
+                      "endDate": "2005-09-26T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 260,
+                      "objectId": 59545,
+                      "name": "Harare Sports Club",
+                      "smallName": "Harare",
+                      "longName": "Harare Sports Club",
+                      "slug": "harare-sports-club",
+                      "location": "",
+                      "image": {
+                        "id": 13881,
+                        "objectId": 59544,
+                        "slug": "general-view-of-harare-sports-club",
+                        "url": "/db/PICTURES/DB/032005/058856.jpg",
+                        "width": 210,
+                        "height": 180,
+                        "caption": "General view of Harare Sports Club",
+                        "longCaption": "General view of Harare Sports Club",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 1028,
+                        "objectId": 59540,
+                        "name": "Harare",
+                        "area": "",
+                        "timezone": "Africa/Johannesburg"
+                      },
+                      "country": {
+                        "id": 9,
+                        "objectId": 9,
+                        "name": "Zimbabwe",
+                        "shortName": "Zimbabwe",
+                        "abbreviation": "ZIM",
+                        "slug": "zimbabwe"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 2989,
+                          "objectId": 2938,
+                          "scribeId": 2938,
+                          "slug": "pakistan-shaheens",
+                          "name": "Pakistan A",
+                          "longName": "Pakistan A",
+                          "abbreviation": "SHA",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "311 & 273/9d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3909,
+                          "objectId": 3858,
+                          "scribeId": 3858,
+                          "slug": "zimbabwe-a",
+                          "name": "Zimbabwe A",
+                          "longName": "Zimbabwe A",
+                          "abbreviation": "ZIM-A",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313131.logo.png",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 313131,
+                            "objectId": 1241590,
+                            "slug": "zimbabwe-and-rhodesia-logo",
+                            "url": "/db/PICTURES/CMS/313100/313131.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Zimbabwe (and Rhodesia) logo",
+                            "longCaption": "Zimbabwe (and Rhodesia) logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "200 & 112",
+                        "scoreInfo": "T:385",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 0,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:37:15.572Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 5,
+                "name": "List A",
+                "type": "g"
+              },
+              "total": 37,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": null,
+                  "span": "1997/98"
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 25500,
+                    "id": 25500,
+                    "objectId": 411184,
+                    "scribeId": 411184,
+                    "slug": "manicaland-vs-mashonaland",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2004/05",
+                    "title": "",
+                    "floodlit": "day",
+                    "startDate": "2004-11-22T00:00:00Z",
+                    "endDate": "2004-11-22T00:00:00Z",
+                    "startTime": "2004-11-22T07:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Mashonaland won by 14 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 3881,
+                    "tossWinnerTeamId": 3878,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 2500,
+                      "objectId": 141550,
+                      "scribeId": 8757,
+                      "slug": "faithwear-clothing-inter-provincial-one-day-competition-2004-05",
+                      "name": "Faithwear Clothing Inter-Provincial One-Day Competition",
+                      "longName": "Faithwear Clothing Inter-Provincial One-Day Competition",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2004,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in Zimbabwe",
+                      "season": "2004/05",
+                      "startDate": "2004-11-09T00:00:00Z",
+                      "endDate": "2004-11-22T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 1529,
+                      "objectId": 59558,
+                      "name": "Mutare Sports Club",
+                      "smallName": "Mutare",
+                      "longName": "Mutare Sports Club",
+                      "slug": "mutare-umtali-sports-club",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 1030,
+                        "objectId": 59557,
+                        "name": "Mutare",
+                        "area": "Manicaland",
+                        "timezone": "Africa/Harare"
+                      },
+                      "country": {
+                        "id": 9,
+                        "objectId": 9,
+                        "name": "Zimbabwe",
+                        "shortName": "Zimbabwe",
+                        "abbreviation": "ZIM",
+                        "slug": "zimbabwe"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 3881,
+                          "objectId": 3830,
+                          "scribeId": 3830,
+                          "slug": "mashonaland",
+                          "name": "Mashonaland",
+                          "longName": "Mashonaland",
+                          "abbreviation": "Mash",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "280/5",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3878,
+                          "objectId": 3827,
+                          "scribeId": 3827,
+                          "slug": "manicaland",
+                          "name": "Manicaland",
+                          "longName": "Manicaland",
+                          "abbreviation": "",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "266",
+                        "scoreInfo": "49.2/50 ov, T:281",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 0,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:34:10.336Z"
+                  },
+                  "span": null
+                }
+              ]
+            }
+          ],
+          "recent": []
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 129218,
+        "objectId": 416688,
+        "scribeId": 22782598,
+        "slug": "zimbabwe-rebels-poised-for-comeback",
+        "title": "Zimbabwe 'rebels' poised for comeback",
+        "subTitle": "Zimbabwe news",
+        "seoTitle": "",
+        "summary": "Trevor Gripper and Barney Rogers, two so-called \"rebels\" who walked out on Zimbabwe five years ago, could be about to make a comeback",
+        "byline": "Cricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2009-07-28T17:48:21Z",
+        "modifiedAt": "2009-07-28T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 1,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:37:15.589Z"
+      },
+      {
+        "id": 108769,
+        "objectId": 307086,
+        "scribeId": 22919829,
+        "slug": "look-what-you-re-missing",
+        "title": "Look what you're missing",
+        "subTitle": "An apolitical Zimbabwe XI",
+        "seoTitle": "",
+        "summary": "What the current Zimbabwe side might look like were it not for politics and politicians",
+        "byline": "Martin Williamson",
+        "categoryType": "OTHERS",
+        "genreType": "OTHER",
+        "genreId": 193,
+        "genreName": "ESPNcricinfo XI",
+        "publishedAt": "2007-08-16T00:00:00Z",
+        "modifiedAt": "2007-08-16T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 22,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:27:48.317Z"
+      },
+      {
+        "id": 88221,
+        "objectId": 220608,
+        "scribeId": 23073580,
+        "slug": "wishart-quits-as-problems-grow",
+        "title": "Wishart quits as problems grow",
+        "subTitle": "ZImbabwe player drain continues",
+        "seoTitle": "",
+        "summary": "Zimbabwe lost another of their experienced players today with a statement from Craig Wishart that he was retiring from the game",
+        "byline": "Cricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2005-09-30T16:14:33Z",
+        "modifiedAt": "2005-09-30T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 1,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:29:43.648Z"
+      }
+    ],
+    "videos": [],
+    "images": [
+      {
+        "id": 166073,
+        "objectId": 666683,
+        "slug": "dion-ebrahim-and-trevor-gripper-celebrate-the-dismissal-of-hamish-marshall",
+        "url": "/db/PICTURES/CMS/166000/166073.jpg",
+        "width": 1400,
+        "height": 1268,
+        "caption": "Dion Ebrahim and Trevor Gripper celebrate the dismissal of Hamish Marshall",
+        "longCaption": "Dion Ebrahim and Trevor Gripper celebrate the dismissal of Hamish Marshall, Zimbabwe v New Zealand, 1st Test, Harare, 1st day, August 7, 2005",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2005-08-07T00:00:00Z",
+        "capturedOn": {
+          "year": 2005,
+          "month": 8,
+          "date": 7
+        }
+      },
+      {
+        "id": 21289,
+        "objectId": 55462,
+        "slug": "trevor-gripper",
+        "url": "/db/PICTURES/DB/052004/052154.jpg",
+        "width": 160,
+        "height": 221,
+        "caption": "Trevor Gripper",
+        "longCaption": "Trevor Gripper",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2004-05-10T00:00:00Z",
+        "capturedOn": {
+          "year": 2004,
+          "month": 5,
+          "date": 10
+        }
+      },
+      {
+        "id": 21288,
+        "objectId": 175370,
+        "slug": "trevor-gripper",
+        "url": "/db/PICTURES/DB/052004/052153.jpg",
+        "width": 160,
+        "height": 245,
+        "caption": "Trevor Gripper",
+        "longCaption": "Trevor Gripper",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2004-05-10T00:00:00Z",
+        "capturedOn": {
+          "year": 2004,
+          "month": 5,
+          "date": 10
+        }
+      },
+      {
+        "id": 8177,
+        "objectId": 163543,
+        "slug": "tapash-baisya-celebrates-after-dismissing-trevor-gripper-for-a-duck-in-the-first-test",
+        "url": "/db/PICTURES/DB/022004/050193.jpg",
+        "width": 160,
+        "height": 232,
+        "caption": "Tapash Baisya celebrates after dismissing Trevor Gripper for a duck in the first Test",
+        "longCaption": "Tapash Baisya celebrates after dismissing Trevor Gripper for a duck in the first Test, Zimbabwe v Bangladesh, 1st Test, Harare, 2003-04",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2004-02-19T00:00:00Z",
+        "capturedOn": {
+          "year": 2004,
+          "month": 2,
+          "date": 19
+        }
+      },
+      {
+        "id": 39234,
+        "objectId": 192089,
+        "slug": "trevor-gripper-s-out-andy-bichel-s-ecstatic",
+        "url": "/db/PICTURES/DB/102003/047051.jpg",
+        "width": 160,
+        "height": 240,
+        "caption": "Trevor Gripper's out, Andy Bichel's ecstatic",
+        "longCaption": "Andy Bichel celebrates Trevor Gripper's dismissal, Australia v Zimbabwe, 2nd Test, Sydney, 1st day, October 17, 2003",
+        "credit": "Getty Images",
+        "photographer": "Hamish Blair",
+        "peerUrls": null,
+        "dateTaken": "2003-10-17T00:00:00Z",
+        "capturedOn": {
+          "year": 2003,
+          "month": 10,
+          "date": 17
+        }
+      },
+      {
+        "id": 38978,
+        "objectId": 191834,
+        "slug": "darren-wates-of-western-australia-claims-the-wicket-of-trevor-gripper-of-zimbabwe",
+        "url": "/db/PICTURES/DB/102003/046781.jpg",
+        "width": 200,
+        "height": 300,
+        "caption": "Darren Wates of Western Australia claims the wicket of Trevor Gripper of Zimbabwe",
+        "longCaption": "Darren Wates of Western Australia claims the wicket of Trevor Gripper of Zimbabwe during day one of the tour match between Western Australia and Zimbabwe played at the WACA on October 3, 2003 in Perth, Australia.",
+        "credit": "Getty Images",
+        "photographer": "Hamish Blair",
+        "peerUrls": null,
+        "dateTaken": "2003-10-04T00:00:00Z",
+        "capturedOn": {
+          "year": 2003,
+          "month": 10,
+          "date": 4
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 3,
+        "objectId": 3,
+        "scribeId": 3,
+        "slug": "south-africa",
+        "name": "South Africa",
+        "longName": "South Africa",
+        "abbreviation": "SA",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/313100/313125.logo.png",
+        "isCountry": true,
+        "primaryColor": "#04822B",
+        "image": {
+          "id": 313125,
+          "objectId": 1241584,
+          "slug": "south-africa-logo",
+          "url": "/db/PICTURES/CMS/313100/313125.logo.png",
+          "width": 500,
+          "height": 500,
+          "caption": "South Africa logo",
+          "longCaption": "South Africa logo",
+          "credit": null,
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 58190,
+          "objectId": 372116,
+          "name": "T Bavuma",
+          "longName": "Temba Bavuma",
+          "mobileName": "Bavuma",
+          "indexName": "Bavuma, T",
+          "battingName": "T Bavuma",
+          "fieldingName": "Bavuma",
+          "slug": "temba-bavuma",
+          "imageUrl": "/db/PICTURES/CMS/317900/317941.jpg",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 5,
+            "date": 17
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 317941,
+            "objectId": 1254907,
+            "slug": "temba-bavuma-portrait",
+            "url": "/db/PICTURES/CMS/317900/317941.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Temba Bavuma portrait",
+            "longCaption": "Temba Bavuma portrait, November 26, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 58406,
+          "objectId": 379143,
+          "name": "Q de Kock",
+          "longName": "Quinton de Kock",
+          "mobileName": "de Kock",
+          "indexName": "de Kock, Q",
+          "battingName": "Q de Kock",
+          "fieldingName": "de Kock",
+          "slug": "quinton-de-kock",
+          "imageUrl": "/db/PICTURES/CMS/317900/317947.jpg",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 12,
+            "date": 17
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 317947,
+            "objectId": 1254913,
+            "slug": "quinton-de-kock-portrait",
+            "url": "/db/PICTURES/CMS/317900/317947.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Quinton de Kock portrait",
+            "longCaption": "Quinton de Kock portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 61634,
+          "objectId": 436757,
+          "name": "H Klaasen",
+          "longName": "Heinrich Klaasen",
+          "mobileName": "Klaasen",
+          "indexName": "Klaasen, H",
+          "battingName": "H Klaasen",
+          "fieldingName": "Klaasen",
+          "slug": "heinrich-klaasen",
+          "imageUrl": "/db/PICTURES/CMS/317900/317958.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 7,
+            "date": 30
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 317958,
+            "objectId": 1254926,
+            "slug": "heinrich-klaasen-portrait",
+            "url": "/db/PICTURES/CMS/317900/317958.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Heinrich Klaasen portrait",
+            "longCaption": "Heinrich Klaasen portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 50309,
+          "objectId": 267724,
+          "name": "KA Maharaj",
+          "longName": "Keshav Maharaj",
+          "mobileName": "Maharaj",
+          "indexName": "Maharaj, KA",
+          "battingName": "KA Maharaj",
+          "fieldingName": "Maharaj",
+          "slug": "keshav-maharaj",
+          "imageUrl": "/db/PICTURES/CMS/317900/317953.jpg",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 2,
+            "date": 7
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 317953,
+            "objectId": 1254921,
+            "slug": "keshav-maharaj-portrait",
+            "url": "/db/PICTURES/CMS/317900/317953.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Keshav Maharaj portrait",
+            "longCaption": "Keshav Maharaj portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 70277,
+          "objectId": 600498,
+          "name": "AK Markram",
+          "longName": "Aiden Markram",
+          "mobileName": "Markram",
+          "indexName": "Markram, AK",
+          "battingName": "AK Markram",
+          "fieldingName": "Markram",
+          "slug": "aiden-markram",
+          "imageUrl": "/db/PICTURES/CMS/317900/317970.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 10,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 317970,
+            "objectId": 1254938,
+            "slug": "aiden-markram-portrait",
+            "url": "/db/PICTURES/CMS/317900/317970.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Aiden Markram portrait",
+            "longCaption": "Aiden Markram portrait, December 23, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 53891,
+          "objectId": 321777,
+          "name": "DA Miller",
+          "longName": "David Miller",
+          "mobileName": "Miller",
+          "indexName": "Miller, DA",
+          "battingName": "DA Miller",
+          "fieldingName": "Miller",
+          "slug": "david-miller",
+          "imageUrl": "/db/PICTURES/CMS/317900/317964.jpg",
+          "dateOfBirth": {
+            "year": 1989,
+            "month": 6,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 317964,
+            "objectId": 1254932,
+            "slug": "david-miller-portrait",
+            "url": "/db/PICTURES/CMS/317900/317964.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "David Miller portrait",
+            "longCaption": "David Miller portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 66941,
+          "objectId": 542023,
+          "name": "L Ngidi",
+          "longName": "Lungi Ngidi",
+          "mobileName": "Ngidi",
+          "indexName": "Ngidi, L",
+          "battingName": "L Ngidi",
+          "fieldingName": "Ngidi",
+          "slug": "lungi-ngidi",
+          "imageUrl": "/db/PICTURES/CMS/317900/317951.jpg",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 3,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 317951,
+            "objectId": 1254919,
+            "slug": "lungi-ngidi-portrait",
+            "url": "/db/PICTURES/CMS/317900/317951.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Lungi Ngidi portrait",
+            "longCaption": "Lungi Ngidi portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 63651,
+          "objectId": 481979,
+          "name": "A Nortje",
+          "longName": "Anrich Nortje",
+          "mobileName": "Nortje",
+          "indexName": "Nortje, A",
+          "battingName": "A Nortje",
+          "fieldingName": "Nortje",
+          "slug": "anrich-nortje",
+          "imageUrl": "/db/PICTURES/CMS/317900/317968.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 11,
+            "date": 16
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 317968,
+            "objectId": 1254936,
+            "slug": "anrich-nortje-portrait",
+            "url": "/db/PICTURES/CMS/317900/317968.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Anrich Nortje portrait",
+            "longCaption": "Anrich Nortje portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 67296,
+          "objectId": 550215,
+          "name": "K Rabada",
+          "longName": "Kagiso Rabada",
+          "mobileName": "Rabada",
+          "indexName": "Rabada, K",
+          "battingName": "K Rabada",
+          "fieldingName": "Rabada",
+          "slug": "kagiso-rabada",
+          "imageUrl": "/db/PICTURES/CMS/317900/317954.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 5,
+            "date": 25
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 317954,
+            "objectId": 1254922,
+            "slug": "kagiso-rabada-portrait",
+            "url": "/db/PICTURES/CMS/317900/317954.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Kagiso Rabada portrait",
+            "longCaption": "Kagiso Rabada portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 58408,
+          "objectId": 379145,
+          "name": "T Shamsi",
+          "longName": "Tabraiz Shamsi",
+          "mobileName": "Shamsi",
+          "indexName": "Shamsi, T",
+          "battingName": "T Shamsi",
+          "fieldingName": "Shamsi",
+          "slug": "tabraiz-shamsi",
+          "imageUrl": "/db/PICTURES/CMS/317900/317943.jpg",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 2,
+            "date": 18
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lws"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm wrist-spin"
+          ],
+          "image": {
+            "id": 317943,
+            "objectId": 1254909,
+            "slug": "tabraiz-shamsi-portrait",
+            "url": "/db/PICTURES/CMS/317900/317943.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Tabraiz Shamsi portrait",
+            "longCaption": "Tabraiz Shamsi portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 55144,
+          "objectId": 333000,
+          "name": "PJ Moor",
+          "longName": "Peter Moor",
+          "mobileName": "Moor",
+          "indexName": "Moor, PJ",
+          "battingName": "PJ Moor",
+          "fieldingName": "Moor",
+          "slug": "peter-moor",
+          "imageUrl": "/db/PICTURES/CMS/235600/235677.1.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 2,
+            "date": 2
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 235677,
+            "objectId": 978297,
+            "slug": "peter-moor-profile-photo",
+            "url": "/db/PICTURES/CMS/235600/235677.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Peter Moor profile photo",
+            "longCaption": "Peter Moor profile photo",
+            "credit": "International Cricket Council",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 52319,
+          "objectId": 299572,
+          "name": "Sikandar Raza",
+          "longName": "Sikandar Raza",
+          "mobileName": "Raza",
+          "indexName": "Sikandar Raza",
+          "battingName": "Sikandar Raza",
+          "fieldingName": "Sikandar Raza",
+          "slug": "sikandar-raza",
+          "imageUrl": "/db/PICTURES/CMS/181300/181305.1.jpg",
+          "dateOfBirth": {
+            "year": 1986,
+            "month": 4,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 181305,
+            "objectId": 727109,
+            "slug": "sikandar-raza",
+            "url": "/db/PICTURES/CMS/181300/181305.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Sikandar Raza",
+            "longCaption": "Sikandar Raza",
+            "credit": "ICC",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 49115,
+          "objectId": 232438,
+          "name": "GS Ballance",
+          "longName": "Gary Ballance",
+          "mobileName": "Ballance",
+          "indexName": "Ballance, GS",
+          "battingName": "GS Ballance",
+          "fieldingName": "Ballance",
+          "slug": "gary-ballance",
+          "imageUrl": "/db/PICTURES/CMS/353900/353921.1.jpg",
+          "dateOfBirth": {
+            "year": 1989,
+            "month": 11,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 353921,
+            "objectId": 1357731,
+            "slug": "garry-ballance-player-portrait",
+            "url": "/db/PICTURES/CMS/353900/353921.1.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Garry Ballance player portrait",
+            "longCaption": "Garry Ballance player portrait",
+            "credit": "Zimbabwe Cricket",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 87157,
+          "objectId": 938959,
+          "name": "W Madhevere",
+          "longName": "Wessly Madhevere",
+          "mobileName": "Madhevere",
+          "indexName": "Madhevere, W",
+          "battingName": "W Madhevere",
+          "fieldingName": "Madhevere",
+          "slug": "wessly-madhevere",
+          "imageUrl": "/db/PICTURES/CMS/324700/324710.4.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 9,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 324710,
+            "objectId": 1270432,
+            "slug": "wessley-madhevere-player-portrait",
+            "url": "/db/PICTURES/CMS/324700/324710.4.jpg",
+            "width": 160,
+            "height": 216,
+            "caption": "Wessley Madhevere, player portrait",
+            "longCaption": "Wessley Madhevere, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Jan Kruger",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 47206,
+          "objectId": 55870,
+          "name": "SC Williams",
+          "longName": "Sean Williams",
+          "mobileName": "Williams",
+          "indexName": "Williams, SC",
+          "battingName": "SC Williams",
+          "fieldingName": "Williams",
+          "slug": "sean-williams",
+          "imageUrl": "/db/PICTURES/CMS/235600/235675.1.jpg",
+          "dateOfBirth": {
+            "year": 1986,
+            "month": 9,
+            "date": 26
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 235675,
+            "objectId": 978295,
+            "slug": "sean-williams-profile-photo",
+            "url": "/db/PICTURES/CMS/235600/235675.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Sean Williams profile photo",
+            "longCaption": "Sean Williams profile photo",
+            "credit": "International Cricket Council",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 47205,
+          "objectId": 55412,
+          "name": "CR Ervine",
+          "longName": "Craig Ervine",
+          "mobileName": "Ervine",
+          "indexName": "Ervine, CR",
+          "battingName": "CR Ervine",
+          "fieldingName": "Ervine",
+          "slug": "craig-ervine",
+          "imageUrl": "/db/PICTURES/CMS/203300/203333.1.jpg",
+          "dateOfBirth": {
+            "year": 1985,
+            "month": 8,
+            "date": 19
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 203333,
+            "objectId": 818739,
+            "slug": "craig-ervine",
+            "url": "/db/PICTURES/CMS/203300/203333.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Craig Ervine",
+            "longCaption": "Craig Ervine",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 93909,
+          "objectId": 1045883,
+          "name": "C Madande",
+          "longName": "Clive Madande",
+          "mobileName": "Madande",
+          "indexName": "Madande, C",
+          "battingName": "C Madande",
+          "fieldingName": "Madande",
+          "slug": "clive-madande",
+          "imageUrl": "/db/PICTURES/CMS/345200/345225.5.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 4,
+            "date": 12
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 345225,
+            "objectId": 1332087,
+            "slug": "clive-madande-player-portrait-2022",
+            "url": "/db/PICTURES/CMS/345200/345225.5.jpg",
+            "width": 160,
+            "height": 226,
+            "caption": "Clive Madande, player portrait 2022",
+            "longCaption": "Clive Madande, player portrait 2022",
+            "credit": "Getty Images",
+            "photographer": "Chris Hyde",
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 67884,
+          "objectId": 571703,
+          "name": "WP Masakadza",
+          "longName": "Wellington Masakadza",
+          "mobileName": "Masakadza",
+          "indexName": "Masakadza, WP",
+          "battingName": "WP Masakadza",
+          "fieldingName": "Masakadza",
+          "slug": "wellington-masakadza",
+          "imageUrl": "/db/PICTURES/CMS/148300/148312.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 10,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 148312,
+            "objectId": 576039,
+            "slug": "wellington-masakadza",
+            "url": "/db/PICTURES/CMS/148300/148312.jpg",
+            "width": 160,
+            "height": 185,
+            "caption": "Wellington Masakadza",
+            "longCaption": "Wellington Masakadza, player portrait, August 6, 2012",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 80845,
+          "objectId": 827051,
+          "name": "B Muzarabani",
+          "longName": "Blessing Muzarabani",
+          "mobileName": "Muzarabani",
+          "indexName": "Muzarabani, B",
+          "battingName": "B Muzarabani",
+          "fieldingName": "Muzarabani",
+          "slug": "blessing-muzarabani",
+          "imageUrl": "/db/PICTURES/CMS/321400/321471.png",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 10,
+            "date": 2
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 321471,
+            "objectId": 1263239,
+            "slug": "blessing-muzarabani-player-page-headshot-cutout-2021",
+            "url": "/db/PICTURES/CMS/321400/321471.png",
+            "width": 600,
+            "height": 436,
+            "caption": "Blessing Muzarabani player page headshot cutout, 2021",
+            "longCaption": "Blessing Muzarabani player page headshot cutout, 2021",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 79663,
+          "objectId": 806239,
+          "name": "B Mavuta",
+          "longName": "Brandon Mavuta",
+          "mobileName": "Mavuta",
+          "indexName": "Mavuta, B",
+          "battingName": "B Mavuta",
+          "fieldingName": "Mavuta",
+          "slug": "brandon-mavuta",
+          "imageUrl": "/db/PICTURES/CMS/354000/354051.1.png",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 3,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 354051,
+            "objectId": 1357977,
+            "slug": "brendon-mavuta-player-portrait",
+            "url": "/db/PICTURES/CMS/354000/354051.1.png",
+            "width": 160,
+            "height": 199,
+            "caption": "Brendon Mavuta player portrait",
+            "longCaption": "Brendon Mavuta player portrait",
+            "credit": "Zimbabwe Cricket",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 9,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "List A"
+        },
+        {
+          "id": 11,
+          "type": "g",
+          "name": "Other matches"
+        },
+        {
+          "id": 12,
+          "type": "g",
+          "name": "Other one-day/limited-overs matches"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Test",
+          "longName": "Test matches",
+          "multipleClass": 0,
+          "slug": "test-matches"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "ODI",
+          "longName": "One-Day Internationals",
+          "multipleClass": 0,
+          "slug": "one-day-internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "LA",
+          "longName": "List A matches",
+          "multipleClass": 0,
+          "slug": "list-a-matches"
+        },
+        {
+          "id": 14,
+          "type": "g",
+          "name": "Minor",
+          "longName": "Minor cricket",
+          "multipleClass": 0,
+          "slug": "minor-cricket"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 1,
+          "matches": 20,
+          "batted": true,
+          "battedInnings": 38,
+          "bowled": true,
+          "bowledInnings": 20,
+          "fielded": true,
+          "fieldedInnings": 32,
+          "dismissals": 14,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        },
+        {
+          "recordClassId": 2,
+          "matches": 8,
+          "batted": true,
+          "battedInnings": 8,
+          "bowled": true,
+          "bowledInnings": 6,
+          "fielded": true,
+          "fieldedInnings": 8,
+          "dismissals": 4,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 126,
+        "2": 153,
+        "3": 72,
+        "9": 17,
+        "10": 24,
+        "14": 24,
+        "15": 221,
+        "16": 32
+      },
+      "teamContractedPlayerCount": 1,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 17,
+          "type": "g",
+          "name": "Women's Twenty20"
+        }
+      ]
+    }
+  }
+}

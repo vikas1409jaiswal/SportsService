@@ -1,0 +1,2735 @@
+{
+  "player": {
+    "id": 1588,
+    "objectId": 28107,
+    "name": "DR Doshi",
+    "longName": "Dilip Doshi",
+    "mobileName": "Doshi",
+    "indexName": "Doshi, DR",
+    "battingName": "DR Doshi",
+    "fieldingName": "Doshi",
+    "slug": "dilip-doshi",
+    "imageUrl": "/db/PICTURES/CMS/62000/62016.1.jpg",
+    "dateOfBirth": {
+      "year": 1947,
+      "month": 12,
+      "date": 22
+    },
+    "dateOfDeath": null,
+    "gender": "M",
+    "battingStyles": [
+      "lhb"
+    ],
+    "bowlingStyles": [
+      "sla"
+    ],
+    "longBattingStyles": [
+      "left-hand bat"
+    ],
+    "longBowlingStyles": [
+      "slow left-arm orthodox"
+    ],
+    "image": {
+      "id": 62016,
+      "objectId": 245285,
+      "slug": "dilip-doshi",
+      "url": "/db/PICTURES/CMS/62000/62016.1.jpg",
+      "width": 160,
+      "height": 177,
+      "caption": "Dilip Doshi ",
+      "longCaption": "Dilip Doshi ",
+      "credit": "The Cricketer International",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 6,
+    "playerRoleTypeIds": [
+      4
+    ],
+    "playingRoles": [
+      "bowler"
+    ],
+    "fullName": "Dilip Rasiklal Doshi",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": 0,
+    "heightUnit": null,
+    "education": "",
+    "country": {
+      "id": 6,
+      "objectId": 6,
+      "name": "India",
+      "shortName": "India",
+      "abbreviation": "IND",
+      "slug": "india",
+      "image": {
+        "id": 313128,
+        "objectId": 1241587,
+        "slug": "india-logo",
+        "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+        "width": 500,
+        "height": 500,
+        "caption": "India logo",
+        "longCaption": "India logo",
+        "credit": null,
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Rajkot, Gujarat",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "",
+    "intlCareerSpan": "1979 - 1983",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 98997,
+      "objectId": 390823,
+      "slug": "dilip-doshi-and-sandeep-patil-illustration",
+      "url": "/db/PICTURES/CMS/98900/98997.jpg",
+      "width": 500,
+      "height": 556,
+      "caption": "Dilip Doshi and Sandeep Patil, illustration",
+      "longCaption": "Dilip Doshi and Sandeep Patil, illustration",
+      "credit": "ESPNcricinfo Ltd",
+      "photographer": null,
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": null,
+        "SQUARE": null
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": true,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 2,
+    "totalVideos": 1,
+    "totalImages": 6
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 6,
+          "objectId": 6,
+          "scribeId": 6,
+          "slug": "india",
+          "name": "India",
+          "longName": "India",
+          "abbreviation": "IND",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+          "isCountry": true,
+          "primaryColor": "#137dd2",
+          "image": {
+            "id": 313128,
+            "objectId": 1241587,
+            "slug": "india-logo",
+            "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "India logo",
+            "longCaption": "India logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1623,
+          "objectId": 1572,
+          "scribeId": 1572,
+          "slug": "bengal",
+          "name": "Bengal",
+          "longName": "Bengal",
+          "abbreviation": "BENG",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313200/313297.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313297,
+            "objectId": 1241756,
+            "slug": "bengal-logo",
+            "url": "/db/PICTURES/CMS/313200/313297.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Bengal logo",
+            "longCaption": "Bengal logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1122,
+          "objectId": 1071,
+          "scribeId": 1071,
+          "slug": "hertfordshire",
+          "name": "Herts",
+          "longName": "Hertfordshire",
+          "abbreviation": "Herts",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1282,
+          "objectId": 1231,
+          "scribeId": 1231,
+          "slug": "nottinghamshire",
+          "name": "Notts",
+          "longName": "Nottinghamshire",
+          "abbreviation": "NOTTS",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313200/313275.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313275,
+            "objectId": 1241734,
+            "slug": "nottinghamshire-logo",
+            "url": "/db/PICTURES/CMS/313200/313275.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Nottinghamshire logo",
+            "longCaption": "Nottinghamshire logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2121,
+          "objectId": 2070,
+          "scribeId": 2070,
+          "slug": "saurashtra-and-kathiawar",
+          "name": "Saurashtra",
+          "longName": "Saurashtra",
+          "abbreviation": "SAU",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313300/313316.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313316,
+            "objectId": 1241775,
+            "slug": "saurashtra-and-kathiawar-logo",
+            "url": "/db/PICTURES/CMS/313300/313316.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Saurashtra (and Kathiawar) logo",
+            "longCaption": "Saurashtra (and Kathiawar) logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1479,
+          "objectId": 1428,
+          "scribeId": 1428,
+          "slug": "warwickshire",
+          "name": "Warwickshire",
+          "longName": "Warwickshire",
+          "abbreviation": "WARKS",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313200/313279.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313279,
+            "objectId": 1241738,
+            "slug": "warwickshire-logo",
+            "url": "/db/PICTURES/CMS/313200/313279.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Warwickshire logo",
+            "longCaption": "Warwickshire logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      }
+    ],
+    "relations": [
+      {
+        "relation": "son",
+        "player": {
+          "id": 36039,
+          "objectId": 12440,
+          "name": "ND Doshi",
+          "longName": "Nayan Doshi",
+          "mobileName": "Doshi",
+          "indexName": "Doshi, ND",
+          "battingName": "ND Doshi",
+          "fieldingName": "Doshi",
+          "slug": "nayan-doshi",
+          "imageUrl": "/db/PICTURES/CMS/175600/175631.jpg",
+          "dateOfBirth": {
+            "year": 1978,
+            "month": 10,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 175631,
+            "objectId": 705935,
+            "slug": "nayan-doshi",
+            "url": "/db/PICTURES/CMS/175600/175631.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Nayan Doshi",
+            "longCaption": "Nayan Doshi",
+            "credit": "Saurashtra Cricket Association ",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 1,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        }
+      }
+    ],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "Immaculate control of flight and turn made Dilip Doshi a much-respected left-arm spinner in English county cricket some time before he donned his country's colours. In another age, Doshi might have gone on to play 100 Tests for India. But like Rajinder Goel and Padmakar Shivalkar before him, he was doomed to play out the bulk of his career in the immense shadow of Bishan Singh Bedi. An intelligent and patient bowler, Doshi was effective on even the most placid tracks. He played his first Test in 1979-80, when he was 32, and immediately became Kapil Dev's main foil in an emasculated attack. For the next three years, he was an ever-present figure, glasses gleaming, and reached 100 wickets in only 28 Tests (he and the legendary Australian legspinner Clarrie Grimmett are the only two to reach that landmark after making their debuts past 30). Doshi's uneasy relationship with Sunil Gavaskar - especially during the Pakistan tour of 1982-83 - was primarily responsible for his Test career running into a brick wall. \n<BR><B>Dileep Premachandran</B>"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BOWLING",
+          "cl": 1,
+          "mt": 33,
+          "in": 55,
+          "rn": 3502,
+          "bl": 9322,
+          "avg": 30.71,
+          "sr": 81.7,
+          "wk": 114,
+          "bbi": "6/102",
+          "bbm": "8/103",
+          "fwk": 4,
+          "fw": 6,
+          "tw": 0,
+          "bwe": 2.25
+        },
+        {
+          "type": "BOWLING",
+          "cl": 2,
+          "mt": 15,
+          "in": 15,
+          "rn": 524,
+          "bl": 792,
+          "avg": 23.81,
+          "sr": 36,
+          "wk": 22,
+          "bbi": "4/30",
+          "bbm": "4/30",
+          "fwk": 2,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 3.96
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 238,
+          "in": null,
+          "rn": 23874,
+          "bl": 58712,
+          "avg": 26.58,
+          "sr": 65.3,
+          "wk": 898,
+          "bbi": "7/29",
+          "bbm": null,
+          "fwk": null,
+          "fw": 43,
+          "tw": 6,
+          "bwe": 2.43
+        },
+        {
+          "type": "BOWLING",
+          "cl": 5,
+          "mt": 59,
+          "in": null,
+          "rn": 1935,
+          "bl": 3084,
+          "avg": 25.8,
+          "sr": 41.1,
+          "wk": 75,
+          "bbi": "5/24",
+          "bbm": "5/24",
+          "fwk": 3,
+          "fw": 1,
+          "tw": 0,
+          "bwe": 3.76
+        },
+        {
+          "type": "BATTING",
+          "cl": 1,
+          "mt": 33,
+          "in": 38,
+          "rn": 129,
+          "bl": null,
+          "avg": 4.6,
+          "sr": null,
+          "no": 10,
+          "fo": 13,
+          "si": 0,
+          "hs": "20",
+          "hn": 0,
+          "ft": 0,
+          "ct": 10,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 2,
+          "mt": 15,
+          "in": 5,
+          "rn": 9,
+          "bl": 20,
+          "avg": 3,
+          "sr": 45,
+          "no": 2,
+          "fo": 0,
+          "si": 0,
+          "hs": "5*",
+          "hn": 0,
+          "ft": 0,
+          "ct": 3,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 238,
+          "in": 253,
+          "rn": 1442,
+          "bl": null,
+          "avg": 7.87,
+          "sr": null,
+          "no": 70,
+          "fo": null,
+          "si": null,
+          "hs": "44",
+          "hn": 0,
+          "ft": 0,
+          "ct": 62,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 5,
+          "mt": 59,
+          "in": 23,
+          "rn": 95,
+          "bl": null,
+          "avg": 7.3,
+          "sr": null,
+          "no": 10,
+          "fo": null,
+          "si": null,
+          "hs": "19*",
+          "hn": 0,
+          "ft": 0,
+          "ct": 7,
+          "st": 0
+        }
+      ]
+    },
+    "topRecords": [],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 33,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 855,
+                    "id": 855,
+                    "objectId": 63241,
+                    "scribeId": 63241,
+                    "slug": "india-vs-australia-1st-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1979/80",
+                    "title": "1st Test",
+                    "floodlit": "day",
+                    "startDate": "1979-09-11T00:00:00Z",
+                    "endDate": "1979-09-16T00:00:00Z",
+                    "startTime": "1979-09-11T03:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000855",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 2,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 4,
+                    "liveInning": 3,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1175,
+                      "objectId": 61434,
+                      "scribeId": 17069,
+                      "slug": "australia-tour-of-india-1979-80",
+                      "name": "Australia tour of India",
+                      "longName": "Australia tour of India",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1979,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1979/80",
+                      "startDate": "1979-09-11T00:00:00Z",
+                      "endDate": "1979-11-07T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 291,
+                      "objectId": 58008,
+                      "name": "Madras Cricket Club Ground, Chepauk, Madras",
+                      "smallName": "Chennai",
+                      "longName": "Madras Cricket Club Ground, Chepauk, Madras",
+                      "slug": "ma-chidambaram-stadium-chepauk-chennai",
+                      "location": "Chepauk",
+                      "image": {
+                        "id": 128358,
+                        "objectId": 501288,
+                        "slug": "the-ma-chidambaram-stadium-in-chennai",
+                        "url": "/db/PICTURES/CMS/128300/128358.3.jpg",
+                        "width": 210,
+                        "height": 132,
+                        "caption": "The MA Chidambaram Stadium in Chennai ",
+                        "longCaption": "The MA Chidambaram Stadium in Chennai, India v New Zealand, World Cup warm-up match, Chennai",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 577,
+                        "objectId": 57995,
+                        "name": "Chennai",
+                        "area": "",
+                        "timezone": "Asia/Kolkata"
+                      },
+                      "country": {
+                        "id": 6,
+                        "objectId": 6,
+                        "name": "India",
+                        "shortName": "India",
+                        "abbreviation": "IND",
+                        "slug": "india"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 2,
+                          "objectId": 2,
+                          "scribeId": 2,
+                          "slug": "australia",
+                          "name": "Australia",
+                          "longName": "Australia",
+                          "abbreviation": "AUS",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+                          "isCountry": true,
+                          "primaryColor": "#ffdd00",
+                          "image": {
+                            "id": 340493,
+                            "objectId": 1318684,
+                            "slug": "australia-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340400/340493.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Australia team flag-latest",
+                            "longCaption": "Australia team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "390 & 212/7",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 6,
+                          "objectId": 6,
+                          "scribeId": 6,
+                          "slug": "india",
+                          "name": "India",
+                          "longName": "India",
+                          "abbreviation": "IND",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#137dd2",
+                          "image": {
+                            "id": 313128,
+                            "objectId": 1241587,
+                            "slug": "india-logo",
+                            "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "India logo",
+                            "longCaption": "India logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "425",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:15:49.711Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 961,
+                    "id": 961,
+                    "objectId": 63347,
+                    "scribeId": 63347,
+                    "slug": "india-vs-pakistan-1st-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1983/84",
+                    "title": "1st Test",
+                    "floodlit": "day",
+                    "startDate": "1983-09-14T00:00:00Z",
+                    "endDate": "1983-09-19T00:00:00Z",
+                    "startTime": "1983-09-14T03:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000961",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 6,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 4,
+                    "liveInning": 3,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1263,
+                      "objectId": 61522,
+                      "scribeId": 16935,
+                      "slug": "pakistan-tour-of-india-1983-84",
+                      "name": "Pakistan tour of India",
+                      "longName": "Pakistan tour of India",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1983,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1983/84",
+                      "startDate": "1983-09-10T00:00:00Z",
+                      "endDate": "1983-10-10T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 683,
+                      "objectId": 57897,
+                      "name": "Karnataka State Cricket Association Stadium, Bangalore",
+                      "smallName": "Bengaluru",
+                      "longName": "Karnataka State Cricket Association Stadium, Bangalore",
+                      "slug": "m-chinnaswamy-stadium-bengaluru",
+                      "location": "",
+                      "image": {
+                        "id": 127631,
+                        "objectId": 498407,
+                        "slug": "a-view-of-the-chinnaswamy-stadium-in-bangalore",
+                        "url": "/db/PICTURES/CMS/127600/127631.4.jpg",
+                        "width": 210,
+                        "height": 132,
+                        "caption": "A view of the Chinnaswamy Stadium in Bangalore",
+                        "longCaption": "A view of the Chinnaswamy Stadium in Bangalore",
+                        "credit": "AFP",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 549,
+                        "objectId": 57892,
+                        "name": "Bengaluru",
+                        "area": "",
+                        "timezone": "Asia/Kolkata"
+                      },
+                      "country": {
+                        "id": 6,
+                        "objectId": 6,
+                        "name": "India",
+                        "shortName": "India",
+                        "abbreviation": "IND",
+                        "slug": "india"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 6,
+                          "objectId": 6,
+                          "scribeId": 6,
+                          "slug": "india",
+                          "name": "India",
+                          "longName": "India",
+                          "abbreviation": "IND",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#137dd2",
+                          "image": {
+                            "id": 313128,
+                            "objectId": 1241587,
+                            "slug": "india-logo",
+                            "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "India logo",
+                            "longCaption": "India logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "275 & 176/0",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "288",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 2,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:15:49.711Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 2,
+                "name": "One-Day Internationals",
+                "type": "i"
+              },
+              "total": 15,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 2916,
+                    "id": 2916,
+                    "objectId": 65302,
+                    "scribeId": 65302,
+                    "slug": "australia-vs-india-3rd-match",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "1980/81",
+                    "title": "3rd Match",
+                    "floodlit": "day",
+                    "startDate": "1980-12-06T00:00:00Z",
+                    "endDate": "1980-12-06T00:00:00Z",
+                    "startTime": "1980-12-06T00:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "India won by 66 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000097",
+                    "generalNumber": null,
+                    "winnerTeamId": 6,
+                    "tossWinnerTeamId": 2,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 553,
+                      "objectId": 60812,
+                      "scribeId": 8531,
+                      "slug": "benson-hedges-world-series-cup-1980-81",
+                      "name": "Benson & Hedges World Series Cup",
+                      "longName": "Benson & Hedges World Series Cup",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1980,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "Australia, India, New Zealand in Australia",
+                      "season": "1980/81",
+                      "startDate": "1980-11-23T00:00:00Z",
+                      "endDate": "1981-02-03T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 61,
+                      "objectId": 56441,
+                      "name": "Melbourne Cricket Ground",
+                      "smallName": "Melbourne",
+                      "longName": "Melbourne Cricket Ground",
+                      "slug": "melbourne-cricket-ground",
+                      "location": "Jolimont",
+                      "image": {
+                        "id": 86316,
+                        "objectId": 335266,
+                        "slug": "the-magnificent-melbourne-cricket-ground-in-full-bloom",
+                        "url": "/db/PICTURES/CMS/86300/86316.2.jpg",
+                        "width": 310,
+                        "height": 206,
+                        "caption": "The magnificent Melbourne Cricket Ground in full bloom",
+                        "longCaption": "The magnificent Melbourne Cricket Ground in full bloom, Victoria v Queensland, FR Cup, MCG, February 6, 2008",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 25,
+                        "objectId": 56434,
+                        "name": "Melbourne",
+                        "area": "Victoria",
+                        "timezone": "Australia/Melbourne"
+                      },
+                      "country": {
+                        "id": 2,
+                        "objectId": 2,
+                        "name": "Australia",
+                        "shortName": "Australia",
+                        "abbreviation": "AUS",
+                        "slug": "australia"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 6,
+                          "objectId": 6,
+                          "scribeId": 6,
+                          "slug": "india",
+                          "name": "India",
+                          "longName": "India",
+                          "abbreviation": "IND",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#137dd2",
+                          "image": {
+                            "id": 313128,
+                            "objectId": 1241587,
+                            "slug": "india-logo",
+                            "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "India logo",
+                            "longCaption": "India logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "208/9",
+                        "scoreInfo": "49/49 ov",
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 2,
+                          "objectId": 2,
+                          "scribeId": 2,
+                          "slug": "australia",
+                          "name": "Australia",
+                          "longName": "Australia",
+                          "abbreviation": "AUS",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+                          "isCountry": true,
+                          "primaryColor": "#ffdd00",
+                          "image": {
+                            "id": 340493,
+                            "objectId": 1318684,
+                            "slug": "australia-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340400/340493.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Australia team flag-latest",
+                            "longCaption": "Australia team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "142",
+                        "scoreInfo": "42.1/49 ov, T:209",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:15:45.492Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 1812,
+                    "id": 1812,
+                    "objectId": 64198,
+                    "scribeId": 64198,
+                    "slug": "pakistan-vs-india-2nd-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "1982/83",
+                    "title": "2nd ODI",
+                    "floodlit": "day",
+                    "startDate": "1982-12-17T00:00:00Z",
+                    "endDate": "1982-12-17T00:00:00Z",
+                    "startTime": "1982-12-17T04:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Pakistan won by 37 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000163",
+                    "generalNumber": null,
+                    "winnerTeamId": 7,
+                    "tossWinnerTeamId": 7,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 2070,
+                      "objectId": 62329,
+                      "scribeId": 16967,
+                      "slug": "india-tour-of-pakistan-1982-83",
+                      "name": "India tour of Pakistan",
+                      "longName": "India tour of Pakistan",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1982,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1982/83",
+                      "startDate": "1982-12-03T00:00:00Z",
+                      "endDate": "1983-02-04T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 494,
+                      "objectId": 58982,
+                      "name": "Ibn-e-Qasim Bagh Stadium, Multan",
+                      "smallName": "Multan",
+                      "longName": "Ibn-e-Qasim Bagh Stadium, Multan",
+                      "slug": "ibn-e-qasim-bagh-stadium-multan",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 870,
+                        "objectId": 58979,
+                        "name": "Multan",
+                        "area": "",
+                        "timezone": "Asia/Karachi"
+                      },
+                      "country": {
+                        "id": 7,
+                        "objectId": 7,
+                        "name": "Pakistan",
+                        "shortName": "Pakistan",
+                        "abbreviation": "PAK",
+                        "slug": "pakistan"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "263/2",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 6,
+                          "objectId": 6,
+                          "scribeId": 6,
+                          "slug": "india",
+                          "name": "India",
+                          "longName": "India",
+                          "abbreviation": "IND",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313128.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#137dd2",
+                          "image": {
+                            "id": 313128,
+                            "objectId": 1241587,
+                            "slug": "india-logo",
+                            "url": "/db/PICTURES/CMS/313100/313128.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "India logo",
+                            "longCaption": "India logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "226/7",
+                        "scoreInfo": "40 ov, T:264",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:15:49.711Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 238,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1968/69 - 1986"
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 5,
+                "name": "List A",
+                "type": "g"
+              },
+              "total": 59,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1973/74 - 1982/83"
+                }
+              ]
+            }
+          ],
+          "recent": []
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 120333,
+        "objectId": 371133,
+        "scribeId": 22840330,
+        "slug": "spin-bowling-is-a-battle-of-wits",
+        "title": "'Spin bowling is a battle of wits'",
+        "subTitle": "Dilip Doshi",
+        "seoTitle": "",
+        "summary": "One of India's oldest Test debutants on spin, playing county cricket before turning out for his country, and his best bowling effort ",
+        "byline": "Interview by Nagraj Gollapudi",
+        "categoryType": "TCM",
+        "genreType": "OTHER",
+        "genreId": 174,
+        "genreName": "Gleanings",
+        "publishedAt": "2008-12-19T03:17:23Z",
+        "modifiedAt": "2021-09-13T06:53:33Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 23,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:15:49.728Z"
+      },
+      {
+        "id": 95160,
+        "objectId": 245284,
+        "scribeId": 23009475,
+        "slug": "dilip-doshi-the-man-apart",
+        "title": "Dilip Doshi - The man apart",
+        "subTitle": "Odd men in",
+        "seoTitle": "",
+        "summary": "Dilip Doshi was 32 by the time he found a niche in Tests, and already steeped in the traditions of which he was part",
+        "byline": "Gideon Haigh",
+        "categoryType": "OTHERS",
+        "genreType": "OTHER",
+        "genreId": 159,
+        "genreName": "Odd men in",
+        "publishedAt": "2006-04-25T03:41:12Z",
+        "modifiedAt": "2006-04-25T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 227,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:15:49.728Z"
+      }
+    ],
+    "videos": [
+      {
+        "id": 3854,
+        "objectId": 544821,
+        "scribeId": 0,
+        "statusTypeId": 3,
+        "slug": "if-you-lose-your-loop-you-don-t-spin-it-on-good-pitches",
+        "title": "'If you lose your loop, you don't spin it on good pitches'",
+        "subTitle": "",
+        "seoTitle": "",
+        "summary": "Dilip Doshi, the former India left-arm spinner, talks about his craft, what young spinners must focus on, and his greatest cricketing moment \n",
+        "duration": 766,
+        "genreId": 9,
+        "genreType": "GENERAL",
+        "genreName": "Interviews",
+        "publishedAt": "2011-12-12T00:00:00Z",
+        "modifiedAt": "2016-10-06T19:28:40Z",
+        "recordedAt": "2011-12-12T00:00:00Z",
+        "expireAt": null,
+        "countryCodes": [],
+        "imageUrl": null,
+        "origin": {
+          "type": "CLIP"
+        },
+        "assetId": null,
+        "scribeMongoId": null,
+        "language": "en"
+      }
+    ],
+    "images": [
+      {
+        "id": 98997,
+        "objectId": 390823,
+        "slug": "dilip-doshi-and-sandeep-patil-illustration",
+        "url": "/db/PICTURES/CMS/98900/98997.jpg",
+        "width": 500,
+        "height": 556,
+        "caption": "Dilip Doshi and Sandeep Patil, illustration",
+        "longCaption": "Dilip Doshi and Sandeep Patil, illustration",
+        "credit": "ESPNcricinfo Ltd",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2009-02-15T00:00:00Z",
+        "capturedOn": {
+          "year": 2009,
+          "month": 2,
+          "date": 15
+        }
+      },
+      {
+        "id": 94159,
+        "objectId": 371127,
+        "slug": "dilip-doshi",
+        "url": "/db/PICTURES/CMS/94100/94159.jpg",
+        "width": 500,
+        "height": 751,
+        "caption": "Dilip Doshi",
+        "longCaption": "Dilip Doshi",
+        "credit": "ESPNcricinfo Ltd",
+        "photographer": "Rahul Rasane",
+        "peerUrls": null,
+        "dateTaken": "2004-11-30T00:00:00Z",
+        "capturedOn": {
+          "year": 2005,
+          "month": null,
+          "date": null
+        }
+      },
+      {
+        "id": 140044,
+        "objectId": 544859,
+        "slug": "dilip-doshi-took-five-wickets-in-the-match",
+        "url": "/db/PICTURES/CMS/140000/140044.jpg",
+        "width": 900,
+        "height": 738,
+        "caption": "Dilip Doshi took five wickets in the match",
+        "longCaption": "Dilip Doshi took five wickets in the match, England v India, The Oval, 3rd Test, 5th day, July 13, 1982",
+        "credit": "PA Photos",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1982-07-13T00:00:00Z",
+        "capturedOn": {
+          "year": 1982,
+          "month": 7,
+          "date": 13
+        }
+      },
+      {
+        "id": 62016,
+        "objectId": 245285,
+        "slug": "dilip-doshi",
+        "url": "/db/PICTURES/CMS/62000/62016.jpg",
+        "width": 350,
+        "height": 387,
+        "caption": "Dilip Doshi ",
+        "longCaption": "Dilip Doshi ",
+        "credit": "The Cricketer International",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1982-06-25T00:00:00Z",
+        "capturedOn": {
+          "year": 1982,
+          "month": 6,
+          "date": 25
+        }
+      },
+      {
+        "id": 62017,
+        "objectId": 245286,
+        "slug": "dilip-doshi-in-action-during-the-1982-england-tour",
+        "url": "/db/PICTURES/CMS/62000/62017.jpg",
+        "width": 350,
+        "height": 918,
+        "caption": "Dilip Doshi in action during the 1982 England tour",
+        "longCaption": "Dilip Doshi in action during the 1982 England tour",
+        "credit": "The Cricketer International",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1982-05-28T00:00:00Z",
+        "capturedOn": {
+          "year": 1982,
+          "month": 5,
+          "date": 28
+        }
+      },
+      {
+        "id": 140045,
+        "objectId": 544860,
+        "slug": "dilip-doshi-bowls",
+        "url": "/db/PICTURES/CMS/140000/140045.jpg",
+        "width": 900,
+        "height": 937,
+        "caption": "Dilip Doshi bowls",
+        "longCaption": "Dilip Doshi bowls, Warwickshire v Glamorgan, County Championship, 3rd day, July 14, 1982",
+        "credit": "PA Photos",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1981-07-14T00:00:00Z",
+        "capturedOn": {
+          "year": 1981,
+          "month": 7,
+          "date": 14
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 40,
+        "objectId": 40,
+        "scribeId": 40,
+        "slug": "afghanistan",
+        "name": "Afghanistan",
+        "longName": "Afghanistan",
+        "abbreviation": "AFG",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/321000/321005.png",
+        "isCountry": true,
+        "primaryColor": null,
+        "image": {
+          "id": 321005,
+          "objectId": 1262396,
+          "slug": "afghanistan-team-logo",
+          "url": "/db/PICTURES/CMS/321000/321005.png",
+          "width": 500,
+          "height": 500,
+          "caption": "Afghanistan team logo",
+          "longCaption": "Afghanistan team logo",
+          "credit": "Unknown",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 80247,
+          "objectId": 819429,
+          "name": "Azmatullah Omarzai",
+          "longName": "Azmatullah Omarzai",
+          "mobileName": "Azmatullah",
+          "indexName": "Azmatullah Omarzai",
+          "battingName": "Azmatullah Omarzai",
+          "fieldingName": "Azmatullah Omarzai",
+          "slug": "azmatullah-omarzai",
+          "imageUrl": "/db/PICTURES/CMS/347800/347832.4.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 3,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 347832,
+            "objectId": 1340666,
+            "slug": "azmatullah-omarzai-player-portrait",
+            "url": "/db/PICTURES/CMS/347800/347832.4.jpg",
+            "width": 160,
+            "height": 211,
+            "caption": "Azmatullah Omarzai, player portrait",
+            "longCaption": "Azmatullah Omarzai, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Matt King",
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 90231,
+          "objectId": 974175,
+          "name": "Fazalhaq Farooqi",
+          "longName": "Fazalhaq Farooqi",
+          "mobileName": "",
+          "indexName": "Fazalhaq Farooqi",
+          "battingName": "Fazalhaq Farooqi",
+          "fieldingName": "Fazalhaq Farooqi",
+          "slug": "fazalhaq-farooqi",
+          "imageUrl": "/db/PICTURES/CMS/306700/306755.3.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 9,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 306755,
+            "objectId": 1227647,
+            "slug": "fazal-haq-player-portrait",
+            "url": "/db/PICTURES/CMS/306700/306755.3.jpg",
+            "width": 160,
+            "height": 196,
+            "caption": "Fazal Haq player portrait",
+            "longCaption": "Fazal Haq player portrait",
+            "credit": "Jamroz Khan ",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 79157,
+          "objectId": 793457,
+          "name": "Hazratullah Zazai",
+          "longName": "Hazratullah Zazai",
+          "mobileName": "",
+          "indexName": "Hazratullah Zazai",
+          "battingName": "Hazratullah Zazai",
+          "fieldingName": "Hazratullah Zazai",
+          "slug": "hazratullah-zazai",
+          "imageUrl": "/db/PICTURES/CMS/289600/289664.1.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 3,
+            "date": 23
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 289664,
+            "objectId": 1185621,
+            "slug": "hazratullah-zazai-player-portrait",
+            "url": "/db/PICTURES/CMS/289600/289664.1.jpg",
+            "width": 160,
+            "height": 217,
+            "caption": "Hazratullah Zazai player portrait",
+            "longCaption": "Hazratullah Zazai player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 84865,
+          "objectId": 921509,
+          "name": "Ibrahim Zadran",
+          "longName": "Ibrahim Zadran",
+          "mobileName": "",
+          "indexName": "Ibrahim Zadran",
+          "battingName": "Ibrahim Zadran",
+          "fieldingName": "Ibrahim Zadran",
+          "slug": "ibrahim-zadran",
+          "imageUrl": "/db/PICTURES/CMS/303200/303273.jpg",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 12,
+            "date": 12
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303273,
+            "objectId": 1221782,
+            "slug": "ibrahim-zadran-portrait",
+            "url": "/db/PICTURES/CMS/303200/303273.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Ibrahim Zadran portrait",
+            "longCaption": "Ibrahim Zadran portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 46888,
+          "objectId": 25913,
+          "name": "Mohammad Nabi",
+          "longName": "Mohammad Nabi",
+          "mobileName": "M Nabi",
+          "indexName": "Mohammad Nabi",
+          "battingName": "Mohammad Nabi",
+          "fieldingName": "Mohammad Nabi",
+          "slug": "mohammad-nabi",
+          "imageUrl": "/db/PICTURES/CMS/303200/303280.jpg",
+          "dateOfBirth": {
+            "year": 1985,
+            "month": 1,
+            "date": 1
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303280,
+            "objectId": 1221789,
+            "slug": "mohammad-nabi-portrait",
+            "url": "/db/PICTURES/CMS/303200/303280.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Mohammad Nabi portrait",
+            "longCaption": "Mohammad Nabi portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 90165,
+          "objectId": 974109,
+          "name": "Mujeeb Ur Rahman",
+          "longName": "Mujeeb Ur Rahman",
+          "mobileName": "Mujeeb",
+          "indexName": "Mujeeb Ur Rahman",
+          "battingName": "Mujeeb Ur Rahman",
+          "fieldingName": "Mujeeb Ur Rahman",
+          "slug": "mujeeb-ur-rahman",
+          "imageUrl": "/db/PICTURES/CMS/303200/303282.jpg",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 3,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303282,
+            "objectId": 1221791,
+            "slug": "mujeeb-ur-rahman-portrait",
+            "url": "/db/PICTURES/CMS/303200/303282.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Mujeeb Ur Rahman portrait",
+            "longCaption": "Mujeeb Ur Rahman portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 65861,
+          "objectId": 524049,
+          "name": "Najibullah Zadran",
+          "longName": "Najibullah Zadran",
+          "mobileName": "Zadran",
+          "indexName": "Najibullah Zadran",
+          "battingName": "Najibullah Zadran",
+          "fieldingName": "Najibullah Zadran",
+          "slug": "najibullah-zadran",
+          "imageUrl": "/db/PICTURES/CMS/303200/303283.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 2,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303283,
+            "objectId": 1221792,
+            "slug": "najibullah-zadran-portrait",
+            "url": "/db/PICTURES/CMS/303200/303283.jpg",
+            "width": 160,
+            "height": 199,
+            "caption": "Najibullah Zadran portrait",
+            "longCaption": "Najibullah Zadran portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 79151,
+          "objectId": 793447,
+          "name": "Naveen-ul-Haq",
+          "longName": "Naveen-ul-Haq",
+          "mobileName": "",
+          "indexName": "Naveen-ul-Haq",
+          "battingName": "Naveen-ul-Haq",
+          "fieldingName": "Naveen-ul-Haq",
+          "slug": "naveen-ul-haq",
+          "imageUrl": "/db/PICTURES/CMS/303200/303285.jpg",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 9,
+            "date": 23
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303285,
+            "objectId": 1221794,
+            "slug": "naveen-ul-haq-portrait",
+            "url": "/db/PICTURES/CMS/303200/303285.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Naveen-ul-Haq portrait",
+            "longCaption": "Naveen-ul-Haq portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 90143,
+          "objectId": 974087,
+          "name": "Rahmanullah Gurbaz",
+          "longName": "Rahmanullah Gurbaz",
+          "mobileName": "Rahmanullah",
+          "indexName": "Rahmanullah Gurbaz",
+          "battingName": "Rahmanullah Gurbaz",
+          "fieldingName": "Rahmanullah Gurbaz",
+          "slug": "rahmanullah-gurbaz",
+          "imageUrl": "/db/PICTURES/CMS/357000/357020.1.png",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 11,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 357020,
+            "objectId": 1365535,
+            "slug": "rahmanullah-gurbaz-player-portrait",
+            "url": "/db/PICTURES/CMS/357000/357020.1.png",
+            "width": 160,
+            "height": 208,
+            "caption": "Rahmanullah Gurbaz player portrait",
+            "longCaption": "Rahmanullah Gurbaz player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 79159,
+          "objectId": 793463,
+          "name": "Rashid Khan",
+          "longName": "Rashid Khan",
+          "mobileName": "Rashid Khan",
+          "indexName": "Rashid Khan",
+          "battingName": "Rashid Khan",
+          "fieldingName": "Rashid Khan",
+          "slug": "rashid-khan",
+          "imageUrl": "/db/PICTURES/CMS/289200/289234.1.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 9,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lbg"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak googly"
+          ],
+          "image": {
+            "id": 289234,
+            "objectId": 1184480,
+            "slug": "rashid-khan-player-portrait",
+            "url": "/db/PICTURES/CMS/289200/289234.1.jpg",
+            "width": 160,
+            "height": 209,
+            "caption": "Rashid Khan player portrait",
+            "longCaption": "Rashid Khan player portrait",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 40,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 95329,
+          "objectId": 1070196,
+          "name": "Yash Thakur",
+          "longName": "Yash Thakur",
+          "mobileName": "Thakur",
+          "indexName": "Yash Thakur",
+          "battingName": "Yash Thakur",
+          "fieldingName": "Yash Thakur",
+          "slug": "yash-thakur",
+          "imageUrl": "/db/PICTURES/CMS/356700/356790.1.png",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 12,
+            "date": 28
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 356790,
+            "objectId": 1364996,
+            "slug": "yash-thakur-player-portrait",
+            "url": "/db/PICTURES/CMS/356700/356790.1.png",
+            "width": 160,
+            "height": 220,
+            "caption": "Yash Thakur player portrait",
+            "longCaption": "Yash Thakur player portrait",
+            "credit": "Google",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 104758,
+          "objectId": 1175429,
+          "name": "RS Hangargekar",
+          "longName": "Rajvardhan Hangargekar",
+          "mobileName": "",
+          "indexName": "Hangargekar,RS",
+          "battingName": "RS Hangargekar",
+          "fieldingName": "Hangargekar",
+          "slug": "rajvardhan-hangargekar",
+          "imageUrl": "/db/PICTURES/CMS/336200/336292.4.jpg",
+          "dateOfBirth": {
+            "year": 2002,
+            "month": 11,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 336292,
+            "objectId": 1306198,
+            "slug": "rajvardhan-hangargekar-player-portrait",
+            "url": "/db/PICTURES/CMS/336200/336292.4.jpg",
+            "width": 160,
+            "height": 227,
+            "caption": "Rajvardhan Hangargekar, player portrait",
+            "longCaption": "Rajvardhan Hangargekar, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Ashley Allen",
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 95094,
+          "objectId": 1060380,
+          "name": "RD Gaikwad",
+          "longName": "Ruturaj Gaikwad",
+          "mobileName": "Gaikwad",
+          "indexName": "Gaikwad, RD",
+          "battingName": "RD Gaikwad",
+          "fieldingName": "Gaikwad",
+          "slug": "ruturaj-gaikwad",
+          "imageUrl": "/db/PICTURES/CMS/356700/356779.1.png",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 1,
+            "date": 31
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 356779,
+            "objectId": 1364980,
+            "slug": "ruturaj-gaikwad-player-portrait",
+            "url": "/db/PICTURES/CMS/356700/356779.1.png",
+            "width": 160,
+            "height": 188,
+            "caption": "Ruturaj Gaikwad player portrait",
+            "longCaption": "Ruturaj Gaikwad player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            8
+          ],
+          "playingRoles": [
+            "batter"
+          ]
+        },
+        {
+          "id": 102735,
+          "objectId": 1151270,
+          "name": "A Badoni",
+          "longName": "Ayush Badoni",
+          "mobileName": "Badoni",
+          "indexName": "Badoni, A",
+          "battingName": "A Badoni",
+          "fieldingName": "Badoni",
+          "slug": "ayush-badoni",
+          "imageUrl": null,
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 12,
+            "date": 3
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": null,
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            8
+          ],
+          "playingRoles": [
+            "batter"
+          ]
+        },
+        {
+          "id": 80607,
+          "objectId": 822553,
+          "name": "TU Deshpande",
+          "longName": "Tushar Deshpande",
+          "mobileName": "Deshpande",
+          "indexName": "Deshpande, TU",
+          "battingName": "TU Deshpande",
+          "fieldingName": "Deshpande",
+          "slug": "tushar-deshpande",
+          "imageUrl": "/db/PICTURES/CMS/310600/310643.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 5,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 310643,
+            "objectId": 1236297,
+            "slug": "tushar-deshpande-portrait",
+            "url": "/db/PICTURES/CMS/310600/310643.jpg",
+            "width": 160,
+            "height": 199,
+            "caption": "Tushar Deshpande portrait",
+            "longCaption": "Tushar Deshpande portrait, October 2020",
+            "credit": "BCCI",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 60737,
+          "objectId": 424377,
+          "name": "K Gowtham",
+          "longName": "Krishnappa Gowtham",
+          "mobileName": "Gowtham",
+          "indexName": "Gowtham, K",
+          "battingName": "K Gowtham",
+          "fieldingName": "Gowtham",
+          "slug": "krishnappa-gowtham",
+          "imageUrl": "/db/PICTURES/CMS/356800/356850.1.png",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 10,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 356850,
+            "objectId": 1365133,
+            "slug": "k-gowtham-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356850.1.png",
+            "width": 160,
+            "height": 188,
+            "caption": "K Gowtham player portrait",
+            "longCaption": "K Gowtham player portrait",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 7593,
+          "objectId": 28081,
+          "name": "MS Dhoni",
+          "longName": "MS Dhoni",
+          "mobileName": "Dhoni",
+          "indexName": "Dhoni, MS",
+          "battingName": "MS Dhoni",
+          "fieldingName": "Dhoni",
+          "slug": "ms-dhoni",
+          "imageUrl": "/db/PICTURES/CMS/302400/302402.jpg",
+          "dateOfBirth": {
+            "year": 1981,
+            "month": 7,
+            "date": 7
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 302402,
+            "objectId": 1220600,
+            "slug": "ms-dhoni-portrait",
+            "url": "/db/PICTURES/CMS/302400/302402.jpg",
+            "width": 160,
+            "height": 202,
+            "caption": "MS Dhoni portrait",
+            "longCaption": "MS Dhoni portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 104396,
+          "objectId": 1170265,
+          "name": "NT Tilak Varma",
+          "longName": "Tilak Varma",
+          "mobileName": "Tilak Varma",
+          "indexName": "Tilak Varma,NT",
+          "battingName": "NT Tilak Varma",
+          "fieldingName": "Tilak Varma",
+          "slug": "tilak-varma",
+          "imageUrl": "/db/PICTURES/CMS/314700/314790.jpg",
+          "dateOfBirth": {
+            "year": 2002,
+            "month": 11,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 314790,
+            "objectId": 1246747,
+            "slug": "tilak-varma-portrait",
+            "url": "/db/PICTURES/CMS/314700/314790.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Tilak Varma portrait",
+            "longCaption": "Tilak Varma portrait, January 2021",
+            "credit": "ESPNcricinfo Ltd",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 49752,
+          "objectId": 253802,
+          "name": "V Kohli",
+          "longName": "Virat Kohli",
+          "mobileName": "Kohli",
+          "indexName": "Kohli, V",
+          "battingName": "V Kohli",
+          "fieldingName": "Kohli",
+          "slug": "virat-kohli",
+          "imageUrl": "/db/PICTURES/CMS/289000/289002.1.jpg",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 11,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 289002,
+            "objectId": 1183835,
+            "slug": "virat-kohli-player-portrait",
+            "url": "/db/PICTURES/CMS/289000/289002.1.jpg",
+            "width": 160,
+            "height": 210,
+            "caption": "Virat Kohli player portrait",
+            "longCaption": "Virat Kohli player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 104770,
+          "objectId": 1175441,
+          "name": "Ravi Bishnoi",
+          "longName": "Ravi Bishnoi",
+          "mobileName": "",
+          "indexName": "Ravi Bishnoi",
+          "battingName": "Ravi Bishnoi",
+          "fieldingName": "Ravi Bishnoi",
+          "slug": "ravi-bishnoi",
+          "imageUrl": "/db/PICTURES/CMS/335000/335051.4.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 9,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lbg"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak googly"
+          ],
+          "image": {
+            "id": 335051,
+            "objectId": 1303049,
+            "slug": "ravi-bishnoi-player-portrait",
+            "url": "/db/PICTURES/CMS/335000/335051.4.jpg",
+            "width": 160,
+            "height": 219,
+            "caption": "Ravi Bishnoi, player portrait",
+            "longCaption": "Ravi Bishnoi, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Jan Kruger",
+            "peerUrls": null
+          },
+          "countryTeamId": 6,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "List A"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Test",
+          "longName": "Test matches",
+          "multipleClass": 0,
+          "slug": "test-matches"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "ODI",
+          "longName": "One-Day Internationals",
+          "multipleClass": 0,
+          "slug": "one-day-internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "LA",
+          "longName": "List A matches",
+          "multipleClass": 0,
+          "slug": "list-a-matches"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 1,
+          "matches": 33,
+          "batted": true,
+          "battedInnings": 38,
+          "bowled": true,
+          "bowledInnings": 55,
+          "fielded": true,
+          "fieldedInnings": 57,
+          "dismissals": 10,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        },
+        {
+          "recordClassId": 2,
+          "matches": 15,
+          "batted": true,
+          "battedInnings": 5,
+          "bowled": true,
+          "bowledInnings": 15,
+          "fielded": true,
+          "fieldedInnings": 15,
+          "dismissals": 3,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 305,
+        "2": 250,
+        "3": 102,
+        "8": 90,
+        "9": 137,
+        "10": 73,
+        "14": 316,
+        "15": 425
+      },
+      "teamContractedPlayerCount": 26,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 17,
+          "type": "g",
+          "name": "Women's Twenty20"
+        }
+      ]
+    }
+  }
+}

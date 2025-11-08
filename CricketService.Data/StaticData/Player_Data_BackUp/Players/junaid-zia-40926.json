@@ -1,0 +1,4754 @@
+{
+  "player": {
+    "id": 36108,
+    "objectId": 40926,
+    "name": "Junaid Zia",
+    "longName": "Junaid Zia",
+    "mobileName": "Junaid Zia",
+    "indexName": "Junaid Zia",
+    "battingName": "Junaid Zia",
+    "fieldingName": "Junaid Zia",
+    "slug": "junaid-zia",
+    "imageUrl": "/db/PICTURES/DB/092003/046571.player.jpg",
+    "dateOfBirth": {
+      "year": 1983,
+      "month": 12,
+      "date": 11
+    },
+    "dateOfDeath": null,
+    "gender": "M",
+    "battingStyles": [
+      "rhb"
+    ],
+    "bowlingStyles": [
+      "rmf"
+    ],
+    "longBattingStyles": [
+      "right-hand bat"
+    ],
+    "longBowlingStyles": [
+      "right-arm medium-fast"
+    ],
+    "image": {
+      "id": 35683,
+      "objectId": 40925,
+      "slug": "junaid-zia-portrait",
+      "url": "/db/PICTURES/DB/092003/046571.player.jpg",
+      "width": 100,
+      "height": 150,
+      "caption": "Junaid Zia - Portrait",
+      "longCaption": "Junaid Zia - Portrait",
+      "credit": "Pakistan Cricket Board",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 7,
+    "playerRoleTypeIds": [],
+    "playingRoles": [],
+    "fullName": "Junaid Zia",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": 0,
+    "heightUnit": null,
+    "education": "",
+    "country": {
+      "id": 7,
+      "objectId": 7,
+      "name": "Pakistan",
+      "shortName": "Pakistan",
+      "abbreviation": "PAK",
+      "slug": "pakistan",
+      "image": {
+        "id": 313129,
+        "objectId": 1241588,
+        "slug": "pakistan-logo",
+        "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+        "width": 500,
+        "height": 500,
+        "caption": "Pakistan logo",
+        "longCaption": "Pakistan logo",
+        "credit": null,
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Lahore, Punjab",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "",
+    "intlCareerSpan": "2003 - 2003",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 35720,
+      "objectId": 189056,
+      "slug": "junaid-zia-portrait",
+      "url": "/db/PICTURES/DB/092003/046611.jpg",
+      "width": 100,
+      "height": 150,
+      "caption": "Junaid Zia - Portrait",
+      "longCaption": "Junaid Zia - Portrait",
+      "credit": "Pakistan Cricket Board",
+      "photographer": null,
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": null,
+        "SQUARE": null
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": false,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 30,
+    "totalVideos": 0,
+    "totalImages": 5
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 7,
+          "objectId": 7,
+          "scribeId": 7,
+          "slug": "pakistan",
+          "name": "Pakistan",
+          "longName": "Pakistan",
+          "abbreviation": "PAK",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+          "isCountry": true,
+          "primaryColor": "#005b20",
+          "image": {
+            "id": 313129,
+            "objectId": 1241588,
+            "slug": "pakistan-logo",
+            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Pakistan logo",
+            "longCaption": "Pakistan logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2916,
+          "objectId": 2865,
+          "scribeId": 2865,
+          "slug": "lahore-whites-eagles",
+          "name": "L Eagles",
+          "longName": "Lahore Eagles",
+          "abbreviation": "LahEa",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 4103,
+          "objectId": 222256,
+          "scribeId": 222256,
+          "slug": "lahore-ravi",
+          "name": "Lahore Ravi",
+          "longName": "Lahore Ravi",
+          "abbreviation": "Ravi",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3105,
+          "objectId": 3054,
+          "scribeId": 3054,
+          "slug": "rawalpindi-rams",
+          "name": "Rawalpindi",
+          "longName": "Rawalpindi",
+          "abbreviation": "Rams",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3189,
+          "objectId": 3138,
+          "scribeId": 3138,
+          "slug": "zarai-taraqiati-bank-limited",
+          "name": "ZTBL",
+          "longName": "Zarai Taraqiati Bank Limited",
+          "abbreviation": "ZTBL",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      }
+    ],
+    "relations": [],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "Son of Tauqir Zia, the Pakistan Cricket Board chairman, Junaid first made an impression with his medium-fast bowling in Pakistan's junior ranks, and was part of the squad which played in the Under-19 World Cup in 2002. He made his international debut in 2003-04, in the first ODI against Bangladesh at Multan. In domestic circles, he is known for his extremely high fitness levels, a fact which came in for much praise from Aamer Sohail, Pakistan's chief selector, who called Junaid one of the most hard-working cricketers he had ever seen. He was recalled to the one-day squad for the home series against Zimbabwe in January 2008 after taking 46 wickets in ten Quaid-e-Azam Trophy matches. <b>S Rajesh</b>"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 2,
+          "mt": 4,
+          "in": 2,
+          "rn": 2,
+          "bl": 7,
+          "avg": 2,
+          "sr": 28.57,
+          "no": 1,
+          "fo": 0,
+          "si": 0,
+          "hs": "2*",
+          "hn": 0,
+          "ft": 0,
+          "ct": 0,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 90,
+          "in": 134,
+          "rn": 2379,
+          "bl": null,
+          "avg": 19.99,
+          "sr": null,
+          "no": 15,
+          "fo": null,
+          "si": null,
+          "hs": "100",
+          "hn": 1,
+          "ft": 8,
+          "ct": 25,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 5,
+          "mt": 109,
+          "in": 80,
+          "rn": 1005,
+          "bl": null,
+          "avg": 15.22,
+          "sr": null,
+          "no": 14,
+          "fo": null,
+          "si": null,
+          "hs": "59*",
+          "hn": 0,
+          "ft": 4,
+          "ct": 29,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 6,
+          "mt": 35,
+          "in": 24,
+          "rn": 171,
+          "bl": 158,
+          "avg": 9,
+          "sr": 108.22,
+          "no": 5,
+          "fo": 9,
+          "si": 8,
+          "hs": "35*",
+          "hn": 0,
+          "ft": 0,
+          "ct": 8,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 2,
+          "mt": 4,
+          "in": 4,
+          "rn": 127,
+          "bl": 145,
+          "avg": 42.33,
+          "sr": 48.3,
+          "wk": 3,
+          "bbi": "3/21",
+          "bbm": "3/21",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 5.25
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 90,
+          "in": null,
+          "rn": 8404,
+          "bl": 14992,
+          "avg": 29.8,
+          "sr": 53.1,
+          "wk": 282,
+          "bbi": "7/7",
+          "bbm": null,
+          "fwk": 11,
+          "fw": 12,
+          "tw": 1,
+          "bwe": 3.36
+        },
+        {
+          "type": "BOWLING",
+          "cl": 5,
+          "mt": 109,
+          "in": null,
+          "rn": 4315,
+          "bl": 4843,
+          "avg": 29.35,
+          "sr": 32.9,
+          "wk": 147,
+          "bbi": "5/53",
+          "bbm": "5/53",
+          "fwk": 6,
+          "fw": 1,
+          "tw": 0,
+          "bwe": 5.34
+        },
+        {
+          "type": "BOWLING",
+          "cl": 6,
+          "mt": 35,
+          "in": 35,
+          "rn": 858,
+          "bl": 663,
+          "avg": 20.92,
+          "sr": 16.1,
+          "wk": 41,
+          "bbi": "5/31",
+          "bbm": "5/31",
+          "fwk": 0,
+          "fw": 1,
+          "tw": 0,
+          "bwe": 7.76
+        }
+      ]
+    },
+    "topRecords": [],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 2,
+                "name": "One-Day Internationals",
+                "type": "i"
+              },
+              "total": 4,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 2447,
+                    "id": 2447,
+                    "objectId": 64833,
+                    "scribeId": 64833,
+                    "slug": "pakistan-vs-bangladesh-1st-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2003",
+                    "title": "1st ODI",
+                    "floodlit": "day",
+                    "startDate": "2003-09-09T00:00:00Z",
+                    "endDate": "2003-09-09T00:00:00Z",
+                    "startTime": "2003-09-09T04:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Pakistan won by 137 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "002041",
+                    "generalNumber": null,
+                    "winnerTeamId": 7,
+                    "tossWinnerTeamId": 7,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1926,
+                      "objectId": 62185,
+                      "scribeId": 15161,
+                      "slug": "bangladesh-tour-of-pakistan-2003",
+                      "name": "Bangladesh tour of Pakistan",
+                      "longName": "Bangladesh tour of Pakistan",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2003,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "2003",
+                      "startDate": "2003-08-20T00:00:00Z",
+                      "endDate": "2003-09-21T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 1597,
+                      "objectId": 58986,
+                      "name": "Multan Cricket Stadium",
+                      "smallName": "Multan",
+                      "longName": "Multan Cricket Stadium",
+                      "slug": "multan-cricket-stadium",
+                      "location": "",
+                      "image": {
+                        "id": 55442,
+                        "objectId": 225849,
+                        "slug": "a-general-view-of-multan-cricket-stadium",
+                        "url": "/db/PICTURES/CMS/55400/55442.2.jpg",
+                        "width": 210,
+                        "height": 101,
+                        "caption": "A general view of Multan Cricket Stadium",
+                        "longCaption": "A general view of Multan Cricket Stadium, Pakistan v England, 1st Test, Multan, November 14, 2005",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 870,
+                        "objectId": 58979,
+                        "name": "Multan",
+                        "area": "",
+                        "timezone": "Asia/Karachi"
+                      },
+                      "country": {
+                        "id": 7,
+                        "objectId": 7,
+                        "name": "Pakistan",
+                        "shortName": "Pakistan",
+                        "abbreviation": "PAK",
+                        "slug": "pakistan"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "323/3",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 25,
+                          "objectId": 25,
+                          "scribeId": 25,
+                          "slug": "bangladesh",
+                          "name": "Bangladesh",
+                          "longName": "Bangladesh",
+                          "abbreviation": "BAN",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/341400/341456.png",
+                          "isCountry": true,
+                          "primaryColor": "#006a4e",
+                          "image": {
+                            "id": 341456,
+                            "objectId": 1321180,
+                            "slug": "bangladesh-latest-team-flag",
+                            "url": "/db/PICTURES/CMS/341400/341456.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Bangladesh latest-team flag",
+                            "longCaption": "Bangladesh latest-team flag",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "186",
+                        "scoreInfo": "43.2/50 ov, T:324",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 13,
+                    "totalVideos": 0,
+                    "totalStories": 2,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:40:19.313Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 2450,
+                    "id": 2450,
+                    "objectId": 64836,
+                    "scribeId": 64836,
+                    "slug": "pakistan-vs-bangladesh-4th-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2003",
+                    "title": "4th ODI",
+                    "floodlit": "daynight",
+                    "startDate": "2003-09-18T00:00:00Z",
+                    "endDate": "2003-09-18T00:00:00Z",
+                    "startTime": "2003-09-18T09:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Pakistan won by 5 wickets (with 1 ball remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "002044",
+                    "generalNumber": null,
+                    "winnerTeamId": 7,
+                    "tossWinnerTeamId": 25,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1926,
+                      "objectId": 62185,
+                      "scribeId": 15161,
+                      "slug": "bangladesh-tour-of-pakistan-2003",
+                      "name": "Bangladesh tour of Pakistan",
+                      "longName": "Bangladesh tour of Pakistan",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2003,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "2003",
+                      "startDate": "2003-08-20T00:00:00Z",
+                      "endDate": "2003-09-21T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 1001,
+                      "objectId": 59006,
+                      "name": "Rawalpindi Cricket Stadium",
+                      "smallName": "Rawalpindi",
+                      "longName": "Rawalpindi Cricket Stadium",
+                      "slug": "rawalpindi-cricket-stadium",
+                      "location": "",
+                      "image": {
+                        "id": 37701,
+                        "objectId": 59005,
+                        "slug": "a-view-of-the-rawalpindi-cricket-stadium",
+                        "url": "/db/PICTURES/DB/102000/017579.1.jpg",
+                        "width": 220,
+                        "height": 165,
+                        "caption": "A view of the Rawalpindi Cricket Stadium",
+                        "longCaption": "A view of the Rawalpindi Cricket Stadium, 27 Oct 2000",
+                        "credit": "ESPNcricinfo Ltd",
+                        "photographer": "Suhael Ahmed",
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 874,
+                        "objectId": 58999,
+                        "name": "Rawalpindi",
+                        "area": "",
+                        "timezone": "Asia/Karachi"
+                      },
+                      "country": {
+                        "id": 7,
+                        "objectId": 7,
+                        "name": "Pakistan",
+                        "shortName": "Pakistan",
+                        "abbreviation": "PAK",
+                        "slug": "pakistan"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 25,
+                          "objectId": 25,
+                          "scribeId": 25,
+                          "slug": "bangladesh",
+                          "name": "Bangladesh",
+                          "longName": "Bangladesh",
+                          "abbreviation": "BAN",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/341400/341456.png",
+                          "isCountry": true,
+                          "primaryColor": "#006a4e",
+                          "image": {
+                            "id": 341456,
+                            "objectId": 1321180,
+                            "slug": "bangladesh-latest-team-flag",
+                            "url": "/db/PICTURES/CMS/341400/341456.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Bangladesh latest-team flag",
+                            "longCaption": "Bangladesh latest-team flag",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "222/8",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "226/5",
+                        "scoreInfo": "49.5/50 ov, T:223",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 17,
+                    "totalVideos": 0,
+                    "totalStories": 2,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:40:19.313Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 90,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": null,
+                  "span": "2002/03"
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 48831,
+                    "id": 48831,
+                    "objectId": 584311,
+                    "scribeId": 584311,
+                    "slug": "united-bank-limited-vs-zarai-taraqiati-bank-limited",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "2012/13",
+                    "title": "",
+                    "floodlit": "day",
+                    "startDate": "2012-11-26T00:00:00Z",
+                    "endDate": "2012-11-29T00:00:00Z",
+                    "startTime": "2012-11-26T05:00:00Z",
+                    "timePublished": true,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "ZTBL won by an innings and 256 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 3189,
+                    "tossWinnerTeamId": 3179,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 3,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 7672,
+                      "objectId": 584258,
+                      "scribeId": 8836,
+                      "slug": "president-s-trophy-2012-13",
+                      "name": "President's Trophy",
+                      "longName": "President's Trophy",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2012,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in Pakistan",
+                      "season": "2012/13",
+                      "startDate": "2012-10-03T00:00:00Z",
+                      "endDate": "2013-01-19T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 1000,
+                      "objectId": 58940,
+                      "name": "Marghzar Cricket Ground, Islamabad",
+                      "smallName": "Islamabad",
+                      "longName": "Marghzar Cricket Ground, Islamabad",
+                      "slug": "marghzar-cricket-ground-islamabad",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 866,
+                        "objectId": 58937,
+                        "name": "Islamabad",
+                        "area": "",
+                        "timezone": "Asia/Karachi"
+                      },
+                      "country": {
+                        "id": 7,
+                        "objectId": 7,
+                        "name": "Pakistan",
+                        "shortName": "Pakistan",
+                        "abbreviation": "PAK",
+                        "slug": "pakistan"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 3189,
+                          "objectId": 3138,
+                          "scribeId": 3138,
+                          "slug": "zarai-taraqiati-bank-limited",
+                          "name": "ZTBL",
+                          "longName": "Zarai Taraqiati Bank Limited",
+                          "abbreviation": "ZTBL",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "643/6d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3179,
+                          "objectId": 3128,
+                          "scribeId": 3128,
+                          "slug": "united-bank-limited",
+                          "name": "United Bank",
+                          "longName": "United Bank Limited",
+                          "abbreviation": "UBL",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "(f/o) 179 & 208",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": 162413,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:40:19.313Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 5,
+                "name": "List A",
+                "type": "g"
+              },
+              "total": 109,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": null,
+                  "span": "2000/01"
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 56463,
+                    "id": 56463,
+                    "objectId": 677839,
+                    "scribeId": 677839,
+                    "slug": "zarai-taraqiati-bank-limited-vs-pakistan-television",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2013/14",
+                    "title": "",
+                    "floodlit": "day",
+                    "startDate": "2014-01-27T00:00:00Z",
+                    "endDate": "2014-01-27T00:00:00Z",
+                    "startTime": "2014-01-27T04:30:00Z",
+                    "timePublished": true,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "Y",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "ZTBL won by 6 wickets (with 78 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 3189,
+                    "tossWinnerTeamId": 3189,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": 32,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 8681,
+                      "objectId": 677141,
+                      "scribeId": 8835,
+                      "slug": "president-s-cup-one-day-tournament-2013-14",
+                      "name": "President's Cup One-Day Tournament",
+                      "longName": "President's Cup One-Day Tournament",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2013,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in Pakistan",
+                      "season": "2013/14",
+                      "startDate": "2013-10-28T00:00:00Z",
+                      "endDate": "2014-02-04T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 1001,
+                      "objectId": 59006,
+                      "name": "Rawalpindi Cricket Stadium",
+                      "smallName": "Rawalpindi",
+                      "longName": "Rawalpindi Cricket Stadium",
+                      "slug": "rawalpindi-cricket-stadium",
+                      "location": "",
+                      "image": {
+                        "id": 37701,
+                        "objectId": 59005,
+                        "slug": "a-view-of-the-rawalpindi-cricket-stadium",
+                        "url": "/db/PICTURES/DB/102000/017579.1.jpg",
+                        "width": 220,
+                        "height": 165,
+                        "caption": "A view of the Rawalpindi Cricket Stadium",
+                        "longCaption": "A view of the Rawalpindi Cricket Stadium, 27 Oct 2000",
+                        "credit": "ESPNcricinfo Ltd",
+                        "photographer": "Suhael Ahmed",
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 874,
+                        "objectId": 58999,
+                        "name": "Rawalpindi",
+                        "area": "",
+                        "timezone": "Asia/Karachi"
+                      },
+                      "country": {
+                        "id": 7,
+                        "objectId": 7,
+                        "name": "Pakistan",
+                        "shortName": "Pakistan",
+                        "abbreviation": "PAK",
+                        "slug": "pakistan"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 3011,
+                          "objectId": 2960,
+                          "scribeId": 2960,
+                          "slug": "pakistan-television",
+                          "name": "Pakistan TV",
+                          "longName": "Pakistan Television",
+                          "abbreviation": "PakTV",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "226",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3189,
+                          "objectId": 3138,
+                          "scribeId": 3138,
+                          "slug": "zarai-taraqiati-bank-limited",
+                          "name": "ZTBL",
+                          "longName": "Zarai Taraqiati Bank Limited",
+                          "abbreviation": "ZTBL",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "228/4",
+                        "scoreInfo": "32/45 ov, T:227",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": 199637,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:40:19.313Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 6,
+                "name": "Twenty20",
+                "type": "g"
+              },
+              "total": 35,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 10884,
+                    "id": 10884,
+                    "objectId": 264780,
+                    "scribeId": 264780,
+                    "slug": "lahore-eagles-vs-sialkot-stallions-pool-a",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 6,
+                    "subClassId": null,
+                    "season": "2005/06",
+                    "title": "Pool A",
+                    "floodlit": null,
+                    "startDate": "2006-02-24T00:00:00Z",
+                    "endDate": "2006-02-24T00:00:00Z",
+                    "startTime": "2006-02-24T04:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "S Stallions won by 8 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 3146,
+                    "tossWinnerTeamId": 2916,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 2717,
+                      "objectId": 238596,
+                      "scribeId": 8660,
+                      "slug": "abn-amro-twenty-20-cup-2005-06",
+                      "name": "ABN-AMRO Twenty-20 Cup",
+                      "longName": "ABN-AMRO Twenty-20 Cup",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2006,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in Pakistan",
+                      "season": "2005/06",
+                      "startDate": "2006-02-24T00:00:00Z",
+                      "endDate": "2006-03-04T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 1018,
+                      "objectId": 58959,
+                      "name": "United Bank Limited Sports Complex, Karachi",
+                      "smallName": "Karachi",
+                      "longName": "United Bank Limited Sports Complex, Karachi",
+                      "slug": "united-bank-limited-sports-complex-karachi",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 867,
+                        "objectId": 58943,
+                        "name": "Karachi",
+                        "area": "",
+                        "timezone": "Asia/Karachi"
+                      },
+                      "country": {
+                        "id": 7,
+                        "objectId": 7,
+                        "name": "Pakistan",
+                        "shortName": "Pakistan",
+                        "abbreviation": "PAK",
+                        "slug": "pakistan"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 3146,
+                          "objectId": 3095,
+                          "scribeId": 3095,
+                          "slug": "sialkot-stallions",
+                          "name": "S Stallions",
+                          "longName": "Sialkot Stallions",
+                          "abbreviation": "Sia",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "203/7",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 2916,
+                          "objectId": 2865,
+                          "scribeId": 2865,
+                          "slug": "lahore-whites-eagles",
+                          "name": "L Eagles",
+                          "longName": "Lahore Eagles",
+                          "abbreviation": "LahEa",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "195/9",
+                        "scoreInfo": "20 ov, T:204",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "T20",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 0,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:35:28.157Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 63305,
+                    "id": 63305,
+                    "objectId": 781073,
+                    "scribeId": 781073,
+                    "slug": "bahawalpur-stags-vs-lahore-lions-group-d",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": null,
+                    "generalClassId": 6,
+                    "subClassId": null,
+                    "season": "2014/15",
+                    "title": "Group D",
+                    "floodlit": "day",
+                    "startDate": "2014-09-25T00:00:00Z",
+                    "endDate": "2014-09-25T00:00:00Z",
+                    "startTime": "2014-09-25T04:00:00Z",
+                    "timePublished": true,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "Y",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Stags won by 7 wickets (with 14 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": null,
+                    "generalNumber": null,
+                    "winnerTeamId": 5057,
+                    "tossWinnerTeamId": 5057,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": 17.04,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 9577,
+                      "objectId": 779411,
+                      "scribeId": 8660,
+                      "slug": "bank-albaraka-presents-haier-t20-cup-2014-15",
+                      "name": "Bank Albaraka Presents Haier T20 Cup",
+                      "longName": "Bank Albaraka Presents Haier T20 Cup",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2014,
+                      "typeId": 3,
+                      "isTrophy": true,
+                      "description": "in Pakistan",
+                      "season": "2014/15",
+                      "startDate": "2014-09-17T00:00:00Z",
+                      "endDate": "2014-09-28T00:00:00Z",
+                      "hasStandings": true,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 487,
+                      "objectId": 58956,
+                      "name": "National Stadium, Karachi",
+                      "smallName": "Karachi",
+                      "longName": "National Stadium, Karachi",
+                      "slug": "national-stadium-karachi",
+                      "location": "",
+                      "image": {
+                        "id": 127072,
+                        "objectId": 496654,
+                        "slug": "a-view-of-the-national-stadium-in-karachi",
+                        "url": "/db/PICTURES/CMS/127000/127072.4.jpg",
+                        "width": 210,
+                        "height": 143,
+                        "caption": "A view of the National Stadium in Karachi",
+                        "longCaption": "A view of the National Stadium, HBL v PIA, Quaid-e-Azam Trophy Division One Final, Karachi, January 13, 2011",
+                        "credit": "AFP",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 867,
+                        "objectId": 58943,
+                        "name": "Karachi",
+                        "area": "",
+                        "timezone": "Asia/Karachi"
+                      },
+                      "country": {
+                        "id": 7,
+                        "objectId": 7,
+                        "name": "Pakistan",
+                        "shortName": "Pakistan",
+                        "abbreviation": "PAK",
+                        "slug": "pakistan"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 2887,
+                          "objectId": 2836,
+                          "scribeId": 2836,
+                          "slug": "lahore-lions",
+                          "name": "Lahore Lions",
+                          "longName": "Lahore Lions",
+                          "abbreviation": "Lions",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/193600/193623.jpg",
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": {
+                            "id": 193623,
+                            "objectId": 780309,
+                            "slug": "lahore-lions",
+                            "url": "/db/PICTURES/CMS/193600/193623.jpg",
+                            "width": 120,
+                            "height": 83,
+                            "caption": "Lahore Lions",
+                            "longCaption": "Lahore Lions",
+                            "credit": "ESPNcricinfo Ltd",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "140/6",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 5057,
+                          "objectId": 594106,
+                          "scribeId": 594106,
+                          "slug": "bahawalpur-stags",
+                          "name": "Stags",
+                          "longName": "Bahawalpur Stags",
+                          "abbreviation": "Stags",
+                          "unofficialName": null,
+                          "imageUrl": null,
+                          "isCountry": false,
+                          "primaryColor": null,
+                          "image": null
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "141/3",
+                        "scoreInfo": "17.4/20 ov, T:141",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "T20",
+                    "previewStoryId": null,
+                    "reportStoryId": 213855,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:40:19.313Z"
+                  },
+                  "span": null
+                }
+              ]
+            }
+          ],
+          "recent": [
+            {
+              "match": {
+                "_uid": 63305,
+                "id": 63305,
+                "objectId": 781073,
+                "scribeId": 781073,
+                "slug": "bahawalpur-stags-vs-lahore-lions-group-d",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2014/15",
+                "title": "Group D",
+                "floodlit": "day",
+                "startDate": "2014-09-25T00:00:00Z",
+                "endDate": "2014-09-25T00:00:00Z",
+                "startTime": "2014-09-25T04:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Stags won by 7 wickets (with 14 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 5057,
+                "tossWinnerTeamId": 5057,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 17.04,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 9577,
+                  "objectId": 779411,
+                  "scribeId": 8660,
+                  "slug": "bank-albaraka-presents-haier-t20-cup-2014-15",
+                  "name": "Bank Albaraka Presents Haier T20 Cup",
+                  "longName": "Bank Albaraka Presents Haier T20 Cup",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2014,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2014/15",
+                  "startDate": "2014-09-17T00:00:00Z",
+                  "endDate": "2014-09-28T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 487,
+                  "objectId": 58956,
+                  "name": "National Stadium, Karachi",
+                  "smallName": "Karachi",
+                  "longName": "National Stadium, Karachi",
+                  "slug": "national-stadium-karachi",
+                  "location": "",
+                  "image": {
+                    "id": 127072,
+                    "objectId": 496654,
+                    "slug": "a-view-of-the-national-stadium-in-karachi",
+                    "url": "/db/PICTURES/CMS/127000/127072.4.jpg",
+                    "width": 210,
+                    "height": 143,
+                    "caption": "A view of the National Stadium in Karachi",
+                    "longCaption": "A view of the National Stadium, HBL v PIA, Quaid-e-Azam Trophy Division One Final, Karachi, January 13, 2011",
+                    "credit": "AFP",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 867,
+                    "objectId": 58943,
+                    "name": "Karachi",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 2887,
+                      "objectId": 2836,
+                      "scribeId": 2836,
+                      "slug": "lahore-lions",
+                      "name": "Lahore Lions",
+                      "longName": "Lahore Lions",
+                      "abbreviation": "Lions",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/193600/193623.jpg",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 193623,
+                        "objectId": 780309,
+                        "slug": "lahore-lions",
+                        "url": "/db/PICTURES/CMS/193600/193623.jpg",
+                        "width": 120,
+                        "height": 83,
+                        "caption": "Lahore Lions",
+                        "longCaption": "Lahore Lions",
+                        "credit": "ESPNcricinfo Ltd",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "140/6",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 5057,
+                      "objectId": 594106,
+                      "scribeId": 594106,
+                      "slug": "bahawalpur-stags",
+                      "name": "Stags",
+                      "longName": "Bahawalpur Stags",
+                      "abbreviation": "Stags",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "141/3",
+                    "scoreInfo": "17.4/20 ov, T:141",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 213855,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 2887,
+              "battingText": "14",
+              "bowlingText": "0/27",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 63289,
+                "id": 63289,
+                "objectId": 781057,
+                "scribeId": 781057,
+                "slug": "lahore-lions-vs-dera-murad-jamali-ibexes-group-d",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2014/15",
+                "title": "Group D",
+                "floodlit": "daynight",
+                "startDate": "2014-09-22T00:00:00Z",
+                "endDate": "2014-09-22T00:00:00Z",
+                "startTime": "2014-09-22T12:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Lahore Lions won by 122 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 2887,
+                "tossWinnerTeamId": 5265,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 14,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 9577,
+                  "objectId": 779411,
+                  "scribeId": 8660,
+                  "slug": "bank-albaraka-presents-haier-t20-cup-2014-15",
+                  "name": "Bank Albaraka Presents Haier T20 Cup",
+                  "longName": "Bank Albaraka Presents Haier T20 Cup",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2014,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2014/15",
+                  "startDate": "2014-09-17T00:00:00Z",
+                  "endDate": "2014-09-28T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 487,
+                  "objectId": 58956,
+                  "name": "National Stadium, Karachi",
+                  "smallName": "Karachi",
+                  "longName": "National Stadium, Karachi",
+                  "slug": "national-stadium-karachi",
+                  "location": "",
+                  "image": {
+                    "id": 127072,
+                    "objectId": 496654,
+                    "slug": "a-view-of-the-national-stadium-in-karachi",
+                    "url": "/db/PICTURES/CMS/127000/127072.4.jpg",
+                    "width": 210,
+                    "height": 143,
+                    "caption": "A view of the National Stadium in Karachi",
+                    "longCaption": "A view of the National Stadium, HBL v PIA, Quaid-e-Azam Trophy Division One Final, Karachi, January 13, 2011",
+                    "credit": "AFP",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 867,
+                    "objectId": 58943,
+                    "name": "Karachi",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 2887,
+                      "objectId": 2836,
+                      "scribeId": 2836,
+                      "slug": "lahore-lions",
+                      "name": "Lahore Lions",
+                      "longName": "Lahore Lions",
+                      "abbreviation": "Lions",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/193600/193623.jpg",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 193623,
+                        "objectId": 780309,
+                        "slug": "lahore-lions",
+                        "url": "/db/PICTURES/CMS/193600/193623.jpg",
+                        "width": 120,
+                        "height": 83,
+                        "caption": "Lahore Lions",
+                        "longCaption": "Lahore Lions",
+                        "credit": "ESPNcricinfo Ltd",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "177/4",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 5265,
+                      "objectId": 713883,
+                      "scribeId": 713883,
+                      "slug": "dera-murad-jamali-ibexes",
+                      "name": "DM Jamali",
+                      "longName": "Dera Murad Jamali Ibexes",
+                      "abbreviation": "DMJI",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "55",
+                    "scoreInfo": "14/20 ov, T:178",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": null,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 0,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 2887,
+              "battingText": null,
+              "bowlingText": "1/21",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 59503,
+                "id": 59503,
+                "objectId": 714787,
+                "scribeId": 714787,
+                "slug": "faisalabad-wolves-vs-lahore-eagles-group-c",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2013/14",
+                "title": "Group C",
+                "floodlit": "day",
+                "startDate": "2014-02-11T00:00:00Z",
+                "endDate": "2014-02-11T00:00:00Z",
+                "startTime": "2014-02-11T07:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Wolves won by 8 wickets (with 38 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 2756,
+                "tossWinnerTeamId": 2916,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 13.04,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 9015,
+                  "objectId": 714737,
+                  "scribeId": 8660,
+                  "slug": "faysal-bank-t-20-cup-2013-14",
+                  "name": "Faysal Bank T-20 Cup",
+                  "longName": "Faysal Bank T-20 Cup",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2014,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2013/14",
+                  "startDate": "2014-02-06T00:00:00Z",
+                  "endDate": "2014-02-16T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1001,
+                  "objectId": 59006,
+                  "name": "Rawalpindi Cricket Stadium",
+                  "smallName": "Rawalpindi",
+                  "longName": "Rawalpindi Cricket Stadium",
+                  "slug": "rawalpindi-cricket-stadium",
+                  "location": "",
+                  "image": {
+                    "id": 37701,
+                    "objectId": 59005,
+                    "slug": "a-view-of-the-rawalpindi-cricket-stadium",
+                    "url": "/db/PICTURES/DB/102000/017579.1.jpg",
+                    "width": 220,
+                    "height": 165,
+                    "caption": "A view of the Rawalpindi Cricket Stadium",
+                    "longCaption": "A view of the Rawalpindi Cricket Stadium, 27 Oct 2000",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": "Suhael Ahmed",
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 874,
+                    "objectId": 58999,
+                    "name": "Rawalpindi",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 2916,
+                      "objectId": 2865,
+                      "scribeId": 2865,
+                      "slug": "lahore-whites-eagles",
+                      "name": "L Eagles",
+                      "longName": "Lahore Eagles",
+                      "abbreviation": "LahEa",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "93/8",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 2756,
+                      "objectId": 2705,
+                      "scribeId": 2705,
+                      "slug": "faisalabad-wolves",
+                      "name": "Wolves",
+                      "longName": "Faisalabad Wolves",
+                      "abbreviation": "Wolv",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "94/2",
+                    "scoreInfo": "13.4/20 ov, T:94",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 200639,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 2916,
+              "battingText": "8*",
+              "bowlingText": "1/13",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 59499,
+                "id": 59499,
+                "objectId": 714783,
+                "scribeId": 714783,
+                "slug": "lahore-eagles-vs-peshawar-panthers-group-c",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2013/14",
+                "title": "Group C",
+                "floodlit": "day",
+                "startDate": "2014-02-10T00:00:00Z",
+                "endDate": "2014-02-10T00:00:00Z",
+                "startTime": "2014-02-10T07:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "P Panthers won by 7 wickets (with 27 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3043,
+                "tossWinnerTeamId": 3043,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 15.03,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 9015,
+                  "objectId": 714737,
+                  "scribeId": 8660,
+                  "slug": "faysal-bank-t-20-cup-2013-14",
+                  "name": "Faysal Bank T-20 Cup",
+                  "longName": "Faysal Bank T-20 Cup",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2014,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2013/14",
+                  "startDate": "2014-02-06T00:00:00Z",
+                  "endDate": "2014-02-16T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1001,
+                  "objectId": 59006,
+                  "name": "Rawalpindi Cricket Stadium",
+                  "smallName": "Rawalpindi",
+                  "longName": "Rawalpindi Cricket Stadium",
+                  "slug": "rawalpindi-cricket-stadium",
+                  "location": "",
+                  "image": {
+                    "id": 37701,
+                    "objectId": 59005,
+                    "slug": "a-view-of-the-rawalpindi-cricket-stadium",
+                    "url": "/db/PICTURES/DB/102000/017579.1.jpg",
+                    "width": 220,
+                    "height": 165,
+                    "caption": "A view of the Rawalpindi Cricket Stadium",
+                    "longCaption": "A view of the Rawalpindi Cricket Stadium, 27 Oct 2000",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": "Suhael Ahmed",
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 874,
+                    "objectId": 58999,
+                    "name": "Rawalpindi",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 2916,
+                      "objectId": 2865,
+                      "scribeId": 2865,
+                      "slug": "lahore-whites-eagles",
+                      "name": "L Eagles",
+                      "longName": "Lahore Eagles",
+                      "abbreviation": "LahEa",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "104/9",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3043,
+                      "objectId": 2992,
+                      "scribeId": 2992,
+                      "slug": "peshawar-panthers",
+                      "name": "P Panthers",
+                      "longName": "Peshawar Panthers",
+                      "abbreviation": "PeshP",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "107/3",
+                    "scoreInfo": "15.3/20 ov, T:105",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 200555,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 2916,
+              "battingText": "6",
+              "bowlingText": "2/19",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 59473,
+                "id": 59473,
+                "objectId": 714757,
+                "scribeId": 714757,
+                "slug": "islamabad-leopards-vs-lahore-eagles-group-c",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2013/14",
+                "title": "Group C",
+                "floodlit": "daynight",
+                "startDate": "2014-02-07T00:00:00Z",
+                "endDate": "2014-02-07T00:00:00Z",
+                "startTime": "2014-02-07T11:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Leopards won by 17 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4125,
+                "tossWinnerTeamId": 2916,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 20,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 9015,
+                  "objectId": 714737,
+                  "scribeId": 8660,
+                  "slug": "faysal-bank-t-20-cup-2013-14",
+                  "name": "Faysal Bank T-20 Cup",
+                  "longName": "Faysal Bank T-20 Cup",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2014,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2013/14",
+                  "startDate": "2014-02-06T00:00:00Z",
+                  "endDate": "2014-02-16T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1001,
+                  "objectId": 59006,
+                  "name": "Rawalpindi Cricket Stadium",
+                  "smallName": "Rawalpindi",
+                  "longName": "Rawalpindi Cricket Stadium",
+                  "slug": "rawalpindi-cricket-stadium",
+                  "location": "",
+                  "image": {
+                    "id": 37701,
+                    "objectId": 59005,
+                    "slug": "a-view-of-the-rawalpindi-cricket-stadium",
+                    "url": "/db/PICTURES/DB/102000/017579.1.jpg",
+                    "width": 220,
+                    "height": 165,
+                    "caption": "A view of the Rawalpindi Cricket Stadium",
+                    "longCaption": "A view of the Rawalpindi Cricket Stadium, 27 Oct 2000",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": "Suhael Ahmed",
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 874,
+                    "objectId": 58999,
+                    "name": "Rawalpindi",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4125,
+                      "objectId": 238535,
+                      "scribeId": 238535,
+                      "slug": "islamabad-leopards",
+                      "name": "Leopards",
+                      "longName": "Islamabad Leopards",
+                      "abbreviation": "Leopa",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "118/7",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 2916,
+                      "objectId": 2865,
+                      "scribeId": 2865,
+                      "slug": "lahore-whites-eagles",
+                      "name": "L Eagles",
+                      "longName": "Lahore Eagles",
+                      "abbreviation": "LahEa",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "101/9",
+                    "scoreInfo": "20 ov, T:119",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 200361,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 2916,
+              "battingText": "3",
+              "bowlingText": "1/18",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 56463,
+                "id": 56463,
+                "objectId": 677839,
+                "scribeId": 677839,
+                "slug": "zarai-taraqiati-bank-limited-vs-pakistan-television",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 5,
+                "subClassId": null,
+                "season": "2013/14",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2014-01-27T00:00:00Z",
+                "endDate": "2014-01-27T00:00:00Z",
+                "startTime": "2014-01-27T04:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "ZTBL won by 6 wickets (with 78 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3189,
+                "tossWinnerTeamId": 3189,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 32,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 8681,
+                  "objectId": 677141,
+                  "scribeId": 8835,
+                  "slug": "president-s-cup-one-day-tournament-2013-14",
+                  "name": "President's Cup One-Day Tournament",
+                  "longName": "President's Cup One-Day Tournament",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2013,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2013/14",
+                  "startDate": "2013-10-28T00:00:00Z",
+                  "endDate": "2014-02-04T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1001,
+                  "objectId": 59006,
+                  "name": "Rawalpindi Cricket Stadium",
+                  "smallName": "Rawalpindi",
+                  "longName": "Rawalpindi Cricket Stadium",
+                  "slug": "rawalpindi-cricket-stadium",
+                  "location": "",
+                  "image": {
+                    "id": 37701,
+                    "objectId": 59005,
+                    "slug": "a-view-of-the-rawalpindi-cricket-stadium",
+                    "url": "/db/PICTURES/DB/102000/017579.1.jpg",
+                    "width": 220,
+                    "height": 165,
+                    "caption": "A view of the Rawalpindi Cricket Stadium",
+                    "longCaption": "A view of the Rawalpindi Cricket Stadium, 27 Oct 2000",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": "Suhael Ahmed",
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 874,
+                    "objectId": 58999,
+                    "name": "Rawalpindi",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3011,
+                      "objectId": 2960,
+                      "scribeId": 2960,
+                      "slug": "pakistan-television",
+                      "name": "Pakistan TV",
+                      "longName": "Pakistan Television",
+                      "abbreviation": "PakTV",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "226",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3189,
+                      "objectId": 3138,
+                      "scribeId": 3138,
+                      "slug": "zarai-taraqiati-bank-limited",
+                      "name": "ZTBL",
+                      "longName": "Zarai Taraqiati Bank Limited",
+                      "abbreviation": "ZTBL",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "228/4",
+                    "scoreInfo": "32/45 ov, T:227",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "ODI",
+                "previewStoryId": null,
+                "reportStoryId": 199637,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 3189,
+              "battingText": null,
+              "bowlingText": "2/41",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 56441,
+                "id": 56441,
+                "objectId": 677817,
+                "scribeId": 677817,
+                "slug": "national-bank-of-pakistan-vs-zarai-taraqiati-bank-limited",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 5,
+                "subClassId": null,
+                "season": "2013/14",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2014-01-11T00:00:00Z",
+                "endDate": "2014-01-11T00:00:00Z",
+                "startTime": "2014-01-11T04:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "National Bnk won by 88 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 2969,
+                "tossWinnerTeamId": 3189,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 43.04,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 8681,
+                  "objectId": 677141,
+                  "scribeId": 8835,
+                  "slug": "president-s-cup-one-day-tournament-2013-14",
+                  "name": "President's Cup One-Day Tournament",
+                  "longName": "President's Cup One-Day Tournament",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2013,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2013/14",
+                  "startDate": "2013-10-28T00:00:00Z",
+                  "endDate": "2014-02-04T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 2005,
+                  "objectId": 222851,
+                  "name": "Diamond Club Ground, Islamabad",
+                  "smallName": "Islamabad",
+                  "longName": "Diamond Club Ground, Islamabad",
+                  "slug": "diamond-club-ground-islamabad",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 866,
+                    "objectId": 58937,
+                    "name": "Islamabad",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 2969,
+                      "objectId": 2918,
+                      "scribeId": 2918,
+                      "slug": "national-bank-of-pakistan",
+                      "name": "National Bnk",
+                      "longName": "National Bank of Pakistan",
+                      "abbreviation": "NBP",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "283/8",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3189,
+                      "objectId": 3138,
+                      "scribeId": 3138,
+                      "slug": "zarai-taraqiati-bank-limited",
+                      "name": "ZTBL",
+                      "longName": "Zarai Taraqiati Bank Limited",
+                      "abbreviation": "ZTBL",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "195",
+                    "scoreInfo": "43.4/45 ov, T:284",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "ODI",
+                "previewStoryId": null,
+                "reportStoryId": 198693,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 3189,
+              "battingText": "4",
+              "bowlingText": "2/45",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 56417,
+                "id": 56417,
+                "objectId": 677793,
+                "scribeId": 677793,
+                "slug": "pakistan-international-airlines-vs-zarai-taraqiati-bank-limited",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 5,
+                "subClassId": null,
+                "season": "2013/14",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2013-12-26T00:00:00Z",
+                "endDate": "2013-12-26T00:00:00Z",
+                "startTime": "2013-12-26T04:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "PIA won by 4 wickets (with 4 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3061,
+                "tossWinnerTeamId": 3061,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 44.02,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 8681,
+                  "objectId": 677141,
+                  "scribeId": 8835,
+                  "slug": "president-s-cup-one-day-tournament-2013-14",
+                  "name": "President's Cup One-Day Tournament",
+                  "longName": "President's Cup One-Day Tournament",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2013,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2013/14",
+                  "startDate": "2013-10-28T00:00:00Z",
+                  "endDate": "2014-02-04T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1001,
+                  "objectId": 59006,
+                  "name": "Rawalpindi Cricket Stadium",
+                  "smallName": "Rawalpindi",
+                  "longName": "Rawalpindi Cricket Stadium",
+                  "slug": "rawalpindi-cricket-stadium",
+                  "location": "",
+                  "image": {
+                    "id": 37701,
+                    "objectId": 59005,
+                    "slug": "a-view-of-the-rawalpindi-cricket-stadium",
+                    "url": "/db/PICTURES/DB/102000/017579.1.jpg",
+                    "width": 220,
+                    "height": 165,
+                    "caption": "A view of the Rawalpindi Cricket Stadium",
+                    "longCaption": "A view of the Rawalpindi Cricket Stadium, 27 Oct 2000",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": "Suhael Ahmed",
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 874,
+                    "objectId": 58999,
+                    "name": "Rawalpindi",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3189,
+                      "objectId": 3138,
+                      "scribeId": 3138,
+                      "slug": "zarai-taraqiati-bank-limited",
+                      "name": "ZTBL",
+                      "longName": "Zarai Taraqiati Bank Limited",
+                      "abbreviation": "ZTBL",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "252/9",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3061,
+                      "objectId": 3010,
+                      "scribeId": 3010,
+                      "slug": "pakistan-international-airlines",
+                      "name": "PIA",
+                      "longName": "Pakistan International Airlines",
+                      "abbreviation": "PIA",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "253/6",
+                    "scoreInfo": "44.2/45 ov, T:253",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "ODI",
+                "previewStoryId": null,
+                "reportStoryId": 197593,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 3189,
+              "battingText": "21",
+              "bowlingText": "0/69",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 56411,
+                "id": 56411,
+                "objectId": 677787,
+                "scribeId": 677787,
+                "slug": "united-bank-limited-vs-zarai-taraqiati-bank-limited",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 5,
+                "subClassId": null,
+                "season": "2013/14",
+                "title": "",
+                "floodlit": "day",
+                "startDate": "2013-12-18T00:00:00Z",
+                "endDate": "2013-12-18T00:00:00Z",
+                "startTime": "2013-12-18T04:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "N",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "ZTBL won by 4 wickets (with 30 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3189,
+                "tossWinnerTeamId": 3189,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": null,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 8681,
+                  "objectId": 677141,
+                  "scribeId": 8835,
+                  "slug": "president-s-cup-one-day-tournament-2013-14",
+                  "name": "President's Cup One-Day Tournament",
+                  "longName": "President's Cup One-Day Tournament",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2013,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2013/14",
+                  "startDate": "2013-10-28T00:00:00Z",
+                  "endDate": "2014-02-04T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1000,
+                  "objectId": 58940,
+                  "name": "Marghzar Cricket Ground, Islamabad",
+                  "smallName": "Islamabad",
+                  "longName": "Marghzar Cricket Ground, Islamabad",
+                  "slug": "marghzar-cricket-ground-islamabad",
+                  "location": "",
+                  "image": null,
+                  "town": {
+                    "id": 866,
+                    "objectId": 58937,
+                    "name": "Islamabad",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3179,
+                      "objectId": 3128,
+                      "scribeId": 3128,
+                      "slug": "united-bank-limited",
+                      "name": "United Bank",
+                      "longName": "United Bank Limited",
+                      "abbreviation": "UBL",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "181",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3189,
+                      "objectId": 3138,
+                      "scribeId": 3138,
+                      "slug": "zarai-taraqiati-bank-limited",
+                      "name": "ZTBL",
+                      "longName": "Zarai Taraqiati Bank Limited",
+                      "abbreviation": "ZTBL",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "185/6",
+                    "scoreInfo": "40/45 ov, T:182",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "ODI",
+                "previewStoryId": null,
+                "reportStoryId": null,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 0,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 3189,
+              "battingText": "12*",
+              "bowlingText": "2/35",
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 57467,
+                "id": 57467,
+                "objectId": 692661,
+                "scribeId": 692661,
+                "slug": "united-bank-limited-vs-zarai-taraqiati-bank-limited-2nd-semi-final",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2013/14",
+                "title": "2nd Semi-Final",
+                "floodlit": "daynight",
+                "startDate": "2013-12-02T00:00:00Z",
+                "endDate": "2013-12-02T00:00:00Z",
+                "startTime": "2013-12-02T12:00:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "ZTBL won by 35 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 3189,
+                "tossWinnerTeamId": 3179,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 20,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 8787,
+                  "objectId": 691945,
+                  "scribeId": 8660,
+                  "slug": "faysal-bank-t-20-cup-for-departments-2013-14",
+                  "name": "Faysal Bank T-20 Cup for Departments",
+                  "longName": "Faysal Bank T-20 Cup for Departments",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2013,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in Pakistan",
+                  "season": "2013/14",
+                  "startDate": "2013-11-27T00:00:00Z",
+                  "endDate": "2013-12-03T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 545,
+                  "objectId": 58967,
+                  "name": "Gaddafi Stadium, Lahore",
+                  "smallName": "Lahore",
+                  "longName": "Gaddafi Stadium, Lahore",
+                  "slug": "gaddafi-stadium-lahore",
+                  "location": "",
+                  "image": {
+                    "id": 110408,
+                    "objectId": 436068,
+                    "slug": "the-gaddafi-stadium-in-lahore-completed-its-50th-year-as-an-international-venue",
+                    "url": "/db/PICTURES/CMS/110400/110408.5.jpg",
+                    "width": 210,
+                    "height": 133,
+                    "caption": "The Gaddafi Stadium in Lahore completed its 50th year as an international venue",
+                    "longCaption": "The Gaddafi Stadium in Lahore completed its 50th year as an international venue, Lahore, November 21, 2009",
+                    "credit": "AFP",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 868,
+                    "objectId": 58963,
+                    "name": "Lahore",
+                    "area": "",
+                    "timezone": "Asia/Karachi"
+                  },
+                  "country": {
+                    "id": 7,
+                    "objectId": 7,
+                    "name": "Pakistan",
+                    "shortName": "Pakistan",
+                    "abbreviation": "PAK",
+                    "slug": "pakistan"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 3189,
+                      "objectId": 3138,
+                      "scribeId": 3138,
+                      "slug": "zarai-taraqiati-bank-limited",
+                      "name": "ZTBL",
+                      "longName": "Zarai Taraqiati Bank Limited",
+                      "abbreviation": "ZTBL",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "178/3",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 3179,
+                      "objectId": 3128,
+                      "scribeId": 3128,
+                      "slug": "united-bank-limited",
+                      "name": "United Bank",
+                      "longName": "United Bank Limited",
+                      "abbreviation": "UBL",
+                      "unofficialName": null,
+                      "imageUrl": null,
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": null
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "143/9",
+                    "scoreInfo": "20 ov, T:179",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 195993,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-04T18:40:19.313Z"
+              },
+              "teamId": 3189,
+              "battingText": null,
+              "bowlingText": "5/31",
+              "keepingText": null
+            }
+          ]
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 195993,
+        "objectId": 695835,
+        "scribeId": 21664072,
+        "slug": "junaid-zia-yasir-hameed-take-ztbl-to-final",
+        "title": "Zia, Hameed take ZTBL to final",
+        "subTitle": "ZTBL v United Bank, 2nd semi-final, Faysal Bank T-20 Cup ",
+        "seoTitle": "Junaid Zia, Yasir Hameed take ZTBL to final",
+        "summary": "A powerful batting performance, highlighted by Yasir Hameed's half-century, was complemented by Junaid Zia's five-for to take Zarai Taraqiati Bank Limited to the final of the Faysal Bank T-20 Cup with a 35-run win over United Bank Limited\n",
+        "byline": "ESPNcricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "REPORT",
+        "genreId": 3,
+        "genreName": "Report",
+        "publishedAt": "2013-12-02T15:50:52Z",
+        "modifiedAt": "2013-12-02T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 1,
+        "image": {
+          "id": 79225,
+          "objectId": 309726,
+          "slug": "yasir-hameed-reaches-his-hundred",
+          "url": "/db/PICTURES/CMS/79200/79225.3.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "Yasir Hameed reaches his hundred",
+          "longCaption": "Yasir Hameed reaches his hundred during Pakistan's eight-wicket win, Pakistan A v Australia A, 1st ODI, Lahore, September 5, 2007",
+          "credit": "AFP",
+          "photographer": null,
+          "peerUrls": {
+            "FILM": null,
+            "WIDE": "/db/PICTURES/CMS/79200/79225.3.jpg",
+            "SQUARE": "/db/PICTURES/CMS/79200/79225.2.jpg"
+          }
+        },
+        "matchMeta": {
+          "id": 57467,
+          "objectId": 692661,
+          "scribeId": 692661,
+          "slug": "united-bank-limited-vs-zarai-taraqiati-bank-limited-2nd-semi-final",
+          "seriesId": 8787,
+          "seriesObjectId": 691945,
+          "seriesSlug": "faysal-bank-t-20-cup-for-departments-2013-14"
+        },
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:40:19.344Z"
+      },
+      {
+        "id": 156160,
+        "objectId": 559349,
+        "scribeId": 22327328,
+        "slug": "faysal-bank-super-eight-t20-cup-2011-12-junaid-zia-reported-for-suspect-action",
+        "title": "Junaid Zia reported for suspect action",
+        "subTitle": "Faysal Bank Super Eight T20 Cup 2011-12 ",
+        "seoTitle": "Faysal Bank Super Eight T20 Cup 2011-12:  Junaid Zia reported for suspect action",
+        "summary": "Junaid Zia, the Lahore Eagles fast bowler, has been reported for a suspect bowling action",
+        "byline": "ESPNcricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2012-03-30T20:18:27Z",
+        "modifiedAt": "2012-03-30T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": null,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:40:19.344Z"
+      },
+      {
+        "id": 156112,
+        "objectId": 559162,
+        "scribeId": 22327600,
+        "slug": "faysal-bank-super-eight-t20-cup-2011-12-malik-claims-five-in-sialkot-win",
+        "title": "Malik claims five in Sialkot win",
+        "subTitle": "Faysal Bank Super Eight T20 Cup 2011-12 ",
+        "seoTitle": "Faysal Bank Super Eight T20 Cup 2011-12: Malik claims five in Sialkot win",
+        "summary": "A round-up of the Faysal Bank Super Eight T-20 Cup matches that took place on March 28",
+        "byline": "ESPNcricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "REPORT",
+        "genreId": 3,
+        "genreName": "Report",
+        "publishedAt": "2012-03-29T08:11:32Z",
+        "modifiedAt": "2012-03-28T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": null,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:40:19.344Z"
+      }
+    ],
+    "videos": [],
+    "images": [
+      {
+        "id": 35720,
+        "objectId": 189056,
+        "slug": "junaid-zia-portrait",
+        "url": "/db/PICTURES/DB/092003/046611.jpg",
+        "width": 100,
+        "height": 150,
+        "caption": "Junaid Zia - Portrait",
+        "longCaption": "Junaid Zia - Portrait",
+        "credit": "Pakistan Cricket Board",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2003-09-22T00:00:00Z",
+        "capturedOn": {
+          "year": 2003,
+          "month": 9,
+          "date": 22
+        }
+      },
+      {
+        "id": 35683,
+        "objectId": 40925,
+        "slug": "junaid-zia-portrait",
+        "url": "/db/PICTURES/DB/092003/046571.jpg",
+        "width": 321,
+        "height": 400,
+        "caption": "Junaid Zia - Portrait",
+        "longCaption": "Junaid Zia - Portrait",
+        "credit": "Pakistan Cricket Board",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2003-09-19T00:00:00Z",
+        "capturedOn": {
+          "year": 2003,
+          "month": 9,
+          "date": 19
+        }
+      },
+      {
+        "id": 35584,
+        "objectId": 188921,
+        "slug": "junaid-zia-appeals-for-his-first-odi-wicket",
+        "url": "/db/PICTURES/DB/092003/046464.jpg",
+        "width": 282,
+        "height": 450,
+        "caption": "Junaid Zia appeals for his first ODI wicket",
+        "longCaption": "Junaid Zia appeals for his first ODI wicket, Pakistan v Bangladesh, 2nd ODI, Faisalabad, September 12, 2003.",
+        "credit": "ESPNcricinfo Ltd",
+        "photographer": "Iftikhar Ahmed Pasha",
+        "peerUrls": null,
+        "dateTaken": "2003-09-15T00:00:00Z",
+        "capturedOn": {
+          "year": 2003,
+          "month": 9,
+          "date": 15
+        }
+      },
+      {
+        "id": 32396,
+        "objectId": 185887,
+        "slug": "pakistan-academy-team-to-south-africa-group-photograph-2003-04",
+        "url": "/db/PICTURES/CMS/32300/32396.jpg",
+        "width": 450,
+        "height": 250,
+        "caption": "Pakistan Academy team to South Africa group photograph, 2003-04",
+        "longCaption": "Pakistan Academy team to South Africa group photograph, 2003-04<br>Front (L-R): Faisal Athar, Dr Sohail Saleem (physio), Naved Anjum (coach), Faisal Iqbal (captain), Azhar Zaidi (manager), Junaid Zia (vice-captain), Naved Latif.<br>Back (L-R): Salman Butt, Sohail Ahmed, Khaqan Arsal, Bilal Asad, Abdul Rauf, Yasir Ali, Fahad Masood, Mansoor Amjad, Asim Kamal, Adnan Akmal.",
+        "credit": "Pakistan Cricket Board",
+        "photographer": "Umar Babry",
+        "peerUrls": null,
+        "dateTaken": "2003-08-07T00:00:00Z",
+        "capturedOn": {
+          "year": 2003,
+          "month": 8,
+          "date": 7
+        }
+      },
+      {
+        "id": 2555,
+        "objectId": 158402,
+        "slug": "binny-plays-at-a-short-rising-delivery-from-junaid-to-be-caught-behind-icc-under-19-world-cup-super-league-group-1-india-under-19s-v-pakistan-under-19s-at-lincoln-31-jan-2002",
+        "url": "/db/PICTURES/DB/012002/033559.jpg",
+        "width": 450,
+        "height": 301,
+        "caption": "Binny plays at a short rising delivery from Junaid to be caught behind. ICC Under-19 World Cup Super League Group 1: India Under-19s v Pakistan Under-19s at Lincoln, 31 Jan 2002",
+        "longCaption": "India Under-19 batsman Stuart Binny plays at a short rising delivery from Pakistan Under-19 bowler Junaid Zia and is caught behind by wicket-keeper Amin-ur-Rehman for one. ICC Under-19 World Cup Super League Group 1: India Under-19s v Pakistan Under-19s at Lincoln Green, Lincoln, 31 January 2002.",
+        "credit": "Photosport",
+        "photographer": "Chris Skelton",
+        "peerUrls": null,
+        "dateTaken": "2002-01-31T00:00:00Z",
+        "capturedOn": {
+          "year": 2002,
+          "month": 1,
+          "date": 31
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 8,
+        "objectId": 8,
+        "scribeId": 8,
+        "slug": "sri-lanka",
+        "name": "Sri Lanka",
+        "longName": "Sri Lanka",
+        "abbreviation": "SL",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/340000/340047.png",
+        "isCountry": true,
+        "primaryColor": "#203d89",
+        "image": {
+          "id": 340047,
+          "objectId": 1316921,
+          "slug": "sri-lanka-team-flag",
+          "url": "/db/PICTURES/CMS/340000/340047.png",
+          "width": 500,
+          "height": 500,
+          "caption": "Sri Lanka team flag",
+          "longCaption": "Sri Lanka team flag",
+          "credit": "Google",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 78229,
+          "objectId": 784367,
+          "name": "KIC Asalanka",
+          "longName": "Charith Asalanka",
+          "mobileName": "Asalanka",
+          "indexName": "Asalanka, KIC",
+          "battingName": "KIC Asalanka",
+          "fieldingName": "Asalanka",
+          "slug": "charith-asalanka",
+          "imageUrl": "/db/PICTURES/CMS/348100/348128.4.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 6,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 348128,
+            "objectId": 1341438,
+            "slug": "charith-asalanka-player-portrait",
+            "url": "/db/PICTURES/CMS/348100/348128.4.jpg",
+            "width": 160,
+            "height": 225,
+            "caption": "Charith Asalanka, player portrait",
+            "longCaption": "Charith Asalanka, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Matt King",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 62760,
+          "objectId": 465793,
+          "name": "DM de Silva",
+          "longName": "Dhananjaya de Silva",
+          "mobileName": "Dhananjaya",
+          "indexName": "de Silva, DM",
+          "battingName": "DM de Silva",
+          "fieldingName": "de Silva",
+          "slug": "dhananjaya-de-silva",
+          "imageUrl": "/db/PICTURES/CMS/303800/303832.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 9,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303832,
+            "objectId": 1222666,
+            "slug": "dhananjaya-de-silva-portrait",
+            "url": "/db/PICTURES/CMS/303800/303832.png",
+            "width": 160,
+            "height": 201,
+            "caption": "Dhananjaya de Silva portrait",
+            "longCaption": "Dhananjaya de Silva, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 78239,
+          "objectId": 784379,
+          "name": "PWH de Silva",
+          "longName": "Wanindu Hasaranga de Silva",
+          "mobileName": "Hasaranga de Silva",
+          "indexName": "de Silva, PWH",
+          "battingName": "PWH de Silva",
+          "fieldingName": "de Silva",
+          "slug": "wanindu-hasaranga-de-silva",
+          "imageUrl": "/db/PICTURES/CMS/294200/294296.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 7,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 294296,
+            "objectId": 1199371,
+            "slug": "wanindu-hasaranga",
+            "url": "/db/PICTURES/CMS/294200/294296.jpg",
+            "width": 160,
+            "height": 210,
+            "caption": "Wanindu Hasaranga",
+            "longCaption": null,
+            "credit": "Chaminda de Silva",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 70580,
+          "objectId": 623695,
+          "name": "C Karunaratne",
+          "longName": "Chamika Karunaratne",
+          "mobileName": "",
+          "indexName": "Karunaratne, C",
+          "battingName": "C Karunaratne",
+          "fieldingName": "Karunaratne",
+          "slug": "chamika-karunaratne",
+          "imageUrl": "/db/PICTURES/CMS/303800/303830.png",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 5,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303830,
+            "objectId": 1222664,
+            "slug": "chamika-karunaratne-portrait",
+            "url": "/db/PICTURES/CMS/303800/303830.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Chamika Karunaratne portrait",
+            "longCaption": "Chamika Karunaratne, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 70888,
+          "objectId": 629074,
+          "name": "BKG Mendis",
+          "longName": "Kusal Mendis",
+          "mobileName": "Mendis",
+          "indexName": "Mendis, BKG",
+          "battingName": "BKG Mendis",
+          "fieldingName": "Mendis",
+          "slug": "kusal-mendis",
+          "imageUrl": "/db/PICTURES/CMS/303800/303835.png",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 2,
+            "date": 2
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 303835,
+            "objectId": 1222669,
+            "slug": "kusal-mendis-portrait",
+            "url": "/db/PICTURES/CMS/303800/303835.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Kusal Mendis portrait",
+            "longCaption": "Kusal Mendis, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 93033,
+          "objectId": 1028655,
+          "name": "P Nissanka",
+          "longName": "Pathum Nissanka",
+          "mobileName": "Nissanka",
+          "indexName": "Nissanka, P",
+          "battingName": "P Nissanka",
+          "fieldingName": "Nissanka",
+          "slug": "pathum-nissanka",
+          "imageUrl": "/db/PICTURES/CMS/318400/318435.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 5,
+            "date": 18
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 318435,
+            "objectId": 1256641,
+            "slug": "pathum-nissanka-portrait",
+            "url": "/db/PICTURES/CMS/318400/318435.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Pathum Nissanka portrait",
+            "longCaption": "Pathum Nissanka portrait, Antigua and Barbuda, March 12, 2021",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 56511,
+          "objectId": 342619,
+          "name": "PBB Rajapaksa",
+          "longName": "Bhanuka Rajapaksa",
+          "mobileName": "Rajapaksa",
+          "indexName": "Rajapaksa, PBB",
+          "battingName": "PBB Rajapaksa",
+          "fieldingName": "Rajapaksa",
+          "slug": "bhanuka-rajapaksa",
+          "imageUrl": "/db/PICTURES/CMS/338100/338183.4.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 10,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 338183,
+            "objectId": 1311483,
+            "slug": "bhanuka-rajapaksa-player-portrait",
+            "url": "/db/PICTURES/CMS/338100/338183.4.jpg",
+            "width": 160,
+            "height": 211,
+            "caption": "Bhanuka Rajapaksa player portrait",
+            "longCaption": "Bhanuka Rajapaksa player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Michael Steele",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 64698,
+          "objectId": 499594,
+          "name": "CAK Rajitha",
+          "longName": "Kasun Rajitha",
+          "mobileName": "Rajitha",
+          "indexName": "Rajitha, CAK",
+          "battingName": "CAK Rajitha",
+          "fieldingName": "Rajitha",
+          "slug": "kasun-rajitha",
+          "imageUrl": "/db/PICTURES/CMS/303800/303833.png",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 6,
+            "date": 1
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303833,
+            "objectId": 1222667,
+            "slug": "kasun-rajitha-portrait",
+            "url": "/db/PICTURES/CMS/303800/303833.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Kasun Rajitha portrait",
+            "longCaption": "Kasun Rajitha, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 61690,
+          "objectId": 437316,
+          "name": "MD Shanaka",
+          "longName": "Dasun Shanaka",
+          "mobileName": "Shanaka",
+          "indexName": "Shanaka, MD",
+          "battingName": "MD Shanaka",
+          "fieldingName": "Shanaka",
+          "slug": "dasun-shanaka",
+          "imageUrl": "/db/PICTURES/CMS/327900/327999.7.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 9,
+            "date": 9
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 327999,
+            "objectId": 1280829,
+            "slug": "dasun-shanaka-player-portrait",
+            "url": "/db/PICTURES/CMS/327900/327999.7.jpg",
+            "width": 160,
+            "height": 253,
+            "caption": "Dasun Shanaka, player portrait",
+            "longCaption": "Dasun Shanaka, player portrait",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 101991,
+          "objectId": 1138316,
+          "name": "M Theekshana",
+          "longName": "Maheesh Theekshana",
+          "mobileName": "Theekshana",
+          "indexName": "Theekshana, M",
+          "battingName": "M Theekshana",
+          "fieldingName": "Theekshana",
+          "slug": "maheesh-theekshana",
+          "imageUrl": "/db/PICTURES/CMS/336200/336296.4.jpg",
+          "dateOfBirth": {
+            "year": 2000,
+            "month": 8,
+            "date": 1
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 336296,
+            "objectId": 1306203,
+            "slug": "mahesh-theekshana-player-portrait",
+            "url": "/db/PICTURES/CMS/336200/336296.4.jpg",
+            "width": 160,
+            "height": 221,
+            "caption": "Mahesh Theekshana, player portrait",
+            "longCaption": "Mahesh Theekshana, player portrait",
+            "credit": "Cricket Australia/Getty Images",
+            "photographer": "Brendon Thorne",
+            "peerUrls": null
+          },
+          "countryTeamId": 8,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 56880,
+          "objectId": 348144,
+          "name": "Babar Azam",
+          "longName": "Babar Azam",
+          "mobileName": "Babar Azam",
+          "indexName": "Babar Azam",
+          "battingName": "Babar Azam",
+          "fieldingName": "Babar Azam",
+          "slug": "babar-azam",
+          "imageUrl": "/db/PICTURES/CMS/302700/302768.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 10,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 302768,
+            "objectId": 1221110,
+            "slug": "babar-azam-portrait",
+            "url": "/db/PICTURES/CMS/302700/302768.jpg",
+            "width": 160,
+            "height": 202,
+            "caption": "Babar Azam portrait",
+            "longCaption": "Babar Azam portrait, April, 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            8
+          ],
+          "playingRoles": [
+            "batter"
+          ]
+        },
+        {
+          "id": 67969,
+          "objectId": 572645,
+          "name": "Aliya Riaz",
+          "longName": "Aliya Riaz",
+          "mobileName": "Aliya Riaz",
+          "indexName": "Aliya Riaz",
+          "battingName": "Aliya Riaz",
+          "fieldingName": "Aliya Riaz",
+          "slug": "aliya-riaz",
+          "imageUrl": "/db/PICTURES/CMS/304700/304757.png",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 9,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 304757,
+            "objectId": 1224165,
+            "slug": "aliya-riaz-portrait",
+            "url": "/db/PICTURES/CMS/304700/304757.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Aliya Riaz portrait",
+            "longCaption": "Aliya Riaz portrait, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 51498,
+          "objectId": 290948,
+          "name": "Mohammad Amir",
+          "longName": "Mohammad Amir",
+          "mobileName": "Amir",
+          "indexName": "Mohammad Amir",
+          "battingName": "Mohammad Amir",
+          "fieldingName": "Mohammad Amir",
+          "slug": "mohammad-amir",
+          "imageUrl": "/db/PICTURES/CMS/302800/302820.jpg",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 4,
+            "date": 13
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 302820,
+            "objectId": 1221173,
+            "slug": "mohammad-amir-portrait",
+            "url": "/db/PICTURES/CMS/302800/302820.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Mohammad Amir portrait",
+            "longCaption": "Mohammad Amir portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 67964,
+          "objectId": 572638,
+          "name": "Diana Baig",
+          "longName": "Diana Baig",
+          "mobileName": "Diana Baig",
+          "indexName": "Diana Baig",
+          "battingName": "Diana Baig",
+          "fieldingName": "Diana Baig",
+          "slug": "diana-baig",
+          "imageUrl": "/db/PICTURES/CMS/304700/304761.png",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 10,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 304761,
+            "objectId": 1224169,
+            "slug": "diana-baig-portrait",
+            "url": "/db/PICTURES/CMS/304700/304761.png",
+            "width": 160,
+            "height": 199,
+            "caption": "Diana Baig portrait",
+            "longCaption": "Diana Baig portrait, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 110482,
+          "objectId": 1283740,
+          "name": "Ihsanullah",
+          "longName": "Ihsanullah",
+          "mobileName": "Ihsanullah",
+          "indexName": "Ihsanullah",
+          "battingName": "Ihsanullah",
+          "fieldingName": "Ihsanullah",
+          "slug": "ihsanullah",
+          "imageUrl": null,
+          "dateOfBirth": {
+            "year": 2002,
+            "month": 10,
+            "date": 11
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": null,
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 84937,
+          "objectId": 922943,
+          "name": "Shadab Khan",
+          "longName": "Shadab Khan",
+          "mobileName": "Shadab",
+          "indexName": "Shadab Khan",
+          "battingName": "Shadab Khan",
+          "fieldingName": "Shadab Khan",
+          "slug": "shadab-khan",
+          "imageUrl": "/db/PICTURES/CMS/302800/302825.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 10,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 302825,
+            "objectId": 1221178,
+            "slug": "shadab-khan-portrait",
+            "url": "/db/PICTURES/CMS/302800/302825.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Shadab Khan portrait",
+            "longCaption": "Shadab Khan portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 103773,
+          "objectId": 1161031,
+          "name": "Saim Ayub",
+          "longName": "Saim Ayub",
+          "mobileName": "Saim Ayub",
+          "indexName": "Saim Ayub",
+          "battingName": "Saim Ayub",
+          "fieldingName": "Saim Ayub",
+          "slug": "saim-ayub",
+          "imageUrl": "/db/PICTURES/CMS/325600/325608.3.jpg",
+          "dateOfBirth": {
+            "year": 2002,
+            "month": 5,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rmf",
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast",
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 325608,
+            "objectId": 1272760,
+            "slug": "saim-ayub-player-portrait",
+            "url": "/db/PICTURES/CMS/325600/325608.3.jpg",
+            "width": 160,
+            "height": 296,
+            "caption": "Saim Ayub, player portrait",
+            "longCaption": "Saim Ayub, player portrait",
+            "credit": "PCB",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 84935,
+          "objectId": 922941,
+          "name": "Abdullah Shafique",
+          "longName": "Abdullah Shafique",
+          "mobileName": "",
+          "indexName": "Abdullah Shafique",
+          "battingName": "Abdullah Shafique",
+          "fieldingName": "Abdullah Shafique",
+          "slug": "abdullah-shafique",
+          "imageUrl": null,
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 11,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": null,
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 101912,
+          "objectId": 1137262,
+          "name": "Azam Khan",
+          "longName": "Azam Khan",
+          "mobileName": "Azam Khan",
+          "indexName": "Azam Khan",
+          "battingName": "Azam Khan",
+          "fieldingName": "Azam Khan",
+          "slug": "azam-khan",
+          "imageUrl": "/db/PICTURES/CMS/325300/325358.4.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 8,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 325358,
+            "objectId": 1272159,
+            "slug": "azam-khan-player-portrait",
+            "url": "/db/PICTURES/CMS/325300/325358.4.jpg",
+            "width": 160,
+            "height": 260,
+            "caption": "Azam Khan, player portrait",
+            "longCaption": "Azam Khan, player portrait",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            6
+          ],
+          "playingRoles": [
+            "wicketkeeper"
+          ]
+        },
+        {
+          "id": 48982,
+          "objectId": 227758,
+          "name": "Imad Wasim",
+          "longName": "Imad Wasim",
+          "mobileName": "Imad Wasim",
+          "indexName": "Imad Wasim",
+          "battingName": "Imad Wasim",
+          "fieldingName": "Imad Wasim",
+          "slug": "imad-wasim",
+          "imageUrl": "/db/PICTURES/CMS/302800/302871.jpg",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 12,
+            "date": 18
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 302871,
+            "objectId": 1221231,
+            "slug": "imad-wasim-portrait",
+            "url": "/db/PICTURES/CMS/302800/302871.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Imad Wasim portrait",
+            "longCaption": "Imad Wasim portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 15,
+          "type": "i",
+          "name": "Youth One-Day Internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "List A"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 11,
+          "type": "g",
+          "name": "Other matches"
+        },
+        {
+          "id": 12,
+          "type": "g",
+          "name": "Other one-day/limited-overs matches"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 2,
+          "type": "i",
+          "name": "ODI",
+          "longName": "One-Day Internationals",
+          "multipleClass": 0,
+          "slug": "one-day-internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "LA",
+          "longName": "List A matches",
+          "multipleClass": 0,
+          "slug": "list-a-matches"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "T20",
+          "longName": "Twenty20 matches",
+          "multipleClass": 0,
+          "slug": "twenty20-matches"
+        },
+        {
+          "id": 12,
+          "type": "g",
+          "name": "FC+LA+T20",
+          "longName": "Combined First-class, List A and Twenty20",
+          "multipleClass": 2,
+          "slug": "combined-first-class-list-a-and-twenty20"
+        },
+        {
+          "id": 14,
+          "type": "g",
+          "name": "Minor",
+          "longName": "Minor cricket",
+          "multipleClass": 0,
+          "slug": "minor-cricket"
+        },
+        {
+          "id": 21,
+          "type": "i",
+          "name": "Youth ODI",
+          "longName": "Under-19s Youth One-Day Internationals",
+          "multipleClass": 0,
+          "slug": "under-19s-youth-one-day-internationals"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 2,
+          "matches": 4,
+          "batted": true,
+          "battedInnings": 2,
+          "bowled": true,
+          "bowledInnings": 4,
+          "fielded": true,
+          "fieldedInnings": 4,
+          "dismissals": 0,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 253,
+        "2": 240,
+        "3": 103,
+        "8": 20,
+        "9": 88,
+        "10": 51,
+        "14": 248,
+        "15": 415,
+        "16": 27
+      },
+      "teamContractedPlayerCount": 26,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        }
+      ]
+    }
+  }
+}

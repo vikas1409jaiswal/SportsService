@@ -3,10 +3,13 @@ using CricketService.Domain.Attributes.ValidationAttributes;
 using CricketService.Domain.Common;
 
 namespace CricketService.Domain.BaseDomains
-{   
+{
     public class CricketMatchBase
     {
         private const string Source = "CricketService.Domain.BaseDomains.CricketMatchBase";
+
+        private string matchTitle = string.Empty;
+        private string result = string.Empty;
 
         public CricketMatchBase(
           Guid matchUuid,
@@ -49,8 +52,8 @@ namespace CricketService.Domain.BaseDomains
         [JsonPropertyOrder(-13)]
         public Guid MatchUuid { get; set; }
 
-        [CricketSeason]
         [JsonPropertyOrder(-12)]
+        [CricketSeason]
         public string Season { get; set; }
 
         [JsonPropertyOrder(-11)]
@@ -59,15 +62,22 @@ namespace CricketService.Domain.BaseDomains
         [JsonPropertyOrder(-10)]
         public string SeriesResult { get; set; }
 
-        [CricketMatchNumber]
         [JsonPropertyOrder(-9)]
+        [CricketMatchNumber]
         public string MatchNumber { get; set; }
 
         [JsonPropertyOrder(-8)]
         public string MatchType { get; set; }
 
         [JsonPropertyOrder(-7)]
-        public string MatchTitle { get; set; }
+        [CricketMatchTitle]
+        [NoConsecutiveCaps]
+        [NoAbbreviationWithDot]
+        public string MatchTitle
+        {
+            get => matchTitle;
+            set => matchTitle = TeamNameConverter.Replace(value);
+        }
 
         [JsonPropertyOrder(-6)]
         public string Venue { get; set; }
@@ -76,13 +86,23 @@ namespace CricketService.Domain.BaseDomains
         public string MatchDate { get; set; }
 
         [JsonPropertyOrder(-4)]
+        [NoConsecutiveCaps]
+        [NoAbbreviationWithDot]
         public string TossWinner { get; set; }
 
         [JsonPropertyOrder(-3)]
+        [NoConsecutiveCaps]
+        [NoAbbreviationWithDot]
         public string TossDecision { get; set; }
 
         [JsonPropertyOrder(-2)]
-        public string Result { get; set; }
+        [NoConsecutiveCaps]
+        [NoAbbreviationWithDot]
+        public string Result
+        {
+            get => result;
+            set => result = TeamNameConverter.Replace(value, Season);
+        }
 
         [JsonPropertyOrder(-1)]
         public PlayerOfTheMatch? PlayerOfTheMatch { get; set; }

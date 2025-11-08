@@ -1,0 +1,1902 @@
+{
+  "player": {
+    "id": 508,
+    "objectId": 44065,
+    "name": "AJ Bell",
+    "longName": "Sandy Bell",
+    "mobileName": "Bell",
+    "indexName": "Bell, AJ",
+    "battingName": "AJ Bell",
+    "fieldingName": "Bell",
+    "slug": "sandy-bell",
+    "imageUrl": "/db/PICTURES/DB/032005/058869.player.jpg",
+    "dateOfBirth": {
+      "year": 1906,
+      "month": 4,
+      "date": 15
+    },
+    "dateOfDeath": {
+      "year": 1985,
+      "month": 8,
+      "date": 1
+    },
+    "gender": "M",
+    "battingStyles": [
+      "rhb"
+    ],
+    "bowlingStyles": [
+      "rfm"
+    ],
+    "longBattingStyles": [
+      "right-hand bat"
+    ],
+    "longBowlingStyles": [
+      "right-arm fast-medium"
+    ],
+    "image": {
+      "id": 13893,
+      "objectId": 44064,
+      "slug": "sandy-bell-western-province-rhodesia-south-africa",
+      "url": "/db/PICTURES/DB/032005/058869.player.jpg",
+      "width": 160,
+      "height": 214,
+      "caption": "Sandy Bell (Western Province, Rhodesia, South Africa)",
+      "longCaption": "Sandy Bell (Western Province, Rhodesia, South Africa)",
+      "credit": "The Cricketer International",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 3,
+    "playerRoleTypeIds": [],
+    "playingRoles": [],
+    "fullName": "Alexander John Bell",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": null,
+    "heightUnit": null,
+    "education": null,
+    "country": {
+      "id": 3,
+      "objectId": 3,
+      "name": "South Africa",
+      "shortName": "South Africa",
+      "abbreviation": "SA",
+      "slug": "south-africa",
+      "image": {
+        "id": 313125,
+        "objectId": 1241584,
+        "slug": "south-africa-logo",
+        "url": "/db/PICTURES/CMS/313100/313125.logo.png",
+        "width": 500,
+        "height": 500,
+        "caption": "South Africa logo",
+        "longCaption": "South Africa logo",
+        "credit": null,
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "East London, Cape Province",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "Mowbray, Cape Town, Cape Province",
+    "intlCareerSpan": "1929 - 1935",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 13893,
+      "objectId": 44064,
+      "slug": "sandy-bell-western-province-rhodesia-south-africa",
+      "url": "/db/PICTURES/DB/032005/058869.jpg",
+      "width": 350,
+      "height": 470,
+      "caption": "Sandy Bell (Western Province, Rhodesia, South Africa)",
+      "longCaption": "Sandy Bell (Western Province, Rhodesia, South Africa)",
+      "credit": "The Cricketer International",
+      "photographer": null,
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": null,
+        "SQUARE": null
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": true,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 0,
+    "totalVideos": 0,
+    "totalImages": 1
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 3,
+          "objectId": 3,
+          "scribeId": 3,
+          "slug": "south-africa",
+          "name": "South Africa",
+          "longName": "South Africa",
+          "abbreviation": "SA",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313100/313125.logo.png",
+          "isCountry": true,
+          "primaryColor": "#04822B",
+          "image": {
+            "id": 313125,
+            "objectId": 1241584,
+            "slug": "south-africa-logo",
+            "url": "/db/PICTURES/CMS/313100/313125.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "South Africa logo",
+            "longCaption": "South Africa logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 9,
+          "objectId": 9,
+          "scribeId": 9,
+          "slug": "zimbabwe",
+          "name": "Rhodesia",
+          "longName": "Rhodesia",
+          "abbreviation": "Rhod",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/340500/340503.png",
+          "isCountry": true,
+          "primaryColor": "#d04037",
+          "image": {
+            "id": 340503,
+            "objectId": 1318712,
+            "slug": "zimbabwe-team-flag-latest",
+            "url": "/db/PICTURES/CMS/340500/340503.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Zimbabwe team flag-latest",
+            "longCaption": "Zimbabwe team flag-latest",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3408,
+          "objectId": 3357,
+          "scribeId": 3357,
+          "slug": "western-province",
+          "name": "W Province",
+          "longName": "Western Province",
+          "abbreviation": "WPR",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/327600/327697.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 327697,
+            "objectId": 1279547,
+            "slug": "western-province-team-logo",
+            "url": "/db/PICTURES/CMS/327600/327697.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Western Province team logo",
+            "longCaption": "Western Province team logo",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      }
+    ],
+    "relations": [],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "<B>Wisden obituary</B><BR>\nAlexander John 'Sandy' Bell, who played sixteen times for South Africa between 1929 and 1935, died in Cape Town on August 2, 1985, aged 79. In all but two of his Tests he opened the bowling, sometimes working up a good pace, bringing the ball down from a considerable height and capable of late in-swing. He toured England twice, in 1929 and 1935, and took 23 wickets in five Tests in Australia in 1931-32, claiming five wickets in an innings in successive Test matches at Sydney, Melbourne and Adelaide. He had his best Test figures in his first Test match, at Lord's when he took the last six wickets in England's first innings and finished with six for 99. In the same series he shared what remains the record tenth-wicket partnership for South Africa in Test cricket - 103 with H. G. Owen-Smith at Headingley. Though no batsman himself, Bell's share was 26. Altogether he took 48 Test wickets (32.65) and 228 first-class wickets (23.29) At Cape Town in 1929-30 he took thirteen for 61 for Western Province against Eastern Province.<BR><B>Wisden Cricketers' Almanack</B>"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 1,
+          "mt": 16,
+          "in": 23,
+          "rn": 69,
+          "bl": null,
+          "avg": 6.27,
+          "sr": null,
+          "no": 12,
+          "fo": null,
+          "si": 0,
+          "hs": "26*",
+          "hn": 0,
+          "ft": 0,
+          "ct": 6,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 63,
+          "in": 79,
+          "rn": 311,
+          "bl": null,
+          "avg": 9.14,
+          "sr": null,
+          "no": 45,
+          "fo": null,
+          "si": null,
+          "hs": "32*",
+          "hn": 0,
+          "ft": 0,
+          "ct": 27,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 1,
+          "mt": 16,
+          "in": 26,
+          "rn": 1567,
+          "bl": 3342,
+          "avg": 32.64,
+          "sr": 69.6,
+          "wk": 48,
+          "bbi": "6/99",
+          "bbm": "6/159",
+          "fwk": 1,
+          "fw": 4,
+          "tw": 0,
+          "bwe": 2.81
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 63,
+          "in": null,
+          "rn": 5312,
+          "bl": null,
+          "avg": 23.29,
+          "sr": null,
+          "wk": 228,
+          "bbi": "8/34",
+          "bbm": null,
+          "fwk": null,
+          "fw": 10,
+          "tw": 1,
+          "bwe": null
+        }
+      ]
+    },
+    "topRecords": [],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 16,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 182,
+                    "id": 182,
+                    "objectId": 62568,
+                    "scribeId": 62568,
+                    "slug": "england-vs-south-africa-2nd-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1929",
+                    "title": "2nd Test",
+                    "floodlit": "day",
+                    "startDate": "1929-06-29T00:00:00Z",
+                    "endDate": "1929-07-02T00:00:00Z",
+                    "startTime": "1929-06-29T10:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000182",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 1,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 4,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1562,
+                      "objectId": 61821,
+                      "scribeId": 17594,
+                      "slug": "south-africa-tour-of-england-1929",
+                      "name": "South Africa tour of England",
+                      "longName": "South Africa tour of England",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1929,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1929",
+                      "startDate": "1929-06-15T00:00:00Z",
+                      "endDate": "1929-08-20T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 10,
+                      "objectId": 57129,
+                      "name": "Lord's, London",
+                      "smallName": "Lord's",
+                      "longName": "Lord's, London",
+                      "slug": "lord-s-london",
+                      "location": "St John's Wood Road",
+                      "image": {
+                        "id": 92191,
+                        "objectId": 360855,
+                        "slug": "a-wide-angle-view-of-lord-s",
+                        "url": "/db/PICTURES/CMS/92100/92191.2.jpg",
+                        "width": 310,
+                        "height": 205,
+                        "caption": "A wide-angle view of Lord's",
+                        "longCaption": "A wide-angle view of Lord's, England v South Africa, 1st Test, Lord's, 3rd day, July 12, 2008",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 224,
+                        "objectId": 57124,
+                        "name": "London",
+                        "area": "",
+                        "timezone": "Europe/London"
+                      },
+                      "country": {
+                        "id": 1,
+                        "objectId": 1,
+                        "name": "England",
+                        "shortName": "England",
+                        "abbreviation": "ENG",
+                        "slug": "england"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "302 & 312/8d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3,
+                          "objectId": 3,
+                          "scribeId": 3,
+                          "slug": "south-africa",
+                          "name": "South Africa",
+                          "longName": "South Africa",
+                          "abbreviation": "SA",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313125.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#04822B",
+                          "image": {
+                            "id": 313125,
+                            "objectId": 1241584,
+                            "slug": "south-africa-logo",
+                            "url": "/db/PICTURES/CMS/313100/313125.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "South Africa logo",
+                            "longCaption": "South Africa logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "322 & 90/5",
+                        "scoreInfo": "T:293",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T04:44:50.251Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 245,
+                    "id": 245,
+                    "objectId": 62631,
+                    "scribeId": 62631,
+                    "slug": "england-vs-south-africa-4th-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1935",
+                    "title": "4th Test",
+                    "floodlit": "day",
+                    "startDate": "1935-07-27T00:00:00Z",
+                    "endDate": "1935-07-30T00:00:00Z",
+                    "startTime": "1935-07-27T10:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000245",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 1,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 4,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1555,
+                      "objectId": 61814,
+                      "scribeId": 17557,
+                      "slug": "south-africa-tour-of-england-1935",
+                      "name": "South Africa tour of England",
+                      "longName": "South Africa tour of England",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1935,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1935",
+                      "startDate": "1935-06-15T00:00:00Z",
+                      "endDate": "1935-08-20T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 75,
+                      "objectId": 57160,
+                      "name": "Old Trafford, Manchester",
+                      "smallName": "Manchester",
+                      "longName": "Old Trafford, Manchester",
+                      "slug": "old-trafford-manchester",
+                      "location": "Stretford",
+                      "image": {
+                        "id": 194633,
+                        "objectId": 784927,
+                        "slug": "the-final-day-of-the-season-unfolds-under-autumn-sun-at-old-trafford",
+                        "url": "/db/PICTURES/CMS/194600/194633.5.jpg",
+                        "width": 210,
+                        "height": 151,
+                        "caption": "The final day of the season unfolds under autumn sun at Old Trafford",
+                        "longCaption": "The final day of the season unfolds under autumn sun at Old Trafford, Lancashire v Middlesex, County Championship, Division One, Old Trafford, September 26, 2014",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 232,
+                        "objectId": 57155,
+                        "name": "Manchester",
+                        "area": "",
+                        "timezone": "Europe/London"
+                      },
+                      "country": {
+                        "id": 1,
+                        "objectId": 1,
+                        "name": "England",
+                        "shortName": "England",
+                        "abbreviation": "ENG",
+                        "slug": "england"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "357 & 231/6d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3,
+                          "objectId": 3,
+                          "scribeId": 3,
+                          "slug": "south-africa",
+                          "name": "South Africa",
+                          "longName": "South Africa",
+                          "abbreviation": "SA",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313125.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#04822B",
+                          "image": {
+                            "id": 313125,
+                            "objectId": 1241584,
+                            "slug": "south-africa-logo",
+                            "url": "/db/PICTURES/CMS/313100/313125.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "South Africa logo",
+                            "longCaption": "South Africa logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "318 & 169/2",
+                        "scoreInfo": "T:271",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T04:44:16.069Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 63,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1925/26 - 1938/39"
+                }
+              ]
+            }
+          ],
+          "recent": []
+        }
+      ]
+    },
+    "stories": [],
+    "videos": [],
+    "images": [
+      {
+        "id": 13893,
+        "objectId": 44064,
+        "slug": "sandy-bell-western-province-rhodesia-south-africa",
+        "url": "/db/PICTURES/DB/032005/058869.jpg",
+        "width": 350,
+        "height": 470,
+        "caption": "Sandy Bell (Western Province, Rhodesia, South Africa)",
+        "longCaption": "Sandy Bell (Western Province, Rhodesia, South Africa)",
+        "credit": "The Cricketer International",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2005-03-15T00:00:00Z",
+        "capturedOn": {
+          "year": 2005,
+          "month": 3,
+          "date": 15
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 25,
+        "objectId": 25,
+        "scribeId": 25,
+        "slug": "bangladesh",
+        "name": "Bangladesh",
+        "longName": "Bangladesh",
+        "abbreviation": "BAN",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/341400/341456.png",
+        "isCountry": true,
+        "primaryColor": "#006a4e",
+        "image": {
+          "id": 341456,
+          "objectId": 1321180,
+          "slug": "bangladesh-latest-team-flag",
+          "url": "/db/PICTURES/CMS/341400/341456.png",
+          "width": 500,
+          "height": 500,
+          "caption": "Bangladesh latest-team flag",
+          "longCaption": "Bangladesh latest-team flag",
+          "credit": "Getty Images",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 87075,
+          "objectId": 935995,
+          "name": "Afif Hossain",
+          "longName": "Afif Hossain",
+          "mobileName": "Afif",
+          "indexName": "Afif Hossain",
+          "battingName": "Afif Hossain",
+          "fieldingName": "Afif Hossain",
+          "slug": "afif-hossain",
+          "imageUrl": "/db/PICTURES/CMS/306000/306068.1.jpg",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 9,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 306068,
+            "objectId": 1226197,
+            "slug": "afif-hossain-player-portrait",
+            "url": "/db/PICTURES/CMS/306000/306068.1.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Afif Hossain player portrait",
+            "longCaption": "Afif Hossain player portrait",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 66691,
+          "objectId": 536936,
+          "name": "Litton Das",
+          "longName": "Litton Das",
+          "mobileName": "Litton Das",
+          "indexName": "Litton Das",
+          "battingName": "Litton Das",
+          "fieldingName": "Litton Das",
+          "slug": "litton-das",
+          "imageUrl": "/db/PICTURES/CMS/302900/302995.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 10,
+            "date": 13
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 302995,
+            "objectId": 1221378,
+            "slug": "liton-das-portrait",
+            "url": "/db/PICTURES/CMS/302900/302995.jpg",
+            "width": 160,
+            "height": 199,
+            "caption": "Liton Das portrait",
+            "longCaption": "Liton Das portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 70877,
+          "objectId": 629063,
+          "name": "Mehidy Hasan Miraz",
+          "longName": "Mehidy Hasan Miraz",
+          "mobileName": "Mehidy Hasan Miraz",
+          "indexName": "Mehidy Hasan Miraz",
+          "battingName": "Mehidy Hasan Miraz",
+          "fieldingName": "Mehidy Hasan Miraz",
+          "slug": "mehidy-hasan-miraz",
+          "imageUrl": "/db/PICTURES/CMS/303000/303000.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 10,
+            "date": 25
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303000,
+            "objectId": 1221384,
+            "slug": "mehidy-hasan-portrait",
+            "url": "/db/PICTURES/CMS/303000/303000.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Mehidy Hasan portrait",
+            "longCaption": "Mehidy Hasan portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 67276,
+          "objectId": 550133,
+          "name": "Mosaddek Hossain",
+          "longName": "Mosaddek Hossain",
+          "mobileName": "Mosaddek",
+          "indexName": "Mosaddek Hossain",
+          "battingName": "Mosaddek Hossain",
+          "fieldingName": "Mosaddek Hossain",
+          "slug": "mosaddek-hossain",
+          "imageUrl": "/db/PICTURES/CMS/303100/303147.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 12,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303147,
+            "objectId": 1221579,
+            "slug": "mosaddek-hossain-portrait",
+            "url": "/db/PICTURES/CMS/303100/303147.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Mosaddek Hossain portrait",
+            "longCaption": "Mosaddek Hossain portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 54674,
+          "objectId": 330902,
+          "name": "Mustafizur Rahman",
+          "longName": "Mustafizur Rahman",
+          "mobileName": "Mustafizur",
+          "indexName": "Mustafizur Rahman",
+          "battingName": "Mustafizur Rahman",
+          "fieldingName": "Mustafizur Rahman",
+          "slug": "mustafizur-rahman",
+          "imageUrl": "/db/PICTURES/CMS/263500/263578.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 9,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 263578,
+            "objectId": 1099647,
+            "slug": "mustafizur-rahman",
+            "url": "/db/PICTURES/CMS/263500/263578.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Mustafizur Rahman",
+            "longCaption": null,
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 56825,
+          "objectId": 348049,
+          "name": "Nasum Ahmed",
+          "longName": "Nasum Ahmed",
+          "mobileName": "Nasum",
+          "indexName": "Nasum Ahmed",
+          "battingName": "Nasum Ahmed",
+          "fieldingName": "Nasum Ahmed",
+          "slug": "nasum-ahmed",
+          "imageUrl": "/db/PICTURES/CMS/148300/148317.1.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 12,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 148317,
+            "objectId": 576145,
+            "slug": "nasum-ahmed",
+            "url": "/db/PICTURES/CMS/148300/148317.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Nasum Ahmed",
+            "longCaption": "Nasum Ahmed",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 70872,
+          "objectId": 629058,
+          "name": "Najmul Hossain Shanto",
+          "longName": "Najmul Hossain Shanto",
+          "mobileName": "Shanto",
+          "indexName": "Najmul Hossain Shanto",
+          "battingName": "Najmul Hossain Shanto",
+          "fieldingName": "Najmul Hossain Shanto",
+          "slug": "najmul-hossain-shanto",
+          "imageUrl": "/db/PICTURES/CMS/303200/303241.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 8,
+            "date": 25
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303241,
+            "objectId": 1221735,
+            "slug": "nazmul-hossain-shanto-portrait",
+            "url": "/db/PICTURES/CMS/303200/303241.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Nazmul Hossain Shanto portrait",
+            "longCaption": "Nazmul Hossain Shanto portrait, April, 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 60030,
+          "objectId": 410765,
+          "name": "Nurul Hasan",
+          "longName": "Nurul Hasan",
+          "mobileName": "Nurul",
+          "indexName": "Nurul Hasan",
+          "battingName": "Nurul Hasan",
+          "fieldingName": "Nurul Hasan",
+          "slug": "nurul-hasan",
+          "imageUrl": "/db/PICTURES/CMS/303200/303243.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 11,
+            "date": 21
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 303243,
+            "objectId": 1221737,
+            "slug": "nurul-hasan-portrait",
+            "url": "/db/PICTURES/CMS/303200/303243.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Nurul Hasan portrait",
+            "longCaption": "Nurul Hasan portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 48277,
+          "objectId": 56143,
+          "name": "Shakib Al Hasan",
+          "longName": "Shakib Al Hasan",
+          "mobileName": "Shakib",
+          "indexName": "Shakib Al Hasan",
+          "battingName": "Shakib Al Hasan",
+          "fieldingName": "Shakib Al Hasan",
+          "slug": "shakib-al-hasan",
+          "imageUrl": "/db/PICTURES/CMS/303100/303157.jpg",
+          "dateOfBirth": {
+            "year": 1987,
+            "month": 3,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 303157,
+            "objectId": 1221590,
+            "slug": "shakib-al-hasan-portrait",
+            "url": "/db/PICTURES/CMS/303100/303157.jpg",
+            "width": 160,
+            "height": 202,
+            "caption": "Shakib Al Hasan portrait",
+            "longCaption": "Shakib Al Hasan portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 66808,
+          "objectId": 538506,
+          "name": "Taskin Ahmed",
+          "longName": "Taskin Ahmed",
+          "mobileName": "Taskin",
+          "indexName": "Taskin Ahmed",
+          "battingName": "Taskin Ahmed",
+          "fieldingName": "Taskin Ahmed",
+          "slug": "taskin-ahmed",
+          "imageUrl": "/db/PICTURES/CMS/303100/303169.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 4,
+            "date": 3
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 303169,
+            "objectId": 1221603,
+            "slug": "taskin-ahmed-portrait",
+            "url": "/db/PICTURES/CMS/303100/303169.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Taskin Ahmed portrait",
+            "longCaption": "Taskin Ahmed portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 63651,
+          "objectId": 481979,
+          "name": "A Nortje",
+          "longName": "Anrich Nortje",
+          "mobileName": "Nortje",
+          "indexName": "Nortje, A",
+          "battingName": "A Nortje",
+          "fieldingName": "Nortje",
+          "slug": "anrich-nortje",
+          "imageUrl": "/db/PICTURES/CMS/317900/317968.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 11,
+            "date": 16
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 317968,
+            "objectId": 1254936,
+            "slug": "anrich-nortje-portrait",
+            "url": "/db/PICTURES/CMS/317900/317968.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Anrich Nortje portrait",
+            "longCaption": "Anrich Nortje portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 53649,
+          "objectId": 318845,
+          "name": "RR Rossouw",
+          "longName": "Rilee Rossouw",
+          "mobileName": "Rossouw",
+          "indexName": "Rossouw, RR",
+          "battingName": "RR Rossouw",
+          "fieldingName": "Rossouw",
+          "slug": "rilee-rossouw",
+          "imageUrl": "/db/PICTURES/CMS/312100/312176.png",
+          "dateOfBirth": {
+            "year": 1989,
+            "month": 10,
+            "date": 9
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 312176,
+            "objectId": 1239242,
+            "slug": "rilee-rossouw-portrait",
+            "url": "/db/PICTURES/CMS/312100/312176.png",
+            "width": 160,
+            "height": 201,
+            "caption": "Rilee Rossouw portrait",
+            "longCaption": "Rilee Rossouw portrait, November 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 53891,
+          "objectId": 321777,
+          "name": "DA Miller",
+          "longName": "David Miller",
+          "mobileName": "Miller",
+          "indexName": "Miller, DA",
+          "battingName": "DA Miller",
+          "fieldingName": "Miller",
+          "slug": "david-miller",
+          "imageUrl": "/db/PICTURES/CMS/317900/317964.jpg",
+          "dateOfBirth": {
+            "year": 1989,
+            "month": 6,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 317964,
+            "objectId": 1254932,
+            "slug": "david-miller-portrait",
+            "url": "/db/PICTURES/CMS/317900/317964.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "David Miller portrait",
+            "longCaption": "David Miller portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 55398,
+          "objectId": 337790,
+          "name": "HE van der Dussen",
+          "longName": "Rassie van der Dussen",
+          "mobileName": "van der Dussen",
+          "indexName": "van der Dussen, HE",
+          "battingName": "HE van der Dussen",
+          "fieldingName": "van der Dussen",
+          "slug": "rassie-van-der-dussen",
+          "imageUrl": "/db/PICTURES/CMS/317900/317946.jpg",
+          "dateOfBirth": {
+            "year": 1989,
+            "month": 2,
+            "date": 7
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 317946,
+            "objectId": 1254912,
+            "slug": "rassie-van-der-dussen-portrait",
+            "url": "/db/PICTURES/CMS/317900/317946.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Rassie van der Dussen portrait",
+            "longCaption": "Rassie van der Dussen portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 58466,
+          "objectId": 379776,
+          "name": "SSB Magala",
+          "longName": "Sisanda Magala",
+          "mobileName": "Magala",
+          "indexName": "Magala, SSB",
+          "battingName": "SSB Magala",
+          "fieldingName": "Magala",
+          "slug": "sisanda-magala",
+          "imageUrl": "/db/PICTURES/CMS/324700/324707.1.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 1,
+            "date": 7
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 324707,
+            "objectId": 1270429,
+            "slug": "sisanda-magala-player-portrait",
+            "url": "/db/PICTURES/CMS/324700/324707.1.jpg",
+            "width": 160,
+            "height": 237,
+            "caption": "Sisanda Magala, player portrait",
+            "longCaption": "Sisanda Magala, player portrait",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 70277,
+          "objectId": 600498,
+          "name": "AK Markram",
+          "longName": "Aiden Markram",
+          "mobileName": "Markram",
+          "indexName": "Markram, AK",
+          "battingName": "AK Markram",
+          "fieldingName": "Markram",
+          "slug": "aiden-markram",
+          "imageUrl": "/db/PICTURES/CMS/317900/317970.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 10,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 317970,
+            "objectId": 1254938,
+            "slug": "aiden-markram-portrait",
+            "url": "/db/PICTURES/CMS/317900/317970.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Aiden Markram portrait",
+            "longCaption": "Aiden Markram portrait, December 23, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            1
+          ],
+          "playingRoles": [
+            "opening batter"
+          ]
+        },
+        {
+          "id": 46933,
+          "objectId": 44828,
+          "name": "F du Plessis",
+          "longName": "Faf du Plessis",
+          "mobileName": "du Plessis",
+          "indexName": "du Plessis, F",
+          "battingName": "F du Plessis",
+          "fieldingName": "du Plessis",
+          "slug": "faf-du-plessis",
+          "imageUrl": "/db/PICTURES/CMS/317900/317961.jpg",
+          "dateOfBirth": {
+            "year": 1984,
+            "month": 7,
+            "date": 13
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 317961,
+            "objectId": 1254929,
+            "slug": "faf-du-plessis-portrait",
+            "url": "/db/PICTURES/CMS/317900/317961.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Faf du Plessis portrait",
+            "longCaption": "Faf du Plessis portrait, November 19, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 58190,
+          "objectId": 372116,
+          "name": "T Bavuma",
+          "longName": "Temba Bavuma",
+          "mobileName": "Bavuma",
+          "indexName": "Bavuma, T",
+          "battingName": "T Bavuma",
+          "fieldingName": "Bavuma",
+          "slug": "temba-bavuma",
+          "imageUrl": "/db/PICTURES/CMS/317900/317941.jpg",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 5,
+            "date": 17
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 317941,
+            "objectId": 1254907,
+            "slug": "temba-bavuma-portrait",
+            "url": "/db/PICTURES/CMS/317900/317941.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Temba Bavuma portrait",
+            "longCaption": "Temba Bavuma portrait, November 26, 2020",
+            "credit": "Cricket South Africa",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 95429,
+          "objectId": 1070665,
+          "name": "D Brevis",
+          "longName": "Dewald Brevis",
+          "mobileName": "Brevis",
+          "indexName": "Brevis, D",
+          "battingName": "D Brevis",
+          "fieldingName": "Brevis",
+          "slug": "dewald-brevis",
+          "imageUrl": "/db/PICTURES/CMS/333900/333935.4.jpg",
+          "dateOfBirth": {
+            "year": 2003,
+            "month": 4,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 333935,
+            "objectId": 1299640,
+            "slug": "dewald-brevis-player-profile",
+            "url": "/db/PICTURES/CMS/333900/333935.4.jpg",
+            "width": 160,
+            "height": 235,
+            "caption": "Dewald Brevis player profile",
+            "longCaption": "Dewald Brevis player profile",
+            "credit": "ICC/Getty Images",
+            "photographer": "Ashley Allen",
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 74477,
+          "objectId": 698315,
+          "name": "D Ferreira",
+          "longName": "Donovan Ferreira",
+          "mobileName": "Ferreira",
+          "indexName": "Ferreira,D",
+          "battingName": "D Ferreira",
+          "fieldingName": "Ferreira",
+          "slug": "donovan-ferreira",
+          "imageUrl": "/db/PICTURES/CMS/356800/356889.1.png",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 7,
+            "date": 21
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 356889,
+            "objectId": 1365208,
+            "slug": "donovan-ferreira-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356889.1.png",
+            "width": 160,
+            "height": 198,
+            "caption": "Donovan Ferreira player portrait\n ",
+            "longCaption": "Donovan Ferreira player portrait",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 3,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Test",
+          "longName": "Test matches",
+          "multipleClass": 0,
+          "slug": "test-matches"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 1,
+          "matches": 16,
+          "batted": true,
+          "battedInnings": 23,
+          "bowled": true,
+          "bowledInnings": 26,
+          "fielded": true,
+          "fieldedInnings": 27,
+          "dismissals": 6,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 356,
+        "2": 148,
+        "3": 96,
+        "8": 66,
+        "9": 88,
+        "10": 58,
+        "14": 166,
+        "15": 321,
+        "16": 31
+      },
+      "teamContractedPlayerCount": 19,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        }
+      ]
+    }
+  }
+}

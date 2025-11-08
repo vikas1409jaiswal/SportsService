@@ -1,7 +1,11 @@
-﻿namespace CricketService.Domain.BaseDomains
+﻿using CricketService.Domain.Attributes.ValidationAttributes;
+
+namespace CricketService.Domain.BaseDomains
 {
     public class CricketTeam
     {
+        private string name = string.Empty;
+
         public CricketTeam(
             Guid uuid,
             string name,
@@ -14,7 +18,13 @@
 
         public Guid Uuid { get; set; }
 
-        public string Name { get; set; }
+        [NoConsecutiveCaps]
+        [NoAbbreviationWithDot]
+        public string Name
+        {
+            get => name;
+            set => name = TeamNameConverter.Replace(value);
+        }
 
         public string? LogoUrl { get; set; }
     }

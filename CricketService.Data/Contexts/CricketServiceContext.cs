@@ -201,30 +201,6 @@ public class CricketServiceContext : DbContext
                 (c1, c2) => c1!.SequenceEqual(c2!),
                 c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
                 c => c.ToList()));
-
-        modelBuilder.Entity<CricketTeamInfoDTO>()
-         .Property(e => e.T20IRecords)
-         .HasConversion(
-         dd => JsonConvert.SerializeObject(dd),
-         dd => JsonConvert.DeserializeObject<TeamFormatRecordDetails>(dd)!)
-         .HasColumnName("t20i_records")
-         .HasColumnType("jsonb");
-
-        modelBuilder.Entity<CricketTeamInfoDTO>()
-        .Property(e => e.ODIRecords)
-        .HasConversion(
-        dd => JsonConvert.SerializeObject(dd),
-        dd => JsonConvert.DeserializeObject<TeamFormatRecordDetails>(dd)!)
-        .HasColumnName("odi_records")
-        .HasColumnType("jsonb");
-
-        modelBuilder.Entity<CricketTeamInfoDTO>()
-        .Property(e => e.TestRecords)
-        .HasConversion(
-        dd => JsonConvert.SerializeObject(dd),
-        dd => JsonConvert.DeserializeObject<TeamFormatRecordDetails>(dd)!)
-        .HasColumnName("test_records")
-        .HasColumnType("jsonb");
     }
 
     private static void OMCT20Matches(ModelBuilder modelBuilder)

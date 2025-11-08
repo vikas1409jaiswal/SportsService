@@ -17,7 +17,8 @@ namespace CricketService.Data.Repositories.Extensions
         public static async Task<CricketTeamInfoDTO> SaveTeamInfo(
             this CricketTeam cricketTeam,
             CricketServiceContext context,
-            CricketFormat format)
+            CricketFormat format,
+            string? countryName = null)
         {
             var isExist = context.CricketTeamInfo.Any(x => x.TeamName == cricketTeam.Name);
 
@@ -42,9 +43,7 @@ namespace CricketService.Data.Repositories.Extensions
                     TeamName = cricketTeam.Name,
                     Formats = new List<string>() { format.ToString() },
                     FlagUrl = GetCountriesDataFromFile(cricketTeam.Name).Flags.Svg,
-                    TestRecords = new TeamFormatRecordDetails(null!, 0, 0, 0, 0, 0, null!),
-                    ODIRecords = new TeamFormatRecordDetails(null!, 0, 0, 0, 0, 0, null!),
-                    T20IRecords = new TeamFormatRecordDetails(null!, 0, 0, 0, 0, 0, null!),
+                    Country = countryName ?? string.Empty,
                 };
 
                 context.CricketTeamInfo.Add(teamInfo);

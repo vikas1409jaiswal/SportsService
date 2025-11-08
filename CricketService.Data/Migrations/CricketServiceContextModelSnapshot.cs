@@ -162,6 +162,11 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("uuid");
 
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("country");
+
                     b.Property<string>("FlagUrl")
                         .IsRequired()
                         .HasColumnType("text")
@@ -177,25 +182,10 @@ namespace CricketService.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("logo_url");
 
-                    b.Property<string>("ODIRecords")
-                        .IsRequired()
-                        .HasColumnType("jsonb")
-                        .HasColumnName("odi_records");
-
-                    b.Property<string>("T20IRecords")
-                        .IsRequired()
-                        .HasColumnType("jsonb")
-                        .HasColumnName("t20i_records");
-
                     b.Property<string>("TeamName")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("team_name");
-
-                    b.Property<string>("TestRecords")
-                        .IsRequired()
-                        .HasColumnType("jsonb")
-                        .HasColumnName("test_records");
 
                     b.HasKey("Uuid");
 
@@ -460,6 +450,11 @@ namespace CricketService.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("match_date");
+
+                    b.Property<string>("MatchDays")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("match_days");
 
                     b.Property<string>("MatchNumber")
                         .IsRequired()

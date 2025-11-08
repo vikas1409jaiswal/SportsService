@@ -191,14 +191,14 @@ namespace CricketService.Data.Utils
                     table.AddScorBoardHeader($"{matchDto.Team2.Team.Name} Batting Scoreboard", matchDto.Team2.Team.Name, writer);
 
                     table.AddCell(PDFHandlerExtensions.AddBattingScoreCard(
-                        matchResponse.Team1.Inning1.BattingScorecboard,
+                        matchResponse.Team1.Inning1.BattingScorecard,
                         matchResponse.Team1.Inning1.TotalInningDetails,
                         matchResponse.Team1.Inning1.FallOfWickets,
                         matchResponse.Team1.Inning1.DidNotBat,
                         theme));
 
                     table.AddCell(PDFHandlerExtensions.AddBattingScoreCard(
-                        matchResponse.Team2.Inning1.BattingScorecboard,
+                        matchResponse.Team2.Inning1.BattingScorecard,
                         matchResponse.Team2.Inning1.TotalInningDetails,
                         matchResponse.Team2.Inning1.FallOfWickets,
                         matchResponse.Team2.Inning1.DidNotBat,
@@ -208,9 +208,9 @@ namespace CricketService.Data.Utils
 
                     table.AddScorBoardHeader($"{matchDto.Team1.Team.Name} Bowling Scoreboard", matchDto.Team1.Team.Name, writer);
 
-                    table.AddCell(PDFHandlerExtensions.AddBowlingScoreCard(matchResponse.Team1.Inning1.BowlingScoreboard, theme));
+                    table.AddCell(PDFHandlerExtensions.AddBowlingScoreCard(matchResponse.Team1.Inning1.BowlingScorecard, theme));
 
-                    table.AddCell(PDFHandlerExtensions.AddBowlingScoreCard(matchResponse.Team2.Inning1.BowlingScoreboard, theme));
+                    table.AddCell(PDFHandlerExtensions.AddBowlingScoreCard(matchResponse.Team2.Inning1.BowlingScorecard, theme));
 
                     document.Add(table);
 
@@ -253,14 +253,14 @@ namespace CricketService.Data.Utils
                         table2.AddScorBoardHeader($"{matchDto.Team2.Team.Name} Batting Scoreboard", matchDto.Team2.Team.Name, writer);
 
                         table2.AddCell(PDFHandlerExtensions.AddBattingScoreCard(
-                            matchResponse.Team1.Inning2.BattingScorecboard,
+                            matchResponse.Team1.Inning2.BattingScorecard,
                             matchResponse.Team1.Inning2.TotalInningDetails,
                             matchResponse.Team1.Inning2.FallOfWickets,
                             matchResponse.Team1.Inning2.DidNotBat,
                             theme));
 
                         table2.AddCell(PDFHandlerExtensions.AddBattingScoreCard(
-                            matchResponse.Team2.Inning2.BattingScorecboard,
+                            matchResponse.Team2.Inning2.BattingScorecard,
                             matchResponse.Team2.Inning2.TotalInningDetails,
                             matchResponse.Team2.Inning2.FallOfWickets,
                             matchResponse.Team2.Inning2.DidNotBat,
@@ -270,9 +270,9 @@ namespace CricketService.Data.Utils
 
                         table2.AddScorBoardHeader($"{matchDto.Team1.Team.Name} Bowling Scoreboard", matchDto.Team1.Team.Name, writer);
 
-                        table2.AddCell(PDFHandlerExtensions.AddBowlingScoreCard(matchResponse.Team1.Inning2.BowlingScoreboard, theme));
+                        table2.AddCell(PDFHandlerExtensions.AddBowlingScoreCard(matchResponse.Team1.Inning2.BowlingScorecard, theme));
 
-                        table2.AddCell(PDFHandlerExtensions.AddBowlingScoreCard(matchResponse.Team2.Inning2.BowlingScoreboard, theme));
+                        table2.AddCell(PDFHandlerExtensions.AddBowlingScoreCard(matchResponse.Team2.Inning2.BowlingScorecard, theme));
 
                         table2.AddCell(new PdfPCell(new Phrase(matchDto.Result, new Font(Font.FontFamily.HELVETICA, 12, Font.BOLD, BaseColor.WHITE)))
                         {

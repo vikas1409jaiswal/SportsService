@@ -20,6 +20,7 @@ namespace CricketService.Data.Repositories
         private readonly ICricketTeamRepository cricketTeamRepository;
         private readonly CricketServiceContext context;
         private readonly Dictionary<CricketFormat, List<InternationalCricketMatchResponse>> loimResponses = new();
+        private readonly List<TestCricketMatchResponse> testCricketMatchResponses = new();
 
         public CricketTeamHistoryH2HRepository(
             IServiceProvider serviceProvider,
@@ -34,19 +35,23 @@ namespace CricketService.Data.Repositories
             this.context = context;
             var t20iResponse = context.LimitedOverInternationalMatchesInfo
                     .Where(x => x.MatchNumber.Contains("T20I"))
-                    .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("T20I no. ", string.Empty)))
+                    .OrderBy(x => Convert.ToInt32(x.MatchNumber
+                                                   .Replace("WT20I no. ", string.Empty)
+                                                   .Replace("T20I no. ", string.Empty)))
                     .Select(x => x.ToDomain(mapper)).ToList();
 
             loimResponses[CricketFormat.T20I] = t20iResponse;
 
             var odiResponse = context.LimitedOverInternationalMatchesInfo
                     .Where(x => x.MatchNumber.Contains("ODI"))
-                    .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("ODI no. ", string.Empty)))
+                    .OrderBy(x => Convert.ToInt32(x.MatchNumber
+                                                   .Replace("WODI no. ", string.Empty)
+                                                   .Replace("ODI no. ", string.Empty)))
                     .Select(x => x.ToDomain(mapper)).ToList();
 
             loimResponses[CricketFormat.ODI] = odiResponse;
 
-            var testResponse = context.TestCricketMatchInfo
+            testCricketMatchResponses = context.TestCricketMatchInfo
                     .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("Test no. ", string.Empty)))
                     .Select(x => x.ToDomain(mapper)).ToList();
         }
@@ -75,7 +80,8 @@ namespace CricketService.Data.Repositories
         public async Task SeedCricketTeamHistoryH2HTable(
             string team1Name,
             string team2Name,
-            CricketFormat format)
+            CricketFormat format,
+            bool finalRecordOnly = false)
         {
             logger.LogInformation("Starting cricket team history seeding process");
             var startTime = DateTime.Now;
@@ -87,7 +93,14 @@ namespace CricketService.Data.Repositories
                 CricketTeamInfoResponse team2 = cricketTeamRepository.GetTeamByName(team2Name);
                 List<Guid> uuids = new() { team1.TeamUuid, team2.TeamUuid };
 
-                await ProcessCricketTeamHistoryH2HTable(uuids, format);
+                if (format == CricketFormat.TestCricket)
+                {
+                    await ProcessTestCricketTeamHistoryH2HTable(uuids, finalRecordOnly);
+                }
+                else
+                {
+                    await ProcessLOICricketTeamHistoryH2HTable(uuids, format, finalRecordOnly);
+                }
 
                 var duration = DateTime.Now - startTime;
                 logger.LogInformation($"Successfully completed seeding process. Total time: {duration.TotalSeconds} seconds");
@@ -99,7 +112,7 @@ namespace CricketService.Data.Repositories
             }
         }
 
-        public async Task ProcessCricketTeamHistoryH2HTable(List<Guid> uuids, CricketFormat format)
+        public async Task ProcessLOICricketTeamHistoryH2HTable(List<Guid> uuids, CricketFormat format, bool finalRecordOnly = false)
         {
             var counter = 1;
 
@@ -111,12 +124,20 @@ namespace CricketService.Data.Repositories
                             || (x.Team2.Team.Uuid.Equals(uuids.ElementAt(0))
                             && x.Team1.Team.Uuid.Equals(uuids.ElementAt(1))));
 
+            if (finalRecordOnly)
+            {
+                teamsLoimResponses = new List<InternationalCricketMatchResponse>()
+                {
+                    teamsLoimResponses.Last(),
+                };
+            }
+
             foreach (var loim in teamsLoimResponses)
             {
                 logger.LogInformation($"Processing match {loim.MatchNumber} for H2H between {loim.Team1.Team.Name} & {loim.Team2.Team.Name}");
 
                 var matchNumber = Convert.ToInt32(loim.MatchNumber
-                    .Replace(format == CricketFormat.ODI ? "ODI no. " : "T20I no. ", string.Empty));
+                    .Replace($"{format} no. ", string.Empty));
 
                 logger.LogDebug($"Checking if match {matchNumber} already exists");
                 var existingMatchInfo = await context.CricketTeamsHistoryH2H.FindAsync(loim.MatchUuid);
@@ -148,7 +169,9 @@ namespace CricketService.Data.Repositories
                             {
                                 TeamUuid = uuid,
                                 TeamName = team.TeamName,
-                                TeamFormatRecordDetails = teamRecords.TeamRecordDetails.T20IResults,
+                                TeamFormatRecordDetails = format == CricketFormat.ODI
+                                                          ? teamRecords.TeamRecordDetails.ODIResults
+                                                          : teamRecords.TeamRecordDetails.T20IResults,
                             });
                         }
                         catch (Exception ex)
@@ -185,6 +208,110 @@ namespace CricketService.Data.Repositories
                     logger.LogInformation($"Creating background job from {startMatchNumber} to {endMatchNumber} btw {firstTeamName} & {secondTeamName}");
                     RecurringJob.AddOrUpdate(
                     $"{firstTeamName}vs{secondTeamName}::{startMatchNumber}->{endMatchNumber}::{format}",
+                    () => SaveCricketTeamHistoryH2HBatch(cricketTeamHistoriesH2hDto),
+                    Cron.Never);
+
+                    cricketTeamHistoriesH2hDto = new List<CricketTeamHistoryH2hDTO>();
+
+                    logger.LogInformation($"Processed {counter} matches so far...");
+                }
+            }
+        }
+
+        public async Task ProcessTestCricketTeamHistoryH2HTable(List<Guid> uuids, bool finalRecordOnly = false)
+        {
+            var counter = 1;
+
+            var cricketTeamHistoriesH2hDto = new List<CricketTeamHistoryH2hDTO>();
+
+            var teamsTcmResponses = testCricketMatchResponses
+                .Where(x => (x.Team1.Team.Uuid.Equals(uuids.ElementAt(0))
+                            && x.Team2.Team.Uuid.Equals(uuids.ElementAt(1)))
+                            || (x.Team2.Team.Uuid.Equals(uuids.ElementAt(0))
+                            && x.Team1.Team.Uuid.Equals(uuids.ElementAt(1))));
+
+            if (finalRecordOnly)
+            {
+                teamsTcmResponses = new List<TestCricketMatchResponse>()
+                {
+                    teamsTcmResponses.Last(),
+                };
+            }
+
+            foreach (var tcm in teamsTcmResponses)
+            {
+                logger.LogInformation($"Processing match {tcm.MatchNumber} for H2H between {tcm.Team1.Team.Name} & {tcm.Team2.Team.Name}");
+
+                var matchNumber = Convert.ToInt32(tcm.MatchNumber
+                    .Replace($"Test no. ", string.Empty));
+
+                logger.LogDebug($"Checking if match {matchNumber} already exists");
+                var existingMatchInfo = await context.CricketTeamsHistoryH2H.FindAsync(tcm.MatchUuid);
+
+                if (existingMatchInfo is null)
+                {
+                    List<TeamFormatRecords> tfrDetails = new();
+
+                    foreach (var uuid in uuids)
+                    {
+                        logger.LogDebug($"Processing team with UUID: {uuid}");
+
+                        try
+                        {
+                            var teams = context.CricketTeamInfo
+                                       .AsNoTracking()
+                                       .Where(x => uuids.Contains(x.Uuid))
+                                       .ToList();
+
+                            var team = teams.Single(x => x.Uuid == uuid);
+                            var oppTeam = teams.First(x => x.Uuid != uuid);
+
+                            var teamRecords = cricketTeamRepository.GetTeamStatistics(
+                                team: team, format: CricketFormat.TestCricket, matchUntil: matchNumber, opponentTeam: oppTeam);
+
+                            logger.LogDebug($"Retrieved statistics for {team.TeamName}");
+
+                            tfrDetails.Add(new TeamFormatRecords()
+                            {
+                                TeamUuid = uuid,
+                                TeamName = team.TeamName,
+                                TeamFormatRecordDetails = teamRecords.TeamRecordDetails.TestResults,
+                            });
+                        }
+                        catch (Exception ex)
+                        {
+                            logger.LogError(ex, $"Error processing team {uuid} for match {tcm.MatchNumber}");
+                        }
+                    }
+
+                    var preparedData = new CricketTeamHistoryH2hDTO()
+                    {
+                        MatchUuid = tcm.MatchUuid,
+                        Team1Name = tfrDetails.ElementAt(0).TeamName,
+                        Team2Name = tfrDetails.ElementAt(1).TeamName,
+                        MatchNumber = matchNumber,
+                        Format = CricketFormat.TestCricket.ToString(),
+                        InstantTeamsRecords = tfrDetails,
+                    };
+
+                    cricketTeamHistoriesH2hDto.Add(preparedData);
+                }
+                else
+                {
+                    logger.LogDebug($"Match #{matchNumber} already exists - skipping");
+                }
+
+                counter++;
+
+                if (counter % 1 == 0)
+                {
+                    int startMatchNumber = cricketTeamHistoriesH2hDto.First().MatchNumber;
+                    int endMatchNumber = cricketTeamHistoriesH2hDto.Last().MatchNumber;
+                    string firstTeamName = cricketTeamHistoriesH2hDto.First().Team1Name;
+                    string secondTeamName = cricketTeamHistoriesH2hDto.First().Team2Name;
+                    logger.LogInformation($"Creating background job from {startMatchNumber} to {endMatchNumber} btw {firstTeamName} & {secondTeamName}");
+                    RecurringJob.AddOrUpdate(
+                    $"{firstTeamName}vs{secondTeamName}::{startMatchNumber}->{endMatchNumber}::{CricketFormat.TestCricket}",
                     () => SaveCricketTeamHistoryH2HBatch(cricketTeamHistoriesH2hDto),
                     Cron.Never);
 

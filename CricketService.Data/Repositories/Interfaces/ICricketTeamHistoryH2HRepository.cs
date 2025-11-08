@@ -8,6 +8,6 @@ namespace CricketService.Data.Repositories.Interfaces
         Task<IEnumerable<CricketTeamHistoryH2hDTO>> GetTeamsHistoryH2H(
             CricketFormat format, string team1Name, string? team2Name = null);
 
-        Task SeedCricketTeamHistoryH2HTable(string team1Name, string team2Name, CricketFormat format);
+        Task SeedCricketTeamHistoryH2HTable(string team1Name, string team2Name, CricketFormat format, bool finalRecordOnly = false);
     }
 }

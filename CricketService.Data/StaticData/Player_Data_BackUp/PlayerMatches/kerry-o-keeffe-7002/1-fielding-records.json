@@ -1,0 +1,984 @@
+[
+  {
+    "Type": "CAREER_AVERAGES",
+    "Stats": [
+      {
+        "Tt": "overview",
+        "Sp": "1971-1977",
+        "Mt": 24,
+        "In": 47,
+        "Pr": null,
+        "Ds": 15,
+        "Ct": 15,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 15,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.319
+      }
+    ]
+  },
+  {
+    "Type": "OPPOSITION_TEAM",
+    "Stats": [
+      {
+        "Tt": "vs England",
+        "Sp": "1971-1977",
+        "Mt": 6,
+        "In": 12,
+        "Pr": "opposition=1",
+        "Ds": 4,
+        "Ct": 4,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 4,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.333
+      },
+      {
+        "Tt": "vs New Zealand",
+        "Sp": "1973-1977",
+        "Mt": 8,
+        "In": 15,
+        "Pr": "opposition=5",
+        "Ds": 4,
+        "Ct": 4,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 4,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.266
+      },
+      {
+        "Tt": "vs Pakistan",
+        "Sp": "1972-1977",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "opposition=7",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.2
+      },
+      {
+        "Tt": "vs West Indies",
+        "Sp": "1973-1973",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "opposition=4",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.5
+      }
+    ]
+  },
+  {
+    "Type": "HOST_COUNTRY",
+    "Stats": [
+      {
+        "Tt": "in Australia",
+        "Sp": "1971-1977",
+        "Mt": 11,
+        "In": 22,
+        "Pr": "host=2",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.227
+      },
+      {
+        "Tt": "in England",
+        "Sp": "1977-1977",
+        "Mt": 3,
+        "In": 6,
+        "Pr": "host=1",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "in New Zealand",
+        "Sp": "1974-1977",
+        "Mt": 5,
+        "In": 9,
+        "Pr": "host=5",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.222
+      },
+      {
+        "Tt": "in West Indies",
+        "Sp": "1973-1973",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "host=4",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.5
+      }
+    ]
+  },
+  {
+    "Type": "CONTINENT",
+    "Stats": [
+      {
+        "Tt": "in Americas",
+        "Sp": "1973-1973",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "continent=3",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "in Europe",
+        "Sp": "1977-1977",
+        "Mt": 3,
+        "In": 6,
+        "Pr": "continent=4",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "in Oceania",
+        "Sp": "1971-1977",
+        "Mt": 16,
+        "In": 31,
+        "Pr": "continent=5",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.225
+      }
+    ]
+  },
+  {
+    "Type": "HOME_OR_AWAY",
+    "Stats": [
+      {
+        "Tt": "home",
+        "Sp": "1971-1977",
+        "Mt": 11,
+        "In": 22,
+        "Pr": "home_or_away=1",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.227
+      },
+      {
+        "Tt": "away",
+        "Sp": "1973-1977",
+        "Mt": 13,
+        "In": 25,
+        "Pr": "home_or_away=2",
+        "Ds": 10,
+        "Ct": 10,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 10,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.4
+      }
+    ]
+  },
+  {
+    "Type": "YEAR",
+    "Stats": [
+      {
+        "Tt": "year 1971",
+        "Sp": null,
+        "Mt": 2,
+        "In": 4,
+        "Pr": "year=1971",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "year 1972",
+        "Sp": null,
+        "Mt": 2,
+        "In": 4,
+        "Pr": "year=1972",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.25
+      },
+      {
+        "Tt": "year 1973",
+        "Sp": null,
+        "Mt": 6,
+        "In": 12,
+        "Pr": "year=1973",
+        "Ds": 6,
+        "Ct": 6,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 6,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "year 1974",
+        "Sp": null,
+        "Mt": 5,
+        "In": 9,
+        "Pr": "year=1974",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.222
+      },
+      {
+        "Tt": "year 1976",
+        "Sp": null,
+        "Mt": 1,
+        "In": 2,
+        "Pr": "year=1976",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "year 1977",
+        "Sp": null,
+        "Mt": 8,
+        "In": 16,
+        "Pr": "year=1977",
+        "Ds": 6,
+        "Ct": 6,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 6,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.375
+      }
+    ]
+  },
+  {
+    "Type": "SEASON",
+    "Stats": [
+      {
+        "Tt": "season 1970/71",
+        "Sp": null,
+        "Mt": 2,
+        "In": 4,
+        "Pr": "season=1970/71",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "season 1972/73",
+        "Sp": null,
+        "Mt": 7,
+        "In": 14,
+        "Pr": "season=1972/73",
+        "Ds": 6,
+        "Ct": 6,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 6,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.428
+      },
+      {
+        "Tt": "season 1973/74",
+        "Sp": null,
+        "Mt": 6,
+        "In": 11,
+        "Pr": "season=1973/74",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.272
+      },
+      {
+        "Tt": "season 1976/77",
+        "Sp": null,
+        "Mt": 6,
+        "In": 12,
+        "Pr": "season=1976/77",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.25
+      },
+      {
+        "Tt": "season 1977",
+        "Sp": null,
+        "Mt": 3,
+        "In": 6,
+        "Pr": "season=1977",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      }
+    ]
+  },
+  {
+    "Type": "CAPTAINS_INVOLVED",
+    "Stats": [
+      {
+        "Tt": "*GS Chappell",
+        "Sp": "1976-1977",
+        "Mt": 9,
+        "In": 18,
+        "Pr": "captain_involve=1364",
+        "Ds": 6,
+        "Ct": 6,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 6,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.333
+      },
+      {
+        "Tt": "*IM Chappell",
+        "Sp": "1971-1974",
+        "Mt": 14,
+        "In": 27,
+        "Pr": "captain_involve=1243",
+        "Ds": 9,
+        "Ct": 9,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 9,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.333
+      },
+      {
+        "Tt": "*WM Lawry",
+        "Sp": "1971-1971",
+        "Mt": 1,
+        "In": 2,
+        "Pr": "captain_involve=1150",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      }
+    ]
+  },
+  {
+    "Type": "CAPTAIN",
+    "Stats": [
+      {
+        "Tt": "is not captain",
+        "Sp": "1971-1977",
+        "Mt": 24,
+        "In": 47,
+        "Pr": "captain=0",
+        "Ds": 15,
+        "Ct": 15,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 15,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.319
+      }
+    ]
+  },
+  {
+    "Type": "KEEPER",
+    "Stats": [
+      {
+        "Tt": "is not keeper",
+        "Sp": "1971-1977",
+        "Mt": 24,
+        "In": 47,
+        "Pr": "keeper=0",
+        "Ds": 15,
+        "Ct": 15,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 15,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.319
+      }
+    ]
+  },
+  {
+    "Type": "TOSS",
+    "Stats": [
+      {
+        "Tt": "won the toss",
+        "Sp": "1971-1977",
+        "Mt": 16,
+        "In": 31,
+        "Pr": "toss=1",
+        "Ds": 10,
+        "Ct": 10,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 10,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.322
+      },
+      {
+        "Tt": "lost the toss",
+        "Sp": "1972-1977",
+        "Mt": 8,
+        "In": 16,
+        "Pr": "toss=2",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.312
+      }
+    ]
+  },
+  {
+    "Type": "BATTING_FIELDING_SEQUENCE_AND_TOSS",
+    "Stats": [
+      {
+        "Tt": "won toss &amp; batted",
+        "Sp": "1971-1977",
+        "Mt": 13,
+        "In": 25,
+        "Pr": "batting_fielding_first=1;toss=1",
+        "Ds": 10,
+        "Ct": 10,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 10,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.4
+      },
+      {
+        "Tt": "won toss &amp; fielded",
+        "Sp": "1971-1977",
+        "Mt": 3,
+        "In": 6,
+        "Pr": "batting_fielding_first=2;toss=1",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "lost toss &amp; sent in",
+        "Sp": "1974-1977",
+        "Mt": 4,
+        "In": 8,
+        "Pr": "batting_fielding_first=1;toss=2",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.25
+      },
+      {
+        "Tt": "lost toss &amp; fielded",
+        "Sp": "1972-1977",
+        "Mt": 4,
+        "In": 8,
+        "Pr": "batting_fielding_first=2;toss=2",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.375
+      }
+    ]
+  },
+  {
+    "Type": "BATTING_FIELDING_SEQUENCE",
+    "Stats": [
+      {
+        "Tt": "matches batting first",
+        "Sp": "1971-1977",
+        "Mt": 17,
+        "In": 33,
+        "Pr": "batting_fielding_first=1",
+        "Ds": 12,
+        "Ct": 12,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 12,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.363
+      },
+      {
+        "Tt": "matches fielding first",
+        "Sp": "1971-1977",
+        "Mt": 7,
+        "In": 14,
+        "Pr": "batting_fielding_first=2",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.214
+      }
+    ]
+  },
+  {
+    "Type": "TEAM_INNINGS",
+    "Stats": [
+      {
+        "Tt": "1st team innings",
+        "Sp": "1971-1977",
+        "Mt": 24,
+        "In": 24,
+        "Pr": "innings_number=2;innings_number=1",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.291
+      },
+      {
+        "Tt": "2nd team innings",
+        "Sp": "1971-1977",
+        "Mt": 23,
+        "In": 23,
+        "Pr": "innings_number=4;innings_number=3",
+        "Ds": 8,
+        "Ct": 8,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 8,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.347
+      }
+    ]
+  },
+  {
+    "Type": "MATCH_INNINGS",
+    "Stats": [
+      {
+        "Tt": "1st match innings",
+        "Sp": "1971-1977",
+        "Mt": 7,
+        "In": 7,
+        "Pr": "innings_number=1",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.142
+      },
+      {
+        "Tt": "2nd match innings",
+        "Sp": "1971-1977",
+        "Mt": 17,
+        "In": 17,
+        "Pr": "innings_number=2",
+        "Ds": 6,
+        "Ct": 6,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 6,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.352
+      },
+      {
+        "Tt": "3rd match innings",
+        "Sp": "1971-1977",
+        "Mt": 9,
+        "In": 9,
+        "Pr": "innings_number=3",
+        "Ds": 4,
+        "Ct": 4,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 4,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.444
+      },
+      {
+        "Tt": "4th match innings",
+        "Sp": "1971-1977",
+        "Mt": 14,
+        "In": 14,
+        "Pr": "innings_number=4",
+        "Ds": 4,
+        "Ct": 4,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 4,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.285
+      }
+    ]
+  },
+  {
+    "Type": "RESULT",
+    "Stats": [
+      {
+        "Tt": "won match",
+        "Sp": "1972-1977",
+        "Mt": 10,
+        "In": 20,
+        "Pr": "result=1",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.35
+      },
+      {
+        "Tt": "lost match",
+        "Sp": "1971-1977",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "result=2",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.2
+      },
+      {
+        "Tt": "drawn match",
+        "Sp": "1971-1977",
+        "Mt": 9,
+        "In": 17,
+        "Pr": "result=4",
+        "Ds": 6,
+        "Ct": 6,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 6,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.352
+      }
+    ]
+  },
+  {
+    "Type": "BATTING_FIELDING_SEQUENCE_AND_RESULT",
+    "Stats": [
+      {
+        "Tt": "won batting first",
+        "Sp": "1972-1977",
+        "Mt": 7,
+        "In": 14,
+        "Pr": "batting_fielding_first=1;result=1",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.357
+      },
+      {
+        "Tt": "won fielding first",
+        "Sp": "1972-1977",
+        "Mt": 3,
+        "In": 6,
+        "Pr": "batting_fielding_first=2;result=1",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.333
+      },
+      {
+        "Tt": "lost batting first",
+        "Sp": "1974-1977",
+        "Mt": 4,
+        "In": 8,
+        "Pr": "batting_fielding_first=1;result=2",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.25
+      },
+      {
+        "Tt": "lost fielding first",
+        "Sp": "1971-1971",
+        "Mt": 1,
+        "In": 2,
+        "Pr": "batting_fielding_first=2;result=2",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      },
+      {
+        "Tt": "drawn batting first",
+        "Sp": "1971-1977",
+        "Mt": 6,
+        "In": 11,
+        "Pr": "batting_fielding_first=1;result=4",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.454
+      },
+      {
+        "Tt": "drawn fielding first",
+        "Sp": "1974-1977",
+        "Mt": 3,
+        "In": 6,
+        "Pr": "batting_fielding_first=2;result=4",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.166
+      }
+    ]
+  },
+  {
+    "Type": "TOURNAMENT_TYPE",
+    "Stats": [
+      {
+        "Tt": "2 team series",
+        "Sp": "1971-1977",
+        "Mt": 24,
+        "In": 47,
+        "Pr": "tournament_type=2",
+        "Ds": 15,
+        "Ct": 15,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 15,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.319
+      }
+    ]
+  },
+  {
+    "Type": "MATCH_NUMBER",
+    "Stats": [
+      {
+        "Tt": "only match in series",
+        "Sp": "1977-1977",
+        "Mt": 1,
+        "In": 2,
+        "Pr": "match_number=0",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "1st match in series",
+        "Sp": "1972-1977",
+        "Mt": 7,
+        "In": 13,
+        "Pr": "match_number=1",
+        "Ds": 7,
+        "Ct": 7,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 7,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.538
+      },
+      {
+        "Tt": "2nd match in series",
+        "Sp": "1972-1977",
+        "Mt": 7,
+        "In": 14,
+        "Pr": "match_number=2",
+        "Ds": 2,
+        "Ct": 2,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 2,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.142
+      },
+      {
+        "Tt": "3rd match in series",
+        "Sp": "1973-1977",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "match_number=3",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.3
+      },
+      {
+        "Tt": "4th match in series",
+        "Sp": "1973-1973",
+        "Mt": 1,
+        "In": 2,
+        "Pr": "match_number=4",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "5th match in series",
+        "Sp": "1971-1973",
+        "Mt": 2,
+        "In": 4,
+        "Pr": "match_number=5",
+        "Ds": 1,
+        "Ct": 1,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 1,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.25
+      },
+      {
+        "Tt": "7th match in series",
+        "Sp": "1971-1971",
+        "Mt": 1,
+        "In": 2,
+        "Pr": "match_number=7",
+        "Ds": 0,
+        "Ct": 0,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 0,
+        "Mds": "0",
+        "Dspi": 0.0
+      }
+    ]
+  },
+  {
+    "Type": "MAJOR_TROPHY",
+    "Stats": [
+      {
+        "Tt": "Frank Worrell Trophy",
+        "Sp": "1973-1973",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "trophy=3",
+        "Ds": 5,
+        "Ct": 5,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 5,
+        "Mds": "2 (2ct 0st)",
+        "Dspi": 0.5
+      },
+      {
+        "Tt": "The Ashes",
+        "Sp": "1971-1977",
+        "Mt": 5,
+        "In": 10,
+        "Pr": "trophy=1",
+        "Ds": 3,
+        "Ct": 3,
+        "St": 0,
+        "Ck": 0,
+        "Cf": 3,
+        "Mds": "1 (1ct 0st)",
+        "Dspi": 0.3
+      }
+    ]
+  }
+]

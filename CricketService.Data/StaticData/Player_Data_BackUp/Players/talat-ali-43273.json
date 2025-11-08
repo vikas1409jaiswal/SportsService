@@ -1,0 +1,5075 @@
+{
+  "player": {
+    "id": 1400,
+    "objectId": 43273,
+    "name": "Talat Ali",
+    "longName": "Talat Ali",
+    "mobileName": "Talat Ali",
+    "indexName": "Talat Ali",
+    "battingName": "Talat Ali",
+    "fieldingName": "Talat Ali",
+    "slug": "talat-ali",
+    "imageUrl": "/db/PICTURES/CMS/302700/302713.jpg",
+    "dateOfBirth": {
+      "year": 1950,
+      "month": 5,
+      "date": 29
+    },
+    "dateOfDeath": null,
+    "gender": "M",
+    "battingStyles": [
+      "rhb"
+    ],
+    "bowlingStyles": [
+      "rm"
+    ],
+    "longBattingStyles": [
+      "right-hand bat"
+    ],
+    "longBowlingStyles": [
+      "right-arm medium"
+    ],
+    "image": {
+      "id": 302713,
+      "objectId": 1221025,
+      "slug": "talat-ali-portrait",
+      "url": "/db/PICTURES/CMS/302700/302713.jpg",
+      "width": 160,
+      "height": 203,
+      "caption": "Talat Ali  portrait",
+      "longCaption": "Talat Ali  portrait, April, 2020",
+      "credit": "Getty Images",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 7,
+    "playerRoleTypeIds": [],
+    "playingRoles": [],
+    "fullName": "Talat Ali Malik",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": null,
+    "heightUnit": null,
+    "education": null,
+    "country": {
+      "id": 7,
+      "objectId": 7,
+      "name": "Pakistan",
+      "shortName": "Pakistan",
+      "abbreviation": "PAK",
+      "slug": "pakistan",
+      "image": {
+        "id": 313129,
+        "objectId": 1241588,
+        "slug": "pakistan-logo",
+        "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+        "width": 500,
+        "height": 500,
+        "caption": "Pakistan logo",
+        "longCaption": "Pakistan logo",
+        "credit": null,
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Lahore, Punjab",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "",
+    "intlCareerSpan": "1972 - 1979",
+    "headshotImage": null,
+    "backgroundImage": {
+      "id": 83394,
+      "objectId": 324266,
+      "slug": "younis-khan-and-talat-ali-pakistan-s-manager-take-a-look-at-the-pitch",
+      "url": "/db/PICTURES/CMS/83300/83394.jpg",
+      "width": 500,
+      "height": 338,
+      "caption": "Younis Khan and Talat Ali, Pakistan's manager, take a look at the pitch",
+      "longCaption": "Younis Khan and Talat Ali, Pakistan's manager, take a look at the pitch, Bangalore, December 7, 2007",
+      "credit": "AFP",
+      "photographer": null,
+      "peerUrls": {
+        "FILM": "/db/PICTURES/CMS/83300/83394.jpg",
+        "WIDE": null,
+        "SQUARE": null
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [
+      "referee"
+    ],
+    "matchPlayerTypes": [
+      1,
+      4
+    ],
+    "hasRecords": true,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 14,
+    "totalVideos": 0,
+    "totalImages": 5
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 7,
+          "objectId": 7,
+          "scribeId": 7,
+          "slug": "pakistan",
+          "name": "Pakistan",
+          "longName": "Pakistan",
+          "abbreviation": "PAK",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+          "isCountry": true,
+          "primaryColor": "#005b20",
+          "image": {
+            "id": 313129,
+            "objectId": 1241588,
+            "slug": "pakistan-logo",
+            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Pakistan logo",
+            "longCaption": "Pakistan logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2884,
+          "objectId": 2833,
+          "scribeId": 2833,
+          "slug": "lahore",
+          "name": "Lahore",
+          "longName": "Lahore",
+          "abbreviation": "",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3061,
+          "objectId": 3010,
+          "scribeId": 3010,
+          "slug": "pakistan-international-airlines",
+          "name": "PIA",
+          "longName": "Pakistan International Airlines",
+          "abbreviation": "PIA",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 2073,
+          "objectId": 2022,
+          "scribeId": 2022,
+          "slug": "punjab-university",
+          "name": "",
+          "longName": "Punjab University",
+          "abbreviation": "",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3179,
+          "objectId": 3128,
+          "scribeId": 3128,
+          "slug": "united-bank-limited",
+          "name": "United Bank",
+          "longName": "United Bank Limited",
+          "abbreviation": "UBL",
+          "unofficialName": null,
+          "imageUrl": null,
+          "isCountry": false,
+          "primaryColor": null,
+          "image": null
+        },
+        "current": false
+      }
+    ],
+    "relations": [],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "Talat was a dogged opener who got his Test career off to a traumatic start when he fractured his thumb on debut, facing Dennis Lillee at Adelaide in 1972-73. Pakistan won only one of his 10 matches, when he made 40 and a Test-best 61 at Christchurch in 1978-79.  After retiring he became an ICC match referee.\n<BR><B>Wisden Cricinfo staff</b>"
+        }
+      ]
+    },
+    "notes": null,
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 1,
+          "mt": 10,
+          "in": 18,
+          "rn": 370,
+          "bl": null,
+          "avg": 23.12,
+          "sr": null,
+          "no": 2,
+          "fo": null,
+          "si": 1,
+          "hs": "61",
+          "hn": 0,
+          "ft": 2,
+          "ct": 4,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 115,
+          "in": 205,
+          "rn": 7296,
+          "bl": null,
+          "avg": 38.4,
+          "sr": null,
+          "no": 15,
+          "fo": null,
+          "si": null,
+          "hs": "258",
+          "hn": 15,
+          "ft": 32,
+          "ct": 43,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 5,
+          "mt": 16,
+          "in": 15,
+          "rn": 389,
+          "bl": null,
+          "avg": 27.78,
+          "sr": null,
+          "no": 1,
+          "fo": null,
+          "si": null,
+          "hs": "110*",
+          "hn": 1,
+          "ft": 1,
+          "ct": 2,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 1,
+          "mt": 10,
+          "in": 2,
+          "rn": 7,
+          "bl": 20,
+          "avg": null,
+          "sr": null,
+          "wk": 0,
+          "bbi": "-",
+          "bbm": "-",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 2.1
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 115,
+          "in": null,
+          "rn": 247,
+          "bl": 411,
+          "avg": 123.5,
+          "sr": 205.5,
+          "wk": 2,
+          "bbi": "1/32",
+          "bbm": null,
+          "fwk": null,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 3.6
+        },
+        {
+          "type": "BOWLING",
+          "cl": 5,
+          "mt": 16,
+          "in": null,
+          "rn": 0,
+          "bl": 6,
+          "avg": null,
+          "sr": null,
+          "wk": 0,
+          "bbi": "-",
+          "bbm": "-",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": null
+        },
+        {
+          "type": "OFFICIAL",
+          "cl": 1,
+          "mt": 10,
+          "um": null,
+          "tum": null,
+          "rf": 10
+        },
+        {
+          "type": "OFFICIAL",
+          "cl": 2,
+          "mt": 26,
+          "um": null,
+          "tum": null,
+          "rf": 26
+        },
+        {
+          "type": "OFFICIAL",
+          "cl": 6,
+          "mt": 13,
+          "um": null,
+          "tum": null,
+          "rf": 13
+        }
+      ]
+    },
+    "topRecords": [],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 10,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 708,
+                    "id": 708,
+                    "objectId": 63094,
+                    "scribeId": 63094,
+                    "slug": "australia-vs-pakistan-1st-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1972/73",
+                    "title": "1st Test",
+                    "floodlit": "day",
+                    "startDate": "1972-12-22T00:00:00Z",
+                    "endDate": "1972-12-27T00:00:00Z",
+                    "startTime": "1972-12-22T00:30:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Australia won by an innings and 114 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000704",
+                    "generalNumber": null,
+                    "winnerTeamId": 2,
+                    "tossWinnerTeamId": 7,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 3,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1221,
+                      "objectId": 61480,
+                      "scribeId": 17242,
+                      "slug": "pakistan-tour-of-australia-1972-73",
+                      "name": "Pakistan tour of Australia",
+                      "longName": "Pakistan tour of Australia",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1972,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1972/73",
+                      "startDate": "1972-11-15T00:00:00Z",
+                      "endDate": "1973-01-11T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 131,
+                      "objectId": 56293,
+                      "name": "Adelaide Oval",
+                      "smallName": "Adelaide",
+                      "longName": "Adelaide Oval",
+                      "slug": "adelaide-oval",
+                      "location": "North Adelaide",
+                      "image": {
+                        "id": 173155,
+                        "objectId": 695353,
+                        "slug": "a-general-view-of-the-adelaide-oval",
+                        "url": "/db/PICTURES/CMS/173100/173155.5.jpg",
+                        "width": 210,
+                        "height": 140,
+                        "caption": "A general view of the Adelaide Oval",
+                        "longCaption": "A general view of the Adelaide Oval, South Australia v Tasmania, Sheffield Shield, 3rd day, Adelaide, November 24, 2013",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 2,
+                        "objectId": 56292,
+                        "name": "Adelaide",
+                        "area": "South Australia",
+                        "timezone": "Australia/Adelaide"
+                      },
+                      "country": {
+                        "id": 2,
+                        "objectId": 2,
+                        "name": "Australia",
+                        "shortName": "Australia",
+                        "abbreviation": "AUS",
+                        "slug": "australia"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "257 & 214",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 2,
+                          "objectId": 2,
+                          "scribeId": 2,
+                          "slug": "australia",
+                          "name": "Australia",
+                          "longName": "Australia",
+                          "abbreviation": "AUS",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+                          "isCountry": true,
+                          "primaryColor": "#ffdd00",
+                          "image": {
+                            "id": 340493,
+                            "objectId": 1318684,
+                            "slug": "australia-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340400/340493.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Australia team flag-latest",
+                            "longCaption": "Australia team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "585",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 2,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:00:13.19Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 848,
+                    "id": 848,
+                    "objectId": 63234,
+                    "scribeId": 63234,
+                    "slug": "new-zealand-vs-pakistan-3rd-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1978/79",
+                    "title": "3rd Test",
+                    "floodlit": "day",
+                    "startDate": "1979-02-23T00:00:00Z",
+                    "endDate": "1979-02-28T00:00:00Z",
+                    "startTime": "1979-02-22T22:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Match drawn",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000848",
+                    "generalNumber": null,
+                    "winnerTeamId": null,
+                    "tossWinnerTeamId": 7,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 4,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1247,
+                      "objectId": 61506,
+                      "scribeId": 17099,
+                      "slug": "pakistan-tour-of-new-zealand-1978-79",
+                      "name": "Pakistan tour of New Zealand",
+                      "longName": "Pakistan tour of New Zealand",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1979,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1978/79",
+                      "startDate": "1979-02-02T00:00:00Z",
+                      "endDate": "1979-02-28T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 283,
+                      "objectId": 58792,
+                      "name": "Eden Park, Auckland",
+                      "smallName": "Auckland",
+                      "longName": "Eden Park, Auckland",
+                      "slug": "eden-park-auckland",
+                      "location": "",
+                      "image": {
+                        "id": 50662,
+                        "objectId": 209567,
+                        "slug": "eden-park-auckland",
+                        "url": "/db/PICTURES/CMS/50600/50662.1.jpg",
+                        "width": 210,
+                        "height": 137,
+                        "caption": "Eden Park, Auckland",
+                        "longCaption": "Eden Park, Auckland, New Zealand",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 822,
+                        "objectId": 58788,
+                        "name": "Auckland",
+                        "area": "",
+                        "timezone": "Pacific/Auckland"
+                      },
+                      "country": {
+                        "id": 5,
+                        "objectId": 5,
+                        "name": "New Zealand",
+                        "shortName": "New Zealand",
+                        "abbreviation": "NZ",
+                        "slug": "new-zealand"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 5,
+                          "objectId": 5,
+                          "scribeId": 5,
+                          "slug": "new-zealand",
+                          "name": "New Zealand",
+                          "longName": "New Zealand",
+                          "abbreviation": "NZ",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340505.png",
+                          "isCountry": true,
+                          "primaryColor": "#000000",
+                          "image": {
+                            "id": 340505,
+                            "objectId": 1318717,
+                            "slug": "new-zealand-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340505.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "New Zealand team flag-latest",
+                            "longCaption": "New Zealand team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "254 & 281/8d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "359 & 8/0",
+                        "scoreInfo": "T:177",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:00:13.19Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 115,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1967/68 - 1978/79"
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 5,
+                "name": "List A",
+                "type": "g"
+              },
+              "total": 16,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1972/73 - 1978/79"
+                }
+              ]
+            }
+          ],
+          "recent": []
+        },
+        {
+          "type": 4,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 10,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 1374,
+                    "id": 1374,
+                    "objectId": 63760,
+                    "scribeId": 63760,
+                    "slug": "west-indies-vs-sri-lanka-1st-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1997",
+                    "title": "1st Test",
+                    "floodlit": "day",
+                    "startDate": "1997-06-13T00:00:00Z",
+                    "endDate": "1997-06-15T00:00:00Z",
+                    "startTime": "1997-06-13T14:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "West Indies won by 6 wickets",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001369",
+                    "generalNumber": null,
+                    "winnerTeamId": 4,
+                    "tossWinnerTeamId": 4,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1353,
+                      "objectId": 61612,
+                      "scribeId": 16055,
+                      "slug": "sri-lanka-tour-of-west-indies-1997",
+                      "name": "Sri Lanka tour of West Indies",
+                      "longName": "Sri Lanka tour of West Indies",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1997,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1997",
+                      "startDate": "1997-06-06T00:00:00Z",
+                      "endDate": "1997-06-24T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 547,
+                      "objectId": 59495,
+                      "name": "Antigua Recreation Ground, St John's, Antigua",
+                      "smallName": "St John's",
+                      "longName": "Antigua Recreation Ground, St John's, Antigua",
+                      "slug": "antigua-recreation-ground-st-john-s-antigua",
+                      "location": "",
+                      "image": {
+                        "id": 50472,
+                        "objectId": 208559,
+                        "slug": "a-general-view-of-the-recreation-ground-antigua",
+                        "url": "/db/PICTURES/CMS/50400/50472.1.jpg",
+                        "width": 210,
+                        "height": 141,
+                        "caption": "A general view of the Recreation Ground, Antigua",
+                        "longCaption": "A general view of the Recreation Ground, Antigua, 2001",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 1009,
+                        "objectId": 59494,
+                        "name": "St John's",
+                        "area": "Antigua",
+                        "timezone": "America/Antigua"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 8,
+                          "objectId": 8,
+                          "scribeId": 8,
+                          "slug": "sri-lanka",
+                          "name": "Sri Lanka",
+                          "longName": "Sri Lanka",
+                          "abbreviation": "SL",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340000/340047.png",
+                          "isCountry": true,
+                          "primaryColor": "#203d89",
+                          "image": {
+                            "id": 340047,
+                            "objectId": 1316921,
+                            "slug": "sri-lanka-team-flag",
+                            "url": "/db/PICTURES/CMS/340000/340047.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Sri Lanka team flag",
+                            "longCaption": "Sri Lanka team flag",
+                            "credit": "Google",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "223 & 152",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "189 & 189/4",
+                        "scoreInfo": "T:187",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:00:13.19Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 1554,
+                    "id": 1554,
+                    "objectId": 63940,
+                    "scribeId": 63940,
+                    "slug": "england-vs-australia-5th-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "2001",
+                    "title": "5th Test",
+                    "floodlit": "day",
+                    "startDate": "2001-08-23T00:00:00Z",
+                    "endDate": "2001-08-27T00:00:00Z",
+                    "startTime": "2001-08-23T10:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Australia won by an innings and 25 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001558",
+                    "generalNumber": null,
+                    "winnerTeamId": 2,
+                    "tossWinnerTeamId": 2,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 3,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1086,
+                      "objectId": 61345,
+                      "scribeId": 15533,
+                      "slug": "australia-tour-of-england-and-ireland-2001",
+                      "name": "Australia tour of England and Ireland",
+                      "longName": "Australia tour of England and Ireland",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2001,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "2001",
+                      "startDate": "2001-06-01T00:00:00Z",
+                      "endDate": "2001-08-27T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 45,
+                      "objectId": 57127,
+                      "name": "Kennington Oval, London",
+                      "smallName": "The Oval",
+                      "longName": "Kennington Oval, London",
+                      "slug": "kennington-oval-london",
+                      "location": "",
+                      "image": {
+                        "id": 107862,
+                        "objectId": 423593,
+                        "slug": "a-stunning-view-of-the-oval-under-lights",
+                        "url": "/db/PICTURES/CMS/107800/107862.2.jpg",
+                        "width": 310,
+                        "height": 194,
+                        "caption": "A stunning view of The Oval under lights",
+                        "longCaption": "A stunning view of The Oval under lights, England v Australia, 1st ODI, The Oval, September 4, 2009",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 224,
+                        "objectId": 57124,
+                        "name": "London",
+                        "area": "",
+                        "timezone": "Europe/London"
+                      },
+                      "country": {
+                        "id": 1,
+                        "objectId": 1,
+                        "name": "England",
+                        "shortName": "England",
+                        "abbreviation": "ENG",
+                        "slug": "england"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 2,
+                          "objectId": 2,
+                          "scribeId": 2,
+                          "slug": "australia",
+                          "name": "Australia",
+                          "longName": "Australia",
+                          "abbreviation": "AUS",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+                          "isCountry": true,
+                          "primaryColor": "#ffdd00",
+                          "image": {
+                            "id": 340493,
+                            "objectId": 1318684,
+                            "slug": "australia-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340400/340493.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Australia team flag-latest",
+                            "longCaption": "Australia team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "641/4d",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "(f/o) 432 & 184",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 74,
+                    "totalVideos": 0,
+                    "totalStories": 7,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:00:13.19Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 2,
+                "name": "One-Day Internationals",
+                "type": "i"
+              },
+              "total": 26,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 2170,
+                    "id": 2170,
+                    "objectId": 64556,
+                    "scribeId": 64556,
+                    "slug": "west-indies-vs-sri-lanka-only-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "1997",
+                    "title": "Only ODI",
+                    "floodlit": "day",
+                    "startDate": "1997-06-06T00:00:00Z",
+                    "endDate": "1997-06-06T00:00:00Z",
+                    "startTime": "1997-06-06T14:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "West Indies won by 35 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001215",
+                    "generalNumber": null,
+                    "winnerTeamId": 4,
+                    "tossWinnerTeamId": 8,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1353,
+                      "objectId": 61612,
+                      "scribeId": 16055,
+                      "slug": "sri-lanka-tour-of-west-indies-1997",
+                      "name": "Sri Lanka tour of West Indies",
+                      "longName": "Sri Lanka tour of West Indies",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1997,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1997",
+                      "startDate": "1997-06-06T00:00:00Z",
+                      "endDate": "1997-06-24T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 208,
+                      "objectId": 59475,
+                      "name": "Queen's Park Oval, Port of Spain, Trinidad",
+                      "smallName": "Port of Spain",
+                      "longName": "Queen's Park Oval, Port of Spain, Trinidad",
+                      "slug": "queen-s-park-oval-port-of-spain-trinidad",
+                      "location": "",
+                      "image": {
+                        "id": 10767,
+                        "objectId": 59473,
+                        "slug": "queen-s-park-oval-port-of-spain-trinidad",
+                        "url": "/db/PICTURES/CMS/10700/10767.1.jpg",
+                        "width": 220,
+                        "height": 144,
+                        "caption": "Queen's Park Oval, Port of Spain, Trinidad",
+                        "longCaption": "West Indies v South Africa, 2nd Test, Queen's Park Oval, Port of Spain, Trinidad, 17-21 March 2001",
+                        "credit": "ESPNcricinfo Ltd",
+                        "photographer": "Rian Botes",
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 1002,
+                        "objectId": 59474,
+                        "name": "Port of Spain",
+                        "area": "Trinidad",
+                        "timezone": "America/Port_of_Spain"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "283/7",
+                        "scoreInfo": "49/49 ov",
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 8,
+                          "objectId": 8,
+                          "scribeId": 8,
+                          "slug": "sri-lanka",
+                          "name": "Sri Lanka",
+                          "longName": "Sri Lanka",
+                          "abbreviation": "SL",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340000/340047.png",
+                          "isCountry": true,
+                          "primaryColor": "#203d89",
+                          "image": {
+                            "id": 340047,
+                            "objectId": 1316921,
+                            "slug": "sri-lanka-team-flag",
+                            "url": "/db/PICTURES/CMS/340000/340047.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Sri Lanka team flag",
+                            "longCaption": "Sri Lanka team flag",
+                            "credit": "Google",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "248/8",
+                        "scoreInfo": "49/49 ov, T:284",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:00:13.19Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 2293,
+                    "id": 2293,
+                    "objectId": 64679,
+                    "scribeId": 64679,
+                    "slug": "south-africa-vs-new-zealand-6th-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "2000/01",
+                    "title": "6th ODI",
+                    "floodlit": "day",
+                    "startDate": "2000-11-04T00:00:00Z",
+                    "endDate": "2000-11-04T00:00:00Z",
+                    "startTime": "2000-11-04T08:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "South Africa won by 3 wickets (with 0 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "001655",
+                    "generalNumber": null,
+                    "winnerTeamId": 3,
+                    "tossWinnerTeamId": 3,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1838,
+                      "objectId": 62097,
+                      "scribeId": 15608,
+                      "slug": "new-zealand-tour-of-south-africa-2000-01",
+                      "name": "New Zealand tour of South Africa",
+                      "longName": "New Zealand tour of South Africa",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 2000,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "2000/01",
+                      "startDate": "2000-10-18T00:00:00Z",
+                      "endDate": "2000-12-12T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 174,
+                      "objectId": 59068,
+                      "name": "Newlands, Cape Town",
+                      "smallName": "Cape Town",
+                      "longName": "Newlands, Cape Town",
+                      "slug": "newlands-cape-town",
+                      "location": "",
+                      "image": {
+                        "id": 50681,
+                        "objectId": 209653,
+                        "slug": "general-view-of-newlands-cape-town",
+                        "url": "/db/PICTURES/CMS/50600/50681.1.jpg",
+                        "width": 210,
+                        "height": 140,
+                        "caption": "General view of Newlands, Cape Town",
+                        "longCaption": "General view of Newlands, Cape Town",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 893,
+                        "objectId": 59060,
+                        "name": "Cape Town",
+                        "area": "",
+                        "timezone": "Africa/Johannesburg"
+                      },
+                      "country": {
+                        "id": 3,
+                        "objectId": 3,
+                        "name": "South Africa",
+                        "shortName": "South Africa",
+                        "abbreviation": "SA",
+                        "slug": "south-africa"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 5,
+                          "objectId": 5,
+                          "scribeId": 5,
+                          "slug": "new-zealand",
+                          "name": "New Zealand",
+                          "longName": "New Zealand",
+                          "abbreviation": "NZ",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340500/340505.png",
+                          "isCountry": true,
+                          "primaryColor": "#000000",
+                          "image": {
+                            "id": 340505,
+                            "objectId": 1318717,
+                            "slug": "new-zealand-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340500/340505.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "New Zealand team flag-latest",
+                            "longCaption": "New Zealand team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "256/9",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 3,
+                          "objectId": 3,
+                          "scribeId": 3,
+                          "slug": "south-africa",
+                          "name": "South Africa",
+                          "longName": "South Africa",
+                          "abbreviation": "SA",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313125.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#04822B",
+                          "image": {
+                            "id": 313125,
+                            "objectId": 1241584,
+                            "slug": "south-africa-logo",
+                            "url": "/db/PICTURES/CMS/313100/313125.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "South Africa logo",
+                            "longCaption": "South Africa logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "258/7",
+                        "scoreInfo": "50 ov, T:257",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": 23837,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 7,
+                    "totalVideos": 0,
+                    "totalStories": 3,
+                    "languages": [],
+                    "generatedAt": "2023-04-05T05:00:13.19Z"
+                  },
+                  "span": null
+                }
+              ]
+            }
+          ],
+          "recent": [
+            {
+              "match": {
+                "_uid": 17885,
+                "id": 17885,
+                "objectId": 336037,
+                "scribeId": 336037,
+                "slug": "deccan-chargers-vs-chennai-super-kings-54th-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "54th match",
+                "floodlit": "night",
+                "startDate": "2008-05-27T00:00:00Z",
+                "endDate": "2008-05-27T00:00:00Z",
+                "startTime": "2008-05-27T14:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Super Kings won by 7 wickets (with 4 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4343,
+                "tossWinnerTeamId": 4347,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 19.02,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1981,
+                  "objectId": 58142,
+                  "name": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                  "smallName": "Hyderabad",
+                  "longName": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                  "slug": "rajiv-gandhi-international-stadium-uppal-hyderabad",
+                  "location": "",
+                  "image": {
+                    "id": 79644,
+                    "objectId": 311040,
+                    "slug": "rajiv-gandhi-international-stadium-uppal-hyderabad",
+                    "url": "/db/PICTURES/CMS/79600/79644.1.jpg",
+                    "width": 210,
+                    "height": 136,
+                    "caption": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "longCaption": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 613,
+                    "objectId": 58135,
+                    "name": "Hyderabad",
+                    "area": "Deccan",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4347,
+                      "objectId": 335980,
+                      "scribeId": 335980,
+                      "slug": "deccan-chargers",
+                      "name": "Chargers",
+                      "longName": "Deccan Chargers",
+                      "abbreviation": "DC",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/321600/321684.jpg",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 321684,
+                        "objectId": 1263803,
+                        "slug": "deccan-chargers-team-logo",
+                        "url": "/db/PICTURES/CMS/321600/321684.jpg",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Deccan Chargers team logo",
+                        "longCaption": "Deccan Chargers team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "147/8",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4343,
+                      "objectId": 335974,
+                      "scribeId": 335974,
+                      "slug": "chennai-super-kings",
+                      "name": "Super Kings",
+                      "longName": "Chennai Super Kings",
+                      "abbreviation": "CSK",
+                      "unofficialName": "Chennai",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313421.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#fdb913",
+                      "image": {
+                        "id": 313421,
+                        "objectId": 1241880,
+                        "slug": "chennai-super-kings-logo",
+                        "url": "/db/PICTURES/CMS/313400/313421.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Chennai Super Kings logo",
+                        "longCaption": "Chennai Super Kings logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "148/3",
+                    "scoreInfo": "19.2/20 ov, T:148",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": 117305,
+                "reportStoryId": 117339,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 2,
+                "languages": [],
+                "generatedAt": "2023-04-05T04:57:33.221Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 17850,
+                "id": 17850,
+                "objectId": 336002,
+                "scribeId": 336002,
+                "slug": "deccan-chargers-vs-royal-challengers-bangalore-51st-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "51st match",
+                "floodlit": "daynight",
+                "startDate": "2008-05-25T00:00:00Z",
+                "endDate": "2008-05-25T00:00:00Z",
+                "startTime": "2008-05-25T10:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "RCB won by 5 wickets (with 6 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4340,
+                "tossWinnerTeamId": 4347,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 18.06,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1981,
+                  "objectId": 58142,
+                  "name": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                  "smallName": "Hyderabad",
+                  "longName": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                  "slug": "rajiv-gandhi-international-stadium-uppal-hyderabad",
+                  "location": "",
+                  "image": {
+                    "id": 79644,
+                    "objectId": 311040,
+                    "slug": "rajiv-gandhi-international-stadium-uppal-hyderabad",
+                    "url": "/db/PICTURES/CMS/79600/79644.1.jpg",
+                    "width": 210,
+                    "height": 136,
+                    "caption": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "longCaption": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 613,
+                    "objectId": 58135,
+                    "name": "Hyderabad",
+                    "area": "Deccan",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4347,
+                      "objectId": 335980,
+                      "scribeId": 335980,
+                      "slug": "deccan-chargers",
+                      "name": "Chargers",
+                      "longName": "Deccan Chargers",
+                      "abbreviation": "DC",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/321600/321684.jpg",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 321684,
+                        "objectId": 1263803,
+                        "slug": "deccan-chargers-team-logo",
+                        "url": "/db/PICTURES/CMS/321600/321684.jpg",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Deccan Chargers team logo",
+                        "longCaption": "Deccan Chargers team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "165",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4340,
+                      "objectId": 335970,
+                      "scribeId": 335970,
+                      "slug": "royal-challengers-bangalore",
+                      "name": "RCB",
+                      "longName": "Royal Challengers Bangalore",
+                      "abbreviation": "RCB",
+                      "unofficialName": "Bangalore",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313418.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#ef4022",
+                      "image": {
+                        "id": 313418,
+                        "objectId": 1241877,
+                        "slug": "royal-challengers-bangalore-logo",
+                        "url": "/db/PICTURES/CMS/313400/313418.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Royal Challengers Bangalore logo",
+                        "longCaption": "Royal Challengers Bangalore logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "171/5",
+                    "scoreInfo": "19/20 ov, T:166",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 117270,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 1,
+                "languages": [],
+                "generatedAt": "2023-04-05T04:57:33.221Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 17879,
+                "id": 17879,
+                "objectId": 336031,
+                "scribeId": 336031,
+                "slug": "kings-xi-punjab-vs-deccan-chargers-48th-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "48th match",
+                "floodlit": "night",
+                "startDate": "2008-05-23T00:00:00Z",
+                "endDate": "2008-05-23T00:00:00Z",
+                "startTime": "2008-05-23T14:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Kings XI won by 6 wickets (with 3 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4342,
+                "tossWinnerTeamId": 4342,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 19.03,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1015,
+                  "objectId": 57991,
+                  "name": "Punjab Cricket Association Stadium, Mohali, Chandigarh",
+                  "smallName": "Mohali",
+                  "longName": "Punjab Cricket Association Stadium, Mohali, Chandigarh",
+                  "slug": "punjab-cricket-association-is-bindra-stadium-mohali-chandigarh",
+                  "location": "Mohali",
+                  "image": {
+                    "id": 43022,
+                    "objectId": 57989,
+                    "slug": "chandigarh-happens-to-be-india-s-first-planned-city-and-it-does-show",
+                    "url": "/db/PICTURES/DB/112001/031913.1.jpg",
+                    "width": 300,
+                    "height": 150,
+                    "caption": "Chandigarh happens to be India's first planned city and it does show",
+                    "longCaption": "Punjab Cricket Association Stadium, Chandigarh, Chandigarh happens to be India's first planned city and it does show, Uploaded on 27 November 2001.",
+                    "credit": "Punjab Cricket Association",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 576,
+                    "objectId": 57990,
+                    "name": "Chandigarh",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4347,
+                      "objectId": 335980,
+                      "scribeId": 335980,
+                      "slug": "deccan-chargers",
+                      "name": "Chargers",
+                      "longName": "Deccan Chargers",
+                      "abbreviation": "DC",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/321600/321684.jpg",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 321684,
+                        "objectId": 1263803,
+                        "slug": "deccan-chargers-team-logo",
+                        "url": "/db/PICTURES/CMS/321600/321684.jpg",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Deccan Chargers team logo",
+                        "longCaption": "Deccan Chargers team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "175/4",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4342,
+                      "objectId": 335973,
+                      "scribeId": 335973,
+                      "slug": "punjab-kings",
+                      "name": "Kings XI",
+                      "longName": "Kings XI Punjab",
+                      "abbreviation": "KXIP",
+                      "unofficialName": "Punjab",
+                      "imageUrl": "/db/PICTURES/CMS/317000/317003.png",
+                      "isCountry": false,
+                      "primaryColor": "#b32524",
+                      "image": {
+                        "id": 317003,
+                        "objectId": 1252156,
+                        "slug": "punjab-kings-team-logo",
+                        "url": "/db/PICTURES/CMS/317000/317003.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Punjab Kings team logo",
+                        "longCaption": "Punjab Kings team logo",
+                        "credit": "IPL",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "178/4",
+                    "scoreInfo": "19.3/20 ov, T:176",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": 117215,
+                "reportStoryId": 117232,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 3,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:00:13.19Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 17876,
+                "id": 17876,
+                "objectId": 336028,
+                "scribeId": 336028,
+                "slug": "mumbai-indians-vs-kings-xi-punjab-45th-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "45th match",
+                "floodlit": "daynight",
+                "startDate": "2008-05-21T00:00:00Z",
+                "endDate": "2008-05-21T00:00:00Z",
+                "startTime": "2008-05-21T10:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Kings XI won by 1 run",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4342,
+                "tossWinnerTeamId": 4346,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 19.07,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 713,
+                  "objectId": 58324,
+                  "name": "Wankhede Stadium, Mumbai",
+                  "smallName": "Wankhede",
+                  "longName": "Wankhede Stadium, Mumbai",
+                  "slug": "wankhede-stadium-mumbai",
+                  "location": "",
+                  "image": {
+                    "id": 128755,
+                    "objectId": 502224,
+                    "slug": "the-wankhede-stadium-under-lights",
+                    "url": "/db/PICTURES/CMS/128700/128755.4.jpg",
+                    "width": 210,
+                    "height": 137,
+                    "caption": "The Wankhede Stadium under lights",
+                    "longCaption": "The Wankhede Stadium under lights, Mumbai, February 20, 2011",
+                    "credit": "AFP",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 665,
+                    "objectId": 58316,
+                    "name": "Mumbai",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4342,
+                      "objectId": 335973,
+                      "scribeId": 335973,
+                      "slug": "punjab-kings",
+                      "name": "Kings XI",
+                      "longName": "Kings XI Punjab",
+                      "abbreviation": "KXIP",
+                      "unofficialName": "Punjab",
+                      "imageUrl": "/db/PICTURES/CMS/317000/317003.png",
+                      "isCountry": false,
+                      "primaryColor": "#b32524",
+                      "image": {
+                        "id": 317003,
+                        "objectId": 1252156,
+                        "slug": "punjab-kings-team-logo",
+                        "url": "/db/PICTURES/CMS/317000/317003.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Punjab Kings team logo",
+                        "longCaption": "Punjab Kings team logo",
+                        "credit": "IPL",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "189/4",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4346,
+                      "objectId": 335978,
+                      "scribeId": 335978,
+                      "slug": "mumbai-indians",
+                      "name": "Mumbai",
+                      "longName": "Mumbai Indians",
+                      "abbreviation": "MI",
+                      "unofficialName": "Mumbai",
+                      "imageUrl": "/db/PICTURES/CMS/344000/344062.png",
+                      "isCountry": false,
+                      "primaryColor": "#005ea0",
+                      "image": {
+                        "id": 344062,
+                        "objectId": 1328737,
+                        "slug": "mumbai-indians-2023-team-logo",
+                        "url": "/db/PICTURES/CMS/344000/344062.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Mumbai Indians 2023 team logo",
+                        "longCaption": "Mumbai Indians 2023 team logo",
+                        "credit": "Mumbai Indians",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "188",
+                    "scoreInfo": "20 ov, T:190",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": 117155,
+                "reportStoryId": 117169,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:00:13.19Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 17874,
+                "id": 17874,
+                "objectId": 336026,
+                "scribeId": 336026,
+                "slug": "royal-challengers-bangalore-vs-delhi-daredevils-43rd-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "43rd match",
+                "floodlit": "night",
+                "startDate": "2008-05-19T00:00:00Z",
+                "endDate": "2008-05-19T00:00:00Z",
+                "startTime": "2008-05-19T14:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Daredevils won by 5 wickets (with 10 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4344,
+                "tossWinnerTeamId": 4344,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 18.02,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 683,
+                  "objectId": 57897,
+                  "name": "M Chinnaswamy Stadium, Bangalore",
+                  "smallName": "Bengaluru",
+                  "longName": "M Chinnaswamy Stadium, Bangalore",
+                  "slug": "m-chinnaswamy-stadium-bengaluru",
+                  "location": "",
+                  "image": {
+                    "id": 127631,
+                    "objectId": 498407,
+                    "slug": "a-view-of-the-chinnaswamy-stadium-in-bangalore",
+                    "url": "/db/PICTURES/CMS/127600/127631.4.jpg",
+                    "width": 210,
+                    "height": 132,
+                    "caption": "A view of the Chinnaswamy Stadium in Bangalore",
+                    "longCaption": "A view of the Chinnaswamy Stadium in Bangalore",
+                    "credit": "AFP",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 549,
+                    "objectId": 57892,
+                    "name": "Bengaluru",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4340,
+                      "objectId": 335970,
+                      "scribeId": 335970,
+                      "slug": "royal-challengers-bangalore",
+                      "name": "RCB",
+                      "longName": "Royal Challengers Bangalore",
+                      "abbreviation": "RCB",
+                      "unofficialName": "Bangalore",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313418.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#ef4022",
+                      "image": {
+                        "id": 313418,
+                        "objectId": 1241877,
+                        "slug": "royal-challengers-bangalore-logo",
+                        "url": "/db/PICTURES/CMS/313400/313418.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Royal Challengers Bangalore logo",
+                        "longCaption": "Royal Challengers Bangalore logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "154/7",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4344,
+                      "objectId": 335975,
+                      "scribeId": 335975,
+                      "slug": "delhi-capitals",
+                      "name": "Daredevils",
+                      "longName": "Delhi Daredevils",
+                      "abbreviation": "DC",
+                      "unofficialName": "Delhi",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313422.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#004c93",
+                      "image": {
+                        "id": 313422,
+                        "objectId": 1241881,
+                        "slug": "delhi-capitals-logo",
+                        "url": "/db/PICTURES/CMS/313400/313422.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Delhi Capitals logo",
+                        "longCaption": "Delhi Capitals logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "158/5",
+                    "scoreInfo": "18.2/20 ov, T:155",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": 117105,
+                "reportStoryId": 117124,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 4,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:00:13.19Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 17871,
+                "id": 17871,
+                "objectId": 336023,
+                "scribeId": 336023,
+                "slug": "rajasthan-royals-vs-royal-challengers-bangalore-39th-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "39th match",
+                "floodlit": "daynight",
+                "startDate": "2008-05-17T00:00:00Z",
+                "endDate": "2008-05-17T00:00:00Z",
+                "startTime": "2008-05-17T10:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Royals won by 65 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4345,
+                "tossWinnerTeamId": 4340,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 19.06,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 664,
+                  "objectId": 58162,
+                  "name": "Sawai Mansingh Stadium, Jaipur",
+                  "smallName": "Jaipur",
+                  "longName": "Sawai Mansingh Stadium, Jaipur",
+                  "slug": "sawai-mansingh-stadium-jaipur",
+                  "location": "",
+                  "image": {
+                    "id": 67517,
+                    "objectId": 263539,
+                    "slug": "a-general-view-of-the-sawai-mansingh-stadium-jaipur",
+                    "url": "/db/PICTURES/CMS/67500/67517.1.jpg",
+                    "width": 210,
+                    "height": 136,
+                    "caption": "A general view of the Sawai Mansingh Stadium, Jaipur",
+                    "longCaption": "A general view of the Sawai Mansingh Stadium, Pakistan v Sri Lanka, 3rd match, Jaipur, October 17, 2006",
+                    "credit": "AFP",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 617,
+                    "objectId": 58156,
+                    "name": "Jaipur",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4345,
+                      "objectId": 335977,
+                      "scribeId": 335977,
+                      "slug": "rajasthan-royals",
+                      "name": "Royals",
+                      "longName": "Rajasthan Royals",
+                      "abbreviation": "RR",
+                      "unofficialName": "Rajasthan",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313423.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#004b8c",
+                      "image": {
+                        "id": 313423,
+                        "objectId": 1241882,
+                        "slug": "rajasthan-royals-logo",
+                        "url": "/db/PICTURES/CMS/313400/313423.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Rajasthan Royals logo",
+                        "longCaption": "Rajasthan Royals logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "197/1",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4340,
+                      "objectId": 335970,
+                      "scribeId": 335970,
+                      "slug": "royal-challengers-bangalore",
+                      "name": "RCB",
+                      "longName": "Royal Challengers Bangalore",
+                      "abbreviation": "RCB",
+                      "unofficialName": "Bangalore",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313418.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#ef4022",
+                      "image": {
+                        "id": 313418,
+                        "objectId": 1241877,
+                        "slug": "royal-challengers-bangalore-logo",
+                        "url": "/db/PICTURES/CMS/313400/313418.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Royal Challengers Bangalore logo",
+                        "longCaption": "Royal Challengers Bangalore logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "132/9",
+                    "scoreInfo": "20 ov, T:198",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": 117035,
+                "reportStoryId": 117066,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 3,
+                "languages": [],
+                "generatedAt": "2023-04-05T04:56:18.558Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 17865,
+                "id": 17865,
+                "objectId": 336017,
+                "scribeId": 336017,
+                "slug": "kolkata-knight-riders-vs-delhi-daredevils-35th-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "35th match",
+                "floodlit": "night",
+                "startDate": "2008-05-13T00:00:00Z",
+                "endDate": "2008-05-13T00:00:00Z",
+                "startTime": "2008-05-13T14:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "KKR won by 23 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4341,
+                "tossWinnerTeamId": 4341,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 17.06,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 292,
+                  "objectId": 57980,
+                  "name": "Eden Gardens, Kolkata",
+                  "smallName": "Eden Gardens",
+                  "longName": "Eden Gardens, Kolkata",
+                  "slug": "eden-gardens-kolkata",
+                  "location": "",
+                  "image": {
+                    "id": 128035,
+                    "objectId": 500114,
+                    "slug": "an-aerial-view-of-the-eden-gardens-at-its-current-state-of-completion",
+                    "url": "/db/PICTURES/CMS/128000/128035.6.jpg",
+                    "width": 210,
+                    "height": 140,
+                    "caption": "An aerial view of the Eden Gardens at its current state of completion",
+                    "longCaption": "An aerial view of the Eden Gardens at its current state of completion, Kolkata, February 9, 2011",
+                    "credit": null,
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 574,
+                    "objectId": 57976,
+                    "name": "Kolkata",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4341,
+                      "objectId": 335971,
+                      "scribeId": 335971,
+                      "slug": "kolkata-knight-riders",
+                      "name": "KKR",
+                      "longName": "Kolkata Knight Riders",
+                      "abbreviation": "KKR",
+                      "unofficialName": "Kolkata",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313419.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#3d2256",
+                      "image": {
+                        "id": 313419,
+                        "objectId": 1241878,
+                        "slug": "kolkata-knight-riders-logo",
+                        "url": "/db/PICTURES/CMS/313400/313419.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Kolkata Knight Riders logo",
+                        "longCaption": "Kolkata Knight Riders logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "133/6",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4344,
+                      "objectId": 335975,
+                      "scribeId": 335975,
+                      "slug": "delhi-capitals",
+                      "name": "Daredevils",
+                      "longName": "Delhi Daredevils",
+                      "abbreviation": "DC",
+                      "unofficialName": "Delhi",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313422.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#004c93",
+                      "image": {
+                        "id": 313422,
+                        "objectId": 1241881,
+                        "slug": "delhi-capitals-logo",
+                        "url": "/db/PICTURES/CMS/313400/313422.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Delhi Capitals logo",
+                        "longCaption": "Delhi Capitals logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "110",
+                    "scoreInfo": "17.5/20 ov, T:134",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": 116913,
+                "reportStoryId": 116946,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 3,
+                "languages": [],
+                "generatedAt": "2023-04-05T04:55:59.116Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 17862,
+                "id": 17862,
+                "objectId": 336014,
+                "scribeId": 336014,
+                "slug": "deccan-chargers-vs-kolkata-knight-riders-32nd-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "32nd match",
+                "floodlit": "daynight",
+                "startDate": "2008-05-11T00:00:00Z",
+                "endDate": "2008-05-11T00:00:00Z",
+                "startTime": "2008-05-11T10:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "KKR won by 23 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4341,
+                "tossWinnerTeamId": 4341,
+                "tossWinnerChoice": 1,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 19.07,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 1981,
+                  "objectId": 58142,
+                  "name": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                  "smallName": "Hyderabad",
+                  "longName": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                  "slug": "rajiv-gandhi-international-stadium-uppal-hyderabad",
+                  "location": "",
+                  "image": {
+                    "id": 79644,
+                    "objectId": 311040,
+                    "slug": "rajiv-gandhi-international-stadium-uppal-hyderabad",
+                    "url": "/db/PICTURES/CMS/79600/79644.1.jpg",
+                    "width": 210,
+                    "height": 136,
+                    "caption": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "longCaption": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 613,
+                    "objectId": 58135,
+                    "name": "Hyderabad",
+                    "area": "Deccan",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4341,
+                      "objectId": 335971,
+                      "scribeId": 335971,
+                      "slug": "kolkata-knight-riders",
+                      "name": "KKR",
+                      "longName": "Kolkata Knight Riders",
+                      "abbreviation": "KKR",
+                      "unofficialName": "Kolkata",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313419.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#3d2256",
+                      "image": {
+                        "id": 313419,
+                        "objectId": 1241878,
+                        "slug": "kolkata-knight-riders-logo",
+                        "url": "/db/PICTURES/CMS/313400/313419.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Kolkata Knight Riders logo",
+                        "longCaption": "Kolkata Knight Riders logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "204/4",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4347,
+                      "objectId": 335980,
+                      "scribeId": 335980,
+                      "slug": "deccan-chargers",
+                      "name": "Chargers",
+                      "longName": "Deccan Chargers",
+                      "abbreviation": "DC",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/321600/321684.jpg",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 321684,
+                        "objectId": 1263803,
+                        "slug": "deccan-chargers-team-logo",
+                        "url": "/db/PICTURES/CMS/321600/321684.jpg",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Deccan Chargers team logo",
+                        "longCaption": "Deccan Chargers team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "181/7",
+                    "scoreInfo": "20 ov, T:205",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 116893,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 2,
+                "languages": [],
+                "generatedAt": "2023-04-05T04:55:59.096Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 17856,
+                "id": 17856,
+                "objectId": 336008,
+                "scribeId": 336008,
+                "slug": "mumbai-indians-vs-rajasthan-royals-27th-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "27th match",
+                "floodlit": "night",
+                "startDate": "2008-05-07T00:00:00Z",
+                "endDate": "2008-05-07T00:00:00Z",
+                "startTime": "2008-05-07T14:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "Mumbai won by 7 wickets (with 29 balls remaining)",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4346,
+                "tossWinnerTeamId": 4346,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 15.03,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 2361,
+                  "objectId": 343050,
+                  "name": "Dr DY Patil Sports Academy, Mumbai",
+                  "smallName": "DY Patil",
+                  "longName": "Dr DY Patil Sports Academy, Mumbai",
+                  "slug": "dr-dy-patil-sports-academy-navi-mumbai",
+                  "location": "",
+                  "image": {
+                    "id": 89552,
+                    "objectId": 346879,
+                    "slug": "view-of-dr-dy-patil-sports-academy-mumbai",
+                    "url": "/db/PICTURES/CMS/89500/89552.1.jpg",
+                    "width": 210,
+                    "height": 157,
+                    "caption": "View of Dr DY Patil Sports Academy, Mumbai",
+                    "longCaption": "View of Dr DY Patil Sports Academy, Mumbai",
+                    "credit": "ESPNcricinfo Ltd",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 1652,
+                    "objectId": 1311588,
+                    "name": "Navi Mumbai",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4345,
+                      "objectId": 335977,
+                      "scribeId": 335977,
+                      "slug": "rajasthan-royals",
+                      "name": "Royals",
+                      "longName": "Rajasthan Royals",
+                      "abbreviation": "RR",
+                      "unofficialName": "Rajasthan",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313423.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#004b8c",
+                      "image": {
+                        "id": 313423,
+                        "objectId": 1241882,
+                        "slug": "rajasthan-royals-logo",
+                        "url": "/db/PICTURES/CMS/313400/313423.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Rajasthan Royals logo",
+                        "longCaption": "Rajasthan Royals logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "103",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4346,
+                      "objectId": 335978,
+                      "scribeId": 335978,
+                      "slug": "mumbai-indians",
+                      "name": "Mumbai",
+                      "longName": "Mumbai Indians",
+                      "abbreviation": "MI",
+                      "unofficialName": "Mumbai",
+                      "imageUrl": "/db/PICTURES/CMS/344000/344062.png",
+                      "isCountry": false,
+                      "primaryColor": "#005ea0",
+                      "image": {
+                        "id": 344062,
+                        "objectId": 1328737,
+                        "slug": "mumbai-indians-2023-team-logo",
+                        "url": "/db/PICTURES/CMS/344000/344062.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Mumbai Indians 2023 team logo",
+                        "longCaption": "Mumbai Indians 2023 team logo",
+                        "credit": "Mumbai Indians",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "104/3",
+                    "scoreInfo": "15.1/20 ov, T:104",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": 116775,
+                "reportStoryId": 116793,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 5,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:00:13.19Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            },
+            {
+              "match": {
+                "_uid": 17882,
+                "id": 17882,
+                "objectId": 336034,
+                "scribeId": 336034,
+                "slug": "royal-challengers-bangalore-vs-deccan-chargers-21st-match",
+                "stage": "FINISHED",
+                "state": "POST",
+                "internationalClassId": null,
+                "generalClassId": 6,
+                "subClassId": null,
+                "season": "2007/08",
+                "title": "21st match",
+                "floodlit": "daynight",
+                "startDate": "2008-05-03T00:00:00Z",
+                "endDate": "2008-05-03T00:00:00Z",
+                "startTime": "2008-05-03T10:30:00Z",
+                "timePublished": true,
+                "scheduleNote": "",
+                "isCancelled": false,
+                "coverage": "Y",
+                "coverageNote": "",
+                "liveStreamUrl": null,
+                "countryLiveStreamUrl": {},
+                "highlightsUrl": null,
+                "countryHighlightsUrl": {},
+                "status": "RESULT",
+                "statusText": "RCB won by 3 runs",
+                "statusEng": "RESULT",
+                "internationalNumber": null,
+                "generalNumber": null,
+                "winnerTeamId": 4340,
+                "tossWinnerTeamId": 4347,
+                "tossWinnerChoice": 2,
+                "resultStatus": 1,
+                "liveInning": 2,
+                "liveInningPredictions": null,
+                "liveOvers": 19.06,
+                "liveOversPending": null,
+                "liveBalls": null,
+                "liveRecentBalls": null,
+                "ballsPerOver": null,
+                "series": {
+                  "id": 3519,
+                  "objectId": 313494,
+                  "scribeId": 8048,
+                  "slug": "indian-premier-league-2007-08",
+                  "name": "Indian Premier League",
+                  "longName": "Indian Premier League",
+                  "alternateName": null,
+                  "longAlternateName": null,
+                  "unofficialName": null,
+                  "year": 2008,
+                  "typeId": 3,
+                  "isTrophy": true,
+                  "description": "in India",
+                  "season": "2007/08",
+                  "startDate": "2008-04-18T00:00:00Z",
+                  "endDate": "2008-06-01T00:00:00Z",
+                  "hasStandings": true,
+                  "totalVideos": 0,
+                  "gamePlayWatch": false
+                },
+                "ground": {
+                  "id": 683,
+                  "objectId": 57897,
+                  "name": "M Chinnaswamy Stadium, Bangalore",
+                  "smallName": "Bengaluru",
+                  "longName": "M Chinnaswamy Stadium, Bangalore",
+                  "slug": "m-chinnaswamy-stadium-bengaluru",
+                  "location": "",
+                  "image": {
+                    "id": 127631,
+                    "objectId": 498407,
+                    "slug": "a-view-of-the-chinnaswamy-stadium-in-bangalore",
+                    "url": "/db/PICTURES/CMS/127600/127631.4.jpg",
+                    "width": 210,
+                    "height": 132,
+                    "caption": "A view of the Chinnaswamy Stadium in Bangalore",
+                    "longCaption": "A view of the Chinnaswamy Stadium in Bangalore",
+                    "credit": "AFP",
+                    "photographer": null,
+                    "peerUrls": null
+                  },
+                  "town": {
+                    "id": 549,
+                    "objectId": 57892,
+                    "name": "Bengaluru",
+                    "area": "",
+                    "timezone": "Asia/Kolkata"
+                  },
+                  "country": {
+                    "id": 6,
+                    "objectId": 6,
+                    "name": "India",
+                    "shortName": "India",
+                    "abbreviation": "IND",
+                    "slug": "india"
+                  }
+                },
+                "teams": [
+                  {
+                    "team": {
+                      "id": 4340,
+                      "objectId": 335970,
+                      "scribeId": 335970,
+                      "slug": "royal-challengers-bangalore",
+                      "name": "RCB",
+                      "longName": "Royal Challengers Bangalore",
+                      "abbreviation": "RCB",
+                      "unofficialName": "Bangalore",
+                      "imageUrl": "/db/PICTURES/CMS/313400/313418.logo.png",
+                      "isCountry": false,
+                      "primaryColor": "#ef4022",
+                      "image": {
+                        "id": 313418,
+                        "objectId": 1241877,
+                        "slug": "royal-challengers-bangalore-logo",
+                        "url": "/db/PICTURES/CMS/313400/313418.logo.png",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Royal Challengers Bangalore logo",
+                        "longCaption": "Royal Challengers Bangalore logo",
+                        "credit": null,
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": true,
+                    "isLive": false,
+                    "score": "156/8",
+                    "scoreInfo": null,
+                    "inningNumbers": [
+                      1
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  },
+                  {
+                    "team": {
+                      "id": 4347,
+                      "objectId": 335980,
+                      "scribeId": 335980,
+                      "slug": "deccan-chargers",
+                      "name": "Chargers",
+                      "longName": "Deccan Chargers",
+                      "abbreviation": "DC",
+                      "unofficialName": null,
+                      "imageUrl": "/db/PICTURES/CMS/321600/321684.jpg",
+                      "isCountry": false,
+                      "primaryColor": null,
+                      "image": {
+                        "id": 321684,
+                        "objectId": 1263803,
+                        "slug": "deccan-chargers-team-logo",
+                        "url": "/db/PICTURES/CMS/321600/321684.jpg",
+                        "width": 500,
+                        "height": 500,
+                        "caption": "Deccan Chargers team logo",
+                        "longCaption": "Deccan Chargers team logo",
+                        "credit": "Unknown",
+                        "photographer": null,
+                        "peerUrls": null
+                      }
+                    },
+                    "isHome": false,
+                    "isLive": false,
+                    "score": "153/6",
+                    "scoreInfo": "20 ov, T:157",
+                    "inningNumbers": [
+                      2
+                    ],
+                    "points": null,
+                    "sidePlayers": null,
+                    "sideBatsmen": null,
+                    "sideFielders": null,
+                    "captain": null,
+                    "teamOdds": null
+                  }
+                ],
+                "dayType": "SINGLE",
+                "format": "T20",
+                "previewStoryId": null,
+                "reportStoryId": 116683,
+                "liveBlogStoryId": null,
+                "fantasyPickStoryId": null,
+                "drawOdds": null,
+                "isSuperOver": false,
+                "isScheduledInningsComplete": true,
+                "totalGalleries": 0,
+                "totalImages": 0,
+                "totalVideos": 0,
+                "totalStories": 2,
+                "languages": [],
+                "generatedAt": "2023-04-05T05:00:13.19Z"
+              },
+              "teamId": 7,
+              "battingText": null,
+              "bowlingText": null,
+              "keepingText": null
+            }
+          ]
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 121003,
+        "objectId": 374373,
+        "scribeId": 22851611,
+        "slug": "new-look-pcb-rings-in-the-changes",
+        "title": "New-look PCB rings in the changes",
+        "subTitle": "Pakistan cricket",
+        "seoTitle": "",
+        "summary": "The first raft of administrative changes have started taking place in the PCB under the leadership of new chairman Ijaz Butt",
+        "byline": "Cricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2008-10-17T12:34:15Z",
+        "modifiedAt": "2008-10-17T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 1,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-05T05:00:13.212Z"
+      },
+      {
+        "id": 117785,
+        "objectId": 354617,
+        "scribeId": 22866961,
+        "slug": "talat-ali-plays-down-ashraf-remarks",
+        "title": "Talat Ali plays down Ashraf remarks",
+        "subTitle": "Pakistan's embarrassing defeat",
+        "seoTitle": "",
+        "summary": "Talat Ali, the Pakistan team manager, has played down the PCB chairman Nasim Ashraf's remarks to the management ",
+        "byline": "Cricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2008-06-13T03:57:04Z",
+        "modifiedAt": "2008-06-13T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 1,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-05T05:00:13.212Z"
+      },
+      {
+        "id": 108406,
+        "objectId": 305441,
+        "scribeId": 22944359,
+        "slug": "eight-players-sign-central-contracts",
+        "title": "Eight Pakistan players sign central contracts ",
+        "subTitle": "Shoaib, Asif and Afridi reject offers from ICL",
+        "seoTitle": "Eight players sign central contracts ",
+        "summary": "Eight Pakistan players, including Shoaib Akhtar, signed six-month central contracts offered by the PCB",
+        "byline": "Cricinfo staff",
+        "categoryType": "OTHERS",
+        "genreType": "NEWS",
+        "genreId": 1,
+        "genreName": "News",
+        "publishedAt": "2007-08-04T03:31:04Z",
+        "modifiedAt": "2007-08-04T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 1,
+        "image": null,
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-05T05:00:13.212Z"
+      }
+    ],
+    "videos": [],
+    "images": [
+      {
+        "id": 83394,
+        "objectId": 324266,
+        "slug": "younis-khan-and-talat-ali-pakistan-s-manager-take-a-look-at-the-pitch",
+        "url": "/db/PICTURES/CMS/83300/83394.jpg",
+        "width": 500,
+        "height": 338,
+        "caption": "Younis Khan and Talat Ali, Pakistan's manager, take a look at the pitch",
+        "longCaption": "Younis Khan and Talat Ali, Pakistan's manager, take a look at the pitch, Bangalore, December 7, 2007",
+        "credit": "AFP",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2007-12-07T00:00:00Z",
+        "capturedOn": {
+          "year": 2007,
+          "month": 12,
+          "date": 7
+        }
+      },
+      {
+        "id": 75481,
+        "objectId": 294054,
+        "slug": "wasim-akram-talks-to-talat-ali-and-shoaib-malik-at-the-gaddafi-stadium",
+        "url": "/db/PICTURES/CMS/75400/75481.jpg",
+        "width": 500,
+        "height": 604,
+        "caption": "Wasim Akram talks to Talat Ali and Shoaib Malik at the Gaddafi Stadium",
+        "longCaption": "Wasim Akram talks to Talat Ali and Shoaib Malik at the Gaddafi Stadium, Lahore, May 13, 2007",
+        "credit": "AFP",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2007-05-13T00:00:00Z",
+        "capturedOn": {
+          "year": 2007,
+          "month": 5,
+          "date": 13
+        }
+      },
+      {
+        "id": 75123,
+        "objectId": 292666,
+        "slug": "shoaib-malik-and-talat-ali",
+        "url": "/db/PICTURES/CMS/75100/75123.jpg",
+        "width": 500,
+        "height": 635,
+        "caption": "Shoaib Malik and Talat Ali",
+        "longCaption": "Shoaib Malik and Talat Ali at the training camp for the Abu Dhabi series, Gadaffi Stadium Lahore, April 28, 2007",
+        "credit": "AFP",
+        "photographer": "Arif Ali",
+        "peerUrls": null,
+        "dateTaken": "2007-04-28T00:00:00Z",
+        "capturedOn": {
+          "year": 2007,
+          "month": 4,
+          "date": 28
+        }
+      },
+      {
+        "id": 73096,
+        "objectId": 285981,
+        "slug": "talat-ali-the-pakistan-team-manager-leaves-the-hospital-after-announcing-the-death-of-bob-woolmer",
+        "url": "/db/PICTURES/CMS/73000/73096.jpg",
+        "width": 500,
+        "height": 624,
+        "caption": "Talat Ali, the Pakistan team manager, leaves the hospital after announcing the death of Bob Woolmer",
+        "longCaption": "Talat Ali, the Pakistan team manager, leaves the hospital after announcing the death of Bob Woolmer, Kingston, Jamaica, March 18, 2007",
+        "credit": "AFP",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "2007-03-18T00:00:00Z",
+        "capturedOn": {
+          "year": 2007,
+          "month": 3,
+          "date": 18
+        }
+      },
+      {
+        "id": 14464,
+        "objectId": 169328,
+        "slug": "talat-ali-portrait",
+        "url": "/db/PICTURES/DB/041998/001974.jpg",
+        "width": 308,
+        "height": 300,
+        "caption": "Talat Ali: portrait",
+        "longCaption": "Talat Ali: Portrait",
+        "credit": "International Cricket Council",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": null,
+        "capturedOn": null
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 5,
+        "objectId": 5,
+        "scribeId": 5,
+        "slug": "new-zealand",
+        "name": "New Zealand",
+        "longName": "New Zealand",
+        "abbreviation": "NZ",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/340500/340505.png",
+        "isCountry": true,
+        "primaryColor": "#000000",
+        "image": {
+          "id": 340505,
+          "objectId": 1318717,
+          "slug": "new-zealand-team-flag-latest",
+          "url": "/db/PICTURES/CMS/340500/340505.png",
+          "width": 500,
+          "height": 500,
+          "caption": "New Zealand team flag-latest",
+          "longCaption": "New Zealand team flag-latest",
+          "credit": "Getty Images",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 89097,
+          "objectId": 959759,
+          "name": "FH Allen",
+          "longName": "Finn Allen",
+          "mobileName": "Allen",
+          "indexName": "Allen, FH",
+          "battingName": "FH Allen",
+          "fieldingName": "Allen",
+          "slug": "finn-allen",
+          "imageUrl": "/db/PICTURES/CMS/271800/271806.jpg",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 4,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 271806,
+            "objectId": 1132197,
+            "slug": "finn-allen-portrait",
+            "url": "/db/PICTURES/CMS/271800/271806.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Finn Allen portrait ",
+            "longCaption": "Finn Allen, January 8, 2018",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 54369,
+          "objectId": 326968,
+          "name": "MG Bracewell",
+          "longName": "Michael Bracewell",
+          "mobileName": "Michael Bracewell",
+          "indexName": "Bracewell, MG",
+          "battingName": "MG Bracewell",
+          "fieldingName": "Bracewell",
+          "slug": "michael-bracewell",
+          "imageUrl": "/db/PICTURES/CMS/356800/356810.1.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 2,
+            "date": 14
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 356810,
+            "objectId": 1365026,
+            "slug": "michael-bracewell-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356810.1.png",
+            "width": 160,
+            "height": 215,
+            "caption": "Michael Bracewell player portrait",
+            "longCaption": "Michael Bracewell player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 58403,
+          "objectId": 379140,
+          "name": "DP Conway",
+          "longName": "Devon Conway",
+          "mobileName": "Conway",
+          "indexName": "Conway, DP",
+          "battingName": "DP Conway",
+          "fieldingName": "Conway",
+          "slug": "devon-conway",
+          "imageUrl": "/db/PICTURES/CMS/318500/318588.1.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 7,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 318588,
+            "objectId": 1256973,
+            "slug": "conway-portrait",
+            "url": "/db/PICTURES/CMS/318500/318588.1.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Conway portrait",
+            "longCaption": null,
+            "credit": "NZC",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 64402,
+          "objectId": 493773,
+          "name": "LH Ferguson",
+          "longName": "Lockie Ferguson",
+          "mobileName": "Ferguson",
+          "indexName": "Ferguson, LH",
+          "battingName": "LH Ferguson",
+          "fieldingName": "Ferguson",
+          "slug": "lockie-ferguson",
+          "imageUrl": "/db/PICTURES/CMS/303800/303800.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 6,
+            "date": 13
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 303800,
+            "objectId": 1222627,
+            "slug": "lockie-ferguson-portrait",
+            "url": "/db/PICTURES/CMS/303800/303800.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Lockie Ferguson portrait",
+            "longCaption": "Lockie Ferguson, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 58772,
+          "objectId": 381743,
+          "name": "DJ Mitchell",
+          "longName": "Daryl Mitchell",
+          "mobileName": "Mitchell",
+          "indexName": "Mitchell, DJ",
+          "battingName": "DJ Mitchell",
+          "fieldingName": "Mitchell",
+          "slug": "daryl-mitchell",
+          "imageUrl": "/db/PICTURES/CMS/303500/303598.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 5,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 303598,
+            "objectId": 1222372,
+            "slug": "daryl-mitchell-portrait",
+            "url": "/db/PICTURES/CMS/303500/303598.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Daryl Mitchell portrait",
+            "longCaption": "Daryl Mitchell portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 80639,
+          "objectId": 823509,
+          "name": "GD Phillips",
+          "longName": "Glenn Phillips",
+          "mobileName": "Phillips",
+          "indexName": "Phillips, GD",
+          "battingName": "GD Phillips",
+          "fieldingName": "Phillips",
+          "slug": "glenn-phillips",
+          "imageUrl": "/db/PICTURES/CMS/303500/303599.jpg",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 12,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303599,
+            "objectId": 1222373,
+            "slug": "glenn-phillips-portrait",
+            "url": "/db/PICTURES/CMS/303500/303599.jpg",
+            "width": 160,
+            "height": 199,
+            "caption": "Glenn Phillips portrait",
+            "longCaption": "Glenn Phillips portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 64864,
+          "objectId": 502714,
+          "name": "MJ Santner",
+          "longName": "Mitchell Santner",
+          "mobileName": "Santner",
+          "indexName": "Santner, MJ",
+          "battingName": "MJ Santner",
+          "fieldingName": "Santner",
+          "slug": "mitchell-santner",
+          "imageUrl": "/db/PICTURES/CMS/356800/356846.1.png",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 2,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 356846,
+            "objectId": 1365128,
+            "slug": "santner-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356846.1.png",
+            "width": 160,
+            "height": 193,
+            "caption": "Santner player portrait",
+            "longCaption": "Santner player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 67586,
+          "objectId": 559066,
+          "name": "IS Sodhi",
+          "longName": "Ish Sodhi",
+          "mobileName": "Sodhi",
+          "indexName": "Sodhi, IS",
+          "battingName": "IS Sodhi",
+          "fieldingName": "Sodhi",
+          "slug": "ish-sodhi",
+          "imageUrl": "/db/PICTURES/CMS/303600/303602.jpg",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 10,
+            "date": 31
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 303602,
+            "objectId": 1222376,
+            "slug": "ish-sodhi-portrait",
+            "url": "/db/PICTURES/CMS/303600/303602.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Ish Sodhi portrait",
+            "longCaption": "Ish Sodhi portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 49108,
+          "objectId": 232364,
+          "name": "TG Southee",
+          "longName": "Tim Southee",
+          "mobileName": "Southee",
+          "indexName": "Southee, TG",
+          "battingName": "TG Southee",
+          "fieldingName": "Southee",
+          "slug": "tim-southee",
+          "imageUrl": "/db/PICTURES/CMS/303600/303610.png",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 12,
+            "date": 11
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 303610,
+            "objectId": 1222384,
+            "slug": "tim-southee-portrait",
+            "url": "/db/PICTURES/CMS/303600/303610.png",
+            "width": 160,
+            "height": 202,
+            "caption": "Tim Southee portrait",
+            "longCaption": "Tim Southee portrait, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 51088,
+          "objectId": 277906,
+          "name": "KS Williamson",
+          "longName": "Kane Williamson",
+          "mobileName": "Williamson",
+          "indexName": "Williamson, KS",
+          "battingName": "KS Williamson",
+          "fieldingName": "Williamson",
+          "slug": "kane-williamson",
+          "imageUrl": "/db/PICTURES/CMS/303600/303652.png",
+          "dateOfBirth": {
+            "year": 1990,
+            "month": 8,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303652,
+            "objectId": 1222450,
+            "slug": "kane-williamson-portrait",
+            "url": "/db/PICTURES/CMS/303600/303652.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Kane Williamson portrait",
+            "longCaption": "Kane Williamson, May 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 5,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 56880,
+          "objectId": 348144,
+          "name": "Babar Azam",
+          "longName": "Babar Azam",
+          "mobileName": "Babar Azam",
+          "indexName": "Babar Azam",
+          "battingName": "Babar Azam",
+          "fieldingName": "Babar Azam",
+          "slug": "babar-azam",
+          "imageUrl": "/db/PICTURES/CMS/302700/302768.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 10,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 302768,
+            "objectId": 1221110,
+            "slug": "babar-azam-portrait",
+            "url": "/db/PICTURES/CMS/302700/302768.jpg",
+            "width": 160,
+            "height": 202,
+            "caption": "Babar Azam portrait",
+            "longCaption": "Babar Azam portrait, April, 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            8
+          ],
+          "playingRoles": [
+            "batter"
+          ]
+        },
+        {
+          "id": 102219,
+          "objectId": 1144886,
+          "name": "Fatima Sana",
+          "longName": "Fatima Sana",
+          "mobileName": "",
+          "indexName": "Fatima Sana",
+          "battingName": "Fatima Sana",
+          "fieldingName": "Fatima Sana",
+          "slug": "fatima-sana",
+          "imageUrl": "/db/PICTURES/CMS/334800/334896.4.jpg",
+          "dateOfBirth": {
+            "year": 2001,
+            "month": 11,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "F",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 334896,
+            "objectId": 1302657,
+            "slug": "fatima-sana-player-portrait",
+            "url": "/db/PICTURES/CMS/334800/334896.4.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Fatima Sana, player portrait",
+            "longCaption": "Fatima Sana, player portrait",
+            "credit": "ICC/Getty Images",
+            "photographer": "Matt King",
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 67969,
+          "objectId": 572645,
+          "name": "Aliya Riaz",
+          "longName": "Aliya Riaz",
+          "mobileName": "Aliya Riaz",
+          "indexName": "Aliya Riaz",
+          "battingName": "Aliya Riaz",
+          "fieldingName": "Aliya Riaz",
+          "slug": "aliya-riaz",
+          "imageUrl": "/db/PICTURES/CMS/304700/304757.png",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 9,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 304757,
+            "objectId": 1224165,
+            "slug": "aliya-riaz-portrait",
+            "url": "/db/PICTURES/CMS/304700/304757.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Aliya Riaz portrait",
+            "longCaption": "Aliya Riaz portrait, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 51498,
+          "objectId": 290948,
+          "name": "Mohammad Amir",
+          "longName": "Mohammad Amir",
+          "mobileName": "Amir",
+          "indexName": "Mohammad Amir",
+          "battingName": "Mohammad Amir",
+          "fieldingName": "Mohammad Amir",
+          "slug": "mohammad-amir",
+          "imageUrl": "/db/PICTURES/CMS/302800/302820.jpg",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 4,
+            "date": 13
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 302820,
+            "objectId": 1221173,
+            "slug": "mohammad-amir-portrait",
+            "url": "/db/PICTURES/CMS/302800/302820.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Mohammad Amir portrait",
+            "longCaption": "Mohammad Amir portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 67964,
+          "objectId": 572638,
+          "name": "Diana Baig",
+          "longName": "Diana Baig",
+          "mobileName": "Diana Baig",
+          "indexName": "Diana Baig",
+          "battingName": "Diana Baig",
+          "fieldingName": "Diana Baig",
+          "slug": "diana-baig",
+          "imageUrl": "/db/PICTURES/CMS/304700/304761.png",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 10,
+            "date": 15
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 304761,
+            "objectId": 1224169,
+            "slug": "diana-baig-portrait",
+            "url": "/db/PICTURES/CMS/304700/304761.png",
+            "width": 160,
+            "height": 199,
+            "caption": "Diana Baig portrait",
+            "longCaption": "Diana Baig portrait, June 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 110482,
+          "objectId": 1283740,
+          "name": "Ihsanullah",
+          "longName": "Ihsanullah",
+          "mobileName": "Ihsanullah",
+          "indexName": "Ihsanullah",
+          "battingName": "Ihsanullah",
+          "fieldingName": "Ihsanullah",
+          "slug": "ihsanullah",
+          "imageUrl": null,
+          "dateOfBirth": {
+            "year": 2002,
+            "month": 10,
+            "date": 11
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": null,
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 84937,
+          "objectId": 922943,
+          "name": "Shadab Khan",
+          "longName": "Shadab Khan",
+          "mobileName": "Shadab",
+          "indexName": "Shadab Khan",
+          "battingName": "Shadab Khan",
+          "fieldingName": "Shadab Khan",
+          "slug": "shadab-khan",
+          "imageUrl": "/db/PICTURES/CMS/302800/302825.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 10,
+            "date": 4
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "lb"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "legbreak"
+          ],
+          "image": {
+            "id": 302825,
+            "objectId": 1221178,
+            "slug": "shadab-khan-portrait",
+            "url": "/db/PICTURES/CMS/302800/302825.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Shadab Khan portrait",
+            "longCaption": "Shadab Khan portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 103773,
+          "objectId": 1161031,
+          "name": "Saim Ayub",
+          "longName": "Saim Ayub",
+          "mobileName": "Saim Ayub",
+          "indexName": "Saim Ayub",
+          "battingName": "Saim Ayub",
+          "fieldingName": "Saim Ayub",
+          "slug": "saim-ayub",
+          "imageUrl": "/db/PICTURES/CMS/325600/325608.3.jpg",
+          "dateOfBirth": {
+            "year": 2002,
+            "month": 5,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rmf",
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast",
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 325608,
+            "objectId": 1272760,
+            "slug": "saim-ayub-player-portrait",
+            "url": "/db/PICTURES/CMS/325600/325608.3.jpg",
+            "width": 160,
+            "height": 296,
+            "caption": "Saim Ayub, player portrait",
+            "longCaption": "Saim Ayub, player portrait",
+            "credit": "PCB",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 84935,
+          "objectId": 922941,
+          "name": "Abdullah Shafique",
+          "longName": "Abdullah Shafique",
+          "mobileName": "",
+          "indexName": "Abdullah Shafique",
+          "battingName": "Abdullah Shafique",
+          "fieldingName": "Abdullah Shafique",
+          "slug": "abdullah-shafique",
+          "imageUrl": null,
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 11,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": null,
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 101912,
+          "objectId": 1137262,
+          "name": "Azam Khan",
+          "longName": "Azam Khan",
+          "mobileName": "Azam Khan",
+          "indexName": "Azam Khan",
+          "battingName": "Azam Khan",
+          "fieldingName": "Azam Khan",
+          "slug": "azam-khan",
+          "imageUrl": "/db/PICTURES/CMS/325300/325358.4.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 8,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 325358,
+            "objectId": 1272159,
+            "slug": "azam-khan-player-portrait",
+            "url": "/db/PICTURES/CMS/325300/325358.4.jpg",
+            "width": 160,
+            "height": 260,
+            "caption": "Azam Khan, player portrait",
+            "longCaption": "Azam Khan, player portrait",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 7,
+          "playerRoleTypeIds": [
+            6
+          ],
+          "playingRoles": [
+            "wicketkeeper"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 11,
+          "type": "g",
+          "name": "Other matches"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Test",
+          "longName": "Test matches",
+          "multipleClass": 0,
+          "slug": "test-matches"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "ODI",
+          "longName": "One-Day Internationals",
+          "multipleClass": 0,
+          "slug": "one-day-internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "T20",
+          "longName": "Twenty20 matches",
+          "multipleClass": 0,
+          "slug": "twenty20-matches"
+        },
+        {
+          "id": 14,
+          "type": "g",
+          "name": "Minor",
+          "longName": "Minor cricket",
+          "multipleClass": 0,
+          "slug": "minor-cricket"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 1,
+          "matches": 10,
+          "batted": true,
+          "battedInnings": 18,
+          "bowled": true,
+          "bowledInnings": 2,
+          "fielded": true,
+          "fieldedInnings": 16,
+          "dismissals": 4,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 10
+        },
+        {
+          "recordClassId": 2,
+          "matches": 0,
+          "batted": false,
+          "battedInnings": 0,
+          "bowled": false,
+          "bowledInnings": 0,
+          "fielded": false,
+          "fieldedInnings": 0,
+          "dismissals": 0,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 26
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 253,
+        "2": 240,
+        "3": 103,
+        "8": 20,
+        "9": 88,
+        "10": 51,
+        "14": 248,
+        "15": 415,
+        "16": 27
+      },
+      "teamContractedPlayerCount": 26,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        }
+      ]
+    }
+  }
+}

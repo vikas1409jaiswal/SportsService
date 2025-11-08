@@ -1,0 +1,2864 @@
+{
+  "player": {
+    "id": 1322,
+    "objectId": 51797,
+    "name": "RC Fredericks",
+    "longName": "Roy Fredericks",
+    "mobileName": "Fredericks",
+    "indexName": "Fredericks, RC",
+    "battingName": "RC Fredericks",
+    "fieldingName": "Fredericks",
+    "slug": "roy-fredericks",
+    "imageUrl": "/db/PICTURES/CMS/326600/326612.4.jpg",
+    "dateOfBirth": {
+      "year": 1942,
+      "month": 11,
+      "date": 11
+    },
+    "dateOfDeath": {
+      "year": 2000,
+      "month": 9,
+      "date": 5
+    },
+    "gender": "M",
+    "battingStyles": [
+      "lhb"
+    ],
+    "bowlingStyles": [
+      "lws"
+    ],
+    "longBattingStyles": [
+      "left-hand bat"
+    ],
+    "longBowlingStyles": [
+      "left-arm wrist-spin"
+    ],
+    "image": {
+      "id": 326612,
+      "objectId": 1275833,
+      "slug": "roy-fredericks-player-portrait",
+      "url": "/db/PICTURES/CMS/326600/326612.4.jpg",
+      "width": 160,
+      "height": 223,
+      "caption": "Roy Fredericks, player portrait",
+      "longCaption": "Roy Fredericks, player portrait",
+      "credit": "PA Photos/Getty Images",
+      "photographer": null,
+      "peerUrls": null
+    },
+    "countryTeamId": 4,
+    "playerRoleTypeIds": [
+      1
+    ],
+    "playingRoles": [
+      "opening batter"
+    ],
+    "fullName": "Roy Clifton Fredericks",
+    "nickNames": "",
+    "alsoKnownAs": "",
+    "height": 0,
+    "heightUnit": null,
+    "education": "",
+    "country": {
+      "id": 4,
+      "objectId": 4,
+      "name": "West Indies",
+      "shortName": "West Indies",
+      "abbreviation": "WI",
+      "slug": "west-indies",
+      "image": {
+        "id": 317615,
+        "objectId": 1254181,
+        "slug": "west-indies-team-logo",
+        "url": "/db/PICTURES/CMS/317600/317615.png",
+        "width": 500,
+        "height": 500,
+        "caption": "West Indies team logo",
+        "longCaption": "West Indies team logo",
+        "credit": "West Indies Cricket",
+        "photographer": null,
+        "peerUrls": null
+      }
+    },
+    "altCountryTeamId": null,
+    "placeOfBirth": "Blairmont, East Bank, Berbice, British Guiana",
+    "dobText": null,
+    "dodText": null,
+    "placeOfDeath": "New York, United States of America",
+    "intlCareerSpan": "1968 - 1977",
+    "headshotImage": {
+      "id": 329898,
+      "objectId": 1287242,
+      "slug": "roy-fredericks-player-page-headshot-cutout-2021",
+      "url": "/db/PICTURES/CMS/329800/329898.png",
+      "width": 600,
+      "height": 436,
+      "caption": "Roy Fredericks player page headshot cutout 2021",
+      "longCaption": "Roy Fredericks player page headshot cutout 2021",
+      "credit": null,
+      "photographer": null,
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": null,
+        "SQUARE": "/db/PICTURES/CMS/329800/329898.square.png"
+      }
+    },
+    "backgroundImage": {
+      "id": 48779,
+      "objectId": 200723,
+      "slug": "roy-fredericks-scores-a-century-at-lord-s",
+      "url": "/db/PICTURES/CMS/48700/48779.jpg",
+      "width": 900,
+      "height": 877,
+      "caption": "Roy Fredericks scores a century at Lord's",
+      "longCaption": "Roy Fredericks scores a century at Lord's, England v West Indies, Lords, 2nd Test, 22 June, 1976",
+      "credit": "Getty Images",
+      "photographer": "Hulton/Archive",
+      "peerUrls": {
+        "FILM": null,
+        "WIDE": "/db/PICTURES/CMS/48700/48779.4.jpg",
+        "SQUARE": "/db/PICTURES/CMS/48700/48779.jpg"
+      }
+    },
+    "externalLinks": [],
+    "fieldingStyles": [],
+    "otherStyles": [],
+    "matchPlayerTypes": [
+      1
+    ],
+    "hasRecords": true,
+    "hasStats": true,
+    "hasMatches": true,
+    "totalStories": 13,
+    "totalVideos": 2,
+    "totalImages": 10
+  },
+  "content": {
+    "teams": [
+      {
+        "team": {
+          "id": 4,
+          "objectId": 4,
+          "scribeId": 4,
+          "slug": "west-indies",
+          "name": "West Indies",
+          "longName": "West Indies",
+          "abbreviation": "WI",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+          "isCountry": true,
+          "primaryColor": "#790d1a",
+          "image": {
+            "id": 317615,
+            "objectId": 1254181,
+            "slug": "west-indies-team-logo",
+            "url": "/db/PICTURES/CMS/317600/317615.png",
+            "width": 500,
+            "height": 500,
+            "caption": "West Indies team logo",
+            "longCaption": "West Indies team logo",
+            "credit": "West Indies Cricket",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 3793,
+          "objectId": 3742,
+          "scribeId": 3742,
+          "slug": "guyana",
+          "name": "Guyana",
+          "longName": "British Guiana",
+          "abbreviation": "GYANA",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/317000/317004.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 317004,
+            "objectId": 1252157,
+            "slug": "guyana-team-logo",
+            "url": "/db/PICTURES/CMS/317000/317004.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Guyana team logo",
+            "longCaption": "Guyana team logo",
+            "credit": "West Indies Cricket",
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      },
+      {
+        "team": {
+          "id": 1080,
+          "objectId": 1029,
+          "scribeId": 1029,
+          "slug": "glamorgan",
+          "name": "Glamorgan",
+          "longName": "Glamorgan",
+          "abbreviation": "GLAM",
+          "unofficialName": null,
+          "imageUrl": "/db/PICTURES/CMS/313200/313264.logo.png",
+          "isCountry": false,
+          "primaryColor": null,
+          "image": {
+            "id": 313264,
+            "objectId": 1241723,
+            "slug": "glamorgan-logo",
+            "url": "/db/PICTURES/CMS/313200/313264.logo.png",
+            "width": 500,
+            "height": 500,
+            "caption": "Glamorgan logo",
+            "longCaption": "Glamorgan logo",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          }
+        },
+        "current": false
+      }
+    ],
+    "relations": [],
+    "profile": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "Roy Fredericks, who died of cancer on September 5, 2000, aged 57, was one of the handful of batsmen who distinguished themselves by counter-attacking the great pace bowlers of the 1970s. He is remembered best for his blazing performance at Perth in 1975-76, when he raced to one of the most astonishing of all Test centuries. This series was eventually won 5-1 by Australia, with Lillee and Thomson at full pelt. But in the second Test, on an incredibly fast WACA pitch, Fredericks took them on in amazing fashion. The harder they banged the ball in, the harder he cut and hooked. Into the second morning, he opened what might have been a diffident reply to Australia's 329: at lunch West Indies were 130 for on off 14 eight-ball overs; the 200 came up in the 22nd. Fredericks went on to reach a hundred from 71 balls and, though he grew tired, turned it into a match-winning 169. This was merely a distillation of his entire career. \"There has,\" as Mike Selvey wrote, \"probably never been a better or more willing exponent of the hook.\" His most famous single shot was a failure, however: right at the start of the first World Cup final, he hooked a ball from Lillee over long-leg - only to tread on his wicket in the process."
+        },
+        {
+          "type": "HTML",
+          "html": "A small (about 5ft 6in) left-hander from Berbice, Fredericks made his debut for what was then British Guyana in 1963-64, and for nine years and 59 Tests = from 1968-69 until the World Series schism of 1977 - he provided half the answer to the conundrum of who should open for West Indies. This had been intractable even when Conrad Hunte was playing, and remained a source of constant change and argument until Gordon Greenidge emerged to join Fredericks in the mid-9170s. He preferred to tilt his cap back, rock on to his left foot and smash the ball hard, but he was capable of playing as a traditional opener. When West Indies first brought him in, for the 1968 Boxing Day Test at Melbourne after Clive Lloyd was injured, he batted throughout a slightly shortened, bitterly cold opening day while the rest of the batting collapsed around him. With 76 and 47 he emerged with distinction from a drab performance."
+        },
+        {
+          "type": "HTML",
+          "html": "This was a period of steep but brief West Indies decline and, though it took him a while to perform as well against Fredericks became an in important brick in the rebuilding process. He scored three fifties in six innings when West Indies lost a series to England (for the last time until 2000) in 1969 but did not score a century until February 1972 against New Zealand at Sabina Park, when his 163 was overshadowed by the double-century from debutant Lawrence Rose. They put on 269. At Edgbaston in 1973, he scored 150 in patient mode - taking eight hours and surviving a crisis when he was completely bogged down against Ray Illingworth - and a cautious 138 to ensure the draw when West Indies were unexpectedly up against it in the Lord's Test of 1976. A month later at Headingley, he returned to the attack, scoring 79 before lunch and reaching 109 in 156 minutes. However, even then he was just doing an opener's job: on that day everyone else really cut loose and West Indies had 437 by the close. Though he scored eight Test hundreds in his 109 innings, this was a low ratio for a player who averaged above 40 - he preferred the blistering fifty."
+        },
+        {
+          "type": "HTML",
+          "html": "Fredericks averaged 63.83 for Guyana. In his three years with Glamorgan (1971-73), he was less consistent but spasmodically magnificent and extremely popular - not least with his opening partner Alan Jones, even though Jones described his calling as \"terrible\" and suffered from his musical tastes when they roomed together. On an amazing day at Swansea, they put on 330 against Northamptonshire, at the time a record for any Glamorgan wicket; they still lost. Fredericks announced his retirement for Guyana, batted twice, and scored 103 against Trinidad & Tobago and 217 against Jamaica. It was an astonishing way to finish. By then, he was already a junior minister in Forbes Burnham's left-wing Guyanese government, responsible for youth and sport, and known as Comrade; earlier in his playing days he had generally endeared himself by calling everyone \"old chap\". He remained attached to the government, but later concentrated on coaching. By then, openers around the world were batting in anonymous helmets. Fredericks was one of the last players who not only relished facing the best bowlers but looked as though he did.\n<BR><B>Wisden Cricketers' Almanack</b>"
+        }
+      ]
+    },
+    "notes": {
+      "items": [
+        {
+          "type": "HTML",
+          "html": "Wisden Cricketer of the Year 1974"
+        }
+      ]
+    },
+    "nutshell": null,
+    "careerAverages": {
+      "stats": [
+        {
+          "type": "BATTING",
+          "cl": 1,
+          "mt": 59,
+          "in": 109,
+          "rn": 4334,
+          "bl": null,
+          "avg": 42.49,
+          "sr": null,
+          "no": 7,
+          "fo": null,
+          "si": 8,
+          "hs": "169",
+          "hn": 8,
+          "ft": 26,
+          "ct": 62,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 2,
+          "mt": 12,
+          "in": 12,
+          "rn": 311,
+          "bl": 440,
+          "avg": 25.91,
+          "sr": 70.68,
+          "no": 0,
+          "fo": null,
+          "si": null,
+          "hs": "105",
+          "hn": 1,
+          "ft": 1,
+          "ct": 4,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 4,
+          "mt": 223,
+          "in": 391,
+          "rn": 16384,
+          "bl": null,
+          "avg": 45.89,
+          "sr": null,
+          "no": 34,
+          "fo": null,
+          "si": null,
+          "hs": "250",
+          "hn": 40,
+          "ft": 80,
+          "ct": 177,
+          "st": 0
+        },
+        {
+          "type": "BATTING",
+          "cl": 5,
+          "mt": 68,
+          "in": 68,
+          "rn": 1644,
+          "bl": null,
+          "avg": 24.17,
+          "sr": null,
+          "no": 0,
+          "fo": null,
+          "si": null,
+          "hs": "119",
+          "hn": 2,
+          "ft": 9,
+          "ct": 33,
+          "st": 0
+        },
+        {
+          "type": "BOWLING",
+          "cl": 1,
+          "mt": 59,
+          "in": 43,
+          "rn": 548,
+          "bl": 1187,
+          "avg": 78.28,
+          "sr": 169.5,
+          "wk": 7,
+          "bbi": "1/12",
+          "bbm": "1/12",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 2.77
+        },
+        {
+          "type": "BOWLING",
+          "cl": 2,
+          "mt": 12,
+          "in": 1,
+          "rn": 10,
+          "bl": 10,
+          "avg": 5,
+          "sr": 5,
+          "wk": 2,
+          "bbi": "2/10",
+          "bbm": "2/10",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 6
+        },
+        {
+          "type": "BOWLING",
+          "cl": 4,
+          "mt": 223,
+          "in": null,
+          "rn": 2846,
+          "bl": 5532,
+          "avg": 37.94,
+          "sr": 73.7,
+          "wk": 75,
+          "bbi": "4/36",
+          "bbm": null,
+          "fwk": null,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 3.08
+        },
+        {
+          "type": "BOWLING",
+          "cl": 5,
+          "mt": 68,
+          "in": null,
+          "rn": 116,
+          "bl": 178,
+          "avg": 16.57,
+          "sr": 25.4,
+          "wk": 7,
+          "bbi": "3/5",
+          "bbm": "3/5",
+          "fwk": 0,
+          "fw": 0,
+          "tw": 0,
+          "bwe": 3.91
+        }
+      ]
+    },
+    "topRecords": [
+      {
+        "position": null,
+        "multiple": false,
+        "record": {
+          "id": 342,
+          "objectId": 283120,
+          "title": "Hundred and a duck in a match",
+          "siteId": null,
+          "class": {
+            "id": 1,
+            "type": "i",
+            "name": "Test",
+            "longName": "Test matches",
+            "multipleClass": 0,
+            "slug": "test-matches"
+          },
+          "genre": {
+            "id": 11,
+            "name": "Ducks and pairs",
+            "category": {
+              "id": 3,
+              "name": "batting",
+              "longName": "Batting records",
+              "slug": "batting-records"
+            }
+          },
+          "slug": "hundred-and-a-duck-in-a-match"
+        },
+        "value": ""
+      },
+      {
+        "position": 3,
+        "multiple": false,
+        "record": {
+          "id": 62,
+          "objectId": 284257,
+          "title": "Most runs in an innings (progressive record holder)",
+          "siteId": null,
+          "class": {
+            "id": 2,
+            "type": "i",
+            "name": "ODI",
+            "longName": "One-Day Internationals",
+            "multipleClass": 0,
+            "slug": "one-day-internationals"
+          },
+          "genre": {
+            "id": 5,
+            "name": "Most runs",
+            "category": {
+              "id": 3,
+              "name": "batting",
+              "longName": "Batting records",
+              "slug": "batting-records"
+            }
+          },
+          "slug": "most-runs-in-an-innings-progressive-record-holder"
+        },
+        "value": "105"
+      },
+      {
+        "position": 6,
+        "multiple": true,
+        "record": {
+          "id": 508,
+          "objectId": 283900,
+          "title": "Best career bowling average (without qualification)",
+          "siteId": null,
+          "class": {
+            "id": 2,
+            "type": "i",
+            "name": "ODI",
+            "longName": "One-Day Internationals",
+            "multipleClass": 0,
+            "slug": "one-day-internationals"
+          },
+          "genre": {
+            "id": 18,
+            "name": "Averages, strike rates and economy",
+            "category": {
+              "id": 4,
+              "name": "bowling",
+              "longName": "Bowling records",
+              "slug": "bowling-records"
+            }
+          },
+          "slug": "best-career-bowling-average-without-qualification"
+        },
+        "value": "5.00"
+      }
+    ],
+    "matches": {
+      "types": [
+        {
+          "type": 1,
+          "matches": [
+            {
+              "matchClass": {
+                "id": 1,
+                "name": "Tests",
+                "type": "i"
+              },
+              "total": 59,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 643,
+                    "id": 643,
+                    "objectId": 63029,
+                    "scribeId": 63029,
+                    "slug": "australia-vs-west-indies-2nd-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1968/69",
+                    "title": "2nd Test",
+                    "floodlit": "day",
+                    "startDate": "1968-12-26T00:00:00Z",
+                    "endDate": "1968-12-30T00:00:00Z",
+                    "startTime": "1968-12-26T00:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "Australia won by an innings and 30 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000643",
+                    "generalNumber": null,
+                    "winnerTeamId": 2,
+                    "tossWinnerTeamId": 2,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 3,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1640,
+                      "objectId": 61899,
+                      "scribeId": 17291,
+                      "slug": "west-indies-tour-of-australia-1968-69",
+                      "name": "West Indies tour of Australia",
+                      "longName": "West Indies tour of Australia",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1968,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1968/69",
+                      "startDate": "1968-10-22T00:00:00Z",
+                      "endDate": "1969-02-20T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 61,
+                      "objectId": 56441,
+                      "name": "Melbourne Cricket Ground",
+                      "smallName": "Melbourne",
+                      "longName": "Melbourne Cricket Ground",
+                      "slug": "melbourne-cricket-ground",
+                      "location": "Jolimont",
+                      "image": {
+                        "id": 86316,
+                        "objectId": 335266,
+                        "slug": "the-magnificent-melbourne-cricket-ground-in-full-bloom",
+                        "url": "/db/PICTURES/CMS/86300/86316.2.jpg",
+                        "width": 310,
+                        "height": 206,
+                        "caption": "The magnificent Melbourne Cricket Ground in full bloom",
+                        "longCaption": "The magnificent Melbourne Cricket Ground in full bloom, Victoria v Queensland, FR Cup, MCG, February 6, 2008",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 25,
+                        "objectId": 56434,
+                        "name": "Melbourne",
+                        "area": "Victoria",
+                        "timezone": "Australia/Melbourne"
+                      },
+                      "country": {
+                        "id": 2,
+                        "objectId": 2,
+                        "name": "Australia",
+                        "shortName": "Australia",
+                        "abbreviation": "AUS",
+                        "slug": "australia"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "200 & 280",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 2,
+                          "objectId": 2,
+                          "scribeId": 2,
+                          "slug": "australia",
+                          "name": "Australia",
+                          "longName": "Australia",
+                          "abbreviation": "AUS",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/340400/340493.png",
+                          "isCountry": true,
+                          "primaryColor": "#ffdd00",
+                          "image": {
+                            "id": 340493,
+                            "objectId": 1318684,
+                            "slug": "australia-team-flag-latest",
+                            "url": "/db/PICTURES/CMS/340400/340493.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Australia team flag-latest",
+                            "longCaption": "Australia team flag-latest",
+                            "credit": "Getty Images",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "510",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:08:29.89Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 802,
+                    "id": 802,
+                    "objectId": 63188,
+                    "scribeId": 63188,
+                    "slug": "west-indies-vs-pakistan-5th-test",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 1,
+                    "generalClassId": 4,
+                    "subClassId": null,
+                    "season": "1976/77",
+                    "title": "5th Test",
+                    "floodlit": "day",
+                    "startDate": "1977-04-15T00:00:00Z",
+                    "endDate": "1977-04-20T00:00:00Z",
+                    "startTime": "1977-04-15T15:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "West Indies won by 140 runs",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000803",
+                    "generalNumber": null,
+                    "winnerTeamId": 4,
+                    "tossWinnerTeamId": 4,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 4,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1234,
+                      "objectId": 61493,
+                      "scribeId": 17150,
+                      "slug": "pakistan-tour-of-west-indies-1976-77",
+                      "name": "Pakistan tour of West Indies",
+                      "longName": "Pakistan tour of West Indies",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1977,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1976/77",
+                      "startDate": "1977-02-18T00:00:00Z",
+                      "endDate": "1977-04-20T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 200,
+                      "objectId": 59458,
+                      "name": "Sabina Park, Kingston, Jamaica",
+                      "smallName": "Kingston",
+                      "longName": "Sabina Park, Kingston, Jamaica",
+                      "slug": "sabina-park-kingston-jamaica",
+                      "location": "",
+                      "image": {
+                        "id": 62378,
+                        "objectId": 246491,
+                        "slug": "artist-s-impression-of-the-developed-sabina-park-close-up",
+                        "url": "/db/PICTURES/CMS/62300/62378.2.jpg",
+                        "width": 210,
+                        "height": 165,
+                        "caption": "Artist's impression of the developed Sabina Park (close up)",
+                        "longCaption": "Artist's impression of the developed Sabina Park, May 7, 2006",
+                        "credit": "West Indies Cricket Board",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 996,
+                        "objectId": 59454,
+                        "name": "Kingston",
+                        "area": "Jamaica",
+                        "timezone": "America/Jamaica"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "280 & 359",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1,
+                          3
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "198 & 301",
+                        "scoreInfo": "T:442",
+                        "inningNumbers": [
+                          2,
+                          4
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "MULTI",
+                    "format": "TEST",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:08:29.89Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 2,
+                "name": "One-Day Internationals",
+                "type": "i"
+              },
+              "total": 12,
+              "events": [
+                {
+                  "interval": "FIRST",
+                  "match": {
+                    "_uid": 2563,
+                    "id": 2563,
+                    "objectId": 64949,
+                    "scribeId": 64949,
+                    "slug": "england-vs-west-indies-1st-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "1973",
+                    "title": "1st ODI",
+                    "floodlit": "day",
+                    "startDate": "1973-09-05T00:00:00Z",
+                    "endDate": "1973-09-05T00:00:00Z",
+                    "startTime": "1973-09-05T10:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "England won by 1 wicket (with 3 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000008",
+                    "generalNumber": null,
+                    "winnerTeamId": 1,
+                    "tossWinnerTeamId": 4,
+                    "tossWinnerChoice": 1,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1618,
+                      "objectId": 61877,
+                      "scribeId": 17228,
+                      "slug": "west-indies-tour-of-england-1973",
+                      "name": "West Indies tour of England",
+                      "longName": "West Indies tour of England",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1973,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1973",
+                      "startDate": "1973-06-15T00:00:00Z",
+                      "endDate": "1973-09-07T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 179,
+                      "objectId": 57092,
+                      "name": "Headingley, Leeds",
+                      "smallName": "Leeds",
+                      "longName": "Headingley, Leeds",
+                      "slug": "headingley-leeds",
+                      "location": "",
+                      "image": {
+                        "id": 158509,
+                        "objectId": 637743,
+                        "slug": "after-the-rain-the-sun-shone-at-headingley",
+                        "url": "/db/PICTURES/CMS/158500/158509.5.jpg",
+                        "width": 210,
+                        "height": 147,
+                        "caption": "After the rain the sun shone at Headingley",
+                        "longCaption": "After the rain the sun shone at Headingley, England v New Zealand, 2nd Investec Test, Headingley, 2nd day, May 25, 2013",
+                        "credit": "Getty Images",
+                        "photographer": null,
+                        "peerUrls": null
+                      },
+                      "town": {
+                        "id": 213,
+                        "objectId": 57091,
+                        "name": "Leeds",
+                        "area": "",
+                        "timezone": "Europe/London"
+                      },
+                      "country": {
+                        "id": 1,
+                        "objectId": 1,
+                        "name": "England",
+                        "shortName": "England",
+                        "abbreviation": "ENG",
+                        "slug": "england"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "181",
+                        "scoreInfo": null,
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 1,
+                          "objectId": 1,
+                          "scribeId": 1,
+                          "slug": "england",
+                          "name": "England",
+                          "longName": "England",
+                          "abbreviation": "ENG",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313114.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#033051",
+                          "image": {
+                            "id": 313114,
+                            "objectId": 1241522,
+                            "slug": "england-logo",
+                            "url": "/db/PICTURES/CMS/313100/313114.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "England logo",
+                            "longCaption": "England logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "182/9",
+                        "scoreInfo": "54.3/55 ov, T:182",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:03:41.977Z"
+                  },
+                  "span": null
+                },
+                {
+                  "interval": "LAST",
+                  "match": {
+                    "_uid": 1773,
+                    "id": 1773,
+                    "objectId": 64159,
+                    "scribeId": 64159,
+                    "slug": "west-indies-vs-pakistan-only-odi",
+                    "stage": "FINISHED",
+                    "state": "POST",
+                    "internationalClassId": 2,
+                    "generalClassId": 5,
+                    "subClassId": null,
+                    "season": "1976/77",
+                    "title": "Only ODI",
+                    "floodlit": "day",
+                    "startDate": "1977-03-16T00:00:00Z",
+                    "endDate": "1977-03-16T00:00:00Z",
+                    "startTime": "1977-03-16T13:00:00Z",
+                    "timePublished": false,
+                    "scheduleNote": "",
+                    "isCancelled": false,
+                    "coverage": "N",
+                    "coverageNote": "",
+                    "liveStreamUrl": null,
+                    "countryLiveStreamUrl": {},
+                    "highlightsUrl": null,
+                    "countryHighlightsUrl": {},
+                    "status": "RESULT",
+                    "statusText": "West Indies won by 4 wickets (with 10 balls remaining)",
+                    "statusEng": "RESULT",
+                    "internationalNumber": "000041",
+                    "generalNumber": null,
+                    "winnerTeamId": 4,
+                    "tossWinnerTeamId": 4,
+                    "tossWinnerChoice": 2,
+                    "resultStatus": 1,
+                    "liveInning": 2,
+                    "liveInningPredictions": null,
+                    "liveOvers": null,
+                    "liveOversPending": null,
+                    "liveBalls": null,
+                    "liveRecentBalls": null,
+                    "ballsPerOver": null,
+                    "series": {
+                      "id": 1234,
+                      "objectId": 61493,
+                      "scribeId": 17150,
+                      "slug": "pakistan-tour-of-west-indies-1976-77",
+                      "name": "Pakistan tour of West Indies",
+                      "longName": "Pakistan tour of West Indies",
+                      "alternateName": null,
+                      "longAlternateName": null,
+                      "unofficialName": null,
+                      "year": 1977,
+                      "typeId": 4,
+                      "isTrophy": false,
+                      "description": "",
+                      "season": "1976/77",
+                      "startDate": "1977-02-18T00:00:00Z",
+                      "endDate": "1977-04-20T00:00:00Z",
+                      "hasStandings": false,
+                      "totalVideos": 0,
+                      "gamePlayWatch": false
+                    },
+                    "ground": {
+                      "id": 772,
+                      "objectId": 59417,
+                      "name": "Albion Sports Complex, Albion, Guyana",
+                      "smallName": "Albion",
+                      "longName": "Albion Sports Complex, Albion, Guyana",
+                      "slug": "albion-sports-complex-albion-berbice-guyana",
+                      "location": "",
+                      "image": null,
+                      "town": {
+                        "id": 984,
+                        "objectId": 59416,
+                        "name": "Albion",
+                        "area": "Berbice, Guyana",
+                        "timezone": "America/Guyana"
+                      },
+                      "country": {
+                        "id": 4,
+                        "objectId": 4,
+                        "name": "West Indies",
+                        "shortName": "West Indies",
+                        "abbreviation": "WI",
+                        "slug": "west-indies"
+                      }
+                    },
+                    "teams": [
+                      {
+                        "team": {
+                          "id": 7,
+                          "objectId": 7,
+                          "scribeId": 7,
+                          "slug": "pakistan",
+                          "name": "Pakistan",
+                          "longName": "Pakistan",
+                          "abbreviation": "PAK",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/313100/313129.logo.png",
+                          "isCountry": true,
+                          "primaryColor": "#005b20",
+                          "image": {
+                            "id": 313129,
+                            "objectId": 1241588,
+                            "slug": "pakistan-logo",
+                            "url": "/db/PICTURES/CMS/313100/313129.logo.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "Pakistan logo",
+                            "longCaption": "Pakistan logo",
+                            "credit": null,
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": true,
+                        "isLive": false,
+                        "score": "176/7",
+                        "scoreInfo": "45/45 ov",
+                        "inningNumbers": [
+                          1
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      },
+                      {
+                        "team": {
+                          "id": 4,
+                          "objectId": 4,
+                          "scribeId": 4,
+                          "slug": "west-indies",
+                          "name": "West Indies",
+                          "longName": "West Indies",
+                          "abbreviation": "WI",
+                          "unofficialName": null,
+                          "imageUrl": "/db/PICTURES/CMS/317600/317615.png",
+                          "isCountry": true,
+                          "primaryColor": "#790d1a",
+                          "image": {
+                            "id": 317615,
+                            "objectId": 1254181,
+                            "slug": "west-indies-team-logo",
+                            "url": "/db/PICTURES/CMS/317600/317615.png",
+                            "width": 500,
+                            "height": 500,
+                            "caption": "West Indies team logo",
+                            "longCaption": "West Indies team logo",
+                            "credit": "West Indies Cricket",
+                            "photographer": null,
+                            "peerUrls": null
+                          }
+                        },
+                        "isHome": false,
+                        "isLive": false,
+                        "score": "182/6",
+                        "scoreInfo": "43.2/45 ov, T:177",
+                        "inningNumbers": [
+                          2
+                        ],
+                        "points": null,
+                        "sidePlayers": null,
+                        "sideBatsmen": null,
+                        "sideFielders": null,
+                        "captain": null,
+                        "teamOdds": null
+                      }
+                    ],
+                    "dayType": "SINGLE",
+                    "format": "ODI",
+                    "previewStoryId": null,
+                    "reportStoryId": null,
+                    "liveBlogStoryId": null,
+                    "fantasyPickStoryId": null,
+                    "drawOdds": null,
+                    "isSuperOver": false,
+                    "isScheduledInningsComplete": true,
+                    "totalGalleries": 0,
+                    "totalImages": 0,
+                    "totalVideos": 0,
+                    "totalStories": 1,
+                    "languages": [],
+                    "generatedAt": "2023-04-04T18:08:29.89Z"
+                  },
+                  "span": null
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 4,
+                "name": "First-class",
+                "type": "g"
+              },
+              "total": 223,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1963/64 - 1982/83"
+                }
+              ]
+            },
+            {
+              "matchClass": {
+                "id": 5,
+                "name": "List A",
+                "type": "g"
+              },
+              "total": 68,
+              "events": [
+                {
+                  "interval": "SPAN",
+                  "match": null,
+                  "span": "1969 - 1982/83"
+                }
+              ]
+            }
+          ],
+          "recent": []
+        }
+      ]
+    },
+    "stories": [
+      {
+        "id": 256849,
+        "objectId": 1061631,
+        "scribeId": 17893114,
+        "slug": "gordon-greenidge-i-thought-of-myself-as-someone-who-was-going-to-take-the-fight-to-the-bowler",
+        "title": "'I thought of myself as someone who was going to take the fight to the bowler'",
+        "subTitle": "",
+        "seoTitle": "Gordon Greenidge: 'I thought of myself as someone who was going to take the fight to the bowler",
+        "summary": "Gordon Greenidge talks about batting, opening the batting, playing in the West Indies, and limping between the wickets",
+        "byline": "Interview by Crispin Andrews",
+        "categoryType": "OTHERS",
+        "genreType": "INTERVIEW",
+        "genreId": 175,
+        "genreName": "Interviews",
+        "publishedAt": "2016-10-26T17:15:02Z",
+        "modifiedAt": "2016-10-26T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 663,
+        "image": {
+          "id": 253453,
+          "objectId": 1061634,
+          "slug": "gordon-greenidge-at-a-photo-call",
+          "url": "/db/PICTURES/CMS/253400/253453.5.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "Gordon Greenidge at a photo call",
+          "longCaption": "Gordon Greenidge at a photo call ahead of the premiere of <i>Fire in Babylon</i>, The Oval, London, May 9, 2011",
+          "credit": "AFP",
+          "photographer": null,
+          "peerUrls": {
+            "FILM": "/db/PICTURES/CMS/253400/253453.jpg",
+            "WIDE": "/db/PICTURES/CMS/253400/253453.4.jpg",
+            "SQUARE": "/db/PICTURES/CMS/253400/253453.9.jpg"
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:08:29.936Z"
+      },
+      {
+        "id": 164060,
+        "objectId": 602611,
+        "scribeId": 22093170,
+        "slug": "i-was-there-ashley-mallett-on-roy-fredericks-169-in-perth-1976",
+        "title": "Shine on me, Roy",
+        "subTitle": "",
+        "seoTitle": "I Was There: Ashley Mallett on Roy Fredericks 169 in Perth, 1976",
+        "summary": "Roy Fredericks' manic innings in Perth 40-odd years ago left you seeing stars in the daytime",
+        "byline": "Ashley Mallett",
+        "categoryType": "TCM",
+        "genreType": "OTHER",
+        "genreId": 188,
+        "genreName": "I Was There",
+        "publishedAt": "2013-01-30T03:16:42Z",
+        "modifiedAt": "2013-01-30T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 375,
+        "image": {
+          "id": 153925,
+          "objectId": 602607,
+          "slug": "roy-fredericks-sweeps-on-his-way-to-150",
+          "url": "/db/PICTURES/CMS/153900/153925.4.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "Roy Fredericks sweeps on his way to 150",
+          "longCaption": "Roy Fredericks sweeps on his way to 150, England v West Indies, Edgbaston, 2nd Test, 1st day, August 9, 1973",
+          "credit": "Getty Images",
+          "photographer": "Hulton/Archive",
+          "peerUrls": {
+            "FILM": null,
+            "WIDE": "/db/PICTURES/CMS/153900/153925.3.jpg",
+            "SQUARE": null
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:08:29.936Z"
+      },
+      {
+        "id": 133085,
+        "objectId": 438795,
+        "scribeId": 22742308,
+        "slug": "cricinfo-xi-the-most-savage-test-innings",
+        "title": "Big-time brutality",
+        "subTitle": "",
+        "seoTitle": "Cricinfo XI: The most savage Test innings",
+        "summary": "Virender Sehwag made one of the fastest double-hundreds of all time last week. We look at some of Test cricket's other most savage and decisive innings",
+        "byline": "Sriram Veera",
+        "categoryType": "OTHERS",
+        "genreType": "OTHER",
+        "genreId": 193,
+        "genreName": "ESPNcricinfo XI",
+        "publishedAt": "2009-12-10T00:00:00Z",
+        "modifiedAt": "2009-12-10T00:00:00Z",
+        "showPublishedAt": true,
+        "showModifiedAt": false,
+        "day": null,
+        "authorId": 234,
+        "image": {
+          "id": 13521,
+          "objectId": 168525,
+          "slug": "viv-richards-on-his-way-to-180-at-bridgetown",
+          "url": "/db/PICTURES/CMS/13500/13521.7.jpg",
+          "width": 365,
+          "height": 205,
+          "caption": "Viv Richards on his way to 180 at Bridgetown",
+          "longCaption": "Viv Richards on his way to 180, West Indies v England, Barbados, March 1981",
+          "credit": "Getty Images",
+          "photographer": null,
+          "peerUrls": {
+            "FILM": null,
+            "WIDE": "/db/PICTURES/CMS/13500/13521.7.jpg",
+            "SQUARE": "/db/PICTURES/CMS/13500/13521.jpg"
+          }
+        },
+        "matchMeta": null,
+        "isLiveBlog": false,
+        "isLive": false,
+        "language": "en",
+        "generatedAt": "2023-04-04T18:08:29.936Z"
+      }
+    ],
+    "videos": [
+      {
+        "id": 105459,
+        "objectId": 1194258,
+        "scribeId": 27182346,
+        "statusTypeId": 3,
+        "slug": "roy-fredericks-unwanted-first",
+        "title": "Roy Fredericks' unwanted first",
+        "subTitle": "ESPNcricinfo DYKs",
+        "seoTitle": "Roy Fredericks' unwanted first",
+        "summary": "The West Indies batsman became the first batsman to be dismissed hit-wicket in ODIs during the 1975 World Cup final",
+        "duration": 39,
+        "genreId": 187,
+        "genreType": "GENERAL",
+        "genreName": "ESPN Shorts",
+        "publishedAt": "2019-07-13T00:00:00Z",
+        "modifiedAt": "2021-03-17T15:51:05Z",
+        "recordedAt": "2019-07-13T00:00:00Z",
+        "expireAt": "2039-07-16T16:55:00Z",
+        "countryCodes": [],
+        "imageUrl": "/media/motion/2019/0713/dm_190713_1307-DYK-HIT-WICKET/dm_190713_1307-DYK-HIT-WICKET.jpg",
+        "origin": {
+          "type": "CLIP"
+        },
+        "assetId": null,
+        "scribeMongoId": "5d2a0d80ca84b738146d595a",
+        "language": "en"
+      },
+      {
+        "id": 4576,
+        "objectId": 576433,
+        "scribeId": 0,
+        "statusTypeId": 3,
+        "slug": "ian-chappell-on-the-best-centuries-he-has-watched-roy-fredericks-169-v-australia-perth",
+        "title": "'The quicker you bowled, the harder he hit'",
+        "subTitle": "Roy Fredericks, 169 v Australia, Perth",
+        "seoTitle": "Ian Chappell on the best centuries he has watched: Roy Fredericks, 169 v Australia, Perth",
+        "summary": "<b>Part seven:</b> Ian Chappell on the best centuries he has watched. This time: Roy Fredericks' blitzkrieg in Perth",
+        "duration": 275,
+        "genreId": 53,
+        "genreType": "GENERAL",
+        "genreName": "My XI",
+        "publishedAt": "2012-08-28T00:00:00Z",
+        "modifiedAt": "2016-10-06T19:28:40Z",
+        "recordedAt": "2012-08-28T00:00:00Z",
+        "expireAt": null,
+        "countryCodes": [],
+        "imageUrl": null,
+        "origin": {
+          "type": "CLIP"
+        },
+        "assetId": null,
+        "scribeMongoId": null,
+        "language": "en"
+      }
+    ],
+    "images": [
+      {
+        "id": 48779,
+        "objectId": 200723,
+        "slug": "roy-fredericks-scores-a-century-at-lord-s",
+        "url": "/db/PICTURES/CMS/48700/48779.jpg",
+        "width": 900,
+        "height": 877,
+        "caption": "Roy Fredericks scores a century at Lord's",
+        "longCaption": "Roy Fredericks scores a century at Lord's, England v West Indies, Lords, 2nd Test, 22 June, 1976",
+        "credit": "Getty Images",
+        "photographer": "Hulton/Archive",
+        "peerUrls": null,
+        "dateTaken": "2003-12-13T00:00:00Z",
+        "capturedOn": {
+          "year": 2003,
+          "month": 12,
+          "date": 13
+        }
+      },
+      {
+        "id": 227625,
+        "objectId": 943727,
+        "slug": "roy-fredericks-hooks-bob-willis-for-a-four",
+        "url": "/db/PICTURES/CMS/227600/227625.jpg",
+        "width": 1400,
+        "height": 934,
+        "caption": "Roy Fredericks hooks Bob Willis for a four",
+        "longCaption": "Roy Fredericks hooks Bob Willis for a four, England v West Indies, 4th Test, Headingley, 1st day, July 22, 1976",
+        "credit": "PA Photos",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1976-07-22T00:00:00Z",
+        "capturedOn": {
+          "year": 1976,
+          "month": 7,
+          "date": 22
+        }
+      },
+      {
+        "id": 142260,
+        "objectId": 552546,
+        "slug": "brian-close-dives-for-a-catch",
+        "url": "/db/PICTURES/CMS/142200/142260.jpg",
+        "width": 900,
+        "height": 600,
+        "caption": "Brian Close dives for a catch",
+        "longCaption": "Brian Close dives at a chance offered by Roy Fredericks, England v West Indies, third Test, Old Trafford, Manchester, July 9, 1976",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1976-07-09T00:00:00Z",
+        "capturedOn": {
+          "year": 1976,
+          "month": 7,
+          "date": 9
+        }
+      },
+      {
+        "id": 94492,
+        "objectId": 372707,
+        "slug": "roy-fredericks-hits-out-on-his-way-to-a-century",
+        "url": "/db/PICTURES/CMS/94400/94492.jpg",
+        "width": 500,
+        "height": 397,
+        "caption": "Roy Fredericks hits out on his way to a century",
+        "longCaption": "Roy Fredericks hits out on his way to a century, England v West Indies, 2nd Test, Lord's, June 22, 1976",
+        "credit": "AllSportUK",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1976-06-22T00:00:00Z",
+        "capturedOn": {
+          "year": 1976,
+          "month": 6,
+          "date": 22
+        }
+      },
+      {
+        "id": 82627,
+        "objectId": 321683,
+        "slug": "roy-fredericks",
+        "url": "/db/PICTURES/CMS/82600/82627.jpg",
+        "width": 350,
+        "height": 385,
+        "caption": "Roy Fredericks",
+        "longCaption": "Roy Fredericks",
+        "credit": "Martin Williamson",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1976-04-08T00:00:00Z",
+        "capturedOn": {
+          "year": 1976,
+          "month": 4,
+          "date": 8
+        }
+      },
+      {
+        "id": 40277,
+        "objectId": 51796,
+        "slug": "roy-fredericks",
+        "url": "/db/PICTURES/CMS/40200/40277.jpg",
+        "width": 160,
+        "height": 234,
+        "caption": "Roy Fredericks",
+        "longCaption": "Roy Fredericks",
+        "credit": "Getty Images",
+        "photographer": null,
+        "peerUrls": null,
+        "dateTaken": "1975-11-30T00:00:00Z",
+        "capturedOn": {
+          "year": 1976,
+          "month": null,
+          "date": null
+        }
+      }
+    ],
+    "supportInfo": {
+      "teamRecentTeam": {
+        "id": 25,
+        "objectId": 25,
+        "scribeId": 25,
+        "slug": "bangladesh",
+        "name": "Bangladesh",
+        "longName": "Bangladesh",
+        "abbreviation": "BAN",
+        "unofficialName": null,
+        "imageUrl": "/db/PICTURES/CMS/341400/341456.png",
+        "isCountry": true,
+        "primaryColor": "#006a4e",
+        "image": {
+          "id": 341456,
+          "objectId": 1321180,
+          "slug": "bangladesh-latest-team-flag",
+          "url": "/db/PICTURES/CMS/341400/341456.png",
+          "width": 500,
+          "height": 500,
+          "caption": "Bangladesh latest-team flag",
+          "longCaption": "Bangladesh latest-team flag",
+          "credit": "Getty Images",
+          "photographer": null,
+          "peerUrls": null
+        }
+      },
+      "teamRecentPlayers": [
+        {
+          "id": 87075,
+          "objectId": 935995,
+          "name": "Afif Hossain",
+          "longName": "Afif Hossain",
+          "mobileName": "Afif",
+          "indexName": "Afif Hossain",
+          "battingName": "Afif Hossain",
+          "fieldingName": "Afif Hossain",
+          "slug": "afif-hossain",
+          "imageUrl": "/db/PICTURES/CMS/306000/306068.1.jpg",
+          "dateOfBirth": {
+            "year": 1999,
+            "month": 9,
+            "date": 22
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 306068,
+            "objectId": 1226197,
+            "slug": "afif-hossain-player-portrait",
+            "url": "/db/PICTURES/CMS/306000/306068.1.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Afif Hossain player portrait",
+            "longCaption": "Afif Hossain player portrait",
+            "credit": "Unknown",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 66691,
+          "objectId": 536936,
+          "name": "Litton Das",
+          "longName": "Litton Das",
+          "mobileName": "Litton Das",
+          "indexName": "Litton Das",
+          "battingName": "Litton Das",
+          "fieldingName": "Litton Das",
+          "slug": "litton-das",
+          "imageUrl": "/db/PICTURES/CMS/302900/302995.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 10,
+            "date": 13
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 302995,
+            "objectId": 1221378,
+            "slug": "liton-das-portrait",
+            "url": "/db/PICTURES/CMS/302900/302995.jpg",
+            "width": 160,
+            "height": 199,
+            "caption": "Liton Das portrait",
+            "longCaption": "Liton Das portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 70877,
+          "objectId": 629063,
+          "name": "Mehidy Hasan Miraz",
+          "longName": "Mehidy Hasan Miraz",
+          "mobileName": "Mehidy Hasan Miraz",
+          "indexName": "Mehidy Hasan Miraz",
+          "battingName": "Mehidy Hasan Miraz",
+          "fieldingName": "Mehidy Hasan Miraz",
+          "slug": "mehidy-hasan-miraz",
+          "imageUrl": "/db/PICTURES/CMS/303000/303000.jpg",
+          "dateOfBirth": {
+            "year": 1997,
+            "month": 10,
+            "date": 25
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303000,
+            "objectId": 1221384,
+            "slug": "mehidy-hasan-portrait",
+            "url": "/db/PICTURES/CMS/303000/303000.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Mehidy Hasan portrait",
+            "longCaption": "Mehidy Hasan portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 67276,
+          "objectId": 550133,
+          "name": "Mosaddek Hossain",
+          "longName": "Mosaddek Hossain",
+          "mobileName": "Mosaddek",
+          "indexName": "Mosaddek Hossain",
+          "battingName": "Mosaddek Hossain",
+          "fieldingName": "Mosaddek Hossain",
+          "slug": "mosaddek-hossain",
+          "imageUrl": "/db/PICTURES/CMS/303100/303147.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 12,
+            "date": 10
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303147,
+            "objectId": 1221579,
+            "slug": "mosaddek-hossain-portrait",
+            "url": "/db/PICTURES/CMS/303100/303147.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Mosaddek Hossain portrait",
+            "longCaption": "Mosaddek Hossain portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 54674,
+          "objectId": 330902,
+          "name": "Mustafizur Rahman",
+          "longName": "Mustafizur Rahman",
+          "mobileName": "Mustafizur",
+          "indexName": "Mustafizur Rahman",
+          "battingName": "Mustafizur Rahman",
+          "fieldingName": "Mustafizur Rahman",
+          "slug": "mustafizur-rahman",
+          "imageUrl": "/db/PICTURES/CMS/263500/263578.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 9,
+            "date": 6
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "lfm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "left-arm fast-medium"
+          ],
+          "image": {
+            "id": 263578,
+            "objectId": 1099647,
+            "slug": "mustafizur-rahman",
+            "url": "/db/PICTURES/CMS/263500/263578.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Mustafizur Rahman",
+            "longCaption": null,
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 56825,
+          "objectId": 348049,
+          "name": "Nasum Ahmed",
+          "longName": "Nasum Ahmed",
+          "mobileName": "Nasum",
+          "indexName": "Nasum Ahmed",
+          "battingName": "Nasum Ahmed",
+          "fieldingName": "Nasum Ahmed",
+          "slug": "nasum-ahmed",
+          "imageUrl": "/db/PICTURES/CMS/148300/148317.1.jpg",
+          "dateOfBirth": {
+            "year": 1994,
+            "month": 12,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 148317,
+            "objectId": 576145,
+            "slug": "nasum-ahmed",
+            "url": "/db/PICTURES/CMS/148300/148317.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Nasum Ahmed",
+            "longCaption": "Nasum Ahmed",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 70872,
+          "objectId": 629058,
+          "name": "Najmul Hossain Shanto",
+          "longName": "Najmul Hossain Shanto",
+          "mobileName": "Shanto",
+          "indexName": "Najmul Hossain Shanto",
+          "battingName": "Najmul Hossain Shanto",
+          "fieldingName": "Najmul Hossain Shanto",
+          "slug": "najmul-hossain-shanto",
+          "imageUrl": "/db/PICTURES/CMS/303200/303241.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 8,
+            "date": 25
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 303241,
+            "objectId": 1221735,
+            "slug": "nazmul-hossain-shanto-portrait",
+            "url": "/db/PICTURES/CMS/303200/303241.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Nazmul Hossain Shanto portrait",
+            "longCaption": "Nazmul Hossain Shanto portrait, April, 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 60030,
+          "objectId": 410765,
+          "name": "Nurul Hasan",
+          "longName": "Nurul Hasan",
+          "mobileName": "Nurul",
+          "indexName": "Nurul Hasan",
+          "battingName": "Nurul Hasan",
+          "fieldingName": "Nurul Hasan",
+          "slug": "nurul-hasan",
+          "imageUrl": "/db/PICTURES/CMS/303200/303243.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 11,
+            "date": 21
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 303243,
+            "objectId": 1221737,
+            "slug": "nurul-hasan-portrait",
+            "url": "/db/PICTURES/CMS/303200/303243.jpg",
+            "width": 160,
+            "height": 201,
+            "caption": "Nurul Hasan portrait",
+            "longCaption": "Nurul Hasan portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 48277,
+          "objectId": 56143,
+          "name": "Shakib Al Hasan",
+          "longName": "Shakib Al Hasan",
+          "mobileName": "Shakib",
+          "indexName": "Shakib Al Hasan",
+          "battingName": "Shakib Al Hasan",
+          "fieldingName": "Shakib Al Hasan",
+          "slug": "shakib-al-hasan",
+          "imageUrl": "/db/PICTURES/CMS/303100/303157.jpg",
+          "dateOfBirth": {
+            "year": 1987,
+            "month": 3,
+            "date": 24
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "sla"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "slow left-arm orthodox"
+          ],
+          "image": {
+            "id": 303157,
+            "objectId": 1221590,
+            "slug": "shakib-al-hasan-portrait",
+            "url": "/db/PICTURES/CMS/303100/303157.jpg",
+            "width": 160,
+            "height": 202,
+            "caption": "Shakib Al Hasan portrait",
+            "longCaption": "Shakib Al Hasan portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 66808,
+          "objectId": 538506,
+          "name": "Taskin Ahmed",
+          "longName": "Taskin Ahmed",
+          "mobileName": "Taskin",
+          "indexName": "Taskin Ahmed",
+          "battingName": "Taskin Ahmed",
+          "fieldingName": "Taskin Ahmed",
+          "slug": "taskin-ahmed",
+          "imageUrl": "/db/PICTURES/CMS/303100/303169.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 4,
+            "date": 3
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 303169,
+            "objectId": 1221603,
+            "slug": "taskin-ahmed-portrait",
+            "url": "/db/PICTURES/CMS/303100/303169.jpg",
+            "width": 160,
+            "height": 203,
+            "caption": "Taskin Ahmed portrait",
+            "longCaption": "Taskin Ahmed portrait, April 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 25,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        }
+      ],
+      "teamPopularPlayers": [
+        {
+          "id": 56832,
+          "objectId": 348056,
+          "name": "KR Mayers",
+          "longName": "Kyle Mayers",
+          "mobileName": "Mayers",
+          "indexName": "Mayers, KR",
+          "battingName": "KR Mayers",
+          "fieldingName": "Mayers",
+          "slug": "kyle-mayers",
+          "imageUrl": "/db/PICTURES/CMS/316000/316081.png",
+          "dateOfBirth": {
+            "year": 1992,
+            "month": 9,
+            "date": 8
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "rm"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium"
+          ],
+          "image": {
+            "id": 316081,
+            "objectId": 1249948,
+            "slug": "kyle-mayers-portrait",
+            "url": "/db/PICTURES/CMS/316000/316081.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Kyle Mayers portrait",
+            "longCaption": "Kyle Mayers portrait, February 2021",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            10
+          ],
+          "playingRoles": [
+            "batting allrounder"
+          ]
+        },
+        {
+          "id": 70405,
+          "objectId": 604302,
+          "name": "N Pooran",
+          "longName": "Nicholas Pooran",
+          "mobileName": "Pooran",
+          "indexName": "Pooran, N",
+          "battingName": "N Pooran",
+          "fieldingName": "Pooran",
+          "slug": "nicholas-pooran",
+          "imageUrl": "/db/PICTURES/CMS/302200/302286.jpg",
+          "dateOfBirth": {
+            "year": 1995,
+            "month": 10,
+            "date": 2
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 302286,
+            "objectId": 1220424,
+            "slug": "nicholas-pooran-portrait",
+            "url": "/db/PICTURES/CMS/302200/302286.jpg",
+            "width": 160,
+            "height": 200,
+            "caption": "Nicholas Pooran portrait",
+            "longCaption": "Nicholas Pooran portrait, Bristol, May 25, 2019",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            7
+          ],
+          "playingRoles": [
+            "wicketkeeper batter"
+          ]
+        },
+        {
+          "id": 57209,
+          "objectId": 355359,
+          "name": "SR Taylor",
+          "longName": "Stafanie Taylor",
+          "mobileName": "Taylor",
+          "indexName": "Taylor, SR",
+          "battingName": "SR Taylor",
+          "fieldingName": "Taylor",
+          "slug": "stafanie-taylor",
+          "imageUrl": "/db/PICTURES/CMS/306600/306628.png",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 6,
+            "date": 11
+          },
+          "dateOfDeath": null,
+          "gender": "F",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 306628,
+            "objectId": 1227350,
+            "slug": "stafanie-taylor-portrait",
+            "url": "/db/PICTURES/CMS/306600/306628.png",
+            "width": 160,
+            "height": 201,
+            "caption": "Stafanie Taylor portrait",
+            "longCaption": "Stafanie Taylor portrait, July 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 72509,
+          "objectId": 677081,
+          "name": "KMA Paul",
+          "longName": "Keemo Paul",
+          "mobileName": "Paul",
+          "indexName": "Paul, KMA",
+          "battingName": "KMA Paul",
+          "fieldingName": "Paul",
+          "slug": "keemo-paul",
+          "imageUrl": "/db/PICTURES/CMS/352300/352355.4.jpg",
+          "dateOfBirth": {
+            "year": 1998,
+            "month": 2,
+            "date": 21
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rfm"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast-medium"
+          ],
+          "image": {
+            "id": 352355,
+            "objectId": 1353249,
+            "slug": "keemo-paul-player-portrait-2023",
+            "url": "/db/PICTURES/CMS/352300/352355.4.jpg",
+            "width": 160,
+            "height": 225,
+            "caption": "Keemo Paul, player portrait 2023",
+            "longCaption": "Keemo Paul, player portrait 2023",
+            "credit": "AFP/Getty Images",
+            "photographer": "Randy Brooks",
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 72397,
+          "objectId": 670031,
+          "name": "AS Joseph",
+          "longName": "Alzarri Joseph",
+          "mobileName": "Joseph",
+          "indexName": "Joseph, AS",
+          "battingName": "AS Joseph",
+          "fieldingName": "Joseph",
+          "slug": "alzarri-joseph",
+          "imageUrl": "/db/PICTURES/CMS/321900/321943.png",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 11,
+            "date": 20
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 321943,
+            "objectId": 1264229,
+            "slug": "alzarri-joseph-player-page-headshot-cutout-2021",
+            "url": "/db/PICTURES/CMS/321900/321943.png",
+            "width": 600,
+            "height": 436,
+            "caption": "Alzarri Joseph player page headshot cutout, 2021",
+            "longCaption": "Alzarri Joseph player page headshot cutout, 2021",
+            "credit": null,
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            4
+          ],
+          "playingRoles": [
+            "bowler"
+          ]
+        },
+        {
+          "id": 51012,
+          "objectId": 276298,
+          "name": "AD Russell",
+          "longName": "Andre Russell",
+          "mobileName": "Russell",
+          "indexName": "Russell, AD",
+          "battingName": "AD Russell",
+          "fieldingName": "Russell",
+          "slug": "andre-russell",
+          "imageUrl": "/db/PICTURES/CMS/308900/308972.png",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 4,
+            "date": 29
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm fast"
+          ],
+          "image": {
+            "id": 308972,
+            "objectId": 1232420,
+            "slug": "andre-russell-portrait",
+            "url": "/db/PICTURES/CMS/308900/308972.png",
+            "width": 160,
+            "height": 200,
+            "caption": "Andre Russell portrait",
+            "longCaption": "Andre Russell portrait, September 2020",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            5
+          ],
+          "playingRoles": [
+            "allrounder"
+          ]
+        },
+        {
+          "id": 49039,
+          "objectId": 230558,
+          "name": "SP Narine",
+          "longName": "Sunil Narine",
+          "mobileName": "Narine",
+          "indexName": "Narine, SP",
+          "battingName": "SP Narine",
+          "fieldingName": "Narine",
+          "slug": "sunil-narine",
+          "imageUrl": "/db/PICTURES/CMS/203300/203303.1.jpg",
+          "dateOfBirth": {
+            "year": 1988,
+            "month": 5,
+            "date": 26
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [
+            "ob"
+          ],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm offbreak"
+          ],
+          "image": {
+            "id": 203303,
+            "objectId": 818705,
+            "slug": "sunil-narine",
+            "url": "/db/PICTURES/CMS/203300/203303.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Sunil Narine",
+            "longCaption": "Sunil Narine",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        },
+        {
+          "id": 80425,
+          "objectId": 820351,
+          "name": "R Powell",
+          "longName": "Rovman Powell",
+          "mobileName": "Powell",
+          "indexName": "Powell, R",
+          "battingName": "R Powell",
+          "fieldingName": "Powell",
+          "slug": "rovman-powell",
+          "imageUrl": "/db/PICTURES/CMS/246200/246267.1.jpg",
+          "dateOfBirth": {
+            "year": 1993,
+            "month": 7,
+            "date": 23
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 246267,
+            "objectId": 1030741,
+            "slug": "rovman-powell-player-portrait",
+            "url": "/db/PICTURES/CMS/246200/246267.1.jpg",
+            "width": 160,
+            "height": 212,
+            "caption": "Rovman Powell player portrait",
+            "longCaption": "Rovman Powell player portrait",
+            "credit": "CPL/Sportsfile",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            3
+          ],
+          "playingRoles": [
+            "middle-order batter"
+          ]
+        },
+        {
+          "id": 72393,
+          "objectId": 670025,
+          "name": "SO Hetmyer",
+          "longName": "Shimron Hetmyer",
+          "mobileName": "Hetmyer",
+          "indexName": "Hetmyer, SO",
+          "battingName": "SO Hetmyer",
+          "fieldingName": "Hetmyer",
+          "slug": "shimron-hetmyer",
+          "imageUrl": "/db/PICTURES/CMS/356800/356802.1.png",
+          "dateOfBirth": {
+            "year": 1996,
+            "month": 12,
+            "date": 26
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "lhb"
+          ],
+          "bowlingStyles": [],
+          "longBattingStyles": [
+            "left-hand bat"
+          ],
+          "longBowlingStyles": [],
+          "image": {
+            "id": 356802,
+            "objectId": 1365014,
+            "slug": "hetmeyer-player-portrait",
+            "url": "/db/PICTURES/CMS/356800/356802.1.png",
+            "width": 160,
+            "height": 215,
+            "caption": "Hetmeyer player portrait",
+            "longCaption": "Hetmeyer player portrait",
+            "credit": "Getty Images",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            2
+          ],
+          "playingRoles": [
+            "top-order batter"
+          ]
+        },
+        {
+          "id": 59339,
+          "objectId": 391485,
+          "name": "JO Holder",
+          "longName": "Jason Holder",
+          "mobileName": "Holder",
+          "indexName": "Holder, JO",
+          "battingName": "JO Holder",
+          "fieldingName": "Holder",
+          "slug": "jason-holder",
+          "imageUrl": "/db/PICTURES/CMS/214700/214757.1.jpg",
+          "dateOfBirth": {
+            "year": 1991,
+            "month": 11,
+            "date": 5
+          },
+          "dateOfDeath": null,
+          "gender": "M",
+          "battingStyles": [
+            "rhb"
+          ],
+          "bowlingStyles": [
+            "rmf"
+          ],
+          "longBattingStyles": [
+            "right-hand bat"
+          ],
+          "longBowlingStyles": [
+            "right-arm medium-fast"
+          ],
+          "image": {
+            "id": 214757,
+            "objectId": 883997,
+            "slug": "jason-holder",
+            "url": "/db/PICTURES/CMS/214700/214757.1.jpg",
+            "width": 160,
+            "height": 192,
+            "caption": "Jason Holder",
+            "longCaption": "Jason Holder",
+            "credit": "WICB Media Photo/Randy Brooks",
+            "photographer": null,
+            "peerUrls": null
+          },
+          "countryTeamId": 4,
+          "playerRoleTypeIds": [
+            11
+          ],
+          "playingRoles": [
+            "bowling allrounder"
+          ]
+        }
+      ],
+      "matchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "First-class"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "List A"
+        },
+        {
+          "id": 11,
+          "type": "g",
+          "name": "Other matches"
+        },
+        {
+          "id": 12,
+          "type": "g",
+          "name": "Other one-day/limited-overs matches"
+        }
+      ],
+      "recordClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Test",
+          "longName": "Test matches",
+          "multipleClass": 0,
+          "slug": "test-matches"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "ODI",
+          "longName": "One-Day Internationals",
+          "multipleClass": 0,
+          "slug": "one-day-internationals"
+        },
+        {
+          "id": 4,
+          "type": "g",
+          "name": "FC",
+          "longName": "First-class matches",
+          "multipleClass": 0,
+          "slug": "first-class-matches"
+        },
+        {
+          "id": 5,
+          "type": "g",
+          "name": "LA",
+          "longName": "List A matches",
+          "multipleClass": 0,
+          "slug": "list-a-matches"
+        },
+        {
+          "id": 14,
+          "type": "g",
+          "name": "Minor",
+          "longName": "Minor cricket",
+          "multipleClass": 0,
+          "slug": "minor-cricket"
+        }
+      ],
+      "overallStats": [
+        {
+          "recordClassId": 1,
+          "matches": 59,
+          "batted": true,
+          "battedInnings": 109,
+          "bowled": true,
+          "bowledInnings": 43,
+          "fielded": true,
+          "fieldedInnings": 112,
+          "dismissals": 62,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        },
+        {
+          "recordClassId": 2,
+          "matches": 12,
+          "batted": true,
+          "battedInnings": 12,
+          "bowled": true,
+          "bowledInnings": 1,
+          "fielded": true,
+          "fieldedInnings": 12,
+          "dismissals": 4,
+          "stumped": 0,
+          "umpireMatches": 0,
+          "refereeMatches": 0
+        }
+      ],
+      "teamFormatCapCounts": {
+        "1": 332,
+        "2": 215,
+        "3": 93,
+        "8": 29,
+        "9": 123,
+        "10": 62,
+        "14": 159,
+        "15": 297
+      },
+      "teamContractedPlayerCount": 18,
+      "teamMatchClassMetas": [
+        {
+          "id": 1,
+          "type": "i",
+          "name": "Tests"
+        },
+        {
+          "id": 2,
+          "type": "i",
+          "name": "One-Day Internationals"
+        },
+        {
+          "id": 3,
+          "type": "i",
+          "name": "Twenty20 Internationals"
+        },
+        {
+          "id": 8,
+          "type": "i",
+          "name": "Women's Tests"
+        },
+        {
+          "id": 9,
+          "type": "i",
+          "name": "Women's One-Day Internationals"
+        },
+        {
+          "id": 10,
+          "type": "i",
+          "name": "Women's Twenty20 Internationals"
+        },
+        {
+          "id": 6,
+          "type": "g",
+          "name": "Twenty20"
+        },
+        {
+          "id": 17,
+          "type": "g",
+          "name": "Women's Twenty20"
+        }
+      ]
+    }
+  }
+}

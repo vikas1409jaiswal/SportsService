@@ -1,5 +1,4 @@
-﻿using System.Data.Common;
-using AutoMapper;
+﻿using AutoMapper;
 using CricketService.Data.Contexts;
 using CricketService.Data.Entities;
 using CricketService.Data.Extensions;
@@ -50,8 +49,37 @@ namespace CricketService.Data.Repositories
             IEnumerable<LimitedOverInternationalMatchInfoDTO> matchesList = new List<LimitedOverInternationalMatchInfoDTO>();
 
             matchesList = context.LimitedOverInternationalMatchesInfo.AsEnumerable()
-                .Where(x => x.MatchNumber.Contains(format.ToString()))
+                .Where(x => x.MatchNumber.StartsWith(format.ToString()))
                 .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace($"{format} no. ", string.Empty)));
+
+            if (!matchesFilters.TeamUuid.Equals(Guid.Empty))
+            {
+                if (matchesFilters.OppositionTeamUuid.Equals(Guid.Empty))
+                {
+                    matchesList = matchesList.Where(x => x.Team1.Team.Uuid.Equals(matchesFilters.TeamUuid) || x.Team2.Team.Uuid.Equals(matchesFilters.TeamUuid));
+                }
+                else if (!matchesFilters.OppositionTeamUuid.Equals(Guid.Empty))
+                {
+                    matchesList = matchesList.Where(x =>
+                    (x.Team1.Team.Uuid.Equals(matchesFilters.TeamUuid) && x.Team2.Team.Uuid.Equals(matchesFilters.OppositionTeamUuid))
+                    || (x.Team2.Team.Uuid.Equals(matchesFilters.TeamUuid) && x.Team1.Team.Uuid.Equals(matchesFilters.OppositionTeamUuid)));
+                }
+            }
+
+            return matchesList.Select(x => x.ToDomain(mapper));
+        }
+
+        public IEnumerable<TestCricketMatchResponse> GetAllTestMatches(MatchesFilters matchesFilters)
+        {
+            var format = matchesFilters.Format;
+
+            logger.LogInformation($"Fetching details for all {format} matches.");
+
+            IEnumerable<TestCricketMatchInfoDTO> matchesList = new List<TestCricketMatchInfoDTO>();
+
+            matchesList = context.TestCricketMatchInfo.AsEnumerable()
+                .Where(x => x.MatchNumber.StartsWith("Test no. "))
+                .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("Test no. ", string.Empty)));
 
             if (!matchesFilters.TeamUuid.Equals(Guid.Empty))
             {
@@ -72,18 +100,6 @@ namespace CricketService.Data.Repositories
             return matchesList.Select(x => x.ToDomain(mapper));
         }
 
-        public IEnumerable<TestCricketMatchResponse> GetAllMatchesTest(MatchesFilters matchesFilters)
-        {
-            logger.LogInformation($"Fetching details for all Test matches.");
-
-            var matchesList = context.TestCricketMatchInfo.AsEnumerable()
-                .OrderBy(x => Convert.ToInt32(x.MatchNumber.Replace("Test no. ", string.Empty)));
-
-            logger.LogInformation($"{matchesList.Count()} matches found.");
-
-            return matchesList.Select(x => x.ToDomain(mapper));
-        }
-
         public IEnumerable<DomesticCricketMatchResponse> GetAllTwenty20Matches(MatchesFilters matchesFilters)
         {
             logger.LogInformation($"Fetching details for all Twenty 20 matches.");
@@ -99,19 +115,22 @@ namespace CricketService.Data.Repositories
         {
             logger.LogInformation($"Fetching details for {format} no. {matchNumber}");
 
-            Entities.LimitedOverInternationalMatchInfoDTO match = null!;
+            LimitedOverInternationalMatchInfoDTO match = null!;
 
             try
             {
-                match = await context.LimitedOverInternationalMatchesInfo.SingleAsync(x => x.MatchNumber == $"{format} no. {matchNumber}");
+                var matchNumberStr = $"{format} no. {matchNumber}";
+
+                match = await context.LimitedOverInternationalMatchesInfo
+                    .SingleAsync(x => x.MatchNumber == matchNumberStr);
             }
             catch (JsonReaderException)
             {
-                match = new Entities.LimitedOverInternationalMatchInfoDTO();
+                match = new LimitedOverInternationalMatchInfoDTO();
             }
             catch (JsonSerializationException)
             {
-                match = new Entities.LimitedOverInternationalMatchInfoDTO();
+                match = new LimitedOverInternationalMatchInfoDTO();
             }
             catch (Exception ex)
             {
@@ -180,9 +199,12 @@ namespace CricketService.Data.Repositories
             return matchesList.Select(x => x.ToDomain(mapper));
         }
 
-        public async Task<InternationalCricketMatchResponse> AddLimitedOverInternationalMatch(InternationalCricketMatchRequest match, CricketFormat format)
+        public async Task<InternationalCricketMatchResponse> AddLimitedOverInternationalMatch(
+            InternationalCricketMatchRequest match,
+            CricketFormat format)
         {
-            if (context.LimitedOverInternationalMatchesInfo.Any(x => x.Uuid.Equals(match.MatchUuid)))
+            if (context.LimitedOverInternationalMatchesInfo
+                .Any(x => x.Uuid.Equals(match.MatchUuid)))
             {
                 return null!;
             }
@@ -212,28 +234,15 @@ namespace CricketService.Data.Repositories
 
             var response = matchInfo.ToDomain(mapper);
 
-            response.Team1.Team = new CricketTeam(Guid.Empty, match.Team1.Team.Name);
-            response.Team2.Team = new CricketTeam(Guid.Empty, match.Team2.Team.Name);
-
             var team1Info = await response.Team1.Team.SaveTeamInfo(context, CricketFormat.TestCricket);
             var team2Info = await response.Team2.Team.SaveTeamInfo(context, CricketFormat.TestCricket);
 
-            matchInfo.Team1.Team = new CricketTeam(team1Info.Uuid, team1Info.TeamName);
-            matchInfo.Team2.Team = new CricketTeam(team2Info.Uuid, team2Info.TeamName);
+            matchInfo.Team1.Team = new CricketTeam(team1Info.Uuid, team1Info.TeamName, matchInfo.Team1.Team.LogoUrl);
+            matchInfo.Team2.Team = new CricketTeam(team2Info.Uuid, team2Info.TeamName, matchInfo.Team2.Team.LogoUrl);
 
             context.TestCricketMatchInfo.Add(matchInfo);
 
             await context.SaveChangesAsync();
-
-            if (response.Team1.Inning1.Playing11 is not null)
-            {
-                await response.Team1.Team.SavePlayersForTeam(response.Team1.Inning1.Playing11, context, CricketFormat.TestCricket);
-            }
-
-            if (response.Team2.Inning1.Playing11 is not null)
-            {
-                await response.Team2.Team.SavePlayersForTeam(response.Team2.Inning1.Playing11, context, CricketFormat.TestCricket);
-            }
 
             return response;
         }
@@ -410,8 +419,8 @@ namespace CricketService.Data.Repositories
 
             var response = matchInfo.ToDomain(mapper);
 
-            await response.Team1.Team.SaveTeamInfo(context, CricketFormat.Twenty20);
-            await response.Team2.Team.SaveTeamInfo(context, CricketFormat.Twenty20);
+            await response.Team1.Team.SaveTeamInfo(context, CricketFormat.Twenty20, "India");
+            await response.Team2.Team.SaveTeamInfo(context, CricketFormat.Twenty20, "India");
 
             context.T20MatchesInfo.Add(matchInfo);
 

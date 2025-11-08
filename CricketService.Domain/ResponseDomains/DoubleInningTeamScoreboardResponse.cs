@@ -25,12 +25,14 @@ namespace CricketService.Domain.ResponseDomains
     public class InningScoreboardResponse : InningScoreboard<BattingScoreboardResponse, BowlingScoreboardResponse>
     {
         public InningScoreboardResponse(
+            string title,
             ICollection<BattingScoreboardResponse> battingScoreCard,
             ICollection<BowlingScoreboardResponse> bowlingScoreCard,
             string extras,
             string[] fallOfWickets,
             CricketPlayer[] didNotBat)
             : base(
+            title,
             battingScoreCard,
             bowlingScoreCard,
             extras,
@@ -43,7 +45,7 @@ namespace CricketService.Domain.ResponseDomains
         {
             get
             {
-                var playing11 = BattingScorecboard.Select(x => x.PlayerName).Concat(DidNotBat).ToArray();
+                var playing11 = BattingScorecard.Select(x => x.PlayerName).Concat(DidNotBat).ToArray();
                 if (playing11.Length == 0)
                 {
                     return null!;
@@ -58,16 +60,16 @@ namespace CricketService.Domain.ResponseDomains
             }
         }
 
-        public TotalInningScore TotalInningDetails
+        public TotalInningScoreResponse TotalInningDetails { get; set; }
+
+
+        public void SetTotalInningScore()
         {
-            get
-            {
-                return new TotalInningScore(
-                    (int)BattingScorecboard.Sum(x => x.RunsScored)!,
-                    FallOfWickets.Length,
-                    BowlingScoreboard.Sum(x => new Over(x.OversBowled).Balls).ToOvers(),
-                    Extras);
-            }
+            TotalInningDetails = new TotalInningScoreResponse(
+                                (int)BattingScorecard.Sum(x => x.RunsScored)!,
+                                BattingScorecard.Count(x => !x.OutStatus.Contains("not out")),
+                                BowlingScorecard.Sum(x => new Over(x.OversBowled).Balls).ToOvers(),
+                                Extras);
         }
     }
 }

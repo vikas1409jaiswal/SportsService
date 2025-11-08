@@ -5,22 +5,26 @@
      where TBowling : class
     {
         public InningScoreboard(
+            string title,
             ICollection<TBatting> battingScoreboard,
             ICollection<TBowling> bowlingScoreboard,
             string extras,
             string[] fallOfWickets,
             CricketPlayer[] didNotBat)
         {
-            BattingScorecboard = battingScoreboard;
-            BowlingScoreboard = bowlingScoreboard;
+            Title = title;
+            BattingScorecard = battingScoreboard;
+            BowlingScorecard = bowlingScoreboard;
             Extras = extras;
             FallOfWickets = fallOfWickets;
             DidNotBat = didNotBat;
         }
 
-        public ICollection<TBatting> BattingScorecboard { get; set; }
+        public string Title { get; set; }
 
-        public ICollection<TBowling> BowlingScoreboard { get; set; }
+        public ICollection<TBatting> BattingScorecard { get; set; }
+
+        public ICollection<TBowling> BowlingScorecard { get; set; }
 
         public string Extras { get; set; } = string.Empty;
 

@@ -7,6 +7,9 @@ namespace CricketService.Data.Entities
     [Table("test_cricket_matches")]
     public class TestCricketMatchInfoDTO : CricketMatchInfoBaseDTO
     {
+        [Column("match_days")]
+        public string MatchDays { get; set; } = string.Empty;
+
         [Column("team1_details")]
         public DoubleInningTeamScoreboardResponse Team1 { get; set; } = null!;
 
