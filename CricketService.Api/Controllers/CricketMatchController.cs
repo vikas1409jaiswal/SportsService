@@ -60,7 +60,7 @@ public class CricketMatchController : Controller
             allMatches = cricketMatchRepository.GetAllTwenty20Matches(matchesFilters);
         }
 
-        Response.Headers.Add($"total-{format}-matches", allMatches.Count().ToString());
+    Response.Headers.Append($"total-{format}-matches", allMatches.Count().ToString());
 
         return Ok(allMatches);
     }
@@ -133,7 +133,7 @@ public class CricketMatchController : Controller
     {
         var allMatches = cricketMatchRepository.GetMatchesByTeamUuid(teamUuid, format);
 
-        Response.Headers.Add($"total-{format}-matches", allMatches.Count().ToString());
+    Response.Headers.Append($"total-{format}-matches", allMatches.Count().ToString());
 
         return Ok(allMatches);
     }
@@ -255,7 +255,7 @@ public class CricketMatchController : Controller
     {
         var allMatches = cricketMatchRepository.GetMatchesByTournament(tournament, format);
 
-        Response.Headers.Add($"total-{tournament}-matches", allMatches.Count().ToString());
+    Response.Headers.Append($"total-{tournament}-matches", allMatches.Count().ToString());
 
         return Ok(allMatches);
     }

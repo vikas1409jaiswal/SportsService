@@ -103,7 +103,12 @@ namespace CricketService.Api
             IWebHostEnvironment env,
             IBackgroundJobClient backgroundJobClient)
         {
-            if (!env.IsDevelopment())
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
             {
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
