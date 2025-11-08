@@ -107,9 +107,9 @@ public class CricketMatchController : Controller
             switch (format)
             {
                 case CricketFormat.T20I:
-                    match = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(matchNumber, format);
-                    break;
                 case CricketFormat.ODI:
+                case CricketFormat.WODI:
+                case CricketFormat.WT20I:
                     match = await cricketMatchRepository.GetLimitedOverInternationalMatchByNumber(matchNumber, format);
                     break;
                 case CricketFormat.TestCricket:
