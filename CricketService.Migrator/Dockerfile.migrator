@@ -1,0 +1,37 @@
+
+# (Migrator Dockerfile)
+# This Dockerfile is for the CricketService.Migrator service
+
+
+# Use the official .NET SDK image to build the app
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+# Copy solution and project files
+COPY CricketService.sln ./
+COPY CricketService.Migrator/CricketService.Migrator.csproj CricketService.Migrator/
+COPY CricketService.Data/CricketService.Data.csproj CricketService.Data/
+COPY CricketService.Domain/CricketService.Domain.csproj CricketService.Domain/
+COPY CricketService.Api/CricketService.Api.csproj CricketService.Api/
+COPY CricketService.Seeder/CricketService.Seeder.csproj CricketService.Seeder/
+COPY CricketService.Hangfire/CricketService.Hangfire.csproj CricketService.Hangfire/
+COPY CricketService.Hangfire.Postgres/CricketService.Hangfire.Postgres.csproj CricketService.Hangfire.Postgres/
+COPY CricketService.Utils/CricketService.Utils.csproj CricketService.Utils/
+
+
+# Copy the rest of the files
+COPY . .
+
+# Restore using the solution file to ensure all dependencies are included
+RUN dotnet restore "CricketService.sln"
+RUN dotnet publish "CricketService.Migrator/CricketService.Migrator.csproj" -c Release -o /app/publish
+
+# Use the official .NET runtime image for the final container
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS final
+WORKDIR /app
+COPY --from=build /app/publish .
+COPY --from=build /src /src
+# Install dotnet-ef tool
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="/root/.dotnet/tools:${PATH}"
+ENTRYPOINT ["dotnet", "ef", "database", "update", "--project", "CricketService.Migrator", "-c", "CricketServiceContext"]

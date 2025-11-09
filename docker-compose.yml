@@ -1,4 +1,5 @@
 services:
+  #existing db container
   postgres:
     image: postgres:latest
     container_name: cricket-service-db
@@ -12,5 +13,65 @@ services:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
 
+  # CricketService API container
+  cricketservice-api:
+    build:
+      context: .
+      dockerfile: CricketService.Api/Dockerfile
+    ports:
+      - "5001:5001"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - PostgresServer__ConnectionString=Host=cricket-service-database;Port=5432;Username=postgres;Password=admin;Database=cricket_database
+      - Hangfire__DatabaseConnectionString=Host=hangfire-database;Port=5432;Username=postgres;Password=admin;Database=hangfire
+    depends_on:
+      - cricket-service-database
+      - hangfire-database
+
+  # new db container on port 5440
+  cricket-service-database:
+    image: postgres:latest
+    container_name: cricket-info-service-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: cricket_database
+    ports:
+      - "5440:5432"  # Maps host port 5440 to container port 5432
+    volumes:
+      - cricket-info-service-db:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # hangfire db container on port 5441
+  hangfire-database:
+    image: postgres:latest
+    container_name: hangfire-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: hangfire
+    ports:
+      - "5441:5432"  # Maps host port 5441 to container port 5432
+    volumes:
+      - hangfire-db:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # migrator:
+  #   build:
+  #     context: .
+  #     dockerfile: CricketService.Migrator/Dockerfile.migrator
+  #   image: cricketservice-migrator:latest
+  #   container_name: cricketservice-migrator
+  #   platform: linux/amd64
+  #   depends_on:
+  #     - cricket-service-database
+  #     - hangfire-database
+  #   command: ["dotnet", "CricketService.Migrator.dll"]
+  #   environment:
+  #     ASPNETCORE_ENVIRONMENT: Development
+  #   restart: "no"
+
 volumes:
   postgres_data:
+  cricket-info-service-db:
+  hangfire-db:
