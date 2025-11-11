@@ -1,23 +1,10 @@
 services:
-  #existing db container
-  postgres:
-    image: postgres:latest
-    container_name: cricket-service-db
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: cricket_database
-    ports:
-      - "5433:5432"  # Maps host port 5433 to container port 5432
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    restart: unless-stopped
-
   # CricketService API container
   cricketservice-api:
     build:
       context: .
       dockerfile: CricketService.Api/Dockerfile
+    container_name: cricketservice-api
     ports:
       - "5001:5001"
     environment:
@@ -32,44 +19,33 @@ services:
   cricket-service-database:
     image: postgres:latest
     container_name: cricket-info-service-db
+    env_file:
+      - .env
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: cricket_database
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - "5440:5432"  # Maps host port 5440 to container port 5432
     volumes:
-      - cricket-info-service-db:/var/lib/postgresql/data
+      - cricket-info-service-db:/var/lib/postgresql
     restart: unless-stopped
 
   # hangfire db container on port 5441
   hangfire-database:
     image: postgres:latest
     container_name: hangfire-db
+    env_file:
+      - .env
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: hangfire
+      POSTGRES_USER: ${HANGFIRE_USER}
+      POSTGRES_PASSWORD: ${HANGFIRE_PASSWORD}
+      POSTGRES_DB: ${HANGFIRE_DB}
     ports:
       - "5441:5432"  # Maps host port 5441 to container port 5432
     volumes:
-      - hangfire-db:/var/lib/postgresql/data
+      - hangfire-db:/var/lib/postgresql
     restart: unless-stopped
-
-  # migrator:
-  #   build:
-  #     context: .
-  #     dockerfile: CricketService.Migrator/Dockerfile.migrator
-  #   image: cricketservice-migrator:latest
-  #   container_name: cricketservice-migrator
-  #   platform: linux/amd64
-  #   depends_on:
-  #     - cricket-service-database
-  #     - hangfire-database
-  #   command: ["dotnet", "CricketService.Migrator.dll"]
-  #   environment:
-  #     ASPNETCORE_ENVIRONMENT: Development
-  #   restart: "no"
 
 volumes:
   postgres_data:

@@ -49,17 +49,31 @@ namespace CricketService.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "cricket_teams_history_h2h",
+                columns: table => new
+                {
+                    match_uuid = table.Column<Guid>(type: "uuid", nullable: false),
+                    team1_name = table.Column<string>(type: "text", nullable: false),
+                    team2_name = table.Column<string>(type: "text", nullable: false),
+                    match_number = table.Column<int>(type: "integer", nullable: false),
+                    instant_teams_records = table.Column<string>(type: "jsonb", nullable: false),
+                    format = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_cricket_teams_history_h2h", x => x.match_uuid);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "cricket_teams_info",
                 columns: table => new
                 {
                     uuid = table.Column<Guid>(type: "uuid", nullable: false),
                     team_name = table.Column<string>(type: "text", nullable: false),
                     formats = table.Column<string>(type: "text", nullable: false),
+                    country = table.Column<string>(type: "text", nullable: false),
                     logo_url = table.Column<string>(type: "text", nullable: false),
-                    flag_url = table.Column<string>(type: "text", nullable: false),
-                    test_records = table.Column<string>(type: "jsonb", nullable: false),
-                    odi_records = table.Column<string>(type: "jsonb", nullable: false),
-                    t20i_records = table.Column<string>(type: "jsonb", nullable: false)
+                    flag_url = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -131,6 +145,7 @@ namespace CricketService.Data.Migrations
                 columns: table => new
                 {
                     uuid = table.Column<Guid>(type: "uuid", nullable: false),
+                    match_days = table.Column<string>(type: "text", nullable: false),
                     team1_details = table.Column<string>(type: "jsonb", nullable: false),
                     team2_details = table.Column<string>(type: "jsonb", nullable: false),
                     tv_umpire = table.Column<string>(type: "text", nullable: false),
@@ -197,6 +212,9 @@ namespace CricketService.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "cricket_teams_history");
+
+            migrationBuilder.DropTable(
+                name: "cricket_teams_history_h2h");
 
             migrationBuilder.DropTable(
                 name: "limited_over_international_matches");

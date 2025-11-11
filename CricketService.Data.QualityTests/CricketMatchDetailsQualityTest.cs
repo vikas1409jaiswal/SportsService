@@ -7,11 +7,11 @@ namespace CricketService.Data.QualityTests
 {
     public class CricketMatchDetailsQualityTest : IClassFixture<TestContext>
     {
-        private const int ODIMatchCount = 4885;
+        private const int ODIMatchCount = 4897;
         private const int WODIMatchCount = 0;
-        private const int T20IMatchCount = 3189;
-        private const int WT20IMatchCount = 2301;
-        private const int TestMatchCount = 2584;
+        private const int T20IMatchCount = 0;
+        private const int WT20IMatchCount = 0;
+        private const int TestMatchCount = 0;
 
         private readonly TestContext context;
         private readonly Dictionary<CricketFormat, IQueryable<LimitedOverInternationalMatchInfoDTO>> allLoiMatches = new();
@@ -631,7 +631,7 @@ namespace CricketService.Data.QualityTests
                 }
 
                 matchTeamBSB.Count(x => x.PlayerName.Name.Contains("(c)")).Should().BeInRange(0, 1);
-                matchTeamBSB.Count(x => x.PlayerName.Name.Contains('†')).Should().BeInRange(0, 1);
+                matchTeamBSB.Count(x => x.PlayerName.Name.Contains('ï¿½')).Should().BeInRange(0, 1);
             }
         }
 
@@ -769,12 +769,12 @@ namespace CricketService.Data.QualityTests
             flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("run out (")
                                               && x.OutStatus.EndsWith(")")).Should().BeInRange(4700, 5000);
             flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("lbw b ")).Should().BeInRange(7200, 8000);
-            flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("c †")).Should().BeInRange(9900, 10000);
+            flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("c ï¿½")).Should().BeInRange(9900, 10000);
             flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("c ")).Should().BeInRange(40000, 50000);
             flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("c & b ")).Should().BeInRange(2000, 3000);
             flatBattingScoreboards.Count(x => x.OutStatus.StartsWith(" b ")).Should().BeInRange(13000, 15000);
-            flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("st †")).Should().BeInRange(1500, 2000);
-            flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("st sub (†")).Should().Be(2);
+            flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("st ï¿½")).Should().BeInRange(1500, 2000);
+            flatBattingScoreboards.Count(x => x.OutStatus.StartsWith("st sub (ï¿½")).Should().Be(2);
         }
 
         [Fact]

@@ -19,9 +19,14 @@ This is a modular .NET 6 solution with React frontend for cricket data managemen
 ## Key Development Workflows
 ```bash
 # Database setup
-docker-compose up -d  # Starts Postgres on port 5433
+docker-compose up -d  # Starts Postgres on port 5440
 dotnet run --project CricketService.Migrator  # Run migrations
 dotnet run --project CricketService.Seeder    # Seed data
+
+# EF Core migrations (see command.md for details)
+dotnet ef migrations add AddAllCricketTables --project CricketService.Data --startup-project CricketService.Api -c CricketServiceContext
+dotnet ef database update --project CricketService.Migrator -c CricketServiceContext
+dotnet ef migrations remove --project CricketService.Data --startup-project CricketService.Api -c CricketServiceContext
 
 # API development  
 dotnet run --project CricketService.Api       # Starts API backend only

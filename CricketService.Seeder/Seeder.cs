@@ -32,12 +32,17 @@ namespace CricketService.Seeder
             var jsonFilePathsOptions = configs.GetSection(StaticDataJsonFilePathsOptions.SectionName).Get<StaticDataJsonFilePathsOptions>();
             var seedDataFeatures = configs.GetSection(SeedDataFeatureOptions.SectionName).Get<SeedDataFeatureOptions>();
 
-            if (seedDataFeatures!.T20IMatches && jsonFilePathsOptions!.T20IMatchesData is not null)
+            if (seedDataFeatures!.T20IMatches && jsonFilePathsOptions!.T20IMatchesData?.Length > 0)
             {
-                StreamReader r = new StreamReader(jsonFilePathsOptions!.T20IMatchesData);
+                foreach (var filePath in jsonFilePathsOptions.T20IMatchesData)
+                {
+                    StreamReader r = new StreamReader(filePath);
 
-                matchesData = JsonConvert.DeserializeObject<List<InternationalCricketMatchRequest>>(r.ReadToEnd())!
-                    .OrderBy(m => Convert.ToInt32(m.MatchNumber.Replace("T20I no. ", string.Empty))).ToList();
+                    var fileMatchesData = JsonConvert.DeserializeObject<List<InternationalCricketMatchRequest>>(r.ReadToEnd())!
+                        .OrderBy(m => Convert.ToInt32(m.MatchNumber.Replace("T20I no. ", string.Empty))).ToList();
+                    
+                    matchesData.AddRange(fileMatchesData);
+                }
 
                 if (seedDataFeatures.WritePdfs)
                 {
@@ -66,11 +71,17 @@ namespace CricketService.Seeder
                 }
             }
 
-            if (seedDataFeatures!.ODIMatches && jsonFilePathsOptions!.ODIMatchesData is not null)
+            if (seedDataFeatures!.ODIMatches && jsonFilePathsOptions!.ODIMatchesData?.Length > 0)
             {
-                StreamReader r = new StreamReader(jsonFilePathsOptions!.ODIMatchesData);
+                matchesData.Clear(); // Clear from previous section
+                
+                foreach (var filePath in jsonFilePathsOptions.ODIMatchesData)
+                {
+                    StreamReader r = new StreamReader(filePath);
 
-                matchesData = JsonConvert.DeserializeObject<List<InternationalCricketMatchRequest>>(r.ReadToEnd())!;
+                    var fileMatchesData = JsonConvert.DeserializeObject<List<InternationalCricketMatchRequest>>(r.ReadToEnd())!;
+                    matchesData.AddRange(fileMatchesData);
+                }
 
                 if (seedDataFeatures.WritePdfs)
                 {
@@ -94,11 +105,17 @@ namespace CricketService.Seeder
                 }
             }
 
-            if (seedDataFeatures!.TestMatches && jsonFilePathsOptions!.TestMatchesData is not null)
+            if (seedDataFeatures!.TestMatches && jsonFilePathsOptions!.TestMatchesData?.Length > 0)
             {
-                StreamReader r = new StreamReader(jsonFilePathsOptions!.TestMatchesData);
+                List<TestCricketMatchRequest> testMatchesData = new List<TestCricketMatchRequest>();
+                
+                foreach (var filePath in jsonFilePathsOptions.TestMatchesData)
+                {
+                    StreamReader r = new StreamReader(filePath);
 
-                var testMatchesData = JsonConvert.DeserializeObject<List<TestCricketMatchRequest>>(r.ReadToEnd())!;
+                    var fileTestMatchesData = JsonConvert.DeserializeObject<List<TestCricketMatchRequest>>(r.ReadToEnd())!;
+                    testMatchesData.AddRange(fileTestMatchesData);
+                }
 
                 if (seedDataFeatures.WritePdfs)
                 {
@@ -122,11 +139,17 @@ namespace CricketService.Seeder
                 }
             }
 
-            if (seedDataFeatures!.T20DMatches && jsonFilePathsOptions!.IPLMatchesData is not null)
+            if (seedDataFeatures!.T20DMatches && jsonFilePathsOptions!.IPLMatchesData?.Length > 0)
             {
-                StreamReader r = new StreamReader(jsonFilePathsOptions!.IPLMatchesData);
+                List<DomesticCricketMatchRequest> iplMatchesData = new List<DomesticCricketMatchRequest>();
+                
+                foreach (var filePath in jsonFilePathsOptions.IPLMatchesData)
+                {
+                    StreamReader r = new StreamReader(filePath);
 
-                var iplMatchesData = JsonConvert.DeserializeObject<List<DomesticCricketMatchRequest>>(r.ReadToEnd())!;
+                    var fileIplMatchesData = JsonConvert.DeserializeObject<List<DomesticCricketMatchRequest>>(r.ReadToEnd())!;
+                    iplMatchesData.AddRange(fileIplMatchesData);
+                }
 
                 if (seedDataFeatures.WritePdfs)
                 {

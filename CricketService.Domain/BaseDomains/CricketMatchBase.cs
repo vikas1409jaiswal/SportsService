@@ -18,7 +18,7 @@ namespace CricketService.Domain.BaseDomains
           string seriesResult,
           string matchNumber,
           string matchDate,
-          string matchDays,
+          string matchType,
           string matchTitle,
           string venue,
           string tossWinner,
@@ -37,7 +37,7 @@ namespace CricketService.Domain.BaseDomains
             PlayerOfTheMatch = playerOfTheMatch;
             MatchNumber = ModelValidationPrecondition.IsNotNullOrWhitespace(matchNumber, nameof(matchNumber), Source);
             MatchDate = ModelValidationPrecondition.IsNotNullOrWhitespace(matchDate, nameof(matchDate), Source);
-            MatchType = matchDays.Contains(" - ") ? matchDays.Split(" - ")[1] : matchDays;
+            MatchType = ModelValidationPrecondition.IsNotNullOrWhitespace(matchType, nameof(matchType), Source);
             MatchTitle = ModelValidationPrecondition.IsNotNullOrWhitespace(matchTitle, nameof(matchTitle), Source);
             Venue = ModelValidationPrecondition.IsNotNullOrWhitespace(venue, nameof(venue), Source);
             TossWinner = tossWinner;

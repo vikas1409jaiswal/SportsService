@@ -21,7 +21,24 @@ namespace CricketService.Data.Utils
             this.mapper = mapper;
             this.logger = logger;
 
-            StreamReader headerReader = new(@"D:\MyYoutubeRepos\repo\CricketService\CricketService.Data\Utils\CricketMatch.cshtml");
+            // Use a relative path so it works both locally and in Docker
+            var baseDir = AppContext.BaseDirectory;
+            var templatePath = Path.Combine(baseDir, "CricketService.Data", "Utils", "CricketMatch.cshtml");
+            if (!File.Exists(templatePath))
+            {
+                // Try fallback to just in case the structure is different in dev
+                templatePath = Path.Combine(Directory.GetCurrentDirectory(), "CricketService.Data", "Utils", "CricketMatch.cshtml");
+            }
+            if (!File.Exists(templatePath))
+            {
+                // Try fallback to local relative path
+                templatePath = Path.Combine("CricketService.Data", "Utils", "CricketMatch.cshtml");
+            }
+            if (!File.Exists(templatePath))
+            {
+                throw new FileNotFoundException($"Could not find CricketMatch.cshtml template at {templatePath}");
+            }
+            using var headerReader = new StreamReader(templatePath);
             htmlString = headerReader.ReadToEnd();
         }
 

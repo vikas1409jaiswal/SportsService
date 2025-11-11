@@ -27,5 +27,7 @@ RUN dotnet publish "CricketService.Api.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+# Copy the CricketMatch.cshtml template for PDF generation
+COPY ../CricketService.Data/Utils/CricketMatch.cshtml ./CricketService.Data/Utils/CricketMatch.cshtml
 ENV ASPNETCORE_URLS=http://+:5001
 ENTRYPOINT ["dotnet", "CricketService.Api.dll"]

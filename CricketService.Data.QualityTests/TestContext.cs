@@ -6,7 +6,7 @@ namespace CricketService.Data.QualityTests
     public class TestContext : IDisposable
     {
         private const string ConnectionString =
-            "Host=localhost;Port=5433;Username=postgres;Password=admin;Database=cricket_database";
+            "Host=localhost;Port=5440;Username=postgres;Password=admin;Database=cricket_database";
 
         public CricketServiceContext DbContext { get; private set; }
 
