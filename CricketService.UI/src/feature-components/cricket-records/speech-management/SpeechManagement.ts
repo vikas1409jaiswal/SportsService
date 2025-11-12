@@ -1,7 +1,7 @@
 import { config } from "../../../configs";
-import { SpeechLanguage, speakText } from "../../common/SpeakText";
+import { SpeechLanguage, speakText } from "../../../components/common/SpeakText";
 import { ESPNTableRow } from "../hook/useCustomESPNTable";
-import engToHinJson from "./../../../data/StaticData/englishToHindi.json";
+import engToHinJson from "../../../data/StaticData/englishToHindi.json";
 
 const getValue = (row: ESPNTableRow, key: string) =>
   row?.data.find((x) => x.key === key)?.value || "";

@@ -6,7 +6,7 @@
         border: 2px solid black;
         padding: 10px;
         margin: 5px;
-        background: linear-gradient(pink, blue);
+        background: linear-gradient(orange, greenyellow);
         color: white;
         border-radius: 30px;
         box-shadow: none;
@@ -14,9 +14,11 @@
         img {
             height: 600px;
             width: 100%;
-            border: 2px solid black;
+            border: 2.5px solid #1103d4;
             border-radius: 30px;
-            background-image: radial-gradient(white, rgba(139, 238, 130, 0.489), black);
+            object-fit: cover;
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18), 0 2px 8px 0 rgba(0,0,0,0.10);
+            transition: box-shadow 0.3s, border-color 0.3s;
         }
 
         p {

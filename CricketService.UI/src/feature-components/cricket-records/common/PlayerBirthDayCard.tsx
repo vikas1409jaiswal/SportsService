@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { PlayerImageContainer } from "./PlayerImageContainer";
 import { getNameFromHref } from "../../../utils/ReusableFuctions";
-import { SpeechLanguage, speakText } from "../../common/SpeakText";
+import { SpeechLanguage, speakText } from "../../../components/common/SpeakText";
 import { useInView } from "react-intersection-observer";
 import {
   ESPNPlayerInfo,

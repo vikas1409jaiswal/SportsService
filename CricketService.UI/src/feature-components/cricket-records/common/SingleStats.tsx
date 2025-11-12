@@ -1,6 +1,6 @@
 import React from "react";
 import "./SingleStats.scss";
-import { AnimatedNumber } from "./../../../components/common/AnimatedNumber";
+import { AnimatedNumber } from "../../../components/common/AnimatedNumber";
 
 interface SingleStatsProps {
   singleStat: {

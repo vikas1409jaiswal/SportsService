@@ -1,5 +1,5 @@
 import React from "react";
-import logos from "./../../../data/StaticData/teamLogos.json";
+import logos from "../../../data/StaticData/teamLogos.json";
 
 import "./TeamImageContainer.scss";
 

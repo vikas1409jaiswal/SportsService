@@ -12,7 +12,7 @@ import {
 } from "../../../CricketComponents/CricketPlayerInfoFetch/useCustomPlayerInfo";
 import { SingleStats } from "./SingleStats";
 import { CountryContent } from "./CountryContent";
-import RotatingCircle from "../../../cricket-records/common/RotatingCircle";
+import RotatingCircle from "../../../../feature-components/cricket-records/common/RotatingCircle";
 import { featureToggle } from "./feature-toggle";
 import $ from "jquery";
 

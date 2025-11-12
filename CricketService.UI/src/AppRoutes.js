@@ -1,29 +1,59 @@
-import { Home } from "./components/Home";
+import { CricketMatchesTable } from "./feature-components/cricket-matches-analysis/CricketMatchesTable";
 import { CricketHomePage } from "./components/CricketHomePage";
-import { CricketTeamRecords } from "./components/CricketComponents/CricketTeamRecords/CricketTeamRecords";
-import { CricketPlayerRecords } from "./components/CricketComponents/CricketPlayerRecords/CricketPlayerRecords";
-import { CricketAnimations } from "./components/CricketComponents/CricketMatchRecords/CricketAnimations";
+import { CricketPlayersProfile } from "./components/cricket-players/CricketPlayersProfile";
+import { CricketRecords } from "./feature-components/cricket-records/CricketRecords";
+import { CricketPlayerComparison } from "./components/cricket-player-comparison/CricketPlayerComparison";
+import { CricketSquads } from "./components/cricket-squads/CricketSquads";
+import { CricketMatchHomePage } from "./components/cricket-matches/CricketMatchHomePage";
+import { TestCricketMatch } from "./components/cricket-matches/TestCricketMatch";
+import { H2HRecords } from "./components/cricket-head-to-head/H2HRecords";
+import { ThreeDGraphics } from "./3d-graphix/ThreeDGraphics";
+import { SvgDemo } from "./components/SvgDemo";
 
 const AppRoutes = [
   {
     index: true,
-    element: <Home />,
+    element: <CricketMatchesTable />,
   },
   {
     path: "/cricket",
     element: <CricketHomePage />,
   },
   {
-    path: "/cricket-team-records",
-    element: <CricketTeamRecords />,
+    path: "/players",
+    element: <CricketPlayersProfile />,
   },
   {
-    path: "/cricket-player-records",
-    element: <CricketPlayerRecords />,
+    path: "/records",
+    element: <CricketRecords />,
   },
   {
-    path: "/cricket-match-records",
-    element: <CricketAnimations />,
+    path: "/comparison",
+    element: <CricketPlayerComparison />,
+  },
+  {
+    path: "/squads",
+    element: <CricketSquads />,
+  },
+  {
+    path: "/matches",
+    element: <CricketMatchHomePage />,
+  },
+  {
+    path: "/test-matches",
+    element: <TestCricketMatch />,
+  },
+  {
+    path: "/h2h",
+    element: <H2HRecords />,
+  },
+  {
+    path: "/3d",
+    element: <ThreeDGraphics />,
+  },
+  {
+    path: "/svg-demo",
+    element: <SvgDemo />,
   },
 ];
 

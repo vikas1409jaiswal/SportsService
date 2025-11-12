@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
+import "./RotatingCylinder.scss";
+
 interface RotatingCylinderProps {
   images: string[];
   isStopOnHover?: boolean;
@@ -86,21 +88,9 @@ export const RotatingCylinder: React.FC<RotatingCylinderProps> = ({
           <div
             key={index}
             style={{
-              position: "absolute",
-              width: "100%",
-              height: "100%",
               transform: `rotateY(${
                 index * (360 / images.length)
               }deg) translateZ(${translateZ || 100}px)`,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              border: "2px solid black",
-              borderRadius: "10px",
-              padding: "0px",
-              background: "none",
-              backgroundColor: "white",
-              marginTop: 10,
             }}
           >
             <img
@@ -111,7 +101,6 @@ export const RotatingCylinder: React.FC<RotatingCylinderProps> = ({
                 maxHeight: height,
                 width: "95%",
                 height: "95%",
-                //backgroundColor: "white",
                 background: "none",
               }}
             />

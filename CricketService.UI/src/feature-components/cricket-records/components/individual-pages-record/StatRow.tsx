@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./StatRow.scss";
-import { AnimatedValueContent } from "../../../cricket-players/cricket-body/PlayerInfo/AnimatedValueContent";
+import { AnimatedValueContent } from "../../../../components/cricket-players/cricket-body/PlayerInfo/AnimatedValueContent";
 import { config } from "../../../../configs";
-import engtohindi from "./../../../../data/StaticData/englishToHindi.json";
+import engtohindi from "../../../../data/StaticData/englishToHindi.json";
 
 interface StatRowProps {
   singleStat: {

@@ -11,8 +11,6 @@ export const IndividualPages: React.FunctionComponent<IndividualPagesProps> = ({
 }) => {
   const [selectedRowIndex, setSelectedRowIndex] = useState(0);
 
-  console.log(rows);
-
   return (
     <IndividualPage
       row={rows[selectedRowIndex]}

@@ -1,8 +1,8 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { ReactNode, useEffect } from "react";
-import { PlayerImage } from "../../cricket-matches/screens/elements/PlayerImage";
+import { PlayerImage } from "../../../components/cricket-matches/screens/elements/PlayerImage";
 import RotatingCircle from "./RotatingCircle";
-import { CountryContent } from "../../cricket-players/cricket-body/PlayerInfo/CountryContent";
+import { CountryContent } from "../../../components/cricket-players/cricket-body/PlayerInfo/CountryContent";
 
 import "./PlayerImageContainer.scss";
 
@@ -67,6 +67,9 @@ export const PlayerImageContainer: React.FC<PlayerImageContainerProps> = ({
           href={playerHref}
           playerInfos={[]}
           teamName={teamName}
+          imgStyle={{
+            backgroundImage: 'radial-gradient(white, rgba(189, 206, 187, 0.88), black)'
+          }}
         />
         {extraInfo?.map((x: any) => (x?.props.children !== "" ? x : null))}
       </motion.div>

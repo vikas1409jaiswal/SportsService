@@ -9,11 +9,13 @@
     overflow: hidden;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
+    border: 2px solid black;
 
     .rotating-circle{
         position: absolute;
         margin-top: -330px;
         margin-left: 390px;
+        background-color: darkgreen;
     }
 
     .cricket-player-details {
@@ -22,23 +24,28 @@
         background: none;
 
         p.player-header {
-            font-size: 50px;
-            font-family: Arial;
+            font-size: 60px;
+            font-family: Arial, sans-serif;
             font-style: normal;
             font-weight: 800;
-            padding-left: 20px;
-            border: 2px solid white;
+            padding: 10px 20px;
+            border: 2px solid #fff;
             border-radius: 10px 50px;
-            background: url('http://localhost:3013/textures/1003.jpg');
-            background-size: 100% 100%;
-            margin: 10px;
-            padding: 10px;
+            background: url('http://localhost:3013/textures/1003.jpg') center/cover no-repeat;
+            margin: 10px auto;
             text-align: center;
+            max-width: 90%;
 
             a {
                 text-decoration: none;
-                color: white;
-            } 
+                color: black;
+                transition: color 0.2s;
+                text-shadow:
+                  0 0 8px #fff,
+                  0 0 16px #fff,
+                  0 0 24px #fff,
+                  0 0 32px #fff;
+            }
         }
 
         .cricket-player-details-section {

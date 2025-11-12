@@ -1,20 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
+import playersRolesInfo from "./players-roles-info.json";
 import { motion, useAnimation } from "framer-motion";
 import { ESPNTableRow } from "../../hook/useCustomESPNTable";
 import $ from "jquery";
 import { StatRow } from "./StatRow";
 import { PlayerImageContainer } from "../../common/PlayerImageContainer";
 import { speeches } from "../../speech-management/SpeechManagement";
-import engtohijson from "./../../../../data/StaticData/englishToHindi.json";
-
-import "./IndividualPage.scss";
+import engToHiJson from "../../../../data/StaticData/englishToHindi.json";
 import {
   ESPNPlayerInfo,
   useESPNPlayerInfo,
 } from "../../../../hooks/espn-cricinfo-hooks/usePlayerInfo";
 import { config } from "../../../../configs";
 import { getNameFromHref } from "../../../../utils/ReusableFuctions";
-import { SingleStats } from "./../../common/SingleStats";
+import { SingleStats } from "../../common/SingleStats";
+
+import "./IndividualPage.scss";
 
 type IndividualPageProps = {
   row: ESPNTableRow;
@@ -27,6 +28,7 @@ export const IndividualPage: React.FunctionComponent<IndividualPageProps> = ({
   selectedRowIndex,
   setSelectedRowIndex,
 }) => {
+  const cricketPositions = (engToHiJson as any)["cricket-positions"];
   const playerHref =
     row?.data.find((x) => x.key === "Player Href")?.value || "";
   const teamName =
@@ -43,8 +45,27 @@ export const IndividualPage: React.FunctionComponent<IndividualPageProps> = ({
 
   const playerDetailsControl = useAnimation();
 
-  const { teamNames, playingRole, battingStyle, bowlingStyle } =
+  const { teamNames, playingRole: apiPlayingRole, battingStyle: apiBattingStyle, bowlingStyle: apiBowlingStyle } =
     useESPNPlayerInfo(playerHref) as ESPNPlayerInfo;
+
+  // Fallback to JSON if API values are undefined
+  const { playingRole, battingStyle, bowlingStyle } = useMemo(() => {
+    if (apiPlayingRole && apiBattingStyle && apiBowlingStyle) {
+      return {
+        playingRole: apiPlayingRole,
+        battingStyle: apiBattingStyle,
+        bowlingStyle: apiBowlingStyle,
+      };
+    }
+    const match = playersRolesInfo.find(
+      (p) => p.playerHref && playerHref && p.playerHref === playerHref
+    );
+    return {
+      playingRole: apiPlayingRole || match?.playingRole || "",
+      battingStyle: apiBattingStyle || match?.battingStyle || "",
+      bowlingStyle: apiBowlingStyle || match?.bowlingStyle || "",
+    };
+  }, [apiPlayingRole, apiBattingStyle, apiBowlingStyle, playerHref]);
 
   useEffect(() => {
     config.isAnimation &&
@@ -165,29 +186,25 @@ export const IndividualPage: React.FunctionComponent<IndividualPageProps> = ({
       <PlayerImageContainer
         playerHref={playerHref}
         selectedRowIndex={selectedRowIndex}
-        teamName={
-          teamName
-        }
-        extraInfo={[
-          <p>
-            {config.language === "hindi"
-              ? (engtohijson as any)["cricket-positions"][playingRole]
-              : playingRole}
-          </p>,
-          <p>
-            {config.language === "hindi"
-              ? (engtohijson as any)["cricket-positions"][battingStyle]
-              : battingStyle}
-          </p>,
-          <p>
-            {config.language === "hindi"
-              ? bowlingStyle
-                  .split(", ")
-                  .map((x) => (engtohijson as any)["cricket-positions"][x])
-                  .join(", ")
-              : bowlingStyle}
-          </p>,
-        ]}
+        teamName={teamName}
+        extraInfo={(() => {
+          if (config.language === "hindi") {
+            return [
+              <p>{cricketPositions[playingRole]}</p>,
+              <p>{cricketPositions[battingStyle]}</p>,
+              <p>{bowlingStyle
+                .split(", ")
+                .map((x) => cricketPositions[x])
+                .join(", ")}</p>,
+            ];
+          } else {
+            return [
+              <p>{playingRole}</p>,
+              <p>{battingStyle}</p>,
+              <p>{bowlingStyle}</p>,
+            ];
+          }
+        })()}
       />
       {playerDetailsContainer}
     </div>

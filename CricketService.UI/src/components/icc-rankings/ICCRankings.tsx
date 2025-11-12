@@ -1,6 +1,6 @@
 import React from "react";
 import { useICCRankings } from "../../hooks/icc-rankings-hooks/useICCRankings";
-import RotatingCircle from "../cricket-records/common/RotatingCircle";
+import RotatingCircle from "../../feature-components/cricket-records/common/RotatingCircle";
 import { useAllPlayersUuids } from "../hooks/useAllPlayersUuids";
 import { CountryFlag } from "../cricket-matches/screens/elements/CountryFlag";
 import { FaThumbsUp, FaShareAlt } from "react-icons/fa";

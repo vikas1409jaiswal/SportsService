@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { PlayerImageContainer } from "../cricket-records/common/PlayerImageContainer";
+import { PlayerImageContainer } from "../../feature-components/cricket-records/common/PlayerImageContainer";
 import {
   ESPNPlayerInfo,
   useESPNPlayerInfo,

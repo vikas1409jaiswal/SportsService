@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { MovingTrainRecord } from "./components/moving-train-record/MovingTrainRecord";
-import playerBirthDays from "./../../data/StaticData/birthdays.json";
+import playerBirthDays from "../../data/StaticData/birthdays.json";
 import { ESPNTableRow } from "./hook/useCustomESPNTable";
 import $ from "jquery";
 
 import "./CricketersBirthDays.scss";
 import { getNameFromHref } from "../../utils/ReusableFuctions";
-import { speakText } from "../common/SpeakText";
+import { speakText } from "../../components/common/SpeakText";
 
 interface CricketersBirthDaysProps {}
 

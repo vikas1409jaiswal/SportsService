@@ -113,8 +113,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src/",
     "lintfix": "npx prettier --write .",
-    "pics": "node D:\\MyYoutubeRepos\\repo\\CricketService\\CricketService.Api\\ClientApp\\src\\servers\\localHostServer.js",
-    "cricket-player-server": "node D:\\MyYoutubeRepos\\repo\\CricketService\\CricketService.Api\\ClientApp\\src\\components\\cricket-players\\customPlayerServer.js",
+    "pics": "node D:\\MyYoutubeRepos\\repo\\CricketService\\CricketService.UI\\src\\servers\\localHostServer.js",
+    "cricket-player-server": "node D:\\MyYoutubeRepos\\repo\\CricketService\\CricketService.UI\\src\\components\\cricket-players\\customPlayerServer.js",
     "start-both": "concurrently \"npm run start\" \"npm run pics\""
   },
   "eslintConfig": {

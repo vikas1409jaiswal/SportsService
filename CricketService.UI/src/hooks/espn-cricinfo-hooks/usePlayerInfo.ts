@@ -28,14 +28,7 @@ export const useESPNPlayerInfo = (href: string): ESPNPlayerInfo => {
   console.log("Fetching player info for href:", href);
   const { data, isLoading } = useQuery(
     ["player-data", href],
-    () => fetchESPNPlayeInfo(href),
-    {
-      staleTime: 60 * 60 * 1000, // 1 hour in milliseconds
-      cacheTime: 60 * 60 * 1000, // 1 hour in milliseconds
-      refetchOnWindowFocus: false, // Don't refetch when window regains focus
-      refetchOnReconnect: false, // Don't refetch when regaining network connection
-      refetchOnMount: false, // Only refetch when stale (after 1 hour)
-    }
+    () => fetchESPNPlayeInfo(href)
   );
 
   const divElement = document.createElement("div");
@@ -102,7 +95,7 @@ export const useESPNPlayerInfo = (href: string): ESPNPlayerInfo => {
 
   name?.pop();
 
-  console.log(infoGridRows);
+  console.log(divElement.innerHTML);
 
   return {
     name: name?.join(" "),

@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
-import playerPictures from "./../../../../data/StaticData/playerPictures.json";
+import React from "react";
 import { PlayerShortInfo } from "../../../hooks/useAllPlayersUuids";
 import { motion, useAnimation } from "framer-motion";
-import teamLogos from "./../../../../data/StaticData/teamLogos.json";
 
 interface PlayerImageProps {
   alt: string;
@@ -12,16 +10,17 @@ interface PlayerImageProps {
   height?: number;
   width?: number;
   teamName?: string;
+  imgStyle?: React.CSSProperties;
 }
 
 export const PlayerImage: React.FC<PlayerImageProps> = ({
   alt,
   href,
-  playerInfos,
   className,
   width,
   height,
   teamName,
+  imgStyle,
 }) => {
   const control = useAnimation();
 
@@ -39,6 +38,7 @@ export const PlayerImage: React.FC<PlayerImageProps> = ({
       }
       height={height || 500}
       width={width || 400}
+      style={imgStyle}
     />
   );
 };

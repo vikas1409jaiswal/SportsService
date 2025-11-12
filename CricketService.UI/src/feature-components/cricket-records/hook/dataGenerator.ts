@@ -1,5 +1,5 @@
 import { ESPNTableRow } from "./useCustomESPNTable";
-import teamLogos from "./../../../data/StaticData/teamLogos.json";
+import teamLogos from "../../../data/StaticData/teamLogos.json";
 
 const getFullTeamName = (shortName: string) => {
   switch (shortName) {

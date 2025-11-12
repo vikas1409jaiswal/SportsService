@@ -1,6 +1,6 @@
 import React from "react";
 import { ESPNTableRow } from "../../hook/useCustomESPNTable";
-import { MovingTrain } from "../../../common/MovingTrain";
+import { MovingTrain } from "../../../../components/common/MovingTrain";
 import { BogieCard } from "./BogieCard";
 import { PlayerBirthDayCard } from "../../common/PlayerBirthDayCard";
 
