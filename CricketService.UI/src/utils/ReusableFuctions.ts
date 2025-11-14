@@ -1,5 +1,5 @@
 import { config } from "../configs";
-import etohjson from "./../../src/data/StaticData/englishToHindi.json";
+import engToHinJson from "./../../src/data/StaticData/englishToHindi.json";
 
 export const toCapitalCase = (inputString: string) => {
   let words = inputString?.split(" ");
@@ -36,9 +36,9 @@ export const getNameFromHref = (
           ?.join(" ")
       : "";
 
-  const hindiName = (etohjson as any).players[nameArr?.join(" ")];
+  const hindiName = (engToHinJson as any).players[nameArr?.join(" ")];
 
-  console.log(etohjson);
+  console.log(engToHinJson);
 
   hindiName === undefined && playerArr.push(nameArr?.join(" "));
   console.log(playerArr);

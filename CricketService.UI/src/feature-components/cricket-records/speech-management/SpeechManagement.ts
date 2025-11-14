@@ -10,11 +10,11 @@ export const speeches = {
   "top-10-players-intro": () => {
     config.language === "hindi"
       ? speakText(
-          "इस वीडियो में हम शीर्ष 10 खिलाड़ियों को देखेंगे जो एकदिवसीय अंतराष्ट्रीय मैचों में सबसे ज्यादा बार शतक से चूके और नब्बे प्लस पर आउट हुए है",
+          "इस वीडियो में हम शीर्ष 10 खिलाड़ियों को देखेंगे, जिन्होंने टेस्ट क्रिकेट में सबसे ज्यादा रन बनाये हैं",
           SpeechLanguage.HindiIndian
         )
       : speakText(
-          "In this video we will see top 10 players who had scored most runs in a single test match." // who had scored most runs in big bash league"
+          "Welcome! In this video, we will explore the top 10 players who have scored the most runs in test cricket matches."
         );
   },
   "video-end-message": () =>
@@ -29,36 +29,28 @@ export const speeches = {
   "most-career-runs-speech": (
     index: number,
     playerName: string,
-    row: ESPNTableRow
+    row: ESPNTableRow,
+    teamName: string
   ) => {
-    config.language === "hindi"
-      ? speakText(
-          `नंबर ${index + 1}, ${
-            (engToHinJson as any)["team-names"][getValue(row, "xyz")]
-          } के ${(engToHinJson as any).players[playerName]}, इन्होने ${
-            getValue(row, "Span").split("-")[0]
-          } से ${getValue(row, "Span").split("-")[1]} तक ${getValue(
-            row,
-            "Matches"
-          )} मैचों में ${getValue(row, "Runs")} रन बनाये हैं.`,
-          SpeechLanguage.HindiIndian
-        )
-      : speakText(
-          `Number ${index + 1}, ${playerName} from ${getValue(
-            row,
-            "xyz"
-          )}, ${playerName} had scored ${getValue(
-            row,
-            "Runs"
-          )} Runs in ${getValue(row, "Matches")?.replace(
-            "*",
-            ""
-          )} matches between ${getValue(row, "Span").split("-")[0]} and ${
-            getValue(row, "Span").split("-")[1]
-          }.`
-        );
+    const number = index + 1;
+    const matches = getValue(row, "Matches");
+    const runs = getValue(row, "Runs");
+    const fifties = getValue(row, "Fifties");
+    const hundreds = getValue(row, "Hundreds");
+    if (config.language === "hindi") {
+      const playerHindi = (engToHinJson as any).players[playerName];
+      const teamHindi = (engToHinJson as any)["team-names"][teamName] || teamName;
+      speakText(
+        `नंबर ${number}, ${teamHindi} के ${playerHindi}, इन्होने ${matches?.replace("*", "")} मैचों में ${runs} रन बनाये हैं. इन्होने ${fifties} अर्धशतक और ${hundreds} शतक बनाये हैं.`,
+        SpeechLanguage.HindiIndian
+      );
+    } else {
+      speakText(
+        `Number ${number}, ${playerName} from ${teamName}, ${playerName} had scored ${runs} runs in ${matches?.replace("*", "")} matches. He had scored ${fifties} Fifties and ${hundreds} Hundreds.`
+      );
+    }
   },
-   "most-single-test-runs-speech": (
+  "most-single-test-runs-speech": (
     index: number,
     playerName: string,
     row: ESPNTableRow,
@@ -77,13 +69,20 @@ export const speeches = {
           SpeechLanguage.HindiIndian
         )
       : speakText(
-          `Number ${index + 1}, ${playerName} from ${getValue(
-            row,
-            "xyz"
-          ) || teamName}, ${playerName} had scored ${getValue(
+          `Number ${index + 1}, ${playerName} from ${
+            getValue(row, "xyz") || teamName
+          }, ${playerName} had scored ${getValue(
             row,
             "Runs"
-          )} Runs against ${getValue(row, "Against")}. He had scored ${getValue(row, "1st Ing Score")?.replace("*", " not out")} in first Inning ${getValue(row, "2nd Ing Score")?.replace("*", " not out") &&  !isNaN(parseInt(getValue(row, "2nd Ing Score"))) ? `and ${getValue(row, "2nd Ing Score")} in second Inning` : ''}.`
+          )} Runs against ${getValue(row, "Against")}. He had scored ${getValue(
+            row,
+            "1st Ing Score"
+          )?.replace("*", " not out")} in first Inning ${
+            getValue(row, "2nd Ing Score")?.replace("*", " not out") &&
+            !isNaN(parseInt(getValue(row, "2nd Ing Score")))
+              ? `and ${getValue(row, "2nd Ing Score")} in second Inning`
+              : ""
+          }.`
         );
   },
   "most-career-wickets-speech": (

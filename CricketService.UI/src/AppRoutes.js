@@ -2,7 +2,7 @@ import { CricketMatchesTable } from "./feature-components/cricket-matches-analys
 import { CricketHomePage } from "./components/CricketHomePage";
 import { CricketPlayersProfile } from "./components/cricket-players/CricketPlayersProfile";
 import { CricketRecords } from "./feature-components/cricket-records/CricketRecords";
-import { CricketPlayerComparison } from "./components/cricket-player-comparison/CricketPlayerComparison";
+import { CricketPlayerComparison } from "./feature-components/cricket-player-comparison/CricketPlayerComparison";
 import { CricketSquads } from "./components/cricket-squads/CricketSquads";
 import { CricketMatchHomePage } from "./components/cricket-matches/CricketMatchHomePage";
 import { TestCricketMatch } from "./components/cricket-matches/TestCricketMatch";
@@ -28,7 +28,7 @@ const AppRoutes = [
     element: <CricketRecords />,
   },
   {
-    path: "/comparison",
+    path: "/players-comparison",
     element: <CricketPlayerComparison />,
   },
   {

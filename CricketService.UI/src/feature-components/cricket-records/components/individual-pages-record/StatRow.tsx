@@ -3,7 +3,7 @@ import React from "react";
 import "./StatRow.scss";
 import { AnimatedValueContent } from "../../../../components/cricket-players/cricket-body/PlayerInfo/AnimatedValueContent";
 import { config } from "../../../../configs";
-import engtohindi from "../../../../data/StaticData/englishToHindi.json";
+import engToHindiJson from "../../../../data/StaticData/englishToHindi.json";
 
 interface StatRowProps {
   singleStat: {
@@ -21,12 +21,12 @@ export const StatRow: React.FC<StatRowProps> = ({
     if (key === "Date") {
       return value
         .split(" ")
-        .map((x, i) => (i === 1 ? (engtohindi as any)["months"][x] : x))
+        .map((x, i) => (i === 1 ? (engToHindiJson as any)["months"][x] : x))
         .join(" ");
     } else if (key === "Against") {
-      return (engtohindi as any)["team-names"][value];
+      return (engToHindiJson as any)["team-names"][value];
     } else if (key === "Venue") {
-      return (engtohindi as any)["cricket-venues"][value];
+      return (engToHindiJson as any)["cricket-venues"][value];
     }
     return value;
   };
@@ -37,7 +37,7 @@ export const StatRow: React.FC<StatRowProps> = ({
     >
       <div className="single-stat-title text-3d">
         {config.language === "hindi"
-          ? (engtohindi as any)["cricket-words"][singleStat?.key]
+          ? (engToHindiJson as any)["cricket-words"][singleStat?.key]
           : singleStat.key?.toUpperCase()}
       </div>
       <div className="single-stat-value text-3d">

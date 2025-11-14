@@ -1,10 +1,7 @@
 import { useQuery } from "react-query";
 import axios from "axios";
 import { ApiData } from "../../../models/Api";
-import { dataGenerator, mostRunsInTestMatch } from "./dataGenerator";
-
-// Import your fallback HTML content
-import { espnFallbackHtml } from "./espnFallback";
+import { dataGenerator } from "./dataGenerator";
 
 export interface ESPNTableRow {
   data: {
@@ -31,7 +28,8 @@ const fetchESPNTable = async (): Promise<ApiData> => {
     return response.data;
   } catch (error) {
     if (axios.isAxiosError(error) && error.response?.status === 403) {
-      return espnFallbackHtml as unknown as ApiData;
+      const fallbackHtml = await fetch("/espnFallback.html").then(r => r.text());
+      return fallbackHtml as unknown as ApiData;
     }
     throw error;
   }
@@ -56,10 +54,18 @@ export const useCustomESPNTable = (maxLimit: number = 10): ESPNTableRow[] => {
   // If the expected table isn't found in the fetched HTML, use the bundled
   // fallback HTML and re-run the query against the parser div.
   if (!espnTableSelector) {
-    divElement.innerHTML = (espnFallbackHtml as unknown) as string;
-    espnTableSelector = divElement.querySelector(
-      ".ds-w-full.ds-table.ds-table-xs.ds-table-auto.ds-w-full.ds-overflow-scroll.ds-scrollbar-hide"
-    );
+    // Synchronously load fallback HTML if not already loaded (should only happen on 403 fallback)
+    // This is a fallback for local dev or if fetchESPNTable didn't already load fallback
+    // Note: In production, prefer preloading or caching this file
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "/espnFallback.html", false);
+    xhr.send(null);
+    if (xhr.status === 200) {
+      divElement.innerHTML = xhr.responseText;
+      espnTableSelector = divElement.querySelector(
+        ".ds-w-full.ds-table.ds-table-xs.ds-table-auto.ds-w-full.ds-overflow-scroll.ds-scrollbar-hide"
+      );
+    }
   }
 
   const espnTable: ESPNTableRow[] = [];

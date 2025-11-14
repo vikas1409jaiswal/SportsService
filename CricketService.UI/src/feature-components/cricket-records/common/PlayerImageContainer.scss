@@ -10,32 +10,21 @@
         color: white;
         border-radius: 30px;
         box-shadow: none;
+        display: flex;
+        flex-direction: column;
 
         img {
             height: 600px;
             width: 100%;
             border: 2.5px solid #1103d4;
             border-radius: 30px;
-            object-fit: cover;
-            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18), 0 2px 8px 0 rgba(0,0,0,0.10);
-            transition: box-shadow 0.3s, border-color 0.3s;
-        }
-
-        p {
-            text-align: center;
-            font-weight: bold;
-            background-color: gold;
-            margin: 10px;
-            padding: 2px;
-            color: black;
-            border-radius: 10px;
-            font-size: 25px;
         }
     }
 }
 
 .team-logo-cylinder {
     position: absolute;
-    margin-top: 480px;
-    margin-left: 75px;
+    margin-top: 200px;
+    margin-left: 1250px;
+    scale: 1.3;
 }

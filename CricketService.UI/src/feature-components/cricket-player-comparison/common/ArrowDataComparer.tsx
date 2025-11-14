@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { ArrowSvg } from "./ArrowSvg";
 import { useInView } from "react-intersection-observer";
-import { SpeechLanguage, speakText } from "../../common/SpeakText";
+import { SpeechLanguage, speakText } from "../../../components/common/SpeakText";
 
 import "./ArrowDataComparer.scss";
 

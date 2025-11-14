@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { PlayerImageContainer } from "../../feature-components/cricket-records/common/PlayerImageContainer";
+import { PlayerImageContainer } from "../cricket-records/common/PlayerImageContainer";
 import {
   ESPNPlayerInfo,
   useESPNPlayerInfo,
 } from "../../hooks/espn-cricinfo-hooks/usePlayerInfo";
 import { ArrowDataComparer } from "./common/ArrowDataComparer";
-import { MovingTrain } from "../common/MovingTrain";
+import { MovingTrain } from "../../components/common/MovingTrain";
 import { useFetchPlayerAllMatches } from "./hook/useFetchPlayerAllMatches";
-import { SpeechLanguage, speakText } from "../common/SpeakText";
+import { SpeechLanguage, speakText } from "../../components/common/SpeakText";
 import $ from "jquery";
 
 import "./CricketPlayerComparison.scss";

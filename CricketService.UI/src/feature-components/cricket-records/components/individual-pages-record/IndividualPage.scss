@@ -4,60 +4,93 @@
     grid-template-columns: 4fr 7fr;
     position: relative;
     box-shadow: none;
-    height: 860px;
     width: 100vw;
+    height: 100vh;
     overflow: hidden;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     border: 2px solid black;
+    background: url("http://localhost:3013/textures/1013.png");
+    background-size: 100% 100%;
+    animation: bgTransition 8s infinite alternate;
+}
 
-    .rotating-circle{
-        position: absolute;
-        margin-top: -330px;
-        margin-left: 390px;
-        background-color: darkgreen;
+p.extra-info {
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 800;
+    color: white;
+    background: linear-gradient(90deg, #391ce0 0%, #110350 100%);
+    border-left: 5px solid #6fa5f1;
+    border-radius: 8px 16px;
+    padding: 8px 18px;
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(246, 246, 247, 0.952);
+    letter-spacing: 0.5px;
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+}
+
+.rotating-circle {
+    position: absolute;
+    margin-top: -360px;
+    margin-left: 390px;
+    background-color: darkgreen;
+}
+
+.cricket-player-details {
+    height: 750px;
+    box-shadow: none;
+    background: none;
+
+    p.player-header {
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 10px 50px;
+        background: url('http://localhost:3013/textures/1003.jpg') center/cover no-repeat;
+        margin: 10px auto;
+        text-align: center;
+        max-width: 90%;
+
+        a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.2s;
+            text-shadow:
+                0 0 8px #fff,
+                0 0 16px #fff,
+                0 0 24px #fff,
+                0 0 32px #fff;
+        }
     }
 
-    .cricket-player-details {
-        height: 750px;
+    .cricket-player-details-section {
         box-shadow: none;
         background: none;
-
-        p.player-header {
-            font-size: 60px;
-            font-family: Arial, sans-serif;
-            font-style: normal;
-            font-weight: 800;
-            padding: 10px 20px;
-            border: 2px solid #fff;
-            border-radius: 10px 50px;
-            background: url('http://localhost:3013/textures/1003.jpg') center/cover no-repeat;
-            margin: 10px auto;
-            text-align: center;
-            max-width: 90%;
-
-            a {
-                text-decoration: none;
-                color: black;
-                transition: color 0.2s;
-                text-shadow:
-                  0 0 8px #fff,
-                  0 0 16px #fff,
-                  0 0 24px #fff,
-                  0 0 32px #fff;
-            }
-        }
-
-        .cricket-player-details-section {
-            box-shadow: none;
-            background: none;
-            display: grid;
-            grid-auto-rows: 250px 100px 100px 100px 100px 100px;
-        }
+        display: grid;
+        grid-auto-rows: 250px 100px 100px 100px 100px 100px;
     }
 }
 
-.moving-text-footer{
+.moving-text-footer {
     position: absolute;
     margin-top: -775px;
+}
+
+@keyframes bgTransition {
+    0% {
+        background-image: url("http://localhost:3013/textures/1013.png");
+    }
+
+    50% {
+        background-image: url("http://localhost:3013/textures/1012.png");
+    }
+
+    100% {
+        background-image: url("http://localhost:3013/textures/1013.png");
+    }
 }
