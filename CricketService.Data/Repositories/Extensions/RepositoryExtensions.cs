@@ -57,10 +57,10 @@ namespace CricketService.Data.Repositories.Extensions
 
         #region SavePlayerInformation
         public static async Task<int> SavePlayersForTeam(
-            this CricketTeam cricketTeam,
-            CricketPlayer[] playing11,
-            CricketServiceContext context,
-            CricketFormat format)
+           this CricketTeam cricketTeam,
+           CricketPlayer[] playing11,
+           CricketServiceContext context,
+           CricketFormat format)
         {
             int count = 0;
 
@@ -70,7 +70,7 @@ namespace CricketService.Data.Repositories.Extensions
 
                 var teamUuid = context.CricketTeamInfo.Single(x => x.TeamName == cricketTeam.Name).Uuid;
 
-                var playerInfo2 = await ReadPlayerFile(player.Href);
+                //var playerInfo2 = await ReadPlayerFile(player.Href);
 
                 if (isExist)
                 {
@@ -94,15 +94,15 @@ namespace CricketService.Data.Repositories.Extensions
                                     TeamUuid = teamUuid,
                                     PlayerUuid = p.Uuid,
                                     TeamName = cricketTeam.Name,
-                                    PlayerName = playerInfo2.Player.LongName,
+                                    PlayerName = player.Name,
                                     CareerStatistics = new CareerDetailsInfo(cricketTeam.Name, null!, null!, null!),
                                 });
-                         }
+                        }
 
                         context.CricketPlayerInfo.Update(p);
                         await context.SaveChangesAsync();
-                        }
                     }
+                }
                 else
                 {
                     var playerInfo = GetPlayersDataFromFile(player.Href);
@@ -136,29 +136,29 @@ namespace CricketService.Data.Repositories.Extensions
                     context.CricketPlayerInfo.Add(new CricketPlayerInfoDTO
                     {
                         Uuid = playerInfo.PlayerUuid,
-                        PlayerName = playerInfo2.Player.LongName,
-                        FullName = playerInfo2.Player.FullName,
+                        PlayerName = player.Name,
+                        FullName = player.Name,
                         Href = player.Href,
-                        ImageUrl = playerInfo2.Player.HeadshotImage is null ? (playerInfo2.Player.ImageUrl ?? string.Empty) : playerInfo2.Player.HeadshotImage.Url,
-                        DebutDetails = new DebutDetailsInfo(
-                            new DebutInfo(playerInfo.DebutDetails.T20IMatches.First, playerInfo.DebutDetails.T20IMatches.Last),
-                            new DebutInfo(playerInfo.DebutDetails.ODIMatches.First, playerInfo.DebutDetails.ODIMatches.Last),
-                            new DebutInfo(playerInfo.DebutDetails.TestMatches.First, playerInfo.DebutDetails.TestMatches.Last)),
+                        ImageUrl = string.Empty,
+                        //DebutDetails = new DebutDetailsInfo(
+                        //    new DebutInfo(playerInfo.DebutDetails.T20IMatches.First, playerInfo.DebutDetails.T20IMatches.Last),
+                        //    new DebutInfo(playerInfo.DebutDetails.ODIMatches.First, playerInfo.DebutDetails.ODIMatches.Last),
+                        //    new DebutInfo(playerInfo.DebutDetails.TestMatches.First, playerInfo.DebutDetails.TestMatches.Last)),
                         InternationalTeamNames = new List<string>() { cricketTeam.Name },
                         Formats = new List<string>() { format.ToString() },
-                        DateOfBirth = playerInfo2.Player.DateOfBirth,
-                        DateOfDeath = playerInfo2.Player.DateOfDeath,
+                        //DateOfBirth = playerInfo2.Player.DateOfBirth,
+                        //DateOfDeath = playerInfo2.Player.DateOfDeath,
                         TeamNames = string.Join(", ", playerInfo.TeamNames),
-                        ExtraInfo = new PlayerExtraInfo
-                        {
-                            InternationalCareerSpan = playerInfo2.Player.IntlCareerSpan,
-                            BattingStyle = string.Join("::", playerInfo2.Player.LongBattingStyles),
-                            BowlingStyle = string.Join("::", playerInfo2.Player.LongBowlingStyles),
-                            PlayingRole = string.Join("::", playerInfo2.Player.PlayingRoles),
-                            Height = playerInfo.Height,
-                        },
-                        Contents = playerInfo2.Content.Profile is null ? Array.Empty<string>() : playerInfo2.Content.Profile.Items.Select(x => x.Html).ToArray(),
-                        TeamsPlayersInfos = GetTeamsPlayerInfo(cricketTeam, teamUuid, playerInfo, playerInfo2),
+                        //ExtraInfo = new PlayerExtraInfo
+                        //{
+                        //    InternationalCareerSpan = playerInfo2.Player.IntlCareerSpan,
+                        //    BattingStyle = string.Join("::", playerInfo2.Player.LongBattingStyles),
+                        //    BowlingStyle = string.Join("::", playerInfo2.Player.LongBowlingStyles),
+                        //    PlayingRole = string.Join("::", playerInfo2.Player.PlayingRoles),
+                        //    Height = playerInfo.Height,
+                        //},
+                        //Contents = playerInfo2.Content.Profile is null ? Array.Empty<string>() : playerInfo2.Content.Profile.Items.Select(x => x.Html).ToArray(),
+                        TeamsPlayersInfos = new List<CricketTeamPlayerInfos>(), // GetTeamsPlayerInfo(cricketTeam, teamUuid, playerInfo, playerInfo2),
                     });
 
                     count += await context.SaveChangesAsync();

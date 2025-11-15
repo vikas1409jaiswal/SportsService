@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { SquadPlayer } from "../useCricketSquad";
 import { SpeechLanguage, speakText } from "../../common/SpeakText";
-import RotatingCircle from "../../../feature-components/cricket-records/common/RotatingCircle";
+import RotatingCircle from "../../../feature-components/common/RotatingCircle";
 import { useInView } from "react-intersection-observer";
 import * as htmlToImage from "html-to-image";
 import teamLogos from './../../../data/StaticData/teamLogos.json'

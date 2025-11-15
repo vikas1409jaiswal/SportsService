@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ESPNTableRow } from "../../hook/useCustomESPNTable";
 import { config } from "../../../../configs";
 import { getNameFromHref } from "../../../../utils/ReusableFuctions";
-import { SingleStats } from "../../common/SingleStats";
+import { SingleStats } from "../../../common/SingleStats";
 import { StatRow } from "./StatRow";
 
 interface PlayerDetailsContainerProps {

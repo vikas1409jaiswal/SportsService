@@ -1,17 +1,11 @@
-import React, { useEffect, useMemo } from "react";
-import playersRolesInfo from "./players-roles-info.json";
+import React, { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import { ESPNTableRow } from "../../hook/useCustomESPNTable";
 import $ from "jquery";
 import { PlayerDetailsContainer } from "./PlayerDetailsContainer";
-import { PlayerExtraInfo } from "./PlayerExtraInfo";
-import { PlayerImageContainer } from "../../common/PlayerImageContainer";
+import { PlayerExtraInfo } from "../../../common/PlayerExtraInfo";
+import { PlayerImageContainer } from "../../../common/PlayerImageContainer";
 import { speeches } from "../../speech-management/SpeechManagement";
-// import engToHiJson from "../../../../data/StaticData/englishToHindi.json";
-import {
-  ESPNPlayerInfo,
-  useESPNPlayerInfo,
-} from "../../../../hooks/espn-cricinfo-hooks/usePlayerInfo";
 import { config } from "../../../../configs";
 
 import "./IndividualPage.scss";
@@ -42,28 +36,6 @@ export const IndividualPage: React.FunctionComponent<IndividualPageProps> = ({
   const isLastPlayer = selectedRowIndex === 9;
 
   const playerDetailsControl = useAnimation();
-
-  const { playingRole: apiPlayingRole, battingStyle: apiBattingStyle, bowlingStyle: apiBowlingStyle } =
-    useESPNPlayerInfo(playerHref) as ESPNPlayerInfo;
-
-  // Fallback to JSON if API values are undefined
-  const { playingRole, battingStyle, bowlingStyle } = useMemo(() => {
-    if (apiPlayingRole && apiBattingStyle && apiBowlingStyle) {
-      return {
-        playingRole: apiPlayingRole,
-        battingStyle: apiBattingStyle,
-        bowlingStyle: apiBowlingStyle,
-      };
-    }
-    const match = playersRolesInfo.find(
-      (p) => p.playerHref && playerHref && p.playerHref === playerHref
-    );
-    return {
-      playingRole: apiPlayingRole || match?.playingRole || "",
-      battingStyle: apiBattingStyle || match?.battingStyle || "",
-      bowlingStyle: apiBowlingStyle || match?.bowlingStyle || "",
-    };
-  }, [apiPlayingRole, apiBattingStyle, apiBowlingStyle, playerHref]);
 
   useEffect(() => {
     config.isAnimation &&
@@ -118,9 +90,7 @@ export const IndividualPage: React.FunctionComponent<IndividualPageProps> = ({
         extraInfo={[
           <PlayerExtraInfo
             key="player-extra-info"
-            playingRole={playingRole}
-            battingStyle={battingStyle}
-            bowlingStyle={bowlingStyle}
+            playerHref={playerHref}
           />
         ]}
       />

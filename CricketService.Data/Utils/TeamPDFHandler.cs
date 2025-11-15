@@ -163,18 +163,18 @@ namespace CricketService.Data.Utils
                     AddPlayerCell(playerTable, "Batting Role", BaseColor.BLUE, Font.BOLD, 30, BaseColor.WHITE);
                     AddPlayerCell(playerTable, "Bowling Role", BaseColor.BLUE, Font.BOLD, 30, BaseColor.WHITE);
 
-                    foreach (var (player, index) in teamInfo.PlayersInfo.OrderBy(x => string.Join(", ", x.PlayerInfo.Formats)).Select((player, index) => (player, index)))
-                    {
-                        var extraInfo = player.PlayerInfo.ExtraInfo;
+                    //foreach (var (player, index) in teamInfo.PlayersInfo.OrderBy(x => string.Join(", ", x.PlayerInfo.Formats)).Select((player, index) => (player, index)))
+                    //{
+                    //    var extraInfo = player.PlayerInfo.ExtraInfo;
 
-                        AddPlayerCell(playerTable, (index + 1).ToString());
-                        AddPlayerCell(playerTable, player.PlayerName, null, Font.BOLD);
-                        AddPlayerCell(playerTable, string.Join(", ", player.PlayerInfo.Formats));
-                        AddPlayerCell(playerTable, player.PlayerInfo.DateOfBirth.ToString());
-                        AddPlayerCell(playerTable, extraInfo.PlayingRole);
-                        AddPlayerCell(playerTable, extraInfo.BattingStyle);
-                        AddPlayerCell(playerTable, extraInfo.BowlingStyle);
-                    }
+                    //    AddPlayerCell(playerTable, (index + 1).ToString());
+                    //    AddPlayerCell(playerTable, player.PlayerName, null, Font.BOLD);
+                    //    AddPlayerCell(playerTable, string.Join(", ", player.PlayerInfo.Formats));
+                    //    AddPlayerCell(playerTable, player.PlayerInfo.DateOfBirth.ToString());
+                    //    AddPlayerCell(playerTable, extraInfo.PlayingRole);
+                    //    AddPlayerCell(playerTable, extraInfo.BattingStyle);
+                    //    AddPlayerCell(playerTable, extraInfo.BowlingStyle);
+                    //}
 
                     document.Add(playerTable);
                 }

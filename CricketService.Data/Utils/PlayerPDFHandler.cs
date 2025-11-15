@@ -80,31 +80,31 @@ namespace CricketService.Data.Utils
 
                     document.Add(headerTable);
 
-                    foreach (var content in playerInfo.PlayerInfo.Contents)
-                    {
-                        var originalPhrase = new Phrase(content, new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.NORMAL, BaseColor.BLACK));
+                    //foreach (var content in playerInfo.PlayerInfo.Contents)
+                    //{
+                    //    var originalPhrase = new Phrase(content, new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.NORMAL, BaseColor.BLACK));
 
-                        var newPhrase = new Phrase();
+                    //    var newPhrase = new Phrase();
 
-                        foreach (var originalChunk in originalPhrase.Chunks)
-                        {
-                            var newChunk = new Chunk(originalChunk.Content, originalChunk.Font);
-                            newChunk.SetBackground(BaseColor.YELLOW);
-                            newPhrase.Add(newChunk);
-                        }
+                    //    foreach (var originalChunk in originalPhrase.Chunks)
+                    //    {
+                    //        var newChunk = new Chunk(originalChunk.Content, originalChunk.Font);
+                    //        newChunk.SetBackground(BaseColor.YELLOW);
+                    //        newPhrase.Add(newChunk);
+                    //    }
 
-                        var paragraph = new Paragraph(newPhrase)
-                        {
-                            FirstLineIndent = 5f,
-                            IndentationLeft = 10f,
-                            IndentationRight = 3f,
-                            KeepTogether = true,
-                            PaddingTop = 10,
-                            Alignment = Element.ALIGN_JUSTIFIED,
-                        };
+                    //    var paragraph = new Paragraph(newPhrase)
+                    //    {
+                    //        FirstLineIndent = 5f,
+                    //        IndentationLeft = 10f,
+                    //        IndentationRight = 3f,
+                    //        KeepTogether = true,
+                    //        PaddingTop = 10,
+                    //        Alignment = Element.ALIGN_JUSTIFIED,
+                    //    };
 
-                        document.Add(paragraph);
-                    }
+                    //    document.Add(paragraph);
+                    //}
 
                     Dictionary<string, BaseColor> cellBgColors = new Dictionary<string, BaseColor>()
                     {

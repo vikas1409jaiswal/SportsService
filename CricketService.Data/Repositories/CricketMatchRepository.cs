@@ -217,6 +217,16 @@ namespace CricketService.Data.Repositories
                 var team1Info = await response.Team1.Team.SaveTeamInfo(context, format);
                 var team2Info = await response.Team2.Team.SaveTeamInfo(context, format);
 
+                // Save players for both teams
+                if (response.Team1.Playing11 != null)
+                {
+                    await response.Team1.Team.SavePlayersForTeam(response.Team1.Playing11, context, format);
+                }
+                if (response.Team2.Playing11 != null)
+                {
+                    await response.Team2.Team.SavePlayersForTeam(response.Team2.Playing11, context, format);
+                }
+
                 matchInfo.Team1.Team = new CricketTeam(team1Info.Uuid, team1Info.TeamName, matchInfo.Team1.Team.LogoUrl);
                 matchInfo.Team2.Team = new CricketTeam(team2Info.Uuid, team2Info.TeamName, matchInfo.Team2.Team.LogoUrl);
 

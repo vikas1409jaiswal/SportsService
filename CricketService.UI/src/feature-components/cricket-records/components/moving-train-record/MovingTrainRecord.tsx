@@ -2,7 +2,7 @@ import React from "react";
 import { ESPNTableRow } from "../../hook/useCustomESPNTable";
 import { MovingTrain } from "../../../../components/common/MovingTrain";
 import { BogieCard } from "./BogieCard";
-import { PlayerBirthDayCard } from "../../common/PlayerBirthDayCard";
+import { PlayerBirthDayCard } from "../../../common/PlayerBirthDayCard";
 
 interface MovingTrainRecordProps {
   rows: ESPNTableRow[];

@@ -30,23 +30,20 @@ namespace CricketService.Data.Entities
         [Column("team_names")]
         public string TeamNames { get; set; } = string.Empty;
 
-        [Column("date_of_birth")]
-        public DateOfEvent? DateOfBirth { get; set; }
+        //[Column("date_of_birth")]
+        //public DateOfEvent? DateOfBirth { get; set; }
 
-        [Column("date_of_death")]
-        public DateOfEvent? DateOfDeath { get; set; }
+        //[Column("date_of_death")]
+        //public DateOfEvent? DateOfDeath { get; set; }
 
-        [Column("debut_details")]
-        public DebutDetailsInfo DebutDetails { get; set; } = null!;
+        //[Column("debut_details")]
+        //public DebutDetailsInfo DebutDetails { get; set; } = null!;
 
         [Column("formats")]
         public ICollection<string> Formats { get; set; } = new List<string>();
 
-        [Column("extra_info")]
-        public PlayerExtraInfo ExtraInfo { get; set; } = null!;
-
-        [Column("contents")]
-        public string[] Contents { get; set; } = Array.Empty<string>();
+        //[Column("extra_info")]
+        //public PlayerExtraInfo ExtraInfo { get; set; } = null!;
 
         public ICollection<CricketTeamPlayerInfos> TeamsPlayersInfos { get; set; } = null!;
     }

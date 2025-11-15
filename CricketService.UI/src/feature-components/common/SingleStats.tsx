@@ -1,7 +1,7 @@
 import React from "react";
-import { AnimatedNumber } from "../../../components/common/AnimatedNumber";
-import { config } from "../../../configs";
-import engToHindiJson from "../../../data/StaticData/englishToHindi.json";
+import { AnimatedNumber } from "../../components/common/AnimatedNumber";
+import { config } from "../../configs";
+import engToHindiJson from "../../data/StaticData/englishToHindi.json";
 
 import "./SingleStats.scss";
 

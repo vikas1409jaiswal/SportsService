@@ -74,7 +74,7 @@ namespace CricketService.Seeder
             if (seedDataFeatures!.ODIMatches && jsonFilePathsOptions!.ODIMatchesData?.Length > 0)
             {
                 matchesData.Clear(); // Clear from previous section
-                
+
                 foreach (var filePath in jsonFilePathsOptions.ODIMatchesData)
                 {
                     StreamReader r = new StreamReader(filePath);

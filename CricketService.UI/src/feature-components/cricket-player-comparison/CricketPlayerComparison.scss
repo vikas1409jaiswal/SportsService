@@ -1,4 +1,4 @@
-.player-comparison-container{
+.player-comparison-container {
     height: 880px;
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
@@ -8,22 +8,29 @@
         box-shadow: inherit;
     }
 
-    .player-container{
-        .player-name-header{
+    .player-container {
+        .player-name-header {
             color: white;
             background: linear-gradient(darkgreen, black);
             border: 2px solid white;
             border-radius: 6px;
             font-size: 30px;
         }
+
+        .team-logo-cylinder {
+            position: absolute;
+            margin-top: 400px;
+            margin-left: 50px;
+        }
     }
 
-    .comparison-container{
-        .data{
+    .comparison-container {
+        .data {
             margin: 50px 10px;
         }
 
-        .batting-stats-header, .bowling-stats-header{
+        .batting-stats-header,
+        .bowling-stats-header {
             font-size: 30px;
             font-weight: bold;
             border: 2px solid black;
@@ -33,11 +40,12 @@
             background-color: greenyellow;
         }
 
-        .batting-stats, .bowling-stats{
+        .batting-stats,
+        .bowling-stats {
             display: grid;
             grid-template-columns: 1fr 1fr;
 
-            .stats-data{
+            .stats-data {
                 margin: 30px 10px;
             }
         }

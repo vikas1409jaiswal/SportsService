@@ -44,7 +44,7 @@ public class CricketPlayerController : Controller
 
         var allPlayers = cricketPlayerRepository.GetAllPlayers(filters);
 
-        Response.Headers.Add("total-players", allPlayers.Count().ToString());
+        Response.Headers["total-players"] = allPlayers.Count().ToString();
 
         return Ok(allPlayers);
     }
@@ -54,7 +54,7 @@ public class CricketPlayerController : Controller
     {
         var allPlayers = cricketPlayerRepository.GetAllPlayersUuidAndHref(format);
 
-        Response.Headers.Add("total-players", allPlayers.Count().ToString());
+        Response.Headers["total-players"] = allPlayers.Count().ToString();
 
         return Ok(allPlayers);
     }
@@ -65,5 +65,15 @@ public class CricketPlayerController : Controller
         var playerDetail = cricketPlayerRepository.GetPlayerDetailsByTeamName(teamName, playerName, true);
 
         return Ok(playerDetail);
+    }
+
+    [HttpGet("player/{playerHref}/batting-statistics")]
+    public IActionResult GetPlayerBattingStatistics([FromRoute, Required] string playerHref)
+    {
+        var battingStats = cricketPlayerRepository.GetPlayerBattingStatistics(playerHref);
+
+        Response.Headers["total-matches"] = battingStats.Count().ToString();
+
+        return Ok(battingStats);
     }
 }

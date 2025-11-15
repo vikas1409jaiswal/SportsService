@@ -510,17 +510,17 @@ namespace CricketService.Data.Utils
             Dictionary<string, string> matchDetailPairs = new Dictionary<string, string>
             {
                 { "Full Name", cricketPlayerInfo.FullName },
-                { "Date Of Birth", new DateTime(cricketPlayerInfo.DateOfBirth!.Year, cricketPlayerInfo.DateOfBirth!.Month ?? 0, cricketPlayerInfo.DateOfBirth.Date ?? 40).ToString("dd MMM yyyy") },
-                { "Playing Role", cricketPlayerInfo.ExtraInfo.PlayingRole },
-                { "Batting Style", cricketPlayerInfo.ExtraInfo.BattingStyle },
-                { "Batting Style1", cricketPlayerInfo.ExtraInfo.BattingStyle },
-                { "Batting Style2", cricketPlayerInfo.ExtraInfo.BattingStyle },
-                { "Batting Style3", cricketPlayerInfo.ExtraInfo.BattingStyle },
-                { "Batting Style4", cricketPlayerInfo.ExtraInfo.BattingStyle },
-                { "Batting Style5", cricketPlayerInfo.ExtraInfo.BattingStyle },
-                { "Bowling Style6", cricketPlayerInfo.ExtraInfo.BowlingStyle },
-                { "Internatinal Career Span", cricketPlayerInfo.ExtraInfo.InternationalCareerSpan },
-                { "Height", cricketPlayerInfo.ExtraInfo.Height },
+                //{ "Date Of Birth", new DateTime(cricketPlayerInfo.DateOfBirth!.Year, cricketPlayerInfo.DateOfBirth!.Month ?? 0, cricketPlayerInfo.DateOfBirth.Date ?? 40).ToString("dd MMM yyyy") },
+                //{ "Playing Role", cricketPlayerInfo.ExtraInfo.PlayingRole },
+                //{ "Batting Style", cricketPlayerInfo.ExtraInfo.BattingStyle },
+                //{ "Batting Style1", cricketPlayerInfo.ExtraInfo.BattingStyle },
+                //{ "Batting Style2", cricketPlayerInfo.ExtraInfo.BattingStyle },
+                //{ "Batting Style3", cricketPlayerInfo.ExtraInfo.BattingStyle },
+                //{ "Batting Style4", cricketPlayerInfo.ExtraInfo.BattingStyle },
+                //{ "Batting Style5", cricketPlayerInfo.ExtraInfo.BattingStyle },
+                //{ "Bowling Style6", cricketPlayerInfo.ExtraInfo.BowlingStyle },
+                //{ "Internatinal Career Span", cricketPlayerInfo.ExtraInfo.InternationalCareerSpan },
+                //{ "Height", cricketPlayerInfo.ExtraInfo.Height },
             };
 
             foreach (var kvp in matchDetailPairs)

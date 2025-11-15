@@ -1,4 +1,4 @@
 export const config = {
-  language: "hindi",
+  language: "english",
   isAnimation: true,
 };

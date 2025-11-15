@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
     tnpl: "tnpl"
   };
 
-  const selectedSubPath = subPathList["int-test"]; // Select path here based on logic
+  const selectedSubPath = subPathList["int"]; // Select path here based on logic
 
   // Serve team logos
   if (req.url.includes("/images-team-logos/")) {

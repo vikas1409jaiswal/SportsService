@@ -1,8 +1,8 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { ReactNode, useEffect } from "react";
-import { PlayerImage } from "../../../components/cricket-matches/screens/elements/PlayerImage";
+import { PlayerImage } from "../../components/cricket-matches/screens/elements/PlayerImage";
 import RotatingCircle from "./RotatingCircle";
-import { CountryContent } from "../../../components/cricket-players/cricket-body/PlayerInfo/CountryContent";
+import { CountryContent } from "../../components/cricket-players/cricket-body/PlayerInfo/CountryContent";
 
 import "./PlayerImageContainer.scss";
 

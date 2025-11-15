@@ -34,12 +34,12 @@ namespace CricketService.Data.Utils
                 // Try fallback to local relative path
                 templatePath = Path.Combine("CricketService.Data", "Utils", "CricketMatch.cshtml");
             }
-            if (!File.Exists(templatePath))
-            {
-                throw new FileNotFoundException($"Could not find CricketMatch.cshtml template at {templatePath}");
-            }
-            using var headerReader = new StreamReader(templatePath);
-            htmlString = headerReader.ReadToEnd();
+            //if (!File.Exists(templatePath))
+            //{
+            //    throw new FileNotFoundException($"Could not find CricketMatch.cshtml template at {templatePath}");
+            //}
+            //using var headerReader = new StreamReader(templatePath);
+            //htmlString = headerReader.ReadToEnd();
         }
 
         public async Task AddPDFLimitedOverCricketMatch(IEnumerable<LimitedOverInternationalMatchInfoDTO> cricketMatches, CricketFormat format)

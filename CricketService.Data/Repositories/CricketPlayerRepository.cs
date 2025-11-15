@@ -73,9 +73,9 @@ public class CricketPlayerRepository : ICricketPlayerRepository
                 x.Uuid,
                 x.PlayerName,
                 x.Href,
-                Teams = x.TeamsPlayersInfos.Where(y => y.PlayerUuid.Equals(x.Uuid)).Select(z => new CricketTeam(z.TeamUuid, z.TeamName, "")),
+                Teams = x.TeamsPlayersInfos.Where(y => y.PlayerUuid.Equals(x.Uuid)).Select(z => new CricketTeam(z.TeamUuid, z.TeamName, string.Empty)),
                 ImageUrl = x.ImageUrl.Contains("/db/PICTURES") ? $"https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_640,q_50/lsci{x.ImageUrl}" : x.ImageUrl,
-            }).OrderBy(x => x.PlayerName); ;
+            }).OrderBy(x => x.PlayerName);
 
         return allPlayers;
     }
@@ -92,15 +92,16 @@ public class CricketPlayerRepository : ICricketPlayerRepository
                 x.PlayerName,
                 x.Href,
                 x.TeamsPlayersInfos.Select(x => new CricketTeam(x.TeamUuid, x.TeamName, x.TeamInfo.FlagUrl)).ToArray(),
-                x.DateOfBirth!.ToString()!,
                 string.Empty,
-                x.DebutDetails,
+                string.Empty,
+                null!,
                 x.TeamsPlayersInfos.Select(x => x.CareerStatistics).ToArray(),
-                x.DateOfDeath!.ToString()!,
+                string.Empty,
                 x.Formats,
                 x.TeamNames,
-                x.ExtraInfo,
-                x.Contents));
+                null!,
+                Array.Empty<string>(),
+                null!));
 
         if (filters.Format != CricketFormat.All)
         {
@@ -142,33 +143,137 @@ public class CricketPlayerRepository : ICricketPlayerRepository
 
     public PlayerDetails GetPlayerByUuid(Guid playerUuid)
     {
-        Entities.CricketPlayerInfoDTO player;
-
         try
         {
-            player = context.CricketPlayerInfo
+            var player = context.CricketPlayerInfo
                 .Include(p => p.TeamsPlayersInfos)
-                .Single(x => x.Uuid == playerUuid);
-        }
-        catch
-        {
-            throw new CricketPlayerNotFoundException($"player with uuid {playerUuid} doesn't exist.");
-        }
+                .SingleOrDefault(x => x.Uuid == playerUuid);
+            if (player == null)
+            {
+                logger.LogError($"Player with uuid {playerUuid} not found.");
+                throw new CricketPlayerNotFoundException($"player with uuid {playerUuid} doesn't exist.");
+            }
 
-        return new PlayerDetails(
+            IEnumerable<PlayerBattingRecord> battingStats = Enumerable.Empty<PlayerBattingRecord>();
+            try
+            {
+                battingStats = GetPlayerBattingStatistics(player.Href);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, $"Error getting batting statistics for player {playerUuid} (href: {player.Href})");
+            }
+
+            return new PlayerDetails(
                 player.Uuid,
                 player.PlayerName,
                 player.Href,
                 player.TeamsPlayersInfos.Select(x => new CricketTeam(x.TeamUuid, x.TeamName)).ToArray(),
-                player.DateOfBirth.ToString(),
-                player.DateOfBirth.ToString(),
-                player.DebutDetails,
+                string.Empty,
+                string.Empty,
+                null!,
                 player.TeamsPlayersInfos.Select(x => x.CareerStatistics).ToArray(),
-                player.DateOfDeath.ToString(),
+                string.Empty,
                 player.Formats,
                 player.TeamNames,
-                player.ExtraInfo,
-                Array.Empty<string>());
+                null!,
+                Array.Empty<string>(),
+                battingStats);
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, $"Unhandled error in GetPlayerByUuid for uuid {playerUuid}");
+            throw;
+        }
+    }
+
+    public IEnumerable<PlayerBattingRecord> GetPlayerBattingStatistics(string playerHref)
+    {
+        logger.LogInformation($"Fetching batting statistics for player with href: {playerHref}");
+        try
+        {
+            var odiMatches = context.LimitedOverInternationalMatchesInfo
+                .Where(match => match.MatchNumber.StartsWith("ODI no. "))
+                .ToList();
+
+            var innings = odiMatches
+                .SelectMany(match => new[]
+                {
+                    new
+                    {
+                        match.Uuid,
+                        match.MatchNumber,
+                        MatchDate = DateTime.Parse(match.MatchDate),
+                        Inning = 1,
+                        BattingData = match.Team1.BattingScoreCard,
+                        TeamName = match.Team1.Team.Name,
+                        OppTeamName = match.Team2.Team.Name,
+                    },
+                    new
+                    {
+                        match.Uuid,
+                        match.MatchNumber,
+                        MatchDate = DateTime.Parse(match.MatchDate),
+                        Inning = 2,
+                        BattingData = match.Team2.BattingScoreCard,
+                        TeamName = match.Team2.Team.Name,
+                        OppTeamName = match.Team1.Team.Name,
+                    },
+                });
+
+            var battingRecords = innings
+                .SelectMany(match => match.BattingData.Select((batting, index) => new
+                {
+                    match.Uuid,
+                    match.MatchNumber,
+                    match.MatchDate,
+                    match.Inning,
+                    BattingPosition = index + 1,
+                    PlayerHref = batting.PlayerName.Href,
+                    PlayerName = batting.PlayerName.Name,
+                    RunsScored = batting.RunsScored,
+                    BallsFaced = batting.BallsFaced,
+                    Sixes = batting.Sixes,
+                    Fours = batting.Fours,
+                    OutStatus = batting.OutStatus,
+                    match.TeamName,
+                    match.OppTeamName,
+                }))
+                .ToList(); // Fix: Materialize the query to avoid multiple context calls
+
+            var filteredBatting = battingRecords
+                .Where(batting => batting.PlayerHref == playerHref);
+
+            var orderedBatting = filteredBatting
+                .OrderBy(batting => batting.MatchNumber)
+                .ThenBy(batting => batting.Inning)
+                .ThenBy(batting => batting.TeamName)
+                .ThenBy(batting => batting.BattingPosition);
+
+            var results = orderedBatting
+                .Select(batting => new PlayerBattingRecord(
+                    batting.Uuid,
+                    batting.MatchNumber,
+                    batting.MatchDate,
+                    batting.Inning,
+                    batting.BattingPosition,
+                    batting.PlayerHref,
+                    batting.PlayerName,
+                    (int)(batting.RunsScored ?? 0),
+                    (int)(batting.BallsFaced ?? 0),
+                    (int)(batting.Sixes ?? 0),
+                    (int)(batting.Fours ?? 0),
+                    batting.OutStatus,
+                    batting.TeamName,
+                    batting.OppTeamName))
+                .ToList();
+            return results;
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, $"Error in GetPlayerBattingStatistics for href: {playerHref}");
+            throw new Exception($"Critical error in GetPlayerBattingStatistics for href: {playerHref}", ex);
+        }
     }
 
     public CricketPlayerInfoResponse GetPlayerDetailsByTeamName(string teamName, string playerName, bool? isSingle = false)
@@ -214,9 +319,9 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         var playerCareerDetails = new CricketPlayerInfoResponse(
             playerInfo.PlayerInfo.Uuid,
             playerName,
-            playerInfo.PlayerInfo.DateOfBirth.ToString(),
+            string.Empty,
             teamName,
-            playerInfo.PlayerInfo.DateOfBirth.ToString(),
+            string.Empty,
             new CareerDetailsInfo(playerInfo.TeamName, null!, null!, null!),
             "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Shri_Virat_Kohli_for_Cricket%2C_in_a_glittering_ceremony%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_September_25%2C_2018_%28cropped%29.JPG/330px-Shri_Virat_Kohli_for_Cricket%2C_in_a_glittering_ceremony%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_September_25%2C_2018_%28cropped%29.JPG");
 

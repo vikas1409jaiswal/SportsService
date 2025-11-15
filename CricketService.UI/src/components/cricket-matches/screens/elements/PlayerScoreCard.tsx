@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { PlayerImage } from "./PlayerImage";
 import { BattingShortInfo } from "./BattingShortInfo";
 import { BowlingShortInfo } from "./BowlingShortInfo";
-import RotatingCircle from "../../../../feature-components/cricket-records/common/RotatingCircle";
+import RotatingCircle from "../../../../feature-components/common/RotatingCircle";
 import {
   Batsman,
   Bowler,
