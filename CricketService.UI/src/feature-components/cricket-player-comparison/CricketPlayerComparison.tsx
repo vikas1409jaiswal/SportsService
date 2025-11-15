@@ -12,8 +12,6 @@ import { PlayerExtraInfo } from "../common/PlayerExtraInfo";
 
 import "./CricketPlayerComparison.scss";
 
-const hrefs = ["kusal-mendis-629074", "virat-kohli-253802"];
-
 interface CricketPlayerComparisonProps {}
 
 export const CricketPlayerComparison: React.FC<
@@ -77,7 +75,7 @@ export const CricketPlayerComparison: React.FC<
             <div className="player-container player-1-container">
               {player1Data && (
                 <PlayerImageContainer
-                  playerHref={`/cricketers/${hrefs[1]}`}
+                  playerHref={player1Data.playerHref}
                   selectedRowIndex={0}
                   teamName={player1Data.teamNames[0]}
                   hideRotatingCircle
@@ -85,7 +83,7 @@ export const CricketPlayerComparison: React.FC<
                   extraInfo={[
                     <PlayerExtraInfo
                       key="player-extra-info"
-                      playerHref={`/cricketers/${hrefs[1]}`}
+                      playerHref={player1Data.playerHref}
                     />,
                   ]}
                   customHeight={845}
@@ -105,7 +103,7 @@ export const CricketPlayerComparison: React.FC<
             </div>
             <div className="player-container player-2-container">
               <PlayerImageContainer
-                playerHref={`/cricketers/${hrefs[0]}`}
+                playerHref={player2Data.playerHref}
                 selectedRowIndex={0}
                 teamName={player2Data?.teamNames[0] as string}
                 hideRotatingCircle
@@ -113,7 +111,7 @@ export const CricketPlayerComparison: React.FC<
                 extraInfo={[
                   <PlayerExtraInfo
                     key="player-extra-info"
-                    playerHref={`/cricketers/${hrefs[0]}`}
+                    playerHref={player2Data.playerHref}
                   />,
                 ]}
                 customHeight={845}

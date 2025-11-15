@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Container } from "reactstrap";
-import { NavMenu } from "./NavMenu";
 
 import "./Layout.scss";
 
@@ -9,9 +7,8 @@ export class Layout extends Component {
 
   render() {
     return (
-      <div>
-        {/* <NavMenu /> */}
-        <Container>{this.props.children}</Container>
+      <div className="layout-container">
+         {this.props.children}
       </div>
     );
   }

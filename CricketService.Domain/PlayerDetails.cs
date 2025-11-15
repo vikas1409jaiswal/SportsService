@@ -8,7 +8,7 @@ namespace CricketService.Domain
         public PlayerDetails(
             Guid uuid,
             string fullName,
-            string playerUrl,
+            string playerHref,
             CricketTeam[] cricketTeams,
             string dateOfBirth,
             string birthPlace,
@@ -23,7 +23,7 @@ namespace CricketService.Domain
         {
             Uuid = uuid;
             FullName = fullName;
-            PlayerUrl = playerUrl;
+            PlayerHref = playerHref;
             Teams = cricketTeams;
             DateOfBirth = dateOfBirth;
             DebutDetails = debutDetailsInfo;
@@ -41,7 +41,7 @@ namespace CricketService.Domain
 
         public string FullName { get; set; }
 
-        public string PlayerUrl { get; set; }
+        public string PlayerHref { get; set; }
 
         public string DateOfBirth { get; set; }
 

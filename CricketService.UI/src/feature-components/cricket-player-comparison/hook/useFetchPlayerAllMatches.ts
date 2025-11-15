@@ -35,7 +35,7 @@ export interface BattingStatistic {
 export interface CricketPlayerResponse {
   uuid: string;
   fullName: string;
-  playerUrl: string;
+  playerHref: string;
   dateOfBirth: string;
   dateOfDeath: string;
   teams: any;
@@ -62,7 +62,11 @@ export const useFetchPlayerAllMatches = (
   const { data, isLoading, error } = useQuery(
     ["player-all-matches-data", playerUuid],
     () => fetchPlayerData(playerUuid),
-    { enabled: !!playerUuid }
+    {
+      enabled: !!playerUuid,
+      staleTime: 1000 * 60 * 60, // 1 hour
+      cacheTime: 1000 * 60 * 60, // 1 hour
+    }
   );
 
   console.log("Fetched Player All Matches Data:", data);
