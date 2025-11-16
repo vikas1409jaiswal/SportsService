@@ -1,0 +1,36 @@
+.batting-innings-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.batting-innings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.batting-innings-table th,
+.batting-innings-table td {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.batting-innings-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.batting-innings-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.batting-innings-table-empty {
+  padding: 24px;
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}

@@ -8,7 +8,6 @@ import {
 import { SpeechLanguage, speakText } from "../../components/common/SpeakText";
 import $ from "jquery";
 import { useProfileInfoJSX } from "./useBogies";
-import { PlayerExtraInfo } from "../common/PlayerExtraInfo";
 
 import "./CricketPlayerComparison.scss";
 
@@ -73,8 +72,7 @@ export const CricketPlayerComparison: React.FC<
         player2Data && (
           <>
             <PlayerProfileContainer
-              playerHref={player1Data.playerHref}
-              teamName={player1Data.teamNames[0]}
+              playerData={player1Data}
               customHeight={845}
               scaleTeamCylinder={0.85}
               className="player-1-container"
@@ -90,8 +88,7 @@ export const CricketPlayerComparison: React.FC<
               />
             </div>
             <PlayerProfileContainer
-              playerHref={player2Data.playerHref}
-              teamName={player2Data?.teamNames[0] as string}
+              playerData={player2Data}
               customHeight={845}
               scaleTeamCylinder={0.85}
               className="player-2-container"

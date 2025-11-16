@@ -2,22 +2,25 @@ import React, { useState, useRef, useEffect } from "react";
 import { PlayerImageContainer } from "../../common/PlayerImageContainer";
 import { PlayerExtraInfo } from "../../common/PlayerExtraInfo";
 import "./PlayerProfileContainer.scss";
+import { SidePane } from "./SidePane";
+import { CricketPlayerResponse } from "../hook/useFetchPlayerAllMatches";
+import { BattingInningDetailsTable } from "./side-overlay/BattingInningDetailsTable";
 
 interface PlayerProfileContainerProps {
-  playerHref: string;
-  teamName: string;
+  playerData: CricketPlayerResponse;
   customHeight?: number;
   scaleTeamCylinder?: number;
   className?: string;
 }
 
 export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
-  playerHref,
-  teamName,
+  playerData,
   customHeight = 845,
   scaleTeamCylinder = 0.85,
   className = "",
 }) => {
+  const {playerHref, fullName, teamNames} = playerData;
+  const teamName = teamNames[0];
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSidePaneOpen, setIsSidePaneOpen] = useState(false);
   const [menuPosition, setMenuPosition] = useState({ top: 0, right: 0 });
@@ -125,22 +128,9 @@ export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
         </div>
       )}
       
-      {isSidePaneOpen && (
-        <div className="side-pane-overlay" onClick={handleCloseSidePane}>
-          <div className={`side-pane ${isSidePaneOpen ? 'open' : ''}`} onClick={(e) => e.stopPropagation()}>
-            <div className="side-pane-header">
-              <h3 className="side-pane-title">All Batting Innings</h3>
-              <button className="close-button" onClick={handleCloseSidePane}>
-                ×
-              </button>
-            </div>
-            <div className="side-pane-content">
-              <p>Batting innings data will be displayed here...</p>
-              {/* Add your batting innings content here */}
-            </div>
-          </div>
-        </div>
-      )}
+      <SidePane open={isSidePaneOpen} title={fullName} subtitle="All Batting Innings" onClose={handleCloseSidePane}>
+        <BattingInningDetailsTable playerData={playerData} />
+      </SidePane>
     </>
   );
 };
