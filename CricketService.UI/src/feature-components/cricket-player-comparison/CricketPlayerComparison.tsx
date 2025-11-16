@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { PlayerImageContainer } from "../common/PlayerImageContainer";
+import { PlayerProfileContainer } from "./common/PlayerProfileContainer";
 import { MovingTrain } from "../../components/common/MovingTrain";
 import {
   CricketPlayerResponse,
@@ -45,11 +45,11 @@ export const CricketPlayerComparison: React.FC<
     player2Data as CricketPlayerResponse
   );
   // const battingStatsBogies = useBattingStatsJSX(
-  //   player1Data?.name || "",
-  //   player2Data?.name || "",
+  //   player1Data?.fullName || "",
+  //   player2Data?.fullName || "",
   //   player1AddData,
   //   player2AddData
-  // );
+  //);
   // const bowlingStatsBogies = useBowlingStatsJSX(
   //   player1Data?.name || "",
   //   player2Data?.name || "",
@@ -72,25 +72,13 @@ export const CricketPlayerComparison: React.FC<
         player1Data &&
         player2Data && (
           <>
-            <div className="player-container player-1-container">
-              {player1Data && (
-                <PlayerImageContainer
-                  playerHref={player1Data.playerHref}
-                  selectedRowIndex={0}
-                  teamName={player1Data.teamNames[0]}
-                  hideRotatingCircle
-                  skipAnimation
-                  extraInfo={[
-                    <PlayerExtraInfo
-                      key="player-extra-info"
-                      playerHref={player1Data.playerHref}
-                    />,
-                  ]}
-                  customHeight={845}
-                  scaleTeamCylinder={0.85}
-                />
-              )}
-            </div>
+            <PlayerProfileContainer
+              playerHref={player1Data.playerHref}
+              teamName={player1Data.teamNames[0]}
+              customHeight={845}
+              scaleTeamCylinder={0.85}
+              className="player-1-container"
+            />
             <div className="comparison-container">
               <MovingTrain
                 bogies={bogies}
@@ -101,23 +89,13 @@ export const CricketPlayerComparison: React.FC<
                 popUpIndex={1}
               />
             </div>
-            <div className="player-container player-2-container">
-              <PlayerImageContainer
-                playerHref={player2Data.playerHref}
-                selectedRowIndex={0}
-                teamName={player2Data?.teamNames[0] as string}
-                hideRotatingCircle
-                skipAnimation
-                extraInfo={[
-                  <PlayerExtraInfo
-                    key="player-extra-info"
-                    playerHref={player2Data.playerHref}
-                  />,
-                ]}
-                customHeight={845}
-                scaleTeamCylinder={0.85}
-              />
-            </div>
+            <PlayerProfileContainer
+              playerHref={player2Data.playerHref}
+              teamName={player2Data?.teamNames[0] as string}
+              customHeight={845}
+              scaleTeamCylinder={0.85}
+              className="player-2-container"
+            />
           </>
         )}
     </div>

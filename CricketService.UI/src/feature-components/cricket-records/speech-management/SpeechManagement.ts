@@ -10,12 +10,12 @@ export const speeches = {
   "top-10-players-intro": () => {
     config.language === "hindi"
       ? speakText(
-          "इस वीडियो में हम शीर्ष 10 खिलाड़ियों को देखेंगे, जिन्होंने टेस्ट क्रिकेट में सबसे ज्यादा रन बनाये हैं",
-          SpeechLanguage.HindiIndian
-        )
+        "इस वीडियो में हम शीर्ष 10 खिलाड़ियों को देखेंगे, जिन्होंने Ashes टेस्ट सीरीज में सबसे ज्यादा रन बनाये हैं",
+        SpeechLanguage.HindiIndian
+      )
       : speakText(
-          "Welcome! In this video, we will explore the top 10 players who have scored the most runs in test cricket matches."
-        );
+        "Welcome! In this video, we will explore the top 10 players who have scored the most runs in ashes test series."
+      );
   },
   "video-end-message": () =>
     config.language === "hindi"
@@ -41,7 +41,7 @@ export const speeches = {
       const playerHindi = (engToHinJson as any).players[playerName];
       const teamHindi = (engToHinJson as any)["team-names"][teamName] || teamName;
       speakText(
-        `नंबर ${number}, ${teamHindi} के ${playerHindi}, इन्होने ${matches?.replace("*", "")} मैचों में ${runs} रन बनाये हैं. इन्होने ${fifties} अर्धशतक और ${hundreds} शतक बनाये हैं.`,
+        `नंबर ${number?.toString()?.replace("3", "teen")}, ${teamHindi} के ${playerHindi}, इन्होने ${matches?.replace("*", "")} मैचों में ${runs} रन बनाये हैं. इन्होने ${fifties} अर्धशतक और ${hundreds} शतक बनाये हैं.`,
         SpeechLanguage.HindiIndian
       );
     } else {

@@ -51,7 +51,7 @@ const fetchPlayerData = async (
   playerUuid: string
 ): Promise<CricketPlayerResponse> => {
   const response = await axios.get<CricketPlayerResponse>(
-    `http://localhost:5104/CricketPlayer/player/${playerUuid}`
+    `http://localhost:5001/CricketPlayer/player/${playerUuid}`
   );
   return response.data;
 };
