@@ -77,6 +77,9 @@ export interface BattingStatistics {
   fours: number;
   sixes: number;
   strikeRate: number;
+  notOuts?: number;
+  ducks?: number;
+  average?: number;
 }
 
 export interface BowlingStatistics {

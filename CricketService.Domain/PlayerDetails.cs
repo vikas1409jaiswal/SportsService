@@ -19,7 +19,7 @@ namespace CricketService.Domain
             string teamNames,
             PlayerExtraInfo extraInfo,
             string[] content,
-            IEnumerable<PlayerBattingRecord>? battingStatistics = null)
+            PlayerOverallStats playerOverallStats)
         {
             Uuid = uuid;
             FullName = fullName;
@@ -34,7 +34,7 @@ namespace CricketService.Domain
             TeamNames = teamNames.Split(", ");
             ExtraInfo = extraInfo;
             Content = content;
-            BattingStatistics = battingStatistics ?? Enumerable.Empty<PlayerBattingRecord>();
+            OverallStats = playerOverallStats;
         }
 
         public Guid Uuid { get; set; }
@@ -63,6 +63,20 @@ namespace CricketService.Domain
 
         public string[] Content { get; set; } = Array.Empty<string>();
 
-        public IEnumerable<PlayerBattingRecord> BattingStatistics { get; set; } = Enumerable.Empty<PlayerBattingRecord>();
+        public PlayerOverallStats OverallStats { get; set; }
+    }
+
+    public class PlayerOverallStats
+    {
+        public PlayerFormatStats PlayerODIStats { get; set; }
+
+        public PlayerFormatStats PlayerT20IStats { get; set; }
+    }
+
+    public class PlayerFormatStats 
+    {
+        public IEnumerable<BattingInningsStat> BattingInningsStats { get; set; } = Enumerable.Empty<BattingInningsStat>();
+
+        public BattingStatistics BattingOverallStats { get; set; }
     }
 }

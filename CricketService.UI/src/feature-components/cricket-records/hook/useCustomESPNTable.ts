@@ -51,12 +51,7 @@ export const useCustomESPNTable = (maxLimit: number = 10): ESPNTableRow[] => {
     ".ds-w-full.ds-table.ds-table-xs.ds-table-auto.ds-w-full.ds-overflow-scroll.ds-scrollbar-hide"
   );
 
-  // If the expected table isn't found in the fetched HTML, use the bundled
-  // fallback HTML and re-run the query against the parser div.
   if (!espnTableSelector) {
-    // Synchronously load fallback HTML if not already loaded (should only happen on 403 fallback)
-    // This is a fallback for local dev or if fetchESPNTable didn't already load fallback
-    // Note: In production, prefer preloading or caching this file
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "/espnFallback.html", false);
     xhr.send(null);
@@ -74,9 +69,9 @@ export const useCustomESPNTable = (maxLimit: number = 10): ESPNTableRow[] => {
   tableRowsSelector?.forEach((tr, i) => {
     const tdsSelector = tr?.querySelectorAll("td");
     i < maxLimit &&
-      //dataGenerator.mostWicketsInCareer(espnTable, tdsSelector, true);
+      dataGenerator.mostWicketsInCareer(espnTable, tdsSelector, false);
       //dataGenerator.mostRunsInTestMatch(espnTable, tdsSelector, false);
-      dataGenerator.mostRunsInCareer(espnTable, tdsSelector, false);
+      //dataGenerator.mostRunsInCareer(espnTable, tdsSelector, false);
 
   });
 

@@ -66,7 +66,7 @@ export const IndividualPage: React.FunctionComponent<IndividualPageProps> = ({
     }
 
     if (row?.data) {
-      speeches["most-career-runs-speech"](
+      speeches["most-career-wickets-speech"](
         selectedRowIndex,
         playerName,
         row,

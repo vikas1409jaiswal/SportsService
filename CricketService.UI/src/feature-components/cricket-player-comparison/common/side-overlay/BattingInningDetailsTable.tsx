@@ -1,14 +1,13 @@
 import React from "react";
-import { CricketPlayerResponse } from "../../hook/useFetchPlayerAllMatches";
+import { BattingInningsStat } from "../../hook/useFetchPlayerAllMatches";
 import "./BattingInningDetailsTable.scss";
 
 interface BattingInningDetailsTableProps {
-  playerData: CricketPlayerResponse;
+  battingInningsStats: BattingInningsStat[];
 }
 
-export const BattingInningDetailsTable: React.FC<BattingInningDetailsTableProps> = ({ playerData }) => {
-  const innings = playerData.battingStatistics || [];
-
+export const BattingInningDetailsTable: React.FC<BattingInningDetailsTableProps> = ({ battingInningsStats }) => {
+  const innings = battingInningsStats || [];
   if (!innings.length) {
     return <div className="batting-innings-table-empty">No batting innings data available.</div>;
   }

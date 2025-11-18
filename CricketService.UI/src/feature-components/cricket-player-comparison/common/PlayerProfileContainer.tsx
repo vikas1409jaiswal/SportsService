@@ -129,7 +129,7 @@ export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
       )}
       
       <SidePane open={isSidePaneOpen} title={fullName} subtitle="All Batting Innings" onClose={handleCloseSidePane}>
-        <BattingInningDetailsTable playerData={playerData} />
+        <BattingInningDetailsTable battingInningsStats={playerData.overallStats.playerODIStats.battingInningsStats || []} />
       </SidePane>
     </>
   );

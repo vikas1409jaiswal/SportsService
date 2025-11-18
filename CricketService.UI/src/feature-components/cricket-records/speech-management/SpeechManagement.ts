@@ -10,11 +10,11 @@ export const speeches = {
   "top-10-players-intro": () => {
     config.language === "hindi"
       ? speakText(
-        "इस वीडियो में हम शीर्ष 10 खिलाड़ियों को देखेंगे, जिन्होंने Ashes टेस्ट सीरीज में सबसे ज्यादा रन बनाये हैं",
+        "इस वीडियो में हम शीर्ष 10 खिलाड़ियों को देखेंगे, जिन्होंने Ashes टेस्ट सीरीज में सबसे ज्यादा विकेट लिए हैं",
         SpeechLanguage.HindiIndian
       )
       : speakText(
-        "Welcome! In this video, we will explore the top 10 players who have scored the most runs in ashes test series."
+        "Welcome! In this video, we will explore the top 10 players who had taken most wickets in ashes test series."
       );
   },
   "video-end-message": () =>
@@ -50,6 +50,29 @@ export const speeches = {
       );
     }
   },
+  "most-career-wickets-speech": (
+    index: number,
+    playerName: string,
+    row: ESPNTableRow,
+    teamName: string
+  ) => {
+    const number = index + 1;
+    const matches = getValue(row, "Matches");
+    const wickets = getValue(row, "Wickets");
+    const bbi = getValue(row, "BBI");
+    if (config.language === "hindi") {
+      const playerHindi = (engToHinJson as any).players[playerName];
+      const teamHindi = (engToHinJson as any)["team-names"][teamName] || teamName;
+      speakText(
+        `नंबर ${number?.toString()?.replace("3", "teen")}, ${teamHindi} के ${playerHindi}, इन्होने ${matches?.replace("*", "")} मैचों में ${wickets} विकेट लिए हैं. उनका सर्वश्रेष्ठ प्रदर्शन ${bbi?.split("/").join(" विकेट, ")} रन देकर है`,
+        SpeechLanguage.HindiIndian
+      );
+    } else {
+      speakText(
+        `Number ${number}, ${playerName} from ${teamName}, ${playerName} had taken ${wickets} wickets in ${matches?.replace("*", "")} matches. His best figure is ${bbi?.split("/").join(" wickets, conceding ")} runs.`
+      );
+    }
+  },
   "most-single-test-runs-speech": (
     index: number,
     playerName: string,
@@ -82,39 +105,6 @@ export const speeches = {
             !isNaN(parseInt(getValue(row, "2nd Ing Score")))
               ? `and ${getValue(row, "2nd Ing Score")} in second Inning`
               : ""
-          }.`
-        );
-  },
-  "most-career-wickets-speech": (
-    index: number,
-    playerName: string,
-    row: ESPNTableRow
-  ) => {
-    config.language === "hindi"
-      ? speakText(
-          `नंबर ${index + 1}, ${
-            (engToHinJson as any)["team-names"][getValue(row, "xyz")]
-          } के ${(engToHinJson as any).players[playerName]}, इन्होने ${
-            getValue(row, "Span").split("-")[0]
-          } से ${getValue(row, "Span").split("-")[1]} तक ${getValue(
-            row,
-            "Matches"
-          )} मैचों में ${getValue(row, "Wickets")} विकेट लिए है.`,
-          SpeechLanguage.HindiIndian
-        )
-      : speakText(
-          // from ${getValue(row, "xyz")}
-          `Number ${index + 1}, ${playerName} from ${getValue(
-            row,
-            "xyz"
-          )}, ${playerName} had taken ${getValue(
-            row,
-            "Wickets"
-          )} Wickets in ${getValue(row, "Matches")?.replace(
-            "*",
-            ""
-          )} matches, between ${getValue(row, "Span").split("-")[0]} and ${
-            getValue(row, "Span").split("-")[1]
           }.`
         );
   },

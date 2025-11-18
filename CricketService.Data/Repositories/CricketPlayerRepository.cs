@@ -11,7 +11,6 @@ using CricketService.Domain.Enums;
 using CricketService.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
 namespace CricketService.Data.Repositories;
 
@@ -154,7 +153,7 @@ public class CricketPlayerRepository : ICricketPlayerRepository
                 throw new CricketPlayerNotFoundException($"player with uuid {playerUuid} doesn't exist.");
             }
 
-            IEnumerable<PlayerBattingRecord> battingStats = Enumerable.Empty<PlayerBattingRecord>();
+            IEnumerable<BattingInningsStat> battingStats = Enumerable.Empty<BattingInningsStat>();
             try
             {
                 battingStats = GetPlayerBattingStatistics(player.Href);
@@ -178,7 +177,32 @@ public class CricketPlayerRepository : ICricketPlayerRepository
                 player.TeamNames,
                 null!,
                 Array.Empty<string>(),
-                battingStats);
+                new PlayerOverallStats()
+                {
+                    PlayerODIStats = new PlayerFormatStats()
+                    {
+                        BattingInningsStats = battingStats,
+                        BattingOverallStats = new BattingStatistics(
+                                matches: 0,
+                                innings: battingStats.Count(),
+                                notOut: 0,
+                                runs: (int)battingStats.Sum(bs => bs.RunScored),
+                                ducks: 0,
+                                highestScore: battingStats.Any() ? battingStats.Max(bs => bs.RunScored).ToString() : "0",
+                                ballsFaced: (int)battingStats.Sum(bs => bs.BallsFaced),
+                                centuries: battingStats.Count(bs => bs.RunScored >= 100),
+                                halfCenturies: battingStats.Count(bs => bs.RunScored >= 50 && bs.RunScored < 100),
+                                fours: (int)battingStats.Sum(bs => bs.FoursInInning),
+                                sixes: (int)battingStats.Sum(bs => bs.SixesInInning),
+                                span: string.Empty,
+                                title: string.Empty,
+                                subTitle: string.Empty),
+                    },
+                    PlayerT20IStats = new PlayerFormatStats()
+                    {
+                        BattingInningsStats = Enumerable.Empty<BattingInningsStat>(),
+                    },
+                });
         }
         catch (Exception ex)
         {
@@ -187,7 +211,7 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         }
     }
 
-    public IEnumerable<PlayerBattingRecord> GetPlayerBattingStatistics(string playerHref)
+    public IEnumerable<BattingInningsStat> GetPlayerBattingStatistics(string playerHref)
     {
         logger.LogInformation($"Fetching batting statistics for player with href: {playerHref}");
         try
@@ -251,7 +275,7 @@ public class CricketPlayerRepository : ICricketPlayerRepository
                 .ThenBy(batting => batting.BattingPosition);
 
             var results = orderedBatting
-                .Select(batting => new PlayerBattingRecord(
+                .Select(batting => new BattingInningsStat(
                     batting.Uuid,
                     batting.MatchNumber,
                     batting.MatchDate,

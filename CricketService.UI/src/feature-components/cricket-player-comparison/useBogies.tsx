@@ -3,6 +3,7 @@ import { CricketPlayerResponse } from "./hook/useFetchPlayerAllMatches";
 import { ESPNPlayerAllMatchesInfo } from "./hook/useFetchPlayerAllMatchesV2";
 import { useMemo } from "react";
 import playersRolesInfo from "./../common/players-roles-info.json";
+import { BattingStatistics } from "../../components/CricketComponents/CricketPlayerInfoFetch/useCustomPlayerInfo";
 
 type FeedData = {
   dataName: string;
@@ -84,69 +85,69 @@ export const  useProfileInfoJSX = (
 export const useBattingStatsJSX = (
   player1Name: string,
   player2Name: string,
-  player1AddData: ESPNPlayerAllMatchesInfo,
-  player2AddData: ESPNPlayerAllMatchesInfo
+  player1AddData: BattingStatistics,
+  player2AddData: BattingStatistics
 ): JSX.Element[] => {
   const feedBattingStatsData: FeedData[] = [
     {
       dataName: "Matches",
-      data1Text: player1AddData.battingCareer.matches,
-      data2Text: player2AddData.battingCareer.matches,
-      speechText: `let's see batting stats of both players. Matches: ${player1Name}, ${player1AddData.battingCareer.matches} matches, ${player2Name}, ${player2AddData.battingCareer.matches} matches`,
+      data1Text: player1AddData?.matches.toString() ?? "",
+      data2Text: player2AddData?.matches.toString() ?? "",
+      speechText: `let's see batting stats of both players. Matches: ${player1Name}, ${player1AddData?.matches} matches, ${player2Name}, ${player2AddData?.matches} matches`,
     },
     {
       dataName: "Runs",
-      data1Text: player1AddData.battingCareer.runs,
-      data2Text: player2AddData.battingCareer.runs,
-      speechText: `Runs: ${player1Name}, ${player1AddData.battingCareer.runs} runs, ${player2Name}, ${player2AddData.battingCareer.runs} runs`,
+      data1Text: player1AddData?.runs.toString() ?? "",
+      data2Text: player2AddData?.runs.toString() ?? "",
+      speechText: `Runs: ${player1Name}, ${player1AddData?.runs} runs, ${player2Name}, ${player2AddData?.runs} runs`,
     },
     {
       dataName: "Hundreds",
-      data1Text: player1AddData.battingCareer.hundreds,
-      data2Text: player2AddData.battingCareer.hundreds,
-      speechText: `Hundreds: ${player1Name}, ${player1AddData.battingCareer.hundreds} hundreds, ${player2Name}, ${player2AddData.battingCareer.hundreds} hundreds`,
+      data1Text: player1AddData?.centuries.toString() ?? "",
+      data2Text: player2AddData?.centuries.toString() ?? "",
+      speechText: `Hundreds: ${player1Name}, ${player1AddData?.centuries} hundreds, ${player2Name}, ${player2AddData?.centuries} hundreds`,
     },
     {
       dataName: "Fifties",
-      data1Text: player1AddData.battingCareer.fifties,
-      data2Text: player2AddData.battingCareer.fifties,
-      speechText: `Fifties: ${player1Name}, ${player1AddData.battingCareer.fifties} fifties, ${player2Name}, ${player2AddData.battingCareer.fifties} fifties`,
+      data1Text: player1AddData?.halfCenturies.toString() ?? "",
+      data2Text: player2AddData?.halfCenturies.toString() ?? "",
+      speechText: `Fifties: ${player1Name}, ${player1AddData?.halfCenturies} fifties, ${player2Name}, ${player2AddData?.halfCenturies} fifties`,
     },
     {
       dataName: "Not Outs",
-      data1Text: player1AddData.battingCareer.notOuts,
-      data2Text: player2AddData.battingCareer.notOuts,
-      speechText: `Not outs: ${player1Name}, ${player1AddData.battingCareer.notOuts}, ${player2Name}, ${player2AddData.battingCareer.notOuts}`,
+      data1Text: player1AddData?.notOuts?.toString() ?? "",
+      data2Text: player2AddData?.notOuts?.toString() ?? "",
+      speechText: `Not outs: ${player1Name}, ${player1AddData?.notOuts}, ${player2Name}, ${player2AddData?.notOuts}`,
     },
     {
       dataName: "Ducks",
-      data1Text: player1AddData.battingCareer.ducks,
-      data2Text: player2AddData.battingCareer.ducks,
-      speechText: `Ducks: ${player1Name}, ${player1AddData.battingCareer.ducks}, ${player2Name}, ${player2AddData.battingCareer.ducks}`,
+      data1Text: player1AddData?.ducks?.toString() ?? "",
+      data2Text: player2AddData?.ducks?.toString() ?? "",
+      speechText: `Ducks: ${player1Name}, ${player1AddData?.ducks}, ${player2Name}, ${player2AddData?.ducks}`,
     },
     {
       dataName: "Fours",
-      data1Text: player1AddData.battingCareer.fours,
-      data2Text: player2AddData.battingCareer.fours,
-      speechText: `Fours: ${player1Name}, ${player1AddData.battingCareer.fours} fours, ${player2Name}, ${player2AddData.battingCareer.fours} fours`,
+      data1Text: player1AddData?.fours.toString() ?? "",
+      data2Text: player2AddData?.fours.toString() ?? "",
+      speechText: `Fours: ${player1Name}, ${player1AddData?.fours} fours, ${player2Name}, ${player2AddData?.fours} fours`,
     },
     {
       dataName: "Sixes",
-      data1Text: player1AddData.battingCareer.sixes,
-      data2Text: player2AddData.battingCareer.sixes,
-      speechText: `Sixes: ${player1Name}, ${player1AddData.battingCareer.sixes} sixes, ${player2Name}, ${player2AddData.battingCareer.sixes} sixes`,
+      data1Text: player1AddData?.sixes.toString() ?? "",
+      data2Text: player2AddData?.sixes.toString() ?? "",
+      speechText: `Sixes: ${player1Name}, ${player1AddData?.sixes} sixes, ${player2Name}, ${player2AddData?.sixes} sixes`,
     },
     {
       dataName: "Average",
-      data1Text: player1AddData.battingCareer.average,
-      data2Text: player2AddData.battingCareer.average,
-      speechText: `Average: ${player1Name}, ${player1AddData.battingCareer.average}, ${player2Name}, ${player2AddData.battingCareer.average}`,
+      data1Text: player1AddData?.average?.toString() ?? "",
+      data2Text: player2AddData?.average?.toString() ?? "",
+      speechText: `Average: ${player1Name}, ${player1AddData?.average}, ${player2Name}, ${player2AddData?.average}`,
     },
     {
       dataName: "Strike Rate",
-      data1Text: player1AddData.battingCareer.strikeRate,
-      data2Text: player2AddData.battingCareer.strikeRate,
-      speechText: `Strike Rate: ${player1Name}, ${player1AddData.battingCareer.strikeRate}, ${player2Name}, ${player2AddData.battingCareer.strikeRate}`,
+      data1Text: player1AddData?.strikeRate?.toString() ?? "",
+      data2Text: player2AddData?.strikeRate?.toString() ?? "",
+      speechText: `Strike Rate: ${player1Name}, ${player1AddData?.strikeRate}, ${player2Name}, ${player2AddData?.strikeRate}`,
     },
   ];
 
@@ -192,26 +193,26 @@ export const useBowlingStatsJSX = (
   const feedBowlingStatsData: FeedData[] = [
     {
       dataName: "Matches",
-      data1Text: player1AddData.bowlingCareer.matches,
-      data2Text: player2AddData.bowlingCareer.matches,
+      data1Text: String(player1AddData.bowlingCareer.matches),
+      data2Text: String(player2AddData.bowlingCareer.matches),
       speechText: `let's see bowling stats of both players. Matches: ${player1Name}, ${player1AddData.bowlingCareer.matches} matches, ${player2Name}, ${player2AddData.bowlingCareer.matches} matches`,
     },
     {
       dataName: "Wickets",
-      data1Text: player1AddData.bowlingCareer.wickets,
-      data2Text: player2AddData.bowlingCareer.wickets,
+      data1Text: String(player1AddData.bowlingCareer.wickets),
+      data2Text: String(player2AddData.bowlingCareer.wickets),
       speechText: `Wickets: ${player1Name}, ${player1AddData.bowlingCareer.wickets} wickets, ${player2Name}, ${player2AddData.bowlingCareer.wickets} wickets`,
     },
     {
       dataName: "4 Wickets",
-      data1Text: player1AddData.bowlingCareer.fourWickets,
-      data2Text: player2AddData.bowlingCareer.fourWickets,
+      data1Text: String(player1AddData.bowlingCareer.fourWickets),
+      data2Text: String(player2AddData.bowlingCareer.fourWickets),
       speechText: `4 Wicket Haul: ${player1Name}, ${player1AddData.bowlingCareer.fourWickets}, ${player2Name}, ${player2AddData.bowlingCareer.fourWickets}`,
     },
     {
       dataName: "5 Wickets",
-      data1Text: player1AddData.bowlingCareer.fiveWickets,
-      data2Text: player2AddData.bowlingCareer.fiveWickets,
+      data1Text: String(player1AddData.bowlingCareer.fiveWickets),
+      data2Text: String(player2AddData.bowlingCareer.fiveWickets),
       speechText: `5 Wicket Haul: ${player1Name}, ${player1AddData.bowlingCareer.fiveWickets}, ${player2Name}, ${player2AddData.bowlingCareer.fiveWickets}`,
     },
   ];

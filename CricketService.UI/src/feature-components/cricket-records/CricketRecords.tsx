@@ -8,6 +8,9 @@ interface CricketRecordsProps {}
 
 export const CricketRecords: React.FC<CricketRecordsProps> = ({}) => {
   const rows = useCustomESPNTable();
+
+  console.log("CricketRecords ~ rows:", rows?.slice(0, 10)?.map(x => x.data.find(y => y.key === "Player Href")?.value));
+
   return <div className="cricket-records-container">
     <IndividualPages rows={rows?.slice(0, 10)} />
   </div>;

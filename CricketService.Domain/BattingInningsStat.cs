@@ -1,10 +1,8 @@
-using System;
-
 namespace CricketService.Domain
 {
-    public class PlayerBattingRecord
+    public class BattingInningsStat
     {
-        public PlayerBattingRecord(
+        public BattingInningsStat(
             Guid uuid,
             string matchNumber,
             DateTime matchDate,

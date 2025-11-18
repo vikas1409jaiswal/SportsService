@@ -7,7 +7,8 @@ import {
 } from "./hook/useFetchPlayerAllMatches";
 import { SpeechLanguage, speakText } from "../../components/common/SpeakText";
 import $ from "jquery";
-import { useProfileInfoJSX } from "./useBogies";
+import { useBattingStatsJSX, useProfileInfoJSX } from "./useBogies";
+import { BattingStatistics } from "../../components/CricketComponents/CricketPlayerInfoFetch/useCustomPlayerInfo";
 
 import "./CricketPlayerComparison.scss";
 
@@ -43,12 +44,13 @@ export const CricketPlayerComparison: React.FC<
     player1Data as CricketPlayerResponse,
     player2Data as CricketPlayerResponse
   );
-  // const battingStatsBogies = useBattingStatsJSX(
-  //   player1Data?.fullName || "",
-  //   player2Data?.fullName || "",
-  //   player1AddData,
-  //   player2AddData
-  //);
+
+  const battingStatsBogies = useBattingStatsJSX(
+    player1Data?.fullName || "",
+    player2Data?.fullName || "",
+    player1Data?.overallStats?.playerODIStats?.battingOverallStats as BattingStatistics,
+    player2Data?.overallStats?.playerODIStats?.battingOverallStats as BattingStatistics
+  );
   // const bowlingStatsBogies = useBowlingStatsJSX(
   //   player1Data?.name || "",
   //   player2Data?.name || "",
@@ -56,7 +58,7 @@ export const CricketPlayerComparison: React.FC<
   //   player2AddData
   // );
 
-  const bogies = [...profileInfoBogies];
+  const bogies = [ ...battingStatsBogies ];
 
   return (
     <div className="player-comparison-container">

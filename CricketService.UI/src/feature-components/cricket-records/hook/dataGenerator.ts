@@ -44,6 +44,7 @@ export const mostWicketsInCareer = (
   espnTableRows.push({
     data: [
       { key: "Player Name", value: tdsSelector[0]?.textContent?.trim() || "" },
+      { key: "Team Name", value: getFullTeamName(tdsSelector[0]?.textContent?.split(" (")[1]?.replace(")", "").trim()?.replace("ICC", "")?.replace("Asia", "")?.replace("Afr", "")?.replaceAll("/", "") || "") },
       {
         key: "Player Href",
         value:
@@ -55,13 +56,13 @@ export const mostWicketsInCareer = (
         key: "Matches",
         value: tdsSelector[2]?.textContent?.trim() || "",
       },
-      { key: "Maiden", value: tdsSelector[6]?.textContent?.trim() || "" },
+      { key: "Maidens", value: tdsSelector[6]?.textContent?.trim() || "" },
+      // {
+      //   key: "4 Wicket",
+      //   value: tdsSelector[13]?.textContent?.trim() || "",
+      // },
       {
-        key: "4 Wicket",
-        value: tdsSelector[13]?.textContent?.trim() || "",
-      },
-      {
-        key: "5 Wicket",
+        key: "5 Wicket Hauls",
         value: tdsSelector[14]?.textContent?.trim() || "",
       },
       { key: "BBI", value: tdsSelector[9]?.textContent?.trim() || "" },

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useQuery } from "react-query";
+import { BattingStatistics } from "../../../components/CricketComponents/CricketPlayerInfoFetch/useCustomPlayerInfo";
 
 export interface ApiData {
   data: any;
@@ -15,7 +16,7 @@ export interface ApiResponse {
   statusText: string;
 }
 
-export interface BattingStatistic {
+export interface BattingInningsStat {
   uuid: string;
   matchNumber: string;
   matchDate: string;
@@ -44,7 +45,17 @@ export interface CricketPlayerResponse {
   internationalFormats: string[];
   teamNames: string[];
   content: any;
-  battingStatistics: BattingStatistic[];
+  overallStats: PlayerOverallStats;
+}
+
+export interface PlayerOverallStats {
+  playerODIStats: PlayerFormatStats;
+  playerT20IStats: PlayerFormatStats;
+}
+
+export interface PlayerFormatStats {
+  battingInningsStats: BattingInningsStat[];
+  battingOverallStats: BattingStatistics;
 }
 
 const fetchPlayerData = async (
