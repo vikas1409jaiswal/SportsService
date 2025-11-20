@@ -26,7 +26,7 @@ export const ArrowDataComparer: React.FC<ArrowDataComparerProps> = ({
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Render the component only once
-    threshold: 1, // Trigger when 50% of the component is in view
+    threshold: 0.5, // Trigger when 50% of the component is in view
   });
 
   useEffect(() => {

@@ -11,6 +11,7 @@ interface MovingTrainProps {
   delay?: number;
   isColumn?: boolean;
   popUpIndex?: number;
+  isMoving?: boolean;
 }
 
 export const MovingTrain: React.FC<MovingTrainProps> = ({
@@ -20,10 +21,12 @@ export const MovingTrain: React.FC<MovingTrainProps> = ({
   delay,
   isColumn,
   popUpIndex,
+  isMoving,
 }) => {
   const control = useAnimation();
 
   useEffect(() => {
+    if (!isMoving) return;
     const transition = {
       duration: duration || 30,
       repeat: 0,
@@ -44,7 +47,7 @@ export const MovingTrain: React.FC<MovingTrainProps> = ({
     return () => {
       control.stop();
     };
-  }, [isColumn]);
+  }, [isColumn, isMoving]);
 
   return (
     <motion.div

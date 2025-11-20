@@ -7,30 +7,48 @@ import {
 } from "./hook/useFetchPlayerAllMatches";
 import { SpeechLanguage, speakText } from "../../components/common/SpeakText";
 import $ from "jquery";
-import { useBattingStatsJSX, useProfileInfoJSX } from "./useBogies";
+import usePlayersIntroJSX from "./hook/bogies-hook/usePlayersIntroJSX";
+import useProfileInfoJSX from "./hook/bogies-hook/useProfileInfoJSX";
+import useBattingStatsJSX from "./hook/bogies-hook/useBattingStatsJSX";
 import { BattingStatistics } from "../../components/CricketComponents/CricketPlayerInfoFetch/useCustomPlayerInfo";
-
 import "./CricketPlayerComparison.scss";
 import CenteredSpinner from "../../components/common/CenteredSpinner";
 
 interface CricketPlayerComparisonProps {}
 
-export const CricketPlayerComparison: React.FC<
-  CricketPlayerComparisonProps
-> = () => {
+export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = () => {
   const { data: player1Data, isLoading: isLoadingP1 } =
     useFetchPlayerAllMatches("044051e2-7246-448f-826d-ea0e0b07e67c");
   const { data: player2Data, isLoading: isLoadingP2 } =
     useFetchPlayerAllMatches("a012ab17-063b-4cb0-8e12-14a11d38bd4d");
   const [showComparison, setShowComparison] = useState(true);
+  const [isMovingTrain, setIsMovingTrain] = useState(false);
 
-  $(document).on({
-    keydown: (event) => {
+  React.useEffect(() => {
+    const handler = (event: any) => {
       if (event.originalEvent?.key === "a") {
         setShowComparison(true);
       }
-    },
-  });
+      if (
+        event.originalEvent?.key === "s" ||
+        (event.originalEvent?.key === "S" && event.originalEvent?.shiftKey)
+      ) {
+        setIsMovingTrain(true);
+        // Trigger speech when train starts moving (user interaction context)
+        if (player1Data?.fullName && player2Data?.fullName) {
+          speakText(
+            `${player1Data.fullName} versus ${player2Data.fullName} comparison`,
+            SpeechLanguage.HindiIndian,
+            false
+          );
+        }
+      }
+    };
+    $(document).on("keydown", handler);
+    return () => {
+      $(document).off("keydown", handler);
+    };
+  }, [player1Data?.fullName, player2Data?.fullName]);
 
   useEffect(() => {
     if (player1Data?.fullName && player2Data?.fullName) {
@@ -41,11 +59,11 @@ export const CricketPlayerComparison: React.FC<
     }
   }, [player1Data?.fullName, player2Data?.fullName]);
 
+  const introJSX = usePlayersIntroJSX(player1Data?.fullName || "", player2Data?.fullName || "", isMovingTrain);
   const profileInfoBogies = useProfileInfoJSX(
     player1Data as CricketPlayerResponse,
     player2Data as CricketPlayerResponse
   );
-
   const battingStatsBogies = useBattingStatsJSX(
     player1Data?.fullName || "",
     player2Data?.fullName || "",
@@ -59,7 +77,38 @@ export const CricketPlayerComparison: React.FC<
   //   player2AddData
   // );
 
-  const bogies = [ ...battingStatsBogies ];
+  const bogies = [introJSX, ...profileInfoBogies, ...battingStatsBogies ];
+
+  const renderBanner = () => (
+    <div
+      style={{
+        position: 'fixed',
+        top: 32,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        background: '#fff3cd',
+        color: '#856404',
+        border: '1.5px solid #ffeeba',
+        padding: '10px 28px',
+        borderRadius: '8px',
+        textAlign: 'center',
+        fontWeight: 600,
+        fontSize: '1.08rem',
+        zIndex: 2000,
+        boxShadow: '0 2px 12px rgba(133,100,4,0.08)',
+        width: 'max-content',
+        minWidth: 0,
+        maxWidth: '90vw',
+        whiteSpace: 'nowrap',
+        pointerEvents: 'none',
+      }}
+      role="alert"
+      aria-live="assertive"
+    >
+      <span style={{marginRight: 8, fontSize: '1.2em'}}>⚠️</span>
+      Train is stopped. Press <b>S</b> or <b>Shift+S</b> to start the train animation.
+    </div>
+  );
 
   return (
     <div className="player-comparison-container">
@@ -70,6 +119,7 @@ export const CricketPlayerComparison: React.FC<
         player1Data &&
         player2Data && (
           <>
+            {!isMovingTrain && renderBanner()}
             <PlayerProfileContainer
               playerData={player1Data}
               customHeight={845}
@@ -84,6 +134,7 @@ export const CricketPlayerComparison: React.FC<
                 delay={10}
                 isColumn
                 popUpIndex={1}
+                isMoving={isMovingTrain}
               />
             </div>
             <PlayerProfileContainer
