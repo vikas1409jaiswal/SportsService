@@ -23,6 +23,7 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
     useFetchPlayerAllMatches("a012ab17-063b-4cb0-8e12-14a11d38bd4d");
   const [showComparison, setShowComparison] = useState(true);
   const [isMovingTrain, setIsMovingTrain] = useState(false);
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   React.useEffect(() => {
     const handler = (event: any) => {
@@ -30,7 +31,7 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
         setShowComparison(true);
       }
       if (
-        event.originalEvent?.key === "s" ||
+        event.originalEvent?.key === "s" || 
         (event.originalEvent?.key === "S" && event.originalEvent?.shiftKey)
       ) {
         setIsMovingTrain(true);
@@ -42,6 +43,11 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
             false
           );
         }
+      }
+      if (
+        event.originalEvent?.key === "m" || event.originalEvent?.key === "M"
+      ) {
+        setIsMenuOpened((prev: boolean) => !prev);
       }
     };
     $(document).on("keydown", handler);
@@ -81,31 +87,11 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
 
   const renderBanner = () => (
     <div
-      style={{
-        position: 'fixed',
-        top: 32,
-        left: '50%',
-        transform: 'translateX(-50%)',
-        background: '#fff3cd',
-        color: '#856404',
-        border: '1.5px solid #ffeeba',
-        padding: '10px 28px',
-        borderRadius: '8px',
-        textAlign: 'center',
-        fontWeight: 600,
-        fontSize: '1.08rem',
-        zIndex: 2000,
-        boxShadow: '0 2px 12px rgba(133,100,4,0.08)',
-        width: 'max-content',
-        minWidth: 0,
-        maxWidth: '90vw',
-        whiteSpace: 'nowrap',
-        pointerEvents: 'none',
-      }}
+      className="train-banner-alert"
       role="alert"
       aria-live="assertive"
     >
-      <span style={{marginRight: 8, fontSize: '1.2em'}}>⚠️</span>
+      <span className="train-banner-icon">⚠️</span>
       Train is stopped. Press <b>S</b> or <b>Shift+S</b> to start the train animation.
     </div>
   );
@@ -125,13 +111,14 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
               customHeight={845}
               scaleTeamCylinder={0.85}
               className="player-1-container"
+              isMenuOpened={isMenuOpened}
             />
             <div className="comparison-container">
               <MovingTrain
                 bogies={bogies}
                 trackLength={100000}
                 duration={5000}
-                delay={10}
+                delay={10000}
                 isColumn
                 popUpIndex={1}
                 isMoving={isMovingTrain}
@@ -142,6 +129,7 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
               customHeight={845}
               scaleTeamCylinder={0.85}
               className="player-2-container"
+              isMenuOpened={isMenuOpened}
             />
           </>
         )}

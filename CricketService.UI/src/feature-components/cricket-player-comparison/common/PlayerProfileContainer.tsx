@@ -11,6 +11,7 @@ interface PlayerProfileContainerProps {
   customHeight?: number;
   scaleTeamCylinder?: number;
   className?: string;
+  isMenuOpened?: boolean;
 }
 
 export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
@@ -18,6 +19,7 @@ export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
   customHeight = 845,
   scaleTeamCylinder = 0.85,
   className = "",
+  isMenuOpened = false,
 }) => {
   const {playerHref, fullName, teamNames} = playerData;
   const teamName = teamNames[0];
@@ -70,16 +72,18 @@ export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
   return (
     <>
       <div className={`player-container player-profile-container ${className}`.trim()}>
-        <div className="three-dot-menu" ref={dropdownRef}>
-          <button ref={menuButtonRef} className="menu-button" onClick={handleMenuClick} aria-label="Open menu">
-            {/* Three-dot vertical icon using SVG for clarity and accessibility */}
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="5" r="2" fill="#333" />
-              <circle cx="12" cy="12" r="2" fill="#333" />
-              <circle cx="12" cy="19" r="2" fill="#333" />
-            </svg>
-          </button>
-        </div>
+        {isMenuOpened && (
+          <div className="three-dot-menu" ref={dropdownRef}>
+            <button ref={menuButtonRef} className="menu-button" onClick={handleMenuClick} aria-label="Open menu">
+              {/* Three-dot vertical icon using SVG for clarity and accessibility */}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="5" r="2" fill="#333" />
+                <circle cx="12" cy="12" r="2" fill="#333" />
+                <circle cx="12" cy="19" r="2" fill="#333" />
+              </svg>
+            </button>
+          </div>
+        )}
         <PlayerImageContainer
           playerHref={playerHref}
           selectedRowIndex={0}
@@ -93,7 +97,7 @@ export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
           scaleTeamCylinder={scaleTeamCylinder}
         />
       </div>
-      {isDropdownOpen && (
+      {isDropdownOpen && isMenuOpened && (
         <div
           ref={dropdownMenuRef}
           className="dropdown-menu-fixed"
@@ -127,7 +131,6 @@ export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
           </button>
         </div>
       )}
-      
       <SidePane open={isSidePaneOpen} title={fullName} subtitle="All Batting Innings" onClose={handleCloseSidePane}>
         <BattingInningDetailsTable battingInningsStats={playerData.overallStats.playerODIStats.battingInningsStats || []} />
       </SidePane>
