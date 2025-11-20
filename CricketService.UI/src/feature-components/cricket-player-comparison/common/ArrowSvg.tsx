@@ -36,7 +36,7 @@ export const ArrowSvg: React.FC<ArrowSvgProps> = ({
           totalHeight / 2
         }`}
         fill={bgColors[0]}
-        stroke="darkblue"
+        stroke="white"
         strokeWidth={5}
         strokeLinecap="round"
       />

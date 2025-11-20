@@ -10,11 +10,11 @@ export const speeches = {
   "top-10-players-intro": () => {
     config.language === "hindi"
       ? speakText(
-        "इस वीडियो में हम शीर्ष 10 खिलाड़ियों को देखेंगे, जिन्होंने Ashes टेस्ट सीरीज में सबसे ज्यादा विकेट लिए हैं",
+        "इस वीडियो में हम शीर्ष 10 खिलाड़ियों को देखेंगे, जिन्होंने टेस्ट cricket में सबसे ज्यादा विकेट लिए हैं",
         SpeechLanguage.HindiIndian
       )
       : speakText(
-        "Welcome! In this video, we will explore the top 10 players who had taken most wickets in ashes test series."
+        "Welcome! In this video, we will explore the top 10 players who had taken most wickets in test cricket."
       );
   },
   "video-end-message": () =>

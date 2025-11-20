@@ -29,7 +29,7 @@ export const PlayerDetailsContainer: React.FC<PlayerDetailsContainerProps> = ({
         scale: 1.05,
         backgroundColor: "pink",
       }}
-      style={{ fontSize: playerName.length > 20 ? "50px" : "60px" }}
+      style={{ fontSize: playerName.length > 18 ? "50px" : "60px" }}
     >
       <a href={`https://www.espncricinfo.com/${playerHref}`}>
         {config.language === "hindi"

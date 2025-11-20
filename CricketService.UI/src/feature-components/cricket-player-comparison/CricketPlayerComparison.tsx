@@ -11,6 +11,7 @@ import { useBattingStatsJSX, useProfileInfoJSX } from "./useBogies";
 import { BattingStatistics } from "../../components/CricketComponents/CricketPlayerInfoFetch/useCustomPlayerInfo";
 
 import "./CricketPlayerComparison.scss";
+import CenteredSpinner from "../../components/common/CenteredSpinner";
 
 interface CricketPlayerComparisonProps {}
 
@@ -62,11 +63,7 @@ export const CricketPlayerComparison: React.FC<
 
   return (
     <div className="player-comparison-container">
-      {(isLoadingP1 || isLoadingP2) && (
-        <div className="loading-container">
-          <p>Loading player data...</p>
-        </div>
-      )}
+      {(isLoadingP1 || isLoadingP2) && <CenteredSpinner />}
       {showComparison &&
         !isLoadingP1 &&
         !isLoadingP2 &&
