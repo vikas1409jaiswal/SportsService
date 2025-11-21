@@ -29,13 +29,15 @@ start "CricketService Frontend" cmd /k "cd CricketService.UI && npm run start-bo
 REM Wait for frontend to start and then open in Chrome
 echo ⏳ Waiting for frontend to initialize...
 timeout /t 10 /nobreak >nul
-echo 🌐 Opening frontend in Chrome browser...
-start chrome http://localhost:44440/players-comparison
 
-REM Wait a moment and then open Swagger UI in new tab
-timeout /t 2 /nobreak >nul
-echo 🔧 Opening Backend Swagger UI in new tab...
+REM Open Swagger UI first
+echo 🔧 Opening Backend Swagger UI in Chrome...
 start chrome http://localhost:5001/swagger/index.html
+
+REM Wait a moment and then open frontend UI in new tab
+timeout /t 2 /nobreak >nul
+echo 🌐 Opening frontend in new tab...
+start chrome http://localhost:44440/players-comparison
 
 echo.
 echo ✅ All services started successfully!

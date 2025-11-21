@@ -38,7 +38,7 @@ namespace CricketService.Api
             {
                 options.AddPolicy("AllowFrontend",
                     builder => builder
-                        .WithOrigins("http://localhost:3000") // Your frontend URL
+                        .WithOrigins("http://localhost:44440") // Your frontend URL
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials());
