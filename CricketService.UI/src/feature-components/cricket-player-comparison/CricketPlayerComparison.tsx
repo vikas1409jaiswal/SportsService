@@ -38,7 +38,7 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
         // Trigger speech when train starts moving (user interaction context)
         if (player1Data?.fullName && player2Data?.fullName) {
           speakText(
-            `${player1Data.fullName} versus ${player2Data.fullName} comparison`,
+            `Welcome! In this video, we compare ${player1Data.fullName} and ${player2Data.fullName}—breaking down their stats, careers, and strengths.`,
             SpeechLanguage.HindiIndian,
             false
           );
@@ -56,14 +56,14 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
     };
   }, [player1Data?.fullName, player2Data?.fullName]);
 
-  useEffect(() => {
-    if (player1Data?.fullName && player2Data?.fullName) {
-      speakText(
-        `${player1Data.fullName} versus ${player2Data.fullName} comparison`,
-        SpeechLanguage.HindiIndian
-      );
-    }
-  }, [player1Data?.fullName, player2Data?.fullName]);
+  // useEffect(() => {
+  //   if (player1Data?.fullName && player2Data?.fullName) {
+  //     speakText(
+  //       `Welcome! In this video, we compare ${player1Data.fullName} and ${player2Data.fullName}—breaking down their stats, careers, and strengths.`,
+  //       SpeechLanguage.HindiIndian
+  //     );
+  //   }
+  // }, [player1Data?.fullName, player2Data?.fullName]);
 
   const introJSX = usePlayersIntroJSX(player1Data?.fullName || "", player2Data?.fullName || "", isMovingTrain);
   const profileInfoBogies = useProfileInfoJSX(
@@ -83,7 +83,7 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
   //   player2AddData
   // );
 
-  const bogies = [introJSX, ...profileInfoBogies, ...battingStatsBogies ];
+  const bogies = [introJSX, ...profileInfoBogies,...battingStatsBogies ];
 
   const renderBanner = () => (
     <div
@@ -117,8 +117,8 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
               <MovingTrain
                 bogies={bogies}
                 trackLength={100000}
-                duration={5000}
-                delay={10000}
+                duration={2000}
+                delay={10}
                 isColumn
                 popUpIndex={1}
                 isMoving={isMovingTrain}

@@ -30,8 +30,8 @@ namespace CricketService.Data.Entities
         [Column("team_names")]
         public string TeamNames { get; set; } = string.Empty;
 
-        //[Column("date_of_birth")]
-        //public DateOfEvent? DateOfBirth { get; set; }
+        [Column("date_of_birth")]
+        public DateOfEvent? DateOfBirth { get; set; }
 
         //[Column("date_of_death")]
         //public DateOfEvent? DateOfDeath { get; set; }

@@ -35,6 +35,7 @@ namespace CricketService.Domain
             ExtraInfo = extraInfo;
             Content = content;
             OverallStats = playerOverallStats;
+            Age = CalculateAge(dateOfBirth);
         }
 
         public Guid Uuid { get; set; }
@@ -44,6 +45,8 @@ namespace CricketService.Domain
         public string PlayerHref { get; set; }
 
         public string DateOfBirth { get; set; }
+
+        public string Age { get; set; }
 
         public string DateOfDeath { get; set; }
 
@@ -64,6 +67,20 @@ namespace CricketService.Domain
         public string[] Content { get; set; } = Array.Empty<string>();
 
         public PlayerOverallStats OverallStats { get; set; }
+
+        private static string CalculateAge(string dateOfBirth)
+        {
+            if (DateTime.TryParse(dateOfBirth, out var dob))
+            {
+                var now = DateTime.UtcNow;
+                var years = now.Year - dob.Year;
+                if (now < dob.AddYears(years)) years--;
+                var lastBirthday = dob.AddYears(years);
+                var days = (now - lastBirthday).Days;
+                return $"{years}y {days}d";
+            }
+            return "-";
+        }
     }
 
     public class PlayerOverallStats

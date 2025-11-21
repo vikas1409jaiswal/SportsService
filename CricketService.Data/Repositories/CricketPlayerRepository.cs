@@ -164,45 +164,31 @@ public class CricketPlayerRepository : ICricketPlayerRepository
             }
 
             return new PlayerDetails(
-                player.Uuid,
-                player.PlayerName,
-                player.Href,
-                player.TeamsPlayersInfos.Select(x => new CricketTeam(x.TeamUuid, x.TeamName)).ToArray(),
-                string.Empty,
-                string.Empty,
-                null!,
-                player.TeamsPlayersInfos.Select(x => x.CareerStatistics).ToArray(),
-                string.Empty,
-                player.Formats,
-                player.TeamNames,
-                null!,
-                Array.Empty<string>(),
-                new PlayerOverallStats()
-                {
-                    PlayerODIStats = new PlayerFormatStats()
-                    {
-                        BattingInningsStats = battingStats,
-                        BattingOverallStats = new BattingStatistics(
-                                matches: 0,
-                                innings: battingStats.Count(),
-                                notOut: 0,
-                                runs: (int)battingStats.Sum(bs => bs.RunScored),
-                                ducks: 0,
-                                highestScore: battingStats.Any() ? battingStats.Max(bs => bs.RunScored).ToString() : "0",
-                                ballsFaced: (int)battingStats.Sum(bs => bs.BallsFaced),
-                                centuries: battingStats.Count(bs => bs.RunScored >= 100),
-                                halfCenturies: battingStats.Count(bs => bs.RunScored >= 50 && bs.RunScored < 100),
-                                fours: (int)battingStats.Sum(bs => bs.FoursInInning),
-                                sixes: (int)battingStats.Sum(bs => bs.SixesInInning),
-                                span: string.Empty,
-                                title: string.Empty,
-                                subTitle: string.Empty),
-                    },
-                    PlayerT20IStats = new PlayerFormatStats()
-                    {
-                        BattingInningsStats = Enumerable.Empty<BattingInningsStat>(),
-                    },
-                });
+               player.Uuid,
+               player.PlayerName,
+               player.Href,
+               player.TeamsPlayersInfos.Select(x => new CricketTeam(x.TeamUuid, x.TeamName)).ToArray(),
+               new DateOnly(player.DateOfBirth.Year, (int)player.DateOfBirth?.Month, (int)player.DateOfBirth?.Date).ToString("dd-MMM-yyyy"),
+               string.Empty,
+               null!,
+               player.TeamsPlayersInfos.Select(x => x.CareerStatistics).ToArray(),
+               string.Empty,
+               player.Formats,
+               player.TeamNames,
+               null!,
+               Array.Empty<string>(),
+               new PlayerOverallStats()
+               {
+                   PlayerODIStats = new PlayerFormatStats()
+                   {
+                       BattingInningsStats = battingStats,
+                       BattingOverallStats = CalculateBattingOverallStats(battingStats),
+                   },
+                   PlayerT20IStats = new PlayerFormatStats()
+                   {
+                       BattingInningsStats = Enumerable.Empty<BattingInningsStat>(),
+                   },
+               });
         }
         catch (Exception ex)
         {
@@ -367,5 +353,33 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         var allTeamsPlayersInfo = context.CricketTeamPlayerInfos.Include(x => x.TeamInfo).Include(x => x.PlayerInfo);
 
         await playerPDFHandler.AddPDFCricketPlayerRecords(allTeamsPlayersInfo);
+    }
+
+    private BattingStatistics CalculateBattingOverallStats(IEnumerable<BattingInningsStat> battingStats)
+    {
+        var span = string.Empty;
+        if (battingStats.Any())
+        {
+            var firstMatchDate = battingStats.Min(bs => bs.MatchDate);
+            var lastMatchDate = battingStats.Max(bs => bs.MatchDate);
+            span = $"{firstMatchDate:yyyy}-{lastMatchDate:yyyy}";
+        }
+
+        return new BattingStatistics(
+           matches: 1000,
+           innings: battingStats.Count(),
+           notOut: battingStats.Count(bs => bs.OutStatus.Contains("not out", StringComparison.OrdinalIgnoreCase)),
+           runs: (int)battingStats.Sum(bs => bs.RunScored),
+           ducks: battingStats.Count(bs => bs.RunScored == 0 && !bs.OutStatus.Contains("not out", StringComparison.OrdinalIgnoreCase)),
+           highestScore: battingStats.Any() ?
+               $"{battingStats.Max(bs => bs.RunScored)}{(battingStats.FirstOrDefault(bs => bs.RunScored == battingStats.Max(bs2 => bs2.RunScored))?.OutStatus.Contains("not out", StringComparison.OrdinalIgnoreCase) == true ? "*" : string.Empty)}" : "0",
+           ballsFaced: (int)battingStats.Sum(bs => bs.BallsFaced),
+           centuries: battingStats.Count(bs => bs.RunScored >= 100),
+           halfCenturies: battingStats.Count(bs => bs.RunScored >= 50 && bs.RunScored < 100),
+           fours: (int)battingStats.Sum(bs => bs.FoursInInning),
+           sixes: (int)battingStats.Sum(bs => bs.SixesInInning),
+           span: span,
+           title: string.Empty,
+           subTitle: string.Empty);
     }
 }

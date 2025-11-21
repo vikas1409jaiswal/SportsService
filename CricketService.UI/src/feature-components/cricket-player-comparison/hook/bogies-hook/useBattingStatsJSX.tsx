@@ -41,9 +41,9 @@ const useBattingStatsJSX = (
     },
     {
       dataName: "Not Outs",
-      data1Text: player1AddData?.notOuts?.toString() ?? "",
-      data2Text: player2AddData?.notOuts?.toString() ?? "",
-      speechText: `Not outs: ${player1Name}, ${player1AddData?.notOuts}, ${player2Name}, ${player2AddData?.notOuts}`,
+      data1Text: player1AddData?.notOut?.toString() ?? "",
+      data2Text: player2AddData?.notOut?.toString() ?? "",
+      speechText: `Not outs: ${player1Name}, ${player1AddData?.notOut}, ${player2Name}, ${player2AddData?.notOut}`,
     },
     {
       dataName: "Ducks",

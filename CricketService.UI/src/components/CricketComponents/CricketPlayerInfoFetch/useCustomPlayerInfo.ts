@@ -77,7 +77,7 @@ export interface BattingStatistics {
   fours: number;
   sixes: number;
   strikeRate: number;
-  notOuts?: number;
+  notOut?: number;
   ducks?: number;
   average?: number;
 }

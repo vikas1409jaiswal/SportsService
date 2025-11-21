@@ -150,13 +150,13 @@ public class CricketServiceContext : DbContext
                 c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
                 c => c.ToList()));
 
-        //modelBuilder.Entity<CricketPlayerInfoDTO>()
-        //  .Property(e => e.DateOfBirth)
-        //  .HasConversion(
-        //  db => JsonConvert.SerializeObject(db),
-        //  db => JsonConvert.DeserializeObject<DateOfEvent>(db))
-        //  .HasColumnName("date_of_birth")
-        //  .HasColumnType("jsonb");
+        modelBuilder.Entity<CricketPlayerInfoDTO>()
+         .Property(e => e.DateOfBirth)
+         .HasConversion(
+         db => JsonConvert.SerializeObject(db),
+         db => JsonConvert.DeserializeObject<DateOfEvent>(db))
+         .HasColumnName("date_of_birth")
+         .HasColumnType("jsonb");
 
         //modelBuilder.Entity<CricketPlayerInfoDTO>()
         // .Property(e => e.DateOfDeath)

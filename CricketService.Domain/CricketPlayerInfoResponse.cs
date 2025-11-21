@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using CricketService.Domain.Common;
 
 namespace CricketService.Domain;
@@ -151,7 +151,7 @@ public class BattingStatistics
             }
 
             var average = (double)Runs / outTimes;
-            return average;
+            return Math.Round(average, 2);
         }
     }
 
@@ -167,7 +167,7 @@ public class BattingStatistics
             }
 
             var strikeRate = (double)(Runs * 100) / BallsFaced;
-            return strikeRate;
+            return Math.Round(strikeRate, 2);
         }
     }
 

@@ -38,6 +38,7 @@ export interface CricketPlayerResponse {
   fullName: string;
   playerHref: string;
   dateOfBirth: string;
+  age: string;
   dateOfDeath: string;
   teams: any;
   careerStatistics: any;

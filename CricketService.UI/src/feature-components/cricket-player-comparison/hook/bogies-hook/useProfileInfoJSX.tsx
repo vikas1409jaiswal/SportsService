@@ -33,9 +33,9 @@ const useProfileInfoJSX = (
     <ArrowDataComparer
       className="data age-container"
       dataName="Age"
-      data1Text={"36y 342d"}
-      data2Text={"36y 342d"}
-      speechText={`${player1Data?.fullName}, Age, ${"36y 342d"?.split("y")[0]} years, ${player2Data?.fullName}, Age ${"36y 342d"?.split("y")[0]} years`}
+      data1Text={player1Data?.age}
+      data2Text={player2Data?.age}
+      speechText={`${player1Data?.fullName}, Age, ${player1Data?.age.split("y ")[0]} years, ${player2Data?.fullName}, Age ${player2Data?.age.split("y ")[0]} years`}
     />,
     <ArrowDataComparer
       className="data batting-style-container"
