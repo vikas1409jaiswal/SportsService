@@ -1,0 +1,116 @@
+@import '../CommonCss.scss';
+
+.drag-reorder-modal .reorder-content {
+  .active-items-section, .removed-items-section {
+    h3 {
+      margin: 0 0 12px 0;
+      color: #333;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  .removed-items-section {
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+
+    .removed-items-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .removed-item {
+        display: flex;
+        align-items: center;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        color: #6c757d;
+      }
+    }
+  }
+}
+
+.drag-reorder-modal .table-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.drag-reorder-modal .reorder-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+
+  th {
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ddd;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    &:first-child {
+      width: 80px;
+      text-align: center;
+    }
+
+    &:last-child {
+      width: 80px;
+      text-align: center;
+    }
+  }
+
+  td {
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+  }
+
+  tr {
+    transition: all 0.2s ease;
+
+    &:hover:not([style*="cursor: not-allowed"]) {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    &[draggable="true"] {
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+}
+
+// Responsive design for the drag reorder modal
+@media (max-width: 768px) {
+  .drag-reorder-modal.modal {
+    width: calc(100vw - 20px) !important;
+  }
+
+  .drag-reorder-modal .reorder-table {
+    th, td {
+      padding: 8px 4px;
+      font-size: 0.9rem;
+    }
+
+    th:first-child {
+      width: 60px;
+    }
+
+    th:last-child {
+      width: 60px;
+    }
+  }
+
+  .drag-reorder-modal .removed-items-section .removed-items-list {
+    flex-direction: column;
+  }
+}

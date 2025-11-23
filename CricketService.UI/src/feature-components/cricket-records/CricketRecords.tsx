@@ -13,18 +13,30 @@ export const CricketRecords: React.FC = () => {
   const [selectedProfile, setSelectedProfile] = useState(profiles[0].value);
   const [isReorderModalOpen, setIsReorderModalOpen] = useState(false);
   const [columnOrder, setColumnOrder] = useState<string[]>([]);
+  const [removedItems, setRemovedItems] = useState<string[]>([]);
   const { isMenuOpened } = useMenuToggle();
   const originalRows = useCustomESPNTable(selectedProfile, 10);
 
-  // Reorder rows data according to column order
+  // Reorder rows data according to column order and filter out removed items
   const reorderRowData = (row: any) => {
-    if (!columnOrder.length || !row?.data) return row;
+    if (!row?.data) return row;
     
-    const reorderedData = columnOrder.map(columnKey => 
-      row.data.find((item: { key: string }) => item.key === columnKey)
-    ).filter(Boolean);
+    let filteredData = row.data;
     
-    return { ...row, data: reorderedData };
+    // Filter out removed items
+    if (removedItems.length > 0) {
+      filteredData = filteredData.filter((item: { key: string }) => !removedItems.includes(item.key));
+    }
+    
+    // Reorder according to column order
+    if (columnOrder.length > 0) {
+      const reorderedData = columnOrder
+        .map(columnKey => filteredData.find((item: { key: string }) => item.key === columnKey))
+        .filter(Boolean);
+      return { ...row, data: reorderedData };
+    }
+    
+    return { ...row, data: filteredData };
   };
 
   const rows = originalRows?.map(reorderRowData) || [];
@@ -32,6 +44,11 @@ export const CricketRecords: React.FC = () => {
   const handleSaveColumnOrder = (newOrder: string[]) => {
     console.log("Received new column order:", newOrder);
     setColumnOrder(newOrder);
+  };
+
+  const handleRemoveItems = (removedItemsList: string[]) => {
+    console.log("Received removed items:", removedItemsList);
+    setRemovedItems(removedItemsList);
   };
 
   const menuItemsProfiles: MenuItem[] = profiles.map(profile => ({
@@ -73,7 +90,9 @@ export const CricketRecords: React.FC = () => {
           onClose={() => setIsReorderModalOpen(false)}
           rows={originalRows || []}
           onSave={handleSaveColumnOrder}
+          onRemove={handleRemoveItems}
           currentOrder={columnOrder}
+          removedItems={removedItems}
         />
       </div>
     </ProfileProvider>
