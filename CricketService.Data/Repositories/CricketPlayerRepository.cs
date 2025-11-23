@@ -154,9 +154,12 @@ public class CricketPlayerRepository : ICricketPlayerRepository
             }
 
             IEnumerable<BattingInningsStat> battingStats = Enumerable.Empty<BattingInningsStat>();
+            int matchesCount = 0;
             try
             {
-                battingStats = GetPlayerBattingStatistics(player.Href);
+                var (stats, matches) = GetPlayerBattingStatistics(player.Href);
+                battingStats = stats;
+                matchesCount = matches;
             }
             catch (Exception ex)
             {
@@ -182,7 +185,7 @@ public class CricketPlayerRepository : ICricketPlayerRepository
                    PlayerODIStats = new PlayerFormatStats()
                    {
                        BattingInningsStats = battingStats,
-                       BattingOverallStats = CalculateBattingOverallStats(battingStats),
+                       BattingOverallStats = CalculateBattingOverallStats(battingStats, matchesCount),
                    },
                    PlayerT20IStats = new PlayerFormatStats()
                    {
@@ -197,7 +200,7 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         }
     }
 
-    public IEnumerable<BattingInningsStat> GetPlayerBattingStatistics(string playerHref)
+    public (IEnumerable<BattingInningsStat> BattingStats, int MatchesCount) GetPlayerBattingStatistics(string playerHref)
     {
         logger.LogInformation($"Fetching batting statistics for player with href: {playerHref}");
         try
@@ -277,7 +280,15 @@ public class CricketPlayerRepository : ICricketPlayerRepository
                     batting.TeamName,
                     batting.OppTeamName))
                 .ToList();
-            return results;
+
+            // Calculate matches count from Playing11 arrays
+            var matchesCount = odiMatches
+                .Where(match =>
+                    (match.Team1.Playing11 != null && match.Team1.Playing11.Any(p => p.Href == playerHref)) ||
+                    (match.Team2.Playing11 != null && match.Team2.Playing11.Any(p => p.Href == playerHref)))
+                .Count();
+
+            return (results, matchesCount);
         }
         catch (Exception ex)
         {
@@ -355,7 +366,7 @@ public class CricketPlayerRepository : ICricketPlayerRepository
         await playerPDFHandler.AddPDFCricketPlayerRecords(allTeamsPlayersInfo);
     }
 
-    private BattingStatistics CalculateBattingOverallStats(IEnumerable<BattingInningsStat> battingStats)
+    private BattingStatistics CalculateBattingOverallStats(IEnumerable<BattingInningsStat> battingStats, int matchesCount)
     {
         var span = string.Empty;
         if (battingStats.Any())
@@ -365,19 +376,22 @@ public class CricketPlayerRepository : ICricketPlayerRepository
             span = $"{firstMatchDate:yyyy}-{lastMatchDate:yyyy}";
         }
 
+        var maxScore = battingStats.Any() ? battingStats.Max(bs => bs.RunScored ?? 0) : 0;
+        var maxScoreInning = battingStats.FirstOrDefault(bs => bs.RunScored == maxScore);
+        var highestScoreNotOut = maxScoreInning?.OutStatus?.Contains("not out", StringComparison.OrdinalIgnoreCase) == true ? "*" : string.Empty;
+
         return new BattingStatistics(
-           matches: 1000,
+           matches: matchesCount,
            innings: battingStats.Count(),
            notOut: battingStats.Count(bs => bs.OutStatus.Contains("not out", StringComparison.OrdinalIgnoreCase)),
-           runs: (int)battingStats.Sum(bs => bs.RunScored),
-           ducks: battingStats.Count(bs => bs.RunScored == 0 && !bs.OutStatus.Contains("not out", StringComparison.OrdinalIgnoreCase)),
-           highestScore: battingStats.Any() ?
-               $"{battingStats.Max(bs => bs.RunScored)}{(battingStats.FirstOrDefault(bs => bs.RunScored == battingStats.Max(bs2 => bs2.RunScored))?.OutStatus.Contains("not out", StringComparison.OrdinalIgnoreCase) == true ? "*" : string.Empty)}" : "0",
-           ballsFaced: (int)battingStats.Sum(bs => bs.BallsFaced),
-           centuries: battingStats.Count(bs => bs.RunScored >= 100),
-           halfCenturies: battingStats.Count(bs => bs.RunScored >= 50 && bs.RunScored < 100),
-           fours: (int)battingStats.Sum(bs => bs.FoursInInning),
-           sixes: (int)battingStats.Sum(bs => bs.SixesInInning),
+           runs: (int)battingStats.Sum(bs => bs.RunScored ?? 0),
+           ducks: battingStats.Count(bs => (bs.RunScored ?? 0) == 0 && !bs.OutStatus.Contains("not out", StringComparison.OrdinalIgnoreCase)),
+           highestScore: battingStats.Any() ? $"{maxScore}{highestScoreNotOut}" : "0",
+           ballsFaced: (int)battingStats.Sum(bs => bs.BallsFaced ?? 0),
+           centuries: battingStats.Count(bs => (bs.RunScored ?? 0) >= 100),
+           halfCenturies: battingStats.Count(bs => (bs.RunScored ?? 0) >= 50 && (bs.RunScored ?? 0) < 100),
+           fours: (int)battingStats.Sum(bs => bs.FoursInInning ?? 0),
+           sixes: (int)battingStats.Sum(bs => bs.SixesInInning ?? 0),
            span: span,
            title: string.Empty,
            subTitle: string.Empty);

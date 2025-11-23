@@ -35,13 +35,14 @@ const fetchESPNTable = async (): Promise<ApiData> => {
   }
 };
 
-export const useCustomESPNTable = (maxLimit: number = 10): ESPNTableRow[] => {
+
+export const useCustomESPNTable = (profile: string = "MostWicketsInCareer", maxLimit: number = 10): ESPNTableRow[] => {
   const { data } = useQuery(["espn-table"], () => fetchESPNTable(), {
-    staleTime: ONE_HOUR_IN_MS, // Data will be fresh for 1 hour
-    cacheTime: ONE_HOUR_IN_MS * 2, // Cache will persist for 2 hours
-    refetchOnWindowFocus: false, // Don't refetch when window regains focus
-    refetchOnReconnect: false, // Don't refetch when regaining network connection
-    refetchOnMount: false, // Only refetch when stale (after 1 hour)
+    staleTime: ONE_HOUR_IN_MS,
+    cacheTime: ONE_HOUR_IN_MS * 2,
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
+    refetchOnMount: false,
   });
 
   const divElement = document.createElement("div");
@@ -68,11 +69,13 @@ export const useCustomESPNTable = (maxLimit: number = 10): ESPNTableRow[] => {
 
   tableRowsSelector?.forEach((tr, i) => {
     const tdsSelector = tr?.querySelectorAll("td");
-    i < maxLimit &&
-      dataGenerator.mostWicketsInCareer(espnTable, tdsSelector, false);
-      //dataGenerator.mostRunsInTestMatch(espnTable, tdsSelector, false);
-      //dataGenerator.mostRunsInCareer(espnTable, tdsSelector, false);
-
+    if (i < maxLimit) {
+      if (profile === "MostWicketsInCareer") {
+        dataGenerator.mostWicketsInCareer(espnTable, tdsSelector, false);
+      } else if (profile === "MostRunsInCareer") {
+        dataGenerator.mostRunsInCareer(espnTable, tdsSelector, false);
+      }
+    }
   });
 
   return espnTable;

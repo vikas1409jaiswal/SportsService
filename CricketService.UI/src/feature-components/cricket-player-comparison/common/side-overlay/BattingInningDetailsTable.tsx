@@ -18,11 +18,11 @@ export const BattingInningDetailsTable: React.FC<BattingInningDetailsTableProps>
         <thead>
           <tr>
             <th>#</th>
-            <th>Match #</th>
+            <th><b>Match #</b></th>
             <th>Date</th>
             <th>Inning</th>
             <th>Pos</th>
-            <th>Runs</th>
+            <th><b>Runs</b></th>
             <th>Balls</th>
             <th>4s</th>
             <th>6s</th>
@@ -35,11 +35,11 @@ export const BattingInningDetailsTable: React.FC<BattingInningDetailsTableProps>
           {innings.map((inning, idx) => (
             <tr key={inning.uuid || idx}>
               <td>{idx + 1}</td>
-              <td>{inning.matchNumber || "-"}</td>
+              <td><b>{inning.matchNumber || "-"}</b></td>
               <td>{inning.matchDate ? new Date(inning.matchDate).toLocaleDateString() : "-"}</td>
               <td>{inning.inning ?? "-"}</td>
               <td>{inning.battingPosition ?? "-"}</td>
-              <td>{inning.runScored ?? "-"}</td>
+              <td><b>{inning.runScored ?? "-"}</b></td>
               <td>{inning.ballsFaced ?? "-"}</td>
               <td>{inning.foursInInning ?? "-"}</td>
               <td>{inning.sixesInInning ?? "-"}</td>

@@ -70,9 +70,9 @@ public class CricketPlayerController : Controller
     [HttpGet("player/{playerHref}/batting-statistics")]
     public IActionResult GetPlayerBattingStatistics([FromRoute, Required] string playerHref)
     {
-        var battingStats = cricketPlayerRepository.GetPlayerBattingStatistics(playerHref);
+        var (battingStats, matchesCount) = cricketPlayerRepository.GetPlayerBattingStatistics(playerHref);
 
-        Response.Headers["total-matches"] = battingStats.Count().ToString();
+        Response.Headers["total-matches"] = matchesCount.ToString();
 
         return Ok(battingStats);
     }

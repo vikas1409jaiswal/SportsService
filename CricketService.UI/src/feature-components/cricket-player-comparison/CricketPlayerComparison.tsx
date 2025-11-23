@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { PlayerProfileContainer } from "./common/PlayerProfileContainer";
 import { MovingTrain } from "../../components/common/MovingTrain";
 import {
@@ -11,6 +11,7 @@ import usePlayersIntroJSX from "./hook/bogies-hook/usePlayersIntroJSX";
 import useProfileInfoJSX from "./hook/bogies-hook/useProfileInfoJSX";
 import useBattingStatsJSX from "./hook/bogies-hook/useBattingStatsJSX";
 import { BattingStatistics } from "../../components/CricketComponents/CricketPlayerInfoFetch/useCustomPlayerInfo";
+import { useMenuToggle } from "../../hooks/useMenuToggle";
 import "./CricketPlayerComparison.scss";
 import CenteredSpinner from "../../components/common/CenteredSpinner";
 
@@ -23,7 +24,7 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
     useFetchPlayerAllMatches("a012ab17-063b-4cb0-8e12-14a11d38bd4d");
   const [showComparison, setShowComparison] = useState(true);
   const [isMovingTrain, setIsMovingTrain] = useState(false);
-  const [isMenuOpened, setIsMenuOpened] = useState(false);
+  const { isMenuOpened } = useMenuToggle();
 
   React.useEffect(() => {
     const handler = (event: any) => {
@@ -44,26 +45,12 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
           );
         }
       }
-      if (
-        event.originalEvent?.key === "m" || event.originalEvent?.key === "M"
-      ) {
-        setIsMenuOpened((prev: boolean) => !prev);
-      }
     };
     $(document).on("keydown", handler);
     return () => {
       $(document).off("keydown", handler);
     };
   }, [player1Data?.fullName, player2Data?.fullName]);
-
-  // useEffect(() => {
-  //   if (player1Data?.fullName && player2Data?.fullName) {
-  //     speakText(
-  //       `Welcome! In this video, we compare ${player1Data.fullName} and ${player2Data.fullName}—breaking down their stats, careers, and strengths.`,
-  //       SpeechLanguage.HindiIndian
-  //     );
-  //   }
-  // }, [player1Data?.fullName, player2Data?.fullName]);
 
   const introJSX = usePlayersIntroJSX(player1Data?.fullName || "", player2Data?.fullName || "", isMovingTrain);
   const profileInfoBogies = useProfileInfoJSX(
@@ -84,6 +71,34 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
   // );
 
   const bogies = [introJSX, ...profileInfoBogies,...battingStatsBogies ];
+
+  // Create speed function that halves speed when batting stats bogies start appearing
+  // Accounts for different bogie lengths/heights
+  const createSpeedFunction = () => {
+    const introBogieCount = 1;
+    const profileBogieCount = profileInfoBogies.length;
+    const battingStatsBogieCount = battingStatsBogies.length;
+    
+    // Estimate relative visual weight/height of each section
+    // Assuming batting stats bogies are typically larger/taller than others
+    const introWeight = introBogieCount * 840; // Standard height
+    const profileWeight = profileBogieCount * 476; // Standard height
+    const battingStatsWeight = battingStatsBogieCount * 492; // Larger height for stats
+    
+    const totalWeight = introWeight + profileWeight + battingStatsWeight + 91;
+    const battingStatsStartWeight = introWeight + profileWeight;
+    const battingStatsStartRatio = battingStatsStartWeight / totalWeight;
+
+    return (time: number): number => {
+      if (time < battingStatsStartRatio) {
+        // Normal speed before batting stats section
+        return 5;
+      } else {
+        // Half speed when batting stats bogies appear (they're more content-heavy)
+        return 0.5;
+      }
+    };
+  };
 
   const renderBanner = () => (
     <div
@@ -122,6 +137,7 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
                 isColumn
                 popUpIndex={1}
                 isMoving={isMovingTrain}
+                speedFunction={createSpeedFunction()}
               />
             </div>
             <PlayerProfileContainer

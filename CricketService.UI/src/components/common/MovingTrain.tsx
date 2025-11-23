@@ -12,6 +12,7 @@ interface MovingTrainProps {
   isColumn?: boolean;
   popUpIndex?: number;
   isMoving?: boolean;
+  speedFunction?: (time: number) => number; // Speed as function of time (0-1)
 }
 
 export const MovingTrain: React.FC<MovingTrainProps> = ({
@@ -22,32 +23,67 @@ export const MovingTrain: React.FC<MovingTrainProps> = ({
   isColumn,
   popUpIndex,
   isMoving,
+  speedFunction,
 }) => {
   const control = useAnimation();
 
   useEffect(() => {
     if (!isMoving) return;
-    const transition = {
-      duration: duration || 30,
-      repeat: 0,
-      delay: delay || 0,
-      ease: "linear",
-    };
 
-    isColumn
-      ? control.start({
-          y: [0, -trackLength],
-          transition,
-        })
-      : control.start({
-          x: [0, -trackLength],
-          transition,
-        });
+    if (speedFunction) {
+      // Custom speed function animation
+      const animationDuration = duration || 30;
+      const frames: number[] = [];
+      const frameCount = 60; // 60 frames for smooth animation
+      
+      // Generate keyframes based on speed function
+      for (let i = 0; i <= frameCount; i++) {
+        const timeProgress = i / frameCount;
+        const speed = speedFunction(timeProgress);
+        const position = -trackLength * timeProgress * speed;
+        frames.push(position);
+      }
+
+      const transition = {
+        duration: animationDuration,
+        repeat: 0,
+        delay: delay || 0,
+        ease: "linear", // Linear between keyframes, but keyframes create custom curve
+      };
+
+      isColumn
+        ? control.start({
+            y: frames,
+            transition,
+          })
+        : control.start({
+            x: frames,
+            transition,
+          });
+    } else {
+      // Default linear animation
+      const transition = {
+        duration: duration || 30,
+        repeat: 0,
+        delay: delay || 0,
+        ease: "linear",
+      };
+
+      isColumn
+        ? control.start({
+            y: [0, -trackLength],
+            transition,
+          })
+        : control.start({
+            x: [0, -trackLength],
+            transition,
+          });
+    }
 
     return () => {
       control.stop();
     };
-  }, [isColumn, isMoving]);
+  }, [isColumn, isMoving, control, delay, duration, trackLength, speedFunction]);
 
   return (
     <motion.div
@@ -75,7 +111,7 @@ const Bogie: React.FC<BogieProps> = ({
   duration,
   popUpIndex,
 }) => {
-  const { ref, inView, entry } = useInView({ threshold: 0.5 });
+  const { ref, inView } = useInView({ threshold: 0.5 });
   const control = useAnimation();
 
   useEffect(() => {
@@ -87,7 +123,7 @@ const Bogie: React.FC<BogieProps> = ({
         },
       });
     }
-  }, [inView, control, duration]);
+  }, [inView, control, duration, index, popUpIndex]);
 
   return (
     <motion.div

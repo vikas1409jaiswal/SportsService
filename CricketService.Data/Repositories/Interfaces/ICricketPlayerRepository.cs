@@ -16,7 +16,7 @@ public interface ICricketPlayerRepository
 
     CricketPlayerInfoResponse GetPlayerDetailsByTeamName(string teamName, string playerName, bool? isSingle = false);
 
-    IEnumerable<BattingInningsStat> GetPlayerBattingStatistics(string playerHref);
+    (IEnumerable<BattingInningsStat> BattingStats, int MatchesCount) GetPlayerBattingStatistics(string playerHref);
 
     Task GeneratedPDFForPlayers();
 }

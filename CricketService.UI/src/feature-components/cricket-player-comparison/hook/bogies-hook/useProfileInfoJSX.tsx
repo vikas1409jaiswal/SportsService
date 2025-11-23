@@ -42,21 +42,21 @@ const useProfileInfoJSX = (
       dataName="Batting Style"
       data1Text={battingStyle1}
       data2Text={battingStyle2}
-      speechText={`Batting Style: ${player1Data?.fullName}, ${battingStyle1}, ${player2Data?.fullName}, ${battingStyle2}`}
+      speechText={`Batting Style: ${player1Data?.fullName}, ${battingStyle1?.toLowerCase()}, ${player2Data?.fullName}, ${battingStyle2?.toLowerCase()}`}
     />,
     <ArrowDataComparer
       className="data bowling-style-container"
       dataName="Bowling Style"
       data1Text={bowlingStyle1}
       data2Text={bowlingStyle2}
-      speechText={`Bowling Style: ${player1Data?.fullName}, ${bowlingStyle1}, ${player2Data?.fullName}, ${bowlingStyle2}`}
+      speechText={`Bowling Style: ${player1Data?.fullName}, ${bowlingStyle1?.toLowerCase()}, ${player2Data?.fullName}, ${bowlingStyle2?.toLowerCase()}`}
     />,
     <ArrowDataComparer
       className="data playing-role-container"
       dataName="Playing Role"
       data1Text={playingRole1}
       data2Text={playingRole2}
-      speechText={`Playing Role: ${player1Data?.fullName}, ${playingRole1}, ${player2Data?.fullName}, ${playingRole2}`}
+      speechText={`Playing Role: ${player1Data?.fullName}, ${playingRole1?.toLowerCase()}, ${player2Data?.fullName}, ${playingRole2?.toLowerCase()}`}
     />,
   ];
   return profileInfoBogies;

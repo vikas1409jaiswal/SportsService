@@ -36,14 +36,14 @@ export const ArrowDataComparer: React.FC<ArrowDataComparerProps> = ({
   return (
     <div className={className || "default-data"} ref={ref}>
       <ArrowWithData
-        bgColors={["cyan"]}
+        bgColors={["cyan", "orange"]}
         text={data1Text}
         headWidth={headWidth}
         tailWidth={tailWidth}
       />
       <div className="arrow-data-name">{dataName}</div>
       <ArrowWithData
-        bgColors={["violet"]}
+        bgColors={["violet", "darkblue"]}
         text={data2Text}
         reversed
         headWidth={headWidth}
