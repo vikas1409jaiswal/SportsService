@@ -7,8 +7,14 @@ import { PlayerExtraInfo } from "../../../common/PlayerExtraInfo";
 import { PlayerImageContainer } from "../../../common/PlayerImageContainer";
 import { speeches } from "../../speech-management/SpeechManagement";
 import { config } from "../../../../configs";
+import { useProfileContext } from "../../ProfileContext";
 
 import "./IndividualPage.scss";
+
+const speechMapping: Record<string, keyof typeof speeches> = {
+  MostWicketsInCareer: "most-career-wickets-speech",
+  MostRunsInCareer: "most-career-runs-speech"
+};
 
 type IndividualPageProps = {
   row: ESPNTableRow;
@@ -60,18 +66,18 @@ export const IndividualPage: React.FunctionComponent<IndividualPageProps> = ({
     },
   });
 
+  const { selectedProfile } = useProfileContext();
+
   useEffect(() => {
     if (selectedRowIndex === 9) {
       speeches["top-10-players-intro"]();
     }
 
     if (row?.data) {
-      speeches["most-career-wickets-speech"](
-        selectedRowIndex,
-        playerName,
-        row,
-        teamName
-      );
+      const speechKey = speechMapping[selectedProfile];
+      if (speechKey && speeches[speechKey]) {
+        speeches[speechKey](selectedRowIndex, playerName, row, teamName);
+      }
     }
 
     if (selectedRowIndex === 1) {
@@ -79,7 +85,7 @@ export const IndividualPage: React.FunctionComponent<IndividualPageProps> = ({
     }
 
     return () => window.speechSynthesis.cancel();
-  }, [selectedRowIndex]);
+  }, [selectedRowIndex, selectedProfile, row, playerName, teamName]);
 
   return (
     <div className="cricket-player-container">

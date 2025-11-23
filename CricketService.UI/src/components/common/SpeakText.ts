@@ -14,7 +14,7 @@ export const speakText = (
     console.log(synthesis);
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = SpeechLanguage.HindiIndian || lang;
-    utterance.volume = mute ? 0 : 1;
+    utterance.volume = mute ? 0 : 0;
     utterance.rate = 0.9;
     synthesis.speak(utterance);
   } else {

@@ -3,24 +3,37 @@
   background: #f9f9f9;
   width: 100vw;
   height: 100vh;
+  position: relative;
 
-   .three-dot-menu {
+  .cricket-records-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 48px);
+    gap: 16px;
     position: absolute;
     top: 10px;
     right: 10px;
     z-index: 5000;
-    
+  }
+
+  .profile-menu-cricket-records, .reorder-menu-cricket-records {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5000;
+
     .hamburger-menu-button {
       background: rgba(255, 255, 255, 0.9) !important;
       border-radius: 50% !important;
       width: 40px !important;
       height: 40px !important;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
-      
-      &:hover {
-        background: rgba(255, 255, 255, 1) !important;
-      }
+  
     }
+  }
+
+  .reorder-menu-cricket-records {
+    top: 10px;
+    right: 70px;
   }
 }
 

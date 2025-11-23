@@ -3,10 +3,10 @@
   position: relative;
   overflow: visible !important;
 
-  // Also ensure parent .player-container does not clip children
   .player-container {
     overflow: visible !important;
   }
+  
   .three-dot-menu {
     position: absolute;
     top: 10px;

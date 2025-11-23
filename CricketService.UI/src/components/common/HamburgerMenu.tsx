@@ -12,13 +12,15 @@ interface HamburgerMenuProps {
   isVisible?: boolean;
   className?: string;
   ariaLabel?: string;
+  buttonContent?: string; // Override button content with alphabet or custom text
 }
 
 export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   menuItems,
   isVisible = false,
   className = "",
-  ariaLabel = "Open menu"
+  ariaLabel = "Open menu",
+  buttonContent
 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -61,15 +63,19 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
       <div className={`hamburger-menu ${className}`.trim()} ref={dropdownRef}>
         <button 
           ref={menuButtonRef} 
-          className="hamburger-menu-button" 
+          className={`hamburger-menu-button ${buttonContent ? 'circular-button' : ''}`.trim()}
           onClick={handleMenuClick} 
           aria-label={ariaLabel}
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="5" r="2" fill="#333" />
-            <circle cx="12" cy="12" r="2" fill="#333" />
-            <circle cx="12" cy="19" r="2" fill="#333" />
-          </svg>
+          {buttonContent ? (
+            <span className="button-text">{buttonContent}</span>
+          ) : (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="5" r="2" fill="#333" />
+              <circle cx="12" cy="12" r="2" fill="#333" />
+              <circle cx="12" cy="19" r="2" fill="#333" />
+            </svg>
+          )}
         </button>
       </div>
       {isDropdownOpen && isVisible && (

@@ -39,88 +39,103 @@ const getFullTeamName = (shortName: string) => {
 export const mostWicketsInCareer = (
   espnTableRows: ESPNTableRow[],
   tdsSelector: NodeListOf<HTMLTableCellElement>,
+  thSelector: NodeListOf<HTMLTableCellElement>,
   isCalendarYear?: boolean
 ) => {
-  espnTableRows.push({
-    data: [
-      { key: "Player Name", value: tdsSelector[0]?.textContent?.trim() || "" },
-      { key: "Team Name", value: getFullTeamName(tdsSelector[0]?.textContent?.split(" (")[1]?.replace(")", "").trim()?.replace("ICC", "")?.replace("Asia", "")?.replace("Afr", "")?.replaceAll("/", "") || "") },
-      {
-        key: "Player Href",
-        value:
-          tdsSelector[0]?.querySelector("a")?.getAttribute("href")?.trim() ||
-          "",
-      },
-      { key: "Wickets", value: tdsSelector[8]?.textContent?.trim() || "" },
-      {
-        key: "Matches",
-        value: tdsSelector[2]?.textContent?.trim() || "",
-      },
-      { key: "Maidens", value: tdsSelector[6]?.textContent?.trim() || "" },
-      // {
-      //   key: "4 Wicket",
-      //   value: tdsSelector[13]?.textContent?.trim() || "",
-      // },
-      {
-        key: "5 Wicket Hauls",
-        value: tdsSelector[14]?.textContent?.trim() || "",
-      },
-      { key: "BBI", value: tdsSelector[9]?.textContent?.trim() || "" },
-      {
-        key: "xyz",
-        value:
-          teamLogos.find(
-            (x) =>
-              x.shortName ===
-              tdsSelector[0]?.textContent?.split("(")[1]?.replace(")", "")
-          )?.teamName || "",
-      },
-    ],
-  });
+  const headerKeyMapping: Record<string, string> = {
+    "Mat": "Matches",
+    "Inns": "Innings",
+    "Wkts": "Wickets",
+    "Runs": "Conceded",
+    "Mdns": "Maidens",
+    "BBI": "Best Bowling In Innings",
+    "Ave": "Average",
+    "Econ": "Economy Rate",
+    "SR": "Strike Rate",
+    "4": "4 Wicket Hauls",
+    "5": "5 Wicket Hauls",
+    "10": "10 Wicket Hauls",
+  };
 
-  if (!isCalendarYear) {
-    espnTableRows[0].data.push({
-      key: "Span",
-      value: tdsSelector[1]?.textContent || "",
+  const headers: string[] = [];
+  if (thSelector) {
+    thSelector.forEach((th) => {
+     headers.push(th.textContent?.trim() || "");
     });
   }
+
+  const rowData: { key: string; value: string }[] = [];
+
+  rowData.push({
+    key: "Player Href",
+    value: tdsSelector[0]?.querySelector("a")?.getAttribute("href")?.trim() || "",
+  });
+
+  rowData.push({
+    key: "Team Name",
+    value: getFullTeamName(
+      tdsSelector[0]?.textContent?.split(" (")[1]?.replace(")", "").trim()?.replace("ICC", "")?.replace("Asia", "")?.replace("Afr", "")?.replaceAll("/", "") || ""
+    ),
+  });
+
+  for (let i = 1; i < tdsSelector.length; i++) {
+    let key = headers[i] || `Column${i+1}`;
+    if (headerKeyMapping[key]) {
+      key = headerKeyMapping[key];
+    }
+    rowData.push({ key, value: tdsSelector[i]?.textContent?.trim() || "" });
+  }
+
+  espnTableRows.push({ data: rowData });
 };
+
 
 export const mostRunsInCareer = (
   espnTableRows: ESPNTableRow[],
   tdsSelector: NodeListOf<HTMLTableCellElement>,
+  thSelector: NodeListOf<HTMLTableCellElement>,
   isCalendarYear?: boolean
 ) => {
-  espnTableRows.push({
-    data: [
-      { key: "Player Name", value: tdsSelector[0]?.textContent || "" },
-      { key: "Team Name", value: getFullTeamName(tdsSelector[0]?.textContent?.split(" (")[1]?.replace(")", "").trim()?.replace("ICC", "")?.replace("Asia", "")?.replace("Afr", "")?.replaceAll("/", "") || "") },
-      {
-        key: "Player Href",
-        value: tdsSelector[0]?.querySelector("a")?.getAttribute("href") || "",
-      },
-      { key: "Runs", value: tdsSelector[5]?.textContent || "" },
-      {
-        key: "Matches",
-        value: tdsSelector[2]?.textContent || "",
-      },
-      { key: "H.Score", value: tdsSelector[6]?.textContent || "" },
-      {
-        key: "Hundreds",
-        value: tdsSelector[10]?.textContent || "",
-      },
-      { key: "Fifties", value: tdsSelector[11]?.textContent || "" },
-      {
-        key: "xyz",
-        value:
-          teamLogos.find(
-            (x) =>
-              x.shortName ===
-              tdsSelector[0]?.textContent?.split("(")[1]?.replace(")", "")
-          )?.teamName || "",
-      },
-    ],
+  // Use thSelector for dynamic key mapping
+  const headers: string[] = [];
+  if (thSelector) {
+    thSelector.forEach((th) => {
+      headers.push(th.textContent?.trim() || "");
+    });
+  }
+
+  const rowData: { key: string; value: string }[] = [];
+  for (let i = 0; i < tdsSelector.length; i++) {
+    const key = headers[i] || `Column${i+1}`;
+    rowData.push({ key, value: tdsSelector[i]?.textContent?.trim() || "" });
+  }
+
+  // Add Player Href if available
+  rowData.push({
+    key: "Player Href",
+    value: tdsSelector[0]?.querySelector("a")?.getAttribute("href")?.trim() || "",
   });
+
+  // Add Team Name using getFullTeamName logic
+  rowData.push({
+    key: "Team Name",
+    value: getFullTeamName(
+      tdsSelector[0]?.textContent?.split(" (")[1]?.replace(")", "").trim()?.replace("ICC", "")?.replace("Asia", "")?.replace("Afr", "")?.replaceAll("/", "") || ""
+    ),
+  });
+
+  // Add xyz (logo team name)
+  rowData.push({
+    key: "xyz",
+    value:
+      teamLogos.find(
+        (x) =>
+          x.shortName ===
+          tdsSelector[0]?.textContent?.split("(")[1]?.replace(")", "")
+      )?.teamName || "",
+  });
+
+  espnTableRows.push({ data: rowData });
 
   if (!isCalendarYear) {
     espnTableRows[0].data.push({

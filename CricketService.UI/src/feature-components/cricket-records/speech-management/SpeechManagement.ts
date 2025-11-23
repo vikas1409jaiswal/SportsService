@@ -2,30 +2,20 @@ import { config } from "../../../configs";
 import { SpeechLanguage, speakText } from "../../../components/common/SpeakText";
 import { ESPNTableRow } from "../hook/useCustomESPNTable";
 import engToHinJson from "../../../data/StaticData/englishToHindi.json";
+import speechMappingJson from "./speechMapping.json";
 
 const getValue = (row: ESPNTableRow, key: string) =>
   row?.data.find((x) => x.key === key)?.value || "";
 
 export const speeches = {
   "top-10-players-intro": () => {
-    config.language === "hindi"
-      ? speakText(
-        "इस वीडियो में हम शीर्ष 10 खिलाड़ियों को देखेंगे, जिन्होंने एकदिवसीय अंतरराष्ट्रीय क्रिकेट में सबसे ज्यादा विकेट लिए हैं",
-        SpeechLanguage.HindiIndian
-      )
-      : speakText(
-        "Welcome! In this video, we will explore the top 10 players who had taken most wickets in one-day international cricket."
-      );
+    const msg = (speechMappingJson["top-10-players-intro"] as Record<string, string>)[config.language];
+    speakText(msg);
   },
-  "video-end-message": () =>
-    config.language === "hindi"
-      ? speakText(
-          "नंबर 1 जानने से पहले अगर आपको यह वीडियो पसंद आ रही हैं तो प्लीज हमारे चैनल को लाइक, शेयर और सब्सक्राइब करें",
-          SpeechLanguage.HindiIndian
-        )
-      : speakText(
-          "Before knowing who is number 1, if you are liking our content then Please like share and subscribe."
-        ),
+  "video-end-message": () => {
+    const msg = (speechMappingJson["video-end-message"] as Record<string, string>)[config.language];
+    speakText(msg);
+  },
   "most-career-runs-speech": (
     index: number,
     playerName: string,

@@ -36,6 +36,7 @@ const fetchESPNTable = async (): Promise<ApiData> => {
 };
 
 
+
 export const useCustomESPNTable = (profile: string = "MostWicketsInCareer", maxLimit: number = 10): ESPNTableRow[] => {
   const { data } = useQuery(["espn-table"], () => fetchESPNTable(), {
     staleTime: ONE_HOUR_IN_MS,
@@ -65,15 +66,21 @@ export const useCustomESPNTable = (profile: string = "MostWicketsInCareer", maxL
   }
 
   const espnTable: ESPNTableRow[] = [];
-  const tableRowsSelector = espnTableSelector?.querySelectorAll("tbody > tr");
+  const tableRowsSelector: NodeListOf<HTMLTableRowElement> | undefined = espnTableSelector?.querySelectorAll("tbody > tr");
+  const thsSelector: NodeListOf<HTMLTableCellElement> | undefined = espnTableSelector?.querySelectorAll("thead > tr > td");
 
   tableRowsSelector?.forEach((tr, i) => {
-    const tdsSelector = tr?.querySelectorAll("td");
-    if (i < maxLimit) {
-      if (profile === "MostWicketsInCareer") {
-        dataGenerator.mostWicketsInCareer(espnTable, tdsSelector, false);
-      } else if (profile === "MostRunsInCareer") {
-        dataGenerator.mostRunsInCareer(espnTable, tdsSelector, false);
+    const tdsSelector: NodeListOf<HTMLTableCellElement> | undefined = tr?.querySelectorAll("td");
+    if (tdsSelector && thsSelector && i < maxLimit) {
+      switch (profile) {
+        case "MostWicketsInCareer":
+          dataGenerator.mostWicketsInCareer(espnTable, tdsSelector, thsSelector, false);
+          break;
+        case "MostRunsInCareer":
+          dataGenerator.mostRunsInCareer(espnTable, tdsSelector, thsSelector, false);
+          break;
+        default:
+          break;
       }
     }
   });
