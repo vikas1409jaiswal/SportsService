@@ -13,6 +13,7 @@ interface HamburgerMenuProps {
   className?: string;
   ariaLabel?: string;
   buttonContent?: string; // Override button content with alphabet or custom text
+  selectedKey?: string; // Key of the currently selected item
 }
 
 export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
@@ -20,7 +21,8 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   isVisible = false,
   className = "",
   ariaLabel = "Open menu",
-  buttonContent
+  buttonContent,
+  selectedKey
 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -83,15 +85,18 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
           ref={dropdownMenuRef}
           className="hamburger-dropdown-menu"
         >
-          {menuItems.map((item, index) => (
-            <button
-              key={item.key || index}
-              className="hamburger-dropdown-item"
-              onClick={() => handleMenuItemClick(item)}
-            >
-              {item.label}
-            </button>
-          ))}
+          {menuItems.map((item, index) => {
+            const isSelected = selectedKey && item.key === selectedKey;
+            return (
+              <button
+                key={item.key || index}
+                className={`hamburger-dropdown-item${isSelected ? ' selected' : ''}`}
+                onClick={() => handleMenuItemClick(item)}
+              >
+                {item.label}
+              </button>
+            );
+          })}
         </div>
       )}
     </>

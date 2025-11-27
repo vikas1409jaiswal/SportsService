@@ -33,6 +33,15 @@ export const ReorderModal: React.FC<ReorderModalProps> = ({
     return [];
   }, [rows]);
 
+  const defaultRemovedItems = useMemo(() => {
+    if (removedItems.length > 0) {
+      return removedItems;
+    }
+    return items
+      .filter(item => !item.isNonDraggable)
+      .map(item => item.key);
+  }, [items, removedItems]);
+
   return (
     <DragReorderModal
       isOpen={isOpen}
@@ -42,7 +51,7 @@ export const ReorderModal: React.FC<ReorderModalProps> = ({
       currentOrder={currentOrder}
       onSave={onSave}
       onRemove={onRemove}
-      removedItems={removedItems}
+      removedItems={defaultRemovedItems}
       enabledBackgroundColor="#e6ffe6"
       disabledBackgroundColor="#f0f0f0"
       draggedBackgroundColor="#e3f2fd"

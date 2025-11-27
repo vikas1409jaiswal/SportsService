@@ -32,8 +32,9 @@ export const Modal: React.FC<ModalProps> = ({
         className={`modal ${className}`}
         onClick={(e) => e.stopPropagation()}
         style={{
-          maxHeight,
-          width,
+          maxHeight: "90vh",
+          height: "90vh",
+          width: "90vw",
           maxWidth: "90vw"
         }}
       >

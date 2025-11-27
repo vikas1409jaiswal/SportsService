@@ -14,15 +14,20 @@
   padding: 20px;
 }
 
+// Center modal and set size to 90vw/90vh
 .modal {
   background: white;
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  min-width: 300px;
+  width: 90vw;
+  height: 90vh;
+  max-width: 90vw;
   max-height: 90vh;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 }
 
 .modal-header {
@@ -139,9 +144,11 @@
 // Responsive design
 @media (max-width: 768px) {
   .modal {
-    margin: 10px;
+    margin: 10px auto;
     min-width: auto;
     width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    max-width: calc(100vw - 20px);
     max-height: calc(100vh - 20px);
   }
 

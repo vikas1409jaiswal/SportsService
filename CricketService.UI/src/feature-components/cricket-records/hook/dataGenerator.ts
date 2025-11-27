@@ -31,36 +31,27 @@ const getFullTeamName = (shortName: string) => {
       return "Netherlands";
     case "SCO":
       return "Scotland";
+    case "UAE":
+      return "United Arab Emirates";
+    case "OMA":
+      return "Oman";
+    case "HKG":
+      return "Hong Kong";
     default:
       return shortName;
   }
 };
 
-export const mostWicketsInCareer = (
+function generateCareerRow(
   espnTableRows: ESPNTableRow[],
   tdsSelector: NodeListOf<HTMLTableCellElement>,
   thSelector: NodeListOf<HTMLTableCellElement>,
-  isCalendarYear?: boolean
-) => {
-  const headerKeyMapping: Record<string, string> = {
-    "Mat": "Matches",
-    "Inns": "Innings",
-    "Wkts": "Wickets",
-    "Runs": "Conceded",
-    "Mdns": "Maidens",
-    "BBI": "Best Bowling In Innings",
-    "Ave": "Average",
-    "Econ": "Economy Rate",
-    "SR": "Strike Rate",
-    "4": "4 Wicket Hauls",
-    "5": "5 Wicket Hauls",
-    "10": "10 Wicket Hauls",
-  };
-
+  headerKeyMapping: Record<string, string>
+) {
   const headers: string[] = [];
   if (thSelector) {
     thSelector.forEach((th) => {
-     headers.push(th.textContent?.trim() || "");
+      headers.push(th.textContent?.trim() || "");
     });
   }
 
@@ -87,62 +78,51 @@ export const mostWicketsInCareer = (
   }
 
   espnTableRows.push({ data: rowData });
-};
+}
 
-
-export const mostRunsInCareer = (
+export const battersCareerESPNTable = (
   espnTableRows: ESPNTableRow[],
   tdsSelector: NodeListOf<HTMLTableCellElement>,
   thSelector: NodeListOf<HTMLTableCellElement>,
-  isCalendarYear?: boolean
 ) => {
-  // Use thSelector for dynamic key mapping
-  const headers: string[] = [];
-  if (thSelector) {
-    thSelector.forEach((th) => {
-      headers.push(th.textContent?.trim() || "");
-    });
-  }
+  const headerKeyMapping: Record<string, string> = {
+    "Mat": "Matches",
+    "Inns": "Innings",
+    "Runs": "Runs",
+    "Ave": "Average",
+    "SR": "Strike Rate",
+    "4s": "Fours",
+    "6s": "Sixes",
+    "50": "Fifties",
+    "100": "Hundreds",
+    "0": "Ducks",
+    "BF": "Balls Faced",
+    "NO": "Not Outs",
+    "HS": "Highest Score",
+  };
+  generateCareerRow(espnTableRows, tdsSelector, thSelector, headerKeyMapping);
+};
 
-  const rowData: { key: string; value: string }[] = [];
-  for (let i = 0; i < tdsSelector.length; i++) {
-    const key = headers[i] || `Column${i+1}`;
-    rowData.push({ key, value: tdsSelector[i]?.textContent?.trim() || "" });
-  }
-
-  // Add Player Href if available
-  rowData.push({
-    key: "Player Href",
-    value: tdsSelector[0]?.querySelector("a")?.getAttribute("href")?.trim() || "",
-  });
-
-  // Add Team Name using getFullTeamName logic
-  rowData.push({
-    key: "Team Name",
-    value: getFullTeamName(
-      tdsSelector[0]?.textContent?.split(" (")[1]?.replace(")", "").trim()?.replace("ICC", "")?.replace("Asia", "")?.replace("Afr", "")?.replaceAll("/", "") || ""
-    ),
-  });
-
-  // Add xyz (logo team name)
-  rowData.push({
-    key: "xyz",
-    value:
-      teamLogos.find(
-        (x) =>
-          x.shortName ===
-          tdsSelector[0]?.textContent?.split("(")[1]?.replace(")", "")
-      )?.teamName || "",
-  });
-
-  espnTableRows.push({ data: rowData });
-
-  if (!isCalendarYear) {
-    espnTableRows[0].data.push({
-      key: "Span",
-      value: tdsSelector[1]?.textContent || "",
-    });
-  }
+export const bowlersCareerESPNTable = (
+  espnTableRows: ESPNTableRow[],
+  tdsSelector: NodeListOf<HTMLTableCellElement>,
+  thSelector: NodeListOf<HTMLTableCellElement>,
+) => {
+  const headerKeyMapping: Record<string, string> = {
+    "Mat": "Matches",
+    "Inns": "Innings",
+    "Wkts": "Wickets",
+    "Runs": "Conceded",
+    "Mdns": "Maidens",
+    "BBI": "Best Figures",
+    "Ave": "Average",
+    "Econ": "Economy Rate",
+    "SR": "Strike Rate",
+    "4": "4 Wicket Hauls",
+    "5": "5 Wicket Hauls",
+    "10": "10 Wicket Hauls",
+  };
+  generateCareerRow(espnTableRows, tdsSelector, thSelector, headerKeyMapping);
 };
 
 export const mostRunsInTestMatch = (
@@ -263,8 +243,8 @@ export const allDoubleCenturies = (
 };
 
 export const dataGenerator = {
-  mostWicketsInCareer,
-  mostRunsInCareer,
+  battersCareerESPNTable,
+  bowlersCareerESPNTable,
   mostRunsInTestMatch,
   mostSixesInCareer,
   allDoubleCenturies,

@@ -49,7 +49,7 @@ export const speeches = {
     const number = index + 1;
     const matches = getValue(row, "Matches");
     const wickets = getValue(row, "Wickets");
-    const bbi = getValue(row, "BBI");
+    const bbi = getValue(row, "Best Figures");
     if (config.language === "hindi") {
       const playerHindi = (engToHinJson as any).players[playerName];
       const teamHindi = (engToHinJson as any)["team-names"][teamName] || teamName;
@@ -101,31 +101,27 @@ export const speeches = {
   "most-career-sixes-speech": (
     index: number,
     playerName: string,
-    row: ESPNTableRow
+    row: ESPNTableRow,
+    teamName: string
   ) => {
-    config.language === "hindi"
-      ? speakText(
-          `नंबर ${index + 1}, ${
-            (engToHinJson as any)["team-names"][getValue(row, "xyz")]
-          } के ${(engToHinJson as any).players[playerName]}, इन्होने ${
-            getValue(row, "Span").split("-")[0]
-          } से ${getValue(row, "Span").split("-")[1]} तक ${getValue(
-            row,
-            "Matches"
-          )} मैचों में ${getValue(row, "Sixes")} छक्के मारे है.`,
-          SpeechLanguage.HindiIndian
-        )
-      : speakText(
-          `Number ${index + 1}, ${playerName} from ${getValue(
-            row,
-            "xyz"
-          )}, had hit ${getValue(row, "Sixes")} Sixes in ${getValue(
-            row,
-            "Matches"
-          )} matches between ${getValue(row, "Span").split("-")[0]} and ${
-            getValue(row, "Span").split("-")[1]
-          }.`
-        );
+    const number = index + 1;
+    const matches = getValue(row, "Matches");
+    const sixes = getValue(row, "Sixes");
+    const fours = getValue(row, "Fours");
+    const hScore = getValue(row, "Highest Score");
+    const span = getValue(row, "Span");
+    if (config.language === "hindi") {
+      const playerHindi = (engToHinJson as any).players[playerName];
+      const teamHindi = (engToHinJson as any)["team-names"][teamName] || teamName;
+      speakText(
+      `नंबर ${number?.toString()?.replace("3", "teen")}, ${teamHindi} के ${playerHindi}, ${playerHindi} ने ${matches?.replace("*", "")} मैचों में ${sixes} छक्के मारे हैं. इन्होने ${fours} चौके भी लगाए हैं और इनका सर्वोच्च स्कोर ${hScore?.replace("*", " नाबाद")} है.`,
+      SpeechLanguage.HindiIndian
+      );
+    } else {
+      speakText(
+      `Number ${number}, ${playerName} from ${teamName}, ${playerName} had hit ${sixes} Sixes in ${matches?.replace("*", "")} matches. He had also scored ${fours} Fours and His highest score is ${hScore?.replace("*", " not out")}.`
+      );
+    }
   },
   "most-career-nervous-ninties-speech": (
     index: number,

@@ -35,8 +35,6 @@ const fetchESPNTable = async (): Promise<ApiData> => {
   }
 };
 
-
-
 export const useCustomESPNTable = (profile: string = "MostWicketsInCareer", maxLimit: number = 10): ESPNTableRow[] => {
   const { data } = useQuery(["espn-table"], () => fetchESPNTable(), {
     staleTime: ONE_HOUR_IN_MS,
@@ -74,10 +72,11 @@ export const useCustomESPNTable = (profile: string = "MostWicketsInCareer", maxL
     if (tdsSelector && thsSelector && i < maxLimit) {
       switch (profile) {
         case "MostWicketsInCareer":
-          dataGenerator.mostWicketsInCareer(espnTable, tdsSelector, thsSelector, false);
+          dataGenerator.bowlersCareerESPNTable(espnTable, tdsSelector, thsSelector);
           break;
         case "MostRunsInCareer":
-          dataGenerator.mostRunsInCareer(espnTable, tdsSelector, thsSelector, false);
+        case "MostSixesInCareer":
+          dataGenerator.battersCareerESPNTable(espnTable, tdsSelector, thsSelector);
           break;
         default:
           break;

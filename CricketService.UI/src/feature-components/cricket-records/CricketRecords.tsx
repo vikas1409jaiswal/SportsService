@@ -10,7 +10,7 @@ import { ProfileProvider } from "./ProfileContext";
 import "./CricketRecords.scss";
 
 export const CricketRecords: React.FC = () => {
-  const [selectedProfile, setSelectedProfile] = useState(profiles[0].value);
+  const [selectedProfile, setSelectedProfile] = useState(profiles[2].value);
   const [isReorderModalOpen, setIsReorderModalOpen] = useState(false);
   const [columnOrder, setColumnOrder] = useState<string[]>([]);
   const [removedItems, setRemovedItems] = useState<string[]>([]);
@@ -82,6 +82,7 @@ export const CricketRecords: React.FC = () => {
             ariaLabel="Select cricket profile"
             className="profile-menu-cricket-records"
             buttonContent="P"
+            selectedKey={selectedProfile}
           />
         </div>
         <IndividualPages rows={rows?.slice(0, 10)} />
