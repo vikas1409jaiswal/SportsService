@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import $ from "jquery";
 
 export const useMenuToggle = () => {
-  const [isMenuOpened, setIsMenuOpened] = useState(true);
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   useEffect(() => {
     const handler = (event: any) => {

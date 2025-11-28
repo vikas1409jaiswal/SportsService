@@ -5,6 +5,7 @@ import {
   CricketPlayerResponse,
   useFetchPlayerAllMatches,
 } from "./hook/useFetchPlayerAllMatches";
+import { PlayerH2HSelection } from "./PlayerH2HSelection";
 import { SpeechLanguage, speakText } from "../../components/common/SpeakText";
 import $ from "jquery";
 import usePlayersIntroJSX from "./hook/bogies-hook/usePlayersIntroJSX";
@@ -12,19 +13,30 @@ import useProfileInfoJSX from "./hook/bogies-hook/useProfileInfoJSX";
 import useBattingStatsJSX from "./hook/bogies-hook/useBattingStatsJSX";
 import { BattingStatistics } from "../../components/CricketComponents/CricketPlayerInfoFetch/useCustomPlayerInfo";
 import { useMenuToggle } from "../../hooks/useMenuToggle";
-import "./CricketPlayerComparison.scss";
 import CenteredSpinner from "../../components/common/CenteredSpinner";
+
+import "./CricketPlayerComparison.scss";
 
 interface CricketPlayerComparisonProps {}
 
 export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = () => {
-  const { data: player1Data, isLoading: isLoadingP1 } =
-    useFetchPlayerAllMatches("044051e2-7246-448f-826d-ea0e0b07e67c");
-  const { data: player2Data, isLoading: isLoadingP2 } =
-    useFetchPlayerAllMatches("a012ab17-063b-4cb0-8e12-14a11d38bd4d");
-  const [showComparison, setShowComparison] = useState(true);
+  const [selectedPlayer1Uuid, setSelectedPlayer1Uuid] = useState<string>("");
+  const [selectedPlayer2Uuid, setSelectedPlayer2Uuid] = useState<string>("");
+  const [showComparison, setShowComparison] = useState(false);
   const [isMovingTrain, setIsMovingTrain] = useState(false);
   const { isMenuOpened } = useMenuToggle();
+
+  const { data: player1Data, isLoading: isLoadingP1 } =
+    useFetchPlayerAllMatches(selectedPlayer1Uuid);
+  const { data: player2Data, isLoading: isLoadingP2 } =
+    useFetchPlayerAllMatches(selectedPlayer2Uuid);
+
+  const handlePlayersSelected = (player1Uuid: string, player2Uuid: string) => {
+    setSelectedPlayer1Uuid(player1Uuid);
+    setSelectedPlayer2Uuid(player2Uuid);
+    setShowComparison(true);
+    setIsMovingTrain(false); // Reset train state when new players are selected
+  };
 
   React.useEffect(() => {
     const handler = (event: any) => {
@@ -76,8 +88,13 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
   // Accounts for different bogie lengths/heights
   const createSpeedFunction = () => {
     const introBogieCount = 1;
-    const profileBogieCount = profileInfoBogies.length;
-    const battingStatsBogieCount = battingStatsBogies.length;
+    const profileBogieCount = profileInfoBogies?.length || 0;
+    const battingStatsBogieCount = battingStatsBogies?.length || 0;
+    
+    // If no batting stats bogies, use normal speed throughout
+    if (battingStatsBogieCount === 0) {
+      return (time: number): number => 1.0;
+    }
     
     // Estimate relative visual weight/height of each section
     // Assuming batting stats bogies are typically larger/taller than others
@@ -87,12 +104,12 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
     
     const totalWeight = introWeight + profileWeight + battingStatsWeight + 91;
     const battingStatsStartWeight = introWeight + profileWeight;
-    const battingStatsStartRatio = battingStatsStartWeight / totalWeight;
+    const battingStatsStartRatio = totalWeight > 0 ? battingStatsStartWeight / totalWeight : 0;
 
     return (time: number): number => {
       if (time < battingStatsStartRatio) {
         // Normal speed before batting stats section
-        return 5;
+        return 1.0;
       } else {
         // Half speed when batting stats bogies appear (they're more content-heavy)
         return 0.5;
@@ -113,6 +130,7 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
 
   return (
     <div className="player-comparison-container">
+      <PlayerH2HSelection onPlayersSelected={handlePlayersSelected} isMenuOpened={isMenuOpened} />
       {(isLoadingP1 || isLoadingP2) && <CenteredSpinner />}
       {showComparison &&
         !isLoadingP1 &&
@@ -131,13 +149,14 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
             <div className="comparison-container">
               <MovingTrain
                 bogies={bogies}
-                trackLength={100000}
-                duration={2000}
+                trackLength={5000}
+                duration={100}
                 delay={10}
                 isColumn
                 popUpIndex={1}
                 isMoving={isMovingTrain}
                 speedFunction={createSpeedFunction()}
+                debug={false}
               />
             </div>
             <PlayerProfileContainer
