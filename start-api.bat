@@ -1,6 +1,6 @@
 @echo off
-REM CricketService - Start All Services Script (Windows)
-REM This script starts the databases, backend API, and frontend
+REM CricketService - Start API Only Script (Windows)
+REM This script starts the database and backend API only
 
 REM Check for silent mode parameter
 if "%1"=="--silent" (
@@ -11,7 +11,7 @@ if "%1"=="--silent" (
 
 if "%SILENT_MODE%"=="false" (
     echo.
-    echo 🚀 Starting CricketService Application...
+    echo 🔧 Starting CricketService API Only...
     echo.
 )
 
@@ -35,39 +35,21 @@ REM Wait for backend to start
 if "%SILENT_MODE%"=="false" echo ⏳ Waiting for backend to initialize...
 timeout /t 5 /nobreak >nul
 
-REM Start frontend in new window
-if "%SILENT_MODE%"=="false" (
-    echo 🎨 Starting Frontend...
-    start "CricketService Frontend" cmd /k "cd CricketService.UI && npm run start-both"
-) else (
-    start "" /min cmd /c "cd CricketService.UI && npm run start-both >nul 2>&1"
-)
-
-REM Wait for frontend to start and then open in Chrome
-if "%SILENT_MODE%"=="false" echo ⏳ Waiting for frontend to initialize...
-timeout /t 10 /nobreak >nul
-
-REM Open Swagger UI first
+REM Open Swagger UI
 if "%SILENT_MODE%"=="false" echo 🔧 Opening Backend Swagger UI in Chrome...
-start "" "chrome.exe" --incognito --new-window "http://localhost:5001/swagger/index.html" --user-data-dir="%TEMP%\CricketService-Chrome"
-
-REM Wait a moment and then open frontend UI in new tab
-timeout /t 2 /nobreak >nul
-if "%SILENT_MODE%"=="false" echo 🌐 Opening frontend in new tab...
-start "" "chrome.exe" --incognito --new-window "http://localhost:44440/players-comparison" --user-data-dir="%TEMP%\CricketService-Chrome"
+start chrome http://localhost:5001/swagger/index.html
 
 if "%SILENT_MODE%"=="false" (
     echo.
-    echo ✅ All services started successfully!
+    echo ✅ API service started successfully!
     echo.
     echo 📍 Services:
     echo    - Backend API: http://localhost:5001
-    echo    - Frontend: http://localhost:44440
+    echo    - Swagger UI: http://localhost:5001/swagger
     echo    - PostgreSQL (Cricket DB): localhost:5440
     echo    - PostgreSQL (Hangfire DB): localhost:5441
     echo.
-    echo Services are running in separate windows.
-    echo Close the windows to stop the services.
+    echo Close the API window to stop the service.
     echo.
     pause
 )

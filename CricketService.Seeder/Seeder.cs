@@ -34,81 +34,26 @@ namespace CricketService.Seeder
 
             if (seedDataFeatures!.T20IMatches && jsonFilePathsOptions!.T20IMatchesData?.Length > 0)
             {
-                foreach (var filePath in jsonFilePathsOptions.T20IMatchesData)
-                {
-                    StreamReader r = new StreamReader(filePath);
-
-                    var fileMatchesData = JsonConvert.DeserializeObject<List<InternationalCricketMatchRequest>>(r.ReadToEnd())!
-                        .OrderBy(m => Convert.ToInt32(m.MatchNumber.Replace("T20I no. ", string.Empty))).ToList();
-                    
-                    matchesData.AddRange(fileMatchesData);
-                }
-
-                if (seedDataFeatures.WritePdfs)
-                {
-                    await cricketMatchRepository.GeneratedPDFForMatches(matchesData.Select(x => x.MatchUuid), CricketFormat.T20I);
-                }
-
-                if (matchesData.Count > 0 && seedDataFeatures.WriteDB)
-                {
-                    int counter = 0;
-
-                    foreach (var match in matchesData)
-                    {
-                        var matchResult = await cricketMatchRepository.AddLimitedOverInternationalMatch(match, CricketFormat.T20I);
-                        counter++;
-
-                        if (seedDataFeatures.WriteFiles)
-                        {
-                            FileHandler.WriteObjectToJsonFile($"D:/CricketData/JsonFiles/T20IMatches/{match.MatchNumber}_{match.MatchTitle}", matchResult);
-                        }
-
-                        if (counter % 5 == 0)
-                        {
-                            logger.LogInformation($"{counter} T20I matches seeded.");
-                        }
-                    }
-                }
+                await SeedLimitedOversInternationalMatches(
+                    jsonFilePathsOptions.T20IMatchesData,
+                    CricketFormat.T20I,
+                    seedDataFeatures,
+                    "T20I");
             }
 
             if (seedDataFeatures!.ODIMatches && jsonFilePathsOptions!.ODIMatchesData?.Length > 0)
             {
-                matchesData.Clear(); // Clear from previous section
-
-                foreach (var filePath in jsonFilePathsOptions.ODIMatchesData)
-                {
-                    StreamReader r = new StreamReader(filePath);
-
-                    var fileMatchesData = JsonConvert.DeserializeObject<List<InternationalCricketMatchRequest>>(r.ReadToEnd())!;
-                    matchesData.AddRange(fileMatchesData);
-                }
-
-                if (seedDataFeatures.WritePdfs)
-                {
-                    await cricketMatchRepository.GeneratedPDFForMatches(matchesData.Select(x => x.MatchUuid), CricketFormat.ODI);
-                }
-
-                if (matchesData.Count > 0 && seedDataFeatures.WriteDB)
-                {
-                    int counter = 0;
-
-                    foreach (var match in matchesData)
-                    {
-                        await cricketMatchRepository.AddLimitedOverInternationalMatch(match, CricketFormat.ODI);
-                        counter++;
-
-                        if (counter % 5 == 0)
-                        {
-                            logger.LogInformation($"{counter} ODI matches seeded.");
-                        }
-                    }
-                }
+                await SeedLimitedOversInternationalMatches(
+                    jsonFilePathsOptions.ODIMatchesData,
+                    CricketFormat.ODI,
+                    seedDataFeatures,
+                    "ODI");
             }
 
             if (seedDataFeatures!.TestMatches && jsonFilePathsOptions!.TestMatchesData?.Length > 0)
             {
                 List<TestCricketMatchRequest> testMatchesData = new List<TestCricketMatchRequest>();
-                
+
                 foreach (var filePath in jsonFilePathsOptions.TestMatchesData)
                 {
                     StreamReader r = new StreamReader(filePath);
@@ -142,7 +87,7 @@ namespace CricketService.Seeder
             if (seedDataFeatures!.T20DMatches && jsonFilePathsOptions!.IPLMatchesData?.Length > 0)
             {
                 List<DomesticCricketMatchRequest> iplMatchesData = new List<DomesticCricketMatchRequest>();
-                
+
                 foreach (var filePath in jsonFilePathsOptions.IPLMatchesData)
                 {
                     StreamReader r = new StreamReader(filePath);
@@ -181,6 +126,54 @@ namespace CricketService.Seeder
             if (seedDataFeatures.CricketPlayers && seedDataFeatures.WritePdfs)
             {
                 await cricketPlayerRepository.GeneratedPDFForPlayers();
+            }
+        }
+
+        private async Task SeedLimitedOversInternationalMatches(
+            string[] dataFilePaths,
+            CricketFormat format,
+            SeedDataFeatureOptions seedDataFeatures,
+            string logFormatName)
+        {
+            List<InternationalCricketMatchRequest> matchesData = new List<InternationalCricketMatchRequest>();
+
+            foreach (var filePath in dataFilePaths)
+            {
+                StreamReader r = new StreamReader(filePath);
+                var fileMatchesData = JsonConvert.DeserializeObject<List<InternationalCricketMatchRequest>>(r.ReadToEnd())!;
+
+                if (format == CricketFormat.T20I)
+                {
+                    fileMatchesData = fileMatchesData.OrderBy(m => Convert.ToInt32(m.MatchNumber.Replace("T20I no. ", string.Empty))).ToList();
+                }
+
+                matchesData.AddRange(fileMatchesData);
+            }
+
+            if (seedDataFeatures.WritePdfs)
+            {
+                await cricketMatchRepository.GeneratedPDFForMatches(matchesData.Select(x => x.MatchUuid), format);
+            }
+
+            if (matchesData.Count > 0 && seedDataFeatures.WriteDB)
+            {
+                int counter = 0;
+
+                foreach (var match in matchesData)
+                {
+                    var matchResult = await cricketMatchRepository.AddLimitedOverInternationalMatch(match, format);
+                    counter++;
+
+                    if (seedDataFeatures.WriteFiles && format == CricketFormat.T20I)
+                    {
+                        FileHandler.WriteObjectToJsonFile($"D:/CricketData/JsonFiles/T20IMatches/{match.MatchNumber}_{match.MatchTitle}", matchResult);
+                    }
+
+                    if (counter % 5 == 0)
+                    {
+                        logger.LogInformation($"{counter} {logFormatName} matches seeded.");
+                    }
+                }
             }
         }
     }
