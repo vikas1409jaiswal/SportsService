@@ -12,19 +12,32 @@ export interface ESPNTableRow {
 
 const ONE_HOUR_IN_MS = 60 * 60 * 1000; // 1 hour in milliseconds
 
-const fetchESPNTable = async (): Promise<ApiData> => {
+const getESPNRecordUrl = (profile: string): string => {
+  switch (profile) {
+    case "MostWicketsInCareer":
+      return "https://www.espncricinfo.com/records/most-wickets-in-career-83549";
+    case "MostRunsInCareer":
+      return "https://www.espncricinfo.com/records/most-runs-in-career-83548";
+    case "MostSixesInCareer":
+      return "https://www.espncricinfo.com/records/most-sixes-in-career-83623";
+    case "MostHundredsInCareer":
+      return "https://www.espncricinfo.com/records/most-centuries-in-career-83550";
+    default:
+      return "https://www.espncricinfo.com/records/most-runs-in-career-83548";
+  }
+};
+
+const fetchESPNTable = async (profile: string = "MostWicketsInCareer"): Promise<ApiData> => {
   try {
-    const response = await axios.get(
-      `https://www.espncricinfo.com/records/most-runs-in-career-83548`,
-      {
-        headers: {
-          "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-          Accept:
-            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-        },
-      }
-    );
+    const url = getESPNRecordUrl(profile);
+    const response = await axios.get(url, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        Accept:
+          "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+      },
+    });
     return response.data;
   } catch (error) {
     if (axios.isAxiosError(error) && error.response?.status === 403) {
@@ -36,7 +49,7 @@ const fetchESPNTable = async (): Promise<ApiData> => {
 };
 
 export const useCustomESPNTable = (profile: string = "MostWicketsInCareer", maxLimit: number = 10): ESPNTableRow[] => {
-  const { data } = useQuery(["espn-table"], () => fetchESPNTable(), {
+  const { data } = useQuery(["espn-table", profile], () => fetchESPNTable(profile), {
     staleTime: ONE_HOUR_IN_MS,
     cacheTime: ONE_HOUR_IN_MS * 2,
     refetchOnWindowFocus: false,
@@ -76,6 +89,8 @@ export const useCustomESPNTable = (profile: string = "MostWicketsInCareer", maxL
           break;
         case "MostRunsInCareer":
         case "MostSixesInCareer":
+        case "MostHundredsInCareer":
+        case "MostFiftiesInCareer":
           dataGenerator.battersCareerESPNTable(espnTable, tdsSelector, thsSelector);
           break;
         default:

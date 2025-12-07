@@ -10,7 +10,7 @@ import { ProfileProvider } from "./ProfileContext";
 import "./CricketRecords.scss";
 
 export const CricketRecords: React.FC = () => {
-  const [selectedProfile, setSelectedProfile] = useState(profiles[2].value);
+  const [selectedProfile, setSelectedProfile] = useState(profiles[5].value);
   const [isReorderModalOpen, setIsReorderModalOpen] = useState(false);
   const [columnOrder, setColumnOrder] = useState<string[]>([]);
   const [removedItems, setRemovedItems] = useState<string[]>([]);

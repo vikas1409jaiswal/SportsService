@@ -16,7 +16,9 @@ namespace CricketService.Domain
             int foursInInning,
             string outStatus,
             string teamName,
-            string oppositionTeamName)
+            string oppositionTeamName,
+            IEnumerable<string> milestones,
+            Age age)
         {
             Uuid = uuid;
             MatchNumber = matchNumber;
@@ -32,6 +34,8 @@ namespace CricketService.Domain
             OutStatus = outStatus;
             TeamName = teamName;
             OppositionTeamName = oppositionTeamName;
+            Milestones = milestones?.ToList() ?? new List<string>();
+            Age = age;
         }
 
         public Guid Uuid { get; set; }
@@ -61,5 +65,9 @@ namespace CricketService.Domain
         public string TeamName { get; set; }
 
         public string OppositionTeamName { get; set; }
+
+        public IList<string> Milestones { get; set; }
+
+        public Age Age { get; set; }
     }
 }

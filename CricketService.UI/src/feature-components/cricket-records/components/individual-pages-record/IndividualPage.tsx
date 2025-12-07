@@ -16,6 +16,8 @@ const speechMapping: Record<string, keyof typeof speeches> = {
   MostWicketsInCareer: "most-career-wickets-speech",
   MostRunsInCareer: "most-career-runs-speech",
   MostSixesInCareer: "most-career-sixes-speech",
+  MostHundredsInCareer: "most-career-hundreds-speech",
+  MostFiftiesInCareer: "most-career-fifties-speech",
 };
 
 type IndividualPageProps = {

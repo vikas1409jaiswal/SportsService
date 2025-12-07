@@ -40,6 +40,59 @@ export const speeches = {
       );
     }
   },
+  "most-career-hundreds-speech": (
+    index: number,
+    playerName: string,
+    row: ESPNTableRow,
+    teamName: string
+  ) => {
+    const number = index + 1;
+    const matches = getValue(row, "Matches");
+    const hundreds = getValue(row, "Hundreds");
+    const runs = getValue(row, "Runs");
+    const fifties = getValue(row, "Fifties");
+    const highestScore = getValue(row, "Highest Score");
+    // spell-checker:disable
+        if (config.language === "hindi") {
+          const playerHindi = (engToHinJson as any).players[playerName];
+          const teamHindi = (engToHinJson as any)["team-names"][teamName] || teamName;
+          speakText(
+            `नंबर ${number?.toString()?.replace("3", "teen")}, ${teamHindi} के ${playerHindi}, इन्होने ${matches?.replace("*", "")} मैचों में ${hundreds} शतक और ${fifties} अर्धशतक बनाए हैं। इन्होने कुल ${runs} रन बनाए हैं और उनका सर्वोच्च स्कोर ${highestScore?.replace("*", " नाबाद")} है।`,
+            SpeechLanguage.HindiIndian
+          );
+        } else {
+          speakText(
+            `Number ${number}, ${playerName} from ${teamName}, ${playerName} has scored ${hundreds} hundreds and ${fifties} fifties in ${matches?.replace("*", "")} matches. He has scored a total of ${runs} runs and his highest score is ${highestScore?.replace("*", " not out")}.`
+          );
+        }
+    // spell-checker:enable
+  },
+  "most-career-fifties-speech": (
+    index: number,
+    playerName: string,
+    row: ESPNTableRow,
+    teamName: string
+  ) => {
+    const number = index + 1;
+    const matches = getValue(row, "Matches");
+    const hundreds = getValue(row, "Hundreds");
+    const runs = getValue(row, "Runs");
+    const fifties = getValue(row, "Fifties");
+    const fiftiesPlus = getValue(row, "Fifty Plus");
+    const highestScore = getValue(row, "Highest Score");
+    if (config.language === "hindi") {
+      const playerHindi = (engToHinJson as any).players[playerName];
+      const teamHindi = (engToHinJson as any)["team-names"][teamName] || teamName;
+      speakText(
+        `नंबर ${number?.toString()?.replace("3", "teen")}, ${teamHindi} के ${playerHindi}, इन्होने ${matches?.replace("*", "")} मैचों में ${fiftiesPlus} पचास से अधिक और ${fifties} अर्धशतक बनाये हैं. इन्होने कुल ${runs} रन बनाये हैं और उनका सर्वोच्च स्कोर ${highestScore?.replace("*", " नाबाद")} है.`,
+        SpeechLanguage.HindiIndian
+      );
+        } else {
+      speakText(
+        `Number ${number}, ${playerName} from ${teamName}, ${playerName} has scored  ${fiftiesPlus} fifty plus scores and ${fifties} fifties in ${matches?.replace("*", "")} matches. He has scored a total of ${runs} runs and his highest score is ${highestScore?.replace("*", " not out")}.`
+      );
+    }
+  },
   "most-career-wickets-speech": (
     index: number,
     playerName: string,

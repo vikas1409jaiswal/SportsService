@@ -6,7 +6,7 @@ namespace CricketService.Desktop.Utils
         {
             // Start from the application directory and look for the solution file
             string currentDir = Path.GetDirectoryName(Application.ExecutablePath) ?? Environment.CurrentDirectory;
-            
+
             // Go up directories until we find the solution file
             DirectoryInfo? dir = new DirectoryInfo(currentDir);
             while (dir != null)
@@ -17,7 +17,7 @@ namespace CricketService.Desktop.Utils
                 }
                 dir = dir.Parent;
             }
-            
+
             // If solution file not found, return current directory
             return currentDir;
         }

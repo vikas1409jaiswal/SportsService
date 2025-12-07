@@ -12,11 +12,11 @@ namespace CricketService.Desktop
         private readonly StatusManager statusManager;
         private readonly DevelopmentModeManager developmentModeManager;
         private System.Windows.Forms.Timer statusTimer = new();
-        
+
         public MainForm()
         {
             InitializeComponent();
-            
+
             // Initialize managers
             var solutionDirectory = DirectoryHelper.GetSolutionDirectory();
             serviceManager = new ServiceManager(solutionDirectory);
@@ -24,7 +24,7 @@ namespace CricketService.Desktop
                                             btnStopAll, btnStopFrontend, btnStopApi);
             statusManager = new StatusManager(lblStatus, progressBar);
             developmentModeManager = new DevelopmentModeManager(chkDevMode);
-            
+
             SetupForm();
             InitializeServiceTracking();
         }
@@ -38,10 +38,10 @@ namespace CricketService.Desktop
             this.MinimumSize = new Size(550, 350);
             this.MaximizeBox = true;
             this.FormBorderStyle = FormBorderStyle.Sizable;
-            
+
             // Set background gradient
             this.BackColor = Color.FromArgb(240, 248, 255);
-            
+
             // Set icon
             try
             {
@@ -57,7 +57,7 @@ namespace CricketService.Desktop
             statusTimer.Interval = 2000; // Check every 2 seconds
             statusTimer.Tick += StatusTimer_Tick;
             statusTimer.Start();
-            
+
             // Initialize UI
             buttonManager.InitializeStopButtons();
             UpdateServiceUI();
@@ -97,10 +97,10 @@ namespace CricketService.Desktop
                 buttonManager.DisableAllStartButtons();
 
                 serviceManager.StartService(serviceName, developmentModeManager.IsDevelopmentMode());
-                
+
                 statusManager.UpdateStatus(successMessage);
                 UpdateServiceUI();
-                
+
                 // Re-enable buttons after a delay
                 ScheduleButtonReEnable();
             }
@@ -109,7 +109,7 @@ namespace CricketService.Desktop
                 HandleServiceStartError(ex, serviceName);
             }
         }
-        
+
         private void ScheduleButtonReEnable()
         {
             Task.Delay(2000).ContinueWith(t =>
@@ -124,10 +124,10 @@ namespace CricketService.Desktop
                 }
             });
         }
-        
+
         private void HandleServiceStartError(Exception ex, string serviceName)
         {
-            MessageBox.Show($"Error starting {serviceName}: {ex.Message}", "Error", 
+            MessageBox.Show($"Error starting {serviceName}: {ex.Message}", "Error",
                           MessageBoxButtons.OK, MessageBoxIcon.Error);
             buttonManager.EnableAllStartButtons();
             statusManager.UpdateStatus("Ready", false);
@@ -159,7 +159,7 @@ namespace CricketService.Desktop
         {
             ExecuteStopAction("api", "Stopping API...", "API stopped successfully!");
         }
-        
+
         private void ExecuteStopAction(string serviceName, string stoppingMessage, string successMessage)
         {
             try
@@ -171,7 +171,7 @@ namespace CricketService.Desktop
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error stopping {serviceName}: {ex.Message}", "Error", 
+                MessageBox.Show($"Error stopping {serviceName}: {ex.Message}", "Error",
                               MessageBoxButtons.OK, MessageBoxIcon.Error);
                 statusManager.UpdateStatus("Ready", false);
             }

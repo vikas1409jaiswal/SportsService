@@ -13,6 +13,7 @@ interface PlayerProfileContainerProps {
   scaleTeamCylinder?: number;
   className?: string;
   isMenuOpened?: boolean;
+  selectedFormat?: 'T20I' | 'ODI' | 'Test';
 }
 
 export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
@@ -21,6 +22,7 @@ export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
   scaleTeamCylinder = 0.85,
   className = "",
   isMenuOpened = false,
+  selectedFormat = 'ODI',
 }) => {
   const {playerHref, fullName, teamNames} = playerData;
   const teamName = teamNames[0];
@@ -32,6 +34,22 @@ export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
 
   const handleCloseSidePane = () => {
     setIsSidePaneOpen(false);
+  };
+
+  // Get batting innings stats based on selected format
+  const getBattingInningsStats = () => {
+    if (!playerData.overallStats) return [];
+    
+    switch (selectedFormat) {
+      case 'ODI':
+        return playerData.overallStats.playerODIStats?.battingInningsStats || [];
+      case 'T20I':
+        return playerData.overallStats.playerT20IStats?.battingInningsStats || [];
+      case 'Test':
+        return (playerData.overallStats as any).playerTestStats?.battingInningsStats || [];
+      default:
+        return playerData.overallStats.playerODIStats?.battingInningsStats || [];
+    }
   };
 
   const menuItems: MenuItem[] = [
@@ -65,8 +83,8 @@ export const PlayerProfileContainer: React.FC<PlayerProfileContainerProps> = ({
         />
       </div>
 
-      <SidePane open={isSidePaneOpen} title={fullName} subtitle="All Batting Innings" onClose={handleCloseSidePane}>
-        <BattingInningDetailsTable battingInningsStats={playerData.overallStats.playerODIStats.battingInningsStats || []} />
+      <SidePane open={isSidePaneOpen} title={fullName} subtitle={`All Batting Innings (${selectedFormat})`} onClose={handleCloseSidePane}>
+        <BattingInningDetailsTable battingInningsStats={getBattingInningsStats()} />
       </SidePane>
     </>
   );

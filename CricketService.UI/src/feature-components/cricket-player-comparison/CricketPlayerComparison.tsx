@@ -17,13 +17,17 @@ import CenteredSpinner from "../../components/common/CenteredSpinner";
 
 import "./CricketPlayerComparison.scss";
 
+type CricketFormat = 'T20I' | 'ODI' | 'Test';
+
 interface CricketPlayerComparisonProps {}
 
 export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = () => {
-  const [selectedPlayer1Uuid, setSelectedPlayer1Uuid] = useState<string>("");
-  const [selectedPlayer2Uuid, setSelectedPlayer2Uuid] = useState<string>("");
+  const [selectedPlayer1Uuid, setSelectedPlayer1Uuid] = useState<string>("044051e2-7246-448f-826d-ea0e0b07e67c");
+  const [selectedPlayer2Uuid, setSelectedPlayer2Uuid] = useState<string>("a012ab17-063b-4cb0-8e12-14a11d38bd4d");
   const [showComparison, setShowComparison] = useState(false);
   const [isMovingTrain, setIsMovingTrain] = useState(false);
+  const [selectedFormat, setSelectedFormat] = useState<CricketFormat>('T20I');
+  const [isFormatDropdownOpen, setIsFormatDropdownOpen] = useState(false);
   const { isMenuOpened } = useMenuToggle();
 
   const { data: player1Data, isLoading: isLoadingP1 } =
@@ -64,16 +68,59 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
     };
   }, [player1Data?.fullName, player2Data?.fullName]);
 
+  // Close dropdown when clicking outside
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (isFormatDropdownOpen && !target.closest('.format-selector')) {
+        setIsFormatDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isFormatDropdownOpen]);
+
+  // Get batting stats based on selected format
+  const getBattingStats = (playerData: CricketPlayerResponse | undefined): BattingStatistics | undefined => {
+    if (!playerData?.overallStats) return undefined;
+    
+    console.log('Getting batting stats for format:', selectedFormat);
+    console.log('Player data overallStats:', playerData.overallStats);
+    
+    switch (selectedFormat) {
+      case 'ODI':
+        console.log('ODI Stats:', playerData.overallStats.playerODIStats?.battingOverallStats);
+        return playerData.overallStats.playerODIStats?.battingOverallStats;
+      case 'T20I':
+        console.log('T20I Stats:', playerData.overallStats.playerT20IStats?.battingOverallStats);
+        return playerData.overallStats.playerT20IStats?.battingOverallStats;
+      case 'Test':
+        console.log('Test Stats:', (playerData.overallStats as any).playerTestStats?.battingOverallStats);
+        // Note: Test stats might not be available yet, handle gracefully
+        return (playerData.overallStats as any).playerTestStats?.battingOverallStats;
+      default:
+        return playerData.overallStats.playerT20IStats?.battingOverallStats;
+    }
+  };
+
   const introJSX = usePlayersIntroJSX(player1Data?.fullName || "", player2Data?.fullName || "", isMovingTrain);
   const profileInfoBogies = useProfileInfoJSX(
     player1Data as CricketPlayerResponse,
     player2Data as CricketPlayerResponse
   );
+  
+  // Get current batting stats based on selected format
+  const player1BattingStats = React.useMemo(() => getBattingStats(player1Data), [player1Data, selectedFormat]);
+  const player2BattingStats = React.useMemo(() => getBattingStats(player2Data), [player2Data, selectedFormat]);
+  
   const battingStatsBogies = useBattingStatsJSX(
     player1Data?.fullName || "",
     player2Data?.fullName || "",
-    player1Data?.overallStats?.playerODIStats?.battingOverallStats as BattingStatistics,
-    player2Data?.overallStats?.playerODIStats?.battingOverallStats as BattingStatistics
+    player1BattingStats as BattingStatistics,
+    player2BattingStats as BattingStatistics
   );
   // const bowlingStatsBogies = useBowlingStatsJSX(
   //   player1Data?.name || "",
@@ -128,9 +175,63 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
     </div>
   );
 
+  const renderFormatSelector = () => {
+    if (!isMenuOpened) return null;
+    
+    const handleFormatSelect = (format: CricketFormat) => {
+      setSelectedFormat(format);
+      setIsFormatDropdownOpen(false);
+    };
+    
+    return (
+      <div className="format-selector">
+        <button 
+          className="format-button"
+          onClick={() => setIsFormatDropdownOpen(!isFormatDropdownOpen)}
+        >
+          Format: {selectedFormat}
+          {isFormatDropdownOpen && (
+            <div className="format-dropdown">
+              <button 
+                className={`format-option ${selectedFormat === 'T20I' ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleFormatSelect('T20I');
+                }}
+              >
+                T20I
+              </button>
+              <button 
+                className={`format-option ${selectedFormat === 'ODI' ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleFormatSelect('ODI');
+                }}
+              >
+                ODI
+              </button>
+              <button 
+                className={`format-option ${selectedFormat === 'Test' ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleFormatSelect('Test');
+                }}
+              >
+                Test
+              </button>
+            </div>
+          )}
+        </button>
+      </div>
+    );
+  };
+
   return (
     <div className="player-comparison-container">
-      <PlayerH2HSelection onPlayersSelected={handlePlayersSelected} isMenuOpened={isMenuOpened} />
+      <div className="player-selection-wrapper">
+        <PlayerH2HSelection onPlayersSelected={handlePlayersSelected} isMenuOpened={isMenuOpened} />
+        {renderFormatSelector()}
+      </div>
       {(isLoadingP1 || isLoadingP2) && <CenteredSpinner />}
       {showComparison &&
         !isLoadingP1 &&
@@ -145,9 +246,11 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
               scaleTeamCylinder={0.85}
               className="player-1-container"
               isMenuOpened={isMenuOpened}
+              selectedFormat={selectedFormat}
             />
             <div className="comparison-container">
               <MovingTrain
+                key={`train-${selectedFormat}`}
                 bogies={bogies}
                 trackLength={5000}
                 duration={100}
@@ -165,6 +268,7 @@ export const CricketPlayerComparison: React.FC<CricketPlayerComparisonProps> = (
               scaleTeamCylinder={0.85}
               className="player-2-container"
               isMenuOpened={isMenuOpened}
+              selectedFormat={selectedFormat}
             />
           </>
         )}

@@ -94,6 +94,7 @@ export const battersCareerESPNTable = (
     "4s": "Fours",
     "6s": "Sixes",
     "50": "Fifties",
+    "50+": "Fifty Plus",
     "100": "Hundreds",
     "0": "Ducks",
     "BF": "Balls Faced",
@@ -166,45 +167,6 @@ export const mostRunsInTestMatch = (
   }
 };
 
-export const mostSixesInCareer = (
-  espnTableRows: ESPNTableRow[],
-  tdsSelector: NodeListOf<HTMLTableCellElement>
-) => {
-  espnTableRows.push({
-    data: [
-      { key: "Player Name", value: tdsSelector[0]?.textContent || "" },
-      {
-        key: "Player Href",
-        value: tdsSelector[0]?.querySelector("a")?.getAttribute("href") || "",
-      },
-      {
-        key: "Sixes",
-        value: tdsSelector[14]?.textContent || "",
-      },
-      {
-        key: "Matches",
-        value: tdsSelector[2]?.textContent || "",
-      },
-      { key: "Span", value: tdsSelector[1]?.textContent || "" },
-      { key: "H.Score", value: tdsSelector[6]?.textContent || "" },
-      { key: "Runs", value: tdsSelector[5]?.textContent || "" },
-      {
-        key: "Fours",
-        value: tdsSelector[13]?.textContent || "",
-      },
-      {
-        key: "xyz",
-        value:
-          teamLogos.find(
-            (x) =>
-              x.shortName ===
-              tdsSelector[0]?.textContent?.split("(")[1]?.replace(")", "")
-          )?.teamName || "",
-      },
-    ],
-  });
-};
-
 export const allDoubleCenturies = (
   espnTableRows: ESPNTableRow[],
   tdsSelector: NodeListOf<HTMLTableCellElement>
@@ -246,6 +208,5 @@ export const dataGenerator = {
   battersCareerESPNTable,
   bowlersCareerESPNTable,
   mostRunsInTestMatch,
-  mostSixesInCareer,
   allDoubleCenturies,
 };

@@ -9,7 +9,7 @@ namespace CricketService.Desktop.Services
         private readonly Dictionary<string, List<Process>> serviceProcesses;
         private readonly Dictionary<string, bool> serviceStates;
         private readonly string solutionDirectory;
-        
+
         public ServiceManager(string solutionDirectory)
         {
             this.solutionDirectory = solutionDirectory;
@@ -27,19 +27,19 @@ namespace CricketService.Desktop.Services
                 { "api", false }
             };
         }
-        
+
         public Dictionary<string, bool> ServiceStates => serviceStates;
-        
+
         public void StartService(string serviceName, bool isDevelopmentMode)
         {
             var batchFileName = ServiceConfiguration.ServiceBatchFiles[serviceName];
             var batchFile = Path.Combine(solutionDirectory, batchFileName);
-            
+
             if (!File.Exists(batchFile))
             {
                 throw new FileNotFoundException($"Batch file not found: {batchFile}");
             }
-            
+
             var processInfo = new ProcessStartInfo
             {
                 FileName = batchFile,
@@ -49,50 +49,51 @@ namespace CricketService.Desktop.Services
                 CreateNoWindow = !isDevelopmentMode,
                 WindowStyle = isDevelopmentMode ? ProcessWindowStyle.Normal : ProcessWindowStyle.Hidden
             };
-            
+
             var process = Process.Start(processInfo);
             if (process != null)
             {
                 serviceProcesses[serviceName].Add(process);
             }
-            
+
             serviceStates[serviceName] = true;
         }
-        
+
         public void StopService(string serviceName)
         {
             // Stop tracked processes
             StopTrackedProcesses(serviceName);
-            
+
             // Kill related processes by name
             KillServiceProcesses(serviceName);
         }
-        
+
         public void UpdateServiceStates()
         {
             foreach (var service in serviceStates.Keys.ToList())
             {
                 var processes = serviceProcesses[service];
-                var runningProcesses = processes.Where(p => {
-                    try 
-                    { 
-                        return !p.HasExited; 
-                    } 
-                    catch 
-                    { 
-                        return false; 
+                var runningProcesses = processes.Where(p =>
+                {
+                    try
+                    {
+                        return !p.HasExited;
+                    }
+                    catch
+                    {
+                        return false;
                     }
                 }).ToList();
-                
+
                 serviceProcesses[service] = runningProcesses;
-                
+
                 if (runningProcesses.Any())
                 {
                     serviceStates[service] = true;
                 }
             }
         }
-        
+
         public void CleanupProcesses()
         {
             foreach (var serviceProcessList in serviceProcesses.Values)
@@ -111,7 +112,7 @@ namespace CricketService.Desktop.Services
                 }
             }
         }
-        
+
         private void StopTrackedProcesses(string serviceName)
         {
             var processes = serviceProcesses[serviceName];
@@ -129,24 +130,24 @@ namespace CricketService.Desktop.Services
             }
             processes.Clear();
         }
-        
+
         private void KillServiceProcesses(string serviceName)
         {
             try
             {
                 var allProcesses = Process.GetProcesses();
                 var serviceConfig = GetServiceStopConfig(serviceName);
-                
+
                 foreach (var processPattern in serviceConfig.ProcessesToKill)
                 {
                     processManager.KillProcessesByPattern(allProcesses, processPattern);
                 }
-                
+
                 if (serviceConfig.KillDocker)
                 {
                     processManager.KillDockerContainers(solutionDirectory);
                 }
-                
+
                 foreach (var stateToUpdate in serviceConfig.StatesToUpdate)
                 {
                     serviceStates[stateToUpdate] = false;
@@ -154,7 +155,7 @@ namespace CricketService.Desktop.Services
             }
             catch { /* Ignore errors */ }
         }
-        
+
         private ServiceStopConfig GetServiceStopConfig(string serviceName)
         {
             return serviceName switch

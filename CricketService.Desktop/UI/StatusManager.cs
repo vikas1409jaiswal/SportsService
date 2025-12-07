@@ -4,13 +4,13 @@ namespace CricketService.Desktop.UI
     {
         private readonly Label lblStatus;
         private readonly ProgressBar progressBar;
-        
+
         public StatusManager(Label lblStatus, ProgressBar progressBar)
         {
             this.lblStatus = lblStatus;
             this.progressBar = progressBar;
         }
-        
+
         public void UpdateStatus(string message, bool showProgress = false)
         {
             if (lblStatus.InvokeRequired)

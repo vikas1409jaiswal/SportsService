@@ -31,6 +31,7 @@ export interface BattingInningsStat {
   outStatus: string;
   teamName: string;
   oppositionTeamName: string;
+  milestones: string[];
 }
 
 export interface CricketPlayerResponse {
@@ -52,6 +53,7 @@ export interface CricketPlayerResponse {
 export interface PlayerOverallStats {
   playerODIStats: PlayerFormatStats;
   playerT20IStats: PlayerFormatStats;
+  playerTestStats?: PlayerFormatStats; // Optional as Test stats might not be available yet
 }
 
 export interface PlayerFormatStats {

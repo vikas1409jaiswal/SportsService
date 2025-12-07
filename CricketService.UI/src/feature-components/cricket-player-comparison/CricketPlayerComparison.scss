@@ -25,6 +25,89 @@
     margin-right: 8px;
     font-size: 1.2em;
 }
+
+// Format selector styles
+.player-selection-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.format-selector {
+    z-index: 1000;
+    margin-top: 200px;
+    
+    .format-button {
+        position: relative;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 140px;
+        
+        &:hover {
+            background: #218838;
+            transform: scale(1.02);
+        }
+        
+        .format-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 2px solid #28a745;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(40, 167, 69, 0.2);
+            margin-top: 4px;
+            
+            .format-option {
+                display: block;
+                width: 100%;
+                background: white;
+                border: none;
+                padding: 10px 16px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: #28a745;
+                cursor: pointer;
+                transition: background 0.2s;
+                
+                &:hover {
+                    background: #e8f5e8;
+                }
+                
+                &.active {
+                    background: #28a745;
+                    color: white;
+                }
+                
+                &:first-child {
+                    border-radius: 6px 6px 0 0;
+                }
+                
+                &:last-child {
+                    border-radius: 0 0 6px 6px;
+                }
+                
+                &:only-child {
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}
 // Beautiful header for batting stats
 .batting-stats-header {
     font-size: 2rem;
