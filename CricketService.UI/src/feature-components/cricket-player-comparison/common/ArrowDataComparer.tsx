@@ -12,6 +12,8 @@ interface ArrowDataComparerProps {
   data2Text: string;
   headWidth?: number;
   tailWidth?: number;
+  headHeight?: number;
+  tailHeight?: number;
   speechText?: string;
 }
 
@@ -22,6 +24,8 @@ export const ArrowDataComparer: React.FC<ArrowDataComparerProps> = ({
   data2Text,
   headWidth,
   tailWidth,
+  headHeight,
+  tailHeight,
   speechText,
 }) => {
   const [ref, inView] = useInView({
@@ -30,8 +34,16 @@ export const ArrowDataComparer: React.FC<ArrowDataComparerProps> = ({
   });
 
   useEffect(() => {
-    inView && speakText(speechText || "", SpeechLanguage.HindiIndian);
-  }, [inView]);
+    let utterance: SpeechSynthesisUtterance | null = null;
+    if (inView) {
+      utterance = speakText(speechText || "", SpeechLanguage.HindiIndian);
+    }
+    return () => {
+      if (utterance && "speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, [inView, speechText]);
 
   return (
     <div className={className || "default-data"} ref={ref}>
@@ -40,6 +52,9 @@ export const ArrowDataComparer: React.FC<ArrowDataComparerProps> = ({
         text={data1Text}
         headWidth={headWidth}
         tailWidth={tailWidth}
+        headHeight={headHeight}
+        tailHeight={tailHeight}
+        animationDelay={0.15}
       />
       <div className="arrow-data-name">{dataName}</div>
       <ArrowWithData
@@ -48,6 +63,9 @@ export const ArrowDataComparer: React.FC<ArrowDataComparerProps> = ({
         reversed
         headWidth={headWidth}
         tailWidth={tailWidth}
+        headHeight={headHeight}
+        tailHeight={tailHeight}
+        animationDelay={0.45}
       />
     </div>
   );
@@ -59,6 +77,9 @@ interface ArrowWithDataProps {
   text: string;
   headWidth?: number;
   tailWidth?: number;
+  headHeight?: number;
+  tailHeight?: number;
+  animationDelay?: number;
 }
 
 export const ArrowWithData: React.FC<ArrowWithDataProps> = ({
@@ -67,16 +88,20 @@ export const ArrowWithData: React.FC<ArrowWithDataProps> = ({
   text,
   headWidth,
   tailWidth,
+  headHeight,
+  tailHeight,
+  animationDelay = 0,
 }) => {
   return (
     <div className="arrow-with-data-container">
       <ArrowSvg
         headWidth={headWidth || 150}
-        headHeight={100}
+        headHeight={headHeight || 120}
         tailWidth={tailWidth || 475}
-        tailHeight={75}
+        tailHeight={tailHeight || 90}
         bgColors={bgColors}
         reversed={reversed}
+        animationDelay={animationDelay}
       />
       <p className="data-text">{text}</p>
     </div>

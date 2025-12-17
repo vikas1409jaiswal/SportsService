@@ -35,6 +35,8 @@ const useProfileInfoJSX = (
       dataName="Age"
       data1Text={player1Data?.age}
       data2Text={player2Data?.age}
+      headWidth={90}
+      tailWidth={400}
       speechText={`${player1Data?.fullName}, Age, ${player1Data?.age.split("y ")[0]} years, ${player2Data?.fullName}, Age ${player2Data?.age.split("y ")[0]} years`}
     />,
     <ArrowDataComparer
@@ -42,6 +44,8 @@ const useProfileInfoJSX = (
       dataName="Batting Style"
       data1Text={battingStyle1}
       data2Text={battingStyle2}
+      headWidth={90}
+      tailWidth={400}
       speechText={`Batting Style: ${player1Data?.fullName}, ${battingStyle1?.toLowerCase()}, ${player2Data?.fullName}, ${battingStyle2?.toLowerCase()}`}
     />,
     <ArrowDataComparer
@@ -49,6 +53,8 @@ const useProfileInfoJSX = (
       dataName="Bowling Style"
       data1Text={bowlingStyle1}
       data2Text={bowlingStyle2}
+      headWidth={90}
+      tailWidth={400}
       speechText={`Bowling Style: ${player1Data?.fullName}, ${bowlingStyle1?.toLowerCase()}, ${player2Data?.fullName}, ${bowlingStyle2?.toLowerCase()}`}
     />,
     <ArrowDataComparer
@@ -56,6 +62,8 @@ const useProfileInfoJSX = (
       dataName="Playing Role"
       data1Text={playingRole1}
       data2Text={playingRole2}
+      headWidth={90}
+      tailWidth={400}
       speechText={`Playing Role: ${player1Data?.fullName}, ${playingRole1?.toLowerCase()}, ${player2Data?.fullName}, ${playingRole2?.toLowerCase()}`}
     />,
   ];

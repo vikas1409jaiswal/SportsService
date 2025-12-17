@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
     tnpl: "tnpl"
   };
 
-  const selectedSubPath = subPathList["int-test"]; // Select path here based on logic
+  const selectedSubPath = subPathList["int"]; // Select path here based on logic
 
   // Serve team logos
   if (req.url.includes("/images-team-logos/")) {
@@ -53,18 +53,16 @@ const server = http.createServer((req, res) => {
 
     // Serve player images
   } else if (req.url.includes("/images/")) {
-    const imagePath = `D:/CricketData/CricketersPhotos/Players/${selectedSubPath}/${
-      req.url.split("/")[2]
-    }/${req.url.split("/")[3]}`;
+    const imagePath = `D:/CricketData/CricketersPhotos/Players/${selectedSubPath}/${req.url.split("/")[2]
+      }/${req.url.split("/")[3]}`;
 
     console.log(imagePath);
     serveFile(imagePath, res);
 
     // Serve texture files
   } else if (req.url.includes("/textures/")) {
-    const imagePath = `D:/CricketData/CricketersPhotos/Textures/${
-      req.url.split("/")[2]
-    }`;
+    const imagePath = `D:/CricketData/CricketersPhotos/Textures/${req.url.split("/")[2]
+      }`;
     console.log(imagePath);
     serveFile(imagePath, res);
 

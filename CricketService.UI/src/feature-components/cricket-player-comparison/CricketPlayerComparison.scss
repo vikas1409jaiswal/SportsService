@@ -13,7 +13,7 @@
     font-weight: 600;
     font-size: 1.08rem;
     z-index: 2000;
-    box-shadow: 0 2px 12px rgba(133,100,4,0.08);
+    box-shadow: 0 2px 12px rgba(133, 100, 4, 0.08);
     width: max-content;
     min-width: 0;
     max-width: 90vw;
@@ -30,15 +30,15 @@
 .player-selection-wrapper {
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    width: auto;
+    z-index: 1000;
+    margin-top: 200px;
 }
 
 .format-selector {
-    z-index: 1000;
-    margin-top: 200px;
-    
     .format-button {
         position: relative;
         background: #28a745;
@@ -46,7 +46,7 @@
         border: none;
         border-radius: 8px;
         padding: 8px 16px;
-        font-size: 0.9rem;
+        font-size: 20px;
         font-weight: 600;
         cursor: pointer;
         box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
@@ -55,12 +55,12 @@
         align-items: center;
         justify-content: center;
         min-width: 140px;
-        
+
         &:hover {
             background: #218838;
             transform: scale(1.02);
         }
-        
+
         .format-dropdown {
             position: absolute;
             top: 100%;
@@ -71,7 +71,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 16px rgba(40, 167, 69, 0.2);
             margin-top: 4px;
-            
+
             .format-option {
                 display: block;
                 width: 100%;
@@ -83,44 +83,30 @@
                 color: #28a745;
                 cursor: pointer;
                 transition: background 0.2s;
-                
+
                 &:hover {
                     background: #e8f5e8;
                 }
-                
+
                 &.active {
                     background: #28a745;
                     color: white;
                 }
-                
+
                 &:first-child {
                     border-radius: 6px 6px 0 0;
                 }
-                
+
                 &:last-child {
                     border-radius: 0 0 6px 6px;
                 }
-                
+
                 &:only-child {
                     border-radius: 6px;
                 }
             }
         }
     }
-}
-// Beautiful header for batting stats
-.batting-stats-header {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #1976d2;
-    background: linear-gradient(90deg, #e3f2fd 0%, #bbdefb 100%);
-    border-radius: 12px;
-    padding: 16px 32px;
-    margin: 24px 0 16px 0;
-    text-align: center;
-    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
-    letter-spacing: 1px;
-    transition: box-shadow 0.3s;
 }
 
 .player-comparison-container {
@@ -161,22 +147,52 @@
 
         .batting-stats-header,
         .bowling-stats-header {
-            font-size: 30px;
-            font-weight: bold;
+            font-size: 60px;
             border: 2px solid black;
-            border-radius: 10px;
-            margin: 5px 10px;
+            font-weight: 700;
+            color: #1976d2;
+            background: linear-gradient(90deg, #e3f2fd 0%, #bbdefb 100%);
+            border-radius: 12px;
+            padding: 16px;
+            margin: 24px 0 16px 0;
             text-align: center;
-            background-color: greenyellow;
+            letter-spacing: 1px;
+            width: 600px;
+            font-family: 'Roboto Slab', 'Segoe UI', Arial, sans-serif;
+        }
+
+        .batting-stats-format-subheader {
+            font-size: 32px;
+            margin-top: 8px;
+            color: #1976d2;
+            font-weight: 700;
+            letter-spacing: 1px;
+            background: linear-gradient(90deg, #e3f2fd 0%, #bbdefb 100%);
+            border-radius: 8px;
+            padding: 8px 20px;
+            box-shadow: 0 2px 10px rgba(25, 118, 210, 0.08);
+            text-align: center;
+            border: 1.5px solid #90caf9;
+            width: 400px;
+            font-family: 'Roboto Slab', 'Segoe UI', Arial, sans-serif;
         }
 
         .batting-stats,
         .bowling-stats {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
 
             .stats-data {
                 margin: 30px 10px;
+            }
+        }
+
+        .playing-role-container,
+        .bowling-style-container,
+        .batting-style-container,
+        .age-container {
+            .data-text {
+                font-size: 45px;
             }
         }
     }
